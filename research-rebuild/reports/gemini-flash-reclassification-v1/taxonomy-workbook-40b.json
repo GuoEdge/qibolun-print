@@ -1,0 +1,125 @@
+{
+  "taxonomy_version": "gemini-flash-taxonomy-v2-workbook-40b",
+  "total_volumes": 8,
+  "total_booklets": 40,
+  "target_pages_per_booklet": "100-140 页 A4（适合平摊、握持、留白批注）",
+  "empty_text_policy": "正文为空的篇目自动剔除不入册",
+  "volumes": [
+    {
+      "volume_code": "V1",
+      "volume_name": "血亲宗族与家庭抚育",
+      "booklets": [
+        "B01",
+        "B02",
+        "B03",
+        "B04",
+        "B05",
+        "B06",
+        "B07",
+        "B08",
+        "B09",
+        "B10"
+      ],
+      "prefix": "本根敦倫",
+      "volume_full_title": "本根敦倫——血親宗族與家庭撫育"
+    },
+    {
+      "volume_code": "V2",
+      "volume_name": "两性亲密与婚恋博弈",
+      "booklets": [
+        "B11",
+        "B12",
+        "B13"
+      ],
+      "prefix": "阴阳合离",
+      "volume_full_title": "阴阳合离——两性亲密与婚恋博弈"
+    },
+    {
+      "volume_code": "V3",
+      "volume_name": "熟人世道与处世防线",
+      "booklets": [
+        "B14",
+        "B15",
+        "B16"
+      ],
+      "prefix": "酬酢防身",
+      "volume_full_title": "酬酢防身——熟人世道与处世防线"
+    },
+    {
+      "volume_code": "V4",
+      "volume_name": "身心安顿与心性知行",
+      "booklets": [
+        "B17",
+        "B18",
+        "B19"
+      ],
+      "prefix": "存神调息",
+      "volume_full_title": "存神调息——身心安顿与心性知行"
+    },
+    {
+      "volume_code": "V5",
+      "volume_name": "职场生态与财富经营",
+      "booklets": [
+        "B20",
+        "B21",
+        "B22"
+      ],
+      "prefix": "度势居货",
+      "volume_full_title": "度势居货——职场生态与财富经营"
+    },
+    {
+      "volume_code": "V6",
+      "volume_name": "时代透视与群体思潮",
+      "booklets": [
+        "B23",
+        "B24",
+        "B25",
+        "B26",
+        "B27",
+        "B28",
+        "B29",
+        "B30"
+      ],
+      "prefix": "观风察变",
+      "volume_full_title": "观风察变——时代透视与群体思潮"
+    },
+    {
+      "volume_code": "V7",
+      "volume_name": "深层哲思与名相辨析",
+      "booklets": [
+        "B31",
+        "B32",
+        "B33",
+        "B34",
+        "B35",
+        "B36",
+        "B37",
+        "B38"
+      ],
+      "prefix": "涤除玄览",
+      "volume_full_title": "涤除玄览——深层哲思与名相辨析"
+    },
+    {
+      "volume_code": "V8",
+      "volume_name": "艺文美学与历史治乱",
+      "booklets": [
+        "B39",
+        "B40"
+      ],
+      "prefix": "鉴往铸器",
+      "volume_full_title": "鉴往铸器——艺文美学与历史治乱"
+    }
+  ],
+  "tiangan_order": [
+    "甲",
+    "乙",
+    "丙",
+    "丁",
+    "戊",
+    "己",
+    "庚",
+    "辛",
+    "壬",
+    "癸"
+  ]
+}

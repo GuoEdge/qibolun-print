@@ -1,0 +1,55 @@
+{
+  "v2_records": 4305,
+  "reused_old_records": 4050,
+  "manual_decisions_old": 4,
+  "new_records": 255,
+  "deepseek_covered_new": 246,
+  "deepseek_missing_new": 9,
+  "missing_first_pass": 9,
+  "cue_unmatched": 0,
+  "needs_human_classification": 62,
+  "manual_decision_records": 28,
+  "manual_provisional": 4,
+  "reviewed_agree": 8,
+  "reviewed_needs_revision": 16,
+  "new_status_counts": {
+    "reviewed_agree": 8,
+    "reviewed_needs_revision": 16,
+    "review_required": 169,
+    "needs_human_classification": 62
+  },
+  "manual_status_counts": {
+    "manual_provisional": 4,
+    "reviewed_agree": 8,
+    "reviewed_needs_revision": 16
+  },
+  "new_sample_records": 64,
+  "theme_counts": {
+    "选择与自由": 323,
+    "能力与学习": 957,
+    "爱与回应": 61,
+    "事实与证据": 1507,
+    "定义与达意": 1112,
+    "责任与后果": 134,
+    "成本与总账": 48,
+    "财富与市场": 27,
+    "信用与信任": 10,
+    "技术与工程": 5,
+    "权力与异议": 6,
+    "照料与家庭": 24,
+    "劳动与组织": 10,
+    "边界与许可": 13,
+    "生态与自然": 12,
+    "心理与主体": 22,
+    "法律与秩序": 4,
+    "性别与身体": 4,
+    "人工智能与机器": 4,
+    "文明与历史": 20,
+    "宗教与自然法": 2
+  },
+  "outputs": [
+    "D:\\岐伯论\\research-rebuild\\reports\\article-theme-map-v2.csv",
+    "D:\\岐伯论\\research-rebuild\\reports\\new-theme-stratified-sample.csv"
+  ],
+  "method": "旧映射仅复用已有审计记录；新增记录中 DeepSeek 覆盖与缺失分别统计，人工决定按 provisional/agreement/revision 分层；抽样审计完成前不视为最终分类。"
+}

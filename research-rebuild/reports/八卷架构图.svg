@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1000" style="background:#FAF9F7">
+  <defs>
+    <style>
+      .title { font-family: 'SimSun', serif; font-size: 20px; fill: #1A1715; font-weight: bold; }
+      .volume-main { font-family: 'FZKai-Z03S', 'STKaiti', 'SimSun', serif; font-size: 16px; fill: #1A1715; font-weight: bold; }
+      .volume-sub { font-family: 'SimSun', serif; font-size: 13px; fill: #4A4745; }
+      .arrow { stroke: #8F2D26; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+      .line { stroke: #8F2D26; stroke-width: 1.5; fill: none; }
+      .box { fill: #FFFFFF; stroke: #8F2D26; stroke-width: 2; rx: 8; }
+      .box-top { fill: #F5EEEE; stroke: #8F2D26; stroke-width: 2.5; rx: 8; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#8F2D26" />
+    </marker>
+  </defs>
+  
+  <!-- 标题 -->
+  <text x="600" y="40" class="title" text-anchor="middle">岐伯论八卷全息架构图</text>
+  
+  <!-- 第一层：卷七（顶部） -->
+  <rect x="450" y="80" width="300" height="75" class="box-top"/>
+  <text x="600" y="108" class="volume-main" text-anchor="middle">〔卷七·涤除玄览〕</text>
+  <text x="600" y="135" class="volume-sub" text-anchor="middle">本体/心智/玄览极境</text>
+  
+  <!-- 箭头：卷七 ← 卷六/五/四 -->
+  <line x1="600" y1="155" x2="600" y2="220" class="arrow"/>
+  
+  <!-- 第二层：卷六/五/四（中层三个并列） -->
+  <rect x="80" y="220" width="280" height="85" class="box"/>
+  <text x="220" y="250" class="volume-main" text-anchor="middle">〔卷六·观风察变〕</text>
+  <text x="220" y="275" class="volume-sub" text-anchor="middle">时代思潮与舆论</text>
+  
+  <rect x="460" y="220" width="280" height="85" class="box"/>
+  <text x="600" y="250" class="volume-main" text-anchor="middle">〔卷五·度势居货〕</text>
+  <text x="600" y="275" class="volume-sub" text-anchor="middle">职场博弈与资财</text>
+  
+  <rect x="840" y="220" width="280" height="85" class="box"/>
+  <text x="980" y="250" class="volume-main" text-anchor="middle">〔卷四·存神调息〕</text>
+  <text x="980" y="275" class="volume-sub" text-anchor="middle">身心容止与节律</text>
+  
+  <!-- 连接线：卷七到中层三个 -->
+  <line x1="550" y1="200" x2="220" y2="220" class="line"/>
+  <line x1="600" y1="200" x2="600" y2="220" class="line"/>
+  <line x1="650" y1="200" x2="980" y2="220" class="line"/>
+  
+  <!-- 箭头：卷六/五/四 ← 卷三/二 -->
+  <line x1="220" y1="305" x2="375" y2="400" class="arrow"/>
+  <line x1="600" y1="305" x2="525" y2="400" class="arrow"/>
+  <line x1="980" y1="305" x2="675" y2="400" class="arrow"/>
+  
+  <!-- 第三层：卷三/二（并列） -->
+  <rect x="100" y="400" width="380" height="85" class="box"/>
+  <text x="290" y="430" class="volume-main" text-anchor="middle">〔卷三·酬酢进退〕</text>
+  <text x="290" y="455" class="volume-sub" text-anchor="middle">人我边界与应世防身</text>
+  
+  <rect x="720" y="400" width="380" height="85" class="box"/>
+  <text x="910" y="430" class="volume-main" text-anchor="middle">〔卷二·阴阳合离〕</text>
+  <text x="910" y="455" class="volume-sub" text-anchor="middle">两性本质与婚恋契约</text>
+  
+  <!-- 箭头：卷三/二 ← 卷一 -->
+  <line x1="290" y1="485" x2="500" y2="570" class="arrow"/>
+  <line x1="910" y1="485" x2="700" y2="570" class="arrow"/>
+  
+  <!-- 第四层：卷一（中心） -->
+  <rect x="450" y="570" width="300" height="75" class="box-top"/>
+  <text x="600" y="598" class="volume-main" text-anchor="middle">〔卷一·本根敦伦〕</text>
+  <text x="600" y="625" class="volume-sub" text-anchor="middle">家庭/宗族/代际契约</text>
+  
+  <!-- 箭头：卷一 ← 卷八 -->
+  <line x1="600" y1="645" x2="600" y2="710" class="arrow"/>
+  
+  <!-- 第五层：卷八（底部） -->
+  <rect x="400" y="710" width="400" height="75" class="box-top"/>
+  <text x="600" y="738" class="volume-main" text-anchor="middle">〔卷八·格物铸器〕</text>
+  <text x="600" y="765" class="volume-sub" text-anchor="middle">百工技艺/造物之锚（实相贯通）</text>
+  
+  <!-- 说明文字 -->
+  <text x="100" y="835" class="volume-sub">架构特点：</text>
+  <text x="100" y="860" class="volume-sub">• 卷一（本根敦伦）为立身之本，卷八（格物铸器）为实相之锚</text>
+  <text x="100" y="885" class="volume-sub">• 卷二/三处理人伦情爱关系，卷四/五/六涉及个人修为与社会互动</text>
+  <text x="100" y="910" class="volume-sub">• 卷七（涤除玄览）为哲学思考与元认知之极峰，统领全局</text>
+  <text x="100" y="935" class="volume-sub">• 由下学而上达，由家庭到社会到宇宙，形成完备的实践哲学全息系统</text>
+</svg>

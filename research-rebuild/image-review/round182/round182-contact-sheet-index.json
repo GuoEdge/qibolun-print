@@ -1,0 +1,76 @@
+{
+ "c6afed4c-3d1b-5df4-8388-494f7d756c13": {
+  "ordinal": "3435",
+  "title": "年号",
+  "images": 5,
+  "cols": 3,
+  "rows": 2,
+  "sheet": "research-rebuild/image-review/round182/3435-c6afed4c-3d1b-5df4-8388-494f7d756c13.jpg",
+  "positions": {
+   "r1c1": "1",
+   "r1c2": "2",
+   "r1c3": "3",
+   "r2c1": "4",
+   "r2c2": "5"
+  }
+ },
+ "f9d288d4-cbf7-51e0-ae6f-a7180096ce4c": {
+  "ordinal": "3520",
+  "title": "不怯场",
+  "images": 2,
+  "cols": 2,
+  "rows": 1,
+  "sheet": "research-rebuild/image-review/round182/3520-f9d288d4-cbf7-51e0-ae6f-a7180096ce4c.jpg",
+  "positions": {
+   "r1c1": "1",
+   "r1c2": "2"
+  }
+ },
+ "250b12b2-5530-527c-870c-a33dc4782e36": {
+  "ordinal": "3550",
+  "title": "奢侈品",
+  "images": 6,
+  "cols": 3,
+  "rows": 2,
+  "sheet": "research-rebuild/image-review/round182/3550-250b12b2-5530-527c-870c-a33dc4782e36.jpg",
+  "positions": {
+   "r1c1": "1",
+   "r1c2": "2",
+   "r1c3": "3",
+   "r2c1": "4",
+   "r2c2": "5",
+   "r2c3": "6"
+  }
+ },
+ "c4bab8ec-36c8-546c-84b2-a9fa20cd813d": {
+  "ordinal": "3628",
+  "title": "前途",
+  "images": 1,
+  "cols": 1,
+  "rows": 1,
+  "sheet": "research-rebuild/image-review/round182/3628-c4bab8ec-36c8-546c-84b2-a9fa20cd813d.jpg",
+  "positions": {
+   "r1c1": "1"
+  }
+ },
+ "c947b0a0-3a44-571d-bef7-8663f537fb19": {
+  "ordinal": "3742",
+  "title": "能力",
+  "images": 10,
+  "cols": 4,
+  "rows": 3,
+  "sheet": "research-rebuild/image-review/round182/3742-c947b0a0-3a44-571d-bef7-8663f537fb19.jpg",
+  "positions": {
+   "r1c1": "1",
+   "r1c2": "2",
+   "r1c3": "3",
+   "r1c4": "4",
+   "r2c1": "5",
+   "r2c2": "6",
+   "r2c3": "7",
+   "r2c4": "8",
+   "r3c1": "9",
+   "r3c2": "10"
+  }
+ }
+}

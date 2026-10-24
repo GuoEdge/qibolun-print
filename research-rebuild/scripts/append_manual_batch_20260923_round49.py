@@ -1,0 +1,11 @@
+import csv
+from pathlib import Path
+ROOT=Path(__file__).resolve().parents[2]; PATH=ROOT/'research-rebuild/data/print-topic-manual-decisions-v2.csv'; BATCH=ROOT/'research-rebuild/reports/live-manual-short-batch-v2-round49-short50.csv'
+D={'懂事':('A05','A00;A07'),'拿身体换':('A03','A00;A07'),'不可追':('A03','A07;A02'),'时间不够':('A00','A11;A10'),'心窄路不宽':('A07','A02;A00'),'高中书目':('A02','A20;A00'),'各行其道':('A20','A02;A00'),'专业布局':('A02','A10;A15'),'原谅宝':('A13','A07;A16'),'基督教与食血':('A18','A20;A02'),'敌人的掌声':('A07','A03;A11'),'南北宗族':('A18','A12;A05'),'经验驱动':('A02','A10;A04'),'最':('A07','A09;A00'),'无悲喜':('A07','A02;A11'),'安贫乐道':('A00','A04;A15'),'修罗泡泡':('A11','A00;A07'),'坚持的必要':('A10','A00;A11'),'脱敏':('A11','A05;A02'),'高呼尊号':('A18','A07;A00'),'怒者不医':('A09','A16;A11'),'狡辩':('A07','A02;A09'),'少收了三五斗':('A07','A15;A02'),'顺潮出海':('A08','A07;A10'),'毒打使者':('A10','A02;A04'),'工作优先':('A10','A05;A03'),'危墙':('A16','A00;A07'),'认错问题':('A07','A09;A10'),'异人':('A02','A10;A04'),'千万别抬头':('A15','A00;A10'),'术与略':('A12','A07;A00'),'高手迹象':('A16','A07;A02'),'维他命I':('A00','A10;A02'),'海上水':('A16','A13;A20'),'阿尔弗雷德':('A15','A13;A08'),'攀比艺术':('A18','A05;A12'),'红旗下的蛋':('A13','A12;A00'),'哗众取宠':('A07','A02;A10'),'被扼杀的人才':('A10','A02;A05'),'男扮女装':('A03','A05;A18'),'不够友好':('A07','A03;A02'),'真的不适合':('A11','A02;A00'),'陌路相望':('A05','A00;A07'),'满门忠烈':('A18','A12;A00'),'疲兵':('A03','A07;A05'),'哥利亚说':('A07','A16;A03'),'龙场避难':('A11','A02;A00'),'桃李满天下':('A12','A18;A13'),'狎':('A03','A07;A02'),'上班目的':('A10','A00;A08')}
+batch=list(csv.DictReader(BATCH.open(encoding='utf-8-sig',newline=''))); assert len(batch)==50 and {r['title'] for r in batch}==set(D)
+with PATH.open(encoding='utf-8-sig',newline='') as f: rd=csv.DictReader(f); rows=list(rd); fields=rd.fieldnames
+by={r['id']:r for r in rows}
+for r in batch:
+ p,s=D[r['title']]; by[r['id']]={'id':r['id'],'title':r['title'],'primary_print_topic_code':p,'secondary_print_topic_codes':s,'classification_status':'manual_confirmed','decision_basis':'Round 49 full-text review: '+r['title'],'review_note':'正文中心明确，主副专题按论证中心裁决。','reviewer':'main-thread','reviewed_at':'2026-09-23'}
+with PATH.open('w',encoding='utf-8-sig',newline='') as f: w=csv.DictWriter(f,fieldnames=fields); w.writeheader(); w.writerows(by.values())
+print('round49',len(batch),'manual_rows',len(by))

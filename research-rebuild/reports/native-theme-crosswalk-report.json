@@ -1,0 +1,33 @@
+{
+  "generatedAt": "2026-09-21T15:52:20.986579+00:00",
+  "nativeTreeNodes": 200,
+  "nativeObjectNodes": 48,
+  "nativePracticeNodes": 152,
+  "crosswalkRows": 200,
+  "mappingStatusCounts": {
+    "broad": 121,
+    "multi": 51,
+    "direct": 5,
+    "narrow": 11,
+    "unmapped": 12
+  },
+  "mappingStatusByKind": {
+    "LeoObject:broad": 44,
+    "LeoObject:multi": 4,
+    "LeoPractice:broad": 77,
+    "LeoPractice:direct": 5,
+    "LeoPractice:multi": 47,
+    "LeoPractice:narrow": 11,
+    "LeoPractice:unmapped": 12
+  },
+  "matchedLocalArticlesUsed": 3689,
+  "officialUnmatchedLocalArticles": 616,
+  "officialInventoryUniqueArticles": 3698,
+  "officialLocalMatchRatio": 0.856911,
+  "outputs": [
+    "D:\\岐伯论\\research-rebuild\\reports\\native-theme-crosswalk-200.csv",
+    "D:\\岐伯论\\research-rebuild\\reports\\native-theme-crosswalk-report.json",
+    "D:\\岐伯论\\research-rebuild\\reports\\native-theme-crosswalk-method.md"
+  ],
+  "interpretation": "crosswalk 是旧23主题与官方200节点之间的证据统计，不是把两套分类强行合并为单一层级。"
+}

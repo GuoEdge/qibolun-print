@@ -1,0 +1,11 @@
+round	id	title	old_primary	old_secondary	new_primary	new_secondary	status	decision	reason	risk_boundary
+123	e122a811-8341-594f-bce6-b50983b7e485	活成这样	A00		A00		manual_provisional	retain	只有纪录片链接标题，无可复核正文	视频内容与人生价值结论未核验
+123	7892dffe-5880-5ff5-9b50-d6e35a827662	爱的野心	A11	A01;A06	A03	A01	manual_confirmed	promote	两句完成“利己/利他野心”概念区分	规范性伦理判断未外部核验
+123	d60f14af-095b-5c1c-8ddb-65b97894e53d	婉拒	A01	A08	A06	A03	manual_provisional	retain	单句话术无理由、边界与关系分析	话术适用性与后果未核验
+123	cceb64c7-9d26-56ab-8b55-4cebb78c5907	贵人	A07	A06;A08	A07	A06;A01	manual_confirmed	promote	领导被还原为疲劳个体并讨论互助/安慰关系	组织与心理判断未实证核验
+123	cdf1315e-9753-550f-8e55-651c06dfa32f	没伦理	A09	A10;A03	A00		manual_provisional	retain	正文抓取在“厂”处截断	医学伦理或法律主题不可推定
+123	b95e3891-a76b-5252-86ca-12733a306294	反犹	A11	A10;A12;A17	A11	A12;A17;A20	manual_confirmed	promote	宗教自然法与律法观为长文主轴，历史演变、族群身份与国际秩序为副轴	宗教律法由A11主码表达；宗教史、纳粹史和国际政治主张未核验
+123	de21b205-c1c5-5483-96b3-158f8e8a1a9b	军舰对潜艇	A12	A13	A12	A13	manual_confirmed	promote	现代潜艇防区外打击与海战威慑论证闭合	军事技术参数未核验
+123	04954e05-c122-5973-974b-9505564eff75	灭霸	A12	A18;A10	A18	A03	manual_confirmed	promote	生命系统崩塌的数量级思想实验闭合	比例与因果为未核验推断
+123	15ad7084-15f4-5bfc-ae55-7f4b7e760389	舰炮	A12	A13	A12	A13	manual_confirmed	promote	舰炮成本、饱和攻击和海战运用是稳定中心	武器性能与战术未核验
+123	39068fb3-08d5-5dd7-8a90-cfa9f37f121f	憋得死	A11	A07;A01	A03	A11;A01	manual_confirmed	promote	“不奖励利他系统”定义及逃离/自建环境方案构成完整论证	社会契约与策略判断未社会学核验

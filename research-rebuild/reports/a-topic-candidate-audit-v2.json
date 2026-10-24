@@ -1,0 +1,68 @@
+{
+  "input": "D:\\岐伯论\\research-rebuild\\reports\\a-topic-candidates-v2.csv",
+  "records": 4305,
+  "unique_ids": 4305,
+  "duplicate_ids": 0,
+  "empty_primary": 0,
+  "invalid_primary_topics": [],
+  "primary_topic_counts": {
+    "A19": 16,
+    "A07": 449,
+    "A06": 559,
+    "A20": 126,
+    "A13": 143,
+    "A11": 197,
+    "A16": 260,
+    "A05": 453,
+    "A15": 207,
+    "A01": 561,
+    "A04": 315,
+    "A18": 118,
+    "A14": 47,
+    "A10": 205,
+    "A09": 53,
+    "A08": 224,
+    "A02": 61,
+    "A03": 220,
+    "A21": 29,
+    "A12": 45,
+    "A17": 17
+  },
+  "missing_primary_topics": [],
+  "classification_status_counts": {
+    "strong_domain_candidate": 199,
+    "official_direct": 2490,
+    "official_multi": 1036,
+    "strong_domain_conflict": 8,
+    "legacy_needs_human": 274,
+    "legacy_route": 298
+  },
+  "official_assignment_status_counts": {
+    "unassigned": 616,
+    "confirmed": 3689
+  },
+  "strong_domain_topic_counts": {
+    "A19": 17,
+    "A09": 54,
+    "A14": 47,
+    "A21": 31,
+    "A12": 47,
+    "A17": 16
+  },
+  "strong_domain_rows": 207,
+  "sample_records": 222,
+  "sample_seed": 20260922,
+  "sample_strata_counts": {
+    "strong_domain_conflict": 8,
+    "official_direct": 63,
+    "official_multi": 52,
+    "strong_domain_candidate": 24,
+    "official_unassigned": 75
+  },
+  "outputs": [
+    "D:\\岐伯论\\research-rebuild\\reports\\a-topic-candidate-review-sample-v2.csv",
+    "D:\\岐伯论\\research-rebuild\\reports\\a-topic-candidate-audit-v2.json",
+    "D:\\岐伯论\\research-rebuild\\reports\\a-topic-candidate-audit-v2.md"
+  ],
+  "interpretation": "结构覆盖通过不等于语义分类完成；抽样行必须回到正文、图片和官方实践边逐篇确认。"
+}

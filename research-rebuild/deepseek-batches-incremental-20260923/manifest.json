@@ -1,0 +1,177 @@
+{
+  "schema_version": "deepseek-batches-incremental-v1",
+  "generated_at": "2026-09-23T01:08:31.3101485+08:00",
+  "corpus_path": "D:\\岐伯论\\sooon-q9adg-articles-v2.jsonl",
+  "corpus_sha256": "CDC9C271309E1D71D9708889A3A31F4777E0C339EA54C3753521894AFDB8357D",
+  "current_record_count": 4305,
+  "baseline_dir": "D:\\岐伯论\\research-rebuild\\deepseek-batches",
+  "baseline_manifest": "D:\\岐伯论\\research-rebuild\\deepseek-batches\\manifest.json",
+  "baseline_corpus_sha256": "E8617186FB3A82FD117C790499191B0E7B14D7A0C06E084C6D91CB5C5BF6AAA4",
+  "baseline_record_count": 4296,
+  "baseline_batch_count": 609,
+  "incremental_record_count": 9,
+  "incremental_source_ordinals": [
+    4059,
+    4058,
+    4057,
+    4056,
+    4052,
+    4055,
+    4053,
+    4054,
+    4051
+  ],
+  "incremental_reading_ordinals": [
+    4297,
+    4298,
+    4299,
+    4300,
+    4301,
+    4302,
+    4303,
+    4304,
+    4305
+  ],
+  "max_articles": 8,
+  "max_body_chars": 10000,
+  "batch_prefix": "r002",
+  "batch_count": 2,
+  "new_articles": [
+    {
+      "source_ordinal": 4059,
+      "reading_ordinal": 4297,
+      "id": "423cdf0a-6e07-5795-87bf-43bbb0bc6451",
+      "title": "老宋",
+      "body_chars": 879
+    },
+    {
+      "source_ordinal": 4058,
+      "reading_ordinal": 4298,
+      "id": "ad542f73-5ec1-5efe-9163-05d5e07ddaaf",
+      "title": "无章办事",
+      "body_chars": 661
+    },
+    {
+      "source_ordinal": 4057,
+      "reading_ordinal": 4299,
+      "id": "b3043594-20ef-5b8b-8f5b-5c7f676c207e",
+      "title": "小骇客",
+      "body_chars": 789
+    },
+    {
+      "source_ordinal": 4056,
+      "reading_ordinal": 4300,
+      "id": "e73c63c4-c40f-5ebb-bc24-6d1ce9863a8f",
+      "title": "授时郎",
+      "body_chars": 520
+    },
+    {
+      "source_ordinal": 4052,
+      "reading_ordinal": 4301,
+      "id": "3bbdb46c-6320-5796-8650-9d1b2ce336c7",
+      "title": "吹倒屋",
+      "body_chars": 537
+    },
+    {
+      "source_ordinal": 4055,
+      "reading_ordinal": 4302,
+      "id": "63aa2f41-076f-58b7-af53-bff5fe9e5f24",
+      "title": "勤行",
+      "body_chars": 1178
+    },
+    {
+      "source_ordinal": 4053,
+      "reading_ordinal": 4303,
+      "id": "720a6074-5ee5-5efe-8383-97fb31a49682",
+      "title": "见机行事",
+      "body_chars": 581
+    },
+    {
+      "source_ordinal": 4054,
+      "reading_ordinal": 4304,
+      "id": "dce8f994-09c1-5f06-bf02-ec18e9fa3823",
+      "title": "猫咬人",
+      "body_chars": 516
+    },
+    {
+      "source_ordinal": 4051,
+      "reading_ordinal": 4305,
+      "id": "e76102ee-ccaa-52ce-9f89-963d7ff78f09",
+      "title": "无赢的宇宙",
+      "body_chars": 1141
+    }
+  ],
+  "batches": [
+    {
+      "file": "r002-b0001.jsonl",
+      "batch_id": "r002-b0001",
+      "article_count": 8,
+      "body_chars": 5661,
+      "bodyChars": 5661,
+      "first_reading_ordinal": 4297,
+      "last_reading_ordinal": 4304,
+      "first_source_ordinal": 4052,
+      "last_source_ordinal": 4059,
+      "source_ordinals": [
+        4059,
+        4058,
+        4057,
+        4056,
+        4052,
+        4055,
+        4053,
+        4054
+      ],
+      "reading_ordinals": [
+        4297,
+        4298,
+        4299,
+        4300,
+        4301,
+        4302,
+        4303,
+        4304
+      ],
+      "ids": [
+        "423cdf0a-6e07-5795-87bf-43bbb0bc6451",
+        "ad542f73-5ec1-5efe-9163-05d5e07ddaaf",
+        "b3043594-20ef-5b8b-8f5b-5c7f676c207e",
+        "e73c63c4-c40f-5ebb-bc24-6d1ce9863a8f",
+        "3bbdb46c-6320-5796-8650-9d1b2ce336c7",
+        "63aa2f41-076f-58b7-af53-bff5fe9e5f24",
+        "720a6074-5ee5-5efe-8383-97fb31a49682",
+        "dce8f994-09c1-5f06-bf02-ec18e9fa3823"
+      ],
+      "oversize_count": 0
+    },
+    {
+      "file": "r002-b0002.jsonl",
+      "batch_id": "r002-b0002",
+      "article_count": 1,
+      "body_chars": 1141,
+      "bodyChars": 1141,
+      "first_reading_ordinal": 4305,
+      "last_reading_ordinal": 4305,
+      "first_source_ordinal": 4051,
+      "last_source_ordinal": 4051,
+      "source_ordinals": [
+        4051
+      ],
+      "reading_ordinals": [
+        4305
+      ],
+      "ids": [
+        "e76102ee-ccaa-52ce-9f89-963d7ff78f09"
+      ],
+      "oversize_count": 0
+    }
+  ],
+  "validation": {
+    "baseline_ids_present": true,
+    "existing_articles_unchanged": true,
+    "incremental_ids_exactly_once": true,
+    "current_corpus_hash_verified": true,
+    "utf16_body_chars_verified": true
+  },
+  "status": "PASS"
+}

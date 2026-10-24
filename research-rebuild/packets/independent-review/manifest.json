@@ -1,0 +1,763 @@
+[
+  {
+    "index": 1,
+    "path": "packets/independent-review/001-e122a811.md",
+    "priority": 225,
+    "reasons": [
+      "needs_reread",
+      "image_review",
+      "no_evidence_locations",
+      "no_main_claims",
+      "full_text_unconfirmed",
+      "many_open_questions"
+    ],
+    "batch_id": "r001-b0059",
+    "record_path": "out/r001-b0059.out.jsonl",
+    "line": 6,
+    "id": "e122a811-8341-594f-bce6-b50983b7e485",
+    "title": "活成这样",
+    "status": "needs_reread",
+    "image_count": 1
+  },
+  {
+    "index": 2,
+    "path": "packets/independent-review/002-c5354fb0.md",
+    "priority": 220,
+    "reasons": [
+      "needs_reread",
+      "image_review",
+      "no_evidence_locations",
+      "no_main_claims",
+      "full_text_unconfirmed"
+    ],
+    "batch_id": "r001-b0154",
+    "record_path": "out/r001-b0154.out.jsonl",
+    "line": 2,
+    "id": "c5354fb0-7345-5864-8522-2c0cfdad3c2e",
+    "title": "战马阉割",
+    "status": "needs_reread",
+    "image_count": 7
+  },
+  {
+    "index": 3,
+    "path": "packets/independent-review/003-e108515f.md",
+    "priority": 220,
+    "reasons": [
+      "needs_reread",
+      "image_review",
+      "no_evidence_locations",
+      "no_main_claims",
+      "full_text_unconfirmed"
+    ],
+    "batch_id": "r001-b0172",
+    "record_path": "out/r001-b0172.out.jsonl",
+    "line": 2,
+    "id": "e108515f-375c-53c9-8f6d-1ee2c16b275a",
+    "title": "最大成长速度",
+    "status": "needs_reread",
+    "image_count": 1
+  },
+  {
+    "index": 4,
+    "path": "packets/independent-review/004-bd497e81.md",
+    "priority": 205,
+    "reasons": [
+      "needs_reread",
+      "image_review",
+      "no_evidence_locations",
+      "full_text_unconfirmed",
+      "many_open_questions"
+    ],
+    "batch_id": "r001-b0003",
+    "record_path": "out/r001-b0003.out.jsonl",
+    "line": 1,
+    "id": "bd497e81-413b-5e4c-b1df-001d0efbd369",
+    "title": "可控核聚变",
+    "status": "needs_reread",
+    "image_count": 1
+  },
+  {
+    "index": 5,
+    "path": "packets/independent-review/005-7d799cfe.md",
+    "priority": 205,
+    "reasons": [
+      "needs_reread",
+      "image_review",
+      "no_evidence_locations",
+      "full_text_unconfirmed",
+      "many_open_questions"
+    ],
+    "batch_id": "r001-b0009",
+    "record_path": "out/r001-b0009.out.jsonl",
+    "line": 2,
+    "id": "7d799cfe-6820-5bd2-992d-9abfbeb346b1",
+    "title": "弓箭的杀伤力",
+    "status": "needs_reread",
+    "image_count": 1
+  },
+  {
+    "index": 6,
+    "path": "packets/independent-review/006-cd6a03a2.md",
+    "priority": 205,
+    "reasons": [
+      "needs_reread",
+      "image_review",
+      "no_evidence_locations",
+      "full_text_unconfirmed",
+      "many_open_questions"
+    ],
+    "batch_id": "r001-b0009",
+    "record_path": "out/r001-b0009.out.jsonl",
+    "line": 5,
+    "id": "cd6a03a2-7490-55c7-9848-cabeca788913",
+    "title": "斑点狗",
+    "status": "needs_reread",
+    "image_count": 5
+  },
+  {
+    "index": 7,
+    "path": "packets/independent-review/007-9bd10f2e.md",
+    "priority": 205,
+    "reasons": [
+      "needs_reread",
+      "image_review",
+      "no_evidence_locations",
+      "full_text_unconfirmed",
+      "many_open_questions"
+    ],
+    "batch_id": "r001-b0017",
+    "record_path": "out/r001-b0017.out.jsonl",
+    "line": 3,
+    "id": "9bd10f2e-221b-5789-b44c-65732e163960",
+    "title": "丑",
+    "status": "needs_reread",
+    "image_count": 7
+  },
+  {
+    "index": 8,
+    "path": "packets/independent-review/008-c6a02357.md",
+    "priority": 205,
+    "reasons": [
+      "needs_reread",
+      "image_review",
+      "no_evidence_locations",
+      "full_text_unconfirmed",
+      "many_open_questions"
+    ],
+    "batch_id": "r001-b0017",
+    "record_path": "out/r001-b0017.out.jsonl",
+    "line": 7,
+    "id": "c6a02357-79be-54da-895e-0a7a9b76dc93",
+    "title": "基督教与食血",
+    "status": "needs_reread",
+    "image_count": 8
+  },
+  {
+    "index": 9,
+    "path": "packets/independent-review/009-95ae40bd.md",
+    "priority": 205,
+    "reasons": [
+      "needs_reread",
+      "image_review",
+      "no_evidence_locations",
+      "full_text_unconfirmed",
+      "many_open_questions"
+    ],
+    "batch_id": "r001-b0019",
+    "record_path": "out/r001-b0019.out.jsonl",
+    "line": 5,
+    "id": "95ae40bd-6bce-5354-856f-6dbd939c45a4",
+    "title": "戒刀",
+    "status": "needs_reread",
+    "image_count": 5
+  },
+  {
+    "index": 10,
+    "path": "packets/independent-review/010-fe1e993d.md",
+    "priority": 205,
+    "reasons": [
+      "needs_reread",
+      "image_review",
+      "no_evidence_locations",
+      "full_text_unconfirmed",
+      "many_open_questions"
+    ],
+    "batch_id": "r001-b0020",
+    "record_path": "out/r001-b0020.out.jsonl",
+    "line": 3,
+    "id": "fe1e993d-7c2c-5c0f-b734-2bb88c4cae89",
+    "title": "井田",
+    "status": "needs_reread",
+    "image_count": 21
+  },
+  {
+    "index": 11,
+    "path": "packets/independent-review/011-599b48e8.md",
+    "priority": 205,
+    "reasons": [
+      "needs_reread",
+      "image_review",
+      "no_evidence_locations",
+      "full_text_unconfirmed",
+      "many_open_questions"
+    ],
+    "batch_id": "r001-b0023",
+    "record_path": "out/r001-b0023.out.jsonl",
+    "line": 4,
+    "id": "599b48e8-f608-54cb-9bc0-5ac53b459190",
+    "title": "原谅宝",
+    "status": "needs_reread",
+    "image_count": 1
+  },
+  {
+    "index": 12,
+    "path": "packets/independent-review/012-61a65182.md",
+    "priority": 205,
+    "reasons": [
+      "needs_reread",
+      "image_review",
+      "no_evidence_locations",
+      "full_text_unconfirmed",
+      "many_open_questions"
+    ],
+    "batch_id": "r001-b0023",
+    "record_path": "out/r001-b0023.out.jsonl",
+    "line": 1,
+    "id": "61a65182-b3de-5c28-bb29-5ddcb2acd079",
+    "title": "文物",
+    "status": "needs_reread",
+    "image_count": 13
+  },
+  {
+    "index": 13,
+    "path": "packets/independent-review/013-5a32a445.md",
+    "priority": 205,
+    "reasons": [
+      "needs_reread",
+      "image_review",
+      "no_evidence_locations",
+      "full_text_unconfirmed",
+      "many_open_questions"
+    ],
+    "batch_id": "r001-b0024",
+    "record_path": "out/r001-b0024.out.jsonl",
+    "line": 1,
+    "id": "5a32a445-202b-593a-a880-21c3716cd9cc",
+    "title": "5G",
+    "status": "needs_reread",
+    "image_count": 21
+  },
+  {
+    "index": 14,
+    "path": "packets/independent-review/014-f371ffd1.md",
+    "priority": 205,
+    "reasons": [
+      "needs_reread",
+      "image_review",
+      "no_evidence_locations",
+      "full_text_unconfirmed",
+      "many_open_questions"
+    ],
+    "batch_id": "r001-b0026",
+    "record_path": "out/r001-b0026.out.jsonl",
+    "line": 5,
+    "id": "f371ffd1-f98c-5fcb-8109-ad183fd9df86",
+    "title": "直升珠峰",
+    "status": "needs_reread",
+    "image_count": 3
+  },
+  {
+    "index": 15,
+    "path": "packets/independent-review/015-1350987a.md",
+    "priority": 205,
+    "reasons": [
+      "needs_reread",
+      "image_review",
+      "no_evidence_locations",
+      "full_text_unconfirmed",
+      "many_open_questions"
+    ],
+    "batch_id": "r001-b0027",
+    "record_path": "out/r001-b0027.out.jsonl",
+    "line": 2,
+    "id": "1350987a-cf4b-545b-bafe-847d2785533a",
+    "title": "3D打印",
+    "status": "needs_reread",
+    "image_count": 4
+  },
+  {
+    "index": 16,
+    "path": "packets/independent-review/016-e26ded3d.md",
+    "priority": 205,
+    "reasons": [
+      "needs_reread",
+      "image_review",
+      "no_evidence_locations",
+      "full_text_unconfirmed",
+      "many_open_questions"
+    ],
+    "batch_id": "r001-b0027",
+    "record_path": "out/r001-b0027.out.jsonl",
+    "line": 1,
+    "id": "e26ded3d-29e4-5733-8c83-39e877cf74f2",
+    "title": "可见光通信",
+    "status": "needs_reread",
+    "image_count": 1
+  },
+  {
+    "index": 17,
+    "path": "packets/independent-review/017-5f53ba7a.md",
+    "priority": 205,
+    "reasons": [
+      "needs_reread",
+      "image_review",
+      "no_evidence_locations",
+      "full_text_unconfirmed",
+      "many_open_questions"
+    ],
+    "batch_id": "r001-b0029",
+    "record_path": "out/r001-b0029.out.jsonl",
+    "line": 6,
+    "id": "5f53ba7a-365e-55ce-9127-f98be023cce6",
+    "title": "正中心",
+    "status": "needs_reread",
+    "image_count": 1
+  },
+  {
+    "index": 18,
+    "path": "packets/independent-review/018-66e90cce.md",
+    "priority": 205,
+    "reasons": [
+      "needs_reread",
+      "image_review",
+      "no_evidence_locations",
+      "full_text_unconfirmed",
+      "many_open_questions"
+    ],
+    "batch_id": "r001-b0029",
+    "record_path": "out/r001-b0029.out.jsonl",
+    "line": 3,
+    "id": "66e90cce-04d4-554c-87e6-c7bd02d1c81f",
+    "title": "专业布局",
+    "status": "needs_reread",
+    "image_count": 1
+  },
+  {
+    "index": 19,
+    "path": "packets/independent-review/019-4624f253.md",
+    "priority": 205,
+    "reasons": [
+      "needs_reread",
+      "image_review",
+      "no_evidence_locations",
+      "full_text_unconfirmed",
+      "many_open_questions"
+    ],
+    "batch_id": "r001-b0031",
+    "record_path": "out/r001-b0031.out.jsonl",
+    "line": 3,
+    "id": "4624f253-14ce-513a-b166-b8a351df55eb",
+    "title": "和弓",
+    "status": "needs_reread",
+    "image_count": 2
+  },
+  {
+    "index": 20,
+    "path": "packets/independent-review/020-88e2e0eb.md",
+    "priority": 205,
+    "reasons": [
+      "needs_reread",
+      "image_review",
+      "no_evidence_locations",
+      "full_text_unconfirmed",
+      "many_open_questions"
+    ],
+    "batch_id": "r001-b0034",
+    "record_path": "out/r001-b0034.out.jsonl",
+    "line": 7,
+    "id": "88e2e0eb-6711-5cca-b0a3-f049eb97e7c7",
+    "title": "安全的路",
+    "status": "needs_reread",
+    "image_count": 6
+  },
+  {
+    "index": 21,
+    "path": "packets/independent-review/021-e266c1dd.md",
+    "priority": 205,
+    "reasons": [
+      "needs_reread",
+      "image_review",
+      "no_evidence_locations",
+      "full_text_unconfirmed",
+      "many_open_questions"
+    ],
+    "batch_id": "r001-b0042",
+    "record_path": "out/r001-b0042.out.jsonl",
+    "line": 3,
+    "id": "e266c1dd-a142-51f3-a1c7-661ec21e4585",
+    "title": "各行其道",
+    "status": "needs_reread",
+    "image_count": 2
+  },
+  {
+    "index": 22,
+    "path": "packets/independent-review/022-b95e3891.md",
+    "priority": 205,
+    "reasons": [
+      "needs_reread",
+      "image_review",
+      "no_evidence_locations",
+      "full_text_unconfirmed",
+      "many_open_questions"
+    ],
+    "batch_id": "r001-b0048",
+    "record_path": "out/r001-b0048.out.jsonl",
+    "line": 1,
+    "id": "b95e3891-a76b-5252-86ca-12733a306294",
+    "title": "反犹",
+    "status": "needs_reread",
+    "image_count": 1
+  },
+  {
+    "index": 23,
+    "path": "packets/independent-review/023-0abb35df.md",
+    "priority": 205,
+    "reasons": [
+      "needs_reread",
+      "image_review",
+      "no_evidence_locations",
+      "full_text_unconfirmed",
+      "many_open_questions"
+    ],
+    "batch_id": "r001-b0049",
+    "record_path": "out/r001-b0049.out.jsonl",
+    "line": 4,
+    "id": "0abb35df-d669-5b45-ac03-2fbc11fada80",
+    "title": "具象建筑",
+    "status": "needs_reread",
+    "image_count": 5
+  },
+  {
+    "index": 24,
+    "path": "packets/independent-review/024-96d836cb.md",
+    "priority": 205,
+    "reasons": [
+      "needs_reread",
+      "image_review",
+      "no_evidence_locations",
+      "full_text_unconfirmed",
+      "many_open_questions"
+    ],
+    "batch_id": "r001-b0049",
+    "record_path": "out/r001-b0049.out.jsonl",
+    "line": 2,
+    "id": "96d836cb-4559-5c94-82b9-51adca67267f",
+    "title": "军服",
+    "status": "needs_reread",
+    "image_count": 23
+  },
+  {
+    "index": 25,
+    "path": "packets/independent-review/025-44f8c341.md",
+    "priority": 205,
+    "reasons": [
+      "needs_reread",
+      "image_review",
+      "no_evidence_locations",
+      "full_text_unconfirmed",
+      "many_open_questions"
+    ],
+    "batch_id": "r001-b0052",
+    "record_path": "out/r001-b0052.out.jsonl",
+    "line": 4,
+    "id": "44f8c341-fd3e-56d1-a321-7aa65d97043d",
+    "title": "讽刺",
+    "status": "needs_reread",
+    "image_count": 1
+  },
+  {
+    "index": 26,
+    "path": "packets/independent-review/026-5e41ab6c.md",
+    "priority": 205,
+    "reasons": [
+      "needs_reread",
+      "image_review",
+      "no_evidence_locations",
+      "full_text_unconfirmed",
+      "many_open_questions"
+    ],
+    "batch_id": "r001-b0052",
+    "record_path": "out/r001-b0052.out.jsonl",
+    "line": 2,
+    "id": "5e41ab6c-b81f-549f-b326-9e6bea9cbc4a",
+    "title": "种族矛盾",
+    "status": "needs_reread",
+    "image_count": 8
+  },
+  {
+    "index": 27,
+    "path": "packets/independent-review/027-edf11fe5.md",
+    "priority": 205,
+    "reasons": [
+      "needs_reread",
+      "image_review",
+      "no_evidence_locations",
+      "full_text_unconfirmed",
+      "many_open_questions"
+    ],
+    "batch_id": "r001-b0053",
+    "record_path": "out/r001-b0053.out.jsonl",
+    "line": 6,
+    "id": "edf11fe5-9c57-5fbc-af6c-6f56b20dd1de",
+    "title": "由海向陆",
+    "status": "needs_reread",
+    "image_count": 5
+  },
+  {
+    "index": 28,
+    "path": "packets/independent-review/028-9909de34.md",
+    "priority": 205,
+    "reasons": [
+      "needs_reread",
+      "image_review",
+      "no_evidence_locations",
+      "full_text_unconfirmed",
+      "many_open_questions"
+    ],
+    "batch_id": "r001-b0054",
+    "record_path": "out/r001-b0054.out.jsonl",
+    "line": 5,
+    "id": "9909de34-af40-55b7-811d-f28d4f41c724",
+    "title": "Black Wallstreet",
+    "status": "needs_reread",
+    "image_count": 4
+  },
+  {
+    "index": 29,
+    "path": "packets/independent-review/029-4cbed42c.md",
+    "priority": 205,
+    "reasons": [
+      "needs_reread",
+      "image_review",
+      "no_evidence_locations",
+      "full_text_unconfirmed",
+      "many_open_questions"
+    ],
+    "batch_id": "r001-b0055",
+    "record_path": "out/r001-b0055.out.jsonl",
+    "line": 4,
+    "id": "4cbed42c-3df1-5042-bc95-625b46e3256e",
+    "title": "高中书目",
+    "status": "needs_reread",
+    "image_count": 1
+  },
+  {
+    "index": 30,
+    "path": "packets/independent-review/030-c947b0a0.md",
+    "priority": 205,
+    "reasons": [
+      "needs_reread",
+      "image_review",
+      "no_evidence_locations",
+      "full_text_unconfirmed",
+      "many_open_questions"
+    ],
+    "batch_id": "r001-b0056",
+    "record_path": "out/r001-b0056.out.jsonl",
+    "line": 6,
+    "id": "c947b0a0-3a44-571d-bef7-8663f537fb19",
+    "title": "能力",
+    "status": "needs_reread",
+    "image_count": 10
+  },
+  {
+    "index": 31,
+    "path": "packets/independent-review/031-848b2ead.md",
+    "priority": 205,
+    "reasons": [
+      "needs_reread",
+      "image_review",
+      "no_evidence_locations",
+      "full_text_unconfirmed",
+      "many_open_questions"
+    ],
+    "batch_id": "r001-b0057",
+    "record_path": "out/r001-b0057.out.jsonl",
+    "line": 6,
+    "id": "848b2ead-d70b-55d5-9858-690fc5a2a227",
+    "title": "礼崩乐坏",
+    "status": "needs_reread",
+    "image_count": 1
+  },
+  {
+    "index": 32,
+    "path": "packets/independent-review/032-12b7d5cf.md",
+    "priority": 205,
+    "reasons": [
+      "needs_reread",
+      "image_review",
+      "no_evidence_locations",
+      "full_text_unconfirmed",
+      "many_open_questions"
+    ],
+    "batch_id": "r001-b0064",
+    "record_path": "out/r001-b0064.out.jsonl",
+    "line": 4,
+    "id": "12b7d5cf-a944-57e4-ba3e-02db106ed7c0",
+    "title": "执行力",
+    "status": "needs_reread",
+    "image_count": 1
+  },
+  {
+    "index": 33,
+    "path": "packets/independent-review/033-3f4efcaa.md",
+    "priority": 205,
+    "reasons": [
+      "needs_reread",
+      "image_review",
+      "no_evidence_locations",
+      "full_text_unconfirmed",
+      "many_open_questions"
+    ],
+    "batch_id": "r001-b0070",
+    "record_path": "out/r001-b0070.out.jsonl",
+    "line": 5,
+    "id": "3f4efcaa-c89d-554b-bcc8-5686ed8527e6",
+    "title": "心窄路不宽",
+    "status": "needs_reread",
+    "image_count": 1
+  },
+  {
+    "index": 34,
+    "path": "packets/independent-review/034-c4bab8ec.md",
+    "priority": 205,
+    "reasons": [
+      "needs_reread",
+      "image_review",
+      "no_evidence_locations",
+      "full_text_unconfirmed",
+      "many_open_questions"
+    ],
+    "batch_id": "r001-b0074",
+    "record_path": "out/r001-b0074.out.jsonl",
+    "line": 3,
+    "id": "c4bab8ec-36c8-546c-84b2-a9fa20cd813d",
+    "title": "前途",
+    "status": "needs_reread",
+    "image_count": 1
+  },
+  {
+    "index": 35,
+    "path": "packets/independent-review/035-2867ed0d.md",
+    "priority": 205,
+    "reasons": [
+      "needs_reread",
+      "image_review",
+      "no_evidence_locations",
+      "full_text_unconfirmed",
+      "many_open_questions"
+    ],
+    "batch_id": "r001-b0077",
+    "record_path": "out/r001-b0077.out.jsonl",
+    "line": 2,
+    "id": "2867ed0d-0c0c-5bb4-a328-50f679d93142",
+    "title": "长江天险",
+    "status": "needs_reread",
+    "image_count": 2
+  },
+  {
+    "index": 36,
+    "path": "packets/independent-review/036-9d092af8.md",
+    "priority": 205,
+    "reasons": [
+      "needs_reread",
+      "image_review",
+      "no_evidence_locations",
+      "full_text_unconfirmed",
+      "many_open_questions"
+    ],
+    "batch_id": "r001-b0077",
+    "record_path": "out/r001-b0077.out.jsonl",
+    "line": 6,
+    "id": "9d092af8-9d49-5ddb-a70e-105515d496b0",
+    "title": "高差",
+    "status": "needs_reread",
+    "image_count": 3
+  },
+  {
+    "index": 37,
+    "path": "packets/independent-review/037-f56baf4c.md",
+    "priority": 205,
+    "reasons": [
+      "needs_reread",
+      "image_review",
+      "no_evidence_locations",
+      "full_text_unconfirmed",
+      "many_open_questions"
+    ],
+    "batch_id": "r001-b0077",
+    "record_path": "out/r001-b0077.out.jsonl",
+    "line": 1,
+    "id": "f56baf4c-6d3c-5b38-aba5-1a38b413f041",
+    "title": "你讨厌的那种人",
+    "status": "needs_reread",
+    "image_count": 1
+  },
+  {
+    "index": 38,
+    "path": "packets/independent-review/038-68434efd.md",
+    "priority": 205,
+    "reasons": [
+      "needs_reread",
+      "image_review",
+      "no_evidence_locations",
+      "full_text_unconfirmed",
+      "many_open_questions"
+    ],
+    "batch_id": "r001-b0079",
+    "record_path": "out/r001-b0079.out.jsonl",
+    "line": 6,
+    "id": "68434efd-b4b2-5ce3-8a97-8864805ba63a",
+    "title": "轮子科技",
+    "status": "needs_reread",
+    "image_count": 11
+  },
+  {
+    "index": 39,
+    "path": "packets/independent-review/039-6d972b31.md",
+    "priority": 205,
+    "reasons": [
+      "needs_reread",
+      "image_review",
+      "no_evidence_locations",
+      "full_text_unconfirmed",
+      "many_open_questions"
+    ],
+    "batch_id": "r001-b0079",
+    "record_path": "out/r001-b0079.out.jsonl",
+    "line": 4,
+    "id": "6d972b31-ca74-5ed9-a989-2d0352cf6ba4",
+    "title": "日式",
+    "status": "needs_reread",
+    "image_count": 8
+  },
+  {
+    "index": 40,
+    "path": "packets/independent-review/040-19a2ff4c.md",
+    "priority": 205,
+    "reasons": [
+      "needs_reread",
+      "image_review",
+      "no_evidence_locations",
+      "full_text_unconfirmed",
+      "many_open_questions"
+    ],
+    "batch_id": "r001-b0081",
+    "record_path": "out/r001-b0081.out.jsonl",
+    "line": 8,
+    "id": "19a2ff4c-0f01-5107-aa11-9614b01f7666",
+    "title": "时间不够",
+    "status": "needs_reread",
+    "image_count": 1
+  }
+]

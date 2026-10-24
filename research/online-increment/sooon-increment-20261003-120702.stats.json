@@ -1,0 +1,81 @@
+{
+  "fetchedAt": "2026-10-03T12:07:02.566595+08:00",
+  "articleCount": 12,
+  "totalCharacters": 10580,
+  "minPublishedAt": 1790722800000,
+  "maxPublishedAt": 1790982000000,
+  "articles": [
+    {
+      "id": "61715ca5-fb18-51b8-bb40-76c408dc4ed3",
+      "title": "先辈说",
+      "publishedAt": 1790722800000,
+      "chars": 1397
+    },
+    {
+      "id": "b5df2584-4c5c-53c9-a5bf-ae98d5ad7b62",
+      "title": "穷关心",
+      "publishedAt": 1790766000000,
+      "chars": 935
+    },
+    {
+      "id": "a011f96c-7056-5c71-ab79-d1f9919fae3d",
+      "title": "四千万零一",
+      "publishedAt": 1790766000000,
+      "chars": 250
+    },
+    {
+      "id": "8e93c2d7-44f7-52d2-ba20-c1c323001317",
+      "title": "屁事多",
+      "publishedAt": 1790809200000,
+      "chars": 990
+    },
+    {
+      "id": "4bfbfead-3513-54c1-a8cd-a5d7fd05de64",
+      "title": "playlist",
+      "publishedAt": 1790822244226,
+      "chars": 599
+    },
+    {
+      "id": "966f1d58-490f-5e4b-a104-23d1b1cb0a33",
+      "title": "反泡沫",
+      "publishedAt": 1790848788073,
+      "chars": 950
+    },
+    {
+      "id": "c4dc1644-ee3d-5510-adbe-962c4cec8a73",
+      "title": "小招牌",
+      "publishedAt": 1790852400000,
+      "chars": 939
+    },
+    {
+      "id": "34ffd99f-f639-5c42-9eea-9eeee7f2278b",
+      "title": "弦乐",
+      "publishedAt": 1790852400000,
+      "chars": 511
+    },
+    {
+      "id": "9820a9bd-c8c7-5d6a-a137-248226f07c8a",
+      "title": "猴子面包",
+      "publishedAt": 1790852400000,
+      "chars": 1519
+    },
+    {
+      "id": "b8115317-40e8-5b95-83a0-6f22ff581892",
+      "title": "护眼",
+      "publishedAt": 1790895600000,
+      "chars": 948
+    },
+    {
+      "id": "c2fc9804-24ff-58e6-8599-0bca51a63fbe",
+      "title": "天放晴",
+      "publishedAt": 1790938800000,
+      "chars": 1038
+    },
+    {
+      "id": "9f759f90-b127-581b-9bb4-e6e27f2b12c7",
+      "title": "不免费券",
+      "publishedAt": 1790982000000,
+      "chars": 504
+    }
+  ]
+}

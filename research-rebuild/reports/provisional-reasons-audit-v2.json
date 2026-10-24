@@ -1,0 +1,11 @@
+{
+  "provisional_records": 140,
+  "image_gate_records": 58,
+  "all_images_reviewed_records": 23,
+  "no_inventory_image_records": 59,
+  "source_incomplete_records": 87,
+  "boundary_review_records": 27,
+  "legacy_reason_records": 41,
+  "generated_at": "2026-09-24",
+  "method": "flags are deliberately overlapping triage signals; no classification status is changed"
+}

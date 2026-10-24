@@ -1,0 +1,24 @@
+{
+  "generatedAt": "2026-09-21T15:56:47.645482+00:00",
+  "seed": "qibo-native-unmatched-overlay-20260921-v1",
+  "corpusRecords": 4305,
+  "officialNativeMatchedRecords": 3689,
+  "unmatchedLocalRecords": 616,
+  "practiceNodesUsedForCandidates": 152,
+  "latestCorpusDateUtc": "2026-09-21",
+  "gapHypothesisCounts": {
+    "classification_or_version_gap_candidate": 582,
+    "recent_sync_gap_candidate": 34
+  },
+  "candidateStatusCounts": {
+    "high_candidate": 335,
+    "review_candidate": 281
+  },
+  "weakOrNoLexicalCandidateCount": 0,
+  "outputs": [
+    "D:\\岐伯论\\research-rebuild\\reports\\native-unmatched-candidate-overlay.csv",
+    "D:\\岐伯论\\research-rebuild\\reports\\native-unmatched-candidate-report.json",
+    "D:\\岐伯论\\research-rebuild\\reports\\native-unmatched-candidate-method.md"
+  ],
+  "interpretation": "所有候选均为 candidate_nonfinal；不能据此修改官方分类边表。gap_hypothesis 只用于安排审计优先级。"
+}

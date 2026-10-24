@@ -1,0 +1,97 @@
+rule_id,source_type,source_value,topic_codes,priority,decision_role,review_required,notes
+N001,native_path_prefix,与自己 / 与情绪,A01,100,primary_candidate,false,官方对象直接指向情绪与主体；实践仍需正文核验
+N002,native_path_prefix,与自己 / 与身体,A02,100,secondary_candidate,true,泛身体路径只作交叉证据；性别、同意、生育或性关系必须由正文/论文路由确认主专题
+N003,native_path_prefix,与自己 / 与欲望,A02;A06,70,secondary_candidate,true,欲望可指身体性或亲密关系；官方路径不得单独决定打印主专题
+N004,native_path_prefix,与自己 / 与能力,A04,100,primary_candidate,false,官方对象直接指向能力形成与运用
+N005,native_path_prefix,与自己 / 与时间,A20,80,primary_candidate,true,时间管理也可能是心理/组织材料；正文决定
+N006,native_path_prefix,与自己 / 与财富,A08,100,primary_candidate,false,财富路径直接进入财富劳动市场专题
+N007,native_path_prefix,与自己 / 与名誉,A16,70,primary_candidate,true,名誉可能属于媒体公共认知或组织信用；正文决定
+N008,native_path_prefix,与自己 / 与原则,A03;A11,60,primary_candidate,true,原则可走论证方法或自然法；必须查看正文语境
+N009,native_path_prefix,与自己 / 与信念,A01;A11,60,primary_candidate,true,信念可走主体心理或宗教自然法；不得按词面唯一归类
+N010,native_path_prefix,与自己 / 与理想,A01;A11;A20,50,primary_candidate,true,理想同时涉及主体、自然法和文明方向；作为高风险候选
+N011,native_path_prefix,与亲族 / 与父母,A05,100,primary_candidate,false,亲属代际关系
+N012,native_path_prefix,与亲族 / 与兄弟姐妹,A05,100,primary_candidate,false,亲属代际关系
+N013,native_path_prefix,与亲族 / 与亲戚,A05,100,primary_candidate,false,亲属关系
+N014,native_path_prefix,与亲族 / 与子女,A05,100,primary_candidate,false,抚养与代际关系
+N015,native_path_prefix,与亲族 / 与配偶,A06,100,primary_candidate,false,婚姻与伴侣关系
+N016,native_path_prefix,与亲族 / 与动物伙伴,A18,90,primary_candidate,true,动物伙伴仍需区分家庭照料与生灵/生态议题
+N017,native_path_prefix,与友人 / 与恋人,A06,100,primary_candidate,false,恋爱与亲密关系
+N018,native_path_prefix,与友人 / 与朋友,A06,100,primary_candidate,false,友谊与亲密关系
+N019,native_path_prefix,与友人 / 与同学,A06;A04,70,primary_candidate,true,同学关系和教育场景并存；正文决定
+N020,native_path_prefix,与友人 / 与邻人,A06,90,primary_candidate,true,邻里可能扩展到社区公共秩序
+N021,native_path_prefix,与友人 / 与同志,A06;A17,60,primary_candidate,true,同志可指共同志向或身份群体；不得按词面唯一归类
+N022,native_path_prefix,与合作者 / 与教导者,A04,100,primary_candidate,false,教学关系
+N023,native_path_prefix,与合作者 / 与受教者,A04,100,primary_candidate,false,教育关系
+N024,native_path_prefix,与合作者 / 与共事者,A07,100,primary_candidate,false,职场与组织关系
+N025,native_path_prefix,与合作者 / 与管理者,A07;A10,80,primary_candidate,true,组织管理与国家治理可能重叠；正文决定
+N026,native_path_prefix,与合作者 / 与被管理者,A07;A10,80,primary_candidate,true,组织管理与国家治理可能重叠；正文决定
+N027,native_path_prefix,与合作者 / 与服务者,A07;A09,75,secondary_candidate,true,泛服务路径只作交叉证据；职场服务或医疗照料必须由正文/论文路由确认主专题
+N028,native_path_prefix,与合作者 / 与被服务者,A07;A09,75,secondary_candidate,true,泛服务路径只作交叉证据；职场服务或医疗照料必须由正文/论文路由确认主专题
+N029,native_path_prefix,与其它 / 与AI,A14,100,primary_candidate,false,人工智能专题
+N030,native_path_prefix,与其它 / 与敌人,A12,100,primary_candidate,false,战争军事外交专题
+N031,native_path_prefix,与其它 / 与陌生人,A06;A10;A16,40,primary_candidate,true,陌生人路径过宽，仅作候选；实践与正文决定
+N032,native_path_prefix,与社会 / 与组织,A07,100,primary_candidate,false,组织关系
+N033,native_path_prefix,与社会 / 与社区,A06;A10;A17,50,primary_candidate,true,社区可涉及邻里、公共秩序或身份；必须细读
+N034,native_path_prefix,与社会 / 与舆论,A16,100,primary_candidate,false,媒体舆论与公共认知
+N035,native_path_prefix,与社会 / 与文化,A15;A17;A20,60,primary_candidate,true,文化生产、身份和历史传统需按实践拆分
+N036,native_path_prefix,与社会 / 与艺术,A15,100,primary_candidate,false,艺术审美与文化生产
+N037,native_path_prefix,与社会 / 与历史,A20,100,primary_candidate,false,历史文明与历时演变
+N038,native_path_prefix,与社会 / 与技术,A13,100,primary_candidate,false,技术工程与产业路径
+N039,native_path_prefix,与自然 / 与生灵,A18,100,primary_candidate,false,生态自然与生灵关系
+N040,native_path_prefix,与自然 / 与环境,A18,100,primary_candidate,false,生态能源与环境
+N041,native_path_prefix,与自然 / 与科学,A18;A03,80,primary_candidate,true,科学认识可进入认识论；科学对象与方法需正文决定
+N042,native_path_prefix,与亲族 / 与父母 / 告别,A19,100,primary_candidate,true,官方告别实践明确涉及死亡纪念；需与家庭照料、临终沟通区分
+N043,native_path_prefix,与亲族 / 与子女 / 告别,A19,100,primary_candidate,true,官方告别实践明确涉及死亡纪念；需与家庭照料、临终沟通区分
+N044,native_path_prefix,与合作者 / 与教导者 / 告别,A19,100,primary_candidate,true,官方告别实践明确涉及死亡纪念；需与教育关系中的离别区分
+C001,concept,心理与主体,A01,80,secondary_candidate,false,跨对象概念；可直接作为A01支持但不是唯一主专题证据
+C002,concept,性别与身体,A02,80,secondary_candidate,false,跨对象概念；正文/官方路径优先
+C003,concept,事实与证据,A03,70,secondary_candidate,false,方法概念，通常作为副专题
+C004,concept,定义与达意,A03,70,secondary_candidate,false,方法概念，通常作为副专题
+C005,concept,能力与学习,A04,80,secondary_candidate,false,教育/能力概念
+C006,concept,照料与家庭,A05;A09,60,secondary_candidate,true,家庭照料与医疗照料需由对象路径区分
+C007,concept,爱与回应,A06,70,secondary_candidate,true,关系概念；可能出现在家庭、友人和组织材料
+C008,concept,信用与信任,A06;A07;A08,40,secondary_candidate,true,跨关系/组织/财富；不可单独定主专题
+C009,concept,边界与许可,A06;A07;A10,40,secondary_candidate,true,跨亲密、组织与法律；不可单独定主专题
+C010,concept,净输出与不掠夺,A06;A07;A08,40,secondary_candidate,true,跨关系、组织和财富伦理；不可单独定主专题
+C011,concept,劳动与组织,A07,80,secondary_candidate,false,职场组织概念
+C012,concept,财富与市场,A08,80,secondary_candidate,false,财富市场概念
+C013,concept,成本与总账,A08;A13,40,secondary_candidate,true,经济或技术路径需由对象/论文路由区分
+C014,concept,法律与秩序,A10,80,secondary_candidate,false,法律司法概念
+C015,concept,权力与异议,A10;A12,60,secondary_candidate,true,国家司法与战争外交需由对象路径区分
+C016,concept,技术与工程,A13,80,secondary_candidate,false,技术工程概念
+C017,concept,文明与历史,A20,80,secondary_candidate,false,历史文明概念
+C018,concept,民族与身份,A17,80,secondary_candidate,false,身份秩序概念
+C019,concept,生态与自然,A18,80,secondary_candidate,false,生态自然概念
+C020,concept,人工智能与机器,A14,100,secondary_candidate,false,AI对象明确时可支持主专题
+C021,concept,责任与后果,A00;A05;A07;A10,20,tie_breaker,true,跨域结构概念；不得独立决定主专题
+C022,concept,选择与自由,A00;A06;A07;A10,20,tie_breaker,true,跨域结构概念；不得独立决定主专题
+C023,concept,宗教与自然法,A11,90,secondary_candidate,false,自然法与宗教概念
+P004,legacy_paper_route,04,A05,100,primary_candidate,false,第一版家庭与亲属论文路由；仅在旧文已审计且正文路由稳定时支持主专题
+P005,legacy_paper_route,05,A06,100,primary_candidate,false,第一版亲密关系论文路由
+P006,legacy_paper_route,06,A07,100,primary_candidate,false,第一版职场组织论文路由
+P008,legacy_paper_route,08,A04,100,primary_candidate,false,第一版教育学习论文路由
+P009,legacy_paper_route,09,A03,100,primary_candidate,false,第一版定义论证论文路由
+P010,legacy_paper_route,10,A08,100,primary_candidate,false,第一版财富劳动论文路由
+P011,legacy_paper_route,11,A11,100,primary_candidate,false,第一版宗教自然法论文路由
+P012,legacy_paper_route,12,A10,100,primary_candidate,false,第一版国家法律秩序论文路由
+P013,legacy_paper_route,13,A13;A20,80,primary_candidate,true,技术文明论文既含技术也含历史；按文章中心问题拆分
+P014,legacy_paper_route,14,A01,100,primary_candidate,false,第一版心理主体论文路由
+P015,legacy_paper_route,15,A20,100,primary_candidate,false,第一版历时演变论文路由
+P016,legacy_paper_route,16,A02,100,primary_candidate,false,第一版性别身体论文路由
+P017,legacy_paper_route,17,A03;A20,70,primary_candidate,true,概念网络与历时材料；不直接唯一化
+P018,legacy_paper_route,18,A00,50,tie_breaker,true,跨域责任自由成本论文；默认待审
+P019,legacy_paper_route,19,A00,50,tie_breaker,true,内部张力论文；默认待审
+P020,legacy_paper_route,20,A03,100,primary_candidate,false,第一版概念词典论文路由
+P021,legacy_paper_route,21,A03,100,primary_candidate,false,第一版术语行动语法论文路由
+P022,legacy_paper_route,22,A03,100,primary_candidate,false,第一版命题谱系论文路由
+P023,legacy_paper_route,23,A20,100,primary_candidate,false,第一版平台控制历时配对路由
+P024,legacy_paper_route,24,A00,50,tie_breaker,true,内部张力扩展路由；默认待审
+P025,legacy_paper_route,25,A09,100,primary_candidate,false,医疗疾病照料论文路由
+P026,legacy_paper_route,26,A10,100,primary_candidate,false,犯罪刑罚司法论文路由
+P027,legacy_paper_route,27,A12,100,primary_candidate,false,战争军事外交论文路由
+P028,legacy_paper_route,28,A15,100,primary_candidate,false,艺术审美文化论文路由
+P029,legacy_paper_route,29,A16,100,primary_candidate,false,媒体舆论论文路由
+P030,legacy_paper_route,30,A19,100,primary_candidate,false,死亡祭祀纪念论文路由
+P031,legacy_paper_route,31,A17,100,primary_candidate,false,民族族群身份论文路由
+P032,legacy_paper_route,32,A18,100,primary_candidate,false,生态能源自然论文路由
+P033,legacy_paper_route,33,A14,100,primary_candidate,false,人工智能机器论文路由

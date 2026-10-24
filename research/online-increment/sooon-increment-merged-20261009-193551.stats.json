@@ -1,0 +1,22 @@
+{
+  "mergedAt": "2026-10-09T19:35:51.315963",
+  "inputFiles": [
+    "sooon-increment-20260919-165345.jsonl",
+    "sooon-increment-20260919-165533.jsonl",
+    "sooon-increment-20260919-171817.jsonl",
+    "sooon-increment-20260921-224243.jsonl",
+    "sooon-increment-20260930-011446.jsonl",
+    "sooon-increment-20261003-120702.jsonl"
+  ],
+  "inputRecords": 597,
+  "records": 597,
+  "duplicates": 0,
+  "newArticles": 292,
+  "updatedArticles": 305,
+  "missingFields": 0,
+  "emptyText": 0,
+  "badLines": 0,
+  "totalTextChars": 662746,
+  "outputPath": "/storage/Users/currentUser/Documents/岐伯论/research/online-increment/sooon-increment-merged-20261009-193551.jsonl",
+  "status": "PASS"
+}

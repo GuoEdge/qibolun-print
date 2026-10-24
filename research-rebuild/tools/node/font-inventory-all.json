@@ -1,0 +1,2871 @@
+{
+ "dirs": [
+  "/system/fonts",
+  "/storage/Users/currentUser/Download",
+  "/storage/Users/currentUser/Documents",
+  "/storage/Users/currentUser/HO_DATA_EXT_MISC/Download"
+ ],
+ "count": 286,
+ "fonts": [
+  {
+   "file": "DejaVuMathTeXGyre.ttf",
+   "path": "/system/fonts/DejaVuMathTeXGyre.ttf",
+   "dir": "/system/fonts",
+   "family": "DejaVu Math TeX Gyre",
+   "subfamily": "Regular",
+   "full": "DejaVuMathTeXGyre-Regular",
+   "postscript": "DejaVuMathTeXGyre-Regular",
+   "size": 577200
+  },
+  {
+   "file": "FTAeroSans-Regular.ttf",
+   "path": "/system/fonts/FTAeroSans-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "FT AeroSans",
+   "subfamily": "Regular",
+   "full": "FT AeroSans",
+   "postscript": "FTAeroSans-Regular",
+   "size": 11808
+  },
+  {
+   "file": "FTChariSans.ttf",
+   "path": "/system/fonts/FTChariSans.ttf",
+   "dir": "/system/fonts",
+   "family": "FT ChariSans",
+   "subfamily": "Regular",
+   "full": "FT ChariSans",
+   "postscript": "FTChariSans",
+   "size": 13944
+  },
+  {
+   "file": "FTEliraSans-Regular.ttf",
+   "path": "/system/fonts/FTEliraSans-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "FT EliraSans",
+   "subfamily": "Regular",
+   "full": "FT EliraSans",
+   "postscript": "FTEliraSans-Regular",
+   "size": 19260
+  },
+  {
+   "file": "FTGreisSans.ttf",
+   "path": "/system/fonts/FTGreisSans.ttf",
+   "dir": "/system/fonts",
+   "family": "FT GreisSans",
+   "subfamily": "Regular",
+   "full": "FT GreisSans",
+   "postscript": "FTGreisSans",
+   "size": 14148
+  },
+  {
+   "file": "FTKliphSerif.ttf",
+   "path": "/system/fonts/FTKliphSerif.ttf",
+   "dir": "/system/fonts",
+   "family": "FT KliphSerif",
+   "subfamily": "Regular",
+   "full": "FT KliphSerif",
+   "postscript": "FTKliphSerif",
+   "size": 21180
+  },
+  {
+   "file": "FTSymbol.ttf",
+   "path": "/system/fonts/FTSymbol.ttf",
+   "dir": "/system/fonts",
+   "family": "FTSymbol",
+   "subfamily": "Regular",
+   "full": "FTSymbol",
+   "postscript": "FTSymbol",
+   "size": 23228
+  },
+  {
+   "file": "FTThymes-Regular.ttf",
+   "path": "/system/fonts/FTThymes-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "FT Thymes",
+   "subfamily": "Regular",
+   "full": "FT Thymes Regular",
+   "postscript": "FTThymes-Regular",
+   "size": 36988
+  },
+  {
+   "file": "FTToken.ttf",
+   "path": "/system/fonts/FTToken.ttf",
+   "dir": "/system/fonts",
+   "family": "FTToken",
+   "subfamily": "Regular",
+   "full": "FTToken",
+   "postscript": "FTToken",
+   "size": 47200
+  },
+  {
+   "file": "FTToken2.ttf",
+   "path": "/system/fonts/FTToken2.ttf",
+   "dir": "/system/fonts",
+   "family": "FTToken2",
+   "subfamily": "Regular",
+   "full": "FTToken2",
+   "postscript": "FTToken2",
+   "size": 40972
+  },
+  {
+   "file": "FTToken3.ttf",
+   "path": "/system/fonts/FTToken3.ttf",
+   "dir": "/system/fonts",
+   "family": "FTToken3",
+   "subfamily": "Regular",
+   "full": "FTToken3",
+   "postscript": "FTToken3",
+   "size": 17476
+  },
+  {
+   "file": "FTTokens.ttf",
+   "path": "/system/fonts/FTTokens.ttf",
+   "dir": "/system/fonts",
+   "family": "FTTokens",
+   "subfamily": "Regular",
+   "full": "FTTokens",
+   "postscript": "FTTokens",
+   "size": 41144
+  },
+  {
+   "file": "FZCSJW.ttf",
+   "path": "/system/fonts/FZCSJW.ttf",
+   "dir": "/system/fonts",
+   "family": "方正粗宋简体",
+   "subfamily": "Regular",
+   "full": "方正粗宋简体",
+   "postscript": "FZCSJW--GB1-0",
+   "size": 4849820
+  },
+  {
+   "file": "FZDengX-SC-Regular.ttf",
+   "path": "/system/fonts/FZDengX-SC-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "方正等线-简",
+   "subfamily": "Regular",
+   "full": "FZDengX-SC-Regular",
+   "postscript": "FZDENGXS-R",
+   "size": 15409860
+  },
+  {
+   "file": "FZFangS-SC.ttf",
+   "path": "/system/fonts/FZFangS-SC.ttf",
+   "dir": "/system/fonts",
+   "family": "方正仿宋-简",
+   "subfamily": "Regular",
+   "full": "方正仿宋-简",
+   "postscript": "FZFangS-SC",
+   "size": 14741836
+  },
+  {
+   "file": "FZFangS-TC.ttf",
+   "path": "/system/fonts/FZFangS-TC.ttf",
+   "dir": "/system/fonts",
+   "family": "方正仿宋-繁",
+   "subfamily": "Regular",
+   "full": "方正仿宋-繁",
+   "postscript": "FZFangS-TC",
+   "size": 7179160
+  },
+  {
+   "file": "FZHeiT-SC-Bold.ttf",
+   "path": "/system/fonts/FZHeiT-SC-Bold.ttf",
+   "dir": "/system/fonts",
+   "family": "方正黑体-简 Bold",
+   "subfamily": "Regular",
+   "full": "FZHeiT-SC Bold",
+   "postscript": "FZHeiT-SC-Bold",
+   "size": 8422760
+  },
+  {
+   "file": "FZHeiT-SC-Light.ttf",
+   "path": "/system/fonts/FZHeiT-SC-Light.ttf",
+   "dir": "/system/fonts",
+   "family": "方正黑体-简 Light",
+   "subfamily": "Regular",
+   "full": "FZHeiT-SC Light",
+   "postscript": "FZHeiT-SC-Light",
+   "size": 11553632
+  },
+  {
+   "file": "FZHeiT-SC-Regular.ttf",
+   "path": "/system/fonts/FZHeiT-SC-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "方正黑体-简",
+   "subfamily": "Regular",
+   "full": "FZHeiT-SC",
+   "postscript": "FZHeiT-SC-Regular",
+   "size": 11542408
+  },
+  {
+   "file": "FZHeiT-TC-Bold.ttf",
+   "path": "/system/fonts/FZHeiT-TC-Bold.ttf",
+   "dir": "/system/fonts",
+   "family": "方正黑體-繁 Bold",
+   "subfamily": "Regular",
+   "full": "方正黑體-繁 Bold",
+   "postscript": "FZHeiT-TC-Bold",
+   "size": 4262172
+  },
+  {
+   "file": "FZHeiT-TC-Light.ttf",
+   "path": "/system/fonts/FZHeiT-TC-Light.ttf",
+   "dir": "/system/fonts",
+   "family": "方正黑體-繁 Light",
+   "subfamily": "Regular",
+   "full": "方正黑體-繁 Light",
+   "postscript": "FZHeiT-TC-Light",
+   "size": 5620828
+  },
+  {
+   "file": "FZHeiT-TC-Regular.ttf",
+   "path": "/system/fonts/FZHeiT-TC-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "方正黑體-繁",
+   "subfamily": "Regular",
+   "full": "方正黑體-繁",
+   "postscript": "FZHeiT-TC-Regular",
+   "size": 5618312
+  },
+  {
+   "file": "FZKaiT-SC.ttf",
+   "path": "/system/fonts/FZKaiT-SC.ttf",
+   "dir": "/system/fonts",
+   "family": "方正楷体-简",
+   "subfamily": "Regular",
+   "full": "方正楷体-简",
+   "postscript": "FZKaiT-SC",
+   "size": 18596536
+  },
+  {
+   "file": "FZKaiT-TC.ttf",
+   "path": "/system/fonts/FZKaiT-TC.ttf",
+   "dir": "/system/fonts",
+   "family": "方正楷體-繁",
+   "subfamily": "Regular",
+   "full": "方正楷體-繁",
+   "postscript": "FZKaiT-TC",
+   "size": 9028884
+  },
+  {
+   "file": "FZLiB-TC.ttf",
+   "path": "/system/fonts/FZLiB-TC.ttf",
+   "dir": "/system/fonts",
+   "family": "方正隸變-繁",
+   "subfamily": "Regular",
+   "full": "方正隸變-繁",
+   "postscript": "FZLiB-TC",
+   "size": 8650996
+  },
+  {
+   "file": "FZLiS-SC.ttf",
+   "path": "/system/fonts/FZLiS-SC.ttf",
+   "dir": "/system/fonts",
+   "family": "方正隶书-简",
+   "subfamily": "Regular",
+   "full": "方正隶书-简",
+   "postscript": "FZLiS-SC",
+   "size": 21088668
+  },
+  {
+   "file": "FZLiS-TC.ttf",
+   "path": "/system/fonts/FZLiS-TC.ttf",
+   "dir": "/system/fonts",
+   "family": "方正隸書-繁",
+   "subfamily": "Regular",
+   "full": "方正隸書-繁",
+   "postscript": "FZLiS-TC",
+   "size": 10131036
+  },
+  {
+   "file": "FZLiT-SC.ttf",
+   "path": "/system/fonts/FZLiT-SC.ttf",
+   "dir": "/system/fonts",
+   "family": "方正隶体-简",
+   "subfamily": "Regular",
+   "full": "方正隶体-简",
+   "postscript": "FZLiT-SC",
+   "size": 18014276
+  },
+  {
+   "file": "FZMiaoT-TC.ttf",
+   "path": "/system/fonts/FZMiaoT-TC.ttf",
+   "dir": "/system/fonts",
+   "family": "方正喵體-繁",
+   "subfamily": "Regular",
+   "full": "方正喵體-繁",
+   "postscript": "FZMiaoT-TC",
+   "size": 9963252
+  },
+  {
+   "file": "FZMiaoW-SC.ttf",
+   "path": "/system/fonts/FZMiaoW-SC.ttf",
+   "dir": "/system/fonts",
+   "family": "方正喵呜-简",
+   "subfamily": "Regular",
+   "full": "方正喵呜-简",
+   "postscript": "FZMiaoW-SC",
+   "size": 4532216
+  },
+  {
+   "file": "FZShouS-SC.ttf",
+   "path": "/system/fonts/FZShouS-SC.ttf",
+   "dir": "/system/fonts",
+   "family": "方正手书-简",
+   "subfamily": "Regular",
+   "full": "方正手书-简",
+   "postscript": "FZShouS-SC",
+   "size": 4630508
+  },
+  {
+   "file": "FZShouS-TC.ttf",
+   "path": "/system/fonts/FZShouS-TC.ttf",
+   "dir": "/system/fonts",
+   "family": "方正手書-繁",
+   "subfamily": "Regular",
+   "full": "方正手書-繁",
+   "postscript": "FZShouS-TC",
+   "size": 10414080
+  },
+  {
+   "file": "FZShuS-SC.ttf",
+   "path": "/system/fonts/FZShuS-SC.ttf",
+   "dir": "/system/fonts",
+   "family": "方正书宋-简",
+   "subfamily": "Regular",
+   "full": "方正书宋-简",
+   "postscript": "FZShuS-SC",
+   "size": 11800052
+  },
+  {
+   "file": "FZShuS-TC.ttf",
+   "path": "/system/fonts/FZShuS-TC.ttf",
+   "dir": "/system/fonts",
+   "family": "方正書宋-繁",
+   "subfamily": "Regular",
+   "full": "方正書宋-繁",
+   "postscript": "FZShuS-TC",
+   "size": 5782244
+  },
+  {
+   "file": "FZShuT-SC.ttf",
+   "path": "/system/fonts/FZShuT-SC.ttf",
+   "dir": "/system/fonts",
+   "family": "方正舒体-简",
+   "subfamily": "Regular",
+   "full": "方正舒体-简",
+   "postscript": "FZSHUTS",
+   "size": 4771988
+  },
+  {
+   "file": "FZWBJW.ttf",
+   "path": "/system/fonts/FZWBJW.ttf",
+   "dir": "/system/fonts",
+   "family": "方正魏碑简体",
+   "subfamily": "Regular",
+   "full": "方正魏碑简体",
+   "postscript": "FZWBJW--GB1-0",
+   "size": 4953904
+  },
+  {
+   "file": "FZXiaoBS-SC.ttf",
+   "path": "/system/fonts/FZXiaoBS-SC.ttf",
+   "dir": "/system/fonts",
+   "family": "方正小标宋-简",
+   "subfamily": "Regular",
+   "full": "方正小标宋-简",
+   "postscript": "FZXiaoBS-SC",
+   "size": 18312496
+  },
+  {
+   "file": "FZXiaoBS-TC.ttf",
+   "path": "/system/fonts/FZXiaoBS-TC.ttf",
+   "dir": "/system/fonts",
+   "family": "方正小標宋-繁",
+   "subfamily": "Regular",
+   "full": "方正小標宋-繁",
+   "postscript": "FZXiaoBS-TC",
+   "size": 9005780
+  },
+  {
+   "file": "FZXinW-SC.ttf",
+   "path": "/system/fonts/FZXinW-SC.ttf",
+   "dir": "/system/fonts",
+   "family": "方正新魏-简",
+   "subfamily": "Regular",
+   "full": "方正新魏-简",
+   "postscript": "FZXinW-SC",
+   "size": 4772572
+  },
+  {
+   "file": "FZXingK-SC.ttf",
+   "path": "/system/fonts/FZXingK-SC.ttf",
+   "dir": "/system/fonts",
+   "family": "方正行楷-简",
+   "subfamily": "Regular",
+   "full": "方正行楷-简",
+   "postscript": "FZXingK-SC",
+   "size": 5118296
+  },
+  {
+   "file": "FZXingK-TC.ttf",
+   "path": "/system/fonts/FZXingK-TC.ttf",
+   "dir": "/system/fonts",
+   "family": "方正行楷-繁",
+   "subfamily": "Regular",
+   "full": "方正行楷-繁",
+   "postscript": "FZXingK-TC",
+   "size": 11214260
+  },
+  {
+   "file": "FZYAYH-GB18030L2-R.ttf",
+   "path": "/system/fonts/FZYAYH-GB18030L2-R.ttf",
+   "dir": "/system/fonts",
+   "family": "方正雅意黑 GB18030L2 R",
+   "subfamily": "Regular",
+   "full": "FZYaYiHei GB18030L2",
+   "postscript": "FZYAYH-GB18030L2-R",
+   "size": 8988800
+  },
+  {
+   "file": "FZYuanT-SC-Bold.ttf",
+   "path": "/system/fonts/FZYuanT-SC-Bold.ttf",
+   "dir": "/system/fonts",
+   "family": "方正圆体-简 Bold",
+   "subfamily": "Regular",
+   "full": "FZYuanT-SC Bold",
+   "postscript": "FZYuanT-SC-Bold",
+   "size": 16091384
+  },
+  {
+   "file": "FZYuanT-SC-Light.ttf",
+   "path": "/system/fonts/FZYuanT-SC-Light.ttf",
+   "dir": "/system/fonts",
+   "family": "方正圆体-简 Light",
+   "subfamily": "Regular",
+   "full": "FZYuanT-SC Light",
+   "postscript": "FZYuanT-SC-Light",
+   "size": 15537524
+  },
+  {
+   "file": "FZYuanT-SC-Regular.ttf",
+   "path": "/system/fonts/FZYuanT-SC-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "方正圆体-简",
+   "subfamily": "Regular",
+   "full": "FZYuanT-SC",
+   "postscript": "FZYuanT-SC-Regular",
+   "size": 15629308
+  },
+  {
+   "file": "FZYuanT-TC-Bold.ttf",
+   "path": "/system/fonts/FZYuanT-TC-Bold.ttf",
+   "dir": "/system/fonts",
+   "family": "方正圓體-繁 Bold",
+   "subfamily": "Regular",
+   "full": "方正圓體-繁 Bold",
+   "postscript": "FZYuanT-TC-Bold",
+   "size": 7775460
+  },
+  {
+   "file": "FZYuanT-TC-Light.ttf",
+   "path": "/system/fonts/FZYuanT-TC-Light.ttf",
+   "dir": "/system/fonts",
+   "family": "方正圓體-繁 Light",
+   "subfamily": "Regular",
+   "full": "方正圓體-繁 Light",
+   "postscript": "FZYuanT-TC-Light",
+   "size": 7518132
+  },
+  {
+   "file": "FZYuanT-TC-Regular.ttf",
+   "path": "/system/fonts/FZYuanT-TC-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "方正圓體-繁",
+   "subfamily": "Regular",
+   "full": "方正圓體-繁",
+   "postscript": "FZYuanT-TC-Regular",
+   "size": 7556900
+  },
+  {
+   "file": "FZZCHJW.ttf",
+   "path": "/system/fonts/FZZCHJW.ttf",
+   "dir": "/system/fonts",
+   "family": "方正正粗黑简体",
+   "subfamily": "Regular",
+   "full": "方正正粗黑简体",
+   "postscript": "FZZCHJW--GB1-0",
+   "size": 2076764
+  },
+  {
+   "file": "FZZDHJW.ttf",
+   "path": "/system/fonts/FZZDHJW.ttf",
+   "dir": "/system/fonts",
+   "family": "方正正大黑简体",
+   "subfamily": "Regular",
+   "full": "方正正大黑简体",
+   "postscript": "FZZDHJW--GB1-0",
+   "size": 2069544
+  },
+  {
+   "file": "FZZHJW.ttf",
+   "path": "/system/fonts/FZZHJW.ttf",
+   "dir": "/system/fonts",
+   "family": "方正正黑简体",
+   "subfamily": "Regular",
+   "full": "方正正黑简体",
+   "postscript": "FZZHJW--GB1-0",
+   "size": 2109740
+  },
+  {
+   "file": "FZZXHJW.ttf",
+   "path": "/system/fonts/FZZXHJW.ttf",
+   "dir": "/system/fonts",
+   "family": "方正正纤黑简体",
+   "subfamily": "Regular",
+   "full": "方正正纤黑简体",
+   "postscript": "FZZXHJW--GB1-0",
+   "size": 2120580
+  },
+  {
+   "file": "FZZZHONGJW.ttf",
+   "path": "/system/fonts/FZZZHONGJW.ttf",
+   "dir": "/system/fonts",
+   "family": "方正正中黑简体",
+   "subfamily": "Regular",
+   "full": "方正正中黑简体",
+   "postscript": "FZZZHONGJW--GB1-0",
+   "size": 2088716
+  },
+  {
+   "file": "FZZZHUNHJW.ttf",
+   "path": "/system/fonts/FZZZHUNHJW.ttf",
+   "dir": "/system/fonts",
+   "family": "方正正准黑简体",
+   "subfamily": "Regular",
+   "full": "方正正准黑简体",
+   "postscript": "FZZZHUNHJW--GB1-0",
+   "size": 2099936
+  },
+  {
+   "file": "FZZhengK-SC.ttf",
+   "path": "/system/fonts/FZZhengK-SC.ttf",
+   "dir": "/system/fonts",
+   "family": "方正正楷-简",
+   "subfamily": "Regular",
+   "full": "方正正楷-简",
+   "postscript": "FZZhengK-SC",
+   "size": 17967152
+  },
+  {
+   "file": "FZZhongDX-SC.ttf",
+   "path": "/system/fonts/FZZhongDX-SC.ttf",
+   "dir": "/system/fonts",
+   "family": "方正中等线-简",
+   "subfamily": "Regular",
+   "full": "方正中等线-简",
+   "postscript": "FZZhongDX-SC",
+   "size": 14749788
+  },
+  {
+   "file": "FZZhongXK-SC.ttf",
+   "path": "/system/fonts/FZZhongXK-SC.ttf",
+   "dir": "/system/fonts",
+   "family": "方正中行楷-简",
+   "subfamily": "Regular",
+   "full": "方正中行楷-简",
+   "postscript": "FZZhongXK-SC",
+   "size": 4728128
+  },
+  {
+   "file": "FangS-SC.ttf",
+   "path": "/system/fonts/FangS-SC.ttf",
+   "dir": "/system/fonts",
+   "family": "仿宋-简",
+   "subfamily": "Regular",
+   "full": "仿宋-简",
+   "postscript": "FangS-SC",
+   "size": 13523632
+  },
+  {
+   "file": "HMOSColorEmojiCompat.ttf",
+   "path": "/system/fonts/HMOSColorEmojiCompat.ttf",
+   "dir": "/system/fonts",
+   "family": "HMOS Color Emoji",
+   "subfamily": "Regular",
+   "full": "HMOS Color Emoji",
+   "postscript": "HMOSColorEmoji",
+   "size": 16819640
+  },
+  {
+   "file": "HMOSColorEmojiFlags.ttf",
+   "path": "/system/fonts/HMOSColorEmojiFlags.ttf",
+   "dir": "/system/fonts",
+   "family": "HMOS Color Emoji Flags",
+   "subfamily": "Regular",
+   "full": "HMOS Color Emoji Flags",
+   "postscript": "HMOSColorEmojiFlags",
+   "size": 694664
+  },
+  {
+   "file": "HMSymbolVF.ttf",
+   "path": "/system/fonts/HMSymbolVF.ttf",
+   "dir": "/system/fonts",
+   "family": "HM Symbol",
+   "subfamily": "Regular",
+   "full": "HM Symbol Regular",
+   "postscript": "HMSymbol-Regular",
+   "size": 4065052
+  },
+  {
+   "file": "HYQiHeiL3.ttf",
+   "path": "/system/fonts/HYQiHeiL3.ttf",
+   "dir": "/system/fonts",
+   "family": "汉仪旗黑 L3",
+   "subfamily": "Regular",
+   "full": "汉仪旗黑 L3",
+   "postscript": "HYQiHeiL3",
+   "size": 20983272
+  },
+  {
+   "file": "HarmonyOS_Sans.ttf",
+   "path": "/system/fonts/HarmonyOS_Sans.ttf",
+   "dir": "/system/fonts",
+   "family": "HarmonyOS Sans",
+   "subfamily": "Regular",
+   "full": "HarmonyOS Sans",
+   "postscript": "HarmonyOS_Sans",
+   "size": 342076
+  },
+  {
+   "file": "HarmonyOS_Sans_Condensed.ttf",
+   "path": "/system/fonts/HarmonyOS_Sans_Condensed.ttf",
+   "dir": "/system/fonts",
+   "family": "HarmonyOS Sans Condensed",
+   "subfamily": "Regular",
+   "full": "HarmonyOS Sans Condensed",
+   "postscript": "HarmonyOS_Sans_Condensed",
+   "size": 313792
+  },
+  {
+   "file": "HarmonyOS_Sans_Condensed_Italic.ttf",
+   "path": "/system/fonts/HarmonyOS_Sans_Condensed_Italic.ttf",
+   "dir": "/system/fonts",
+   "family": "HarmonyOS Sans Condensed Italic",
+   "subfamily": "Regular",
+   "full": "HarmonyOS Sans Condensed Italic",
+   "postscript": "HarmonyOS_Sans_Condensed_Italic",
+   "size": 307952
+  },
+  {
+   "file": "HarmonyOS_Sans_Digit.ttf",
+   "path": "/system/fonts/HarmonyOS_Sans_Digit.ttf",
+   "dir": "/system/fonts",
+   "family": "HarmonyOS Sans Digit",
+   "subfamily": "Regular",
+   "full": "HarmonyOS Sans Digit",
+   "postscript": "HarmonyOS_Sans_Digit",
+   "size": 2868
+  },
+  {
+   "file": "HarmonyOS_Sans_Digit_Medium.ttf",
+   "path": "/system/fonts/HarmonyOS_Sans_Digit_Medium.ttf",
+   "dir": "/system/fonts",
+   "family": "HarmonyOS Sans Digit Medium",
+   "subfamily": "Regular",
+   "full": "HarmonyOS Sans Digit",
+   "postscript": "HarmonyOS_Sans_Digit",
+   "size": 2908
+  },
+  {
+   "file": "HarmonyOS_Sans_Italic.ttf",
+   "path": "/system/fonts/HarmonyOS_Sans_Italic.ttf",
+   "dir": "/system/fonts",
+   "family": "HarmonyOS Sans",
+   "subfamily": "Italic",
+   "full": "HarmonyOS Sans Italic",
+   "postscript": "HarmonyOS_Sans_Italic",
+   "size": 308632
+  },
+  {
+   "file": "HarmonyOS_Sans_Naskh_Arabic.ttf",
+   "path": "/system/fonts/HarmonyOS_Sans_Naskh_Arabic.ttf",
+   "dir": "/system/fonts",
+   "family": "HarmonyOS Sans Naskh Arabic",
+   "subfamily": "Regular",
+   "full": "HarmonyOS Sans Naskh Arabic",
+   "postscript": "HarmonyOS_Sans_Naskh_Arabic",
+   "size": 140872
+  },
+  {
+   "file": "HarmonyOS_Sans_Naskh_Arabic_UI.ttf",
+   "path": "/system/fonts/HarmonyOS_Sans_Naskh_Arabic_UI.ttf",
+   "dir": "/system/fonts",
+   "family": "HarmonyOS Sans Naskh Arabic UI",
+   "subfamily": "Regular",
+   "full": "HarmonyOS Sans Naskh Arabic UI",
+   "postscript": "HarmonyOS_Sans_Naskh_Arabic_UI",
+   "size": 140940
+  },
+  {
+   "file": "HarmonyOS_Sans_Notdef.ttf",
+   "path": "/system/fonts/HarmonyOS_Sans_Notdef.ttf",
+   "dir": "/system/fonts",
+   "family": "HarmonyOS Sans Notdef",
+   "subfamily": "Regular",
+   "full": "HarmonyOS Sans Notdef",
+   "postscript": "HarmonyOS_Sans_Notdef",
+   "size": 1504
+  },
+  {
+   "file": "HarmonyOS_Sans_SC.ttf",
+   "path": "/system/fonts/HarmonyOS_Sans_SC.ttf",
+   "dir": "/system/fonts",
+   "family": "鸿蒙黑体",
+   "subfamily": "Regular",
+   "full": "鸿蒙黑体",
+   "postscript": "HarmonyOS_Sans_SC",
+   "size": 20617156
+  },
+  {
+   "file": "HarmonyOS_Sans_TC.ttf",
+   "path": "/system/fonts/HarmonyOS_Sans_TC.ttf",
+   "dir": "/system/fonts",
+   "family": "鴻蒙黑體",
+   "subfamily": "Regular",
+   "full": "鴻蒙黑體",
+   "postscript": "HarmonyOS_Sans_TC",
+   "size": 9980028
+  },
+  {
+   "file": "HeiT-SC-Regular.ttf",
+   "path": "/system/fonts/HeiT-SC-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "黑体-简",
+   "subfamily": "Regular",
+   "full": "HeiT-SC",
+   "postscript": "HeiT-SC",
+   "size": 10784836
+  },
+  {
+   "file": "KaiT-SC.ttf",
+   "path": "/system/fonts/KaiT-SC.ttf",
+   "dir": "/system/fonts",
+   "family": "楷体-简",
+   "subfamily": "Regular",
+   "full": "楷体-简",
+   "postscript": "KaiT-SC",
+   "size": 15907064
+  },
+  {
+   "file": "NotoSansAdlam[wght].ttf",
+   "path": "/system/fonts/NotoSansAdlam[wght].ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Adlam",
+   "subfamily": "Regular",
+   "full": "Noto Sans Adlam Regular",
+   "postscript": "NotoSansAdlam-Regular",
+   "size": 136472
+  },
+  {
+   "file": "NotoSansAnatolianHieroglyphs-Regular.ttf",
+   "path": "/system/fonts/NotoSansAnatolianHieroglyphs-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Anatolian Hieroglyphs",
+   "subfamily": "Regular",
+   "full": "Noto Sans Anatolian Hieroglyphs Regular",
+   "postscript": "NotoSansAnatolianHieroglyphs-Regular",
+   "size": 375344
+  },
+  {
+   "file": "NotoSansArmenian[wdth,wght].ttf",
+   "path": "/system/fonts/NotoSansArmenian[wdth,wght].ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Armenian",
+   "subfamily": "Regular",
+   "full": "Noto Sans Armenian Regular",
+   "postscript": "NotoSansArmenian-Regular",
+   "size": 221724
+  },
+  {
+   "file": "NotoSansAvestan-Regular.ttf",
+   "path": "/system/fonts/NotoSansAvestan-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Avestan",
+   "subfamily": "Regular",
+   "full": "Noto Sans Avestan Regular",
+   "postscript": "NotoSansAvestan-Regular",
+   "size": 60532
+  },
+  {
+   "file": "NotoSansBalinese[wght].ttf",
+   "path": "/system/fonts/NotoSansBalinese[wght].ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Balinese",
+   "subfamily": "Regular",
+   "full": "Noto Sans Balinese Regular",
+   "postscript": "NotoSansBalinese-Regular",
+   "size": 194728
+  },
+  {
+   "file": "NotoSansBamum[wght].ttf",
+   "path": "/system/fonts/NotoSansBamum[wght].ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Bamum",
+   "subfamily": "Regular",
+   "full": "Noto Sans Bamum Regular",
+   "postscript": "NotoSansBamum-Regular",
+   "size": 204724
+  },
+  {
+   "file": "NotoSansBassaVah[wght].ttf",
+   "path": "/system/fonts/NotoSansBassaVah[wght].ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Bassa Vah",
+   "subfamily": "Regular",
+   "full": "Noto Sans Bassa Vah Regular",
+   "postscript": "NotoSansBassaVah-Regular",
+   "size": 61308
+  },
+  {
+   "file": "NotoSansBatak-Regular.ttf",
+   "path": "/system/fonts/NotoSansBatak-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Batak",
+   "subfamily": "Regular",
+   "full": "Noto Sans Batak Regular",
+   "postscript": "NotoSansBatak-Regular",
+   "size": 72040
+  },
+  {
+   "file": "NotoSansBengaliUI-Bold.ttf",
+   "path": "/system/fonts/NotoSansBengaliUI-Bold.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Bengali UI",
+   "subfamily": "Bold",
+   "full": "Noto Sans Bengali UI Bold",
+   "postscript": "NotoSansBengaliUI-Bold",
+   "size": 248080
+  },
+  {
+   "file": "NotoSansBengaliUI-Medium.ttf",
+   "path": "/system/fonts/NotoSansBengaliUI-Medium.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Bengali UI Medium",
+   "subfamily": "Regular",
+   "full": "Noto Sans Bengali UI Medium",
+   "postscript": "NotoSansBengaliUI-Medium",
+   "size": 243624
+  },
+  {
+   "file": "NotoSansBengaliUI-Regular.ttf",
+   "path": "/system/fonts/NotoSansBengaliUI-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Bengali UI",
+   "subfamily": "Regular",
+   "full": "Noto Sans Bengali UI Regular",
+   "postscript": "NotoSansBengaliUI-Regular",
+   "size": 239256
+  },
+  {
+   "file": "NotoSansBengaliUI-SemiBold.ttf",
+   "path": "/system/fonts/NotoSansBengaliUI-SemiBold.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Bengali UI SemiBold",
+   "subfamily": "Regular",
+   "full": "Noto Sans Bengali UI SemiBold",
+   "postscript": "NotoSansBengaliUI-SemiBold",
+   "size": 245072
+  },
+  {
+   "file": "NotoSansBengali[wdth,wght].ttf",
+   "path": "/system/fonts/NotoSansBengali[wdth,wght].ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Bengali",
+   "subfamily": "Regular",
+   "full": "Noto Sans Bengali Regular",
+   "postscript": "NotoSansBengali-Regular",
+   "size": 624604
+  },
+  {
+   "file": "NotoSansBhaiksuki-Regular.ttf",
+   "path": "/system/fonts/NotoSansBhaiksuki-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Bhaiksuki",
+   "subfamily": "Regular",
+   "full": "Noto Sans Bhaiksuki Regular",
+   "postscript": "NotoSansBhaiksuki-Regular",
+   "size": 370124
+  },
+  {
+   "file": "NotoSansBrahmi-Regular.ttf",
+   "path": "/system/fonts/NotoSansBrahmi-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Brahmi",
+   "subfamily": "Regular",
+   "full": "Noto Sans Brahmi Regular",
+   "postscript": "NotoSansBrahmi-Regular",
+   "size": 108984
+  },
+  {
+   "file": "NotoSansBuginese-Regular.ttf",
+   "path": "/system/fonts/NotoSansBuginese-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Buginese",
+   "subfamily": "Regular",
+   "full": "Noto Sans Buginese Regular",
+   "postscript": "NotoSansBuginese-Regular",
+   "size": 51976
+  },
+  {
+   "file": "NotoSansBuhid-Regular.ttf",
+   "path": "/system/fonts/NotoSansBuhid-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Buhid",
+   "subfamily": "Regular",
+   "full": "Noto Sans Buhid Regular",
+   "postscript": "NotoSansBuhid-Regular",
+   "size": 30832
+  },
+  {
+   "file": "NotoSansCJK-Regular.ttc",
+   "path": "/system/fonts/NotoSansCJK-Regular.ttc",
+   "dir": "/system/fonts",
+   "family": "Noto Sans CJK JP",
+   "subfamily": "Regular",
+   "full": "Noto Sans CJK JP",
+   "postscript": "NotoSansCJKjp-Regular",
+   "size": 19484784
+  },
+  {
+   "file": "NotoSansCJK-Regular.ttc",
+   "path": "/system/fonts/NotoSansCJK-Regular.ttc",
+   "dir": "/system/fonts",
+   "family": "Noto Sans CJK KR",
+   "subfamily": "Regular",
+   "full": "Noto Sans CJK KR",
+   "postscript": "NotoSansCJKkr-Regular",
+   "size": 19484784
+  },
+  {
+   "file": "NotoSansCJK-Regular.ttc",
+   "path": "/system/fonts/NotoSansCJK-Regular.ttc",
+   "dir": "/system/fonts",
+   "family": "Noto Sans CJK SC",
+   "subfamily": "Regular",
+   "full": "Noto Sans CJK SC",
+   "postscript": "NotoSansCJKsc-Regular",
+   "size": 19484784
+  },
+  {
+   "file": "NotoSansCJK-Regular.ttc",
+   "path": "/system/fonts/NotoSansCJK-Regular.ttc",
+   "dir": "/system/fonts",
+   "family": "Noto Sans CJK TC",
+   "subfamily": "Regular",
+   "full": "Noto Sans CJK TC",
+   "postscript": "NotoSansCJKtc-Regular",
+   "size": 19484784
+  },
+  {
+   "file": "NotoSansCJK-Regular.ttc",
+   "path": "/system/fonts/NotoSansCJK-Regular.ttc",
+   "dir": "/system/fonts",
+   "family": "Noto Sans CJK HK",
+   "subfamily": "Regular",
+   "full": "Noto Sans CJK HK",
+   "postscript": "NotoSansCJKhk-Regular",
+   "size": 19484784
+  },
+  {
+   "file": "NotoSansCJK-Regular.ttc",
+   "path": "/system/fonts/NotoSansCJK-Regular.ttc",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Mono CJK JP",
+   "subfamily": "Regular",
+   "full": "Noto Sans Mono CJK JP",
+   "postscript": "NotoSansMonoCJKjp-Regular",
+   "size": 19484784
+  },
+  {
+   "file": "NotoSansCJK-Regular.ttc",
+   "path": "/system/fonts/NotoSansCJK-Regular.ttc",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Mono CJK KR",
+   "subfamily": "Regular",
+   "full": "Noto Sans Mono CJK KR",
+   "postscript": "NotoSansMonoCJKkr-Regular",
+   "size": 19484784
+  },
+  {
+   "file": "NotoSansCJK-Regular.ttc",
+   "path": "/system/fonts/NotoSansCJK-Regular.ttc",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Mono CJK SC",
+   "subfamily": "Regular",
+   "full": "Noto Sans Mono CJK SC",
+   "postscript": "NotoSansMonoCJKsc-Regular",
+   "size": 19484784
+  },
+  {
+   "file": "NotoSansCJK-Regular.ttc",
+   "path": "/system/fonts/NotoSansCJK-Regular.ttc",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Mono CJK TC",
+   "subfamily": "Regular",
+   "full": "Noto Sans Mono CJK TC",
+   "postscript": "NotoSansMonoCJKtc-Regular",
+   "size": 19484784
+  },
+  {
+   "file": "NotoSansCJK-Regular.ttc",
+   "path": "/system/fonts/NotoSansCJK-Regular.ttc",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Mono CJK HK",
+   "subfamily": "Regular",
+   "full": "Noto Sans Mono CJK HK",
+   "postscript": "NotoSansMonoCJKhk-Regular",
+   "size": 19484784
+  },
+  {
+   "file": "NotoSansCanadianAboriginal[wght].ttf",
+   "path": "/system/fonts/NotoSansCanadianAboriginal[wght].ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Canadian Aboriginal",
+   "subfamily": "Regular",
+   "full": "Noto Sans Canadian Aboriginal Regular",
+   "postscript": "NotoSansCanadianAboriginal-Regular",
+   "size": 260700
+  },
+  {
+   "file": "NotoSansCarian-Regular.ttf",
+   "path": "/system/fonts/NotoSansCarian-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Carian",
+   "subfamily": "Regular",
+   "full": "Noto Sans Carian Regular",
+   "postscript": "NotoSansCarian-Regular",
+   "size": 53300
+  },
+  {
+   "file": "NotoSansChakma-Regular.ttf",
+   "path": "/system/fonts/NotoSansChakma-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Chakma",
+   "subfamily": "Regular",
+   "full": "Noto Sans Chakma Regular",
+   "postscript": "NotoSansChakma-Regular",
+   "size": 126960
+  },
+  {
+   "file": "NotoSansCham[wght].ttf",
+   "path": "/system/fonts/NotoSansCham[wght].ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Cham",
+   "subfamily": "Regular",
+   "full": "Noto Sans Cham Regular",
+   "postscript": "NotoSansCham-Regular",
+   "size": 158448
+  },
+  {
+   "file": "NotoSansCherokee[wght].ttf",
+   "path": "/system/fonts/NotoSansCherokee[wght].ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Cherokee",
+   "subfamily": "Regular",
+   "full": "Noto Sans Cherokee Regular",
+   "postscript": "NotoSansCherokee-Regular",
+   "size": 224360
+  },
+  {
+   "file": "NotoSansCoptic-Regular.ttf",
+   "path": "/system/fonts/NotoSansCoptic-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Coptic",
+   "subfamily": "Regular",
+   "full": "Noto Sans Coptic Regular",
+   "postscript": "NotoSansCoptic-Regular",
+   "size": 91108
+  },
+  {
+   "file": "NotoSansCuneiform-Regular.ttf",
+   "path": "/system/fonts/NotoSansCuneiform-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Cuneiform",
+   "subfamily": "Regular",
+   "full": "Noto Sans Cuneiform Regular",
+   "postscript": "NotoSansCuneiform-Regular",
+   "size": 1425840
+  },
+  {
+   "file": "NotoSansCypriot-Regular.ttf",
+   "path": "/system/fonts/NotoSansCypriot-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Cypriot",
+   "subfamily": "Regular",
+   "full": "Noto Sans Cypriot Regular",
+   "postscript": "NotoSansCypriot-Regular",
+   "size": 55720
+  },
+  {
+   "file": "NotoSansDeseret-Regular.ttf",
+   "path": "/system/fonts/NotoSansDeseret-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Deseret",
+   "subfamily": "Regular",
+   "full": "Noto Sans Deseret Regular",
+   "postscript": "NotoSansDeseret-Regular",
+   "size": 60572
+  },
+  {
+   "file": "NotoSansDevanagariUI-Bold.ttf",
+   "path": "/system/fonts/NotoSansDevanagariUI-Bold.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Devanagari UI",
+   "subfamily": "Bold",
+   "full": "Noto Sans Devanagari UI Bold",
+   "postscript": "NotoSansDevanagariUI-Bold",
+   "size": 266976
+  },
+  {
+   "file": "NotoSansDevanagariUI-Medium.ttf",
+   "path": "/system/fonts/NotoSansDevanagariUI-Medium.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Devanagari UI Medium",
+   "subfamily": "Regular",
+   "full": "Noto Sans Devanagari UI Medium",
+   "postscript": "NotoSansDevanagariUI-Medium",
+   "size": 265024
+  },
+  {
+   "file": "NotoSansDevanagariUI-Regular.ttf",
+   "path": "/system/fonts/NotoSansDevanagariUI-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Devanagari UI",
+   "subfamily": "Regular",
+   "full": "Noto Sans Devanagari UI Regular",
+   "postscript": "NotoSansDevanagariUI-Regular",
+   "size": 260592
+  },
+  {
+   "file": "NotoSansDevanagariUI-SemiBold.ttf",
+   "path": "/system/fonts/NotoSansDevanagariUI-SemiBold.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Devanagari UI SemiBold",
+   "subfamily": "Regular",
+   "full": "Noto Sans Devanagari UI SemiBold",
+   "postscript": "NotoSansDevanagariUI-SemiBold",
+   "size": 265312
+  },
+  {
+   "file": "NotoSansDevanagari[wdth,wght].ttf",
+   "path": "/system/fonts/NotoSansDevanagari[wdth,wght].ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Devanagari",
+   "subfamily": "Regular",
+   "full": "Noto Sans Devanagari Regular",
+   "postscript": "NotoSansDevanagari-Regular",
+   "size": 917268
+  },
+  {
+   "file": "NotoSansEgyptianHieroglyphs-Regular.ttf",
+   "path": "/system/fonts/NotoSansEgyptianHieroglyphs-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Egyptian Hieroglyphs",
+   "subfamily": "Regular",
+   "full": "Noto Sans Egyptian Hieroglyphs Regular",
+   "postscript": "NotoSansEgyptianHieroglyphs-Regular",
+   "size": 1008180
+  },
+  {
+   "file": "NotoSansElbasan-Regular.ttf",
+   "path": "/system/fonts/NotoSansElbasan-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Elbasan",
+   "subfamily": "Regular",
+   "full": "Noto Sans Elbasan Regular",
+   "postscript": "NotoSansElbasan-Regular",
+   "size": 60084
+  },
+  {
+   "file": "NotoSansEthiopic[wdth,wght].ttf",
+   "path": "/system/fonts/NotoSansEthiopic[wdth,wght].ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Ethiopic",
+   "subfamily": "Regular",
+   "full": "Noto Sans Ethiopic Regular",
+   "postscript": "NotoSansEthiopic-Regular",
+   "size": 1143168
+  },
+  {
+   "file": "NotoSansGeorgian[wdth,wght].ttf",
+   "path": "/system/fonts/NotoSansGeorgian[wdth,wght].ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Georgian",
+   "subfamily": "Regular",
+   "full": "Noto Sans Georgian Regular",
+   "postscript": "NotoSansGeorgian-Regular",
+   "size": 311728
+  },
+  {
+   "file": "NotoSansGlagolitic-Regular.ttf",
+   "path": "/system/fonts/NotoSansGlagolitic-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Glagolitic",
+   "subfamily": "Regular",
+   "full": "Noto Sans Glagolitic Regular",
+   "postscript": "NotoSansGlagolitic-Regular",
+   "size": 81396
+  },
+  {
+   "file": "NotoSansGothic-Regular.ttf",
+   "path": "/system/fonts/NotoSansGothic-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Gothic",
+   "subfamily": "Regular",
+   "full": "Noto Sans Gothic Regular",
+   "postscript": "NotoSansGothic-Regular",
+   "size": 49956
+  },
+  {
+   "file": "NotoSansGrantha-Regular.ttf",
+   "path": "/system/fonts/NotoSansGrantha-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Grantha",
+   "subfamily": "Regular",
+   "full": "Noto Sans Grantha Regular",
+   "postscript": "NotoSansGrantha-Regular",
+   "size": 407456
+  },
+  {
+   "file": "NotoSansGujaratiUI-Bold.ttf",
+   "path": "/system/fonts/NotoSansGujaratiUI-Bold.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Gujarati UI",
+   "subfamily": "Bold",
+   "full": "Noto Sans Gujarati UI Bold",
+   "postscript": "NotoSansGujaratiUI-Bold",
+   "size": 243876
+  },
+  {
+   "file": "NotoSansGujaratiUI-Regular.ttf",
+   "path": "/system/fonts/NotoSansGujaratiUI-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Gujarati UI",
+   "subfamily": "Regular",
+   "full": "Noto Sans Gujarati UI Regular",
+   "postscript": "NotoSansGujaratiUI-Regular",
+   "size": 243740
+  },
+  {
+   "file": "NotoSansGujarati[wdth,wght].ttf",
+   "path": "/system/fonts/NotoSansGujarati[wdth,wght].ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Gujarati",
+   "subfamily": "Regular",
+   "full": "Noto Sans Gujarati Regular",
+   "postscript": "NotoSansGujarati-Regular",
+   "size": 681448
+  },
+  {
+   "file": "NotoSansGunjalaGondi[wght].ttf",
+   "path": "/system/fonts/NotoSansGunjalaGondi[wght].ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Gunjala Gondi",
+   "subfamily": "Regular",
+   "full": "Noto Sans Gunjala Gondi Regular",
+   "postscript": "NotoSansGunjalaGondi-Regular",
+   "size": 171312
+  },
+  {
+   "file": "NotoSansGurmukhiUI-Bold.ttf",
+   "path": "/system/fonts/NotoSansGurmukhiUI-Bold.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Gurmukhi UI",
+   "subfamily": "Bold",
+   "full": "Noto Sans Gurmukhi UI Bold",
+   "postscript": "NotoSansGurmukhiUI-Bold",
+   "size": 94016
+  },
+  {
+   "file": "NotoSansGurmukhiUI-Medium.ttf",
+   "path": "/system/fonts/NotoSansGurmukhiUI-Medium.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Gurmukhi UI Medium",
+   "subfamily": "Regular",
+   "full": "Noto Sans Gurmukhi UI Medium",
+   "postscript": "NotoSansGurmukhiUI-Medium",
+   "size": 93956
+  },
+  {
+   "file": "NotoSansGurmukhiUI-Regular.ttf",
+   "path": "/system/fonts/NotoSansGurmukhiUI-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Gurmukhi UI",
+   "subfamily": "Regular",
+   "full": "Noto Sans Gurmukhi UI Regular",
+   "postscript": "NotoSansGurmukhiUI-Regular",
+   "size": 94216
+  },
+  {
+   "file": "NotoSansGurmukhiUI-SemiBold.ttf",
+   "path": "/system/fonts/NotoSansGurmukhiUI-SemiBold.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Gurmukhi UI SemiBold",
+   "subfamily": "Regular",
+   "full": "Noto Sans Gurmukhi UI SemiBold",
+   "postscript": "NotoSansGurmukhiUI-SemiBold",
+   "size": 94080
+  },
+  {
+   "file": "NotoSansGurmukhi[wdth,wght].ttf",
+   "path": "/system/fonts/NotoSansGurmukhi[wdth,wght].ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Gurmukhi",
+   "subfamily": "Regular",
+   "full": "Noto Sans Gurmukhi Regular",
+   "postscript": "NotoSansGurmukhi-Regular",
+   "size": 269216
+  },
+  {
+   "file": "NotoSansHanifiRohingya[wght].ttf",
+   "path": "/system/fonts/NotoSansHanifiRohingya[wght].ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Hanifi Rohingya",
+   "subfamily": "Regular",
+   "full": "Noto Sans Hanifi Rohingya Regular",
+   "postscript": "NotoSansHanifiRohingya-Regular",
+   "size": 108308
+  },
+  {
+   "file": "NotoSansHanunoo-Regular.ttf",
+   "path": "/system/fonts/NotoSansHanunoo-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Hanunoo",
+   "subfamily": "Regular",
+   "full": "Noto Sans Hanunoo Regular",
+   "postscript": "NotoSansHanunoo-Regular",
+   "size": 52188
+  },
+  {
+   "file": "NotoSansHatran-Regular.ttf",
+   "path": "/system/fonts/NotoSansHatran-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Hatran",
+   "subfamily": "Regular",
+   "full": "Noto Sans Hatran Regular",
+   "postscript": "NotoSansHatran-Regular",
+   "size": 50744
+  },
+  {
+   "file": "NotoSansHebrew[wdth,wght].ttf",
+   "path": "/system/fonts/NotoSansHebrew[wdth,wght].ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Hebrew",
+   "subfamily": "Regular",
+   "full": "Noto Sans Hebrew Regular",
+   "postscript": "NotoSansHebrew-Regular",
+   "size": 183076
+  },
+  {
+   "file": "NotoSansImperialAramaic-Regular.ttf",
+   "path": "/system/fonts/NotoSansImperialAramaic-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Imperial Aramaic",
+   "subfamily": "Regular",
+   "full": "Noto Sans Imperial Aramaic Regular",
+   "postscript": "NotoSansImperialAramaic-Regular",
+   "size": 52184
+  },
+  {
+   "file": "NotoSansInscriptionalPahlavi-Regular.ttf",
+   "path": "/system/fonts/NotoSansInscriptionalPahlavi-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Inscriptional Pahlavi",
+   "subfamily": "Regular",
+   "full": "Noto Sans Inscriptional Pahlavi Regular",
+   "postscript": "NotoSansInscriptionalPahlavi-Regular",
+   "size": 52076
+  },
+  {
+   "file": "NotoSansInscriptionalParthian-Regular.ttf",
+   "path": "/system/fonts/NotoSansInscriptionalParthian-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Inscriptional Parthian",
+   "subfamily": "Regular",
+   "full": "Noto Sans Inscriptional Parthian Regular",
+   "postscript": "NotoSansInscriptionalParthian-Regular",
+   "size": 52504
+  },
+  {
+   "file": "NotoSansJavanese[wght].ttf",
+   "path": "/system/fonts/NotoSansJavanese[wght].ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Javanese",
+   "subfamily": "Regular",
+   "full": "Noto Sans Javanese Regular",
+   "postscript": "NotoSansJavanese-Regular",
+   "size": 250440
+  },
+  {
+   "file": "NotoSansKaithi-Regular.ttf",
+   "path": "/system/fonts/NotoSansKaithi-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Kaithi",
+   "subfamily": "Regular",
+   "full": "Noto Sans Kaithi Regular",
+   "postscript": "NotoSansKaithi-Regular",
+   "size": 138336
+  },
+  {
+   "file": "NotoSansKannadaUI-Bold.ttf",
+   "path": "/system/fonts/NotoSansKannadaUI-Bold.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Kannada UI",
+   "subfamily": "Bold",
+   "full": "Noto Sans Kannada UI Bold",
+   "postscript": "NotoSansKannadaUI-Bold",
+   "size": 220016
+  },
+  {
+   "file": "NotoSansKannadaUI-Medium.ttf",
+   "path": "/system/fonts/NotoSansKannadaUI-Medium.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Kannada UI Medium",
+   "subfamily": "Regular",
+   "full": "Noto Sans Kannada UI Medium",
+   "postscript": "NotoSansKannadaUI-Medium",
+   "size": 219364
+  },
+  {
+   "file": "NotoSansKannadaUI-Regular.ttf",
+   "path": "/system/fonts/NotoSansKannadaUI-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Kannada UI",
+   "subfamily": "Regular",
+   "full": "Noto Sans Kannada UI Regular",
+   "postscript": "NotoSansKannadaUI-Regular",
+   "size": 215028
+  },
+  {
+   "file": "NotoSansKannadaUI-SemiBold.ttf",
+   "path": "/system/fonts/NotoSansKannadaUI-SemiBold.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Kannada UI SemiBold",
+   "subfamily": "Regular",
+   "full": "Noto Sans Kannada UI SemiBold",
+   "postscript": "NotoSansKannadaUI-SemiBold",
+   "size": 217596
+  },
+  {
+   "file": "NotoSansKannada[wdth,wght].ttf",
+   "path": "/system/fonts/NotoSansKannada[wdth,wght].ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Kannada",
+   "subfamily": "Regular",
+   "full": "Noto Sans Kannada Regular",
+   "postscript": "NotoSansKannada-Regular",
+   "size": 656968
+  },
+  {
+   "file": "NotoSansKayahLi[wght].ttf",
+   "path": "/system/fonts/NotoSansKayahLi[wght].ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Kayah Li",
+   "subfamily": "Regular",
+   "full": "Noto Sans Kayah Li Regular",
+   "postscript": "NotoSansKayahLi-Regular",
+   "size": 52440
+  },
+  {
+   "file": "NotoSansKharoshthi-Regular.ttf",
+   "path": "/system/fonts/NotoSansKharoshthi-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Kharoshthi",
+   "subfamily": "Regular",
+   "full": "Noto Sans Kharoshthi Regular",
+   "postscript": "NotoSansKharoshthi-Regular",
+   "size": 91472
+  },
+  {
+   "file": "NotoSansKhmer[wdth,wght].ttf",
+   "path": "/system/fonts/NotoSansKhmer[wdth,wght].ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Khmer",
+   "subfamily": "Regular",
+   "full": "Noto Sans Khmer Regular",
+   "postscript": "NotoSansKhmer-Regular",
+   "size": 344568
+  },
+  {
+   "file": "NotoSansKhojki-Regular.ttf",
+   "path": "/system/fonts/NotoSansKhojki-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Khojki",
+   "subfamily": "Regular",
+   "full": "Noto Sans Khojki Regular",
+   "postscript": "NotoSansKhojki-Regular",
+   "size": 110252
+  },
+  {
+   "file": "NotoSansLao[wdth,wght].ttf",
+   "path": "/system/fonts/NotoSansLao[wdth,wght].ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Lao",
+   "subfamily": "Regular",
+   "full": "Noto Sans Lao Regular",
+   "postscript": "NotoSansLao-Regular",
+   "size": 153520
+  },
+  {
+   "file": "NotoSansLepcha-Regular.ttf",
+   "path": "/system/fonts/NotoSansLepcha-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Lepcha",
+   "subfamily": "Regular",
+   "full": "Noto Sans Lepcha Regular",
+   "postscript": "NotoSansLepcha-Regular",
+   "size": 76440
+  },
+  {
+   "file": "NotoSansLimbu-Regular.ttf",
+   "path": "/system/fonts/NotoSansLimbu-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Limbu",
+   "subfamily": "Regular",
+   "full": "Noto Sans Limbu Regular",
+   "postscript": "NotoSansLimbu-Regular",
+   "size": 60820
+  },
+  {
+   "file": "NotoSansLinearA-Regular.ttf",
+   "path": "/system/fonts/NotoSansLinearA-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Linear A",
+   "subfamily": "Regular",
+   "full": "Noto Sans Linear A Regular",
+   "postscript": "NotoSansLinearA-Regular",
+   "size": 137872
+  },
+  {
+   "file": "NotoSansLinearB-Regular.ttf",
+   "path": "/system/fonts/NotoSansLinearB-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Linear B",
+   "subfamily": "Regular",
+   "full": "Noto Sans Linear B Regular",
+   "postscript": "NotoSansLinearB-Regular",
+   "size": 135716
+  },
+  {
+   "file": "NotoSansLisu[wght].ttf",
+   "path": "/system/fonts/NotoSansLisu[wght].ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Lisu",
+   "subfamily": "Regular",
+   "full": "Noto Sans Lisu Regular",
+   "postscript": "NotoSansLisu-Regular",
+   "size": 56240
+  },
+  {
+   "file": "NotoSansLycian-Regular.ttf",
+   "path": "/system/fonts/NotoSansLycian-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Lycian",
+   "subfamily": "Regular",
+   "full": "Noto Sans Lycian Regular",
+   "postscript": "NotoSansLycian-Regular",
+   "size": 50368
+  },
+  {
+   "file": "NotoSansLydian-Regular.ttf",
+   "path": "/system/fonts/NotoSansLydian-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Lydian",
+   "subfamily": "Regular",
+   "full": "Noto Sans Lydian Regular",
+   "postscript": "NotoSansLydian-Regular",
+   "size": 50536
+  },
+  {
+   "file": "NotoSansMalayalamUI-Bold.ttf",
+   "path": "/system/fonts/NotoSansMalayalamUI-Bold.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Malayalam UI",
+   "subfamily": "Bold",
+   "full": "Noto Sans Malayalam UI Bold",
+   "postscript": "NotoSansMalayalamUI-Bold",
+   "size": 151192
+  },
+  {
+   "file": "NotoSansMalayalamUI-Medium.ttf",
+   "path": "/system/fonts/NotoSansMalayalamUI-Medium.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Malayalam UI Medium",
+   "subfamily": "Regular",
+   "full": "Noto Sans Malayalam UI Medium",
+   "postscript": "NotoSansMalayalamUI-Medium",
+   "size": 147312
+  },
+  {
+   "file": "NotoSansMalayalamUI-Regular.ttf",
+   "path": "/system/fonts/NotoSansMalayalamUI-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Malayalam UI",
+   "subfamily": "Regular",
+   "full": "Noto Sans Malayalam UI Regular",
+   "postscript": "NotoSansMalayalamUI-Regular",
+   "size": 146124
+  },
+  {
+   "file": "NotoSansMalayalamUI-SemiBold.ttf",
+   "path": "/system/fonts/NotoSansMalayalamUI-SemiBold.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Malayalam UI SemiBold",
+   "subfamily": "Regular",
+   "full": "Noto Sans Malayalam UI SemiBold",
+   "postscript": "NotoSansMalayalamUI-SemiBold",
+   "size": 148980
+  },
+  {
+   "file": "NotoSansMalayalam[wdth,wght].ttf",
+   "path": "/system/fonts/NotoSansMalayalam[wdth,wght].ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Malayalam",
+   "subfamily": "Regular",
+   "full": "Noto Sans Malayalam Regular",
+   "postscript": "NotoSansMalayalam-Regular",
+   "size": 493180
+  },
+  {
+   "file": "NotoSansMandaic-Regular.ttf",
+   "path": "/system/fonts/NotoSansMandaic-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Mandaic",
+   "subfamily": "Regular",
+   "full": "Noto Sans Mandaic Regular",
+   "postscript": "NotoSansMandaic-Regular",
+   "size": 65500
+  },
+  {
+   "file": "NotoSansManichaean-Regular.ttf",
+   "path": "/system/fonts/NotoSansManichaean-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Manichaean",
+   "subfamily": "Regular",
+   "full": "Noto Sans Manichaean Regular",
+   "postscript": "NotoSansManichaean-Regular",
+   "size": 93732
+  },
+  {
+   "file": "NotoSansMarchen-Regular.ttf",
+   "path": "/system/fonts/NotoSansMarchen-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Marchen",
+   "subfamily": "Regular",
+   "full": "Noto Sans Marchen Regular",
+   "postscript": "NotoSansMarchen-Regular",
+   "size": 287684
+  },
+  {
+   "file": "NotoSansMasaramGondi-Regular.ttf",
+   "path": "/system/fonts/NotoSansMasaramGondi-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Masaram Gondi",
+   "subfamily": "Regular",
+   "full": "Noto Sans Masaram Gondi Regular",
+   "postscript": "NotoSansMasaramGondi-Regular",
+   "size": 86204
+  },
+  {
+   "file": "NotoSansMath-Regular.ttf",
+   "path": "/system/fonts/NotoSansMath-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Math",
+   "subfamily": "Regular",
+   "full": "Noto Sans Math Regular",
+   "postscript": "NotoSansMath-Regular",
+   "size": 979656
+  },
+  {
+   "file": "NotoSansMedefaidrin[wght].ttf",
+   "path": "/system/fonts/NotoSansMedefaidrin[wght].ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Medefaidrin",
+   "subfamily": "Regular",
+   "full": "Noto Sans Medefaidrin Regular",
+   "postscript": "NotoSansMedefaidrin-Regular",
+   "size": 112788
+  },
+  {
+   "file": "NotoSansMeeteiMayek[wght].ttf",
+   "path": "/system/fonts/NotoSansMeeteiMayek[wght].ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Meetei Mayek",
+   "subfamily": "Regular",
+   "full": "Noto Sans Meetei Mayek Regular",
+   "postscript": "NotoSansMeeteiMayek-Regular",
+   "size": 95616
+  },
+  {
+   "file": "NotoSansMeroitic-Regular.ttf",
+   "path": "/system/fonts/NotoSansMeroitic-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Meroitic",
+   "subfamily": "Regular",
+   "full": "Noto Sans Meroitic Regular",
+   "postscript": "NotoSansMeroitic-Regular",
+   "size": 87636
+  },
+  {
+   "file": "NotoSansMiao-Regular.ttf",
+   "path": "/system/fonts/NotoSansMiao-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Miao",
+   "subfamily": "Regular",
+   "full": "Noto Sans Miao Regular",
+   "postscript": "NotoSansMiao-Regular",
+   "size": 100188
+  },
+  {
+   "file": "NotoSansModi-Regular.ttf",
+   "path": "/system/fonts/NotoSansModi-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Modi",
+   "subfamily": "Regular",
+   "full": "Noto Sans Modi Regular",
+   "postscript": "NotoSansModi-Regular",
+   "size": 107020
+  },
+  {
+   "file": "NotoSansMongolian-Regular.ttf",
+   "path": "/system/fonts/NotoSansMongolian-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Mongolian",
+   "subfamily": "Regular",
+   "full": "Noto Sans Mongolian Regular",
+   "postscript": "NotoSansMongolian-Regular",
+   "size": 285152
+  },
+  {
+   "file": "NotoSansMono[wdth,wght].ttf",
+   "path": "/system/fonts/NotoSansMono[wdth,wght].ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Mono",
+   "subfamily": "Regular",
+   "full": "Noto Sans Mono Regular",
+   "postscript": "NotoSansMono-Regular",
+   "size": 1594180
+  },
+  {
+   "file": "NotoSansMro-Regular.ttf",
+   "path": "/system/fonts/NotoSansMro-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Mro",
+   "subfamily": "Regular",
+   "full": "Noto Sans Mro Regular",
+   "postscript": "NotoSansMro-Regular",
+   "size": 54272
+  },
+  {
+   "file": "NotoSansMultani-Regular.ttf",
+   "path": "/system/fonts/NotoSansMultani-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Multani",
+   "subfamily": "Regular",
+   "full": "Noto Sans Multani Regular",
+   "postscript": "NotoSansMultani-Regular",
+   "size": 57728
+  },
+  {
+   "file": "NotoSansMyanmar[wdth,wght].ttf",
+   "path": "/system/fonts/NotoSansMyanmar[wdth,wght].ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Myanmar",
+   "subfamily": "Regular",
+   "full": "Noto Sans Myanmar Regular",
+   "postscript": "NotoSansMyanmar-Regular",
+   "size": 784832
+  },
+  {
+   "file": "NotoSansNKo-Regular.ttf",
+   "path": "/system/fonts/NotoSansNKo-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans NKo",
+   "subfamily": "Regular",
+   "full": "Noto Sans NKo Regular",
+   "postscript": "NotoSansNKo-Regular",
+   "size": 76892
+  },
+  {
+   "file": "NotoSansNabataean-Regular.ttf",
+   "path": "/system/fonts/NotoSansNabataean-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Nabataean",
+   "subfamily": "Regular",
+   "full": "Noto Sans Nabataean Regular",
+   "postscript": "NotoSansNabataean-Regular",
+   "size": 55600
+  },
+  {
+   "file": "NotoSansNewTaiLue[wght].ttf",
+   "path": "/system/fonts/NotoSansNewTaiLue[wght].ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans New Tai Lue",
+   "subfamily": "Regular",
+   "full": "Noto Sans New Tai Lue Regular",
+   "postscript": "NotoSansNewTaiLue-Regular",
+   "size": 76064
+  },
+  {
+   "file": "NotoSansNewa-Regular.ttf",
+   "path": "/system/fonts/NotoSansNewa-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Newa",
+   "subfamily": "Regular",
+   "full": "Noto Sans Newa Regular",
+   "postscript": "NotoSansNewa-Regular",
+   "size": 259668
+  },
+  {
+   "file": "NotoSansOgham-Regular.ttf",
+   "path": "/system/fonts/NotoSansOgham-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Ogham",
+   "subfamily": "Regular",
+   "full": "Noto Sans Ogham Regular",
+   "postscript": "NotoSansOgham-Regular",
+   "size": 47540
+  },
+  {
+   "file": "NotoSansOlChiki[wght].ttf",
+   "path": "/system/fonts/NotoSansOlChiki[wght].ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Ol Chiki",
+   "subfamily": "Regular",
+   "full": "Noto Sans Ol Chiki Regular",
+   "postscript": "NotoSansOlChiki-Regular",
+   "size": 91152
+  },
+  {
+   "file": "NotoSansOldItalic-Regular.ttf",
+   "path": "/system/fonts/NotoSansOldItalic-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Old Italic",
+   "subfamily": "Regular",
+   "full": "Noto Sans Old Italic Regular",
+   "postscript": "NotoSansOldItalic-Regular",
+   "size": 51064
+  },
+  {
+   "file": "NotoSansOldNorthArabian-Regular.ttf",
+   "path": "/system/fonts/NotoSansOldNorthArabian-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Old North Arabian",
+   "subfamily": "Regular",
+   "full": "Noto Sans Old North Arabian Regular",
+   "postscript": "NotoSansOldNorthArabian-Regular",
+   "size": 53664
+  },
+  {
+   "file": "NotoSansOldPermic-Regular.ttf",
+   "path": "/system/fonts/NotoSansOldPermic-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Old Permic",
+   "subfamily": "Regular",
+   "full": "Noto Sans Old Permic Regular",
+   "postscript": "NotoSansOldPermic-Regular",
+   "size": 52264
+  },
+  {
+   "file": "NotoSansOldPersian-Regular.ttf",
+   "path": "/system/fonts/NotoSansOldPersian-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Old Persian",
+   "subfamily": "Regular",
+   "full": "Noto Sans Old Persian Regular",
+   "postscript": "NotoSansOldPersian-Regular",
+   "size": 59860
+  },
+  {
+   "file": "NotoSansOldSouthArabian-Regular.ttf",
+   "path": "/system/fonts/NotoSansOldSouthArabian-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Old South Arabian",
+   "subfamily": "Regular",
+   "full": "Noto Sans Old South Arabian Regular",
+   "postscript": "NotoSansOldSouthArabian-Regular",
+   "size": 51336
+  },
+  {
+   "file": "NotoSansOldTurkic-Regular.ttf",
+   "path": "/system/fonts/NotoSansOldTurkic-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Old Turkic",
+   "subfamily": "Regular",
+   "full": "Noto Sans Old Turkic Regular",
+   "postscript": "NotoSansOldTurkic-Regular",
+   "size": 56048
+  },
+  {
+   "file": "NotoSansOriya[wdth,wght].ttf",
+   "path": "/system/fonts/NotoSansOriya[wdth,wght].ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Oriya",
+   "subfamily": "Regular",
+   "full": "Noto Sans Oriya Regular",
+   "postscript": "NotoSansOriya-Regular",
+   "size": 467912
+  },
+  {
+   "file": "NotoSansOsage-Regular.ttf",
+   "path": "/system/fonts/NotoSansOsage-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Osage",
+   "subfamily": "Regular",
+   "full": "Noto Sans Osage Regular",
+   "postscript": "NotoSansOsage-Regular",
+   "size": 60076
+  },
+  {
+   "file": "NotoSansOsmanya-Regular.ttf",
+   "path": "/system/fonts/NotoSansOsmanya-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Osmanya",
+   "subfamily": "Regular",
+   "full": "Noto Sans Osmanya Regular",
+   "postscript": "NotoSansOsmanya-Regular",
+   "size": 57652
+  },
+  {
+   "file": "NotoSansPahawhHmong-Regular.ttf",
+   "path": "/system/fonts/NotoSansPahawhHmong-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Pahawh Hmong",
+   "subfamily": "Regular",
+   "full": "Noto Sans Pahawh Hmong Regular",
+   "postscript": "NotoSansPahawhHmong-Regular",
+   "size": 73820
+  },
+  {
+   "file": "NotoSansPalmyrene-Regular.ttf",
+   "path": "/system/fonts/NotoSansPalmyrene-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Palmyrene",
+   "subfamily": "Regular",
+   "full": "Noto Sans Palmyrene Regular",
+   "postscript": "NotoSansPalmyrene-Regular",
+   "size": 64084
+  },
+  {
+   "file": "NotoSansPauCinHau-Regular.ttf",
+   "path": "/system/fonts/NotoSansPauCinHau-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Pau Cin Hau",
+   "subfamily": "Regular",
+   "full": "Noto Sans Pau Cin Hau Regular",
+   "postscript": "NotoSansPauCinHau-Regular",
+   "size": 56924
+  },
+  {
+   "file": "NotoSansPhags-Pa-Regular.ttf",
+   "path": "/system/fonts/NotoSansPhags-Pa-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Phags-Pa",
+   "subfamily": "Regular",
+   "full": "Noto Sans Phags-Pa Regular",
+   "postscript": "NotoSansPhags-Pa-Regular",
+   "size": 96940
+  },
+  {
+   "file": "NotoSansPhoenician-Regular.ttf",
+   "path": "/system/fonts/NotoSansPhoenician-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Phoenician",
+   "subfamily": "Regular",
+   "full": "Noto Sans Phoenician Regular",
+   "postscript": "NotoSansPhoenician-Regular",
+   "size": 52012
+  },
+  {
+   "file": "NotoSansRejang-Regular.ttf",
+   "path": "/system/fonts/NotoSansRejang-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Rejang",
+   "subfamily": "Regular",
+   "full": "Noto Sans Rejang Regular",
+   "postscript": "NotoSansRejang-Regular",
+   "size": 54216
+  },
+  {
+   "file": "NotoSansRunic-Regular.ttf",
+   "path": "/system/fonts/NotoSansRunic-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Runic",
+   "subfamily": "Regular",
+   "full": "Noto Sans Runic Regular",
+   "postscript": "NotoSansRunic-Regular",
+   "size": 55800
+  },
+  {
+   "file": "NotoSansSamaritan-Regular.ttf",
+   "path": "/system/fonts/NotoSansSamaritan-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Samaritan",
+   "subfamily": "Regular",
+   "full": "Noto Sans Samaritan Regular",
+   "postscript": "NotoSansSamaritan-Regular",
+   "size": 51740
+  },
+  {
+   "file": "NotoSansSaurashtra-Regular.ttf",
+   "path": "/system/fonts/NotoSansSaurashtra-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Saurashtra",
+   "subfamily": "Regular",
+   "full": "Noto Sans Saurashtra Regular",
+   "postscript": "NotoSansSaurashtra-Regular",
+   "size": 74668
+  },
+  {
+   "file": "NotoSansSharada-Regular.ttf",
+   "path": "/system/fonts/NotoSansSharada-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Sharada",
+   "subfamily": "Regular",
+   "full": "Noto Sans Sharada Regular",
+   "postscript": "NotoSansSharada-Regular",
+   "size": 122368
+  },
+  {
+   "file": "NotoSansShavian-Regular.ttf",
+   "path": "/system/fonts/NotoSansShavian-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Shavian",
+   "subfamily": "Regular",
+   "full": "Noto Sans Shavian Regular",
+   "postscript": "NotoSansShavian-Regular",
+   "size": 54064
+  },
+  {
+   "file": "NotoSansSinhalaUI-Bold.ttf",
+   "path": "/system/fonts/NotoSansSinhalaUI-Bold.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Sinhala UI",
+   "subfamily": "Bold",
+   "full": "Noto Sans Sinhala UI Bold",
+   "postscript": "NotoSansSinhalaUI-Bold",
+   "size": 379956
+  },
+  {
+   "file": "NotoSansSinhalaUI-Medium.ttf",
+   "path": "/system/fonts/NotoSansSinhalaUI-Medium.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Sinhala UI Medium",
+   "subfamily": "Regular",
+   "full": "Noto Sans Sinhala UI Medium",
+   "postscript": "NotoSansSinhalaUI-Medium",
+   "size": 352876
+  },
+  {
+   "file": "NotoSansSinhalaUI-Regular.ttf",
+   "path": "/system/fonts/NotoSansSinhalaUI-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Sinhala UI",
+   "subfamily": "Regular",
+   "full": "Noto Sans Sinhala UI Regular",
+   "postscript": "NotoSansSinhalaUI-Regular",
+   "size": 348032
+  },
+  {
+   "file": "NotoSansSinhalaUI-SemiBold.ttf",
+   "path": "/system/fonts/NotoSansSinhalaUI-SemiBold.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Sinhala UI SemiBold",
+   "subfamily": "Regular",
+   "full": "Noto Sans Sinhala UI SemiBold",
+   "postscript": "NotoSansSinhalaUI-SemiBold",
+   "size": 375676
+  },
+  {
+   "file": "NotoSansSinhala[wdth,wght].ttf",
+   "path": "/system/fonts/NotoSansSinhala[wdth,wght].ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Sinhala",
+   "subfamily": "Regular",
+   "full": "Noto Sans Sinhala Regular",
+   "postscript": "NotoSansSinhala-Regular",
+   "size": 1181956
+  },
+  {
+   "file": "NotoSansSoraSompeng[wght].ttf",
+   "path": "/system/fonts/NotoSansSoraSompeng[wght].ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Sora Sompeng",
+   "subfamily": "Regular",
+   "full": "Noto Sans Sora Sompeng Regular",
+   "postscript": "NotoSansSoraSompeng-Regular",
+   "size": 60240
+  },
+  {
+   "file": "NotoSansSoyombo-Regular.ttf",
+   "path": "/system/fonts/NotoSansSoyombo-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Soyombo",
+   "subfamily": "Regular",
+   "full": "Noto Sans Soyombo Regular",
+   "postscript": "NotoSansSoyombo-Regular",
+   "size": 132532
+  },
+  {
+   "file": "NotoSansSundanese[wght].ttf",
+   "path": "/system/fonts/NotoSansSundanese[wght].ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Sundanese",
+   "subfamily": "Regular",
+   "full": "Noto Sans Sundanese Regular",
+   "postscript": "NotoSansSundanese-Regular",
+   "size": 60620
+  },
+  {
+   "file": "NotoSansSylotiNagri-Regular.ttf",
+   "path": "/system/fonts/NotoSansSylotiNagri-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Syloti Nagri",
+   "subfamily": "Regular",
+   "full": "Noto Sans Syloti Nagri Regular",
+   "postscript": "NotoSansSylotiNagri-Regular",
+   "size": 66364
+  },
+  {
+   "file": "NotoSansSymbols-Regular.ttf",
+   "path": "/system/fonts/NotoSansSymbols-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Symbols",
+   "subfamily": "Regular",
+   "full": "Noto Sans Symbols Regular",
+   "postscript": "NotoSansSymbols-Regular",
+   "size": 287076
+  },
+  {
+   "file": "NotoSansSymbols2-Regular.ttf",
+   "path": "/system/fonts/NotoSansSymbols2-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Symbols 2",
+   "subfamily": "Regular",
+   "full": "Noto Sans Symbols 2 Regular",
+   "postscript": "NotoSansSymbols2-Regular",
+   "size": 1214664
+  },
+  {
+   "file": "NotoSansSyriacEastern[wght].ttf",
+   "path": "/system/fonts/NotoSansSyriacEastern[wght].ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Syriac Eastern",
+   "subfamily": "Regular",
+   "full": "Noto Sans Syriac Eastern Regular",
+   "postscript": "NotoSansSyriacEastern-Regular",
+   "size": 146308
+  },
+  {
+   "file": "NotoSansSyriacWestern[wght].ttf",
+   "path": "/system/fonts/NotoSansSyriacWestern[wght].ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Syriac Western",
+   "subfamily": "Regular",
+   "full": "Noto Sans Syriac Western Regular",
+   "postscript": "NotoSansSyriacWestern-Regular",
+   "size": 175860
+  },
+  {
+   "file": "NotoSansTagalog-Regular.ttf",
+   "path": "/system/fonts/NotoSansTagalog-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Tagalog",
+   "subfamily": "Regular",
+   "full": "Noto Sans Tagalog Regular",
+   "postscript": "NotoSansTagalog-Regular",
+   "size": 52676
+  },
+  {
+   "file": "NotoSansTagbanwa-Regular.ttf",
+   "path": "/system/fonts/NotoSansTagbanwa-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Tagbanwa",
+   "subfamily": "Regular",
+   "full": "Noto Sans Tagbanwa Regular",
+   "postscript": "NotoSansTagbanwa-Regular",
+   "size": 46212
+  },
+  {
+   "file": "NotoSansTaiLe-Regular.ttf",
+   "path": "/system/fonts/NotoSansTaiLe-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Tai Le",
+   "subfamily": "Regular",
+   "full": "Noto Sans Tai Le Regular",
+   "postscript": "NotoSansTaiLe-Regular",
+   "size": 57620
+  },
+  {
+   "file": "NotoSansTaiTham[wght].ttf",
+   "path": "/system/fonts/NotoSansTaiTham[wght].ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Tai Tham",
+   "subfamily": "Regular",
+   "full": "Noto Sans Tai Tham Regular",
+   "postscript": "NotoSansTaiTham-Regular",
+   "size": 172864
+  },
+  {
+   "file": "NotoSansTaiViet-Regular.ttf",
+   "path": "/system/fonts/NotoSansTaiViet-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Tai Viet",
+   "subfamily": "Regular",
+   "full": "Noto Sans Tai Viet Regular",
+   "postscript": "NotoSansTaiViet-Regular",
+   "size": 68872
+  },
+  {
+   "file": "NotoSansTakri-Regular.ttf",
+   "path": "/system/fonts/NotoSansTakri-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Takri",
+   "subfamily": "Regular",
+   "full": "Noto Sans Takri Regular",
+   "postscript": "NotoSansTakri-Regular",
+   "size": 67144
+  },
+  {
+   "file": "NotoSansTamilUI-Bold.ttf",
+   "path": "/system/fonts/NotoSansTamilUI-Bold.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Tamil UI",
+   "subfamily": "Bold",
+   "full": "Noto Sans Tamil UI Bold",
+   "postscript": "NotoSansTamilUI-Bold",
+   "size": 114712
+  },
+  {
+   "file": "NotoSansTamilUI-Medium.ttf",
+   "path": "/system/fonts/NotoSansTamilUI-Medium.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Tamil UI Medium",
+   "subfamily": "Regular",
+   "full": "Noto Sans Tamil UI Medium",
+   "postscript": "NotoSansTamilUI-Medium",
+   "size": 111420
+  },
+  {
+   "file": "NotoSansTamilUI-Regular.ttf",
+   "path": "/system/fonts/NotoSansTamilUI-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Tamil UI",
+   "subfamily": "Regular",
+   "full": "Noto Sans Tamil UI Regular",
+   "postscript": "NotoSansTamilUI-Regular",
+   "size": 111796
+  },
+  {
+   "file": "NotoSansTamilUI-SemiBold.ttf",
+   "path": "/system/fonts/NotoSansTamilUI-SemiBold.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Tamil UI SemiBold",
+   "subfamily": "Regular",
+   "full": "Noto Sans Tamil UI SemiBold",
+   "postscript": "NotoSansTamilUI-SemiBold",
+   "size": 116208
+  },
+  {
+   "file": "NotoSansTamil[wdth,wght].ttf",
+   "path": "/system/fonts/NotoSansTamil[wdth,wght].ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Tamil",
+   "subfamily": "Regular",
+   "full": "Noto Sans Tamil Regular",
+   "postscript": "NotoSansTamil-Regular",
+   "size": 332672
+  },
+  {
+   "file": "NotoSansTeluguUI-Bold.ttf",
+   "path": "/system/fonts/NotoSansTeluguUI-Bold.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Telugu UI",
+   "subfamily": "Bold",
+   "full": "Noto Sans Telugu UI Bold",
+   "postscript": "NotoSansTeluguUI-Bold",
+   "size": 282624
+  },
+  {
+   "file": "NotoSansTeluguUI-Medium.ttf",
+   "path": "/system/fonts/NotoSansTeluguUI-Medium.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Telugu UI Medium",
+   "subfamily": "Regular",
+   "full": "Noto Sans Telugu UI Medium",
+   "postscript": "NotoSansTeluguUI-Medium",
+   "size": 283280
+  },
+  {
+   "file": "NotoSansTeluguUI-Regular.ttf",
+   "path": "/system/fonts/NotoSansTeluguUI-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Telugu UI",
+   "subfamily": "Regular",
+   "full": "Noto Sans Telugu UI Regular",
+   "postscript": "NotoSansTeluguUI-Regular",
+   "size": 274196
+  },
+  {
+   "file": "NotoSansTeluguUI-SemiBold.ttf",
+   "path": "/system/fonts/NotoSansTeluguUI-SemiBold.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Telugu UI SemiBold",
+   "subfamily": "Regular",
+   "full": "Noto Sans Telugu UI SemiBold",
+   "postscript": "NotoSansTeluguUI-SemiBold",
+   "size": 286872
+  },
+  {
+   "file": "NotoSansTelugu[wdth,wght].ttf",
+   "path": "/system/fonts/NotoSansTelugu[wdth,wght].ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Telugu",
+   "subfamily": "Regular",
+   "full": "Noto Sans Telugu Regular",
+   "postscript": "NotoSansTelugu-Regular",
+   "size": 902620
+  },
+  {
+   "file": "NotoSansThaana[wght].ttf",
+   "path": "/system/fonts/NotoSansThaana[wght].ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Thaana",
+   "subfamily": "Regular",
+   "full": "Noto Sans Thaana Regular",
+   "postscript": "NotoSansThaana-Regular",
+   "size": 112776
+  },
+  {
+   "file": "NotoSansThai[wdth,wght].ttf",
+   "path": "/system/fonts/NotoSansThai[wdth,wght].ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Thai",
+   "subfamily": "Regular",
+   "full": "Noto Sans Thai Regular",
+   "postscript": "NotoSansThai-Regular",
+   "size": 218404
+  },
+  {
+   "file": "NotoSansTifinagh-Regular.ttf",
+   "path": "/system/fonts/NotoSansTifinagh-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Tifinagh",
+   "subfamily": "Regular",
+   "full": "Noto Sans Tifinagh Regular",
+   "postscript": "NotoSansTifinagh-Regular",
+   "size": 114056
+  },
+  {
+   "file": "NotoSansUgaritic-Regular.ttf",
+   "path": "/system/fonts/NotoSansUgaritic-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Ugaritic",
+   "subfamily": "Regular",
+   "full": "Noto Sans Ugaritic Regular",
+   "postscript": "NotoSansUgaritic-Regular",
+   "size": 53244
+  },
+  {
+   "file": "NotoSansVai-Regular.ttf",
+   "path": "/system/fonts/NotoSansVai-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Vai",
+   "subfamily": "Regular",
+   "full": "Noto Sans Vai Regular",
+   "postscript": "NotoSansVai-Regular",
+   "size": 128852
+  },
+  {
+   "file": "NotoSansWancho-Regular.ttf",
+   "path": "/system/fonts/NotoSansWancho-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Wancho",
+   "subfamily": "Regular",
+   "full": "Noto Sans Wancho Regular",
+   "postscript": "NotoSansWancho-Regular",
+   "size": 64880
+  },
+  {
+   "file": "NotoSansWarangCiti-Regular.ttf",
+   "path": "/system/fonts/NotoSansWarangCiti-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Warang Citi",
+   "subfamily": "Regular",
+   "full": "Noto Sans Warang Citi Regular",
+   "postscript": "NotoSansWarangCiti-Regular",
+   "size": 86880
+  },
+  {
+   "file": "NotoSansYi-Regular.ttf",
+   "path": "/system/fonts/NotoSansYi-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans Yi",
+   "subfamily": "Regular",
+   "full": "Noto Sans Yi Regular",
+   "postscript": "NotoSansYi-Regular",
+   "size": 331328
+  },
+  {
+   "file": "NotoSans[wdth,wght].ttf",
+   "path": "/system/fonts/NotoSans[wdth,wght].ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Sans",
+   "subfamily": "Regular",
+   "full": "Noto Sans Regular",
+   "postscript": "NotoSans-Regular",
+   "size": 2370304
+  },
+  {
+   "file": "NotoSerifAhom-Regular.ttf",
+   "path": "/system/fonts/NotoSerifAhom-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Serif Ahom",
+   "subfamily": "Regular",
+   "full": "Noto Serif Ahom Regular",
+   "postscript": "NotoSerifAhom-Regular",
+   "size": 52980
+  },
+  {
+   "file": "NotoSerifArmenian[wdth,wght].ttf",
+   "path": "/system/fonts/NotoSerifArmenian[wdth,wght].ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Serif Armenian",
+   "subfamily": "Regular",
+   "full": "Noto Serif Armenian Regular",
+   "postscript": "NotoSerifArmenian-Regular",
+   "size": 288484
+  },
+  {
+   "file": "NotoSerifBengali[wdth,wght].ttf",
+   "path": "/system/fonts/NotoSerifBengali[wdth,wght].ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Serif Bengali",
+   "subfamily": "Regular",
+   "full": "Noto Serif Bengali Regular",
+   "postscript": "NotoSerifBengali-Regular",
+   "size": 1055548
+  },
+  {
+   "file": "NotoSerifCJK-Regular.ttc",
+   "path": "/system/fonts/NotoSerifCJK-Regular.ttc",
+   "dir": "/system/fonts",
+   "family": "Noto Serif CJK JP",
+   "subfamily": "Regular",
+   "full": "Noto Serif CJK JP",
+   "postscript": "NotoSerifCJKjp-Regular",
+   "size": 26411360
+  },
+  {
+   "file": "NotoSerifCJK-Regular.ttc",
+   "path": "/system/fonts/NotoSerifCJK-Regular.ttc",
+   "dir": "/system/fonts",
+   "family": "Noto Serif CJK KR",
+   "subfamily": "Regular",
+   "full": "Noto Serif CJK KR",
+   "postscript": "NotoSerifCJKkr-Regular",
+   "size": 26411360
+  },
+  {
+   "file": "NotoSerifCJK-Regular.ttc",
+   "path": "/system/fonts/NotoSerifCJK-Regular.ttc",
+   "dir": "/system/fonts",
+   "family": "Noto Serif CJK SC",
+   "subfamily": "Regular",
+   "full": "Noto Serif CJK SC",
+   "postscript": "NotoSerifCJKsc-Regular",
+   "size": 26411360
+  },
+  {
+   "file": "NotoSerifCJK-Regular.ttc",
+   "path": "/system/fonts/NotoSerifCJK-Regular.ttc",
+   "dir": "/system/fonts",
+   "family": "Noto Serif CJK TC",
+   "subfamily": "Regular",
+   "full": "Noto Serif CJK TC",
+   "postscript": "NotoSerifCJKtc-Regular",
+   "size": 26411360
+  },
+  {
+   "file": "NotoSerifCJK-Regular.ttc",
+   "path": "/system/fonts/NotoSerifCJK-Regular.ttc",
+   "dir": "/system/fonts",
+   "family": "Noto Serif CJK HK",
+   "subfamily": "Regular",
+   "full": "Noto Serif CJK HK",
+   "postscript": "NotoSerifCJKhk-Regular",
+   "size": 26411360
+  },
+  {
+   "file": "NotoSerifDevanagari[wdth,wght].ttf",
+   "path": "/system/fonts/NotoSerifDevanagari[wdth,wght].ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Serif Devanagari",
+   "subfamily": "Regular",
+   "full": "Noto Serif Devanagari Regular",
+   "postscript": "NotoSerifDevanagari-Regular",
+   "size": 862064
+  },
+  {
+   "file": "NotoSerifDogra-Regular.ttf",
+   "path": "/system/fonts/NotoSerifDogra-Regular.ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Serif Dogra",
+   "subfamily": "Regular",
+   "full": "Noto Serif Dogra Regular",
+   "postscript": "NotoSerifDogra-Regular",
+   "size": 95568
+  },
+  {
+   "file": "NotoSerifEthiopic[wdth,wght].ttf",
+   "path": "/system/fonts/NotoSerifEthiopic[wdth,wght].ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Serif Ethiopic",
+   "subfamily": "Regular",
+   "full": "Noto Serif Ethiopic Regular",
+   "postscript": "NotoSerifEthiopic-Regular",
+   "size": 1057996
+  },
+  {
+   "file": "NotoSerifGeorgian[wdth,wght].ttf",
+   "path": "/system/fonts/NotoSerifGeorgian[wdth,wght].ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Serif Georgian",
+   "subfamily": "Regular",
+   "full": "Noto Serif Georgian Regular",
+   "postscript": "NotoSerifGeorgian-Regular",
+   "size": 383484
+  },
+  {
+   "file": "NotoSerifGujarati[wght].ttf",
+   "path": "/system/fonts/NotoSerifGujarati[wght].ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Serif Gujarati",
+   "subfamily": "Regular",
+   "full": "Noto Serif Gujarati Regular",
+   "postscript": "NotoSerifGujarati-Regular",
+   "size": 373932
+  },
+  {
+   "file": "NotoSerifGurmukhi[wght].ttf",
+   "path": "/system/fonts/NotoSerifGurmukhi[wght].ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Serif Gurmukhi",
+   "subfamily": "Regular",
+   "full": "Noto Serif Gurmukhi Regular",
+   "postscript": "NotoSerifGurmukhi-Regular",
+   "size": 144060
+  },
+  {
+   "file": "NotoSerifHebrew[wdth,wght].ttf",
+   "path": "/system/fonts/NotoSerifHebrew[wdth,wght].ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Serif Hebrew",
+   "subfamily": "Regular",
+   "full": "Noto Serif Hebrew Regular",
+   "postscript": "NotoSerifHebrew-Regular",
+   "size": 175792
+  },
+  {
+   "file": "NotoSerifKannada[wght].ttf",
+   "path": "/system/fonts/NotoSerifKannada[wght].ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Serif Kannada",
+   "subfamily": "Regular",
+   "full": "Noto Serif Kannada Regular",
+   "postscript": "NotoSerifKannada-Regular",
+   "size": 486264
+  },
+  {
+   "file": "NotoSerifKhmer[wdth,wght].ttf",
+   "path": "/system/fonts/NotoSerifKhmer[wdth,wght].ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Serif Khmer",
+   "subfamily": "Regular",
+   "full": "Noto Serif Khmer Regular",
+   "postscript": "NotoSerifKhmer-Regular",
+   "size": 479080
+  },
+  {
+   "file": "NotoSerifLao[wdth,wght].ttf",
+   "path": "/system/fonts/NotoSerifLao[wdth,wght].ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Serif Lao",
+   "subfamily": "Regular",
+   "full": "Noto Serif Lao Regular",
+   "postscript": "NotoSerifLao-Regular",
+   "size": 193024
+  },
+  {
+   "file": "NotoSerifMalayalam[wght].ttf",
+   "path": "/system/fonts/NotoSerifMalayalam[wght].ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Serif Malayalam",
+   "subfamily": "Regular",
+   "full": "Noto Serif Malayalam Regular",
+   "postscript": "NotoSerifMalayalam-Regular",
+   "size": 232364
+  },
+  {
+   "file": "NotoSerifMyanmar[wdth,wght].ttf",
+   "path": "/system/fonts/NotoSerifMyanmar[wdth,wght].ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Serif Myanmar",
+   "subfamily": "Regular",
+   "full": "Noto Serif Myanmar Regular",
+   "postscript": "NotoSerifMyanmar-Regular",
+   "size": 845044
+  },
+  {
+   "file": "NotoSerifSinhala[wdth,wght].ttf",
+   "path": "/system/fonts/NotoSerifSinhala[wdth,wght].ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Serif Sinhala",
+   "subfamily": "Regular",
+   "full": "Noto Serif Sinhala Regular",
+   "postscript": "NotoSerifSinhala-Regular",
+   "size": 1017172
+  },
+  {
+   "file": "NotoSerifTamil[wdth,wght].ttf",
+   "path": "/system/fonts/NotoSerifTamil[wdth,wght].ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Serif Tamil",
+   "subfamily": "Regular",
+   "full": "Noto Serif Tamil Regular",
+   "postscript": "NotoSerifTamil-Regular",
+   "size": 414528
+  },
+  {
+   "file": "NotoSerifTelugu[wght].ttf",
+   "path": "/system/fonts/NotoSerifTelugu[wght].ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Serif Telugu",
+   "subfamily": "Regular",
+   "full": "Noto Serif Telugu Regular",
+   "postscript": "NotoSerifTelugu-Regular",
+   "size": 550624
+  },
+  {
+   "file": "NotoSerifThai[wdth,wght].ttf",
+   "path": "/system/fonts/NotoSerifThai[wdth,wght].ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Serif Thai",
+   "subfamily": "Regular",
+   "full": "Noto Serif Thai Regular",
+   "postscript": "NotoSerifThai-Regular",
+   "size": 281076
+  },
+  {
+   "file": "NotoSerifTibetan[wght].ttf",
+   "path": "/system/fonts/NotoSerifTibetan[wght].ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Serif Tibetan",
+   "subfamily": "Regular",
+   "full": "Noto Serif Tibetan Regular",
+   "postscript": "NotoSerifTibetan-Regular",
+   "size": 2063504
+  },
+  {
+   "file": "NotoSerifYezidi[wght].ttf",
+   "path": "/system/fonts/NotoSerifYezidi[wght].ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Serif Yezidi",
+   "subfamily": "Regular",
+   "full": "Noto Serif Yezidi Regular",
+   "postscript": "NotoSerifYezidi-Regular",
+   "size": 112384
+  },
+  {
+   "file": "NotoSerif[wdth,wght].ttf",
+   "path": "/system/fonts/NotoSerif[wdth,wght].ttf",
+   "dir": "/system/fonts",
+   "family": "Noto Serif",
+   "subfamily": "Regular",
+   "full": "Noto Serif Regular",
+   "postscript": "NotoSerif-Regular",
+   "size": 2278204
+  },
+  {
+   "file": "ShuS-SC.ttf",
+   "path": "/system/fonts/ShuS-SC.ttf",
+   "dir": "/system/fonts",
+   "family": "书宋-简",
+   "subfamily": "Regular",
+   "full": "书宋-简",
+   "postscript": "ShuS-SC",
+   "size": 10666936
+  },
+  {
+   "file": "HYChangLiSongKeBen(Original)W.ttf",
+   "path": "/storage/Users/currentUser/Download/HYChangLiSongKeBen(Original)W.ttf",
+   "dir": "/storage/Users/currentUser/Download",
+   "family": "汉仪昌黎宋刻本原版W",
+   "subfamily": "Regular",
+   "full": "汉仪昌黎宋刻本原版W",
+   "postscript": "HYChangLiSongKeBenOriginalW",
+   "size": 14856956
+  },
+  {
+   "file": "HYFangZhuanU.ttf",
+   "path": "/storage/Users/currentUser/Download/HYFangZhuanU.ttf",
+   "dir": "/storage/Users/currentUser/Download",
+   "family": "汉仪方篆 U",
+   "subfamily": "Regular",
+   "full": "汉仪方篆 U",
+   "postscript": "HYFangZhuanU",
+   "size": 58246916
+  },
+  {
+   "file": "HYGuoTuChuangXinHongLouMeng-85U.ttf",
+   "path": "/storage/Users/currentUser/Download/HYGuoTuChuangXinHongLouMeng-85U.ttf",
+   "dir": "/storage/Users/currentUser/Download",
+   "family": "汉仪国图创新红楼梦 85U",
+   "subfamily": "Regular",
+   "full": "汉仪国图创新红楼梦 85U",
+   "postscript": "HYGuoTuChuangXinHongLouMeng85U",
+   "size": 10016944
+  },
+  {
+   "file": "HYHanLinPuYanCaiW.ttf",
+   "path": "/storage/Users/currentUser/Download/HYHanLinPuYanCaiW.ttf",
+   "dir": "/storage/Users/currentUser/Download",
+   "family": "汉仪韩林朴岩彩 W",
+   "subfamily": "Regular",
+   "full": "汉仪韩林朴岩彩 W",
+   "postscript": "HYHanLinPuYanCai-W",
+   "size": 16895424
+  },
+  {
+   "file": "HYMoYiYuanJ.ttf",
+   "path": "/storage/Users/currentUser/Download/HYMoYiYuanJ.ttf",
+   "dir": "/storage/Users/currentUser/Download",
+   "family": "汉仪墨意圆 简",
+   "subfamily": "Regular",
+   "full": "汉仪墨意圆 简",
+   "postscript": "HYMoYiYuanJ",
+   "size": 3127568
+  },
+  {
+   "file": "HYPixel13pxU.ttf",
+   "path": "/storage/Users/currentUser/Download/HYPixel13pxU.ttf",
+   "dir": "/storage/Users/currentUser/Download",
+   "family": "汉仪像素 13px U",
+   "subfamily": "Regular",
+   "full": "汉仪像素 13px U",
+   "postscript": "HYPixel 13px-U",
+   "size": 2841840
+  },
+  {
+   "file": "HYYingGuang-95U.ttf",
+   "path": "/storage/Users/currentUser/Download/HYYingGuang-95U.ttf",
+   "dir": "/storage/Users/currentUser/Download",
+   "family": "汉仪盈光 95U",
+   "subfamily": "Regular",
+   "full": "汉仪盈光 95U",
+   "postscript": "HYYingGuang95U",
+   "size": 3146264
+  },
+  {
+   "file": "HYYongZiXiaChan-95W.ttf",
+   "path": "/storage/Users/currentUser/Download/HYYongZiXiaChan-95W.ttf",
+   "dir": "/storage/Users/currentUser/Download",
+   "family": "汉仪永字夏蝉 95W",
+   "subfamily": "Regular",
+   "full": "汉仪永字夏蝉 95W",
+   "postscript": "HYYongZiXiaChan-95W",
+   "size": 8923744
+  },
+  {
+   "file": "HYYuYuanLuoShenXing-75U.ttf",
+   "path": "/storage/Users/currentUser/Download/HYYuYuanLuoShenXing-75U.ttf",
+   "dir": "/storage/Users/currentUser/Download",
+   "family": "汉仪玉渊洛神行 75U",
+   "subfamily": "Regular",
+   "full": "汉仪玉渊洛神行 75U",
+   "postscript": "HYYuYuanLuoShenXing75U",
+   "size": 6232208
+  },
+  {
+   "file": "HYBlackMythU.ttf",
+   "path": "/storage/Users/currentUser/HO_DATA_EXT_MISC/Download/UURemote/LAPTOP-RG87B9KG/HYBlackMythU.ttf",
+   "dir": "/storage/Users/currentUser/HO_DATA_EXT_MISC/Download/UURemote/LAPTOP-RG87B9KG",
+   "family": "汉仪黑神话 U",
+   "subfamily": "Regular",
+   "full": "汉仪黑神话 U",
+   "postscript": "HYBlackMythU",
+   "size": 75932504
+  },
+  {
+   "file": "HYChangLiSongKeBen(Original)W.ttf",
+   "path": "/storage/Users/currentUser/HO_DATA_EXT_MISC/Download/UURemote/LAPTOP-RG87B9KG/HYChangLiSongKeBen(Original)W.ttf",
+   "dir": "/storage/Users/currentUser/HO_DATA_EXT_MISC/Download/UURemote/LAPTOP-RG87B9KG",
+   "family": "汉仪昌黎宋刻本原版W",
+   "subfamily": "Regular",
+   "full": "汉仪昌黎宋刻本原版W",
+   "postscript": "HYChangLiSongKeBenOriginalW",
+   "size": 14856956
+  },
+  {
+   "file": "HYQiHeiX4-55W.ttf",
+   "path": "/storage/Users/currentUser/HO_DATA_EXT_MISC/Download/UURemote/LAPTOP-RG87B9KG/HYQiHeiX4-55W.ttf",
+   "dir": "/storage/Users/currentUser/HO_DATA_EXT_MISC/Download/UURemote/LAPTOP-RG87B9KG",
+   "family": "汉仪旗黑X4-55W",
+   "subfamily": "Book",
+   "full": "汉仪旗黑X4-55W Book",
+   "postscript": "HYQiHeiX4-EEW",
+   "size": 2837092
+  },
+  {
+   "file": "HYWenRunSongYunU-italic.ttf",
+   "path": "/storage/Users/currentUser/HO_DATA_EXT_MISC/Download/UURemote/LAPTOP-RG87B9KG/HYWenRunSongYunU-italic.ttf",
+   "dir": "/storage/Users/currentUser/HO_DATA_EXT_MISC/Download/UURemote/LAPTOP-RG87B9KG",
+   "family": "汉仪文润宋韵 U",
+   "subfamily": "Italic",
+   "full": "汉仪文润宋韵 U Italic",
+   "postscript": "HYWenRunSongYun-U-Italic",
+   "size": 49869828
+  },
+  {
+   "file": "HYZhuanShuF.ttf",
+   "path": "/storage/Users/currentUser/HO_DATA_EXT_MISC/Download/UURemote/LAPTOP-RG87B9KG/HYZhuanShuF.ttf",
+   "dir": "/storage/Users/currentUser/HO_DATA_EXT_MISC/Download/UURemote/LAPTOP-RG87B9KG",
+   "family": "汉仪篆书繁",
+   "subfamily": "Regular",
+   "full": "汉仪篆书繁",
+   "postscript": "HYj1gf",
+   "size": 5359212
+  },
+  {
+   "file": "HYZiKuTangHuiDianKaiShuW.ttf",
+   "path": "/storage/Users/currentUser/HO_DATA_EXT_MISC/Download/UURemote/LAPTOP-RG87B9KG/HYZiKuTangHuiDianKaiShuW.ttf",
+   "dir": "/storage/Users/currentUser/HO_DATA_EXT_MISC/Download/UURemote/LAPTOP-RG87B9KG",
+   "family": "汉仪字酷堂会典楷书 W",
+   "subfamily": "Regular",
+   "full": "汉仪字酷堂会典楷书 W",
+   "postscript": "HYZiKuTangHuiDianKaiShu_W",
+   "size": 6548140
+  },
+  {
+   "file": "HYZiKuTangYinJiaKaiShuW.ttf",
+   "path": "/storage/Users/currentUser/HO_DATA_EXT_MISC/Download/UURemote/LAPTOP-RG87B9KG/HYZiKuTangYinJiaKaiShuW.ttf",
+   "dir": "/storage/Users/currentUser/HO_DATA_EXT_MISC/Download/UURemote/LAPTOP-RG87B9KG",
+   "family": "汉仪字酷堂荫嘉楷书 W",
+   "subfamily": "Regular",
+   "full": "汉仪字酷堂荫嘉楷书 W",
+   "postscript": "HYZiKuTangYinJiaKaiShu-W",
+   "size": 8971576
+  }
+ ]
+}

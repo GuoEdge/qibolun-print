@@ -1,0 +1,104 @@
+{
+ "inflight": {
+  "r001-b0058": {
+   "agent": "n01",
+   "ts": 1789904999.5564258,
+   "prompt_file": "/mnt/d/岐伯论/research-rebuild/prompts/inflight/n01.md"
+  },
+  "r001-b0064": {
+   "agent": "n02",
+   "ts": 1789904999.5564258,
+   "prompt_file": "/mnt/d/岐伯论/research-rebuild/prompts/inflight/n02.md"
+  },
+  "r001-b0065": {
+   "agent": "g01",
+   "ts": 1789905884.6310961,
+   "prompt_file": "/mnt/d/岐伯论/research-rebuild/prompts/inflight/g01.md"
+  },
+  "r001-b0309": {
+   "agent": "g02",
+   "ts": 1789905884.6310961,
+   "prompt_file": "/mnt/d/岐伯论/research-rebuild/prompts/inflight/g02.md"
+  },
+  "r001-b0351": {
+   "agent": "g03",
+   "ts": 1789905884.6310961,
+   "prompt_file": "/mnt/d/岐伯论/research-rebuild/prompts/inflight/g03.md"
+  },
+  "r001-b0523": {
+   "agent": "g04",
+   "ts": 1789905884.6310961,
+   "prompt_file": "/mnt/d/岐伯论/research-rebuild/prompts/inflight/g04.md"
+  },
+  "r001-b0089": {
+   "agent": "p01",
+   "ts": 1789905891.6113746,
+   "prompt_file": "/mnt/d/岐伯论/research-rebuild/prompts/inflight/p01.md"
+  },
+  "r001-b0094": {
+   "agent": "p02",
+   "ts": 1789905891.6113746,
+   "prompt_file": "/mnt/d/岐伯论/research-rebuild/prompts/inflight/p02.md"
+  },
+  "r001-b0099": {
+   "agent": "p03",
+   "ts": 1789905891.6113746,
+   "prompt_file": "/mnt/d/岐伯论/research-rebuild/prompts/inflight/p03.md"
+  },
+  "r001-b0183": {
+   "agent": "p04",
+   "ts": 1789905891.6113746,
+   "prompt_file": "/mnt/d/岐伯论/research-rebuild/prompts/inflight/p04.md"
+  },
+  "r001-b0195": {
+   "agent": "p05",
+   "ts": 1789905891.6113746,
+   "prompt_file": "/mnt/d/岐伯论/research-rebuild/prompts/inflight/p05.md"
+  },
+  "r001-b0261": {
+   "agent": "p06",
+   "ts": 1789905891.6113746,
+   "prompt_file": "/mnt/d/岐伯论/research-rebuild/prompts/inflight/p06.md"
+  },
+  "r001-b0305": {
+   "agent": "p07",
+   "ts": 1789905891.6113746,
+   "prompt_file": "/mnt/d/岐伯论/research-rebuild/prompts/inflight/p07.md"
+  },
+  "r001-b0407": {
+   "agent": "p08",
+   "ts": 1789905891.6113746,
+   "prompt_file": "/mnt/d/岐伯论/research-rebuild/prompts/inflight/p08.md"
+  },
+  "r001-b0420": {
+   "agent": "p09",
+   "ts": 1789905891.6113746,
+   "prompt_file": "/mnt/d/岐伯论/research-rebuild/prompts/inflight/p09.md"
+  },
+  "r001-b0421": {
+   "agent": "p10",
+   "ts": 1789905891.6113746,
+   "prompt_file": "/mnt/d/岐伯论/research-rebuild/prompts/inflight/p10.md"
+  },
+  "r001-b0606": {
+   "agent": "p11",
+   "ts": 1789905891.6113746,
+   "prompt_file": "/mnt/d/岐伯论/research-rebuild/prompts/inflight/p11.md"
+  },
+  "r001-b0050": {
+   "agent": "p12",
+   "ts": 1789905891.6113746,
+   "prompt_file": "/mnt/d/岐伯论/research-rebuild/prompts/inflight/p12.md"
+  },
+  "r001-b0104": {
+   "agent": "p13",
+   "ts": 1789905891.6113746,
+   "prompt_file": "/mnt/d/岐伯论/research-rebuild/prompts/inflight/p13.md"
+  },
+  "r001-b0106": {
+   "agent": "p14",
+   "ts": 1789905891.6113746,
+   "prompt_file": "/mnt/d/岐伯论/research-rebuild/prompts/inflight/p14.md"
+  }
+ }
+}

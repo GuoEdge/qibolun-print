@@ -1,0 +1,42 @@
+{
+  "id": "5a32a445-202b-593a-a880-21c3716cd9cc",
+  "title": "5G",
+  "attempts": [
+    {
+      "image_index": 1,
+      "http_status": "200",
+      "bytes": 36,
+      "result": "failed"
+    },
+    {
+      "image_index": 2,
+      "http_status": "200",
+      "bytes": 36,
+      "result": "failed"
+    },
+    {
+      "image_index": 3,
+      "http_status": "200",
+      "bytes": 36,
+      "result": "failed"
+    },
+    {
+      "image_index": 4,
+      "http_status": "200",
+      "bytes": 36,
+      "result": "failed"
+    },
+    {
+      "image_index": 19,
+      "http_status": "200",
+      "bytes": 36,
+      "result": "failed"
+    },
+    {
+      "image_index": 20,
+      "http_status": "200",
+      "bytes": 36,
+      "result": "failed"
+    }
+  ]
+}

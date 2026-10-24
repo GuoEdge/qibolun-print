@@ -1,0 +1,831 @@
+================================================================
+批量重建22个受影响分册
+================================================================
+
+========================================
+批次1: B01 (卷一·甲册)
+========================================
+----------------------------------------
+构建 B01 (使用 build_booklet_B01_v3.js) ...
+----------------------------------------
+篇数: 50
+正文叶数（从第一叶计）: 179
+预计物理页数（封面+空白+目录+空白+正文+封底前必要留白+封底）: 184
+版心: 721.9pt   单叶预算: 600pt
+超限页块: 0  (须为 0)
+中间叶左栏 min=447.5 平均=545.2
+已生成: /storage/Users/currentUser/Documents/岐伯论/research-rebuild/reports/gemini-flash-reclassification-v1/岐伯论·卷一·甲册·幼兒啟蒙與性情習慣.docx (380.6 KB)
+
+--- 后处理管线 ---
+分节符段落压缩    : 2  (须为 2)
+mirrorMargins      : True
+evenAndOddHeaders  : True
+pgMar              : ['<w:pgMar w:top="900" w:right="1020" w:bottom="1500" w:left="1587" w:header="620" w:footer="600" w:gutter="0"/>', '<w:pgMar w:top="900" w:right="1020" w:bottom="1500" w:left="1587" w:header="620" w:footer="600" w:gutter="0"/>', '<w:pgMar w:top="900" w:right="1020" w:bottom="1500" w:left="1587" w:header="620" w:footer="600" w:gutter="0"/>']
+pgNumType          : ['<w:pgNumType w:fmt="chineseCountingThousand" w:start="1"/>']
+snapToGrid 段落数  : 6284
+cantSplit 行数     : 386
+天头题眉段         : 181  (带 keepNext: 178 )
+snapToGrid 违规段  : 0  (须为 0)
+docGrid            : ['<w:docGrid w:type="default" w:linePitch="0" w:charSpace="0"/>', '<w:docGrid w:type="default" w:linePitch="0" w:charSpace="0"/>', '<w:docGrid w:type="default" w:linePitch="0" w:charSpace="0"/>']
+表格宽度(tblW)     : []
+大小               : 385.7 KB
+
+
+--- 成书体检 ---
+======================================================================
+甲册 DOCX 返工体检： 岐伯论·卷一·甲册·幼兒啟蒙與性情習慣.docx
+======================================================================
+
+[1] 容器与 XML 合法性
+  [PASS] ZIP 结构完好
+  [PASS] 必需部件齐全
+  [PASS] 全部 XML 可解析   []
+
+[2] 关键排版设置（后处理管线）
+  [PASS] 前置、正文、封底恰为三节   3 节
+  [PASS] 封面、空白背页与目录不编号且无页脚
+  [PASS] 正文第一叶从一开始且使用汉字页码   {'{http://schemas.openxmlformats.org/wordprocessingml/2006/main}fmt': 'chineseCountingThousand', '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}start': '1'}
+  [PASS] 正文奇偶页脚独立于前置节   {'even', 'default'}
+  [PASS] 封底节无编号且奇偶页脚为空
+  [PASS] 对称镜像页边距 mirrorMargins
+  [PASS] 奇偶页眉 evenAndOddHeaders
+  [PASS] 文档网格关闭 linePitch=0   <w:docGrid w:type="default" w:linePitch="0" w:charSpace="0"/>
+  [PASS] 段落网格吸附关闭 snapToGrid=0   6284 处
+  [PASS] 页边距让位页脚 bottom=1500/footer=600   <w:pgMar w:top="900" w:right="1020" w:bottom="1500" w:left="1587" w:header="620" w:footer="600" w:gutter="0"/>
+
+[3] OOXML 合法性
+  [PASS] pPr 元素顺序违规 = 0   违规 0 处
+  [PASS] 固定表格布局 tblLayout=fixed   590 处
+  [PASS] 表格宽度约束完整   tblW=591 gridCol=821
+
+[4] 分页与批校线一致性
+  [PASS] 超限页块 = 0   0 处超限
+  [PASS] 批校线行数统一（≤2种）   取值=[17, 20]
+  [PASS] 页块高全部在版心内   最高=620pt
+  [PASS] 中间叶无严重半空页   最低左栏=447.5pt 平均=545.2pt
+
+[5] 外框与题眉
+  [PASS] 外框统一最小高度 600pt atLeast   181 处
+  [PASS] 外框不可拆 cantSplit   386 处
+  [PASS] 正文段前分页数正确   正文=179叶，段前分页=178处
+  [PASS] 天头题眉全部带 keepNext   178/178（另有 3 个留白分页段）
+  [PASS] 正文首叶不重复段前分页
+  [PASS] 正文与封底节均从下一页开始
+  [PASS] 封底预设已写入
+  [PASS] 封面与目录背面各留一页空白，正文从第五物理页开始
+  [PASS] 封底前按正文叶数补白，封底独立占末页
+
+[6] 目录起始叶码
+  [PASS] 目录篇目均标出实际起始叶码   条目=50 不符=0
+  [PASS] 目录不再显示字数
+  [PASS] 目录起始叶码统一为汉仪字酷堂荫嘉楷书 W   50/50
+
+[7] 提问者叙述 / 岐伯答 边界
+  [PASS] 入话标记〔岐伯語〕数量成对   标签=12 标记=12
+
+[7] 内容完整性
+  [PASS] 甲册收 50 篇   实际 50
+  [PASS] 正文内容零丢失（8字窗口，容每叶1处跨页）   0 个字段超限
+
+[8] 押角二维码
+  [PASS] 二维码 PNG 全部有效   50/50
+
+======================================================================
+体检结果：全部通过 ✅
+======================================================================
+文件大小: 385.7 KB   段落数: 6284   表格数: 591
+
+✓ B01 构建成功
+
+========================================
+批次2: 卷一其他分册 (6册)
+========================================
+----------------------------------------
+构建 B02A (使用 build_volume_v1.js) ...
+----------------------------------------
+B02A：篇数 100，目录 2 叶，目录背留白 0，前置物理页 4，正文 290 叶，封底补白 1，预计物理总页 296
+分节符段落压缩    : 2  (须为 2)
+mirrorMargins      : True
+evenAndOddHeaders  : True
+pgMar              : ['<w:pgMar w:top="900" w:right="1020" w:bottom="1500" w:left="1587" w:header="620" w:footer="600" w:gutter="0"/>', '<w:pgMar w:top="900" w:right="1020" w:bottom="1500" w:left="1587" w:header="620" w:footer="600" w:gutter="0"/>', '<w:pgMar w:top="900" w:right="1020" w:bottom="1500" w:left="1587" w:header="620" w:footer="600" w:gutter="0"/>']
+pgNumType          : ['<w:pgNumType w:fmt="chineseCountingThousand" w:start="1"/>']
+snapToGrid 段落数  : 10422
+cantSplit 行数     : 636
+天头题眉段         : 289  (带 keepNext: 289 )
+snapToGrid 违规段  : 0  (须为 0)
+docGrid            : ['<w:docGrid w:type="default" w:linePitch="0" w:charSpace="0"/>', '<w:docGrid w:type="default" w:linePitch="0" w:charSpace="0"/>', '<w:docGrid w:type="default" w:linePitch="0" w:charSpace="0"/>']
+表格宽度(tblW)     : []
+大小               : 568.5 KB
+[PASS] ZIP完整
+[PASS] 三节
+[PASS] 正文起始页码
+[PASS] 镜像页边距
+[PASS] 固定表格
+[PASS] 目录标签
+[PASS] 封底标签
+[PASS] 留白页数
+[PASS] 分页报告无超限
+[PASS] 篇数
+[PASS] 二维码有效
+结果：通过
+已生成: /storage/Users/currentUser/Documents/岐伯论/卷一/乙册-上/岐伯论·卷一·乙册·上·學業功課與學校日常.docx
+✓ B02A 构建成功
+
+----------------------------------------
+构建 B02B (使用 build_volume_v1.js) ...
+----------------------------------------
+B02B：篇数 100，目录 2 叶，目录背留白 0，前置物理页 4，正文 272 叶，封底补白 1，预计物理总页 278
+分节符段落压缩    : 2  (须为 2)
+mirrorMargins      : True
+evenAndOddHeaders  : True
+pgMar              : ['<w:pgMar w:top="900" w:right="1020" w:bottom="1500" w:left="1587" w:header="620" w:footer="600" w:gutter="0"/>', '<w:pgMar w:top="900" w:right="1020" w:bottom="1500" w:left="1587" w:header="620" w:footer="600" w:gutter="0"/>', '<w:pgMar w:top="900" w:right="1020" w:bottom="1500" w:left="1587" w:header="620" w:footer="600" w:gutter="0"/>']
+pgNumType          : ['<w:pgNumType w:fmt="chineseCountingThousand" w:start="1"/>']
+snapToGrid 段落数  : 9554
+cantSplit 行数     : 600
+天头题眉段         : 271  (带 keepNext: 271 )
+snapToGrid 违规段  : 0  (须为 0)
+docGrid            : ['<w:docGrid w:type="default" w:linePitch="0" w:charSpace="0"/>', '<w:docGrid w:type="default" w:linePitch="0" w:charSpace="0"/>', '<w:docGrid w:type="default" w:linePitch="0" w:charSpace="0"/>']
+表格宽度(tblW)     : []
+大小               : 543.9 KB
+[PASS] ZIP完整
+[PASS] 三节
+[PASS] 正文起始页码
+[PASS] 镜像页边距
+[PASS] 固定表格
+[PASS] 目录标签
+[PASS] 封底标签
+[PASS] 留白页数
+[PASS] 分页报告无超限
+[PASS] 篇数
+[PASS] 二维码有效
+结果：通过
+已生成: /storage/Users/currentUser/Documents/岐伯论/卷一/乙册-中/岐伯论·卷一·乙册·中·學業功課與學校日常.docx
+✓ B02B 构建成功
+
+----------------------------------------
+构建 B02C (使用 build_volume_v1.js) ...
+----------------------------------------
+B02C：篇数 98，目录 2 叶，目录背留白 0，前置物理页 4，正文 297 叶，封底补白 0，预计物理总页 302
+分节符段落压缩    : 2  (须为 2)
+mirrorMargins      : True
+evenAndOddHeaders  : True
+pgMar              : ['<w:pgMar w:top="900" w:right="1020" w:bottom="1500" w:left="1587" w:header="620" w:footer="600" w:gutter="0"/>', '<w:pgMar w:top="900" w:right="1020" w:bottom="1500" w:left="1587" w:header="620" w:footer="600" w:gutter="0"/>', '<w:pgMar w:top="900" w:right="1020" w:bottom="1500" w:left="1587" w:header="620" w:footer="600" w:gutter="0"/>']
+pgNumType          : ['<w:pgNumType w:fmt="chineseCountingThousand" w:start="1"/>']
+snapToGrid 段落数  : 10695
+cantSplit 行数     : 648
+天头题眉段         : 296  (带 keepNext: 296 )
+snapToGrid 违规段  : 0  (须为 0)
+docGrid            : ['<w:docGrid w:type="default" w:linePitch="0" w:charSpace="0"/>', '<w:docGrid w:type="default" w:linePitch="0" w:charSpace="0"/>', '<w:docGrid w:type="default" w:linePitch="0" w:charSpace="0"/>']
+表格宽度(tblW)     : []
+大小               : 559.7 KB
+[PASS] ZIP完整
+[PASS] 三节
+[PASS] 正文起始页码
+[PASS] 镜像页边距
+[PASS] 固定表格
+[PASS] 目录标签
+[PASS] 封底标签
+[PASS] 留白页数
+[PASS] 分页报告无超限
+[PASS] 篇数
+[PASS] 二维码有效
+结果：通过
+已生成: /storage/Users/currentUser/Documents/岐伯论/卷一/乙册-下/岐伯论·卷一·乙册·下·學業功課與學校日常.docx
+✓ B02C 构建成功
+
+----------------------------------------
+构建 B06 (使用 build_volume_v1.js) ...
+----------------------------------------
+B06：篇数 132，目录 3 叶，目录背留白 1，前置物理页 6，正文 324 叶，封底补白 1，预计物理总页 332
+分节符段落压缩    : 2  (须为 2)
+mirrorMargins      : True
+evenAndOddHeaders  : True
+pgMar              : ['<w:pgMar w:top="900" w:right="1020" w:bottom="1500" w:left="1587" w:header="620" w:footer="600" w:gutter="0"/>', '<w:pgMar w:top="900" w:right="1020" w:bottom="1500" w:left="1587" w:header="620" w:footer="600" w:gutter="0"/>', '<w:pgMar w:top="900" w:right="1020" w:bottom="1500" w:left="1587" w:header="620" w:footer="600" w:gutter="0"/>']
+pgNumType          : ['<w:pgNumType w:fmt="chineseCountingThousand" w:start="1"/>']
+snapToGrid 段落数  : 11611
+cantSplit 行数     : 722
+天头题眉段         : 323  (带 keepNext: 323 )
+snapToGrid 违规段  : 0  (须为 0)
+docGrid            : ['<w:docGrid w:type="default" w:linePitch="0" w:charSpace="0"/>', '<w:docGrid w:type="default" w:linePitch="0" w:charSpace="0"/>', '<w:docGrid w:type="default" w:linePitch="0" w:charSpace="0"/>']
+表格宽度(tblW)     : []
+大小               : 620.5 KB
+[PASS] ZIP完整
+[PASS] 三节
+[PASS] 正文起始页码
+[PASS] 镜像页边距
+[PASS] 固定表格
+[PASS] 目录标签
+[PASS] 封底标签
+[PASS] 留白页数
+[PASS] 分页报告无超限
+[PASS] 篇数
+[PASS] 二维码有效
+结果：通过
+已生成: /storage/Users/currentUser/Documents/岐伯论/卷一/己册/岐伯论·卷一·己册·成年子女自立與邊界.docx
+✓ B06 构建成功
+
+----------------------------------------
+构建 B08 (使用 build_volume_v1.js) ...
+----------------------------------------
+B08：篇数 59，目录 2 叶，目录背留白 0，前置物理页 4，正文 159 叶，封底补白 0，预计物理总页 164
+分节符段落压缩    : 2  (须为 2)
+mirrorMargins      : True
+evenAndOddHeaders  : True
+pgMar              : ['<w:pgMar w:top="900" w:right="1020" w:bottom="1500" w:left="1587" w:header="620" w:footer="600" w:gutter="0"/>', '<w:pgMar w:top="900" w:right="1020" w:bottom="1500" w:left="1587" w:header="620" w:footer="600" w:gutter="0"/>', '<w:pgMar w:top="900" w:right="1020" w:bottom="1500" w:left="1587" w:header="620" w:footer="600" w:gutter="0"/>']
+pgNumType          : ['<w:pgNumType w:fmt="chineseCountingThousand" w:start="1"/>']
+snapToGrid 段落数  : 5641
+cantSplit 行数     : 353
+天头题眉段         : 158  (带 keepNext: 158 )
+snapToGrid 违规段  : 0  (须为 0)
+docGrid            : ['<w:docGrid w:type="default" w:linePitch="0" w:charSpace="0"/>', '<w:docGrid w:type="default" w:linePitch="0" w:charSpace="0"/>', '<w:docGrid w:type="default" w:linePitch="0" w:charSpace="0"/>']
+表格宽度(tblW)     : []
+大小               : 371.3 KB
+[PASS] ZIP完整
+[PASS] 三节
+[PASS] 正文起始页码
+[PASS] 镜像页边距
+[PASS] 固定表格
+[PASS] 目录标签
+[PASS] 封底标签
+[PASS] 留白页数
+[PASS] 分页报告无超限
+[PASS] 篇数
+[PASS] 二维码有效
+结果：通过
+已生成: /storage/Users/currentUser/Documents/岐伯论/卷一/辛册/岐伯论·卷一·辛册·手足同胞與家族親戚.docx
+✓ B08 构建成功
+
+========================================
+批次3: 卷二 (3册)
+========================================
+----------------------------------------
+构建 B11 (使用 build_volume_v2.js) ...
+----------------------------------------
+B11：篇数 49，目录 1 叶，目录背留白 1，前置物理页 4，正文 135 叶，封底补白 0，预计物理总页 140
+分节符段落压缩    : 2  (须为 2)
+mirrorMargins      : True
+evenAndOddHeaders  : True
+pgMar              : ['<w:pgMar w:top="900" w:right="1020" w:bottom="1500" w:left="1587" w:header="620" w:footer="600" w:gutter="0"/>', '<w:pgMar w:top="900" w:right="1020" w:bottom="1500" w:left="1587" w:header="620" w:footer="600" w:gutter="0"/>', '<w:pgMar w:top="900" w:right="1020" w:bottom="1500" w:left="1587" w:header="620" w:footer="600" w:gutter="0"/>']
+pgNumType          : ['<w:pgNumType w:fmt="chineseCountingThousand" w:start="1"/>']
+snapToGrid 段落数  : 4822
+cantSplit 行数     : 300
+天头题眉段         : 134  (带 keepNext: 134 )
+snapToGrid 违规段  : 0  (须为 0)
+docGrid            : ['<w:docGrid w:type="default" w:linePitch="0" w:charSpace="0"/>', '<w:docGrid w:type="default" w:linePitch="0" w:charSpace="0"/>', '<w:docGrid w:type="default" w:linePitch="0" w:charSpace="0"/>']
+表格宽度(tblW)     : []
+大小               : 335.9 KB
+[PASS] ZIP完整
+[PASS] 三节
+[PASS] 正文起始页码
+[PASS] 镜像页边距
+[PASS] 固定表格
+[PASS] 目录标签
+[PASS] 封底标签
+[PASS] 留白页数
+[PASS] 分页报告无超限
+[PASS] 篇数
+[PASS] 二维码有效
+结果：通过
+已生成: /storage/Users/currentUser/Documents/岐伯论/卷二/甲册/岐伯论·卷二·甲册·擇偶標準與兩性吸引.docx
+✓ B11 构建成功
+
+----------------------------------------
+构建 B12 (使用 build_volume_v2.js) ...
+----------------------------------------
+B12：篇数 44，目录 1 叶，目录背留白 1，前置物理页 4，正文 123 叶，封底补白 0，预计物理总页 128
+分节符段落压缩    : 2  (须为 2)
+mirrorMargins      : True
+evenAndOddHeaders  : True
+pgMar              : ['<w:pgMar w:top="900" w:right="1020" w:bottom="1500" w:left="1587" w:header="620" w:footer="600" w:gutter="0"/>', '<w:pgMar w:top="900" w:right="1020" w:bottom="1500" w:left="1587" w:header="620" w:footer="600" w:gutter="0"/>', '<w:pgMar w:top="900" w:right="1020" w:bottom="1500" w:left="1587" w:header="620" w:footer="600" w:gutter="0"/>']
+pgNumType          : ['<w:pgNumType w:fmt="chineseCountingThousand" w:start="1"/>']
+snapToGrid 段落数  : 4478
+cantSplit 行数     : 273
+天头题眉段         : 122  (带 keepNext: 122 )
+snapToGrid 违规段  : 0  (须为 0)
+docGrid            : ['<w:docGrid w:type="default" w:linePitch="0" w:charSpace="0"/>', '<w:docGrid w:type="default" w:linePitch="0" w:charSpace="0"/>', '<w:docGrid w:type="default" w:linePitch="0" w:charSpace="0"/>']
+表格宽度(tblW)     : []
+大小               : 315.8 KB
+[PASS] ZIP完整
+[PASS] 三节
+[PASS] 正文起始页码
+[PASS] 镜像页边距
+[PASS] 固定表格
+[PASS] 目录标签
+[PASS] 封底标签
+[PASS] 留白页数
+[PASS] 分页报告无超限
+[PASS] 篇数
+[PASS] 二维码有效
+结果：通过
+已生成: /storage/Users/currentUser/Documents/岐伯论/卷二/乙册/岐伯论·卷二·乙册·婚姻存續與夫妻日常.docx
+✓ B12 构建成功
+
+----------------------------------------
+构建 B13 (使用 build_volume_v2.js) ...
+----------------------------------------
+B13：篇数 71，目录 2 叶，目录背留白 0，前置物理页 4，正文 203 叶，封底补白 0，预计物理总页 208
+分节符段落压缩    : 2  (须为 2)
+mirrorMargins      : True
+evenAndOddHeaders  : True
+pgMar              : ['<w:pgMar w:top="900" w:right="1020" w:bottom="1500" w:left="1587" w:header="620" w:footer="600" w:gutter="0"/>', '<w:pgMar w:top="900" w:right="1020" w:bottom="1500" w:left="1587" w:header="620" w:footer="600" w:gutter="0"/>', '<w:pgMar w:top="900" w:right="1020" w:bottom="1500" w:left="1587" w:header="620" w:footer="600" w:gutter="0"/>']
+pgNumType          : ['<w:pgNumType w:fmt="chineseCountingThousand" w:start="1"/>']
+snapToGrid 段落数  : 7266
+cantSplit 行数     : 447
+天头题眉段         : 202  (带 keepNext: 202 )
+snapToGrid 违规段  : 0  (须为 0)
+docGrid            : ['<w:docGrid w:type="default" w:linePitch="0" w:charSpace="0"/>', '<w:docGrid w:type="default" w:linePitch="0" w:charSpace="0"/>', '<w:docGrid w:type="default" w:linePitch="0" w:charSpace="0"/>']
+表格宽度(tblW)     : []
+大小               : 441.5 KB
+[PASS] ZIP完整
+[PASS] 三节
+[PASS] 正文起始页码
+[PASS] 镜像页边距
+[PASS] 固定表格
+[PASS] 目录标签
+[PASS] 封底标签
+[PASS] 留白页数
+[PASS] 分页报告无超限
+[PASS] 篇数
+[PASS] 二维码有效
+结果：通过
+已生成: /storage/Users/currentUser/Documents/岐伯论/卷二/丙册/岐伯论·卷二·丙册·親密背叛與離異止損.docx
+✓ B13 构建成功
+
+========================================
+批次4: 卷三至卷八 (15册)
+========================================
+----------------------------------------
+构建 B15 (使用 build_volumes_v4_v8.js) ...
+----------------------------------------
+B15：篇数 16，目录 1 叶，目录背留白 1，前置物理页 4，正文 39 叶，封底补白 0，预计物理总页 44
+分节符段落压缩    : 2  (须为 2)
+mirrorMargins      : True
+evenAndOddHeaders  : True
+pgMar              : ['<w:pgMar w:top="900" w:right="1020" w:bottom="1500" w:left="1587" w:header="620" w:footer="600" w:gutter="0"/>', '<w:pgMar w:top="900" w:right="1020" w:bottom="1500" w:left="1587" w:header="620" w:footer="600" w:gutter="0"/>', '<w:pgMar w:top="900" w:right="1020" w:bottom="1500" w:left="1587" w:header="620" w:footer="600" w:gutter="0"/>']
+pgNumType          : ['<w:pgNumType w:fmt="chineseCountingThousand" w:start="1"/>']
+snapToGrid 段落数  : 1439
+cantSplit 行数     : 91
+天头题眉段         : 38  (带 keepNext: 38 )
+snapToGrid 违规段  : 0  (须为 0)
+docGrid            : ['<w:docGrid w:type="default" w:linePitch="0" w:charSpace="0"/>', '<w:docGrid w:type="default" w:linePitch="0" w:charSpace="0"/>', '<w:docGrid w:type="default" w:linePitch="0" w:charSpace="0"/>']
+表格宽度(tblW)     : []
+大小               : 177.3 KB
+[PASS] ZIP完整
+[PASS] 三节
+[PASS] 正文起始页码
+[PASS] 镜像页边距
+[PASS] 固定表格
+[PASS] 目录标签
+[PASS] 封底标签
+[PASS] 留白页数
+[PASS] 分页报告无超限
+[PASS] 篇数
+[PASS] 二维码有效
+结果：通过
+已生成: /storage/Users/currentUser/Documents/岐伯论/卷三/乙册/岐伯论·卷三·乙册·社交距離與孤立自處.docx
+✓ B15 构建成功
+
+----------------------------------------
+构建 B17 (使用 build_volumes_v4_v8.js) ...
+----------------------------------------
+B17：篇数 153，目录 3 叶，目录背留白 1，前置物理页 6，正文 450 叶，封底补白 1，预计物理总页 458
+分节符段落压缩    : 2  (须为 2)
+mirrorMargins      : True
+evenAndOddHeaders  : True
+pgMar              : ['<w:pgMar w:top="900" w:right="1020" w:bottom="1500" w:left="1587" w:header="620" w:footer="600" w:gutter="0"/>', '<w:pgMar w:top="900" w:right="1020" w:bottom="1500" w:left="1587" w:header="620" w:footer="600" w:gutter="0"/>', '<w:pgMar w:top="900" w:right="1020" w:bottom="1500" w:left="1587" w:header="620" w:footer="600" w:gutter="0"/>']
+pgNumType          : ['<w:pgNumType w:fmt="chineseCountingThousand" w:start="1"/>']
+snapToGrid 段落数  : 16109
+cantSplit 行数     : 985
+天头题眉段         : 449  (带 keepNext: 449 )
+snapToGrid 违规段  : 0  (须为 0)
+docGrid            : ['<w:docGrid w:type="default" w:linePitch="0" w:charSpace="0"/>', '<w:docGrid w:type="default" w:linePitch="0" w:charSpace="0"/>', '<w:docGrid w:type="default" w:linePitch="0" w:charSpace="0"/>']
+表格宽度(tblW)     : []
+大小               : 805.3 KB
+[PASS] ZIP完整
+[PASS] 三节
+[PASS] 正文起始页码
+[PASS] 镜像页边距
+[PASS] 固定表格
+[PASS] 目录标签
+[PASS] 封底标签
+[PASS] 留白页数
+[PASS] 分页报告无超限
+[PASS] 篇数
+[PASS] 二维码有效
+结果：通过
+已生成: /storage/Users/currentUser/Documents/岐伯论/卷四/甲册/岐伯论·卷四·甲册·情志平復與容貌自和.docx
+✓ B17 构建成功
+
+----------------------------------------
+构建 B18 (使用 build_volumes_v4_v8.js) ...
+----------------------------------------
+B18：篇数 19，目录 1 叶，目录背留白 1，前置物理页 4，正文 45 叶，封底补白 0，预计物理总页 50
+分节符段落压缩    : 2  (须为 2)
+mirrorMargins      : True
+evenAndOddHeaders  : True
+pgMar              : ['<w:pgMar w:top="900" w:right="1020" w:bottom="1500" w:left="1587" w:header="620" w:footer="600" w:gutter="0"/>', '<w:pgMar w:top="900" w:right="1020" w:bottom="1500" w:left="1587" w:header="620" w:footer="600" w:gutter="0"/>', '<w:pgMar w:top="900" w:right="1020" w:bottom="1500" w:left="1587" w:header="620" w:footer="600" w:gutter="0"/>']
+pgNumType          : ['<w:pgNumType w:fmt="chineseCountingThousand" w:start="1"/>']
+snapToGrid 段落数  : 1631
+cantSplit 行数     : 105
+天头题眉段         : 44  (带 keepNext: 44 )
+snapToGrid 违规段  : 0  (须为 0)
+docGrid            : ['<w:docGrid w:type="default" w:linePitch="0" w:charSpace="0"/>', '<w:docGrid w:type="default" w:linePitch="0" w:charSpace="0"/>', '<w:docGrid w:type="default" w:linePitch="0" w:charSpace="0"/>']
+表格宽度(tblW)     : []
+大小               : 189.2 KB
+[PASS] ZIP完整
+[PASS] 三节
+[PASS] 正文起始页码
+[PASS] 镜像页边距
+[PASS] 固定表格
+[PASS] 目录标签
+[PASS] 封底标签
+[PASS] 留白页数
+[PASS] 分页报告无超限
+[PASS] 篇数
+[PASS] 二维码有效
+结果：通过
+已生成: /storage/Users/currentUser/Documents/岐伯论/卷四/乙册/岐伯论·卷四·乙册·作息節律與病理常識.docx
+✓ B18 构建成功
+
+----------------------------------------
+构建 B19 (使用 build_volumes_v4_v8.js) ...
+----------------------------------------
+B19：篇数 72，目录 2 叶，目录背留白 0，前置物理页 4，正文 194 叶，封底补白 1，预计物理总页 200
+分节符段落压缩    : 2  (须为 2)
+mirrorMargins      : True
+evenAndOddHeaders  : True
+pgMar              : ['<w:pgMar w:top="900" w:right="1020" w:bottom="1500" w:left="1587" w:header="620" w:footer="600" w:gutter="0"/>', '<w:pgMar w:top="900" w:right="1020" w:bottom="1500" w:left="1587" w:header="620" w:footer="600" w:gutter="0"/>', '<w:pgMar w:top="900" w:right="1020" w:bottom="1500" w:left="1587" w:header="620" w:footer="600" w:gutter="0"/>']
+pgNumType          : ['<w:pgNumType w:fmt="chineseCountingThousand" w:start="1"/>']
+snapToGrid 段落数  : 7008
+cantSplit 行数     : 430
+天头题眉段         : 193  (带 keepNext: 193 )
+snapToGrid 违规段  : 0  (须为 0)
+docGrid            : ['<w:docGrid w:type="default" w:linePitch="0" w:charSpace="0"/>', '<w:docGrid w:type="default" w:linePitch="0" w:charSpace="0"/>', '<w:docGrid w:type="default" w:linePitch="0" w:charSpace="0"/>']
+表格宽度(tblW)     : []
+大小               : 422.1 KB
+[PASS] ZIP完整
+[PASS] 三节
+[PASS] 正文起始页码
+[PASS] 镜像页边距
+[PASS] 固定表格
+[PASS] 目录标签
+[PASS] 封底标签
+[PASS] 留白页数
+[PASS] 分页报告无超限
+[PASS] 篇数
+[PASS] 二维码有效
+结果：通过
+已生成: /storage/Users/currentUser/Documents/岐伯论/卷四/丙册/岐伯论·卷四·丙册·知行精進與克服拖延.docx
+✓ B19 构建成功
+
+----------------------------------------
+构建 B20C (使用 build_volumes_v4_v8.js) ...
+----------------------------------------
+B20C：篇数 118，目录 3 叶，目录背留白 1，前置物理页 6，正文 345 叶，封底补白 0，预计物理总页 352
+分节符段落压缩    : 2  (须为 2)
+mirrorMargins      : True
+evenAndOddHeaders  : True
+pgMar              : ['<w:pgMar w:top="900" w:right="1020" w:bottom="1500" w:left="1587" w:header="620" w:footer="600" w:gutter="0"/>', '<w:pgMar w:top="900" w:right="1020" w:bottom="1500" w:left="1587" w:header="620" w:footer="600" w:gutter="0"/>', '<w:pgMar w:top="900" w:right="1020" w:bottom="1500" w:left="1587" w:header="620" w:footer="600" w:gutter="0"/>']
+pgNumType          : ['<w:pgNumType w:fmt="chineseCountingThousand" w:start="1"/>']
+snapToGrid 段落数  : 12396
+cantSplit 行数     : 756
+天头题眉段         : 344  (带 keepNext: 344 )
+snapToGrid 违规段  : 0  (须为 0)
+docGrid            : ['<w:docGrid w:type="default" w:linePitch="0" w:charSpace="0"/>', '<w:docGrid w:type="default" w:linePitch="0" w:charSpace="0"/>', '<w:docGrid w:type="default" w:linePitch="0" w:charSpace="0"/>']
+表格宽度(tblW)     : []
+大小               : 633.5 KB
+[PASS] ZIP完整
+[PASS] 三节
+[PASS] 正文起始页码
+[PASS] 镜像页边距
+[PASS] 固定表格
+[PASS] 目录标签
+[PASS] 封底标签
+[PASS] 留白页数
+[PASS] 分页报告无超限
+[PASS] 篇数
+[PASS] 二维码有效
+结果：通过
+已生成: /storage/Users/currentUser/Documents/岐伯论/卷五/甲册/下册/岐伯论·卷五·甲·職場彙報與權責留痕·下册.docx
+✓ B20C 构建成功
+
+----------------------------------------
+构建 B22 (使用 build_volumes_v4_v8.js) ...
+----------------------------------------
+B22：篇数 185，目录 4 叶，目录背留白 0，前置物理页 6，正文 498 叶，封底补白 1，预计物理总页 506
+分节符段落压缩    : 2  (须为 2)
+mirrorMargins      : True
+evenAndOddHeaders  : True
+pgMar              : ['<w:pgMar w:top="900" w:right="1020" w:bottom="1500" w:left="1587" w:header="620" w:footer="600" w:gutter="0"/>', '<w:pgMar w:top="900" w:right="1020" w:bottom="1500" w:left="1587" w:header="620" w:footer="600" w:gutter="0"/>', '<w:pgMar w:top="900" w:right="1020" w:bottom="1500" w:left="1587" w:header="620" w:footer="600" w:gutter="0"/>']
+pgNumType          : ['<w:pgNumType w:fmt="chineseCountingThousand" w:start="1"/>']
+snapToGrid 段落数  : 17710
+cantSplit 行数     : 1097
+天头题眉段         : 497  (带 keepNext: 497 )
+snapToGrid 违规段  : 0  (须为 0)
+docGrid            : ['<w:docGrid w:type="default" w:linePitch="0" w:charSpace="0"/>', '<w:docGrid w:type="default" w:linePitch="0" w:charSpace="0"/>', '<w:docGrid w:type="default" w:linePitch="0" w:charSpace="0"/>']
+表格宽度(tblW)     : []
+大小               : 883.1 KB
+[PASS] ZIP完整
+[PASS] 三节
+[PASS] 正文起始页码
+[PASS] 镜像页边距
+[PASS] 固定表格
+[PASS] 目录标签
+[PASS] 封底标签
+[PASS] 留白页数
+[PASS] 分页报告无超限
+[PASS] 篇数
+[PASS] 二维码有效
+结果：通过
+已生成: /storage/Users/currentUser/Documents/岐伯论/卷五/丙册/岐伯论·卷五·丙册·商業競爭與資產投資.docx
+✓ B22 构建成功
+
+----------------------------------------
+构建 B24 (使用 build_volumes_v4_v8.js) ...
+----------------------------------------
+B24：篇数 100，目录 2 叶，目录背留白 0，前置物理页 4，正文 269 叶，封底补白 0，预计物理总页 274
+分节符段落压缩    : 2  (须为 2)
+mirrorMargins      : True
+evenAndOddHeaders  : True
+pgMar              : ['<w:pgMar w:top="900" w:right="1020" w:bottom="1500" w:left="1587" w:header="620" w:footer="600" w:gutter="0"/>', '<w:pgMar w:top="900" w:right="1020" w:bottom="1500" w:left="1587" w:header="620" w:footer="600" w:gutter="0"/>', '<w:pgMar w:top="900" w:right="1020" w:bottom="1500" w:left="1587" w:header="620" w:footer="600" w:gutter="0"/>']
+pgNumType          : ['<w:pgNumType w:fmt="chineseCountingThousand" w:start="1"/>']
+snapToGrid 段落数  : 9644
+cantSplit 行数     : 593
+天头题眉段         : 268  (带 keepNext: 268 )
+snapToGrid 违规段  : 0  (须为 0)
+docGrid            : ['<w:docGrid w:type="default" w:linePitch="0" w:charSpace="0"/>', '<w:docGrid w:type="default" w:linePitch="0" w:charSpace="0"/>', '<w:docGrid w:type="default" w:linePitch="0" w:charSpace="0"/>']
+表格宽度(tblW)     : []
+大小               : 527.2 KB
+[PASS] ZIP完整
+[PASS] 三节
+[PASS] 正文起始页码
+[PASS] 镜像页边距
+[PASS] 固定表格
+[PASS] 目录标签
+[PASS] 封底标签
+[PASS] 留白页数
+[PASS] 分页报告无超限
+[PASS] 篇数
+[PASS] 二维码有效
+结果：通过
+已生成: /storage/Users/currentUser/Documents/岐伯论/卷六/乙册/岐伯论·卷六·乙册·青年心境與躺平反思.docx
+✓ B24 构建成功
+
+----------------------------------------
+构建 B26 (使用 build_volumes_v4_v8.js) ...
+----------------------------------------
+B26：篇数 28，目录 1 叶，目录背留白 1，前置物理页 4，正文 70 叶，封底补白 1，预计物理总页 76
+分节符段落压缩    : 2  (须为 2)
+mirrorMargins      : True
+evenAndOddHeaders  : True
+pgMar              : ['<w:pgMar w:top="900" w:right="1020" w:bottom="1500" w:left="1587" w:header="620" w:footer="600" w:gutter="0"/>', '<w:pgMar w:top="900" w:right="1020" w:bottom="1500" w:left="1587" w:header="620" w:footer="600" w:gutter="0"/>', '<w:pgMar w:top="900" w:right="1020" w:bottom="1500" w:left="1587" w:header="620" w:footer="600" w:gutter="0"/>']
+pgNumType          : ['<w:pgNumType w:fmt="chineseCountingThousand" w:start="1"/>']
+snapToGrid 段落数  : 2513
+cantSplit 行数     : 160
+天头题眉段         : 69  (带 keepNext: 69 )
+snapToGrid 违规段  : 0  (须为 0)
+docGrid            : ['<w:docGrid w:type="default" w:linePitch="0" w:charSpace="0"/>', '<w:docGrid w:type="default" w:linePitch="0" w:charSpace="0"/>', '<w:docGrid w:type="default" w:linePitch="0" w:charSpace="0"/>']
+表格宽度(tblW)     : []
+大小               : 225.6 KB
+[PASS] ZIP完整
+[PASS] 三节
+[PASS] 正文起始页码
+[PASS] 镜像页边距
+[PASS] 固定表格
+[PASS] 目录标签
+[PASS] 封底标签
+[PASS] 留白页数
+[PASS] 分页报告无超限
+[PASS] 篇数
+[PASS] 二维码有效
+结果：通过
+已生成: /storage/Users/currentUser/Documents/岐伯论/卷六/丁册/岐伯论·卷六·丁册·性別議題與兩性輿論.docx
+✓ B26 构建成功
+
+----------------------------------------
+构建 B28 (使用 build_volumes_v4_v8.js) ...
+----------------------------------------
+B28：篇数 20，目录 1 叶，目录背留白 1，前置物理页 4，正文 47 叶，封底补白 0，预计物理总页 52
+分节符段落压缩    : 2  (须为 2)
+mirrorMargins      : True
+evenAndOddHeaders  : True
+pgMar              : ['<w:pgMar w:top="900" w:right="1020" w:bottom="1500" w:left="1587" w:header="620" w:footer="600" w:gutter="0"/>', '<w:pgMar w:top="900" w:right="1020" w:bottom="1500" w:left="1587" w:header="620" w:footer="600" w:gutter="0"/>', '<w:pgMar w:top="900" w:right="1020" w:bottom="1500" w:left="1587" w:header="620" w:footer="600" w:gutter="0"/>']
+pgNumType          : ['<w:pgNumType w:fmt="chineseCountingThousand" w:start="1"/>']
+snapToGrid 段落数  : 1705
+cantSplit 行数     : 109
+天头题眉段         : 46  (带 keepNext: 46 )
+snapToGrid 违规段  : 0  (须为 0)
+docGrid            : ['<w:docGrid w:type="default" w:linePitch="0" w:charSpace="0"/>', '<w:docGrid w:type="default" w:linePitch="0" w:charSpace="0"/>', '<w:docGrid w:type="default" w:linePitch="0" w:charSpace="0"/>']
+表格宽度(tblW)     : []
+大小               : 195.0 KB
+[PASS] ZIP完整
+[PASS] 三节
+[PASS] 正文起始页码
+[PASS] 镜像页边距
+[PASS] 固定表格
+[PASS] 目录标签
+[PASS] 封底标签
+[PASS] 留白页数
+[PASS] 分页报告无超限
+[PASS] 篇数
+[PASS] 二维码有效
+结果：通过
+已生成: /storage/Users/currentUser/Documents/岐伯论/卷六/己册/岐伯论·卷六·己册·消費主義與生活觀念.docx
+✓ B28 构建成功
+
+----------------------------------------
+构建 B29 (使用 build_volumes_v4_v8.js) ...
+----------------------------------------
+B29：篇数 77，目录 2 叶，目录背留白 0，前置物理页 4，正文 179 叶，封底补白 0，预计物理总页 184
+分节符段落压缩    : 2  (须为 2)
+mirrorMargins      : True
+evenAndOddHeaders  : True
+pgMar              : ['<w:pgMar w:top="900" w:right="1020" w:bottom="1500" w:left="1587" w:header="620" w:footer="600" w:gutter="0"/>', '<w:pgMar w:top="900" w:right="1020" w:bottom="1500" w:left="1587" w:header="620" w:footer="600" w:gutter="0"/>', '<w:pgMar w:top="900" w:right="1020" w:bottom="1500" w:left="1587" w:header="620" w:footer="600" w:gutter="0"/>']
+pgNumType          : ['<w:pgNumType w:fmt="chineseCountingThousand" w:start="1"/>']
+snapToGrid 段落数  : 6364
+cantSplit 行数     : 402
+天头题眉段         : 178  (带 keepNext: 178 )
+snapToGrid 违规段  : 0  (须为 0)
+docGrid            : ['<w:docGrid w:type="default" w:linePitch="0" w:charSpace="0"/>', '<w:docGrid w:type="default" w:linePitch="0" w:charSpace="0"/>', '<w:docGrid w:type="default" w:linePitch="0" w:charSpace="0"/>']
+表格宽度(tblW)     : []
+大小               : 405.1 KB
+[PASS] ZIP完整
+[PASS] 三节
+[PASS] 正文起始页码
+[PASS] 镜像页边距
+[PASS] 固定表格
+[PASS] 目录标签
+[PASS] 封底标签
+[PASS] 留白页数
+[PASS] 分页报告无超限
+[PASS] 篇数
+[PASS] 二维码有效
+结果：通过
+已生成: /storage/Users/currentUser/Documents/岐伯论/卷六/庚册/岐伯论·卷六·庚册·現代科技與工具反思.docx
+✓ B29 构建成功
+
+----------------------------------------
+构建 B32 (使用 build_volumes_v4_v8.js) ...
+----------------------------------------
+B32：篇数 180，目录 4 叶，目录背留白 0，前置物理页 6，正文 499 叶，封底补白 0，预计物理总页 506
+分节符段落压缩    : 2  (须为 2)
+mirrorMargins      : True
+evenAndOddHeaders  : True
+pgMar              : ['<w:pgMar w:top="900" w:right="1020" w:bottom="1500" w:left="1587" w:header="620" w:footer="600" w:gutter="0"/>', '<w:pgMar w:top="900" w:right="1020" w:bottom="1500" w:left="1587" w:header="620" w:footer="600" w:gutter="0"/>', '<w:pgMar w:top="900" w:right="1020" w:bottom="1500" w:left="1587" w:header="620" w:footer="600" w:gutter="0"/>']
+pgNumType          : ['<w:pgNumType w:fmt="chineseCountingThousand" w:start="1"/>']
+snapToGrid 段落数  : 17771
+cantSplit 行数     : 1095
+天头题眉段         : 498  (带 keepNext: 498 )
+snapToGrid 违规段  : 0  (须为 0)
+docGrid            : ['<w:docGrid w:type="default" w:linePitch="0" w:charSpace="0"/>', '<w:docGrid w:type="default" w:linePitch="0" w:charSpace="0"/>', '<w:docGrid w:type="default" w:linePitch="0" w:charSpace="0"/>']
+表格宽度(tblW)     : []
+大小               : 865.6 KB
+[PASS] ZIP完整
+[PASS] 三节
+[PASS] 正文起始页码
+[PASS] 镜像页边距
+[PASS] 固定表格
+[PASS] 目录标签
+[PASS] 封底标签
+[PASS] 留白页数
+[PASS] 分页报告无超限
+[PASS] 篇数
+[PASS] 二维码有效
+结果：通过
+已生成: /storage/Users/currentUser/Documents/岐伯论/卷七/乙册/岐伯论·卷七·乙册·名相辨析與語言牢籠.docx
+✓ B32 构建成功
+
+----------------------------------------
+构建 B35 (使用 build_volumes_v4_v8.js) ...
+----------------------------------------
+B35：篇数 54，目录 2 叶，目录背留白 0，前置物理页 4，正文 123 叶，封底补白 0，预计物理总页 128
+分节符段落压缩    : 2  (须为 2)
+mirrorMargins      : True
+evenAndOddHeaders  : True
+pgMar              : ['<w:pgMar w:top="900" w:right="1020" w:bottom="1500" w:left="1587" w:header="620" w:footer="600" w:gutter="0"/>', '<w:pgMar w:top="900" w:right="1020" w:bottom="1500" w:left="1587" w:header="620" w:footer="600" w:gutter="0"/>', '<w:pgMar w:top="900" w:right="1020" w:bottom="1500" w:left="1587" w:header="620" w:footer="600" w:gutter="0"/>']
+pgNumType          : ['<w:pgNumType w:fmt="chineseCountingThousand" w:start="1"/>']
+snapToGrid 段落数  : 4398
+cantSplit 行数     : 278
+天头题眉段         : 122  (带 keepNext: 122 )
+snapToGrid 违规段  : 0  (须为 0)
+docGrid            : ['<w:docGrid w:type="default" w:linePitch="0" w:charSpace="0"/>', '<w:docGrid w:type="default" w:linePitch="0" w:charSpace="0"/>', '<w:docGrid w:type="default" w:linePitch="0" w:charSpace="0"/>']
+表格宽度(tblW)     : []
+大小               : 318.7 KB
+[PASS] ZIP完整
+[PASS] 三节
+[PASS] 正文起始页码
+[PASS] 镜像页边距
+[PASS] 固定表格
+[PASS] 目录标签
+[PASS] 封底标签
+[PASS] 留白页数
+[PASS] 分页报告无超限
+[PASS] 篇数
+[PASS] 二维码有效
+结果：通过
+已生成: /storage/Users/currentUser/Documents/岐伯论/卷七/戊册/岐伯论·卷七·戊册·命途因果與得失隨緣.docx
+✓ B35 构建成功
+
+----------------------------------------
+构建 B37 (使用 build_volumes_v4_v8.js) ...
+----------------------------------------
+B37：篇数 72，目录 2 叶，目录背留白 0，前置物理页 4，正文 175 叶，封底补白 0，预计物理总页 180
+分节符段落压缩    : 2  (须为 2)
+mirrorMargins      : True
+evenAndOddHeaders  : True
+pgMar              : ['<w:pgMar w:top="900" w:right="1020" w:bottom="1500" w:left="1587" w:header="620" w:footer="600" w:gutter="0"/>', '<w:pgMar w:top="900" w:right="1020" w:bottom="1500" w:left="1587" w:header="620" w:footer="600" w:gutter="0"/>', '<w:pgMar w:top="900" w:right="1020" w:bottom="1500" w:left="1587" w:header="620" w:footer="600" w:gutter="0"/>']
+pgNumType          : ['<w:pgNumType w:fmt="chineseCountingThousand" w:start="1"/>']
+snapToGrid 段落数  : 6226
+cantSplit 行数     : 391
+天头题眉段         : 174  (带 keepNext: 174 )
+snapToGrid 违规段  : 0  (须为 0)
+docGrid            : ['<w:docGrid w:type="default" w:linePitch="0" w:charSpace="0"/>', '<w:docGrid w:type="default" w:linePitch="0" w:charSpace="0"/>', '<w:docGrid w:type="default" w:linePitch="0" w:charSpace="0"/>']
+表格宽度(tblW)     : []
+大小               : 388.7 KB
+[PASS] ZIP完整
+[PASS] 三节
+[PASS] 正文起始页码
+[PASS] 镜像页边距
+[PASS] 固定表格
+[PASS] 目录标签
+[PASS] 封底标签
+[PASS] 留白页数
+[PASS] 分页报告无超限
+[PASS] 篇数
+[PASS] 二维码有效
+结果：通过
+已生成: /storage/Users/currentUser/Documents/岐伯论/卷七/庚册/岐伯论·卷七·庚册·神聖敬畏與信仰維度.docx
+✓ B37 构建成功
+
+----------------------------------------
+构建 B38L (使用 build_volumes_v4_v8.js) ...
+----------------------------------------
+B38L：篇数 91，目录 2 叶，目录背留白 0，前置物理页 4，正文 211 叶，封底补白 0，预计物理总页 216
+分节符段落压缩    : 2  (须为 2)
+mirrorMargins      : True
+evenAndOddHeaders  : True
+pgMar              : ['<w:pgMar w:top="900" w:right="1020" w:bottom="1500" w:left="1587" w:header="620" w:footer="600" w:gutter="0"/>', '<w:pgMar w:top="900" w:right="1020" w:bottom="1500" w:left="1587" w:header="620" w:footer="600" w:gutter="0"/>', '<w:pgMar w:top="900" w:right="1020" w:bottom="1500" w:left="1587" w:header="620" w:footer="600" w:gutter="0"/>']
+pgNumType          : ['<w:pgNumType w:fmt="chineseCountingThousand" w:start="1"/>']
+snapToGrid 段落数  : 7542
+cantSplit 行数     : 473
+天头题眉段         : 210  (带 keepNext: 210 )
+snapToGrid 违规段  : 0  (须为 0)
+docGrid            : ['<w:docGrid w:type="default" w:linePitch="0" w:charSpace="0"/>', '<w:docGrid w:type="default" w:linePitch="0" w:charSpace="0"/>', '<w:docGrid w:type="default" w:linePitch="0" w:charSpace="0"/>']
+表格宽度(tblW)     : []
+大小               : 464.5 KB
+[PASS] ZIP完整
+[PASS] 三节
+[PASS] 正文起始页码
+[PASS] 镜像页边距
+[PASS] 固定表格
+[PASS] 目录标签
+[PASS] 封底标签
+[PASS] 留白页数
+[PASS] 分页报告无超限
+[PASS] 篇数
+[PASS] 二维码有效
+结果：通过
+已生成: /storage/Users/currentUser/Documents/岐伯论/卷七/辛册/亥册/岐伯论·卷七·辛·自處之道與精神獨立·亥册.docx
+✓ B38L 构建成功
+
+----------------------------------------
+构建 B40 (使用 build_volumes_v4_v8.js) ...
+----------------------------------------
+B40：篇数 12，目录 1 叶，目录背留白 1，前置物理页 4，正文 25 叶，封底补白 0，预计物理总页 30
+分节符段落压缩    : 2  (须为 2)
+mirrorMargins      : True
+evenAndOddHeaders  : True
+pgMar              : ['<w:pgMar w:top="900" w:right="1020" w:bottom="1500" w:left="1587" w:header="620" w:footer="600" w:gutter="0"/>', '<w:pgMar w:top="900" w:right="1020" w:bottom="1500" w:left="1587" w:header="620" w:footer="600" w:gutter="0"/>', '<w:pgMar w:top="900" w:right="1020" w:bottom="1500" w:left="1587" w:header="620" w:footer="600" w:gutter="0"/>']
+pgNumType          : ['<w:pgNumType w:fmt="chineseCountingThousand" w:start="1"/>']
+snapToGrid 段落数  : 902
+cantSplit 行数     : 61
+天头题眉段         : 24  (带 keepNext: 24 )
+snapToGrid 违规段  : 0  (须为 0)
+docGrid            : ['<w:docGrid w:type="default" w:linePitch="0" w:charSpace="0"/>', '<w:docGrid w:type="default" w:linePitch="0" w:charSpace="0"/>', '<w:docGrid w:type="default" w:linePitch="0" w:charSpace="0"/>']
+表格宽度(tblW)     : []
+大小               : 162.4 KB
+[PASS] ZIP完整
+[PASS] 三节
+[PASS] 正文起始页码
+[PASS] 镜像页边距
+[PASS] 固定表格
+[PASS] 目录标签
+[PASS] 封底标签
+[PASS] 留白页数
+[PASS] 分页报告无超限
+[PASS] 篇数
+[PASS] 二维码有效
+结果：通过
+已生成: /storage/Users/currentUser/Documents/岐伯论/卷八/乙册/岐伯论·卷八·乙册·治亂興亡與國家工程.docx
+✓ B40 构建成功
+
+
+================================================================
+批量重建完成
+================================================================
+总计: 24 册
+成功: 24 册
+失败: 0 册
+================================================================
+
+注意: B02需要手动指定B02A/B02B/B02C子册分别构建

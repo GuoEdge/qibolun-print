@@ -1,0 +1,42 @@
+{
+  "generatedAt": "2026-09-21",
+  "seed": "qibo-native-outline-20260921-v1",
+  "corpusRecords": 4305,
+  "nativeTreeNodes": 200,
+  "nativePracticeNodes": 152,
+  "populatedPracticeNodes": 140,
+  "emptyPracticeNodes": 12,
+  "unassignedLocalRecords": 616,
+  "multiCategoryLocalRecords": 237,
+  "lowPurityPracticeNodes": 106,
+  "sampleRecords": 254,
+  "sampleByStratum": {
+    "category_coverage": 130,
+    "category_high_frequency": 44,
+    "native_multi_category": 30,
+    "native_unassigned": 62,
+    "old_theme_unassigned": 13,
+    "theme_divergence": 40
+  },
+  "emptyPracticeNodeIds": [
+    "dba1d77f-d283-44d1-a530-dc79493e8a17",
+    "121c2498-2182-40a4-82e3-23b58ffb0f6c",
+    "004902b7-9569-482e-9bb1-fc39b7ec4127",
+    "d2809af2-7933-43c5-a01d-db2e461c7a02",
+    "62cca67f-63d6-4eb8-845d-52cd1a587b71",
+    "7f315b5c-7c3c-42b5-9f07-a1f411a4d2d3",
+    "ff45ada8-24a1-49b1-95d9-4a065e40eca8",
+    "33957984-3a68-47d7-8552-db0d4a8c445e",
+    "5b25f245-b55c-437a-aa0a-14895d4ac24e",
+    "04f92077-7421-4eed-837c-6c6b2bf664d2",
+    "47f09ce5-5d4e-4669-ae80-4df09ade2c4a",
+    "268ae0da-0ed3-4648-9ad6-66fd3d133520"
+  ],
+  "outputs": [
+    "D:\\岐伯论\\research-rebuild\\reports\\native-category-audit-sample.csv",
+    "D:\\岐伯论\\research-rebuild\\reports\\native-category-audit-sample.jsonl",
+    "D:\\岐伯论\\research-rebuild\\reports\\native-category-audit-report.json",
+    "D:\\岐伯论\\research-rebuild\\reports\\native-category-audit-method.md"
+  ],
+  "interpretation": "candidate_native_categories_nonfinal 是词面提示，只有人工细读后填写 audit_decision 才形成修正。"
+}

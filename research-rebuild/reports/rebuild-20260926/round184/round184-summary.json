@@ -1,0 +1,76 @@
+{
+  "records": 12,
+  "confirmed": 5,
+  "provisional": 7,
+  "rows_updated": 12,
+  "status_changed": [
+    {
+      "id": "d60f14af-095b-5c1c-8ddb-65b97894e53d",
+      "title": "婉拒",
+      "old": "A08/A03/manual_provisional",
+      "new": "A08/A03/manual_confirmed"
+    },
+    {
+      "id": "e8873042-d451-5335-87d7-638f1926a64a",
+      "title": "刻奇",
+      "old": "A15/A03/manual_provisional",
+      "new": "A15/A03/manual_confirmed"
+    },
+    {
+      "id": "9b6db870-bac2-5741-b015-bd793dcd6dbe",
+      "title": "不羡慕",
+      "old": "A01/A11/manual_provisional",
+      "new": "A01/A11/manual_confirmed"
+    },
+    {
+      "id": "c0a13aa7-6476-5774-b661-e424f933d513",
+      "title": "爱语",
+      "old": "A06/A03/manual_provisional",
+      "new": "A06//manual_confirmed"
+    },
+    {
+      "id": "1015117d-47f5-5e6d-8648-373790bd96b6",
+      "title": "坚持",
+      "old": "A11/A01/manual_provisional",
+      "new": "A03/A11/manual_confirmed"
+    }
+  ],
+  "left_provisional": [
+    [
+      "战马阉割",
+      "source_empty"
+    ],
+    [
+      "最大成长速度",
+      "source_empty"
+    ],
+    [
+      "没伦理",
+      "source_truncated"
+    ],
+    [
+      "活成这样",
+      "body_is_pointer"
+    ],
+    [
+      "穿越幽谷",
+      "body_is_quotation"
+    ],
+    [
+      "酒神与天神",
+      "body_question_mismatch"
+    ],
+    [
+      "陌生宗教",
+      "body_is_pointer"
+    ]
+  ],
+  "excluded_from_print": [
+    "战马阉割",
+    "最大成长速度"
+  ],
+  "manual_status_after": {
+    "manual_confirmed": 4298,
+    "manual_provisional": 7
+  }
+}

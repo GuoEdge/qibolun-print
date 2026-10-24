@@ -1,0 +1,272 @@
+=== V4 批量重建 20 个分册 ===
+开始时间: Fri Oct  9 20:22:54 CST 2026
+
+[1/19] B03...
+
+
+#
+# Fatal error in , line 0
+# Check failed: 12 == (*__errno_location()).
+#
+#
+#
+#FailureMessage Object: 0x7ea9a1bfb0
+----- Native stack trace -----
+
+Signal 5 (core dumped) 
+  ✗
+[2/19] B04...
+
+
+#
+# Fatal error in , line 0
+# Check failed: 12 == (*__errno_location()).
+#
+#
+#
+#FailureMessage Object: 0x7e95bd6fb0
+----- Native stack trace -----
+
+Signal 5 (core dumped) 
+  ✗
+[3/19] B12...
+
+
+#
+# Fatal error in , line 0
+# Check failed: 12 == (*__errno_location()).
+#
+#
+#
+#FailureMessage Object: 0x7f63de2fb0
+----- Native stack trace -----
+
+Signal 5 (core dumped) 
+  ✗
+[4/19] B15...
+
+
+#
+# Fatal error in , line 0
+# Check failed: 12 == (*__errno_location()).
+#
+#
+#
+#FailureMessage Object: 0x7e0de44fb0
+----- Native stack trace -----
+
+Signal 5 (core dumped) 
+  ✗
+[5/19] B17...
+
+
+#
+# Fatal error in , line 0
+# Check failed: 12 == (*__errno_location()).
+#
+#
+#
+#FailureMessage Object: 0x7fb5b4cfb0
+----- Native stack trace -----
+
+Signal 5 (core dumped) 
+  ✗
+[6/19] B18...
+
+
+#
+# Fatal error in , line 0
+# Check failed: 12 == (*__errno_location()).
+#
+#
+#
+#FailureMessage Object: 0x7f20dfafb0
+----- Native stack trace -----
+
+Signal 5 (core dumped) 
+  ✗
+[7/19] B19...
+
+
+#
+# Fatal error in , line 0
+# Check failed: 12 == (*__errno_location()).
+#
+#
+#
+#FailureMessage Object: 0x7f38513fb0
+----- Native stack trace -----
+
+Signal 5 (core dumped) 
+  ✗
+[8/19] B20A...
+
+
+#
+# Fatal error in , line 0
+# Check failed: 12 == (*__errno_location()).
+#
+#
+#
+#FailureMessage Object: 0x7ef7ecdfb0
+----- Native stack trace -----
+
+Signal 5 (core dumped) 
+  ✗
+[9/19] B22...
+
+
+#
+# Fatal error in , line 0
+# Check failed: 12 == (*__errno_location()).
+#
+#
+#
+#FailureMessage Object: 0x7f9f348fb0
+----- Native stack trace -----
+
+Signal 5 (core dumped) 
+  ✗
+[10/19] B23...
+
+
+#
+# Fatal error in , line 0
+# Check failed: 12 == (*__errno_location()).
+#
+#
+#
+#FailureMessage Object: 0x7eba7effb0
+----- Native stack trace -----
+
+Signal 5 (core dumped) 
+  ✗
+[11/19] B24...
+
+
+#
+# Fatal error in , line 0
+# Check failed: 12 == (*__errno_location()).
+#
+#
+#
+#FailureMessage Object: 0x7ec51cafb0
+----- Native stack trace -----
+
+Signal 5 (core dumped) 
+  ✗
+[12/19] B26...
+
+
+#
+# Fatal error in , line 0
+# Check failed: 12 == (*__errno_location()).
+#
+#
+#
+#FailureMessage Object: 0x7f91412fb0
+----- Native stack trace -----
+
+Signal 5 (core dumped) 
+  ✗
+[13/19] B27...
+
+
+#
+# Fatal error in , line 0
+# Check failed: 12 == (*__errno_location()).
+#
+#
+#
+#FailureMessage Object: 0x7ea3d08fb0
+----- Native stack trace -----
+
+Signal 5 (core dumped) 
+  ✗
+[14/19] B28...
+
+
+#
+# Fatal error in , line 0
+# Check failed: 12 == (*__errno_location()).
+#
+#
+#
+#FailureMessage Object: 0x7f7fe1afb0
+----- Native stack trace -----
+
+Signal 5 (core dumped) 
+  ✗
+[15/19] B29...
+
+
+#
+# Fatal error in , line 0
+# Check failed: 12 == (*__errno_location()).
+#
+#
+#
+#FailureMessage Object: 0x7f18f47fb0
+----- Native stack trace -----
+
+Signal 5 (core dumped) 
+  ✗
+[16/19] B30...
+
+
+#
+# Fatal error in , line 0
+# Check failed: 12 == (*__errno_location()).
+#
+#
+#
+#FailureMessage Object: 0x7ef52cefb0
+----- Native stack trace -----
+
+Signal 5 (core dumped) 
+  ✗
+[17/19] B32...
+
+
+#
+# Fatal error in , line 0
+# Check failed: 12 == (*__errno_location()).
+#
+#
+#
+#FailureMessage Object: 0x7f21fecfb0
+----- Native stack trace -----
+
+Signal 5 (core dumped) 
+  ✗
+[18/19] B34...
+
+
+#
+# Fatal error in , line 0
+# Check failed: 12 == (*__errno_location()).
+#
+#
+#
+#FailureMessage Object: 0x7f6c2c3fb0
+----- Native stack trace -----
+
+Signal 5 (core dumped) 
+  ✗
+[19/19] B39...
+
+
+#
+# Fatal error in , line 0
+# Check failed: 12 == (*__errno_location()).
+#
+#
+#
+#FailureMessage Object: 0x7fd77cefb0
+----- Native stack trace -----
+
+Signal 5 (core dumped) 
+  ✗
+
+=== 完成 ===
+结束时间: Fri Oct  9 20:22:59 CST 2026

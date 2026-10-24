@@ -1,0 +1,21 @@
+{
+  "v2_records": 4296,
+  "old_records": 4050,
+  "new_records": 246,
+  "deepseek_covered": 246,
+  "deepseek_missing": 0,
+  "needs_reread": 12,
+  "image_review": 12,
+  "full_text_checked": 246,
+  "has_main_claims": 246,
+  "has_evidence": 246,
+  "old_research_reuse": {
+    "eligible_records": 4050,
+    "new_version_review_required": "separate audit"
+  },
+  "outputs": [
+    "research-rebuild\\reports\\new-article-index.csv",
+    "research-rebuild\\reports\\new-independent-review-queue.jsonl"
+  ],
+  "note": "新增边界由 v2 ID 不在旧语料 ID 集合中定义；DeepSeek 结果仅作初读索引，不能直接升级为最终研究结论。"
+}

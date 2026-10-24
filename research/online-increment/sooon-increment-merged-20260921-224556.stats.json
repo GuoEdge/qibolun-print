@@ -1,0 +1,20 @@
+{
+  "mergedAt": "2026-09-21T22:45:56.3968147+08:00",
+  "inputFiles": [
+    "sooon-increment-20260919-165345.jsonl",
+    "sooon-increment-20260919-165533.jsonl",
+    "sooon-increment-20260919-171817.jsonl",
+    "sooon-increment-20260921-224243.jsonl"
+  ],
+  "inputRecords": 560.0,
+  "records": 560,
+  "duplicates": 0,
+  "newArticles": 255,
+  "updatedArticles": 305,
+  "missingFields": 0,
+  "emptyText": 0,
+  "badLines": 0,
+  "totalTextChars": 624354,
+  "outputPath": "D:\\岐伯论\\research\\scripts\\..\\online-increment\\sooon-increment-merged-20260921-224556.jsonl",
+  "status": "PASS"
+}

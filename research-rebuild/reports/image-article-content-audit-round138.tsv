@@ -1,0 +1,17 @@
+id	title	text_chars	image_count	image_review_status	article_decision	image_decision	evidence_and_reason
+e108515f-375c-53c9-8f6d-1ee2c16b275a	最大成长速度	0	1	reviewed	exclude_candidate	omit	正文为空；唯一图片是夜间影视片段，字幕为“兽医—动物”，无法重建题名所指的成长速度问题或任何论证。文章与图片均不足以形成可研究内容。
+c5354fb0-7345-5864-8522-2c0cfdad3c2e	战马阉割	0	7	reviewed	exclude_candidate	omit_or_archive_only	正文为空；7 张图均为马匹绘画/版画，未显示阉割、年代、战场或可靠出处。图片只能证明有马的视觉素材，不能支持“战马阉割”主题，保留也只能作为原始档案。
+c6a02357-79be-54da-895e-0a7a9b76dc93	基督教与食血	39	8	reviewed	exclude_from_main_research	archive_images_only	正文只有一句，规范问题悬置为“能不能吃不好说”，事实主张“老牌基督教国家都在吃”完全依赖 8 张血肠/黑布丁图片及截图。图片是核心证据但来源未核验，整体仍不足以作为正文研究条目；建议从主研究集剔除，原文和图片仅存档。
+3a71ddf7-b0ea-58f6-8c08-a3881e2a65ac	兼得	45	1	reviewed	exclude_candidate	omit	正文是“数字遗产”与“网络遗忘”可兼得的短句论断；唯一影视截图只表达“我全都要”比喻，不增加事实或论证。内容过薄，图片可删，文章列为剔除候选。
+e266c1dd-a142-51f3-a1c7-661ec21e4585	各行其道	64	2	reviewed	exclude_candidate	archive_and_investigate_mismatch	两张图实际为公园道路/安全活动区的彩色路径标注（“会走丢”“会抓不下来”“唯一的安全活动区”等），与正文“猫眼中的出门”及猫段子完全不符；图像既不能补足正文，也提示原始图文关联可能错误。主研究剔除，原图保留供来源关联排查。
+3f40373a-5ff6-5034-9545-f2a2ae38d71e	悲欣交集	73	1	reviewed	retain_text_remove_image	omit	唯一图片为书法/文字局部，未增加正文关于青年与中年心理状态的论证；正文虽短但语义完整，保留正文、删除图片。
+e122a811-8341-594f-bce6-b50983b7e485	活成这样	81	1	reviewed	exclude_candidate	omit	正文只是兰迪·鲍许《最后一课》视频标题/链接，未给出观点、摘要或论证；图片仅为人物资料肖像，不能补足文章内容。文章和图片均不足，列为剔除候选。
+4f9b9ca8-8cc4-525e-8c76-8f8475881256	黑粉菌	126	3	reviewed	retain_text_image_optional	omit_or_keep_as_illustration	正文包含黑粉菌、茭白及玉米病变的明确生物学说明和不适提示，文字可独立成立；3 图分别展示食材与病变，能帮助读者识别但不能独立证明因果。正文保留，图片不是必要证据，印刷版可不嵌图。
+a687351f-28f0-5b9a-8d9c-41682da6e7a8	一拳	146	1	reviewed	retain_text_remove_image	omit	正文完整讨论以速度、算法、实力等方式击败对手，并提出正面竞争立场；图片只是《一拳超人》角色头像，不能证明正文判断。保留正文，删除图片。
+4e9df607-c4c2-576b-a9d8-7751f086a094	印刷信息量	149	1	reviewed	retain_text_keep_image	keep_and_ocr	图片是二维码信息容量说明截图，明确列出像素、颜色层级及容量范围，承载正文未展开的具体数据；虽不能仅凭截图核验技术真伪，但对理解作者论点有实质增量。正文与图片均保留，需 OCR/来源标记。
+736a204c-7cb1-5225-a191-fd52c127c544	张艺谋想你	158	2	reviewed	retain_text_image_optional	keep_if_space_allows	两张影视截图分别出现“安知我想你”“看不够你的是我”等字幕，确实是正文“效果图”的幽默示例；正文已独立说明不辞而别的反效果，图片非必要证据，版面受限可删。
+35239271-9349-5022-9dec-3f9fb90343fe	极简悄悄话	164	4	reviewed	retain_text_keep_selected_images	keep_3_architecture_omit_1_unrelated	正文讨论效果图与真实居住评价的差异；3 张住宅图直接给出所讨论的建筑案例，具有语境价值但不是不可替代证据，第 4 张影视图与主题对应不清。正文保留，印刷版可仅保留 3 张建筑图或全部省略。
+4fe80272-6993-50fd-ba8d-7c69e4507068	硅胶干燥剂	166	2	reviewed	retain_text_keep_images_optional	keep_if_space_allows	正文给出变色、吸湿、再生和使用方法，已可独立成立；两图分别展示蓝色颗粒与蓝/粉状态对照，显著提高可理解性但不构成独立证据。正文必留，图片有实用说明价值，版面受限时可删第 1 张、保留状态对照图。
+b38dcebe-c8a8-592d-8feb-ee55c68953b4	沙加	180	1	reviewed	retain_text_image_optional	omit_or_keep_as_character_reference	图片为动漫角色插图，与正文引用《圣斗士》人物和招式语境一致，但只提供角色视觉识别，不承担段子论证。正文保留，图片可删；若做文化索引可保留为角色参考。
+021e8171-6b59-552d-885e-5d477e157c7e	尖头鞋	197	2	reviewed	retain_text_keep_selected_images	keep_image_1_omit_image_2	第 1 图为正式皮鞋并以红箭头标出鞋跟/鞋面结构，可作正文关于鞋跟功能的直观示例；第 2 图为古装人物群像，未显示鞋或马镫，相关性不足。正文保留，最多保留第 1 图。
+a6cedaa3-5172-59a8-b995-ba479b01c8f2	修行实践	200	1	reviewed	retain_text_remove_image	omit	正文虽仅 200 字，但给出“修心”去神秘化的定义及主体/客体两层具体目标，概念结构完整；图片为透明容器中的不明物件，与论述对应不清。保留正文，删除图片。

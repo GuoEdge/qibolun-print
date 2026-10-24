@@ -1,0 +1,32 @@
+{
+  "articles": 254,
+  "images": 765,
+  "images_reviewed": 759,
+  "images_source_incomplete": 6,
+  "images_unreviewed": 0,
+  "article_status_counts": {
+    "complete": 253,
+    "partial": 1
+  },
+  "newly_reviewed_this_rebuild": {
+    "round180_45_articles": 84,
+    "round180_5g": 0,
+    "round182_5_articles": 24,
+    "total": 108
+  },
+  "round180": {
+    "articles": 46,
+    "articles_complete": 45,
+    "articles_partial": 1,
+    "new_images_reviewed": 84,
+    "source_incomplete_images": 6
+  },
+  "round182": {
+    "articles": 5,
+    "images": 24,
+    "failed": 0,
+    "status": "complete"
+  },
+  "correction_note": "round180 初次记录曾把 5G 写成 reviewed=19 / failed=2，原因是抓取脚本按'前 N 张已审'的连续假设跳过了第 1–4 张。经核对 round140 的原始文件，5G 的真实缺口是第 1、2、3、4、19、20 张（6 张，均为 36 字节占位响应），已审的是第 5–18、21 张（15 张）。此处为更正后的数字。",
+  "note": "254 篇含图文章：759/765 张已视觉复核；6 张（全部属 5G）源图不可获取，记为 source_incomplete。不用邻近图片替代，不据此声称已完整理解全文。6 篇排除候选身份不变，未删除任何文章。"
+}

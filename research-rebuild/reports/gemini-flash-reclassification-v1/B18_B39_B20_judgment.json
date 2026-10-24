@@ -1,0 +1,2088 @@
+{
+  "B18": {
+    "明确错放": [],
+    "可以保留": [
+      {
+        "title": "探病",
+        "id": "577b393b-67a1-5766-9651-8ecd742d17c9",
+        "topic": "G01"
+      },
+      {
+        "title": "挺过",
+        "id": "af317ccb-b9aa-5f69-a4ab-1d0058a72100",
+        "topic": "G04"
+      },
+      {
+        "title": "不医",
+        "id": "0d6f24af-df8c-5886-a9a9-f14b9fdca6e7",
+        "topic": "G01"
+      },
+      {
+        "title": "早鸟",
+        "id": "945e959a-79f1-5845-a644-c37e149d73d0",
+        "topic": "G01"
+      },
+      {
+        "title": "躺尽不平",
+        "id": "7213ea86-7e7f-5ae2-89dd-bb25cd0c6bc5",
+        "topic": "G04"
+      },
+      {
+        "title": "早睡早起",
+        "id": "b8ca26fd-60cc-516e-9ad4-7bdb12220e2a",
+        "topic": "G04"
+      },
+      {
+        "title": "内向缺陷",
+        "id": "4841e310-ed32-5d7b-a64b-9c0be5cd2b96",
+        "topic": "G12"
+      },
+      {
+        "title": "片刻欢愉",
+        "id": "43955542-b41b-531d-a3c8-899d9136fc44",
+        "topic": "G04"
+      },
+      {
+        "title": "父母尊严",
+        "id": "951edfba-d7aa-5d13-9e72-7c5f99171083",
+        "topic": "G01"
+      },
+      {
+        "title": "热烈和长久",
+        "id": "ed7f16cb-08c4-518d-8c24-4aad4d2649e8",
+        "topic": "G01"
+      }
+    ],
+    "边界模糊": [
+      {
+        "title": "天光",
+        "id": "69a5f21a-0a81-5461-b421-b5fa8416e783",
+        "topic": "G01"
+      },
+      {
+        "title": "不如意金箍棒",
+        "id": "f642dec6-1e9c-502d-96e0-e89ded063690",
+        "topic": "G12"
+      },
+      {
+        "title": "地球梦",
+        "id": "6da6bef4-5c7b-565a-a12d-1c24c83ace99",
+        "topic": "G12"
+      },
+      {
+        "title": "大碗肉糜",
+        "id": "a5762a07-e9ae-5c89-a482-bbcf22f95b1a",
+        "topic": "G12"
+      },
+      {
+        "title": "母乳喂养",
+        "id": "e9255064-2bae-55f5-9528-6fc3b1f023f8",
+        "topic": "G02"
+      },
+      {
+        "title": "从小功利",
+        "id": "8ee2e554-595e-54f7-b879-6fd86d4a2416",
+        "topic": "G12"
+      },
+      {
+        "title": "拿身体换",
+        "id": "0c2ac588-068e-5031-9108-d72783cbb739",
+        "topic": "G01"
+      },
+      {
+        "title": "聪明的笨功夫",
+        "id": "a37fd4ea-b7fa-5b2e-b566-f3ce02c116a8",
+        "topic": "G12"
+      },
+      {
+        "title": "护眼",
+        "id": "b8115317-40e8-5b95-83a0-6f22ff581892",
+        "topic": "UNKNOWN"
+      }
+    ]
+  },
+  "B39": {
+    "明确错放": [
+      {
+        "title": "高跟",
+        "id": "26039300-f815-55a5-bd97-e5aa22635fba",
+        "topic": "G01",
+        "reason": "G01内容，与艺术美学无关"
+      },
+      {
+        "title": "正衣冠",
+        "id": "3146e5f6-0769-5784-9040-caf8b2920753",
+        "topic": "G06",
+        "reason": "G06内容，与艺术美学无关"
+      },
+      {
+        "title": "文笔生活",
+        "id": "aa87b6cc-129b-5890-9161-af870f5688b5",
+        "topic": "G01",
+        "reason": "G01内容，与艺术美学无关"
+      },
+      {
+        "title": "塑料保鲜袋",
+        "id": "d79ed250-d3bd-57f6-b46d-67d673de8a55",
+        "topic": "G06",
+        "reason": "G06内容，与艺术美学无关"
+      },
+      {
+        "title": "樱",
+        "id": "25739006-4bf8-5b23-b53a-ebb79a71b298",
+        "topic": "G06",
+        "reason": "G06内容，与艺术美学无关"
+      },
+      {
+        "title": "日本早餐",
+        "id": "f04084e1-6bfb-5012-a1a1-d6b4112e3245",
+        "topic": "G06",
+        "reason": "G06内容，与艺术美学无关"
+      },
+      {
+        "title": "好表",
+        "id": "9138c22a-8a1b-5d74-9107-6780a70469c3",
+        "topic": "G06",
+        "reason": "G06内容，与艺术美学无关"
+      },
+      {
+        "title": "学理工",
+        "id": "145d3e3c-128d-562f-a33f-6e2f1ae4fd79",
+        "topic": "G01",
+        "reason": "G01内容，与艺术美学无关"
+      },
+      {
+        "title": "禽兽之败",
+        "id": "a4123e76-a713-521b-998d-796705667af7",
+        "topic": "G06",
+        "reason": "G06内容，与艺术美学无关"
+      },
+      {
+        "title": "旅行包",
+        "id": "5de98fb2-17ad-519d-bdc3-237c05660ab9",
+        "topic": "G06",
+        "reason": "G06内容，与艺术美学无关"
+      }
+    ],
+    "可以保留": [
+      {
+        "title": "苏州园",
+        "id": "83b5f74d-7827-5ce7-ba98-21ac9b1b470e",
+        "topic": "G06"
+      },
+      {
+        "title": "拍子",
+        "id": "fadb7c15-87b8-5e43-a5d5-14b032544ec0",
+        "topic": "G11"
+      },
+      {
+        "title": "书写的艺术",
+        "id": "9b2b249b-2528-59da-9898-3e18a450a6d0",
+        "topic": "G05"
+      },
+      {
+        "title": "工书",
+        "id": "16336056-5d08-5336-a475-bd28c6049c98",
+        "topic": "G11"
+      },
+      {
+        "title": "混沌文笔",
+        "id": "ae80551a-0df8-5462-a596-c81c43a8504c",
+        "topic": "G01"
+      },
+      {
+        "title": "混沌",
+        "id": "8b701797-245f-5af1-930a-c3867f59f2c1",
+        "topic": "G01"
+      },
+      {
+        "title": "天眼查",
+        "id": "2decd147-7c0b-5087-a5a5-69233b5e98e1",
+        "topic": "G04"
+      },
+      {
+        "title": "小飞棍",
+        "id": "82e8edce-7b62-5289-ab24-0a271b268373",
+        "topic": "G12"
+      },
+      {
+        "title": "最好的绘画工具",
+        "id": "fa944ca3-c4c5-5496-b579-b54fd31e1cc2",
+        "topic": "G01"
+      },
+      {
+        "title": "题词",
+        "id": "b34afaf7-ccc5-568a-82ee-192c29ca219d",
+        "topic": "G01"
+      },
+      {
+        "title": "书法",
+        "id": "43a31d80-d598-5ef7-9f10-68cfdd16e9d1",
+        "topic": "G11"
+      },
+      {
+        "title": "文笔",
+        "id": "d636f210-a6ed-55c6-86cf-bdb7cdbbf2a7",
+        "topic": "G01"
+      },
+      {
+        "title": "穷开心",
+        "id": "041d5ada-c315-55dd-b7c7-e0cada12751f",
+        "topic": "G01"
+      },
+      {
+        "title": "书法风尚",
+        "id": "3e120415-e8d8-504b-9e34-d446c0558429",
+        "topic": "G04"
+      },
+      {
+        "title": "无功之禄",
+        "id": "74fc7a92-f725-5125-aebb-3d1650dc22f7",
+        "topic": "G11"
+      },
+      {
+        "title": "第一作品",
+        "id": "4e11b368-8789-52f6-a901-efa0abb3ab62",
+        "topic": "G01"
+      }
+    ],
+    "边界模糊": [
+      {
+        "title": "失心",
+        "id": "16529dd4-306e-5ef8-a18e-184873131eea",
+        "topic": "G04"
+      },
+      {
+        "title": "隔山",
+        "id": "23ddde50-7b31-5acc-87f2-f2b143bb1c86",
+        "topic": "G11"
+      },
+      {
+        "title": "大炼钢铁",
+        "id": "89302e9b-5194-561d-be24-373111ca48d7",
+        "topic": "G05"
+      },
+      {
+        "title": "以卵击石",
+        "id": "08278c3c-8dba-59b3-af78-01307ce2a1ae",
+        "topic": "G04"
+      },
+      {
+        "title": "不讲究",
+        "id": "1983552d-2f63-5297-971c-fa393e9d5d1d",
+        "topic": "G04"
+      },
+      {
+        "title": "劳资蜀道山",
+        "id": "4e52507a-0fab-56a8-b78f-be7048e022d3",
+        "topic": "G12"
+      },
+      {
+        "title": "buzzkiller",
+        "id": "9e7e125d-649c-5375-b197-717cdcd65033",
+        "topic": "G12"
+      }
+    ]
+  },
+  "B20A": {
+    "明确错放": [
+      {
+        "title": "亲爱无比",
+        "id": "aaaccd6e-c894-5631-b921-6c1e74ec4fb9",
+        "topic": "G01",
+        "reason": "G01家庭教育内容，与职场无关"
+      },
+      {
+        "title": "野外迷失",
+        "id": "d84c5dc7-37fa-58dc-8a21-a8949d3641a3",
+        "topic": "G01",
+        "reason": "G01家庭教育内容，与职场无关"
+      },
+      {
+        "title": "不为尊严",
+        "id": "8cd3eaca-86e4-5d87-943b-f5839c86ba71",
+        "topic": "G01",
+        "reason": "G01家庭教育内容，与职场无关"
+      }
+    ],
+    "可以保留": [
+      {
+        "title": "后半句",
+        "id": "359095f1-02f7-5cfb-ac88-a2add28d06ca",
+        "topic": "G07"
+      },
+      {
+        "title": "松则久",
+        "id": "ed1a358b-b31d-5945-b776-b8573ecaa0c4",
+        "topic": "G01"
+      },
+      {
+        "title": "一寸欢喜",
+        "id": "8db8f172-3520-5077-a078-2c9578ebaf39",
+        "topic": "G01"
+      },
+      {
+        "title": "清静无为",
+        "id": "446ed510-22ee-5cc9-ab46-f5ef8d851fa7",
+        "topic": "G05"
+      },
+      {
+        "title": "赤手空拳",
+        "id": "ca0b2dd4-e67a-5243-a150-98c3b33953c1",
+        "topic": "G12"
+      },
+      {
+        "title": "工德无量",
+        "id": "2dcc4d6a-58bf-5e68-9c51-319d51c0f11e",
+        "topic": "G08"
+      },
+      {
+        "title": "宁静力",
+        "id": "b37796ff-6ee1-562d-9cc2-1ce50382c60e",
+        "topic": "G02"
+      },
+      {
+        "title": "等因奉此",
+        "id": "f52eb7c8-d75f-535f-a115-2d4098b93f1d",
+        "topic": "G07"
+      },
+      {
+        "title": "不听老人言",
+        "id": "61843e2f-9230-5dc2-adf6-bb7b3416d5f6",
+        "topic": "G01"
+      },
+      {
+        "title": "好不自在",
+        "id": "345da9c5-2501-5652-ab4f-493ee77a4bc4",
+        "topic": "G01"
+      },
+      {
+        "title": "好战之徒",
+        "id": "7d40ff51-8245-5989-b90a-edd964e96a7b",
+        "topic": "G12"
+      },
+      {
+        "title": "金边",
+        "id": "d752f922-e348-522a-ac2b-a38ab286c6d7",
+        "topic": "G12"
+      },
+      {
+        "title": "先展后奏",
+        "id": "ac4a4d46-61b4-5fc7-a105-a187ce3de43d",
+        "topic": "G04"
+      },
+      {
+        "title": "无得谈",
+        "id": "6bc3f500-a6a1-545e-8183-dd51e8944154",
+        "topic": "G01"
+      },
+      {
+        "title": "爱不受辱",
+        "id": "4d19acd1-3299-5a59-9f1f-b15677a0d2d3",
+        "topic": "G03"
+      },
+      {
+        "title": "敏感问题",
+        "id": "decc0de3-f97f-57d1-b689-c578bdea0636",
+        "topic": "G07"
+      },
+      {
+        "title": "必要与必然",
+        "id": "6d585a86-4173-57e1-b3e3-5db6466773fe",
+        "topic": "G12"
+      },
+      {
+        "title": "琐细的人",
+        "id": "1d5209c9-3b49-5544-a8a4-3059a6f4968a",
+        "topic": "G12"
+      },
+      {
+        "title": "时代红利",
+        "id": "5e4f4aab-f2ab-534f-80e5-df23e10a97d8",
+        "topic": "G12"
+      },
+      {
+        "title": "嫉妒者",
+        "id": "4d57ea2a-38da-5c69-8801-ec391fe624d2",
+        "topic": "G01"
+      },
+      {
+        "title": "一根吹管",
+        "id": "79ac8c65-83e6-5c0b-9f7b-8550daa0f6c6",
+        "topic": "G12"
+      },
+      {
+        "title": "何人居之",
+        "id": "c64298ac-8dc3-553a-822d-567349db4ec1",
+        "topic": "G07"
+      },
+      {
+        "title": "你干我敢",
+        "id": "464b3a2e-6d5d-588d-a87d-38286aab930a",
+        "topic": "G07"
+      },
+      {
+        "title": "无尽师",
+        "id": "afb6e120-80dd-5873-b3cf-7bea902bce9f",
+        "topic": "G07"
+      },
+      {
+        "title": "石头底",
+        "id": "04f8e463-559e-5537-be86-6720dcf938b0",
+        "topic": "G08"
+      },
+      {
+        "title": "先迈左脚",
+        "id": "b08151b4-9d77-59db-af2b-9969a54ea75c",
+        "topic": "G01"
+      },
+      {
+        "title": "钝",
+        "id": "e1ed4d96-15dc-5b5a-94f3-9673795ecf09",
+        "topic": "G12"
+      },
+      {
+        "title": "意犹未尽",
+        "id": "b128ddf4-ac47-572d-ac68-a07278b0a8ed",
+        "topic": "G12"
+      },
+      {
+        "title": "未见之勇",
+        "id": "091c7ffc-9925-509c-99a5-8a500baa20ed",
+        "topic": "G12"
+      },
+      {
+        "title": "稳妥说",
+        "id": "44de7ae5-1ca5-5217-8280-d69018d565b0",
+        "topic": "G12"
+      },
+      {
+        "title": "尾指",
+        "id": "d45814f0-fca0-5e33-bf7a-39ed7e1b0f75",
+        "topic": "G07"
+      },
+      {
+        "title": "解痛人",
+        "id": "2369c5ae-2628-5e86-9066-48c51a371d98",
+        "topic": "G12"
+      },
+      {
+        "title": "跳两级",
+        "id": "28fa23c8-71f1-50ab-8d78-b3737da5680a",
+        "topic": "G07"
+      },
+      {
+        "title": "登堂入室",
+        "id": "7eb4210b-4ebf-5abd-af1c-573582143a19",
+        "topic": "G01"
+      },
+      {
+        "title": "解结",
+        "id": "e8104b8f-0b99-50e4-9668-1ab38ed9b0a5",
+        "topic": "G12"
+      },
+      {
+        "title": "受不了",
+        "id": "4585db01-7053-5949-911d-9a27ecadef26",
+        "topic": "G07"
+      },
+      {
+        "title": "不稳定",
+        "id": "f21f830d-8026-5923-b561-4d247a865ae6",
+        "topic": "G01"
+      },
+      {
+        "title": "虚与实",
+        "id": "adcf9c0a-3970-5f19-bc40-b7f25403b0ab",
+        "topic": "G07"
+      },
+      {
+        "title": "出格",
+        "id": "1e36927e-4fb1-5ef2-aaf4-9ec07bba1870",
+        "topic": "G07"
+      },
+      {
+        "title": "鸡与猴",
+        "id": "1de3d1f9-c5ac-5e35-aabf-599e8fa73ef0",
+        "topic": "G01"
+      },
+      {
+        "title": "陪",
+        "id": "9a5f5eca-7af4-5ea8-b09d-7b84d9c5e2c0",
+        "topic": "G01"
+      },
+      {
+        "title": "工作重点",
+        "id": "2fd8d665-a1e8-5e8b-bd98-4696b19cff95",
+        "topic": "G07"
+      },
+      {
+        "title": "败犹胜",
+        "id": "21c276d1-9786-50d2-a4af-c95fdf7244d7",
+        "topic": "G07"
+      },
+      {
+        "title": "细水",
+        "id": "473920e6-0127-5941-98ec-60f6aedf4301",
+        "topic": "G01"
+      },
+      {
+        "title": "二不可测",
+        "id": "43611477-c31c-532d-b907-6c7a6ff73160",
+        "topic": "G07"
+      },
+      {
+        "title": "惟余莽莽",
+        "id": "7d450309-fede-5a03-b2ea-c31ad846c894",
+        "topic": "G07"
+      },
+      {
+        "title": "单双杀",
+        "id": "54622048-fc7a-52a8-95ef-75e6e911682e",
+        "topic": "G12"
+      },
+      {
+        "title": "胆",
+        "id": "b6a6cd99-65a5-5044-9d1a-8bfb95242df6",
+        "topic": "G12"
+      },
+      {
+        "title": "湿柴",
+        "id": "388c5dec-1ea2-59c0-b523-b545b93eac36",
+        "topic": "G07"
+      },
+      {
+        "title": "内经",
+        "id": "32fa23c0-5b5d-53f2-863d-146a2c5f44ff",
+        "topic": "G07"
+      },
+      {
+        "title": "毫米龙王",
+        "id": "9e8af497-b66a-5737-a08d-917b486ef6ac",
+        "topic": "G01"
+      },
+      {
+        "title": "背水人",
+        "id": "aaf212b3-d25e-50e9-9634-af72e4d341e6",
+        "topic": "G12"
+      },
+      {
+        "title": "无痕",
+        "id": "8e93e95e-7930-5af0-a2e8-0865912a69fc",
+        "topic": "G03"
+      },
+      {
+        "title": "两个钱包",
+        "id": "05d3be97-1b30-5c13-8330-1c5bb3992838",
+        "topic": "G12"
+      },
+      {
+        "title": "带动",
+        "id": "07378320-429a-5ba4-bfb2-c6cbf726b1d3",
+        "topic": "G07"
+      },
+      {
+        "title": "趣小鬼",
+        "id": "d88fd6fe-7bbc-5f04-b980-46a4bb8a710b",
+        "topic": "G07"
+      },
+      {
+        "title": "内力",
+        "id": "fd4d8932-8bc8-5c25-87ba-3c20afc95ab4",
+        "topic": "G12"
+      },
+      {
+        "title": "手心手背",
+        "id": "6e9e54e1-99aa-59fa-8d18-e4d4272e0c34",
+        "topic": "G12"
+      },
+      {
+        "title": "越级指挥",
+        "id": "4d42541b-c24e-52e0-81a4-d4f578b5e204",
+        "topic": "G12"
+      },
+      {
+        "title": "围巾",
+        "id": "d59e3240-3319-5104-b778-9c07507888e8",
+        "topic": "G07"
+      },
+      {
+        "title": "萝卜永动机",
+        "id": "67b1f4b7-13d9-5959-9222-a59e84e9e9d9",
+        "topic": "G12"
+      },
+      {
+        "title": "父去子留",
+        "id": "00712edd-0b2e-51d3-9099-33aeeb0377cf",
+        "topic": "G01"
+      },
+      {
+        "title": "清洁工休息室",
+        "id": "fa3f0dd9-ac13-5b17-9269-100fc01cfe5f",
+        "topic": "G08"
+      },
+      {
+        "title": "老态纵横",
+        "id": "4ba821af-4dd8-560c-ae2b-251391990a2c",
+        "topic": "G07"
+      },
+      {
+        "title": "你的我们",
+        "id": "d6d87dac-2982-5c8e-9f1d-6e93b46fcfaf",
+        "topic": "G04"
+      },
+      {
+        "title": "倒打一耙",
+        "id": "626dc7fd-f02c-5382-9239-5d796436440c",
+        "topic": "G12"
+      },
+      {
+        "title": "最",
+        "id": "12429061-52ab-54e1-8405-44583710be35",
+        "topic": "G07"
+      },
+      {
+        "title": "无悲喜",
+        "id": "abf7f207-3ff0-50d8-9591-6403ca0c35f1",
+        "topic": "G12"
+      },
+      {
+        "title": "钢铁苍穹",
+        "id": "131eb030-2a1f-5c18-a917-a38926b4ce6b",
+        "topic": "G12"
+      },
+      {
+        "title": "安贫乐道",
+        "id": "f1cbd19b-9192-52ea-a05e-0fc4b9ed9297",
+        "topic": "G12"
+      },
+      {
+        "title": "衣甲精洁",
+        "id": "b0d184b7-7ca9-5cab-885f-cc3e136c078f",
+        "topic": "G02"
+      },
+      {
+        "title": "见者有责",
+        "id": "a717a9d8-34fb-5a6d-8ba6-4cf03a3ed779",
+        "topic": "G01"
+      },
+      {
+        "title": "少收了三五斗",
+        "id": "8ea1ca95-bc6b-55e8-98c9-f2d2bb54abe1",
+        "topic": "G07"
+      },
+      {
+        "title": "工作优先",
+        "id": "b1036158-c0da-5eb5-9011-d0609bd5db83",
+        "topic": "G07"
+      },
+      {
+        "title": "认错问题",
+        "id": "23434474-9bc8-579b-b6f8-b3743e97e2c3",
+        "topic": "G01"
+      },
+      {
+        "title": "有理由退货",
+        "id": "3a7b8b75-b3de-50b4-ac04-733128e9efcb",
+        "topic": "G12"
+      },
+      {
+        "title": "黑信使",
+        "id": "5a7bb67a-3250-52ab-a9be-ec806ae520a9",
+        "topic": "G07"
+      },
+      {
+        "title": "陌路相望",
+        "id": "3286a4cf-d771-5698-a084-4d833a7d68c4",
+        "topic": "G01"
+      },
+      {
+        "title": "上班目的",
+        "id": "819af63c-442a-5fbb-a9ab-04d0518603b2",
+        "topic": "G07"
+      },
+      {
+        "title": "真爽",
+        "id": "6278580f-d02a-5ecd-91d8-423eabd7d971",
+        "topic": "G12"
+      },
+      {
+        "title": "正常的歧视",
+        "id": "2c5c737e-2d48-56b8-806d-1ef57d7102dc",
+        "topic": "G07"
+      },
+      {
+        "title": "白羽毛",
+        "id": "deece801-6414-5691-81bc-9d69a9bf500b",
+        "topic": "G12"
+      },
+      {
+        "title": "整齐",
+        "id": "720503bc-83cd-579e-8293-adb3fb2fde64",
+        "topic": "G12"
+      },
+      {
+        "title": "婚姻底气",
+        "id": "33fa1170-f8ab-5618-a7a4-00609f1f21bd",
+        "topic": "G01"
+      },
+      {
+        "title": "从不休假",
+        "id": "3d9e7dd6-4720-561e-bed2-41849a0d36c5",
+        "topic": "G12"
+      },
+      {
+        "title": "暴力债",
+        "id": "bf9f7d37-942e-5efd-b212-3bbd9bfec221",
+        "topic": "G01"
+      },
+      {
+        "title": "纪律抓手",
+        "id": "4c4d64bc-bcf5-5192-9eeb-48035462b38d",
+        "topic": "G01"
+      },
+      {
+        "title": "工作冲突处置原则",
+        "id": "0c08edbe-4f4e-515d-aa59-ad8839c7ee4e",
+        "topic": "G12"
+      },
+      {
+        "title": "听泉",
+        "id": "d05175d3-e89d-5d49-bfe4-fa77faba2f71",
+        "topic": "G12"
+      },
+      {
+        "title": "问在猜前",
+        "id": "a09ca427-888a-513b-9b61-6eaa58970984",
+        "topic": "G03"
+      },
+      {
+        "title": "害怕失去的人",
+        "id": "cddaafdf-6ea0-542c-9c16-6d3853c90d5d",
+        "topic": "G01"
+      }
+    ],
+    "边界模糊": [
+      {
+        "title": "群英",
+        "id": "da325fde-b89e-50ce-9a2b-e846efc4955f",
+        "topic": "G01"
+      },
+      {
+        "title": "有所成",
+        "id": "4878f245-bcf4-52f7-8daa-3a0ad9e46ae8",
+        "topic": "G01"
+      },
+      {
+        "title": "三斗金",
+        "id": "fa35c62a-72ac-5f83-806a-cbd66eaef0ab",
+        "topic": "G04"
+      },
+      {
+        "title": "NPC",
+        "id": "26639f91-6db3-571c-af59-364e41e1b24e",
+        "topic": "G12"
+      },
+      {
+        "title": "勤为要",
+        "id": "a8fdb53f-15f9-5c30-bad8-7372ad185df2",
+        "topic": "G01"
+      },
+      {
+        "title": "基本颜值",
+        "id": "466f7b8c-c951-5e93-a7f8-dd9c091f613d",
+        "topic": "G10"
+      },
+      {
+        "title": "子不承父业",
+        "id": "02832bea-79b4-583c-b486-edffb34fbf9a",
+        "topic": "G03"
+      },
+      {
+        "title": "火力稳定",
+        "id": "7453735e-f564-586f-aad6-451e2e9d09a5",
+        "topic": "G03"
+      },
+      {
+        "title": "消失的修理厂",
+        "id": "ed3bb56c-3d95-5c07-8979-087e6ca39a03",
+        "topic": "G12"
+      },
+      {
+        "title": "奇货",
+        "id": "28dabaeb-9bff-5dc2-a4d1-148cd877fe79",
+        "topic": "G02"
+      },
+      {
+        "title": "何谓之迟",
+        "id": "cb29a58d-31af-5d5d-a547-e2d4498c0f48",
+        "topic": "G01"
+      },
+      {
+        "title": "不知耻者",
+        "id": "8b6d0531-b592-5878-8dbd-957fab313222",
+        "topic": "G12"
+      },
+      {
+        "title": "无罪之罪",
+        "id": "5e526cf4-f0f6-590b-96f7-2a52417def9d",
+        "topic": "G12"
+      },
+      {
+        "title": "表达情绪",
+        "id": "d1e94702-6eb1-59d0-9e72-cd48c45a05fe",
+        "topic": "G12"
+      },
+      {
+        "title": "妈妈岗",
+        "id": "da6f5c1c-e01b-5f75-abb3-fbf29b15c36f",
+        "topic": "G01"
+      },
+      {
+        "title": "死理",
+        "id": "f9fe71b5-c883-5664-b21d-c458d2e51806",
+        "topic": "G12"
+      },
+      {
+        "title": "冷字门",
+        "id": "f4d7494f-c6db-5f1a-9e52-16c96036763d",
+        "topic": "G12"
+      },
+      {
+        "title": "厉害思维",
+        "id": "31dcaf05-d756-5ab9-8ee7-9c6191c35104",
+        "topic": "G01"
+      },
+      {
+        "title": "狡辩",
+        "id": "ef52f8dd-0744-5344-b11a-b8bd7f6494ba",
+        "topic": "G01"
+      },
+      {
+        "title": "言不由衷",
+        "id": "c259d5dd-43ac-5a97-b5a5-a7156a52ccff",
+        "topic": "G02"
+      },
+      {
+        "title": "内向罪",
+        "id": "fdb129c0-3ea4-5da3-9d01-2916507b27da",
+        "topic": "G01"
+      },
+      {
+        "title": "与朋友论",
+        "id": "6ec78f9f-dfe5-5ab6-8f28-9124f486d293",
+        "topic": "G03"
+      },
+      {
+        "title": "money talks",
+        "id": "968622b4-60dc-5c3d-9ba7-b2c42ba81ea8",
+        "topic": "G12"
+      },
+      {
+        "title": "出力不出钱",
+        "id": "12b3a66a-1dac-5dc5-acb1-70a340b1d086",
+        "topic": "G12"
+      }
+    ]
+  },
+  "B20B": {
+    "明确错放": [
+      {
+        "title": "维生素M",
+        "id": "5518187d-9a2f-5ad2-9aeb-9c5ba3ff343c",
+        "topic": "G01",
+        "reason": "G01家庭教育内容，与职场无关"
+      },
+      {
+        "title": "不脆弱义务",
+        "id": "48b0bb4c-98ec-5c20-918d-df43c894dd1c",
+        "topic": "G01",
+        "reason": "G01家庭教育内容，与职场无关"
+      }
+    ],
+    "可以保留": [
+      {
+        "title": "容错率",
+        "id": "755916df-6ce3-58f2-8d57-847ab0c35296",
+        "topic": "G01"
+      },
+      {
+        "title": "败军之将",
+        "id": "279d683a-3da4-5f55-a841-9b9c2f8143e3",
+        "topic": "G07"
+      },
+      {
+        "title": "内举不避亲",
+        "id": "193a3488-e28c-5655-8d40-ba07f04f6c57",
+        "topic": "G07"
+      },
+      {
+        "title": "赏金猎猪",
+        "id": "2ca3d07e-6f7d-56ea-bb63-a90b2385647d",
+        "topic": "G12"
+      },
+      {
+        "title": "不盈利组织",
+        "id": "a494a8bf-a0e7-5876-b12c-42d907453d88",
+        "topic": "G08"
+      },
+      {
+        "title": "恐惧的疫苗",
+        "id": "f50a62f0-9ad4-555c-8859-38689aa2db77",
+        "topic": "G12"
+      },
+      {
+        "title": "实际产品",
+        "id": "dd4b255b-b5ae-5956-bee5-0993c69bcace",
+        "topic": "G12"
+      },
+      {
+        "title": "滴灌",
+        "id": "2a88cc8a-0746-573a-9885-9fed9f447797",
+        "topic": "G01"
+      },
+      {
+        "title": "贵妃之死",
+        "id": "daed94c5-cb94-5cae-b638-b7afde450877",
+        "topic": "G07"
+      },
+      {
+        "title": "遥不可及",
+        "id": "d979dfc8-4cc6-5471-966d-dab2c8af7e78",
+        "topic": "G02"
+      },
+      {
+        "title": "两手硬",
+        "id": "30c134fc-fdd9-5c6a-8b73-967d69db586b",
+        "topic": "G03"
+      },
+      {
+        "title": "鬼故事",
+        "id": "5179cec5-c9c9-5670-8017-8e7bd57d857e",
+        "topic": "G01"
+      },
+      {
+        "title": "出头鸟",
+        "id": "06307cfd-0a99-5d5d-8a3d-86681093c3b8",
+        "topic": "G01"
+      },
+      {
+        "title": "真想要",
+        "id": "1ecce437-e8e1-5f60-be41-9c4ea6b14458",
+        "topic": "G04"
+      },
+      {
+        "title": "0-1-2-3",
+        "id": "27c657b1-09db-57e8-a40b-672a4a27181b",
+        "topic": "G12"
+      },
+      {
+        "title": "反着卖",
+        "id": "146dea8a-0ed9-5a06-a439-a6f783c1abde",
+        "topic": "G12"
+      },
+      {
+        "title": "一意孤行的慈善",
+        "id": "6a1c9f04-6343-5879-8ee2-fb53ad960c06",
+        "topic": "G12"
+      },
+      {
+        "title": "问得不耐烦",
+        "id": "cc63a391-fb8b-58d6-9ee2-b319b00816bd",
+        "topic": "G07"
+      },
+      {
+        "title": "完美航空",
+        "id": "4395dc76-4826-5778-824d-82c5f0de8350",
+        "topic": "G12"
+      },
+      {
+        "title": "高级回怼",
+        "id": "9de92083-3816-503c-bfb1-c3c737586357",
+        "topic": "G03"
+      },
+      {
+        "title": "洁癖",
+        "id": "e81fa546-fc51-5870-a66d-a82032164422",
+        "topic": "G02"
+      },
+      {
+        "title": "慢工",
+        "id": "b0bf86fd-6254-5e29-b919-932ecd79b078",
+        "topic": "G07"
+      },
+      {
+        "title": "满身大汗",
+        "id": "e3e4a169-f053-5be0-ab0b-1794e432d1d2",
+        "topic": "G07"
+      },
+      {
+        "title": "矛盾的赌注",
+        "id": "212f8bd5-ad3d-5f1f-9d61-1deb9547b35f",
+        "topic": "G07"
+      },
+      {
+        "title": "钻头",
+        "id": "383a9961-27d0-5bf5-a041-e67d0b0e6e12",
+        "topic": "G01"
+      },
+      {
+        "title": "陪伴时长",
+        "id": "e5e15ce2-dc16-50d2-a02b-33018d0a21aa",
+        "topic": "G01"
+      },
+      {
+        "title": "傻强",
+        "id": "bc3e4fcc-d641-5665-9a27-e751c9e03298",
+        "topic": "G12"
+      },
+      {
+        "title": "新手计划",
+        "id": "23cec62a-1ed0-59ec-9a7b-38a6e49af3c5",
+        "topic": "G12"
+      },
+      {
+        "title": "两小无猜",
+        "id": "e6cd2e77-18f3-5456-a86b-e962feee1d21",
+        "topic": "G12"
+      },
+      {
+        "title": "琐碎事尔",
+        "id": "666f6b9a-c4b6-5e84-a0d1-8ef8638a22e1",
+        "topic": "G01"
+      },
+      {
+        "title": "喜怒不形于色",
+        "id": "dafbd16a-9b9d-543b-9f6e-68e01e55daa0",
+        "topic": "G01"
+      },
+      {
+        "title": "倦怠",
+        "id": "efc59617-3016-5780-86fc-31d4106a06c0",
+        "topic": "G01"
+      },
+      {
+        "title": "自由的印花税",
+        "id": "b6c8ab98-21b5-5a55-993a-a75ddac6f60d",
+        "topic": "G12"
+      },
+      {
+        "title": "遇袒则忧",
+        "id": "4031fd56-3ca9-5eb4-b688-1359649c349a",
+        "topic": "G12"
+      },
+      {
+        "title": "水母阴姬",
+        "id": "fd1785b0-7254-5793-94da-1a4d26274547",
+        "topic": "G04"
+      },
+      {
+        "title": "贪官",
+        "id": "54af5c2a-7be2-502e-b290-f3ba462d5b0e",
+        "topic": "G07"
+      },
+      {
+        "title": "羁绊源",
+        "id": "ea539261-bd1d-5bc1-8dbe-e7eb5b258493",
+        "topic": "G12"
+      },
+      {
+        "title": "喝可乐的冲锋队",
+        "id": "1f22e7e3-a1c6-569b-bfc3-2e0e69b59b7f",
+        "topic": "G01"
+      },
+      {
+        "title": "999007",
+        "id": "466816a7-1c50-56e2-978c-290071bd9f62",
+        "topic": "G03"
+      },
+      {
+        "title": "过三关",
+        "id": "d7ae93d8-0b66-50fb-9358-e30edfcf31b1",
+        "topic": "G04"
+      },
+      {
+        "title": "一体两面",
+        "id": "970dae9c-f508-5a13-86c7-65c6e0c2e731",
+        "topic": "G12"
+      },
+      {
+        "title": "傻博士",
+        "id": "a1f598f6-b9df-5f13-b7f5-61db2391107d",
+        "topic": "G12"
+      },
+      {
+        "title": "面向交接工作",
+        "id": "a14e4232-d5a7-5187-ab2b-51d40604089d",
+        "topic": "G07"
+      },
+      {
+        "title": "拒之门外",
+        "id": "78709cae-6e75-5bc2-9db3-c63e9e701ddf",
+        "topic": "G12"
+      },
+      {
+        "title": "观音快递",
+        "id": "de3dc05b-6aa9-5ecd-a20e-f27bd54f0c10",
+        "topic": "G01"
+      },
+      {
+        "title": "公共垃圾桶",
+        "id": "621082e7-aff7-5156-bd2f-f1941ed0aeeb",
+        "topic": "G12"
+      },
+      {
+        "title": "向钱看",
+        "id": "8a0eafae-6701-5a61-85e7-ad80625ccd26",
+        "topic": "G12"
+      },
+      {
+        "title": "颈椎",
+        "id": "35afb6b4-49a3-516c-b631-f6a2624f31fe",
+        "topic": "G12"
+      },
+      {
+        "title": "有条理",
+        "id": "060976b2-2315-5641-8694-795b3fba75f0",
+        "topic": "G04"
+      },
+      {
+        "title": "置身事外",
+        "id": "3a690cdd-9253-578f-b98c-af9defb891d0",
+        "topic": "G12"
+      },
+      {
+        "title": "以法责众",
+        "id": "6484adb6-aeaf-52c7-bb65-902ac9d51663",
+        "topic": "G07"
+      },
+      {
+        "title": "草台班子",
+        "id": "3abc439e-7c12-59f8-b8ea-6f443a532b89",
+        "topic": "G12"
+      },
+      {
+        "title": "以盾为剑",
+        "id": "5d241fd7-96db-5958-affb-413b7e986509",
+        "topic": "G12"
+      },
+      {
+        "title": "喜下眉梢",
+        "id": "10e8a6eb-144e-575a-af40-a36f2ba09e32",
+        "topic": "G02"
+      },
+      {
+        "title": "效率之王",
+        "id": "aae75ea2-76f2-551b-aefb-d47e5a4224e7",
+        "topic": "G07"
+      },
+      {
+        "title": "吹哨人",
+        "id": "38b94fb1-c9e2-52d4-bf8e-1dbb17b55566",
+        "topic": "G07"
+      },
+      {
+        "title": "反间",
+        "id": "fa703f64-a1bd-510d-923e-d60e5cda1535",
+        "topic": "G12"
+      },
+      {
+        "title": "错误的选择",
+        "id": "cdfe3d01-0559-5569-83ac-6428d6b57645",
+        "topic": "G01"
+      },
+      {
+        "title": "不赏饭",
+        "id": "9a27a968-abef-5a05-8e28-793f54efe5fa",
+        "topic": "G01"
+      },
+      {
+        "title": "职业生命",
+        "id": "9a726b46-0f83-5645-9696-1fc698bce52d",
+        "topic": "G01"
+      },
+      {
+        "title": "两头落空",
+        "id": "6af5fb87-f1ba-5010-bb10-3d0ee0164ffe",
+        "topic": "G12"
+      },
+      {
+        "title": "福清帮",
+        "id": "381efa61-c021-555f-82a4-8fb6f3e231a0",
+        "topic": "G12"
+      },
+      {
+        "title": "土生土长",
+        "id": "80662c27-b1ce-5151-8bc3-9cbd920d4976",
+        "topic": "G07"
+      },
+      {
+        "title": "辞退保姆",
+        "id": "d16a3697-e738-5e64-8ca4-58e7e45e46d5",
+        "topic": "G02"
+      },
+      {
+        "title": "镰刀盛",
+        "id": "a987e3e4-b6ad-54eb-8d0f-7dc87db5091d",
+        "topic": "G12"
+      },
+      {
+        "title": "小离题",
+        "id": "7a538e8c-1d1a-5dc9-beef-bfdc69dd533e",
+        "topic": "G01"
+      },
+      {
+        "title": "录取线",
+        "id": "bc0b8aa6-c51e-5c02-8b44-64f7c256154f",
+        "topic": "G12"
+      },
+      {
+        "title": "路有朱门",
+        "id": "7bd32b4c-4914-541f-bdcd-d68425f8d1c0",
+        "topic": "G07"
+      },
+      {
+        "title": "神鬼传奇",
+        "id": "f4b9b707-40f8-560c-9333-faed0df062a8",
+        "topic": "G12"
+      },
+      {
+        "title": "神奇的健忘",
+        "id": "26332556-97de-5225-a70f-9456033084e0",
+        "topic": "G12"
+      },
+      {
+        "title": "钱不够",
+        "id": "0c20d5f3-e462-58c8-826f-df5a229c5808",
+        "topic": "G12"
+      },
+      {
+        "title": "达意责任",
+        "id": "6647e494-2b80-57af-b903-a1b541d9fbf6",
+        "topic": "G12"
+      },
+      {
+        "title": "间谍家家酒",
+        "id": "cd582e1c-4f8c-56fb-b4c8-d2951c972a6b",
+        "topic": "G03"
+      },
+      {
+        "title": "远",
+        "id": "ea68ea42-6385-5423-b141-d74dbcffe498",
+        "topic": "G01"
+      },
+      {
+        "title": "CAS",
+        "id": "cc2624fb-c161-5ab1-84c4-8229bed5bd92",
+        "topic": "G12"
+      },
+      {
+        "title": "AI 一",
+        "id": "6511b53f-878c-5ae0-af8f-d2f04e78569c",
+        "topic": "G01"
+      },
+      {
+        "title": "集体主义精神",
+        "id": "880aecbd-fc09-5096-bc20-778f446ca95d",
+        "topic": "G01"
+      },
+      {
+        "title": "基层陷阱",
+        "id": "df3a60ab-fe36-5b37-9b27-d9a160554836",
+        "topic": "G01"
+      },
+      {
+        "title": "龙生于渊",
+        "id": "8c014016-4e7f-5c33-a6dc-d3b503317fb4",
+        "topic": "G02"
+      },
+      {
+        "title": "奸佞",
+        "id": "24bd30b7-9579-5cb4-b43a-34c3d5d96687",
+        "topic": "G07"
+      },
+      {
+        "title": "退休",
+        "id": "ba2a38db-2b13-5422-861e-d2c88a7c7c6c",
+        "topic": "G12"
+      },
+      {
+        "title": "35",
+        "id": "d47d3cc5-7a24-5a1b-b775-10c5a06b3bc0",
+        "topic": "G07"
+      },
+      {
+        "title": "没有失业的好地方",
+        "id": "209205a2-788f-594f-9d41-7655d327aeef",
+        "topic": "G12"
+      },
+      {
+        "title": "主见",
+        "id": "ec1c1cbb-e156-5b27-b802-21355330794c",
+        "topic": "G07"
+      }
+    ],
+    "边界模糊": [
+      {
+        "title": "就这",
+        "id": "479cee81-86d0-503f-8b06-aec905a4ffa3",
+        "topic": "G01"
+      },
+      {
+        "title": "恶人磨",
+        "id": "05771a13-281b-562b-8eb1-532096073249",
+        "topic": "G12"
+      },
+      {
+        "title": "避玄如避嫌",
+        "id": "6181f612-ae83-5830-807f-495064f66407",
+        "topic": "G12"
+      },
+      {
+        "title": "铁布衫",
+        "id": "43bd5bfe-7837-51af-a1a5-cc93c3ab8b57",
+        "topic": "G13"
+      },
+      {
+        "title": "自脱罗网",
+        "id": "4ab294c1-232a-5c0e-83a5-8c1c3897c824",
+        "topic": "G02"
+      },
+      {
+        "title": "建议合理的生活",
+        "id": "dc1f971c-f638-5654-a3bb-55d5e8d93cb4",
+        "topic": "G01"
+      },
+      {
+        "title": "夜叉",
+        "id": "e289fb8f-4980-544a-bba2-307c4f00baac",
+        "topic": "G12"
+      },
+      {
+        "title": "zz理论",
+        "id": "61b71b90-4310-528f-82d4-aa837d4ef71d",
+        "topic": "G12"
+      },
+      {
+        "title": "自责陷阱",
+        "id": "d43c2178-9c63-563f-a9e6-5fcf36127846",
+        "topic": "G12"
+      },
+      {
+        "title": "红顶商人",
+        "id": "73515d41-a785-592f-b38b-526c5064bae1",
+        "topic": "G12"
+      },
+      {
+        "title": "消费陷阱",
+        "id": "c0c44504-0a7a-580a-8904-49f2fc9eec3a",
+        "topic": "G12"
+      },
+      {
+        "title": "我不问，你不说",
+        "id": "24ff3331-d42d-595c-b479-23063e8659b8",
+        "topic": "G02"
+      },
+      {
+        "title": "不损人",
+        "id": "e3b4ba88-67b8-5949-84c7-01ea1994c121",
+        "topic": "G12"
+      },
+      {
+        "title": "地狱的门锁",
+        "id": "8336802b-9c26-5f02-804f-23fb95668e07",
+        "topic": "G01"
+      },
+      {
+        "title": "七天无理由",
+        "id": "173c1de2-9a31-5228-9cd4-baaf9a2a77fe",
+        "topic": "G02"
+      },
+      {
+        "title": "忐忑不绝",
+        "id": "620262d8-b1c4-5c8d-a3e9-4c39dca3d618",
+        "topic": "G10"
+      },
+      {
+        "title": "接受加班",
+        "id": "b28bb5ef-2357-5ab0-af0b-cab09619925d",
+        "topic": "G12"
+      },
+      {
+        "title": "皆大欢喜",
+        "id": "61a9b576-8376-5a3c-88dd-06b73ae25f0c",
+        "topic": "G03"
+      },
+      {
+        "title": "头盔锁",
+        "id": "729cd136-2081-5743-aca7-dc7f354abff6",
+        "topic": "G12"
+      },
+      {
+        "title": "0day风险",
+        "id": "1469451c-9dec-50ca-9922-96bd8657628d",
+        "topic": "G12"
+      },
+      {
+        "title": "唯唯诺诺",
+        "id": "247e8aac-3368-525e-9439-b504577ccd20",
+        "topic": "G01"
+      },
+      {
+        "title": "看谁说的",
+        "id": "a9785175-989f-50ad-83a1-57c826068058",
+        "topic": "G12"
+      },
+      {
+        "title": "法网柔情",
+        "id": "1a4e052b-67bb-5495-9af8-1878d5a5df5b",
+        "topic": "G06"
+      },
+      {
+        "title": "性骚扰共识",
+        "id": "cdf5fefa-e97b-5609-964c-0a73283ea91a",
+        "topic": "G13"
+      },
+      {
+        "title": "原谅失效",
+        "id": "dafa9f11-042c-50e8-af32-847ddb407636",
+        "topic": "G12"
+      },
+      {
+        "title": "技术革命",
+        "id": "8a85f015-b363-5e68-a251-388ee44dbd90",
+        "topic": "G12"
+      },
+      {
+        "title": "红区",
+        "id": "296474e5-7c0b-568e-ba74-ca5a5e5e7e02",
+        "topic": "G09"
+      },
+      {
+        "title": "主见与犟",
+        "id": "91bc2e0a-1360-597a-8e6f-15f60b00a5ae",
+        "topic": "G12"
+      },
+      {
+        "title": "白羽恶魔",
+        "id": "29b258e1-d591-5992-bd56-037d86f08a73",
+        "topic": "G12"
+      },
+      {
+        "title": "被浪费的人才",
+        "id": "a5402b0b-e8ec-5ab6-84e5-99662271cc6b",
+        "topic": "G12"
+      },
+      {
+        "title": "民主游戏",
+        "id": "f22d3bfa-42b5-5f13-82db-8dc87cbd4dbe",
+        "topic": "G12"
+      },
+      {
+        "title": "再打打",
+        "id": "10394fcb-017a-585f-ad53-9b7fd7c2ee7f",
+        "topic": "G12"
+      }
+    ]
+  },
+  "B20C": {
+    "明确错放": [
+      {
+        "title": "性侵危机",
+        "id": "86144d35-7a44-50d0-89ae-16e3b50beacf",
+        "topic": "G01",
+        "reason": "G01家庭教育内容，与职场无关"
+      },
+      {
+        "title": "与世界为敌",
+        "id": "d5d2eb94-9176-5674-975f-aae5622c7f16",
+        "topic": "G01",
+        "reason": "G01家庭教育内容，与职场无关"
+      }
+    ],
+    "可以保留": [
+      {
+        "title": "有钱人",
+        "id": "5cfe5df3-bf20-5fbc-93a9-dd69b58d74c2",
+        "topic": "G01"
+      },
+      {
+        "title": "blender",
+        "id": "77151d4f-fc9c-57d2-9e91-4a3dd3a30fec",
+        "topic": "G12"
+      },
+      {
+        "title": "chatGPT",
+        "id": "401f66f2-66de-5221-a516-52909149fd69",
+        "topic": "G12"
+      },
+      {
+        "title": "反敌意监控",
+        "id": "060f0fbb-703f-5175-952b-c86b1a949fbb",
+        "topic": "G03"
+      },
+      {
+        "title": "有匪君子",
+        "id": "8f454a1f-d9ae-50a8-85f4-4f6da1efff62",
+        "topic": "G01"
+      },
+      {
+        "title": "以下事上",
+        "id": "8d7b5d9a-1611-506a-a9fe-e7dbd5b517e4",
+        "topic": "G12"
+      },
+      {
+        "title": "请假",
+        "id": "42548038-47a1-5078-bc3e-ff59e810053d",
+        "topic": "G02"
+      },
+      {
+        "title": "收尾",
+        "id": "cfde3fae-085c-520f-9e98-e0d74743b909",
+        "topic": "G07"
+      },
+      {
+        "title": "好胜心",
+        "id": "a319fbf2-30ab-5b1b-a461-1bebffce6c28",
+        "topic": "G12"
+      },
+      {
+        "title": "刑罚之外",
+        "id": "566e2030-b43c-5ff6-ab29-00648a6f0203",
+        "topic": "G03"
+      },
+      {
+        "title": "你的事",
+        "id": "74a64c05-77d8-543c-8f88-c04cd12b6a47",
+        "topic": "G01"
+      },
+      {
+        "title": "魔法蛋",
+        "id": "ffa889d1-0345-59e0-ab96-1108c3d0744d",
+        "topic": "G12"
+      },
+      {
+        "title": "裁员过渡",
+        "id": "f5d0bccd-ddba-5d4b-854b-4983069839f6",
+        "topic": "G03"
+      },
+      {
+        "title": "诛心病",
+        "id": "942e8d44-009d-527c-8783-27656520b8de",
+        "topic": "G10"
+      },
+      {
+        "title": "万本无利",
+        "id": "ecc7009e-724d-5c08-80fa-e9ffa550fec7",
+        "topic": "G01"
+      },
+      {
+        "title": "The Whole Package",
+        "id": "a93a128b-60a3-5ad4-a583-7637c439b3fc",
+        "topic": "G12"
+      },
+      {
+        "title": "有眼色",
+        "id": "5817e781-5844-5b6d-b9e0-d8d7f4515037",
+        "topic": "G01"
+      },
+      {
+        "title": "同学同事",
+        "id": "3efdaad0-027e-5869-bea1-c82362800241",
+        "topic": "G03"
+      },
+      {
+        "title": "求助力",
+        "id": "ff5f998f-c7ae-58df-b13b-833270bf7b69",
+        "topic": "G01"
+      },
+      {
+        "title": "对待软弱者",
+        "id": "f3d40c79-86a9-5f8a-9c42-244f3efbed92",
+        "topic": "G03"
+      },
+      {
+        "title": "保持单纯",
+        "id": "8a232e01-e8d5-5a3c-ba97-1d9f3e83ff76",
+        "topic": "G01"
+      },
+      {
+        "title": "起步晚",
+        "id": "e59be25c-048f-578c-8db4-de6d91ffa564",
+        "topic": "G01"
+      },
+      {
+        "title": "闲聊",
+        "id": "6ad5e541-0333-5238-b6af-c7a30f93aff4",
+        "topic": "G07"
+      },
+      {
+        "title": "基本造型能力",
+        "id": "d14dd351-55b7-5bf2-be2c-f0b39f68c0fa",
+        "topic": "G12"
+      },
+      {
+        "title": "小长官",
+        "id": "d1214dbe-4723-5271-87d0-553c09dae130",
+        "topic": "G07"
+      },
+      {
+        "title": "优先保护",
+        "id": "8e603160-bfb0-5850-9285-1df0afc3ca91",
+        "topic": "G12"
+      },
+      {
+        "title": "袁世凯",
+        "id": "9d2ea40e-1a02-5a09-9d26-bcd7029d4af8",
+        "topic": "G12"
+      },
+      {
+        "title": "殖民地",
+        "id": "16440a52-2cc5-5dc6-be62-678a92101ba1",
+        "topic": "G12"
+      },
+      {
+        "title": "人才流失",
+        "id": "049ac2a7-fd8b-5c5c-b78c-1133cbd4c75e",
+        "topic": "G07"
+      },
+      {
+        "title": "谁的责任",
+        "id": "9ad583ec-6558-57de-97e6-0697183f978d",
+        "topic": "G12"
+      },
+      {
+        "title": "三合一",
+        "id": "b21788a5-33f3-5722-96d6-9a822c440d4a",
+        "topic": "G05"
+      },
+      {
+        "title": "有困难就说",
+        "id": "070114cf-f03d-57ac-aabc-21d9fd39338b",
+        "topic": "G01"
+      },
+      {
+        "title": "不宜久留",
+        "id": "8f6c9025-0c52-5fcc-a5d7-de073f5f9a69",
+        "topic": "G05"
+      },
+      {
+        "title": "指挥加班",
+        "id": "b8b335c7-0fca-5d89-b100-10e0a0dd36dd",
+        "topic": "G12"
+      },
+      {
+        "title": "物化",
+        "id": "0d8a4deb-f301-52bb-aca5-971a9deb5ef8",
+        "topic": "G12"
+      },
+      {
+        "title": "一点就透",
+        "id": "e8d940f4-4b1a-54d9-ab82-ab4fdbe8c7c7",
+        "topic": "G02"
+      },
+      {
+        "title": "理解的原理",
+        "id": "e811680f-3bf9-5abb-a1a3-f81d9fe6e6ff",
+        "topic": "G01"
+      },
+      {
+        "title": "汉字基准字体",
+        "id": "da098d20-c643-5f18-a4ae-2fd637101811",
+        "topic": "G11"
+      },
+      {
+        "title": "尊重的实践",
+        "id": "bca69765-5230-5001-946f-1404f5fb2b11",
+        "topic": "G05"
+      },
+      {
+        "title": "劝退",
+        "id": "6c32cbf9-8471-5318-97c4-9027a1fb332c",
+        "topic": "G12"
+      },
+      {
+        "title": "女舰长",
+        "id": "6150fe1b-48d9-5cc3-b3cf-07d35fb794d3",
+        "topic": "G07"
+      },
+      {
+        "title": "不卑不亢",
+        "id": "96322038-eced-53f8-b632-221ed7ee3f9d",
+        "topic": "G07"
+      },
+      {
+        "title": "受伤害",
+        "id": "073eb6e7-cca1-59df-a8b5-8cd3bcad665a",
+        "topic": "G13"
+      },
+      {
+        "title": "底层",
+        "id": "6d63051d-31c4-5f35-a9ec-db4a58dc9d48",
+        "topic": "G12"
+      },
+      {
+        "title": "文科生",
+        "id": "98e8a2f8-4663-5f66-b1a3-c7a1b1984bc3",
+        "topic": "G12"
+      },
+      {
+        "title": "祈祷与祝福",
+        "id": "e1c592d3-dec0-5afe-9497-b5279124745c",
+        "topic": "G01"
+      },
+      {
+        "title": "可以干",
+        "id": "abaedfb0-ce0d-58da-8021-2b917fc8f021",
+        "topic": "G12"
+      },
+      {
+        "title": "埋头苦干",
+        "id": "8cad2f25-47ba-5ba3-bf95-0ec2a0bb4be6",
+        "topic": "G07"
+      },
+      {
+        "title": "导演",
+        "id": "cceb5b68-1fe2-5616-af79-b205288e252e",
+        "topic": "G09"
+      },
+      {
+        "title": "敌人",
+        "id": "f92334cc-ffc6-55a7-89cb-bccde54d62c4",
+        "topic": "G07"
+      },
+      {
+        "title": "科学教",
+        "id": "91a1dfc4-1682-5ce5-aef7-232019d8085d",
+        "topic": "G12"
+      },
+      {
+        "title": "金刚川",
+        "id": "4eac69b1-4713-5748-818b-c42d09142c37",
+        "topic": "G08"
+      },
+      {
+        "title": "提高收入",
+        "id": "1068d35e-a16d-557f-a8a8-d98c28bc2017",
+        "topic": "G12"
+      },
+      {
+        "title": "遗言纸条",
+        "id": "9d9a14b8-5e35-53d9-bd96-4474e09aecee",
+        "topic": "G12"
+      },
+      {
+        "title": "服从领导",
+        "id": "26b2f5a9-d4ee-5d46-87e2-b4be7a55b9b7",
+        "topic": "G13"
+      },
+      {
+        "title": "人走茶凉",
+        "id": "2a91b754-20fc-55b4-9aa1-185a470dbb01",
+        "topic": "G07"
+      },
+      {
+        "title": "培养",
+        "id": "6190752a-6089-5c0a-945f-622c3c539476",
+        "topic": "G01"
+      },
+      {
+        "title": "海外团结",
+        "id": "9c035109-aa7b-55a2-9f52-83fc9525d4f3",
+        "topic": "G12"
+      },
+      {
+        "title": "不破例",
+        "id": "f3de6386-0e39-5f8d-820b-de93e6d7aef0",
+        "topic": "G01"
+      },
+      {
+        "title": "非洲、非洲",
+        "id": "1aea8c65-ae4c-5a0c-b16d-907b6013bbb8",
+        "topic": "G01"
+      },
+      {
+        "title": "越界",
+        "id": "b6bafaf0-5104-50e7-9e0d-300396dbfbbe",
+        "topic": "G01"
+      },
+      {
+        "title": "低贱的事情",
+        "id": "82389177-42f9-5e9b-bf5b-e50c1baa69f0",
+        "topic": "G01"
+      },
+      {
+        "title": "请勿吸烟",
+        "id": "3b9fa9f6-ab22-5335-a042-f8dadaa5de71",
+        "topic": "G12"
+      },
+      {
+        "title": "专业布局",
+        "id": "66e90cce-04d4-554c-87e6-c7bd02d1c81f",
+        "topic": "G12"
+      },
+      {
+        "title": "军舰对潜艇",
+        "id": "de21b205-c1c5-5483-96b3-158f8e8a1a9b",
+        "topic": "G12"
+      },
+      {
+        "title": "劳动保障",
+        "id": "df82a10c-a11a-585d-ae5e-89e98ceea834",
+        "topic": "G12"
+      },
+      {
+        "title": "臭",
+        "id": "66905294-b1c5-5a40-8219-eb7d112f373e",
+        "topic": "G12"
+      },
+      {
+        "title": "妇女",
+        "id": "db480563-11a5-5ac3-b528-2936562a5ea2",
+        "topic": "G02"
+      },
+      {
+        "title": "请你配合",
+        "id": "0378bb91-8f84-5ba7-8567-173dbeaa4d43",
+        "topic": "G12"
+      },
+      {
+        "title": "科普资格",
+        "id": "7d841b42-d233-5b30-8440-b64e434377a6",
+        "topic": "G12"
+      },
+      {
+        "title": "吹倒屋",
+        "id": "3bbdb46c-6320-5796-8650-9d1b2ce336c7",
+        "topic": "G12"
+      },
+      {
+        "title": "老宋",
+        "id": "423cdf0a-6e07-5795-87bf-43bbb0bc6451",
+        "topic": "G10"
+      },
+      {
+        "title": "两味解药",
+        "id": "0e00b591-7ad6-5ddc-93ce-b474d9d06c1b",
+        "topic": "G01"
+      },
+      {
+        "title": "飞起来的铁饭碗",
+        "id": "411152e7-413f-5241-9fad-4ea5d595154b",
+        "topic": "G12"
+      },
+      {
+        "title": "热的路",
+        "id": "c037b709-70ab-5d89-952e-9cdc4ee7f924",
+        "topic": "G01"
+      },
+      {
+        "title": "无人不有",
+        "id": "c0414eda-9626-5bb5-a2cb-fc4cb699e642",
+        "topic": "G12"
+      },
+      {
+        "title": "人人得而嫌之",
+        "id": "f739bcc1-03cb-51e6-8226-cf965d48dec0",
+        "topic": "G03"
+      },
+      {
+        "title": "屈居人下",
+        "id": "1e9053da-6911-524f-8ed9-563c2471d980",
+        "topic": "G01"
+      },
+      {
+        "title": "害兽之杀",
+        "id": "65781418-761a-53fb-afec-75556f7d3f33",
+        "topic": "G13"
+      },
+      {
+        "title": "无能为力",
+        "id": "16dee6cc-dfa1-57e8-b25d-135a9b3bbae6",
+        "topic": "G12"
+      },
+      {
+        "title": "斩蛇剑",
+        "id": "29fcec2d-ac07-549c-85dc-994ea1c7e7ee",
+        "topic": "G12"
+      },
+      {
+        "title": "喷嚏之战",
+        "id": "f778d703-d6f5-5c2b-bcc6-3d626560b240",
+        "topic": "G01"
+      },
+      {
+        "title": "惯不着",
+        "id": "53224564-1654-59bc-9873-adcf20a9d498",
+        "topic": "G12"
+      },
+      {
+        "title": "成功之母",
+        "id": "1addb67f-8f67-5299-98aa-53ebc0618259",
+        "topic": "G07"
+      },
+      {
+        "title": "官大一级",
+        "id": "d0a30336-b3b4-5e5b-b5cb-cb421a237355",
+        "topic": "G02"
+      },
+      {
+        "title": "懂王",
+        "id": "dd523b95-a1e8-5d88-8757-7d896eaae867",
+        "topic": "G01"
+      },
+      {
+        "title": "留饭",
+        "id": "78617dc3-53f7-5c8e-8258-0e6fe5e9d155",
+        "topic": "G01"
+      },
+      {
+        "title": "问不起",
+        "id": "053877e9-83f9-520e-937e-71e6f94b3021",
+        "topic": "G07"
+      },
+      {
+        "title": "你的气场",
+        "id": "9df58f55-d41c-54a3-a441-167d05798bda",
+        "topic": "G06"
+      },
+      {
+        "title": "浪游人",
+        "id": "aaf04897-065c-5ae7-a17a-3fe1c211d7c3",
+        "topic": "UNKNOWN"
+      },
+      {
+        "title": "小招牌",
+        "id": "c4dc1644-ee3d-5510-adbe-962c4cec8a73",
+        "topic": "UNKNOWN"
+      }
+    ],
+    "边界模糊": [
+      {
+        "title": "白吃一粒",
+        "id": "414b9e67-0352-5b8f-9ee8-631231eeebe6",
+        "topic": "G12"
+      },
+      {
+        "title": "我要",
+        "id": "08758bf8-f30d-5a9d-9e56-f8df4cd35d48",
+        "topic": "G02"
+      },
+      {
+        "title": "兑换银钱的人",
+        "id": "297f4b21-e387-554c-b1d2-587e34c9d4ce",
+        "topic": "G12"
+      },
+      {
+        "title": "Circle-Of-Shame",
+        "id": "7d7ce7f8-7253-58c3-9594-eb3434ceda51",
+        "topic": "G01"
+      },
+      {
+        "title": "无知的责任",
+        "id": "550b55cc-125d-5989-b69b-1d76045f01e6",
+        "topic": "G04"
+      },
+      {
+        "title": "举报",
+        "id": "409ca1ad-035c-5955-a2e5-85e41f273d67",
+        "topic": "G12"
+      },
+      {
+        "title": "删评权",
+        "id": "539ce0f5-875a-5e13-977b-49be099b6459",
+        "topic": "G04"
+      },
+      {
+        "title": "差不多得了",
+        "id": "1f923412-431e-5084-8b7f-f1dc8f37b798",
+        "topic": "G12"
+      },
+      {
+        "title": "长时间保持理性",
+        "id": "85ee0565-2d16-566b-affb-8319e018eb62",
+        "topic": "G12"
+      },
+      {
+        "title": "爱无筹码",
+        "id": "2767684f-cc61-510c-9ac0-817e3e9ca70f",
+        "topic": "G01"
+      },
+      {
+        "title": "缺乏创新",
+        "id": "6250c0e6-8b44-5423-8af0-8bf6cfe3257d",
+        "topic": "G12"
+      },
+      {
+        "title": "知识的责任",
+        "id": "065db95a-3978-5980-8fa8-647b3d748cb2",
+        "topic": "G12"
+      },
+      {
+        "title": "责任感",
+        "id": "68ccaf4f-827d-5e61-a89c-bf5e0ef9cdb0",
+        "topic": "G12"
+      },
+      {
+        "title": "无道德社会",
+        "id": "1a04670d-81dd-57f8-9e6e-36f9bf53b5d9",
+        "topic": "G12"
+      },
+      {
+        "title": "子女的隐私",
+        "id": "4f088894-9e0d-57a4-9b1b-b34c185c6363",
+        "topic": "G01"
+      },
+      {
+        "title": "血滴子",
+        "id": "767835a5-0cba-533c-9891-6d8ad799ae1e",
+        "topic": "G01"
+      },
+      {
+        "title": "能力与责任",
+        "id": "b9073126-42da-5431-8340-76c1e86d0fda",
+        "topic": "G01"
+      },
+      {
+        "title": "打骨折",
+        "id": "328145aa-3136-5c0b-b351-08889c52f05c",
+        "topic": "G01"
+      },
+      {
+        "title": "聪明误",
+        "id": "87e68270-6f29-5d3d-afbd-1073bb82e951",
+        "topic": "G12"
+      },
+      {
+        "title": "控评责任",
+        "id": "db1d72a9-2f26-559b-9abe-f4b49e62c219",
+        "topic": "G12"
+      },
+      {
+        "title": "幼稚权",
+        "id": "e1bfc2ea-b7f1-58f1-b7ff-8ce1e8e42c42",
+        "topic": "G12"
+      },
+      {
+        "title": "难得优雅",
+        "id": "8fd2c50d-a59f-50e9-945c-0798d74c6350",
+        "topic": "G01"
+      },
+      {
+        "title": "无缘故",
+        "id": "dcdf558b-311b-57a2-980b-0af5fa8092e8",
+        "topic": "G12"
+      },
+      {
+        "title": "幸福的不退让",
+        "id": "ddd343e3-b406-5de0-9b21-942b48f26578",
+        "topic": "G12"
+      },
+      {
+        "title": "不许不许可",
+        "id": "d949c480-f25d-53e7-918d-0954ff867b12",
+        "topic": "UNKNOWN"
+      }
+    ]
+  }
+}

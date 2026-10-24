@@ -1,0 +1,1420 @@
+{
+  "fetchedAt": "2026-09-21T22:50:19.2559720+08:00",
+  "endpoint": "https://sooon.ai/api/graphql",
+  "categoryQuery": "sha256:b7d5d72cc4e5fc2162a93126fb9846c7e3f8eab105e203661ac5fcb0e966862c",
+  "graphQuery": "sha256:ab2bf8e5e50622d0c03ecff1060494c23c399a029ec5ce883f034b2d0e6853cb",
+  "categories": [
+    {
+      "id": "f97ae3af-5524-48a3-8254-4c238850f651",
+      "name": "与自己",
+      "description": "自身存在条件、能力资源、社会呈现与精神人格的总体。",
+      "kind": "LeoObject",
+      "parentId": null
+    },
+    {
+      "id": "b949f987-8723-4a5b-8d26-e530d86597d1",
+      "name": "与亲族",
+      "description": "由血缘、婚姻、抚养、代际延续、共同生活或长期照护陪伴关系形成的亲密生活关系对象。",
+      "kind": "LeoObject",
+      "parentId": null
+    },
+    {
+      "id": "3c41941d-24f2-4809-bcc9-9496e11cf739",
+      "name": "与友人",
+      "description": "由亲近、爱情、共同经历、邻近生活或共同志向形成的非家庭亲近关系对象。",
+      "kind": "LeoObject",
+      "parentId": null
+    },
+    {
+      "id": "2f135312-4bdb-4bd5-a823-422a0db670f6",
+      "name": "与合作者",
+      "description": "由教学、共事、管理、服务交换或专业照护形成的共同事务关系对象。",
+      "kind": "LeoObject",
+      "parentId": null
+    },
+    {
+      "id": "669a52d6-9f16-429c-bf71-5cb636a70f0c",
+      "name": "与社会",
+      "description": "个人所处的组织、社区、公共秩序与共同生活结构。",
+      "kind": "LeoObject",
+      "parentId": null
+    },
+    {
+      "id": "c30bc0bc-ed95-413c-bc0b-395ec9c89ab0",
+      "name": "与自然",
+      "description": "人类以外的生命、环境及其构成的自然存在整体。",
+      "kind": "LeoObject",
+      "parentId": null
+    },
+    {
+      "id": "eee0f4ad-d0fe-45bd-a51d-9eb331391a94",
+      "name": "与其它",
+      "description": "不属于上述一级节点的其它关系对象。",
+      "kind": "LeoObject",
+      "parentId": null
+    },
+    {
+      "id": "525198ec-67c4-4f9a-ab61-de6ad83637ae",
+      "name": "形成",
+      "description": "通过经历、教育和思考建立基本信念。",
+      "kind": "LeoPractice",
+      "parentId": "04f1c71b-240b-46bc-8d02-661ab3684d9d"
+    },
+    {
+      "id": "e8593a0e-a649-4b89-b96a-921f46c92478",
+      "name": "坚守",
+      "description": "在怀疑、压力或代价面前继续认同信念。",
+      "kind": "LeoPractice",
+      "parentId": "04f1c71b-240b-46bc-8d02-661ab3684d9d"
+    },
+    {
+      "id": "4490c0e6-bced-46e2-9aff-81ca3ddf9f36",
+      "name": "怀疑",
+      "description": "审视信念的真实性、正当性和实际后果。",
+      "kind": "LeoPractice",
+      "parentId": "04f1c71b-240b-46bc-8d02-661ab3684d9d"
+    },
+    {
+      "id": "1a41da7c-21fe-44e8-b775-597d0b7fd856",
+      "name": "转变",
+      "description": "修正、替换或放弃原有信念，重新确立方向。",
+      "kind": "LeoPractice",
+      "parentId": "04f1c71b-240b-46bc-8d02-661ab3684d9d"
+    },
+    {
+      "id": "626c4a00-3d1b-45e8-b8a7-1de35d36b369",
+      "name": "认识",
+      "description": "理解人工智能的原理、能力、边界、真实性与发展阶段。",
+      "kind": "LeoPractice",
+      "parentId": "0c661a91-a9e5-4c1b-aad5-79afaf370a54"
+    },
+    {
+      "id": "0ddb6881-4bbe-482c-8570-0a496b3450bc",
+      "name": "使用",
+      "description": "把人工智能用于学习、工作、生活或专业服务，并对使用方式和结果负责。",
+      "kind": "LeoPractice",
+      "parentId": "0c661a91-a9e5-4c1b-aad5-79afaf370a54"
+    },
+    {
+      "id": "c45d7395-30da-401a-a9ea-46886642ca91",
+      "name": "约束",
+      "description": "防止人工智能出错、欺骗、滥用或失控，并建立权限、安全、审查与问责机制。",
+      "kind": "LeoPractice",
+      "parentId": "0c661a91-a9e5-4c1b-aad5-79afaf370a54"
+    },
+    {
+      "id": "25084546-ae66-4021-a6dc-2ec0f7e0895c",
+      "name": "共存",
+      "description": "面对人工智能长期存在和普及，确定人与AI各自的位置、权利、责任及社会关系。",
+      "kind": "LeoPractice",
+      "parentId": "0c661a91-a9e5-4c1b-aad5-79afaf370a54"
+    },
+    {
+      "id": "c661a8c4-2dc3-47a0-b179-2b064fc24fcd",
+      "name": "结合",
+      "description": "通过婚姻仪式或约定，确认彼此专属、共度一生的伴侣关系。",
+      "kind": "LeoPractice",
+      "parentId": "0c7e7dc8-844f-477a-8b44-2dac38e1cbee"
+    },
+    {
+      "id": "91a5e4d2-f9b2-44ec-ba75-696493277daa",
+      "name": "相处",
+      "description": "日常生活的融合：习惯对接、分工协作、财务共享、亲密维系。",
+      "kind": "LeoPractice",
+      "parentId": "0c7e7dc8-844f-477a-8b44-2dac38e1cbee"
+    },
+    {
+      "id": "172ab92b-5457-4d1d-8593-2f5d7da302d8",
+      "name": "危机",
+      "description": "信任破裂、外部诱惑、成长不同步或重大冲击导致的动摇。",
+      "kind": "LeoPractice",
+      "parentId": "0c7e7dc8-844f-477a-8b44-2dac38e1cbee"
+    },
+    {
+      "id": "2242b838-2404-4995-938c-2437a961c196",
+      "name": "修复",
+      "description": "尝试重建信任、重新划定边界或找回亲密。",
+      "kind": "LeoPractice",
+      "parentId": "0c7e7dc8-844f-477a-8b44-2dac38e1cbee"
+    },
+    {
+      "id": "b9792ee8-c225-443c-bea9-05aaad54dba5",
+      "name": "分离",
+      "description": "离婚的时机、方式和代价，或伴侣离去带来的生离死别。",
+      "kind": "LeoPractice",
+      "parentId": "0c7e7dc8-844f-477a-8b44-2dac38e1cbee"
+    },
+    {
+      "id": "e5f1e847-7c61-40f4-aaf6-7d5b510d61e7",
+      "name": "获取",
+      "description": "财富以何种方式来到我手中，以及获取方式是否正当。",
+      "kind": "LeoPractice",
+      "parentId": "29dc730c-459d-46a5-a78d-4c5752ad8dc3"
+    },
+    {
+      "id": "aedb09c5-2684-4a1c-9250-bcb928de89c6",
+      "name": "使用",
+      "description": "对财富进行支配、消费、享用、赠与或传承，并面对亏损、被骗、挥霍或被迫丧失。",
+      "kind": "LeoPractice",
+      "parentId": "29dc730c-459d-46a5-a78d-4c5752ad8dc3"
+    },
+    {
+      "id": "eb5022d7-7d7f-4ab0-8d74-a212080f91bd",
+      "name": "维护",
+      "description": "持有、管理和维护已有财富，使其保值、增值并持续发挥作用。",
+      "kind": "LeoPractice",
+      "parentId": "29dc730c-459d-46a5-a78d-4c5752ad8dc3"
+    },
+    {
+      "id": "79fdb6c9-2ecc-430e-9f12-6d48f4ba99d6",
+      "name": "与教导者",
+      "description": "在学识、技能或人生道路上给予指导和教诲的人。",
+      "kind": "LeoObject",
+      "parentId": "2f135312-4bdb-4bd5-a823-422a0db670f6"
+    },
+    {
+      "id": "41ba3bd6-584b-40ae-9781-e8dc745e24b3",
+      "name": "与受教者",
+      "description": "在学识、技能或人生道路上接受指导和教诲的人。",
+      "kind": "LeoObject",
+      "parentId": "2f135312-4bdb-4bd5-a823-422a0db670f6"
+    },
+    {
+      "id": "c1336da7-6307-40ac-8b4e-ad1ca8ff173b",
+      "name": "与共事者",
+      "description": "在同一工作或事业环境中共事的人。",
+      "kind": "LeoObject",
+      "parentId": "2f135312-4bdb-4bd5-a823-422a0db670f6"
+    },
+    {
+      "id": "7c699c44-4123-42a3-85ee-661b510c76e0",
+      "name": "与管理者",
+      "description": "基于组织制度分配而发布指令和计划、判定成果、实施奖罚的人，如上级、雇主、指挥官、执法者。",
+      "kind": "LeoObject",
+      "parentId": "2f135312-4bdb-4bd5-a823-422a0db670f6"
+    },
+    {
+      "id": "db76c7d5-dc67-4e22-bc89-9cb39e993dd3",
+      "name": "与被管理者",
+      "description": "基于组织制度分配而接受指令和计划、提交成果供判定、承受奖罚的人，如下属、雇员、士兵。",
+      "kind": "LeoObject",
+      "parentId": "2f135312-4bdb-4bd5-a823-422a0db670f6"
+    },
+    {
+      "id": "b2b986de-4937-4731-b311-0af17568c862",
+      "name": "与服务者",
+      "description": "基于自愿合同承诺而提供服务或成果的人，如医生、律师、供应商及其他服务提供者。",
+      "kind": "LeoObject",
+      "parentId": "2f135312-4bdb-4bd5-a823-422a0db670f6"
+    },
+    {
+      "id": "c4c40922-490f-4844-b4e2-a6c8dde5ca5a",
+      "name": "与被服务者",
+      "description": "基于自愿合同承诺而接收服务或成果的人，如客户、委托人及其他服务接受者。",
+      "kind": "LeoObject",
+      "parentId": "2f135312-4bdb-4bd5-a823-422a0db670f6"
+    },
+    {
+      "id": "0885fed7-c2c5-435d-a1e2-f7881c2fbf08",
+      "name": "接纳",
+      "description": "理解并接受某种文化及其形成的身份联系。",
+      "kind": "LeoPractice",
+      "parentId": "3896adae-09b2-41b5-993f-2a535e9d54f2"
+    },
+    {
+      "id": "96cb9cb0-9d75-4d3c-856b-a0b4be2c0afd",
+      "name": "遵循",
+      "description": "按照文化中的习俗、传统和价值规范生活。",
+      "kind": "LeoPractice",
+      "parentId": "3896adae-09b2-41b5-993f-2a535e9d54f2"
+    },
+    {
+      "id": "f9e76204-2dd0-4673-8396-9acb0cd34c78",
+      "name": "批判",
+      "description": "审视并拒绝文化中不正当或不再适宜的内容。",
+      "kind": "LeoPractice",
+      "parentId": "3896adae-09b2-41b5-993f-2a535e9d54f2"
+    },
+    {
+      "id": "17039617-641c-4718-a73b-97ad32a98d2a",
+      "name": "创造",
+      "description": "改造既有文化或形成新的文化内容与表达。",
+      "kind": "LeoPractice",
+      "parentId": "3896adae-09b2-41b5-993f-2a535e9d54f2"
+    },
+    {
+      "id": "e097dd9a-e60a-49b9-916a-9546a07c91cd",
+      "name": "与恋人",
+      "description": "基于爱情而建立的亲密关系对象。",
+      "kind": "LeoObject",
+      "parentId": "3c41941d-24f2-4809-bcc9-9496e11cf739"
+    },
+    {
+      "id": "c4bab890-e601-4f96-b1d4-6299b945c057",
+      "name": "与朋友",
+      "description": "基于相互欣赏、信任、陪伴、共同经历、兴趣活动或长期交往形成的非亲属友谊关系对象。",
+      "kind": "LeoObject",
+      "parentId": "3c41941d-24f2-4809-bcc9-9496e11cf739"
+    },
+    {
+      "id": "cce17d92-72e3-4679-ad52-f59e61759cd9",
+      "name": "与同学",
+      "description": "在同一学习环境中共同成长的同伴。",
+      "kind": "LeoObject",
+      "parentId": "3c41941d-24f2-4809-bcc9-9496e11cf739"
+    },
+    {
+      "id": "ada3ec72-6d8c-4fb2-bc5f-62eddd4668f8",
+      "name": "与邻人",
+      "description": "因居住邻近而产生日常交往的人。",
+      "kind": "LeoObject",
+      "parentId": "3c41941d-24f2-4809-bcc9-9496e11cf739"
+    },
+    {
+      "id": "fb827c0b-2912-4487-ab35-c871ffaad32c",
+      "name": "与同志",
+      "description": "因共同志向、信仰或事业追求而联结的人。",
+      "kind": "LeoObject",
+      "parentId": "3c41941d-24f2-4809-bcc9-9496e11cf739"
+    },
+    {
+      "id": "23a27ded-8d67-4f67-ab69-dc32b75753ef",
+      "name": "学习",
+      "description": "了解已经发生的事件、人物和社会处境。",
+      "kind": "LeoPractice",
+      "parentId": "3d0b3384-37bd-4d49-be00-a3b3ca7f893c"
+    },
+    {
+      "id": "c2fbc122-6bb2-4510-99d9-8616e4c9ed74",
+      "name": "解释",
+      "description": "理解历史事件的原因、过程和影响。",
+      "kind": "LeoPractice",
+      "parentId": "3d0b3384-37bd-4d49-be00-a3b3ca7f893c"
+    },
+    {
+      "id": "a11a5029-cddb-499f-bd2e-42f8f09a42ba",
+      "name": "评价",
+      "description": "对历史行为、制度和人物作出判断。",
+      "kind": "LeoPractice",
+      "parentId": "3d0b3384-37bd-4d49-be00-a3b3ca7f893c"
+    },
+    {
+      "id": "a91a92dc-0ae4-433b-a417-0b94f630142e",
+      "name": "借鉴",
+      "description": "用历史经验帮助理解和处理现实问题。",
+      "kind": "LeoPractice",
+      "parentId": "3d0b3384-37bd-4d49-be00-a3b3ca7f893c"
+    },
+    {
+      "id": "ca71c7d8-8858-4a93-afe6-a785be0aecaf",
+      "name": "寻觅",
+      "description": "寻找合适的受教者，观察和评估其潜质与诚意。",
+      "kind": "LeoPractice",
+      "parentId": "41ba3bd6-584b-40ae-9781-e8dc745e24b3"
+    },
+    {
+      "id": "178761be-75fa-455f-84bd-8bd142d595c7",
+      "name": "接纳",
+      "description": "正式或非正式地接收对方为自己的学生、徒弟。",
+      "kind": "LeoPractice",
+      "parentId": "41ba3bd6-584b-40ae-9781-e8dc745e24b3"
+    },
+    {
+      "id": "03484ed9-8224-4689-8475-01efe8639d1a",
+      "name": "传授",
+      "description": "向其传授知识、技能和人生经验。",
+      "kind": "LeoPractice",
+      "parentId": "41ba3bd6-584b-40ae-9781-e8dc745e24b3"
+    },
+    {
+      "id": "dba1d77f-d283-44d1-a530-dc79493e8a17",
+      "name": "终止",
+      "description": "因学成、职业变动、理念分歧或离世，教导关系结束。",
+      "kind": "LeoPractice",
+      "parentId": "41ba3bd6-584b-40ae-9781-e8dc745e24b3"
+    },
+    {
+      "id": "50d3329a-6894-4e17-8057-0f7fb5f91503",
+      "name": "生育",
+      "description": "决定要孩子、孕育、分娩、哺育婴幼儿。",
+      "kind": "LeoPractice",
+      "parentId": "4b77c38d-9b2a-4170-b806-5c284837571e"
+    },
+    {
+      "id": "40d43117-5502-4ad7-a4d4-5d825105de38",
+      "name": "抚养",
+      "description": "在子女成长中提供物质、教育、规则和价值观。",
+      "kind": "LeoPractice",
+      "parentId": "4b77c38d-9b2a-4170-b806-5c284837571e"
+    },
+    {
+      "id": "c722d5d4-08c2-456c-aa0e-d48724ccea98",
+      "name": "放手",
+      "description": "接受子女独立、离家、不再需要自己日常照料。",
+      "kind": "LeoPractice",
+      "parentId": "4b77c38d-9b2a-4170-b806-5c284837571e"
+    },
+    {
+      "id": "4d15c41c-86aa-4a80-9a15-9157c2cc4e7b",
+      "name": "共存",
+      "description": "接受子女成年后以平等身份与自己相处，接受彼此的不同。",
+      "kind": "LeoPractice",
+      "parentId": "4b77c38d-9b2a-4170-b806-5c284837571e"
+    },
+    {
+      "id": "deca0cac-2169-4ef1-ba25-2baa793df184",
+      "name": "告别",
+      "description": "作为父母，面对自己必将先于子女离世的事实。",
+      "kind": "LeoPractice",
+      "parentId": "4b77c38d-9b2a-4170-b806-5c284837571e"
+    },
+    {
+      "id": "2e86a5d0-ab28-4855-a6b4-f40ae8e3cbbe",
+      "name": "获取",
+      "description": "通过学习、训练、模仿或传授掌握某种能力。",
+      "kind": "LeoPractice",
+      "parentId": "596b42cd-735d-42cb-9942-70500676e726"
+    },
+    {
+      "id": "d34cd4c8-36a0-412b-a9e2-d2f6c477d99f",
+      "name": "运用",
+      "description": "将已有能力投入实践、转化为行动和成果。",
+      "kind": "LeoPractice",
+      "parentId": "596b42cd-735d-42cb-9942-70500676e726"
+    },
+    {
+      "id": "cec74568-28cf-4569-b73d-eae53b4e8823",
+      "name": "承受",
+      "description": "能力带来的责任、期待、比较、压力与代价。",
+      "kind": "LeoPractice",
+      "parentId": "596b42cd-735d-42cb-9942-70500676e726"
+    },
+    {
+      "id": "943a7dbd-a81d-4c07-8ef8-76a27401e3ee",
+      "name": "受教",
+      "description": "在父母的权威下接受管束和塑造。",
+      "kind": "LeoPractice",
+      "parentId": "621424ab-c182-471d-9355-9aee93dd54fb"
+    },
+    {
+      "id": "4ec2d885-7110-412f-b454-9f729ececaa1",
+      "name": "分离",
+      "description": "争取自主权，直至离开父母建立独立生活。",
+      "kind": "LeoPractice",
+      "parentId": "621424ab-c182-471d-9355-9aee93dd54fb"
+    },
+    {
+      "id": "e124b2b0-da25-4c46-b6a2-353531b8cec1",
+      "name": "共处",
+      "description": "作为独立的成年人重建关系，同时在父母老去时承担照护责任。",
+      "kind": "LeoPractice",
+      "parentId": "621424ab-c182-471d-9355-9aee93dd54fb"
+    },
+    {
+      "id": "c9c14821-1574-47d4-bdf4-3ac9b41a89d9",
+      "name": "告别",
+      "description": "陪伴父母走完全程，承受永别。",
+      "kind": "LeoPractice",
+      "parentId": "621424ab-c182-471d-9355-9aee93dd54fb"
+    },
+    {
+      "id": "8caaf138-8c3c-4f37-894e-6459559c1cde",
+      "name": "与组织",
+      "description": "具有特定目标、成员身份、规则和结构的正式或半正式团体。",
+      "kind": "LeoObject",
+      "parentId": "669a52d6-9f16-429c-bf71-5cb636a70f0c"
+    },
+    {
+      "id": "a63aa555-6dcf-4639-b3d5-c952a74cca04",
+      "name": "与社区",
+      "description": "基于地域、生活邻近、共同利益或共同处境形成的人群集合。",
+      "kind": "LeoObject",
+      "parentId": "669a52d6-9f16-429c-bf71-5cb636a70f0c"
+    },
+    {
+      "id": "80982dd2-509c-462b-a1ec-b79eb5dac8ec",
+      "name": "与舆论",
+      "description": "由公众评价、传播、讨论和社会压力形成的意见环境。",
+      "kind": "LeoObject",
+      "parentId": "669a52d6-9f16-429c-bf71-5cb636a70f0c"
+    },
+    {
+      "id": "3896adae-09b2-41b5-993f-2a535e9d54f2",
+      "name": "与文化",
+      "description": "个人所处社会中共享的习俗、传统、价值观、符号和生活方式。",
+      "kind": "LeoObject",
+      "parentId": "669a52d6-9f16-429c-bf71-5cb636a70f0c"
+    },
+    {
+      "id": "a2ae3621-d323-43ac-841e-66d16115e791",
+      "name": "与艺术",
+      "description": "人类通过形象、声音、语言、身体或综合媒介进行审美表达、体验与创造的作品和实践。",
+      "kind": "LeoObject",
+      "parentId": "669a52d6-9f16-429c-bf71-5cb636a70f0c"
+    },
+    {
+      "id": "3d0b3384-37bd-4d49-be00-a3b3ca7f893c",
+      "name": "与历史",
+      "description": "已经发生并被记录、解释和继承的人类过去。",
+      "kind": "LeoObject",
+      "parentId": "669a52d6-9f16-429c-bf71-5cb636a70f0c"
+    },
+    {
+      "id": "9b8ba46f-b2a9-4075-b838-0ca9cffeb97d",
+      "name": "与技术",
+      "description": "用于解决问题、改变条件和扩展能力的工具、方法与技术系统。",
+      "kind": "LeoObject",
+      "parentId": "669a52d6-9f16-429c-bf71-5cb636a70f0c"
+    },
+    {
+      "id": "536e48ba-e510-48ac-8512-238488bebfb1",
+      "name": "建立",
+      "description": "构想并确立希望自身、社会或世界达到的理想状态。",
+      "kind": "LeoPractice",
+      "parentId": "6f1690c9-704a-4d00-a753-67de8410f225"
+    },
+    {
+      "id": "fc505ab7-96fe-4d42-aae5-1144b1711925",
+      "name": "持守",
+      "description": "按照理想持续行动，并在困难、诱惑和现实压力下保持方向。",
+      "kind": "LeoPractice",
+      "parentId": "6f1690c9-704a-4d00-a753-67de8410f225"
+    },
+    {
+      "id": "efdedafb-1ec5-415b-8149-7094fdc7122f",
+      "name": "修正",
+      "description": "根据新的认识和实践结果调整、替换或放弃原有理想。",
+      "kind": "LeoPractice",
+      "parentId": "6f1690c9-704a-4d00-a753-67de8410f225"
+    },
+    {
+      "id": "04c5eaf8-2c2b-4a9e-9840-0e8af8643a1d",
+      "name": "共存",
+      "description": "在同一家庭中接受彼此的到来，共享父母、空间和日常。",
+      "kind": "LeoPractice",
+      "parentId": "74bf5b41-cf9f-4d06-99f4-b3fc05eae5e5"
+    },
+    {
+      "id": "1cef71cb-9129-4bf5-bc06-5f350a33b229",
+      "name": "竞争",
+      "description": "在家庭内外争夺关注、认可和资源，在比较中塑造彼此的相对位置。",
+      "kind": "LeoPractice",
+      "parentId": "74bf5b41-cf9f-4d06-99f4-b3fc05eae5e5"
+    },
+    {
+      "id": "121c2498-2182-40a4-82e3-23b58ffb0f6c",
+      "name": "独立",
+      "description": "各自走向不同生活，接受彼此的疏远、差距乃至死亡。",
+      "kind": "LeoPractice",
+      "parentId": "74bf5b41-cf9f-4d06-99f4-b3fc05eae5e5"
+    },
+    {
+      "id": "f78b1b7c-1561-4d90-b8b7-26ad45899147",
+      "name": "协作",
+      "description": "在父母老去及人生困厄时共同承担、彼此扶持。",
+      "kind": "LeoPractice",
+      "parentId": "74bf5b41-cf9f-4d06-99f4-b3fc05eae5e5"
+    },
+    {
+      "id": "3f8fef32-7c44-42f4-af5f-11068d875103",
+      "name": "拜师",
+      "description": "正式或非正式地成为教导者的学生、徒弟、下属。",
+      "kind": "LeoPractice",
+      "parentId": "79fdb6c9-2ecc-430e-9f12-6d48f4ba99d6"
+    },
+    {
+      "id": "2813ebfd-708b-4440-8845-8cc28b259ebd",
+      "name": "受教",
+      "description": "接受教导者的知识、技能和人生经验的传授。",
+      "kind": "LeoPractice",
+      "parentId": "79fdb6c9-2ecc-430e-9f12-6d48f4ba99d6"
+    },
+    {
+      "id": "6580e552-1eeb-4800-acb0-cf1cb6504778",
+      "name": "超脱",
+      "description": "在能力或见识上不再单纯以学生身份面对教导者，关系重新定位。",
+      "kind": "LeoPractice",
+      "parentId": "79fdb6c9-2ecc-430e-9f12-6d48f4ba99d6"
+    },
+    {
+      "id": "5687e711-262b-4a8d-bad8-d7e31c5e1631",
+      "name": "告别",
+      "description": "因学业结束、职业变动、理念分歧或教导者离世而分离。",
+      "kind": "LeoPractice",
+      "parentId": "79fdb6c9-2ecc-430e-9f12-6d48f4ba99d6"
+    },
+    {
+      "id": "45bcbbbd-f599-424e-924c-5abba21595fa",
+      "name": "赋权",
+      "description": "管理者被组织制度赋予管理权限，成为发号施令者。",
+      "kind": "LeoPractice",
+      "parentId": "7c699c44-4123-42a3-85ee-661b510c76e0"
+    },
+    {
+      "id": "359a1cf9-227e-4740-969b-a364f4c6cdec",
+      "name": "服从",
+      "description": "接受指令、遵守规则、完成任务。",
+      "kind": "LeoPractice",
+      "parentId": "7c699c44-4123-42a3-85ee-661b510c76e0"
+    },
+    {
+      "id": "409edd71-7138-4543-991b-83042bca1536",
+      "name": "博弈",
+      "description": "对管理者的决策提出异议、争取自身权益。",
+      "kind": "LeoPractice",
+      "parentId": "7c699c44-4123-42a3-85ee-661b510c76e0"
+    },
+    {
+      "id": "2f1bb8b3-221c-4838-9fbb-0a3ff733938e",
+      "name": "脱离",
+      "description": "因离职、调动、退休或组织解散而结束管理关系。",
+      "kind": "LeoPractice",
+      "parentId": "7c699c44-4123-42a3-85ee-661b510c76e0"
+    },
+    {
+      "id": "be2fef26-28cc-48a3-a57a-70f02762895d",
+      "name": "接收",
+      "description": "接触、理解并判断舆论中的信息和评价。",
+      "kind": "LeoPractice",
+      "parentId": "80982dd2-509c-462b-a1ec-b79eb5dac8ec"
+    },
+    {
+      "id": "9a76cd07-c2cb-4675-8d2a-492e9588789d",
+      "name": "表达",
+      "description": "公开陈述观点、立场和评价，参与公共讨论。",
+      "kind": "LeoPractice",
+      "parentId": "80982dd2-509c-462b-a1ec-b79eb5dac8ec"
+    },
+    {
+      "id": "7217ed29-89a3-495d-8f17-02ad6097c6f9",
+      "name": "传播",
+      "description": "转述、扩散或推动舆论信息和意见流动。",
+      "kind": "LeoPractice",
+      "parentId": "80982dd2-509c-462b-a1ec-b79eb5dac8ec"
+    },
+    {
+      "id": "646efdbc-660d-4939-ab5e-99c52ca563c1",
+      "name": "应对",
+      "description": "面对舆论对自身形成的评价、压力与后果。",
+      "kind": "LeoPractice",
+      "parentId": "80982dd2-509c-462b-a1ec-b79eb5dac8ec"
+    },
+    {
+      "id": "a6e5f0cb-dd7b-4117-9031-5f23ef0511ec",
+      "name": "迎入",
+      "description": "决定收养或购买，将它带入自己的生活，成为彼此的依靠。",
+      "kind": "LeoPractice",
+      "parentId": "83aaefd4-26b8-4296-a42c-ef1f73844f89"
+    },
+    {
+      "id": "6a3cc1e5-de00-4d03-b630-d07ead4866a1",
+      "name": "共处",
+      "description": "日常照料、陪伴、训练、建立默契和深厚的情感联结。",
+      "kind": "LeoPractice",
+      "parentId": "83aaefd4-26b8-4296-a42c-ef1f73844f89"
+    },
+    {
+      "id": "004902b7-9569-482e-9bb1-fc39b7ec4127",
+      "name": "分离",
+      "description": "走失、送人、或因疾病和衰老带来的永别。",
+      "kind": "LeoPractice",
+      "parentId": "83aaefd4-26b8-4296-a42c-ef1f73844f89"
+    },
+    {
+      "id": "4beea432-29e8-46c8-b29b-c8360d8f2afb",
+      "name": "加入",
+      "description": "选择、接受或拒绝成为组织成员。",
+      "kind": "LeoPractice",
+      "parentId": "8caaf138-8c3c-4f37-894e-6459559c1cde"
+    },
+    {
+      "id": "4189aa56-9b53-40f0-aee5-a2a535b3787b",
+      "name": "参与",
+      "description": "作为成员面对组织的目标、规则、事务与责任。",
+      "kind": "LeoPractice",
+      "parentId": "8caaf138-8c3c-4f37-894e-6459559c1cde"
+    },
+    {
+      "id": "54d991db-4c92-4e1a-93ae-4030fc1dee64",
+      "name": "退出",
+      "description": "主动或被动结束成员身份并处理遗留责任。",
+      "kind": "LeoPractice",
+      "parentId": "8caaf138-8c3c-4f37-894e-6459559c1cde"
+    },
+    {
+      "id": "36967032-657e-4bf2-82ac-c5bdef0b956e",
+      "name": "利用",
+      "description": "为生活、生产和发展目的，取用环境中的空间、资源、条件和承载能力。",
+      "kind": "LeoPractice",
+      "parentId": "959baca7-7d31-45b8-9212-61ad518f2944"
+    },
+    {
+      "id": "78bbde2e-8255-40a7-a46c-152c13a8ffe8",
+      "name": "改造",
+      "description": "通过建设、工程、开垦和技术改变环境的形态、结构、功能和运行方式。",
+      "kind": "LeoPractice",
+      "parentId": "959baca7-7d31-45b8-9212-61ad518f2944"
+    },
+    {
+      "id": "6df260b6-86cf-484a-92f2-10ab719ef560",
+      "name": "保护",
+      "description": "通过节制、维护、修复和治理，避免环境受损或使受损环境恢复。",
+      "kind": "LeoPractice",
+      "parentId": "959baca7-7d31-45b8-9212-61ad518f2944"
+    },
+    {
+      "id": "6b2fc614-10f3-4edd-9978-ec5466b83185",
+      "name": "备战",
+      "description": "在公开交战之前识别敌情、建立威慑、储备资源并制定防御或对抗方案。",
+      "kind": "LeoPractice",
+      "parentId": "97031dbd-0c24-4aae-9055-bb0472f2836f"
+    },
+    {
+      "id": "d2809af2-7933-43c5-a01d-db2e461c7a02",
+      "name": "宣战",
+      "description": "明确敌对状态、对抗目标、行动理由与界限，并决定从准备转入公开对抗。",
+      "kind": "LeoPractice",
+      "parentId": "97031dbd-0c24-4aae-9055-bb0472f2836f"
+    },
+    {
+      "id": "2e84083b-fd0d-4080-99ef-a3ab3a4ab164",
+      "name": "交战",
+      "description": "在敌对状态中实施攻击、防御、反击、牵制及对冲突升级的控制。",
+      "kind": "LeoPractice",
+      "parentId": "97031dbd-0c24-4aae-9055-bb0472f2836f"
+    },
+    {
+      "id": "62cca67f-63d6-4eb8-845d-52cd1a587b71",
+      "name": "休战",
+      "description": "暂停、降级或结束交战，并通过停火、谈判、撤退、和解或关系终止处理敌对后果。",
+      "kind": "LeoPractice",
+      "parentId": "97031dbd-0c24-4aae-9055-bb0472f2836f"
+    },
+    {
+      "id": "8adfe62e-6f89-46cc-936f-646c3d1ac570",
+      "name": "获得",
+      "description": "生命开始而拥有时间，或者通过节省、委托和改变安排获得更多可支配时间。",
+      "kind": "LeoPractice",
+      "parentId": "990597d7-929f-4530-8e23-85260a62e907"
+    },
+    {
+      "id": "3b77b9c6-c316-4f70-9b07-1ad4fc9424f4",
+      "name": "管理",
+      "description": "根据目标和现实条件，对时间的时机、次序、节奏、期限与分配作出安排和调整。",
+      "kind": "LeoPractice",
+      "parentId": "990597d7-929f-4530-8e23-85260a62e907"
+    },
+    {
+      "id": "91edff77-ae3d-4ef3-9765-2de678a92859",
+      "name": "使用",
+      "description": "把时间实际投入工作、休息、关系、成长或等待。",
+      "kind": "LeoPractice",
+      "parentId": "990597d7-929f-4530-8e23-85260a62e907"
+    },
+    {
+      "id": "17b23530-c2c5-401a-b066-ff3394c01c79",
+      "name": "失去",
+      "description": "面对时间成为过去、机会错过、年龄增长以及生命时间不断减少。",
+      "kind": "LeoPractice",
+      "parentId": "990597d7-929f-4530-8e23-85260a62e907"
+    },
+    {
+      "id": "b323d724-34e3-4798-9ce0-c52dd61d4d75",
+      "name": "理解",
+      "description": "认识技术的原理、能力、限制及其可能产生的影响。",
+      "kind": "LeoPractice",
+      "parentId": "9b8ba46f-b2a9-4075-b838-0ca9cffeb97d"
+    },
+    {
+      "id": "0f0b5d77-df1d-4af1-b131-f4a2f7a8b004",
+      "name": "适应",
+      "description": "调整自身的能力、习惯和生活方式，以应对技术带来的变化。",
+      "kind": "LeoPractice",
+      "parentId": "9b8ba46f-b2a9-4075-b838-0ca9cffeb97d"
+    },
+    {
+      "id": "6dd2c7b1-c2a4-48dc-9c8f-ed855d12c6c8",
+      "name": "运用",
+      "description": "将技术投入实际行动，以实现目标并承担相应后果。",
+      "kind": "LeoPractice",
+      "parentId": "9b8ba46f-b2a9-4075-b838-0ca9cffeb97d"
+    },
+    {
+      "id": "df97b010-665a-427f-a6bd-5639a98d19e1",
+      "name": "开发",
+      "description": "设计、创造、改进技术及其运行方式。",
+      "kind": "LeoPractice",
+      "parentId": "9b8ba46f-b2a9-4075-b838-0ca9cffeb97d"
+    },
+    {
+      "id": "d13e327e-d2ec-475a-b245-5b122ddc2857",
+      "name": "了解",
+      "description": "对艺术的性质、标准、方法、审美理论与历史脉络形成认知。",
+      "kind": "LeoPractice",
+      "parentId": "a2ae3621-d323-43ac-841e-66d16115e791"
+    },
+    {
+      "id": "04d9ed3f-350f-4adf-8ba1-83049a705c5e",
+      "name": "体验",
+      "description": "通过欣赏、应用或消费艺术，与艺术作品发生直接经验。",
+      "kind": "LeoPractice",
+      "parentId": "a2ae3621-d323-43ac-841e-66d16115e791"
+    },
+    {
+      "id": "0a7620db-2274-44f0-b6eb-76c5d3c7d2a2",
+      "name": "参与",
+      "description": "通过收藏、创作、保护或传承艺术，实际介入艺术作品的产生、保存与延续。",
+      "kind": "LeoPractice",
+      "parentId": "a2ae3621-d323-43ac-841e-66d16115e791"
+    },
+    {
+      "id": "e1d6f253-cdea-4675-8ebd-1204e0be42b0",
+      "name": "融入",
+      "description": "进入、认识并逐渐接受社区的成员与生活方式。",
+      "kind": "LeoPractice",
+      "parentId": "a63aa555-6dcf-4639-b3d5-c952a74cca04"
+    },
+    {
+      "id": "ea7660fd-bf77-4317-9681-a2151dfb64b1",
+      "name": "共处",
+      "description": "与社区成员共享生活环境，处理边界、差异与冲突。",
+      "kind": "LeoPractice",
+      "parentId": "a63aa555-6dcf-4639-b3d5-c952a74cca04"
+    },
+    {
+      "id": "fa944401-f92f-4862-bd60-bad10ad79ab3",
+      "name": "共建",
+      "description": "参与社区事务，相互帮助并承担共同责任。",
+      "kind": "LeoPractice",
+      "parentId": "a63aa555-6dcf-4639-b3d5-c952a74cca04"
+    },
+    {
+      "id": "7f315b5c-7c3c-42b5-9f07-a1f411a4d2d3",
+      "name": "离开",
+      "description": "结束在社区中的共同生活及其持续联系。",
+      "kind": "LeoPractice",
+      "parentId": "a63aa555-6dcf-4639-b3d5-c952a74cca04"
+    },
+    {
+      "id": "a5920c23-35c6-4366-ad7e-047640dd007d",
+      "name": "结识",
+      "description": "因居住邻近或共处同一乡土而相识、建立初步印象。",
+      "kind": "LeoPractice",
+      "parentId": "ada3ec72-6d8c-4fb2-bc5f-62eddd4668f8"
+    },
+    {
+      "id": "9190cfbe-68bc-4615-a07b-5d28efc71df0",
+      "name": "相处",
+      "description": "日常共处中的边界维护与互助：公共空间、礼节往来、偶尔摩擦。",
+      "kind": "LeoPractice",
+      "parentId": "ada3ec72-6d8c-4fb2-bc5f-62eddd4668f8"
+    },
+    {
+      "id": "ff45ada8-24a1-49b1-95d9-4a065e40eca8",
+      "name": "疏远",
+      "description": "因搬迁或生活变动，地缘关系自然终结。",
+      "kind": "LeoPractice",
+      "parentId": "ada3ec72-6d8c-4fb2-bc5f-62eddd4668f8"
+    },
+    {
+      "id": "3a91570f-f846-40f7-857c-603578374b34",
+      "name": "觉察",
+      "description": "感知情绪的发生、对象、原因、强度与变化。",
+      "kind": "LeoPractice",
+      "parentId": "b1672c0e-bb91-4106-b660-27a1e352c6d8"
+    },
+    {
+      "id": "8b1710a7-5ae1-42d5-b47c-6a53c3423d26",
+      "name": "接纳",
+      "description": "承认情绪的存在，不因产生某种情绪而否定自己。",
+      "kind": "LeoPractice",
+      "parentId": "b1672c0e-bb91-4106-b660-27a1e352c6d8"
+    },
+    {
+      "id": "06ceb015-fd12-4c6c-9673-fe0a8c4b6aa4",
+      "name": "调节",
+      "description": "改变情绪的强度、持续时间及其对行动的影响。",
+      "kind": "LeoPractice",
+      "parentId": "b1672c0e-bb91-4106-b660-27a1e352c6d8"
+    },
+    {
+      "id": "22dc9e54-b7f9-4ce9-87bf-e3c84c9b97fa",
+      "name": "表达",
+      "description": "以适当方式向外呈现或传达情绪。",
+      "kind": "LeoPractice",
+      "parentId": "b1672c0e-bb91-4106-b660-27a1e352c6d8"
+    },
+    {
+      "id": "394c6d1d-647e-451b-86b5-6f0ff9252bbb",
+      "name": "选任",
+      "description": "在众多服务者中选择并确认合适的人选。",
+      "kind": "LeoPractice",
+      "parentId": "b2b986de-4937-4731-b311-0af17568c862"
+    },
+    {
+      "id": "726abf4b-ef74-4516-ab56-7b185d6d8774",
+      "name": "交办",
+      "description": "提出需求、交付费用、明确期待。",
+      "kind": "LeoPractice",
+      "parentId": "b2b986de-4937-4731-b311-0af17568c862"
+    },
+    {
+      "id": "b2062901-9390-410d-9a2e-270c6ddb3911",
+      "name": "验收",
+      "description": "审查成果、评判质量、给予评价。",
+      "kind": "LeoPractice",
+      "parentId": "b2b986de-4937-4731-b311-0af17568c862"
+    },
+    {
+      "id": "c6b8fec9-96ac-4eeb-b1e1-310f525b9fa9",
+      "name": "协商",
+      "description": "处理过程中的分歧、调整和续约。",
+      "kind": "LeoPractice",
+      "parentId": "b2b986de-4937-4731-b311-0af17568c862"
+    },
+    {
+      "id": "fa00f0ad-147e-468e-bb68-9267402d5198",
+      "name": "觉察",
+      "description": "认识欲望的发生、对象、来源、强度与真实指向。",
+      "kind": "LeoPractice",
+      "parentId": "b53b84a0-44bd-4a02-8bca-04d2c80e4bbb"
+    },
+    {
+      "id": "f20fedf2-f1e0-4d5f-ac24-8253ae3bad8e",
+      "name": "取舍",
+      "description": "判断欲望是否应当追求、保留或舍弃。",
+      "kind": "LeoPractice",
+      "parentId": "b53b84a0-44bd-4a02-8bca-04d2c80e4bbb"
+    },
+    {
+      "id": "24608d64-f1b8-48e3-9052-8814d138ef6b",
+      "name": "节制",
+      "description": "控制欲望的强度、表达和实现尺度。",
+      "kind": "LeoPractice",
+      "parentId": "b53b84a0-44bd-4a02-8bca-04d2c80e4bbb"
+    },
+    {
+      "id": "610766c8-9040-41a3-8e4c-4d3a69af212a",
+      "name": "满足",
+      "description": "以正当且适度的方式实现欲望。",
+      "kind": "LeoPractice",
+      "parentId": "b53b84a0-44bd-4a02-8bca-04d2c80e4bbb"
+    },
+    {
+      "id": "7cc808dc-f7ea-4540-85dd-6fa2eada51f7",
+      "name": "防卫",
+      "description": "通过回避、戒备、制止或反击维护安全与边界。",
+      "kind": "LeoPractice",
+      "parentId": "b5fd3247-df6f-4dcc-9a60-4ff81b45b876"
+    },
+    {
+      "id": "9d2f4594-86b6-4dc9-b9ba-32feae5fc229",
+      "name": "观察",
+      "description": "测度陌生人的状态、意图、处境和风险。",
+      "kind": "LeoPractice",
+      "parentId": "b5fd3247-df6f-4dcc-9a60-4ff81b45b876"
+    },
+    {
+      "id": "88504991-b71c-4858-a9a0-e17f29f1c463",
+      "name": "接近",
+      "description": "与陌生人建立初步接触，包括靠近、交谈或临时合作。",
+      "kind": "LeoPractice",
+      "parentId": "b5fd3247-df6f-4dcc-9a60-4ff81b45b876"
+    },
+    {
+      "id": "6470f3a9-7b6e-4057-b571-d3b6a852c1aa",
+      "name": "求助",
+      "description": "向陌生人请求帮助。",
+      "kind": "LeoPractice",
+      "parentId": "b5fd3247-df6f-4dcc-9a60-4ff81b45b876"
+    },
+    {
+      "id": "a96a40ff-2513-4faa-9991-e7ff60110a6e",
+      "name": "施助",
+      "description": "向陌生人给予帮助或保护。",
+      "kind": "LeoPractice",
+      "parentId": "b5fd3247-df6f-4dcc-9a60-4ff81b45b876"
+    },
+    {
+      "id": "621424ab-c182-471d-9355-9aee93dd54fb",
+      "name": "与父母",
+      "description": "给予生命和养育之恩的直系尊亲。",
+      "kind": "LeoObject",
+      "parentId": "b949f987-8723-4a5b-8d26-e530d86597d1"
+    },
+    {
+      "id": "74bf5b41-cf9f-4d06-99f4-b3fc05eae5e5",
+      "name": "与兄弟姐妹",
+      "description": "同父母或同源而生的平辈亲属。",
+      "kind": "LeoObject",
+      "parentId": "b949f987-8723-4a5b-8d26-e530d86597d1"
+    },
+    {
+      "id": "df64f838-44bf-4ace-a199-624cc863dbcd",
+      "name": "与亲戚",
+      "description": "除父母、兄弟姐妹、配偶和子女之外，由血缘、姻亲、宗族或家族关系形成的扩展亲属对象。",
+      "kind": "LeoObject",
+      "parentId": "b949f987-8723-4a5b-8d26-e530d86597d1"
+    },
+    {
+      "id": "0c7e7dc8-844f-477a-8b44-2dac38e1cbee",
+      "name": "与配偶",
+      "description": "通过婚姻关系结合的伴侣。",
+      "kind": "LeoObject",
+      "parentId": "b949f987-8723-4a5b-8d26-e530d86597d1"
+    },
+    {
+      "id": "4b77c38d-9b2a-4170-b806-5c284837571e",
+      "name": "与子女",
+      "description": "父母生育或抚养的后代。",
+      "kind": "LeoObject",
+      "parentId": "b949f987-8723-4a5b-8d26-e530d86597d1"
+    },
+    {
+      "id": "83aaefd4-26b8-4296-a42c-ef1f73844f89",
+      "name": "与动物伙伴",
+      "description": "与个人或家庭共同生活，并形成长期照护、陪伴或情感联结的非人类动物。",
+      "kind": "LeoObject",
+      "parentId": "b949f987-8723-4a5b-8d26-e530d86597d1"
+    },
+    {
+      "id": "a5bb4849-f2fc-4cfa-856f-21c6b169d9f3",
+      "name": "加入",
+      "description": "进入同一团队、部门或项目，成为共事关系。",
+      "kind": "LeoPractice",
+      "parentId": "c1336da7-6307-40ac-8b4e-ad1ca8ff173b"
+    },
+    {
+      "id": "8e2fff87-c462-4cc7-a9e7-d2860a6660ab",
+      "name": "协作",
+      "description": "共同完成任务，可能包含配合、摩擦、竞争、扶持。",
+      "kind": "LeoPractice",
+      "parentId": "c1336da7-6307-40ac-8b4e-ad1ca8ff173b"
+    },
+    {
+      "id": "1a45f48e-cf10-4500-b485-2a610d229b47",
+      "name": "分离",
+      "description": "因离职、调动、退休或团队解散，共事关系结束。",
+      "kind": "LeoPractice",
+      "parentId": "c1336da7-6307-40ac-8b4e-ad1ca8ff173b"
+    },
+    {
+      "id": "2c2229fc-297a-4fad-bceb-643317b443d8",
+      "name": "理解",
+      "description": "掌握科学方法，准确把握科学结论及其适用条件，并依据证据接受可靠认识。",
+      "kind": "LeoPractice",
+      "parentId": "c2aec0fb-4f67-4809-8c95-56e726b86e5e"
+    },
+    {
+      "id": "ad2a5bc4-ce81-4a73-a1bb-29c0610ebdc5",
+      "name": "质疑",
+      "description": "运用科学方法检验结论、证据和推理是否成立。",
+      "kind": "LeoPractice",
+      "parentId": "c2aec0fb-4f67-4809-8c95-56e726b86e5e"
+    },
+    {
+      "id": "dee0fc7c-c795-4172-afa1-d453fdc668e6",
+      "name": "运用",
+      "description": "用科学认识指导判断和行动。",
+      "kind": "LeoPractice",
+      "parentId": "c2aec0fb-4f67-4809-8c95-56e726b86e5e"
+    },
+    {
+      "id": "db81fd81-e282-448f-8838-69e1736af6af",
+      "name": "与生灵",
+      "description": "所有非人类的生命个体与物种。",
+      "kind": "LeoObject",
+      "parentId": "c30bc0bc-ed95-413c-bc0b-395ec9c89ab0"
+    },
+    {
+      "id": "959baca7-7d31-45b8-9212-61ad518f2944",
+      "name": "与环境",
+      "description": "海洋、陆地、大气、生态系统及地球之外的太空与天体，以及从中取用、改造、保护或留下痕迹的一切自然环境。",
+      "kind": "LeoObject",
+      "parentId": "c30bc0bc-ed95-413c-bc0b-395ec9c89ab0"
+    },
+    {
+      "id": "c2aec0fb-4f67-4809-8c95-56e726b86e5e",
+      "name": "与科学",
+      "description": "以可检验的方法认识自然与世界，并依据证据和推理形成可靠认识的知识体系与实践活动。",
+      "kind": "LeoObject",
+      "parentId": "c30bc0bc-ed95-413c-bc0b-395ec9c89ab0"
+    },
+    {
+      "id": "bff89936-00e9-4f96-aea3-bcd2970fed22",
+      "name": "结识",
+      "description": "因机缘相遇，建立初步的好感和联系。",
+      "kind": "LeoPractice",
+      "parentId": "c4bab890-e601-4f96-b1d4-6299b945c057"
+    },
+    {
+      "id": "1a8650fa-69ef-4ab1-927e-107050681d74",
+      "name": "相处",
+      "description": "日常互动、分享、建立信任和默契。",
+      "kind": "LeoPractice",
+      "parentId": "c4bab890-e601-4f96-b1d4-6299b945c057"
+    },
+    {
+      "id": "86e65f43-56ba-4524-8bca-5d41c6335d31",
+      "name": "疏远",
+      "description": "因各自生活变迁而联系减少、感情变淡。",
+      "kind": "LeoPractice",
+      "parentId": "c4bab890-e601-4f96-b1d4-6299b945c057"
+    },
+    {
+      "id": "56724e4d-1c98-4fb7-be4f-cd75fd11cfcf",
+      "name": "缔约",
+      "description": "双方通过自愿合同承诺建立服务关系，明确期待和条件。",
+      "kind": "LeoPractice",
+      "parentId": "c4c40922-490f-4844-b4e2-a6c8dde5ca5a"
+    },
+    {
+      "id": "2eed615a-ed8f-4414-b47c-7b1ea4b9efb2",
+      "name": "履约",
+      "description": "按约定交付服务或成果，应对过程中的变化和冲突。",
+      "kind": "LeoPractice",
+      "parentId": "c4c40922-490f-4844-b4e2-a6c8dde5ca5a"
+    },
+    {
+      "id": "f50c2dbf-9478-4c78-8842-4ac540c71348",
+      "name": "解约",
+      "description": "因完成、协商终止或争议而结束服务关系。",
+      "kind": "LeoPractice",
+      "parentId": "c4c40922-490f-4844-b4e2-a6c8dde5ca5a"
+    },
+    {
+      "id": "33957984-3a68-47d7-8552-db0d4a8c445e",
+      "name": "结识",
+      "description": "因共处同一学校或班级而相遇、建立联系。",
+      "kind": "LeoPractice",
+      "parentId": "cce17d92-72e3-4679-ad52-f59e61759cd9"
+    },
+    {
+      "id": "1c4c53c3-369d-4d03-83f7-b2c73e5c0649",
+      "name": "相处",
+      "description": "共同学习、成长、竞争、分享校园日常。",
+      "kind": "LeoPractice",
+      "parentId": "cce17d92-72e3-4679-ad52-f59e61759cd9"
+    },
+    {
+      "id": "5b25f245-b55c-437a-aa0a-14895d4ac24e",
+      "name": "分别",
+      "description": "毕业后各奔东西，联系自然减少。",
+      "kind": "LeoPractice",
+      "parentId": "cce17d92-72e3-4679-ad52-f59e61759cd9"
+    },
+    {
+      "id": "e443235e-afb0-4079-af00-a952c4b46c6b",
+      "name": "建立",
+      "description": "通过行为、成就和自我呈现形成公众评价。",
+      "kind": "LeoPractice",
+      "parentId": "da1ed038-9921-415d-a49e-75ff32c86eb3"
+    },
+    {
+      "id": "a4814f3b-aee4-4b69-b7f0-f42e75518671",
+      "name": "维护",
+      "description": "珍惜已有名誉，以持续表现保持公众信任。",
+      "kind": "LeoPractice",
+      "parentId": "da1ed038-9921-415d-a49e-75ff32c86eb3"
+    },
+    {
+      "id": "7fd5e00a-8541-459e-963f-ea1ede5eca89",
+      "name": "运用",
+      "description": "凭借名誉获得信任、机会、影响力或利益。",
+      "kind": "LeoPractice",
+      "parentId": "da1ed038-9921-415d-a49e-75ff32c86eb3"
+    },
+    {
+      "id": "19669aee-1deb-4dfc-ace6-627a6e37fc57",
+      "name": "修复",
+      "description": "面对误解、指控或自身过错造成的损害，重新建立可信评价。",
+      "kind": "LeoPractice",
+      "parentId": "da1ed038-9921-415d-a49e-75ff32c86eb3"
+    },
+    {
+      "id": "fed71846-7b64-428b-8f0e-d9e89cc8e6d7",
+      "name": "确权",
+      "description": "使名义的管理权力转化为实质有效的权力，让指令被真正接受和执行。",
+      "kind": "LeoPractice",
+      "parentId": "db76c7d5-dc67-4e22-bc89-9cb39e993dd3"
+    },
+    {
+      "id": "f8030b5f-4c63-49ab-bf14-c471246f558b",
+      "name": "指挥",
+      "description": "下达指令、分配任务、监督执行。",
+      "kind": "LeoPractice",
+      "parentId": "db76c7d5-dc67-4e22-bc89-9cb39e993dd3"
+    },
+    {
+      "id": "218313c5-4eab-44e6-8a6e-c3fb561e474a",
+      "name": "奖惩",
+      "description": "考核成果、实施奖罚。",
+      "kind": "LeoPractice",
+      "parentId": "db76c7d5-dc67-4e22-bc89-9cb39e993dd3"
+    },
+    {
+      "id": "10d6a944-0ec9-44bc-a0e2-655f8a3bf03c",
+      "name": "沟通",
+      "description": "处理指令执行中的反馈、申诉和冲突调解。",
+      "kind": "LeoPractice",
+      "parentId": "db76c7d5-dc67-4e22-bc89-9cb39e993dd3"
+    },
+    {
+      "id": "f30c3161-3ce1-4672-9efe-bcddb4954232",
+      "name": "共存",
+      "description": "人与生灵共享空间、资源和生存边界，包括相遇、接触、避让、冲突、欣赏和保护。",
+      "kind": "LeoPractice",
+      "parentId": "db81fd81-e282-448f-8838-69e1736af6af"
+    },
+    {
+      "id": "64270337-8685-4d0e-9fff-12dc229f677e",
+      "name": "利用",
+      "description": "人为了自身需要使用生灵的身体、能力、产出或形象，包括食用、劳作、实验、娱乐和产业开发。",
+      "kind": "LeoPractice",
+      "parentId": "db81fd81-e282-448f-8838-69e1736af6af"
+    },
+    {
+      "id": "e1ce1493-cbec-45a4-b2cc-41befa03f256",
+      "name": "管理",
+      "description": "人对生灵的生存、繁殖、行动和环境作出安排，包括饲养、训练、繁育、救护、控制和处置。",
+      "kind": "LeoPractice",
+      "parentId": "db81fd81-e282-448f-8838-69e1736af6af"
+    },
+    {
+      "id": "6faf1d3f-f626-40b6-9e35-4797dbf1515f",
+      "name": "亲近",
+      "description": "与亲戚建立、维持情感连接和日常往来，使名义上的亲属关系成为可感知的亲近关系。",
+      "kind": "LeoPractice",
+      "parentId": "df64f838-44bf-4ace-a199-624cc863dbcd"
+    },
+    {
+      "id": "67d51658-a8d5-4211-a010-830c2630e426",
+      "name": "援助",
+      "description": "亲戚一方处于资源、照护、危机或能力缺口时，决定是否以及如何给予、请求或接受帮助。",
+      "kind": "LeoPractice",
+      "parentId": "df64f838-44bf-4ace-a199-624cc863dbcd"
+    },
+    {
+      "id": "04f92077-7421-4eed-837c-6c6b2bf664d2",
+      "name": "博弈",
+      "description": "在亲戚之间的利益、责任、边界或地位主张不一致时，通过判断、协商、拒绝或制衡处理冲突。",
+      "kind": "LeoPractice",
+      "parentId": "df64f838-44bf-4ace-a199-624cc863dbcd"
+    },
+    {
+      "id": "47f09ce5-5d4e-4669-ae80-4df09ade2c4a",
+      "name": "疏远",
+      "description": "当亲戚关系有害、失信、破裂或难以持续时，降低往来、拉开距离或终止关系。",
+      "kind": "LeoPractice",
+      "parentId": "df64f838-44bf-4ace-a199-624cc863dbcd"
+    },
+    {
+      "id": "f615fadc-e2cc-438e-b9d6-6fe50da8b3bc",
+      "name": "吸引",
+      "description": "相遇、心动、建立好感。",
+      "kind": "LeoPractice",
+      "parentId": "e097dd9a-e60a-49b9-916a-9546a07c91cd"
+    },
+    {
+      "id": "d7902634-20f0-49b2-9c07-9294ecbb2668",
+      "name": "确立",
+      "description": "确认恋爱关系，承诺彼此的专属。",
+      "kind": "LeoPractice",
+      "parentId": "e097dd9a-e60a-49b9-916a-9546a07c91cd"
+    },
+    {
+      "id": "acd5fd23-234c-4a27-861c-5b2e8b625b95",
+      "name": "相处",
+      "description": "日常互动、情感交流、习惯磨合。",
+      "kind": "LeoPractice",
+      "parentId": "e097dd9a-e60a-49b9-916a-9546a07c91cd"
+    },
+    {
+      "id": "161ddd17-381b-4925-8910-94cdbd372fca",
+      "name": "分别",
+      "description": "分手告别，或因一方离世而终结。",
+      "kind": "LeoPractice",
+      "parentId": "e097dd9a-e60a-49b9-916a-9546a07c91cd"
+    },
+    {
+      "id": "91e0696d-85c8-4afb-9d99-1990ffb7c12b",
+      "name": "了解",
+      "description": "接受身体的既有条件，逐渐感知和认识自己的身体状态、能力与边界。",
+      "kind": "LeoPractice",
+      "parentId": "ee7539e3-8e51-4e3b-9b28-68ad0e0efb9c"
+    },
+    {
+      "id": "1a2b49da-d81e-4e22-a782-3e513dcb16ee",
+      "name": "使用",
+      "description": "以身体为工具行动、劳动、创造与体验。",
+      "kind": "LeoPractice",
+      "parentId": "ee7539e3-8e51-4e3b-9b28-68ad0e0efb9c"
+    },
+    {
+      "id": "4ae3aff6-cbef-4c4f-903b-a284ec56d1b5",
+      "name": "维护",
+      "description": "对身体进行改变、治疗、养护与修复，并面对身体功能的衰退、残缺或终结。",
+      "kind": "LeoPractice",
+      "parentId": "ee7539e3-8e51-4e3b-9b28-68ad0e0efb9c"
+    },
+    {
+      "id": "b5fd3247-df6f-4dcc-9a60-4ff81b45b876",
+      "name": "与陌生人",
+      "description": "缺少既有关系基础而因偶遇、求助、施助、冲突、线上互动、匿名参与或其他临时接触产生关联的人。",
+      "kind": "LeoObject",
+      "parentId": "eee0f4ad-d0fe-45bd-a51d-9eb331391a94"
+    },
+    {
+      "id": "97031dbd-0c24-4aae-9055-bb0472f2836f",
+      "name": "与敌人",
+      "description": "与自己存在持续、严重且以伤害、剥夺、压制或消灭为目标的敌对关系的人或组织。",
+      "kind": "LeoObject",
+      "parentId": "eee0f4ad-d0fe-45bd-a51d-9eb331391a94"
+    },
+    {
+      "id": "0c661a91-a9e5-4c1b-aad5-79afaf370a54",
+      "name": "与AI",
+      "description": "具备一定自主推理与交互能力的人工智能系统或智能体。",
+      "kind": "LeoObject",
+      "parentId": "eee0f4ad-d0fe-45bd-a51d-9eb331391a94"
+    },
+    {
+      "id": "532e23f4-14af-4d1b-8024-98d07b05180f",
+      "name": "建立",
+      "description": "为自己的抉择和行动确立基本准则。",
+      "kind": "LeoPractice",
+      "parentId": "f769ed22-a71a-41a6-8489-6f571b7a3fcb"
+    },
+    {
+      "id": "cd0e0cd5-fa31-4216-877f-4e2a91959690",
+      "name": "坚持",
+      "description": "在诱惑、压力或代价面前继续遵守原则。",
+      "kind": "LeoPractice",
+      "parentId": "f769ed22-a71a-41a6-8489-6f571b7a3fcb"
+    },
+    {
+      "id": "299b2e15-dfc0-48d7-9d3d-817d194e928c",
+      "name": "变通",
+      "description": "在特殊情境中调整原则的具体适用方式。",
+      "kind": "LeoPractice",
+      "parentId": "f769ed22-a71a-41a6-8489-6f571b7a3fcb"
+    },
+    {
+      "id": "2905d929-abbe-4df8-abec-4cad29e29625",
+      "name": "修正",
+      "description": "反思并改变原则中不准确或不适宜的内容。",
+      "kind": "LeoPractice",
+      "parentId": "f769ed22-a71a-41a6-8489-6f571b7a3fcb"
+    },
+    {
+      "id": "ee7539e3-8e51-4e3b-9b28-68ad0e0efb9c",
+      "name": "与身体",
+      "description": "作为生命存在者所具有的生命事实、身体状态和健康条件。",
+      "kind": "LeoObject",
+      "parentId": "f97ae3af-5524-48a3-8254-4c238850f651"
+    },
+    {
+      "id": "b1672c0e-bb91-4106-b660-27a1e352c6d8",
+      "name": "与情绪",
+      "description": "对内外刺激形成的感受反应及其持续状态。",
+      "kind": "LeoObject",
+      "parentId": "f97ae3af-5524-48a3-8254-4c238850f651"
+    },
+    {
+      "id": "b53b84a0-44bd-4a02-8bca-04d2c80e4bbb",
+      "name": "与欲望",
+      "description": "驱动趋近、追求、占有或避免某些对象和状态的内在动力。",
+      "kind": "LeoObject",
+      "parentId": "f97ae3af-5524-48a3-8254-4c238850f651"
+    },
+    {
+      "id": "596b42cd-735d-42cb-9942-70500676e726",
+      "name": "与能力",
+      "description": "完成行动、处理事务、理解世界和运用知识的本领。",
+      "kind": "LeoObject",
+      "parentId": "f97ae3af-5524-48a3-8254-4c238850f651"
+    },
+    {
+      "id": "990597d7-929f-4530-8e23-85260a62e907",
+      "name": "与时间",
+      "description": "生命展开、行动安排和人生阶段所处的时间条件。",
+      "kind": "LeoObject",
+      "parentId": "f97ae3af-5524-48a3-8254-4c238850f651"
+    },
+    {
+      "id": "29dc730c-459d-46a5-a78d-4c5752ad8dc3",
+      "name": "与财富",
+      "description": "个人拥有、控制、使用、维护或传递的物质财富与外在资源。",
+      "kind": "LeoObject",
+      "parentId": "f97ae3af-5524-48a3-8254-4c238850f651"
+    },
+    {
+      "id": "da1ed038-9921-415d-a49e-75ff32c86eb3",
+      "name": "与名誉",
+      "description": "在他人和社会中因其行为、成就或品格而获得的公众评价与声望。",
+      "kind": "LeoObject",
+      "parentId": "f97ae3af-5524-48a3-8254-4c238850f651"
+    },
+    {
+      "id": "f769ed22-a71a-41a6-8489-6f571b7a3fcb",
+      "name": "与原则",
+      "description": "为自身行为抉择提供依据的基本规则、信条与行为准则。",
+      "kind": "LeoObject",
+      "parentId": "f97ae3af-5524-48a3-8254-4c238850f651"
+    },
+    {
+      "id": "04f1c71b-240b-46bc-8d02-661ab3684d9d",
+      "name": "与信念",
+      "description": "深信、坚持并用以组织行动方向的人生立场、价值取向和理想追求。",
+      "kind": "LeoObject",
+      "parentId": "f97ae3af-5524-48a3-8254-4c238850f651"
+    },
+    {
+      "id": "6f1690c9-704a-4d00-a753-67de8410f225",
+      "name": "与理想",
+      "description": "对自身、社会或世界应当成为何种样子的完善设想。",
+      "kind": "LeoObject",
+      "parentId": "f97ae3af-5524-48a3-8254-4c238850f651"
+    },
+    {
+      "id": "17ff7d91-8f9e-4295-8935-97a5413e5b29",
+      "name": "认同",
+      "description": "认同共同的理念或目标，在精神上归属同一群体。",
+      "kind": "LeoPractice",
+      "parentId": "fb827c0b-2912-4487-ab35-c871ffaad32c"
+    },
+    {
+      "id": "fc555b3b-e0f3-4fb5-a67d-bb352f841a47",
+      "name": "加入",
+      "description": "正式成为组织或运动的一员，建立具体联结。",
+      "kind": "LeoPractice",
+      "parentId": "fb827c0b-2912-4487-ab35-c871ffaad32c"
+    },
+    {
+      "id": "96f14654-70c2-4de0-8451-912cdb92ea6b",
+      "name": "同行",
+      "description": "为共同目标并肩奋斗、互相支持、也可能产生分歧。",
+      "kind": "LeoPractice",
+      "parentId": "fb827c0b-2912-4487-ab35-c871ffaad32c"
+    },
+    {
+      "id": "268ae0da-0ed3-4648-9ad6-66fd3d133520",
+      "name": "退出",
+      "description": "因失望、分歧或生活压力离开组织。",
+      "kind": "LeoPractice",
+      "parentId": "fb827c0b-2912-4487-ab35-c871ffaad32c"
+    }
+  ],
+  "graphs": [
+    {
+      "officialGraph": {
+        "id": "9ea04644-d9b4-4883-81b0-06fdb407ded5",
+        "isOfficial": true
+      },
+      "myGraph": {
+        "id": "a7dd256a-5890-4dd4-a967-10b990e5ba0e",
+        "isOfficial": false
+      }
+    }
+  ]
+}

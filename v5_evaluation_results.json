@@ -1,0 +1,5123 @@
+[
+  {
+    "ordinal": 50,
+    "slot": "B22",
+    "title": "一人之上",
+    "question": "过度依赖 AI 会削弱一人公司的核心竞争力吗？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 52,
+    "slot": "B21",
+    "title": "战龙于野",
+    "question": "关于社会的潜规则和一些阴暗面，你觉得如何跟孩子说才合适？",
+    "status": "OUTER_MISPLACED",
+    "reason": "讨论如何跟未成年孩子沟通社会的阴暗面与潜规则，属于亲子家教与价值观引导，非公职体制生存。",
+    "target": "V1-B04 (亲子沟通与青春叛逆)"
+  },
+  {
+    "ordinal": 83,
+    "slot": "B21",
+    "title": "少点歧视",
+    "question": "感觉现在反倒成了全国歧视上海，上海人还好吗？",
+    "status": "OUTER_MISPLACED",
+    "reason": "讨论地域歧视（疫情期间全国歧视上海）及歧视的伦理损人利己本质，属于公共社会舆论与道德伦理，非体制生存。",
+    "target": "V6-B23 (公共热点与事件剖析) 或 V7-B33 (善恶分野与伦理底线)"
+  },
+  {
+    "ordinal": 85,
+    "slot": "B22",
+    "title": "多余的不开心",
+    "question": "人到中年，如果有不开心的事，你和谁说？",
+    "status": "OUTER_MISPLACED",
+    "reason": "中年情绪疏导与亲密/朋友情感分担边界，属身心调养与情感自处，非商业竞争或资产投资。",
+    "target": "V4-B17 (情志平复与容貌自和) 或 V3-B15 (社交距离与孤立自处)"
+  },
+  {
+    "ordinal": 117,
+    "slot": "B21",
+    "title": "圆滑2",
+    "question": "如何在体制内做一个处事“圆滑”的人?",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 141,
+    "slot": "B21",
+    "title": "圆滑",
+    "question": "21级大一，父亲让我最圆滑的做人，我始终认为大学生不该这样，而且自己也很难做到也很反感这样，怎么办？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 159,
+    "slot": "B22",
+    "title": "桃花庵里桃花仙",
+    "question": "你看好超级个体，一人公司（OPC）吗？为什么？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 226,
+    "slot": "B22",
+    "title": "白磷",
+    "question": "如何评价张雪，以及他的创业经历？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 296,
+    "slot": "B21",
+    "title": "不站队",
+    "question": "父母二人意见常截然相反，还执意让我这个独生子女站队表态，我夹在中间很为难，该怎么应对这种情况呢？",
+    "status": "OUTER_MISPLACED",
+    "reason": "讨论独生子女面对父母婚姻内部分歧（囤货vs扔东西）被逼站队如何自处，纯家庭伦理，非体制职场站队。",
+    "target": "V1-B06 (成年子女自立与边界)"
+  },
+  {
+    "ordinal": 372,
+    "slot": "B22",
+    "title": "潮起潮落",
+    "question": "普通中产辛辛苦苦一辈子，然后房价暴跌，那么中产努力的意义在哪里？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 413,
+    "slot": "B22",
+    "title": "无责收入",
+    "question": "UBI（Universal basic income，全民基本收入）可行吗？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 452,
+    "slot": "B21",
+    "title": "藏锋",
+    "question": "体制内需不需要藏锋露拙？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 516,
+    "slot": "B22",
+    "title": "破财",
+    "question": "表姐家有几千万，为什么找她借50万她却说没有钱呢？",
+    "status": "FIT",
+    "reason": "深刻阐释大额资产完整性与商业资本使用价值，解释为何富人不轻易出借现金，属资产财富逻辑。",
+    "target": ""
+  },
+  {
+    "ordinal": 547,
+    "slot": "B22",
+    "title": "一丝",
+    "question": "优秀企业家的风险观是什么样的？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 573,
+    "slot": "B22",
+    "title": "温玉",
+    "question": "老罗罗永浩看问题非常能看到本质，为什么创业总是不成功？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 574,
+    "slot": "B22",
+    "title": "逍遥",
+    "question": "国内物价这么低，为什么人们还觉得生活很累?",
+    "status": "OUTER_MISPLACED",
+    "reason": "宏观分析当代普通劳动者的生活重负与三大宗支出（房产/教育/医疗）的社会压力，属社会现象与生活观念透视，非个人商业经营/投资实操。",
+    "target": "V6-B28 (消费主义与生活观念) 或 V6-B24 (青年心境与躺平反思)"
+  },
+  {
+    "ordinal": 595,
+    "slot": "B22",
+    "title": "细品",
+    "question": "想要过上更好的生活，如何在「买」这件事上节省精力？",
+    "status": "OUTER_MISPLACED",
+    "reason": "个人日常生活消费中的选品省力法，属于生活消费观念与个人效率，非商业企业竞争或资产投资。",
+    "target": "V6-B28 (消费主义与生活观念) 或 V4-B19 (知行精进与生活整理)"
+  },
+  {
+    "ordinal": 668,
+    "slot": "B22",
+    "title": "一盏灯",
+    "question": "为什么知乎上很多交易者都在问怎么悟道？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 670,
+    "slot": "B22",
+    "title": "熊掌炖鱼",
+    "question": "做一件事，是先规划好再做还是该边做边规划？",
+    "status": "FIT",
+    "reason": "以实体开店经商预算模型（房租人工物料利润回本周期）论述商业规划，契合商业创业。",
+    "target": ""
+  },
+  {
+    "ordinal": 686,
+    "slot": "B22",
+    "title": "忒煞风景",
+    "question": "何小鹏曾透露公司钢材成本被下属「骗」，花9个月才搞清，CEO也会难以掌握真实状况吗？管理上怎么解决？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 694,
+    "slot": "B22",
+    "title": "学股神",
+    "question": "学历很高，但是进入股市后，发现智商不够乃至非常愚蠢导致屡屡出错，是什么原因？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 714,
+    "slot": "B22",
+    "title": "三百首",
+    "question": "如何培养自己的商业思维能力？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 729,
+    "slot": "B21",
+    "title": "鸳鸯锅",
+    "question": "体制内领导逼你签不该签的字怎么办？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 734,
+    "slot": "B22",
+    "title": "政治头脑",
+    "question": "怎么算拥有政治头脑?",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 761,
+    "slot": "B22",
+    "title": "聪明钱",
+    "question": "CMG 机器人格斗大赛举行，宇树人形机器人参赛，比赛有哪些看点？对行业意味着什么？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 765,
+    "slot": "B22",
+    "title": "豪华感之和",
+    "question": "小米 YU7 主打豪华为什么绑着 Model Y 做对比？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 767,
+    "slot": "B22",
+    "title": "谣谣乐",
+    "question": "蔚来的电车使用成本是其余友商的五倍以上，为啥还有人买蔚来？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 788,
+    "slot": "B22",
+    "title": "平乱",
+    "question": "如果你是老板，被十几位员工联名要求罢免掉他们的直接上司，不然全辞职，你会怎么办?",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 801,
+    "slot": "B22",
+    "title": "去赤字生活",
+    "question": "怎么看待张朝阳再次强调年轻人不要负债?",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 830,
+    "slot": "B22",
+    "title": "一只萤火虫",
+    "question": "如何看待蔚来萤火虫的市场前景？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 836,
+    "slot": "B22",
+    "title": "松下问童子",
+    "question": "面试中被问「你还有什么问题要问我们」这类经典提问，哪些方向能体现自己「有思考」？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 841,
+    "slot": "B21",
+    "title": "铁针",
+    "question": "为什么很多年轻人考上了教师、公务员和事业单位后，过得却并不开心？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 868,
+    "slot": "B22",
+    "title": "面向纪要会议",
+    "question": "如何写好公司会议中的会议纪要？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 877,
+    "slot": "B22",
+    "title": "长线持股",
+    "question": "请问股票的投资理念是什么？如何进行长线投资？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 881,
+    "slot": "B22",
+    "title": "安全外卖",
+    "question": "在一定要点外卖的情况下，如何挑选出卫生安全的外卖商家？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 901,
+    "slot": "B21",
+    "title": "泸定桥头",
+    "question": "女公务员拒绝了官场潜规则后如何立足？？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 909,
+    "slot": "B22",
+    "title": "落魄之人",
+    "question": "你能接受老板只是将你当成了一个「工具人」，而不是有感情的对待你吗？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 925,
+    "slot": "B22",
+    "title": "新奥义",
+    "question": "小米su7 ultra原本准备卖80多万的车，为什么能降到52.99万？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 939,
+    "slot": "B21",
+    "title": "沉默的巨人",
+    "question": "一个人一定要在所有事情上都站队吗？",
+    "status": "INNER_MISPLACED",
+    "reason": "抽象数学博弈模型（A=50, B=40, C=30）讨论何时有资格保持中立不站队，不含体制内具体公职人事场景，更适合作职场博弈或认知模型。",
+    "target": "B20 (职场汇报与权责留痕) 或 V7-B34 (认识局限与心智模型)"
+  },
+  {
+    "ordinal": 956,
+    "slot": "B22",
+    "title": "长安揖别",
+    "question": "导演饺子、郭帆均在电影制作时找过海外团队，效果不及预期后由国内制作公司完成，这对国产电影有哪些启示？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 967,
+    "slot": "B22",
+    "title": "趵突泉",
+    "question": "婚期临近，掏空父母积蓄买房给彩礼，现在压力大到失眠，这段感情该继续吗？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 969,
+    "slot": "B22",
+    "title": "三重冠",
+    "question": "《哪吒》《大圣归来》在技术上是否已达到美国迪士尼梦工厂水平？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1028,
+    "slot": "B22",
+    "title": "好环境",
+    "question": "张代兵博士因创业负债跳楼自杀，是否说明国内的环境已不适合创业？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1040,
+    "slot": "B22",
+    "title": "卡通表",
+    "question": "为什么像比尔·盖茨这样的人反而不戴劳力士或百达翡丽这样昂贵的手表？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1098,
+    "slot": "B22",
+    "title": "肉公基",
+    "question": "错误的握笔姿势有必要纠正吗?",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1116,
+    "slot": "B22",
+    "title": "道路以目",
+    "question": "在路上遇到经常见的熟人怎么打招呼（交流）显得合适，且不尴尬？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1134,
+    "slot": "B22",
+    "title": "天堂有路",
+    "question": "我想创业但说服不了家人投资怎么办？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1151,
+    "slot": "B22",
+    "title": "三竭",
+    "question": "如何看待“如果严格执行劳动法，会有很多企业活不下去，发生大规模裁员”这种说法？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1178,
+    "slot": "B22",
+    "title": "一二三四，二二三四",
+    "question": "台积电成为第一家市值突破 1 万亿美元的亚洲科技公司，这意味着什么？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1210,
+    "slot": "B22",
+    "title": "财路通天",
+    "question": "为什么很多男的到了中年突然开始炒股？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1218,
+    "slot": "B22",
+    "title": "金牛痘",
+    "question": "如何看待 A 股这轮急涨后的首次大调整?现在是入场时机吗？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1233,
+    "slot": "B22",
+    "title": "反杀猪盘",
+    "question": "请问你们经历过网络杀猪盘吗？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1242,
+    "slot": "B22",
+    "title": "驴和马",
+    "question": "你们是如何看待骑驴找马型男人或女人的？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1243,
+    "slot": "B22",
+    "title": "国家队",
+    "question": "国家这几天为什么开始提振股市了？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1277,
+    "slot": "B22",
+    "title": "无道人",
+    "question": "管培生入职 43 天拒绝周末跑 10 公里被辞退，此前已连续加班 12 天，公司行为合法吗？如何维权？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1295,
+    "slot": "B22",
+    "title": "咩",
+    "question": "如何平衡资本市场的发展和社会稳定之间的关系？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1318,
+    "slot": "B21",
+    "title": "聪明正直",
+    "question": "为什么西方神话中，神靠投胎、有性格缺陷；中国神话中，神往往是历经苦难、建功立业修得的，并且都聪明正直？",
+    "status": "OUTER_MISPLACED",
+    "reason": "探讨中西方神话中神的产生逻辑差异（中国神是凡人立大功建大业、朝廷敕封），属于国家政治制度与文明史，非体制内个人职业生存。",
+    "target": "V8-B40 (治乱兴亡与国家工程) 或 V6-B30 (文明演进与社会秩序)"
+  },
+  {
+    "ordinal": 1346,
+    "slot": "B22",
+    "title": "扬汤止沸",
+    "question": "家长为了防止孩子走入歧途，火烧估值好几万烟卡，如何看待这种做法？家长有更好的处理方式吗？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1365,
+    "slot": "B22",
+    "title": "好木匠",
+    "question": "如何看待手机app的开屏广告？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1373,
+    "slot": "B21",
+    "title": "半纹龙",
+    "question": "我爸是公务员 ，随着从副科到正处，和我说话越来越少，根本不传授经验，这正常吗？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1395,
+    "slot": "B22",
+    "title": "有钱要花",
+    "question": "大三父母留下了300w 我该怎么用这笔钱生活?",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1398,
+    "slot": "B22",
+    "title": "激流勇退",
+    "question": "如何看待樊振东最新微博？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1430,
+    "slot": "B22",
+    "title": "madness",
+    "question": "如何评价巴黎奥运会运动员在塞纳河上乘坐游船入场的方式？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1492,
+    "slot": "B22",
+    "title": "金毒",
+    "question": "穷人家的子女最缺什么?",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1523,
+    "slot": "B22",
+    "title": "夫唯不争",
+    "question": "女朋友被公司的温柔多金的大叔型领导看上了，该怎么跟大叔博弈？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1552,
+    "slot": "B22",
+    "title": "不配得",
+    "question": "觉得自己干的活不值得那么高薪水怎么办？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1574,
+    "slot": "B22",
+    "title": "值得付费",
+    "question": "如何筛选出值得为之知识付费的人？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1576,
+    "slot": "B20A",
+    "title": "行业调研",
+    "question": "如何高效的开展行业调研？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1684,
+    "slot": "B22",
+    "title": "富国plus",
+    "question": "胡润报告称中国千万资产家庭达 208 万户，拥有亿元资产的家庭达 13.3 万户，哪些信息值得关注？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1703,
+    "slot": "B22",
+    "title": "Gaze",
+    "question": "男性的凝视是不是只是女性的想象？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1708,
+    "slot": "B22",
+    "title": "北方狼族",
+    "question": "起诉莫言是否影响了中国营商环境?",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1751,
+    "slot": "B22",
+    "title": "n年一遇",
+    "question": "研究生读完出来已经26左右了是不是在浪费时间?",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1767,
+    "slot": "B22",
+    "title": "流言蜚语",
+    "question": "公司有传言说你跟领导有不正当关系，你会怎么办？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1782,
+    "slot": "B22",
+    "title": "张记包子",
+    "question": "家里靠卖鸡蛋饼为生，孩子不能接受，觉得大家都看不起他，家长该怎么办？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1798,
+    "slot": "B22",
+    "title": "反对，反对，再反对",
+    "question": "如果孩子对某些方面确实感兴趣，想要去探索、研究，在力所能及的范围内，父母应该怎样去支持他？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1801,
+    "slot": "B22",
+    "title": "盈利背离",
+    "question": "GDP增长5.2%，为什么股市大跌？?",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1830,
+    "slot": "B22",
+    "title": "面向自由追问",
+    "question": "为什么一旦自己创业了，很难再回到公司去坐班？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1834,
+    "slot": "B22",
+    "title": "始祖鸟",
+    "question": "始祖鸟原价 8200 元的冲锋衣，炒到 1.2 万元，母公司三年亏损超 6 亿美元，哪些信息值得关注？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1842,
+    "slot": "B22",
+    "title": "通胀义务",
+    "question": "对于普通人来说，钱是挣出来的还是节省出来的？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1852,
+    "slot": "B22",
+    "title": "猎人",
+    "question": "面试时，如何高情商回答「如果有更好的 offer 摆在你面前，你还会选择我们公司吗」？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1855,
+    "slot": "B22",
+    "title": "IT装备解决方案",
+    "question": "为什么很多公司配的笔记本都特别渣？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1870,
+    "slot": "B22",
+    "title": "无敌铁公鸡",
+    "question": "老罗说俞敏洪是铁公鸡，老罗作为老板人怎样？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1883,
+    "slot": "B21",
+    "title": "德雷克医生",
+    "question": "俞敏洪、董宇辉今晚合体直播，有哪些信息值得关注？能彻底平息本次风波吗？",
+    "status": "INNER_MISPLACED",
+    "reason": "评析新东方俞敏洪与董宇辉直播合体事件、超头部主播与平台资本博弈，属于商业/MCN劳资关系，非体制内公职。",
+    "target": "B22 (商业竞争与资产投资) 或 B20 (职场生态)"
+  },
+  {
+    "ordinal": 1886,
+    "slot": "B22",
+    "title": "No Soup For You",
+    "question": "张雪峰回应「文科都是服务业」，称「做服务业没有不好，我是提醒以为某些专业高大上的人」，如何看待此事？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1901,
+    "slot": "B22",
+    "title": "落草为王",
+    "question": "AI 视频生成工具 Pika 爆火，学霸创始人被评近乎完美，其父亲还有家上市公司，哪些信息值得关注？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1905,
+    "slot": "B22",
+    "title": "铁尺",
+    "question": "据多家媒体报道，字节跳动游戏业务朝夕光年将进行大规模的业务和人员调整，这将对游戏行业造成哪些影响？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1920,
+    "slot": "B22",
+    "title": "不两立",
+    "question": "多位知情人士透露董事会正与奥特曼讨论重返 CEO 岗位，如何看待此事？他会回去吗？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1924,
+    "slot": "B22",
+    "title": "眼高手低",
+    "question": "如何分别志向远大和眼高手低的区别？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1936,
+    "slot": "B21",
+    "title": "缺养",
+    "question": "因为晚上去同学家住没讲清楚，第二天跟嫂子吵架被扇巴掌并被拿拍子狂砸后脑勺几十下怎么办?",
+    "status": "OUTER_MISPLACED",
+    "reason": "家庭姑嫂肢体冲突与寄人篱下暴力应对，建议脱离接触完全住校，属家庭亲戚纠纷与人身自保，非体制生存。",
+    "target": "V1-B08 (手足同胞与家族亲戚) 或 V3-B16 (危机识人与权义守界)"
+  },
+  {
+    "ordinal": 1950,
+    "slot": "B22",
+    "title": "淡定的许褚",
+    "question": "如何看待10月31日，河南周口上百人跑到药材地里哄抢，主人家拦不住被气到坐地哭喊？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1957,
+    "slot": "B22",
+    "title": "和氏传奇",
+    "question": "日本押宝全固态电池，日媒称日企寻求跨界联合挽回局面，如何看待此事？全固态电池有何优缺点？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1958,
+    "slot": "B22",
+    "title": "中国中央",
+    "question": "为什么我国最大的电视台当时要叫做「中央电视台」，而不是「中国电视台」？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1962,
+    "slot": "B22",
+    "title": "gap",
+    "question": "为什么我们不被允许有gap year？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1965,
+    "slot": "B22",
+    "title": "见好就收",
+    "question": "钟薛高被曝欠薪，官方账号下被讨债，商家称降价也不好卖，公司称纠纷由 5 月起的裁员引起，具体情况如何？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1977,
+    "slot": "B21",
+    "title": "你好我好",
+    "question": "如果不喜欢朋友的某种行为，是否可以提出来？如何开口比较恰当？",
+    "status": "OUTER_MISPLACED",
+    "reason": "讨论朋友相处中表达不满的边界、'你为我友'的互惠潜规则，属熟人社交酬酢，非体制内。",
+    "target": "V3-B14 (人情往来与礼数分寸) 或 V3-B15 (社交距离与孤立自处)"
+  },
+  {
+    "ordinal": 2056,
+    "slot": "B22",
+    "title": "好声音，坏声音",
+    "question": "为什么好声音敢这样对待李玟？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2066,
+    "slot": "B22",
+    "title": "有声胜无声",
+    "question": "遇到矛盾男朋友就沉默，怎么办？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2071,
+    "slot": "B21",
+    "title": "千王之王",
+    "question": "如何管理好自己的微表情？是什么原因造成的？",
+    "status": "INNER_MISPLACED",
+    "reason": "以微表情切入，核心论点是商业报价与谈判底线（'做不成不可惜、做成了不吃亏'），属商业谈判心法，非体制内公职。",
+    "target": "B22 (商业竞争与资产投资)"
+  },
+  {
+    "ordinal": 2073,
+    "slot": "B22",
+    "title": "无能而无害",
+    "question": "外企担忧《反间谍法》，商务部回应「依法合规经营，完全不需担心」，释放了哪些信号？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2098,
+    "slot": "B21",
+    "title": "韩军文化",
+    "question": "为什么人民都忽略韩国很强的军力呢？",
+    "status": "OUTER_MISPLACED",
+    "reason": "分析韩国地缘政治地位与军事力量历史渊源，属于国际地缘政治与历史军事，非体制职业生存。",
+    "target": "V8-B40 (治乱兴亡与国家工程)"
+  },
+  {
+    "ordinal": 2117,
+    "slot": "B22",
+    "title": "薪酬基准",
+    "question": "为什么要实行薪酬保密？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2122,
+    "slot": "B21",
+    "title": "还手",
+    "question": "父母打孩子 孩子还手正确吗？",
+    "status": "OUTER_MISPLACED",
+    "reason": "讨论父母打孩子时孩子还手是否正当、自保权利与家庭伦理代价，纯家庭亲子冲突，非体制内公职自保。",
+    "target": "V1-B04 (亲子沟通与青春叛逆)"
+  },
+  {
+    "ordinal": 2150,
+    "slot": "B22",
+    "title": "香火情",
+    "question": "上海一公司 CEO 发文拒招川大师生，对此你有何看法？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2156,
+    "slot": "B22",
+    "title": "泰坦号",
+    "question": "失联潜水器「泰坦」号氧气预计已耗尽，舱内 5 人生死未卜，氧气耗尽后会发生什么？救援是否会有奇迹出现？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2186,
+    "slot": "B22",
+    "title": "墨西哥厂",
+    "question": "怎么评价马斯克呼吁中国供应商去墨西哥建厂?",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2218,
+    "slot": "B22",
+    "title": "天与",
+    "question": "东航 C919 于 5 月 28 日成功商业首飞，此举意味着什么？你对国产大飞机后续研发有何期待？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2223,
+    "slot": "B22",
+    "title": "现代人",
+    "question": "中国老板在越南创业被「逼急」，当地打工人一天只干 5 小时，老板称全公司就自己焦虑，如何看待这一现象？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2230,
+    "slot": "B22",
+    "title": "害怕独处",
+    "question": "为什么会特别害怕独处？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2239,
+    "slot": "B22",
+    "title": "不可侵犯",
+    "question": "北京市文旅局依法查处「笑果脱口秀」涉案公司及个人，罚没 1467.9 万元，该事件具有哪些警示意义？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2285,
+    "slot": "B21",
+    "title": "未爆弹",
+    "question": "如何看待浙大学生因辱华言论被举报于公示期间放弃公务员？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2288,
+    "slot": "B22",
+    "title": "真相",
+    "question": "如果真相让人不幸福甚至痛苦，为什么要知道真相？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2291,
+    "slot": "B22",
+    "title": "天使投资",
+    "question": "父母对子女投资，大家都明白投资就是想有回报，但子女可能不愿被投资，如何看待这个问题？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2317,
+    "slot": "B22",
+    "title": "指定志愿",
+    "question": "如何看待网传成都某公司员工怒喷领导清明强制加班事件？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2332,
+    "slot": "B22",
+    "title": "制造业门槛",
+    "question": "越南制造会替代中国制造吗？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2337,
+    "slot": "B21",
+    "title": "大冰箱",
+    "question": "在体制内没人提携就绝对永无出头之日吗？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2376,
+    "slot": "B22",
+    "title": "自重",
+    "question": "孩子过年和大人们一起吃饭，突然让娃表演才艺，怎样巧妙地帮孩子拒绝掉？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2391,
+    "slot": "B22",
+    "title": "不助怨",
+    "question": "曾经善良的人变得愤世嫉俗，我该怎么对待他？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2410,
+    "slot": "B22",
+    "title": "推荐字体",
+    "question": "有哪些不推荐使用的字体？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2441,
+    "slot": "B22",
+    "title": "罂粟壳子",
+    "question": "如何评价中南大学研究生答辩未通过跳楼自杀并留下五千字遗书？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2470,
+    "slot": "B22",
+    "title": "北极蛙",
+    "question": "远程办公为什么不被公司普遍接受?",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2476,
+    "slot": "B22",
+    "title": "财富观 II",
+    "question": "为什么我完全不能理解独生子女认为父母的就应该是自己的？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2497,
+    "slot": "B22",
+    "title": "VENI VIDI VICI",
+    "question": "C919 全球首架机正式交付，有望最早于 2023 年春投入商业载客运营，具有哪些重要意义？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2498,
+    "slot": "B22",
+    "title": "值得坚持",
+    "question": "如何判断一个公司值不值得待下去？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2502,
+    "slot": "B22",
+    "title": "三重门",
+    "question": "真心想问，我经常难以理解一些商业需求的正当性？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2563,
+    "slot": "B21",
+    "title": "搞点科学",
+    "question": "民科要想不被鄙视，应该重点做些什么？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2579,
+    "slot": "B21",
+    "title": "吏治中兴",
+    "question": "在美国，要是公务员在岗位上敷衍塞责、尸位素餐，能治得了吗？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2591,
+    "slot": "B22",
+    "title": "春眠不觉晓",
+    "question": "美国社交媒体公司 Snap 实施一项大规模裁员超 1200 人的计划，此次裁员会给企业带来哪些影响？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2610,
+    "slot": "B22",
+    "title": "迟到",
+    "question": "现在守时已经没有任何意义了吗？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2612,
+    "slot": "B22",
+    "title": "痒了三块钱",
+    "question": "股票技术分析哪种方法好用？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2617,
+    "slot": "B22",
+    "title": "三年忠告",
+    "question": "你对未来三年有哪些忠告？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2629,
+    "slot": "B22",
+    "title": "精神病",
+    "question": "是否需要告知面试公司过往的精神病史?",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2659,
+    "slot": "B22",
+    "title": "火烧红莲寺",
+    "question": "西安一公司为防泄密监控员工手机，短信文件照片微信都被获取。该公司行为是否违法？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2667,
+    "slot": "B21",
+    "title": "失败也不后悔",
+    "question": "30岁体制内，每天都像生活在真空里，眼里早已没了光，我不想再待下去了，想考研重新开始，还有可能吗？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2668,
+    "slot": "B22",
+    "title": "绝对权力",
+    "question": "「权力导致腐败，绝对的权力导致绝对的腐败」这句话具有什么合理性？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2683,
+    "slot": "B22",
+    "title": "面向灾难经营",
+    "question": "2022 年上半年民航亏损超千亿，12 家航空公司资不抵债，下半年恢复靠什么？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2694,
+    "slot": "B22",
+    "title": "不容人",
+    "question": "为什么当下挺多中小创业公司的老板容不下人？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2710,
+    "slot": "B22",
+    "title": "涨跌原理",
+    "question": "股票涨跌的原理是什么？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2732,
+    "slot": "B22",
+    "title": "关心军事",
+    "question": "为什么要鼓励大家关注军事？军事爱好者对于国家和社会的作用是什么？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2780,
+    "slot": "B22",
+    "title": "职业介绍",
+    "question": "面对问询职业，不想告诉对方，也不想表述太模糊导致对方追问，只想保持起码的礼貌，该怎样回复为好？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2786,
+    "slot": "B22",
+    "title": "定规矩",
+    "question": "孩子问「为什么都是你定规矩」，我该如何回应？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2789,
+    "slot": "B22",
+    "title": "阴谋阳谋",
+    "question": "阴谋与阳谋的区别?",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2832,
+    "slot": "B22",
+    "title": "蓝血专业",
+    "question": "中产阶级家庭子女如何继续保持优势并超越父辈的财富积累？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2838,
+    "slot": "B22",
+    "title": "正常吗",
+    "question": "我对上海真的恶意很大这正常吗？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2848,
+    "slot": "B22",
+    "title": "BetterWay",
+    "question": "何小鹏称「若供应链企业无法找到复产方式，中国所有整车厂或将停工」，会有哪些影响？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2850,
+    "slot": "B22",
+    "title": "崇高之名",
+    "question": "京东物流通过「自杀式物流」方式向上海运送物资，如何评价这一行为？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2854,
+    "slot": "B22",
+    "title": "十个军团",
+    "question": "如何看待华为再次成立十个军团?",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2857,
+    "slot": "B22",
+    "title": "撑腰",
+    "question": "如何委婉的告诉领导自己在公司有人撑腰？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2921,
+    "slot": "B22",
+    "title": "买下美国",
+    "question": "如何看待「卖掉北上深的钱，足够买下半个美国」的报道？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2927,
+    "slot": "B22",
+    "title": "大国影响",
+    "question": "立陶宛外交部副部长称「跨国企业如使用立陶宛企业的产品，将不被允许向中国进出口」，将产生哪些影响？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2941,
+    "slot": "B22",
+    "title": "打黄盖",
+    "question": "如何看待台湾远东集团在大陆投资企业因违法违规被依法查处 ？如何评价台商在中国经济发展过程中发挥的作用？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2946,
+    "slot": "B22",
+    "title": "不服从管理",
+    "question": "很讨厌我的下属，不服从我管理，我又没有实权裁掉他，以致于他现在很嚣张，我的领导也忌讳他，怎么办?",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2957,
+    "slot": "B22",
+    "title": "元宇宙",
+    "question": "如何看待刘慈欣说「扎克伯格的元宇宙不是未来，元宇宙最后将引人类走向死路」？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2965,
+    "slot": "B22",
+    "title": "花钱",
+    "question": "我是个月薪 3000 的打工人，真的有必要花 6799 买一个iPhone 13 吗？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2980,
+    "slot": "B22",
+    "title": "跟对人",
+    "question": "值得跟随的领导是什么样的？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3003,
+    "slot": "B22",
+    "title": "末日",
+    "question": "如果下个月就是世界末日，应该公布还是秘而不宣？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3004,
+    "slot": "B22",
+    "title": "房价下跌",
+    "question": "为什么越来越多的人预测房价要下跌？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3017,
+    "slot": "B21",
+    "title": "WhatThen",
+    "question": "商人家庭的富二代渗入到体制内会对体制造成什么后果吗？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3065,
+    "slot": "B22",
+    "title": "居安思危",
+    "question": "公司更改经营范围，我是经办人。主管说要我模仿法人和股东签字。我不敢，怎么办？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3076,
+    "slot": "B22",
+    "title": "钱",
+    "question": "钱的本质是什么，谁能用科学的方法解释一下？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3119,
+    "slot": "B22",
+    "title": "商业歧视",
+    "question": "联合利华中国区副总裁曾锡文称梦龙事件是「无妄之灾」，对此你如何评价？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3147,
+    "slot": "B22",
+    "title": "花名",
+    "question": "为什么互联网公司喜欢用花名，这背后有什么深层原因?对于员工和公司各有什么利弊？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3153,
+    "slot": "B22",
+    "title": "你肯吗",
+    "question": "校外培训机构如果全部消失，会对学生，家长，还有整个社会产生什么影响？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3164,
+    "slot": "B22",
+    "title": "想好再干",
+    "question": "老板在公司祷告，还让“圣徒”传教，可以报警吗？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3166,
+    "slot": "B22",
+    "title": "穷吗你",
+    "question": "为什么很多人感觉这几年越来越穷？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3173,
+    "slot": "B22",
+    "title": "资本家2",
+    "question": "资本家本都在做什么?真的就等着剥削工人，拿钱吗？资本家应该做些什么呢？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3185,
+    "slot": "B22",
+    "title": "中国人的全球化",
+    "question": "中国大型企业为什么难以全球化？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3201,
+    "slot": "B22",
+    "title": "高管写代码",
+    "question": "为什么国内 IT 公司 leader 以上就不怎么写代码，而据说 Google 的 Jeff Dean 还写代码？到底哪种情况好呢？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3240,
+    "slot": "B22",
+    "title": "创业红线",
+    "question": "创业破产的后果有哪些？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3285,
+    "slot": "B22",
+    "title": "OKR",
+    "question": "OKR工具的作用是否被夸大？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3291,
+    "slot": "B22",
+    "title": "创业契机",
+    "question": "多高的稳定年收入可以吸引你辞职去创业？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3292,
+    "slot": "B22",
+    "title": "事业已定",
+    "question": "办公室暧昧及恋情，谈还是不谈？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3356,
+    "slot": "B22",
+    "title": "学会",
+    "question": "如何才算学到东西？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3381,
+    "slot": "B22",
+    "title": "解决996",
+    "question": "如何评价李建秋关于大公司996的看法？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3413,
+    "slot": "B22",
+    "title": "制赌",
+    "question": "如何根除赌瘾？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3432,
+    "slot": "B22",
+    "title": "SOP",
+    "question": "如何才能做出一碗美味的蛋羹？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3436,
+    "slot": "B22",
+    "title": "跨国风险",
+    "question": "缅甸民众同军方冲突，为何多家中资企业遭打砸抢烧？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3444,
+    "slot": "B22",
+    "title": "袁崇焕",
+    "question": "袁崇焕杀毛文龙，是不是和秦桧杀岳飞是一个道理？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3460,
+    "slot": "B22",
+    "title": "对人类失望",
+    "question": "对人类失望怎么办？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3461,
+    "slot": "B22",
+    "title": "朋友合伙",
+    "question": "怎么样和朋友合伙做生意能成功？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3465,
+    "slot": "B22",
+    "title": "一亿一天",
+    "question": "假如给你 1 个亿，只能持有 1 天，操作所得的收益归你，你会怎么操作？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3509,
+    "slot": "B22",
+    "title": "老人跳桥",
+    "question": "如何看待湖南益阳养老院疑似以预订床位为名诈骗，老人一生积蓄化为乌有，选择跳桥结束生命一事？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3566,
+    "slot": "B22",
+    "title": "税负",
+    "question": "「中国税负远超欧美」的说法是否属实？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3576,
+    "slot": "B22",
+    "title": "涉密",
+    "question": "美籍华人工程师因带公司电脑来中国旅游，被美国法院判处 38 个月监禁，对此你怎么看？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3596,
+    "slot": "B22",
+    "title": "母港",
+    "question": "员工辞职需要为现公司考虑吗？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3629,
+    "slot": "B22",
+    "title": "大公司病",
+    "question": "什么是「大公司病」，在你看来有哪些互联网公司已经出现了大公司病的现象？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3632,
+    "slot": "B22",
+    "title": "黄色玩笑",
+    "question": "为什么有的男生喜欢在女性面前开黄色玩笑？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3648,
+    "slot": "B22",
+    "title": "地方菜",
+    "question": "如何评价“连锁餐厅成功毁掉了中国地方菜”的观点？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3690,
+    "slot": "B22",
+    "title": "老有所依",
+    "question": "50 多位老人众筹买房，抱团养老 15 年却「曲终人散」，原因是什么？老龄化社会如何解决养老问题？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3715,
+    "slot": "B22",
+    "title": "商人",
+    "question": "中国古代为什么要抑商，他们不知道把土地分给三分之一的人，其他人从事工商业这样对国家好处更大吗?",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3747,
+    "slot": "B22",
+    "title": "低估值",
+    "question": "在A股买低估值的股票有什么意义？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3752,
+    "slot": "B22",
+    "title": "拿住不抛",
+    "question": "很多人买入后拿不住股票。怎样才能拿的住？你从何时能做到的？从最初交易经历了多久？哪些关键事改变了你？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3804,
+    "slot": "B22",
+    "title": "“撤离中国”",
+    "question": "美白宫经济顾问库德洛呼吁美公司撤离中国，美国将支付搬家费，这意味着什么，动机是什么？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3807,
+    "slot": "B22",
+    "title": "瑞幸",
+    "question": "如何看待瑞幸公布调查显示伪造交易价值达 22 亿，盘前下跌超 80%？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3830,
+    "slot": "B22",
+    "title": "不配被爱",
+    "question": "为什么很多人会觉得自己不配被爱?",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3854,
+    "slot": "B22",
+    "title": "完美传染病",
+    "question": "面对新型冠状病毒肺炎疫情，科技公司能够做些什么？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3912,
+    "slot": "B22",
+    "title": "弱势财务部",
+    "question": "感觉我们财务部总是被欺负，是不是财务部在每一家公司都是弱势部门？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3944,
+    "slot": "B22",
+    "title": "泼了一身",
+    "question": "公司女下属在生理期当众向我泼一杯水，我该怎么处理？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3970,
+    "slot": "B22",
+    "title": "好书",
+    "question": "如何选择一本好书？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3976,
+    "slot": "B22",
+    "title": "芯片前景",
+    "question": "中国芯片产业前景到底怎么样？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 4037,
+    "slot": "B22",
+    "title": "攻克死亡",
+    "question": "死亡如此可怕，为何全人类(或者说高层领导人)不主张把重心放在医学上？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 4085,
+    "slot": "B22",
+    "title": "火烧船",
+    "question": "山东青岛市北海造船有限公司一艘外籍货轮靠港维修期间起火，已造成 25 人遇难，目前情况如何？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 4097,
+    "slot": "B22",
+    "title": "语重心长",
+    "question": "快要订婚，对方家境优秀帮我创业，发生掐脖子冲突，进退两难，我该怎么办？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 4153,
+    "slot": "B22",
+    "title": "斧头汤",
+    "question": "蔚来武汉换电站资产全面转由国资持有，其背后的商业考量是什么？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 4156,
+    "slot": "B22",
+    "title": "此座无人",
+    "question": "两人买三张票空座放零食，站票乘客想入座，列车员称无法强制协调，你觉得该让座吗？两人买三座算浪费资源吗？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 4178,
+    "slot": "B22",
+    "title": "和气生财",
+    "question": "男子健身房指导女友被场馆教练认定为外来私教，要求看结婚证，否则就办理退卡，这合理吗？健身房有权核查吗？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 4183,
+    "slot": "B22",
+    "title": "陪伴役",
+    "question": "孩子做事缺乏耐心，干什么都想立刻拿到结果，要怎么引导？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 4236,
+    "slot": "B22",
+    "title": "置身钉外",
+    "question": "如何评价钉钉内网7.5万字长文《置身钉内》？反映出公司管理和开发哪些问题？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 4272,
+    "slot": "B21",
+    "title": "在一起",
+    "question": "六年感情，她很爱我但情绪极端，我在体制内，不敢分、舍不得、又撑不住，我该怎么办？",
+    "status": "OUTER_MISPLACED",
+    "reason": "虽然提问者提及'我在体制内'，但通篇全部在剖析伴侣情绪极端、'在一起'的本质是生活在一起而非粘着，纯亲密关系情感咨询。",
+    "target": "V2-B12 (婚姻存续与夫妻日常)"
+  },
+  {
+    "ordinal": 4273,
+    "slot": "B22",
+    "title": "签字的人",
+    "question": "美国公司用离体「缸中之脑」测试药物，宣称其「既非生也非死」，有伦理风险吗？对药物研究有何作用？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 4290,
+    "slot": "B22",
+    "title": "糖醋",
+    "question": "39岁，婚姻内耗严重，一个月25天在痛苦，想自救又怕家庭破碎，有什么现实可行的出路？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 4299,
+    "slot": "B22",
+    "title": "为中华之崛起而读书",
+    "question": "为中华之崛起而读书已经成为笑话了吗?",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 4337,
+    "slot": "B22",
+    "title": "猴子面包",
+    "question": "如何看待“谁善待员工就买谁的产品”这个观点?",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 4339,
+    "slot": "B22",
+    "title": "天放晴",
+    "question": "贫穷有多可怕？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2,
+    "slot": "B20A",
+    "title": "后半句",
+    "question": "性格很内向，不善言辞的人，有什么办法可以和同事们搞好关系，拉近距离？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 7,
+    "slot": "B20A",
+    "title": "松则久",
+    "question": "待在一起时，对方（朋友，情侣，同事）频繁的分享自己喜欢的东西给你看而你却不感兴趣时，该怎么做?",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 11,
+    "slot": "B20A",
+    "title": "一寸欢喜",
+    "question": "作为一个母亲，青春期的儿子坚持要变性怎么办？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 13,
+    "slot": "B20A",
+    "title": "群英",
+    "question": "为啥感觉当今社会上的有英雄气、豪气的男人越来越少了？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 20,
+    "slot": "B20A",
+    "title": "有所成",
+    "question": "在饭桌上听长辈教育我的话，我却眼泪一直在眼眶里打转，是我太矫情了吗？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 30,
+    "slot": "B20A",
+    "title": "清静无为",
+    "question": "庄子说：“圣人不死 大盗不止”，难道圣人死了，大盗就没了吗？庄子为何把大盗产生原因算在圣人孔子身上？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 35,
+    "slot": "B20A",
+    "title": "赤手空拳",
+    "question": "男性去责任化是不是赢学?",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 60,
+    "slot": "B20A",
+    "title": "工德无量",
+    "question": "如果经济条件允许，你会不工作吗？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 66,
+    "slot": "B20A",
+    "title": "三斗金",
+    "question": "如何改变自己太负责任的性格?",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 75,
+    "slot": "B20A",
+    "title": "NPC",
+    "question": "如何正确的打招呼?",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 76,
+    "slot": "B20A",
+    "title": "勤为要",
+    "question": "男友善良但懒癌晚期，没钱请阿姨的情况下，这婚还能结吗？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 78,
+    "slot": "B20A",
+    "title": "宁静力",
+    "question": "安安稳稳的在小城市过一生真的那么不堪吗？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 124,
+    "slot": "B20A",
+    "title": "等因奉此",
+    "question": "同事在下班前5分钟甩给我一个急活，还说是“领导的意思”，我该怎么优雅地回怼？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 126,
+    "slot": "B20A",
+    "title": "基本颜值",
+    "question": "在当下社会，颜值是否有重要性?",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 137,
+    "slot": "B20A",
+    "title": "子不承父业",
+    "question": "黄河特大桥垮塌致13死调查报告公布，系施工方违规用劣质螺栓，层层监管为何失灵？责任人会面临什么处罚？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 157,
+    "slot": "B20A",
+    "title": "不听老人言",
+    "question": "反复告诉孩子不要做的事情他非得做，磕碰到后又哇哇大哭，作为父母应该怎么处理这种情况？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 187,
+    "slot": "B20A",
+    "title": "火力稳定",
+    "question": "情绪稳定到底是保护色，还是「慢性自杀」？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 193,
+    "slot": "B20A",
+    "title": "消失的修理厂",
+    "question": "新能源车渗透率都过50%了，为什么我就没见过专修新能源车的修理厂？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 203,
+    "slot": "B20A",
+    "title": "好不自在",
+    "question": "为什么一去高档场所就浑身不自在?",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 208,
+    "slot": "B20A",
+    "title": "好战之徒",
+    "question": "年轻的时候做什么事情对后半生有巨大的好处？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 214,
+    "slot": "B20A",
+    "title": "金边",
+    "question": "视力受限的人适合从事哪些工作呢？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 216,
+    "slot": "B20A",
+    "title": "亲爱无比",
+    "question": "女儿问我「为什么你对小猫那么温柔，对我却很严厉呢」我该怎么回答孩子？",
+    "status": "OUTER_MISPLACED",
+    "reason": "讨论父母婚姻恩爱对家庭氛围与子女成长的影响，纯家庭原生环境议题，误入B20职场。",
+    "target": "V1-B09 (家族传承与家风家范) 或 V1-B01 (幼儿启蒙与家庭日常)"
+  },
+  {
+    "ordinal": 220,
+    "slot": "B20A",
+    "title": "先展后奏",
+    "question": "大家好，我是一名25届的毕业生。由于一直找不到工作，每天都在崩溃。大家有什么好的建议吗？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 229,
+    "slot": "B20A",
+    "title": "无得谈",
+    "question": "办公室同事之间可以无话不谈吗？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 256,
+    "slot": "B20A",
+    "title": "奇货",
+    "question": "男朋友很穷，但特别爱你，值得结婚嘛？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 262,
+    "slot": "B20A",
+    "title": "爱不受辱",
+    "question": "为什么你越为别人考虑，越容易被欺负、拿捏、受委屈？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 268,
+    "slot": "B20A",
+    "title": "敏感问题",
+    "question": "领导找你谈话，问你怎么评价某位同事，这可能关系到同事的年度调薪，我该怎么办说？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 270,
+    "slot": "B20A",
+    "title": "何谓之迟",
+    "question": "被不断要求延迟满足的那个人，会容易产生什么样的负面心态？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 352,
+    "slot": "B20A",
+    "title": "必要与必然",
+    "question": "为什么教育常将“学习成本”视为必要的磨难，而产品设计却视其为必须消灭的障碍？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 358,
+    "slot": "B20A",
+    "title": "琐细的人",
+    "question": "如何进入婚姻后，还能在柴米油盐的琐碎中保持对对方优点的欣赏和对对方付出的感激，而不是习以为常？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 370,
+    "slot": "B20A",
+    "title": "时代红利",
+    "question": "现阶段的时代红利是什么？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 380,
+    "slot": "B20A",
+    "title": "嫉妒者",
+    "question": "非常嫉妒同事找了个有钱人，年收入一两百万，内心非常痛苦怎么办？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 415,
+    "slot": "B20A",
+    "title": "一根吹管",
+    "question": "男子工厂吹玻璃 30 年腮帮肿大成「青蛙王子」，可以恢复吗？为什么这种伤身体的工作没有被机器替代？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 417,
+    "slot": "B20A",
+    "title": "何人居之",
+    "question": "什么样的员工容易被提拔为管理层？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 419,
+    "slot": "B20A",
+    "title": "你干我敢",
+    "question": "领导给我安排了一个很大的项目让我负责，我认为我能力不足，不知道该不该拒绝?",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 430,
+    "slot": "B20A",
+    "title": "无尽师",
+    "question": "领导让我把安身立命的技术教给同事，怎么办？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 440,
+    "slot": "B20A",
+    "title": "石头底",
+    "question": "在当下社会，想在经历「最底层的工作」和「最低级的待遇」后再去成功，这种想法很蠢么？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 445,
+    "slot": "B20A",
+    "title": "先迈左脚",
+    "question": "一个普通男生该如何认识多一些女孩子，让自己的异性资源丰富起来？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 450,
+    "slot": "B20A",
+    "title": "钝",
+    "question": "工作、生活中有哪些东西适合一步到位，又有哪些东西适合不断更新？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 464,
+    "slot": "B20A",
+    "title": "意犹未尽",
+    "question": "已经离职了，前同事三番四次电话微信问工作的事该不该回复？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 468,
+    "slot": "B20A",
+    "title": "未见之勇",
+    "question": "被有血缘关系或亲密关系的人当面说“看见你就烦”怎么办?",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 472,
+    "slot": "B20A",
+    "title": "稳妥说",
+    "question": "与同事闲谈中，有哪些语言陷阱应该格外注意？如何应对？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 478,
+    "slot": "B20A",
+    "title": "尾指",
+    "question": "理想汽车发布两起质量事故处理公告，共 18 名员工被问责，能挽回消费者信任吗？哪些后续保障更值得关注？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 482,
+    "slot": "B20A",
+    "title": "解痛人",
+    "question": "人为什么在看到比自己更痛苦的人之后，会感觉自己的痛苦减轻不少？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 488,
+    "slot": "B20A",
+    "title": "不知耻者",
+    "question": "经常因为羞耻而逃避事后复盘怎么办？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 489,
+    "slot": "B20A",
+    "title": "无罪之罪",
+    "question": "恋爱中包容对方和失去自我的度在哪里？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 494,
+    "slot": "B20A",
+    "title": "跳两级",
+    "question": "职场中自己的工作成果被「窃取」，不能署自己的名字该怎么办？有哪些好的办法为自己正名？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 525,
+    "slot": "B20A",
+    "title": "表达情绪",
+    "question": "如何从行动上区别开表达情绪和发泄情绪？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 563,
+    "slot": "B20A",
+    "title": "登堂入室",
+    "question": "职场上，领导让你带新人，你会把所有东西教给他吗？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 572,
+    "slot": "B20A",
+    "title": "解结",
+    "question": "该如何面对跟自己有过节，却又要一起工作的同事?",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 577,
+    "slot": "B20A",
+    "title": "受不了",
+    "question": "体制内，领导觉得我很能干，态度积极，有进步的想法，安排过量的工作给我，几乎天天加班，承受不了怎么办？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 591,
+    "slot": "B20A",
+    "title": "不稳定",
+    "question": "如何解决毕业生毕业后可能三五年找不到稳定工作的状况?",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 593,
+    "slot": "B20A",
+    "title": "虚与实",
+    "question": "职场上前领导故意找现领导说我的缺点怎么办？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 599,
+    "slot": "B20A",
+    "title": "出格",
+    "question": "刚入职场，总是被同事说「很高调」，这是什么意思？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 600,
+    "slot": "B20A",
+    "title": "鸡与猴",
+    "question": "怎么判定领导有没有把你当自己人？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 622,
+    "slot": "B20A",
+    "title": "陪",
+    "question": "为「陪娃」花大量时间金钱，但孩子总容易不开心，是因为「消费型快乐」太多吗？这代孩子对快乐的理解变了吗？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 625,
+    "slot": "B20A",
+    "title": "工作重点",
+    "question": "跟领导汇报工作，总被说“没重点”，这可咋整啊？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 631,
+    "slot": "B20A",
+    "title": "败犹胜",
+    "question": "工作上出现理解错位，是传达者还是接收者的问题？一个没说清楚，一个没问清楚，是谁的锅？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 640,
+    "slot": "B20A",
+    "title": "细水",
+    "question": "孩子已参加工作，每天晚上下班就坐在电脑前玩游戏至零点，且屡劝不改，应该怎么办？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 646,
+    "slot": "B20A",
+    "title": "二不可测",
+    "question": "为什么不要轻易接受上司的服从性测试?",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 649,
+    "slot": "B20A",
+    "title": "惟余莽莽",
+    "question": "在公司岗位价值被否定，职业定位模糊，工作内容偏离专业领域，该怎么破?",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 655,
+    "slot": "B20A",
+    "title": "单双杀",
+    "question": "我是部门负责人，无意中发现手下两个下属谈恋爱，而公司不允许内部谈恋爱，我应该怎么做？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 663,
+    "slot": "B20A",
+    "title": "胆",
+    "question": "同事说：“办公室脏了，你没事拖一下吧”你该如何回复他？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 671,
+    "slot": "B20A",
+    "title": "湿柴",
+    "question": "领导说要培养我成为他的接班人，但我总觉得他是要利用我。职场里有真心的「师徒」一说吗？我该如何判断？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 674,
+    "slot": "B20A",
+    "title": "内经",
+    "question": "这种情况下，我该不该争取年终奖?",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 677,
+    "slot": "B20A",
+    "title": "野外迷失",
+    "question": "福建8岁男童随父母爬山失联，50天后遗体被发现，搜救为何迟迟无果？野外带娃家长该承担怎样的监护责任？",
+    "status": "OUTER_MISPLACED",
+    "reason": "野外生存技能与遇险自救指南，与职场汇报完全风马牛不相及，严重错位。",
+    "target": "V4-B18 (作息节律与病理常识) 或 V8-B40 (工具与生存工程)"
+  },
+  {
+    "ordinal": 687,
+    "slot": "B20A",
+    "title": "毫米龙王",
+    "question": "为什么有的人场面上正经又传统，但私底下却轻浮又放荡？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 688,
+    "slot": "B20A",
+    "title": "背水人",
+    "question": "「请教」本身算不算是一种不劳而获的行为？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 691,
+    "slot": "B20A",
+    "title": "无痕",
+    "question": "跟男同事睡过之后，他在朋友圈官宣了，我要怎么掩饰自己的情绪？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 711,
+    "slot": "B20A",
+    "title": "两个钱包",
+    "question": "待着家里快两年，社交恐惧，不敢工作怎么办?",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 712,
+    "slot": "B20A",
+    "title": "带动",
+    "question": "在职场上被老员工欺负，交接工作的时候不乐意，领导又不维护怎么办?",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 716,
+    "slot": "B20A",
+    "title": "趣小鬼",
+    "question": "刚提拔，同办公室临时工仗着年龄喊我小某，怎样委婉提醒他没资格这么喊？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 719,
+    "slot": "B20A",
+    "title": "内力",
+    "question": "如何看待「改变不了世界，就改变自己」这一观点？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 732,
+    "slot": "B20A",
+    "title": "妈妈岗",
+    "question": "湖北全面推行“妈妈岗”，你怎么看？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 754,
+    "slot": "B20A",
+    "title": "手心手背",
+    "question": "为什么管理一严员工就走人？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 759,
+    "slot": "B20A",
+    "title": "越级指挥",
+    "question": "我是部门负责人，一个下属经常越过我发号施令安排工作怎么办?",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 762,
+    "slot": "B20A",
+    "title": "围巾",
+    "question": "如果你是领导，你会如何看待组里那个老实听话、工作认真、不争不抢的员工？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 783,
+    "slot": "B20A",
+    "title": "萝卜永动机",
+    "question": "为什么工厂流水线的工人们宁愿每天做重覆的工作也不愿意去学一门技术？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 785,
+    "slot": "B20A",
+    "title": "父去子留",
+    "question": "为什么少数年轻女孩开始宣传【去父留子】的生育观？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 805,
+    "slot": "B20A",
+    "title": "清洁工休息室",
+    "question": "如何看待一些保洁人员只能在厕所隔间休息的现象？怎样才能让保洁员有自己的休息室？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 806,
+    "slot": "B20A",
+    "title": "不为尊严",
+    "question": "孩子被同学辱骂，为了自尊把同学打了怎么办？",
+    "status": "FIT",
+    "reason": "深度剖析职场中面对上司责难时的经济理性与职场忍耐策略，切合职场生存。",
+    "target": ""
+  },
+  {
+    "ordinal": 867,
+    "slot": "B20A",
+    "title": "老态纵横",
+    "question": "为什么香港艺人不显老？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 900,
+    "slot": "B20A",
+    "title": "你的我们",
+    "question": "如何看待河南漯河 15 岁少女被经理性侵跳河，22 岁男同事为救她，却双双溺亡 ？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 908,
+    "slot": "B20A",
+    "title": "死理",
+    "question": "独生子女社会，因为见义勇为而付出生命是不是对家人的不负责任？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 918,
+    "slot": "B20A",
+    "title": "冷字门",
+    "question": "大学学的是一个冷门专业，不好就业，但我想有一个非常光明的未来。我该怎样做 今年大一？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 921,
+    "slot": "B20A",
+    "title": "倒打一耙",
+    "question": "为啥有人在经历很多现实的鞭打之后，仍然不能给自己做出准确的定位和判断呢？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 926,
+    "slot": "B20A",
+    "title": "厉害思维",
+    "question": "厉害的人遇到问题时的思维模式与普通人之间差别在哪？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 931,
+    "slot": "B20A",
+    "title": "最",
+    "question": "领导安排我得罪人的工作怎么办？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 932,
+    "slot": "B20A",
+    "title": "无悲喜",
+    "question": "如何反驳“你发出来不就是让我评价的吗”？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 938,
+    "slot": "B20A",
+    "title": "钢铁苍穹",
+    "question": "工作多年薪资涨幅微乎其微，是该和老板直接谈加薪还是先提升自己寻找外部机会？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 944,
+    "slot": "B20A",
+    "title": "安贫乐道",
+    "question": "人们常说「安贫乐道」，这是不是失败者的自我安慰？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 950,
+    "slot": "B20A",
+    "title": "衣甲精洁",
+    "question": "如何保持衣物的整洁？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 955,
+    "slot": "B20A",
+    "title": "见者有责",
+    "question": "宝妈入住月子中心不到 1 天投湖轻生，家属称月子中心未履行安保承诺，月子中心应承担哪些法律责任？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 957,
+    "slot": "B20A",
+    "title": "狡辩",
+    "question": "如何分清狡辩与解释?",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 958,
+    "slot": "B20A",
+    "title": "少收了三五斗",
+    "question": "领导让你买奶茶，你花了 547 元，他给你转了 500 元并说「钱已转，你收一下」，你该怎么回复？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 962,
+    "slot": "B20A",
+    "title": "工作优先",
+    "question": "领导会真心欣赏那些舍弃个人生活和家庭，眼里只有工作的事业狂型员工吗？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 966,
+    "slot": "B20A",
+    "title": "认错问题",
+    "question": "本人公务员科员，与领导发生了激烈争吵，现在领导已经不给我安排任务了，应该怎么处理？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 974,
+    "slot": "B20A",
+    "title": "有理由退货",
+    "question": "同事说她在淘宝买的衣服，过了7天无理由退换货，吊牌也剪掉了，但是她不喜欢要退货，如果你是商家怎么办？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 982,
+    "slot": "B20A",
+    "title": "黑信使",
+    "question": "体制内怎么给刚有家人去世的同事说有个紧急工作？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1007,
+    "slot": "B20A",
+    "title": "陌路相望",
+    "question": "人老了，若发现子女在慢慢地讨厌自己，自己该怎么办？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1019,
+    "slot": "B20A",
+    "title": "上班目的",
+    "question": "领导问：你上班就是为了钱吗？这个怎么回？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1021,
+    "slot": "B20A",
+    "title": "真爽",
+    "question": "在外企工作爽吗？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1033,
+    "slot": "B20A",
+    "title": "正常的歧视",
+    "question": "女性在职场上被歧视真的正常吗？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1037,
+    "slot": "B20A",
+    "title": "白羽毛",
+    "question": "假如各位男生碰到了白羽毛运动，大家会怎么做?",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1056,
+    "slot": "B20A",
+    "title": "言不由衷",
+    "question": "我去买排骨，男朋友把排骨煮了问我吃不吃，我客气一下说不吃，但是他真的一点也没给我留，是我的问题吗？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1067,
+    "slot": "B20A",
+    "title": "整齐",
+    "question": "桌面乱的人是否比桌面整齐的人更具创造力？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1085,
+    "slot": "B20A",
+    "title": "婚姻底气",
+    "question": "在婚姻中，女生真的会因为有个不错的工作或收入，而有底气吗？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1105,
+    "slot": "B20A",
+    "title": "内向罪",
+    "question": "不会社交就是死罪吗？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1106,
+    "slot": "B20A",
+    "title": "从不休假",
+    "question": "如何评价董明珠30年未休过假?",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1107,
+    "slot": "B20A",
+    "title": "暴力债",
+    "question": "应届毕业生，毕了业找不到工作，天天被家里人骂，心情低落，我性格又内向，面试几次都失败我该怎么办？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1112,
+    "slot": "B20A",
+    "title": "与朋友论",
+    "question": "应不应该和朋友讨论自己的感情问题？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1118,
+    "slot": "B20A",
+    "title": "纪律抓手",
+    "question": "如何看待「抓纪律和考勤的领导都是草包」这种说法？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1124,
+    "slot": "B20A",
+    "title": "money talks",
+    "question": "不能接受别人说我的不好，一说我就会不耐烦，这是为什么？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1128,
+    "slot": "B20A",
+    "title": "工作冲突处置原则",
+    "question": "秋招面试时被问「你如何处理工作中的冲突」？该怎样回答？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1177,
+    "slot": "B20A",
+    "title": "听泉",
+    "question": "如何评价听泉鉴宝？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1183,
+    "slot": "B20A",
+    "title": "问在猜前",
+    "question": "总是事后反应过来朋友（同事）某些语言或行为背后的深意，真的是自己的情商太低了吗？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1207,
+    "slot": "B20A",
+    "title": "出力不出钱",
+    "question": "蓝天救援号称纯公益，不收任何费用，成员没有工资，我很好奇为什么有人加入?",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1209,
+    "slot": "B20A",
+    "title": "害怕失去的人",
+    "question": "如果太害怕失去一个人怎么办？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1222,
+    "slot": "B20B",
+    "title": "容错率",
+    "question": "为什么中国社会容错率显得那么低？其他国家容错率也跟中国一样吗？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1231,
+    "slot": "B20B",
+    "title": "败军之将",
+    "question": "领导分配任务，临时负责人包揽了大部分，小部分平均分配，还是有人没及时交上来，需要向上反馈吗？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1250,
+    "slot": "B20B",
+    "title": "内举不避亲",
+    "question": "公司的高管为什么很少从底层员工一路往上提拔？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1259,
+    "slot": "B20B",
+    "title": "赏金猎猪",
+    "question": "野猪泛滥已危害全国 26 省，宁夏捕猎一头野猪悬赏 2400 元，赏金抓猪的治理方法科学吗？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1261,
+    "slot": "B20B",
+    "title": "就这",
+    "question": "人的责任是什么，怎么去承担责任？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1281,
+    "slot": "B20B",
+    "title": "不盈利组织",
+    "question": "为什么多数非盈利的读书会、环保协会等举办活动的效率和水平普遍偏低、产出内容质量不高，根源在哪？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1284,
+    "slot": "B20B",
+    "title": "恐惧的疫苗",
+    "question": "该如何走出自己身体有缺陷的阴影？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1285,
+    "slot": "B20B",
+    "title": "实际产品",
+    "question": "为什么大学教育教的都是基础学科，而工作后需要我们能做出实际产品，我可以直接学习做实际产品吗？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1290,
+    "slot": "B20B",
+    "title": "滴灌",
+    "question": "爸妈可以一次性给孩子一年的生活费吗？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1294,
+    "slot": "B20B",
+    "title": "恶人磨",
+    "question": "使用“敬而远之”一词，传达的意思重点在“尊重敬畏个人自由”还是“采取措施拉远距离”？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1296,
+    "slot": "B20B",
+    "title": "贵妃之死",
+    "question": "是同事太敏感还是领导安排不当？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1302,
+    "slot": "B20B",
+    "title": "遥不可及",
+    "question": "大量求职者因有劳动仲裁诉讼记录遭拒录，如何看待企业这一规定？求职者如何维权？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1307,
+    "slot": "B20B",
+    "title": "两手硬",
+    "question": "找了一个不错的工作，跟母亲讲不要对其他人说，她这么做了之后我非常生气，母亲也很伤心，我错了吗？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1310,
+    "slot": "B20B",
+    "title": "避玄如避嫌",
+    "question": "985研究生该不该相信玄学？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1319,
+    "slot": "B20B",
+    "title": "鬼故事",
+    "question": "领导总是公开批评训斥我，这算是职场pua 吗？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1329,
+    "slot": "B20B",
+    "title": "出头鸟",
+    "question": "领导群里安排工作，大家都不回复，你会主动第一个跳出来回复吗？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1335,
+    "slot": "B20B",
+    "title": "铁布衫",
+    "question": "遇到一根筋、狂暴、没文化不讲理的人如何有文化不带脏字骂回去？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1356,
+    "slot": "B20B",
+    "title": "真想要",
+    "question": "上司总是将重要任务交给同事而不选择我，他让我别想太多，但是我很内耗，怎么办？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1358,
+    "slot": "B20B",
+    "title": "0-1-2-3",
+    "question": "手机相册里面有很多照片，想要整理却不知道从何下手，该怎么命名、分类、保存呢？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1359,
+    "slot": "B20B",
+    "title": "反着卖",
+    "question": "系统太稳定了甲方觉得我们没有工作量，怎么收运维费？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1389,
+    "slot": "B20B",
+    "title": "自脱罗网",
+    "question": "如果你的孩子长大后突然跟你说，他以后不结婚，不生孩子，不想像你那么累，你会同意吗？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1399,
+    "slot": "B20B",
+    "title": "一意孤行的慈善",
+    "question": "如何看待FurAffinity站长Dragoneer因肺部疾病医治无效于美国过世？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1431,
+    "slot": "B20B",
+    "title": "问得不耐烦",
+    "question": "领导鼓励我「不懂就问」，但当我真正提问时他却显得不耐烦，我该如何处理这种矛盾？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1444,
+    "slot": "B20B",
+    "title": "完美航空",
+    "question": "「接受他人是不完美的」是否也需要学习？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1466,
+    "slot": "B20B",
+    "title": "高级回怼",
+    "question": "办公室女同事讽刺「你一个三本学生如何跟我一个985的做一样的工作！」如何高级回怼？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1483,
+    "slot": "B20B",
+    "title": "洁癖",
+    "question": "男朋友每年都会去祭拜他的前女友，我该怎么办？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1491,
+    "slot": "B20B",
+    "title": "慢工",
+    "question": "为什么有的同事老是叫我帮他做事情？而我又不懂得拒绝，怎么办？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1512,
+    "slot": "B20B",
+    "title": "满身大汗",
+    "question": "李尚福、魏凤和被开除党籍，有哪些信息值得关注？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1520,
+    "slot": "B20B",
+    "title": "矛盾的赌注",
+    "question": "平时对自己不错的领导出现了问题（错误），自己要不要有主动背锅的觉悟，事后会不会吃亏？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1528,
+    "slot": "B20B",
+    "title": "钻头",
+    "question": "如何才能高效率地完成不喜欢的工作/学习任务？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1542,
+    "slot": "B20B",
+    "title": "陪伴时长",
+    "question": "工作太忙，严重挤压跟伴侣相处的时间，如何从心理层面拉近彼此距离呢？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1551,
+    "slot": "B20B",
+    "title": "建议合理的生活",
+    "question": "朋友的男闺蜜帮她塞卫生棉条，这关系是不是太过于亲近了？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1553,
+    "slot": "B20B",
+    "title": "维生素M",
+    "question": "如何教导子女理解责任、分辨责任的归属和怎样承担属于自己的责任？",
+    "status": "INNER_MISPLACED",
+    "reason": "讨论金钱对于现代人生存安全感的根本意义，更接近B22财富逻辑或V6金钱观念，非职场汇报。",
+    "target": "B22 (商业竞争与资产投资) 或 V6-B28 (消费主义与生活观念)"
+  },
+  {
+    "ordinal": 1555,
+    "slot": "B20B",
+    "title": "傻强",
+    "question": "面试被问到知识盲区，是直接说不清楚，还是说一些正确的废话？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1558,
+    "slot": "B20B",
+    "title": "新手计划",
+    "question": "涉足新领域时，如何在尚无足够sop“砖块”积累情况下，制定一个有效的行动计划？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1579,
+    "slot": "B20B",
+    "title": "两小无猜",
+    "question": "我应该去猜测伴侣的心思（譬如伤心难过）然后做出行动吗？还是直接询问，否认了就无视出现的种种迹象？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1581,
+    "slot": "B20B",
+    "title": "琐碎事尔",
+    "question": "如何克服对琐碎工作的畏惧和逃避?",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1605,
+    "slot": "B20B",
+    "title": "夜叉",
+    "question": "如何看待湖南21岁男子胖猫遭PUA花去51万元劳动所得后在重庆跳江自杀？?",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1615,
+    "slot": "B20B",
+    "title": "喜怒不形于色",
+    "question": "我是绝对追求真实的人，但是做销售让我要压抑真实自我与所有人搞好关系，这让我痛苦，怎么办？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1620,
+    "slot": "B20B",
+    "title": "zz理论",
+    "question": "三十岁之前可以读类似毛选和马克思之类的书籍吗?",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1624,
+    "slot": "B20B",
+    "title": "倦怠",
+    "question": "工作了好几年，职业倦怠了怎么办？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1625,
+    "slot": "B20B",
+    "title": "自由的印花税",
+    "question": "工作了一段时间，为了继续深入，要面临专业方向上的选择。该考虑哪些问题，以及如何做出选择？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1635,
+    "slot": "B20B",
+    "title": "遇袒则忧",
+    "question": "大连 71 岁保洁被训斥后遭开除，在物业办公室上吊自杀，如何看待此事？法律角度如何解读？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1638,
+    "slot": "B20B",
+    "title": "水母阴姬",
+    "question": "老实人为什么很容易原谅别人？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1639,
+    "slot": "B20B",
+    "title": "贪官",
+    "question": "请问，贪官为什么升得快？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1654,
+    "slot": "B20B",
+    "title": "羁绊源",
+    "question": "感情很深的家人被查出来癌症复发，最后一位家人离开后，我该如何面对人生？如何与世界继续有羁绊？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1677,
+    "slot": "B20B",
+    "title": "喝可乐的冲锋队",
+    "question": "后现代和解构凭什么不好？难不成我作为一个下层群众，还要去支持那些专门发明出来愚弄自己的中世纪思想吗？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1693,
+    "slot": "B20B",
+    "title": "自责陷阱",
+    "question": "行为远远配不上理想，我该怎么办？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1704,
+    "slot": "B20B",
+    "title": "红顶商人",
+    "question": "韩医学院教授协会称「如实习住院医生和医学生遭受损失，将追究政府责任」，该事件或将如何发展？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1709,
+    "slot": "B20B",
+    "title": "999007",
+    "question": "没有足够的人生经历，知识储备，阅读文学名著算是浪费时间吗?",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1717,
+    "slot": "B20B",
+    "title": "消费陷阱",
+    "question": "结账时发现东西很贵怎么办？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1723,
+    "slot": "B20B",
+    "title": "过三关",
+    "question": "同事不带饭，天天蹭我的，社恐人应该怎么拒绝？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1741,
+    "slot": "B20B",
+    "title": "一体两面",
+    "question": "作为一名实习律师，每天帮老板洗茶杯、擦桌子、倒烟灰缸，是否是也算是本职工作内容的一部分？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1778,
+    "slot": "B20B",
+    "title": "我不问，你不说",
+    "question": "我把朋友的病史告诉她男朋友了，她婚事黄了，我是不是做错了？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1781,
+    "slot": "B20B",
+    "title": "不脆弱义务",
+    "question": "那些会把孩子逼死的父母会后悔吗？会反省吗？",
+    "status": "OUTER_MISPLACED",
+    "reason": "讨论夫妻婚姻中男性的经济角色与情感承受力，属于婚恋家庭契约，非职场生态。",
+    "target": "V2-B12 (婚姻存续与夫妻日常)"
+  },
+  {
+    "ordinal": 1786,
+    "slot": "B20B",
+    "title": "傻博士",
+    "question": "读博读傻是种怎样的体验？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1810,
+    "slot": "B20B",
+    "title": "不损人",
+    "question": "如何看待情感博主【曲曲大女人】被封杀？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1829,
+    "slot": "B20B",
+    "title": "面向交接工作",
+    "question": "上下级信任感的建立，是否需要先有私交？你觉得什么是职场信任的核心？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1844,
+    "slot": "B20B",
+    "title": "拒之门外",
+    "question": "久未联系的前同事，发来信息「兄弟，在吗？」，该如何回复？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1846,
+    "slot": "B20B",
+    "title": "观音快递",
+    "question": "为什么女生说的话那么晦涩难懂？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1863,
+    "slot": "B20B",
+    "title": "公共垃圾桶",
+    "question": "我想到一个发明，暂命名为公共垃圾桶，请问可行吗？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1884,
+    "slot": "B20B",
+    "title": "向钱看",
+    "question": "董明珠称「年轻人找工作把钱放第一位，对未来没有很好定位」，如何看待这一说法？怎样找到自己的定位？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1892,
+    "slot": "B20B",
+    "title": "颈椎",
+    "question": "刚得颈椎病很轻，该不该辞职？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1897,
+    "slot": "B20B",
+    "title": "有条理",
+    "question": "如何规划自己工作、学习和计划，让自己做任何事情都很有条理？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1899,
+    "slot": "B20B",
+    "title": "地狱的门锁",
+    "question": "如果有组织非法在自己身体里植入了一些东西用来控制自己思想和行为，应该怎么办？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1906,
+    "slot": "B20B",
+    "title": "置身事外",
+    "question": "同事之间互相勾心斗角，我不想站队，怎么办？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1971,
+    "slot": "B20B",
+    "title": "以法责众",
+    "question": "讯飞员工因提前一小时抢老乡鸡免费餐被罚，科大讯飞声明称，属主观消极怠工，如何看待此事？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1974,
+    "slot": "B20B",
+    "title": "七天无理由",
+    "question": "恋爱五年，男友说「基于责任结婚，但爱淡了」，我该怎么办?",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1975,
+    "slot": "B20B",
+    "title": "草台班子",
+    "question": "如何评价「世界是一个草台班子」？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1987,
+    "slot": "B20B",
+    "title": "忐忑不绝",
+    "question": "古代的谋士为何成不了第一把手？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 1998,
+    "slot": "B20B",
+    "title": "接受加班",
+    "question": "面试被问是否接受加班时，可以直接回答「不接受每天加班，偶尔加班能接受」这种话吗？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2007,
+    "slot": "B20B",
+    "title": "以盾为剑",
+    "question": "拿了高绩效后，如何应对同事在背后的忌妒与坏话？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2020,
+    "slot": "B20B",
+    "title": "喜下眉梢",
+    "question": "如何看待2023年9月，李佳琦嘲笑观众买不起79元的花西子眉笔「还不是因为你不努力工作，所以工资低」？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2031,
+    "slot": "B20B",
+    "title": "效率之王",
+    "question": "领导知道我有自己的副业之后，开始给我加工作量，觉得我工作不饱和，该怎么办？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2035,
+    "slot": "B20B",
+    "title": "吹哨人",
+    "question": "同事把我的工作失误告诉领导，我因此内心埋怨、厌恶她，这种心态正常吗？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2050,
+    "slot": "B20B",
+    "title": "皆大欢喜",
+    "question": "想转发这些答案到朋友圈，但是有很多人说有问题，怎么办？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2092,
+    "slot": "B20B",
+    "title": "反间",
+    "question": "国家安全部发文《反间防谍需要全社会动员》，有哪些信息值得关注？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2103,
+    "slot": "B20B",
+    "title": "头盔锁",
+    "question": "为什么有人对戴头盔那么抵触?",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2112,
+    "slot": "B20B",
+    "title": "0day风险",
+    "question": "黑龙江齐齐哈尔一中学体育馆楼顶坍塌，已致 10 余人死亡，教学楼施工责任人被控制，事故原因可能是什么？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2119,
+    "slot": "B20B",
+    "title": "错误的选择",
+    "question": "为什么感觉自己在人生的道路上，一直做了错误的选择？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2126,
+    "slot": "B20B",
+    "title": "不赏饭",
+    "question": "重要客户要跟我发生关系怎么办？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2132,
+    "slot": "B20B",
+    "title": "职业生命",
+    "question": "中年妈妈失业后「瞒着亲人在星巴克假装上班」，如何看待中年人失业的现状？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2160,
+    "slot": "B20B",
+    "title": "唯唯诺诺",
+    "question": "怎么改变自己唯唯诺诺的气质？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2173,
+    "slot": "B20B",
+    "title": "看谁说的",
+    "question": "我发现对于“猫就是畜牲，不要把猫看得跟人重要”这话感到害怕，但这句话没错，我是否极端爱猫了？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2184,
+    "slot": "B20B",
+    "title": "两头落空",
+    "question": "如何看待张雨绮「 699 买不了袜子」所反映的社会问题？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2191,
+    "slot": "B20B",
+    "title": "法网柔情",
+    "question": "我跟同学嬉戏，不小心把他十几万的机械表的圈环弄了个1mm的凹口，他说要换这个环所以要赔偿一千，合理吗?",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2198,
+    "slot": "B20B",
+    "title": "福清帮",
+    "question": "大头鹰直播对线新润人是对润人群体的抹黑吗？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2200,
+    "slot": "B20B",
+    "title": "土生土长",
+    "question": "公司为什么宁愿高薪从外面招聘新人当领导，也不愿意从老员工中提拔呢？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2202,
+    "slot": "B20B",
+    "title": "辞退保姆",
+    "question": "保姆未经主人同意，私自将她的老公带来吃饭，主人炒了她鱿鱼有错吗？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2207,
+    "slot": "B20B",
+    "title": "镰刀盛",
+    "question": "理性本身有何局限性？为什么？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2210,
+    "slot": "B20B",
+    "title": "小离题",
+    "question": "答应给我升职的领导突然被调走了，感觉以前努力全白费了，很委屈，怎么办？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2235,
+    "slot": "B20B",
+    "title": "录取线",
+    "question": "在大城市工作重压下原子化的我们，如何重拾爱人的能力？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2236,
+    "slot": "B20B",
+    "title": "路有朱门",
+    "question": "如何破解欺上瞒下的问题？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2242,
+    "slot": "B20B",
+    "title": "神鬼传奇",
+    "question": "笑果文化发布声明将无限期停止 HOUSE 演艺工作，哪些信息值得关注？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2251,
+    "slot": "B20B",
+    "title": "神奇的健忘",
+    "question": "为什么有人不愿意为国牺牲呢？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2256,
+    "slot": "B20B",
+    "title": "性骚扰共识",
+    "question": "多家机构不再与史航合作，学者评「关于性骚扰，社会尚未建立共识」，如何看待社会在反性骚扰中应起到的责任？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2262,
+    "slot": "B20B",
+    "title": "钱不够",
+    "question": "怎么反驳“兴趣不可以当饭吃”这种观点?",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2264,
+    "slot": "B20B",
+    "title": "原谅失效",
+    "question": "我们有没有资格替先辈原谅日本？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2282,
+    "slot": "B20B",
+    "title": "达意责任",
+    "question": "如何与表意不清晰的人相处？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2290,
+    "slot": "B20B",
+    "title": "间谍家家酒",
+    "question": "如何识别间谍？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2298,
+    "slot": "B20B",
+    "title": "远",
+    "question": "父亲是国企局级干部，但坚持把我送到艰苦一线锻炼，我的内心很矛盾？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2327,
+    "slot": "B20B",
+    "title": "技术革命",
+    "question": "比尔·盖茨称「GPT 是我一生中见到的两项最具革命性技术之一」，如何看待该言论？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2328,
+    "slot": "B20B",
+    "title": "红区",
+    "question": "心医林霖关于泰国男模的推理几分真假？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2330,
+    "slot": "B20B",
+    "title": "主见与犟",
+    "question": "请问有主见与犟的区别是什么？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2334,
+    "slot": "B20B",
+    "title": "CAS",
+    "question": "chatGPT 会带来失业潮吗？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2336,
+    "slot": "B20B",
+    "title": "AI 一",
+    "question": "OpenAI 研究人员发文称「约 80% 美国人的工作将被 AI 影响」，如何看待这一观点？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2343,
+    "slot": "B20B",
+    "title": "集体主义精神",
+    "question": "为什么要培养集体主义精神？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2351,
+    "slot": "B20B",
+    "title": "基层陷阱",
+    "question": "董明珠称「聪明的人应该走基层，可以学到更多，大学生去个现场打个螺钉又有什么不可以」，如何看待这一发言？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2364,
+    "slot": "B20B",
+    "title": "龙生于渊",
+    "question": "老公收获一份年薪两百万在新加坡工作的offer，该不该答应？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2389,
+    "slot": "B20B",
+    "title": "奸佞",
+    "question": "你每天努力工作，却发现和领导关系好的，混日子的却比你拿的多，这样的努力还有意义吗?",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2434,
+    "slot": "B20B",
+    "title": "白羽恶魔",
+    "question": "「Paxlovid 既买不到，又买不起」，为何辉瑞坚持不降价？辉瑞是否有社会责任让更多患者用上特效药？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2435,
+    "slot": "B20B",
+    "title": "退休",
+    "question": "当你退休了，你会怎样去过你的退休生活？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2436,
+    "slot": "B20B",
+    "title": "35",
+    "question": "35 岁分界线在政策、婚育、职场里无处不在， 为什么35 岁成了「中国式中年」的开端？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2451,
+    "slot": "B20B",
+    "title": "被浪费的人才",
+    "question": "我国的人才浪费有多严重?",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2460,
+    "slot": "B20B",
+    "title": "民主游戏",
+    "question": "民主一定等于低效吗？民主的低效性应该如何解决缓解呢？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2461,
+    "slot": "B20B",
+    "title": "没有失业的好地方",
+    "question": "西方社会 35 岁以上找不到工作的人都干嘛去了？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2474,
+    "slot": "B20B",
+    "title": "再打打",
+    "question": "纳粹政权也腐败为什么军队战斗力还这么强?",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2486,
+    "slot": "B20B",
+    "title": "主见",
+    "question": "为什么有些领导不喜欢太有主见的员工？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2491,
+    "slot": "B20C",
+    "title": "有钱人",
+    "question": "女孩子真的要嫁给有钱人吗？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2493,
+    "slot": "B20C",
+    "title": "blender",
+    "question": "游戏建模为什么不能是 blender + Zbrush 的工作流呢？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2499,
+    "slot": "B20C",
+    "title": "chatGPT",
+    "question": "如何评价 ChatGPT ？会取代搜索引擎吗？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2529,
+    "slot": "B20C",
+    "title": "反敌意监控",
+    "question": "被有组织纠缠，被一群人跟踪滋扰，盯梢监视。怎么才能摆脱他们啊？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2542,
+    "slot": "B20C",
+    "title": "白吃一粒",
+    "question": "你碰过的最自私的人是怎样？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2564,
+    "slot": "B20C",
+    "title": "有匪君子",
+    "question": "如何锻炼一个人的匪气？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2577,
+    "slot": "B20C",
+    "title": "我要",
+    "question": "姐弟之间这样正常吗？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2607,
+    "slot": "B20C",
+    "title": "以下事上",
+    "question": "如何与地位比你高的人搞好关系？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2619,
+    "slot": "B20C",
+    "title": "请假",
+    "question": "如何看待 00 后男同事因「失恋快死掉了」请假 0.5 天这件事？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2653,
+    "slot": "B20C",
+    "title": "收尾",
+    "question": "佩洛西的事怎么收尾？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2666,
+    "slot": "B20C",
+    "title": "好胜心",
+    "question": "如何应对我无处安放的好胜心？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2686,
+    "slot": "B20C",
+    "title": "刑罚之外",
+    "question": "上海瑞金医院内一男子持刀伤人致 4 伤，警方通报「民警开枪将其击伤制服」，涉事男子将承担哪些法律责任？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2711,
+    "slot": "B20C",
+    "title": "你的事",
+    "question": "如何告诉孩子，学习是你自己的事？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2718,
+    "slot": "B20C",
+    "title": "魔法蛋",
+    "question": "如何看待拜登称美最高法院推翻「罗诉韦德案」是「悲剧性错误」？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2772,
+    "slot": "B20C",
+    "title": "裁员过渡",
+    "question": "2022 年被裁员今天突然接到公司的电话，说要裁员了。我一整晚都没睡。太突然，不知道该怎么办？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2781,
+    "slot": "B20C",
+    "title": "诛心病",
+    "question": "如何评价乌合麒麟关于“吴勇工作室绘画的人教社教材”的发言？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2793,
+    "slot": "B20C",
+    "title": "万本无利",
+    "question": "高校院办回应副院长工作群发色情言论，称系「微信账号被盗，目前正在补救」，事件后续情况如何？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2803,
+    "slot": "B20C",
+    "title": "The Whole Package",
+    "question": "上海面对突发的疫情，为什么不佳？对于日后的防疫工作有什么经验教训？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2809,
+    "slot": "B20C",
+    "title": "有眼色",
+    "question": "请问什么叫做有眼色，职场中有眼色重要么？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2811,
+    "slot": "B20C",
+    "title": "同学同事",
+    "question": "人退休后才明白：同学情、同事情、朋友情，都是虚情假意，怎么看？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2876,
+    "slot": "B20C",
+    "title": "兑换银钱的人",
+    "question": "普京表示向欧洲国家供应天然气将用卢布进行结算，将产生哪些影响？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2908,
+    "slot": "B20C",
+    "title": "求助力",
+    "question": "怎样学会向别人寻求帮助？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2932,
+    "slot": "B20C",
+    "title": "对待软弱者",
+    "question": "该如何和性格软弱的人相处？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2945,
+    "slot": "B20C",
+    "title": "保持单纯",
+    "question": "现在社会很复杂，如何在复杂的社会中独善其身保持一份单纯呢，难道必须要让自己也变得那么复杂才行嘛  ？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2958,
+    "slot": "B20C",
+    "title": "性侵危机",
+    "question": "法国天主教会承认性侵 21.6 万儿童，主教团主席下跪忏悔，教会需承担哪些责任？如何避免类似事件发生？",
+    "status": "INNER_MISPLACED",
+    "reason": "涉及性骚扰防范与取证留痕。若强调职场留痕则勉强契合B20，但实质更偏向V3人身危机防范。",
+    "target": "V3-B16 (危机识人与权义守界) 或 B20C (职场自保留痕)"
+  },
+  {
+    "ordinal": 2960,
+    "slot": "B20C",
+    "title": "起步晚",
+    "question": "起步晚的人生还有救吗?",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2968,
+    "slot": "B20C",
+    "title": "闲聊",
+    "question": "做了领导就不能跟下属闲聊开玩笑了？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 2976,
+    "slot": "B20C",
+    "title": "基本造型能力",
+    "question": "为什么Mac连个正儿八经的CAD都装不了还敢打着生产力的旗号？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3052,
+    "slot": "B20C",
+    "title": "小长官",
+    "question": "职场中遇到比自己年龄小的领导时，心里不平衡怎么办？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3056,
+    "slot": "B20C",
+    "title": "Circle-Of-Shame",
+    "question": "如何看待最近的“坦克”羞辱？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3066,
+    "slot": "B20C",
+    "title": "优先保护",
+    "question": "武汉 30 岁律师被枪杀，律所称「凶手因房产被强制拍卖，酗酒后行凶」，还有哪些信息值得关注？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3087,
+    "slot": "B20C",
+    "title": "无知的责任",
+    "question": "无知是恶吗？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3100,
+    "slot": "B20C",
+    "title": "袁世凯",
+    "question": "袁世凯下野之后究竟通过什么控制北洋军的？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3120,
+    "slot": "B20C",
+    "title": "举报",
+    "question": "班里有向教师打小报告的“内鬼”，怎么办?",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3121,
+    "slot": "B20C",
+    "title": "删评权",
+    "question": "如何评价张维为入驻B站的评论区大量评论被删除的现象？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3124,
+    "slot": "B20C",
+    "title": "殖民地",
+    "question": "殖民地和领土的根本区别是什么？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3126,
+    "slot": "B20C",
+    "title": "人才流失",
+    "question": "为什么中国人才流失很严重？美国人才流失情况如何？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3136,
+    "slot": "B20C",
+    "title": "谁的责任",
+    "question": "如何确定是对方理解能力的问题还是自己表达能力的问题？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3146,
+    "slot": "B20C",
+    "title": "三合一",
+    "question": "艺术圈是否被一群骗子在把持，他们根本没有看出一部作品好坏的能力？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3154,
+    "slot": "B20C",
+    "title": "差不多得了",
+    "question": "“差不多得了”如何反驳？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3181,
+    "slot": "B20C",
+    "title": "有困难就说",
+    "question": "领导说有困难可以跟他说，是什么意思？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3193,
+    "slot": "B20C",
+    "title": "长时间保持理性",
+    "question": "如何长时间保持理性？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3200,
+    "slot": "B20C",
+    "title": "爱无筹码",
+    "question": "得了绝症，婆家接受不了，不知道怎么办了？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3204,
+    "slot": "B20C",
+    "title": "不宜久留",
+    "question": "如何看待大批曾为北约部队工作的阿富汗翻译申请避难被拒？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3211,
+    "slot": "B20C",
+    "title": "指挥加班",
+    "question": "现在的95后指挥不动，下班准时走，活安排不下去只能自己干，怎么办？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3217,
+    "slot": "B20C",
+    "title": "物化",
+    "question": "是不是只要“被欣赏被利用”就叫物化？判断“物化”的标准到底是什么？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3252,
+    "slot": "B20C",
+    "title": "缺乏创新",
+    "question": "中国当前缺乏创新根本原因是什么？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3273,
+    "slot": "B20C",
+    "title": "一点就透",
+    "question": "如何成为那种一点就透，悟性很高的人？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3288,
+    "slot": "B20C",
+    "title": "理解的原理",
+    "question": "人与人之间真的不能相互理解吗？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3310,
+    "slot": "B20C",
+    "title": "汉字基准字体",
+    "question": "字体字库未来前景怎么样？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3315,
+    "slot": "B20C",
+    "title": "尊重的实践",
+    "question": "我们应该无条件尊重他人，还是应该尊重值得我们尊重的人？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3334,
+    "slot": "B20C",
+    "title": "劝退",
+    "question": "是什么让你开始劝退的？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3341,
+    "slot": "B20C",
+    "title": "女舰长",
+    "question": "如何评价韦慧晓放弃百万年薪，做了中国第一位实习女舰长？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3350,
+    "slot": "B20C",
+    "title": "不卑不亢",
+    "question": "如何在气场强大的人面前做到不卑不亢？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3362,
+    "slot": "B20C",
+    "title": "受伤害",
+    "question": "在被别人伤害后，我们该怎么办？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3371,
+    "slot": "B20C",
+    "title": "知识的责任",
+    "question": "右转被称作“奴隶却为奴隶主说话，不知道屁股在哪”，左转是“杀了地主之后的屠刀就砍向你”，如何选择？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3373,
+    "slot": "B20C",
+    "title": "底层",
+    "question": "如何看待北京人社局副处长体验送外卖的一天，并表示「太委屈了，这个钱太不好挣了」?",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3394,
+    "slot": "B20C",
+    "title": "文科生",
+    "question": "如何理解 14 日发布的央行工作论文中提到「东南亚国家掉入中等收入陷阱」原因之一是「文科生太多」？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3396,
+    "slot": "B20C",
+    "title": "责任感",
+    "question": "怎么才叫有责任感？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3401,
+    "slot": "B20C",
+    "title": "祈祷与祝福",
+    "question": "从科学上来说祈祷或祝福有没有用？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3462,
+    "slot": "B20C",
+    "title": "可以干",
+    "question": "如何看待男同事「不是男女平等吗？换桶装水你们也可以干」的言论？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3484,
+    "slot": "B20C",
+    "title": "埋头苦干",
+    "question": "那些只会埋头苦干，不会吹嘘拍马屁的人最后都过的好吗？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3486,
+    "slot": "B20C",
+    "title": "导演",
+    "question": "导演的水平会影响演员的演技吗？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3522,
+    "slot": "B20C",
+    "title": "无道德社会",
+    "question": "如果社会没有道德和责任感，再好的科技，再远的道路，有什么用吗？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3528,
+    "slot": "B20C",
+    "title": "子女的隐私",
+    "question": "妈妈总是不敲门就推开我的房间门，该怎么办?",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3529,
+    "slot": "B20C",
+    "title": "与世界为敌",
+    "question": "孩子住校晚上打游戏到深夜影响别人，对舍管指正批评过度敏感，遇此类事觉得全世界和他做对，家长该怎么办？",
+    "status": "OUTER_MISPLACED",
+    "reason": "孤立境遇下的精神坚守与哲学自处，纯属形而上自我心性，非职场汇报。",
+    "target": "V7-B38 (自处之道与精神独立)"
+  },
+  {
+    "ordinal": 3546,
+    "slot": "B20C",
+    "title": "血滴子",
+    "question": "现在都流行嘲笑做题家思维，是不是和美国人嘲笑nerd书呆子是一个意思？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3547,
+    "slot": "B20C",
+    "title": "敌人",
+    "question": "人际关系中，敌人是否是不可或缺的角色？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3585,
+    "slot": "B20C",
+    "title": "科学教",
+    "question": "很奇怪，明明科学对现代文明的进步起着近乎决定性的作用，可为什么还有人不相信科学？甚至反过来说科学教？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3600,
+    "slot": "B20C",
+    "title": "金刚川",
+    "question": "如何评价电影《金刚川》？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3607,
+    "slot": "B20C",
+    "title": "提高收入",
+    "question": "加班和超额工作是否正在毁掉中国大部分的劳动者？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3623,
+    "slot": "B20C",
+    "title": "能力与责任",
+    "question": "你怎么看《蜘蛛侠 1》的台词「能力越大，责任越大」？具有相应能力的人是否应该因为不作为而受到谴责？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3636,
+    "slot": "B20C",
+    "title": "遗言纸条",
+    "question": "员工请假被拒在工厂自杀身亡，留纸条称工作压力好大，工厂需要承担责任吗？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3663,
+    "slot": "B20C",
+    "title": "服从领导",
+    "question": "任正非称年轻人要踏实做好本职工作，不要天天高谈阔论，你赞同吗，当代年轻人的工作观是怎样的？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3666,
+    "slot": "B20C",
+    "title": "人走茶凉",
+    "question": "你一旦辞职了，好像任何人都不认识你了，是真的吗？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3711,
+    "slot": "B20C",
+    "title": "培养",
+    "question": "如何判断一个领导是在培养你，还是在压榨你？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3730,
+    "slot": "B20C",
+    "title": "打骨折",
+    "question": "如何看待14岁女孩与男友开房被父亲发现后被打骨折？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3766,
+    "slot": "B20C",
+    "title": "海外团结",
+    "question": "为什么海外华人不团结？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3789,
+    "slot": "B20C",
+    "title": "不破例",
+    "question": "男友知道我的性经历后，要求补偿，该怎么办？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3806,
+    "slot": "B20C",
+    "title": "非洲、非洲",
+    "question": "怎样看待美国仇华情绪？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3821,
+    "slot": "B20C",
+    "title": "越界",
+    "question": "如何看待「云南某集团首席执行官和人事总监邮件互怼，裁撤人力资源团队」一事，以及对人力岗位的相关言论？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3829,
+    "slot": "B20C",
+    "title": "聪明误",
+    "question": "聪明有什么坏处？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3847,
+    "slot": "B20C",
+    "title": "控评责任",
+    "question": "如何评价著名知乎女权大v战斗力旺盛的伯爵的女权言论和控评行为？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3862,
+    "slot": "B20C",
+    "title": "低贱的事情",
+    "question": "十四岁的孩子说出“我不要洗碗，因为这是很低贱的事情”这种话，我要如何回应？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3873,
+    "slot": "B20C",
+    "title": "幼稚权",
+    "question": "如何看待香港大专学界发言人邵岚接受外媒采访时称，「不会谴责任何抗议者的暴力行为」？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3882,
+    "slot": "B20C",
+    "title": "请勿吸烟",
+    "question": "公共场合不应该抽烟，我们个人制止公共场合吸烟的最佳方式是什么？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3899,
+    "slot": "B20C",
+    "title": "专业布局",
+    "question": "作为有志于投身于智能机器人领域的学生，学习方向应该选择机器人的控制，还是人工智能？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3922,
+    "slot": "B20C",
+    "title": "军舰对潜艇",
+    "question": "军舰斗不过潜艇吗？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3951,
+    "slot": "B20C",
+    "title": "劳动保障",
+    "question": "为什么劳动法颁布那么多年，一些企业、单位一直都无视劳动法？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3953,
+    "slot": "B20C",
+    "title": "臭",
+    "question": "为什么动物几乎一致地进化成拉的屎是臭的？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3956,
+    "slot": "B20C",
+    "title": "妇女",
+    "question": "如何看待微博话题 #女生节取代妇女节#？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 3990,
+    "slot": "B20C",
+    "title": "请你配合",
+    "question": "刚升职为部门经理，发现原来的同事现在的下属不配合工作，怎么办？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 4000,
+    "slot": "B20C",
+    "title": "科普资格",
+    "question": "混乱博物馆的刘大可先生退出的真实原因是什么？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 4050,
+    "slot": "B20C",
+    "title": "吹倒屋",
+    "question": "理记炮轰罗永浩毁掉贾国龙 30 年心血，真的是这样吗？这场风波中，贾国龙和罗永浩谁的责任更大？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 4057,
+    "slot": "B20C",
+    "title": "老宋",
+    "question": "宋朝到底凭什么活300多年？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 4063,
+    "slot": "B20C",
+    "title": "两味解药",
+    "question": "合格的前任应该像死了一样吗？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 4076,
+    "slot": "B20C",
+    "title": "难得优雅",
+    "question": "如何优雅且有效地传达「你冒犯到我了」？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 4112,
+    "slot": "B20C",
+    "title": "飞起来的铁饭碗",
+    "question": "国内永不失业的铁饭碗工作有哪些？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 4120,
+    "slot": "B20C",
+    "title": "热的路",
+    "question": "当你没有价值的时候别人还会在乎你吗？在别人眼里的价值是什么？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 4131,
+    "slot": "B20C",
+    "title": "无人不有",
+    "question": "孙宇晨起诉景甜，景甜工作室发声明称「对碰瓷说不」，具体什么情况？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 4141,
+    "slot": "B20C",
+    "title": "人人得而嫌之",
+    "question": "为什么我看到弱小的人，很废物的人，我会有一种非常嫌弃的感觉，这是不是一种道德缺陷？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 4142,
+    "slot": "B20C",
+    "title": "屈居人下",
+    "question": "工作中甘愿屈居人下，是不是很没出息？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 4145,
+    "slot": "B20C",
+    "title": "害兽之杀",
+    "question": "乐山大佛景区有男子将松鼠踩死，游客称其是工作人员并言「松鼠是害虫」，如何看待这一行为？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 4169,
+    "slot": "B20C",
+    "title": "无缘故",
+    "question": "所以人为什么要无缘无故坑害别人？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 4174,
+    "slot": "B20C",
+    "title": "无能为力",
+    "question": "怎么理解最近很火的不吃苦论？是对的么？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 4181,
+    "slot": "B20C",
+    "title": "斩蛇剑",
+    "question": "同事请下午茶没带你，说“不好意思，点的时候忘了你”，你会怎么回？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 4190,
+    "slot": "B20C",
+    "title": "喷嚏之战",
+    "question": "为什么都在唱衰高层住宅？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 4201,
+    "slot": "B20C",
+    "title": "惯不着",
+    "question": "作为管理者，在你遇到员工开会怼你，你会怎么办？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 4229,
+    "slot": "B20C",
+    "title": "成功之母",
+    "question": "大领导来视察，直属领导把我的功劳说成自己的，我该当场补充还是闭嘴？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 4249,
+    "slot": "B20C",
+    "title": "官大一级",
+    "question": "可以追求能力比自己强，自己视作领导的朋友并结婚吗？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 4260,
+    "slot": "B20C",
+    "title": "懂王",
+    "question": "为什么越懂事的人越容易委屈？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 4267,
+    "slot": "B20C",
+    "title": "留饭",
+    "question": "孩子自己去朋友家玩，把人家家长客气的「留下来吃饭」当真了，该不该纠正他的这份「实诚」？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 4268,
+    "slot": "B20C",
+    "title": "幸福的不退让",
+    "question": "老说「当下社会戾气重，幸福者要遵循退让原则」，你们真的觉得对吗？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 4278,
+    "slot": "B20C",
+    "title": "问不起",
+    "question": "给大领导汇报工作，领导经常性抓到一个点就使劲往细节问，直到问答不上，该如何应对呢？这种现象正常吗？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 4295,
+    "slot": "B20C",
+    "title": "你的气场",
+    "question": "如何穿搭才能提升气场？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 4311,
+    "slot": "B20C",
+    "title": "不许不许可",
+    "question": "难道情绪不稳定的妈妈就不是好妈妈？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 4325,
+    "slot": "B20C",
+    "title": "浪游人",
+    "question": "为了生活定居一个地方还是为了工作到处奔波，哪种方式更加适合当代长期发展？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 4335,
+    "slot": "B20C",
+    "title": "小招牌",
+    "question": "到底是薪资决定了态度，还是态度决定了薪资？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 4347,
+    "slot": "B22",
+    "title": "小妖怪",
+    "question": "为什么我做自媒体总感觉做不起来？",
+    "status": "FIT",
+    "reason": "",
+    "target": ""
+  },
+  {
+    "ordinal": 4352,
+    "slot": "B20A",
+    "title": "慧极则辱",
+    "question": "为什么很多中层管理者难以晋升到高层？",
+    "status": "FIT",
+    "reason": "讨论职场聪明反被聪明误、管理汇报与升迁进退，切合职场生态。",
+    "target": ""
+  }
+]

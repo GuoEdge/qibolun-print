@@ -1,0 +1,19 @@
+{
+  "sample_titles": [
+    "自知其美",
+    "多余的问题",
+    "5G",
+    "MMA",
+    "各行其道"
+  ],
+  "sample_ordinals": [
+    4044,
+    2387,
+    3926,
+    2967,
+    3820
+  ],
+  "source_corpus": "sooon-q9adg-articles-v2.jsonl",
+  "source_index": "research-rebuild/reports/print-index/print-research-index.csv",
+  "note": "图片样章保留图片数量和版面提示；正式阅读版生成时嵌入已审图片文件。"
+}

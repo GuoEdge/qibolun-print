@@ -1,0 +1,109 @@
+[
+ {
+  "agent": "wave3-agent-01",
+  "batches": [
+   "r001-b0007",
+   "r001-b0010",
+   "r001-b0012"
+  ],
+  "prompt_file": "/mnt/d/岐伯论/research-rebuild/prompts/inflight/wave3-agent-01.md"
+ },
+ {
+  "agent": "wave3-agent-02",
+  "batches": [
+   "r001-b0013",
+   "r001-b0015",
+   "r001-b0016"
+  ],
+  "prompt_file": "/mnt/d/岐伯论/research-rebuild/prompts/inflight/wave3-agent-02.md"
+ },
+ {
+  "agent": "wave3-agent-03",
+  "batches": [
+   "r001-b0018",
+   "r001-b0019",
+   "r001-b0025"
+  ],
+  "prompt_file": "/mnt/d/岐伯论/research-rebuild/prompts/inflight/wave3-agent-03.md"
+ },
+ {
+  "agent": "wave3-agent-04",
+  "batches": [
+   "r001-b0027",
+   "r001-b0028",
+   "r001-b0031"
+  ],
+  "prompt_file": "/mnt/d/岐伯论/research-rebuild/prompts/inflight/wave3-agent-04.md"
+ },
+ {
+  "agent": "wave3-agent-05",
+  "batches": [
+   "r001-b0033",
+   "r001-b0034",
+   "r001-b0036"
+  ],
+  "prompt_file": "/mnt/d/岐伯论/research-rebuild/prompts/inflight/wave3-agent-05.md"
+ },
+ {
+  "agent": "wave3-agent-06",
+  "batches": [
+   "r001-b0037",
+   "r001-b0039",
+   "r001-b0040"
+  ],
+  "prompt_file": "/mnt/d/岐伯论/research-rebuild/prompts/inflight/wave3-agent-06.md"
+ },
+ {
+  "agent": "wave3-agent-07",
+  "batches": [
+   "r001-b0041",
+   "r001-b0042",
+   "r001-b0043"
+  ],
+  "prompt_file": "/mnt/d/岐伯论/research-rebuild/prompts/inflight/wave3-agent-07.md"
+ },
+ {
+  "agent": "wave3-agent-08",
+  "batches": [
+   "r001-b0044",
+   "r001-b0045",
+   "r001-b0046"
+  ],
+  "prompt_file": "/mnt/d/岐伯论/research-rebuild/prompts/inflight/wave3-agent-08.md"
+ },
+ {
+  "agent": "wave3-agent-09",
+  "batches": [
+   "r001-b0047",
+   "r001-b0048",
+   "r001-b0049"
+  ],
+  "prompt_file": "/mnt/d/岐伯论/research-rebuild/prompts/inflight/wave3-agent-09.md"
+ },
+ {
+  "agent": "wave3-agent-10",
+  "batches": [
+   "r001-b0050",
+   "r001-b0051",
+   "r001-b0052"
+  ],
+  "prompt_file": "/mnt/d/岐伯论/research-rebuild/prompts/inflight/wave3-agent-10.md"
+ },
+ {
+  "agent": "wave3-agent-11",
+  "batches": [
+   "r001-b0053",
+   "r001-b0054",
+   "r001-b0055"
+  ],
+  "prompt_file": "/mnt/d/岐伯论/research-rebuild/prompts/inflight/wave3-agent-11.md"
+ },
+ {
+  "agent": "wave3-agent-12",
+  "batches": [
+   "r001-b0056",
+   "r001-b0057"
+  ],
+  "prompt_file": "/mnt/d/岐伯论/research-rebuild/prompts/inflight/wave3-agent-12.md"
+ }
+]

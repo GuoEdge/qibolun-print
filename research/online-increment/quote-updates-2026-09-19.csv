@@ -1,0 +1,2 @@
+﻿id,title,reason,oldQuote,newQuote,filesTouched,decidedAt
+35d629b4-efc6-52ce-80f3-f9a3102b07a3,天堂有路,按 2026-09-19 版本决定采用在线新版：该句在旧版为「进不了天堂的人…」，新版改写为「人进不了天堂…」,进不了天堂的人，根本不是因为ta们找不到天堂的门，而是因为ta们找不到通往这门的路。,人进不了天堂，根本不是因为ta们找不到天堂的门，而是因为找不到通往这门的路。,research/close-reading/batch-227-1131-1135.md; research/data/author_view_evidence.jsonl; research/data/author_view_evidence_clean.jsonl,2026-09-19

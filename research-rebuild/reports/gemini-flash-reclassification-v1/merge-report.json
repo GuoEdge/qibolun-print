@@ -1,0 +1,87 @@
+{
+  "total_articles": 4305,
+  "batch_count": 22,
+  "batch_size": 200,
+  "taxonomy_version": "gemini-flash-taxonomy-v1",
+  "topic_distribution": {
+    "G01": {
+      "name": "血缘宗族与代际抚育",
+      "count": 1125,
+      "percentage": 26.13
+    },
+    "G02": {
+      "name": "两性亲密与婚恋博弈",
+      "count": 258,
+      "percentage": 5.99
+    },
+    "G03": {
+      "name": "社交人情与处世边界",
+      "count": 238,
+      "percentage": 5.53
+    },
+    "G04": {
+      "name": "身心调摄与情志平复",
+      "count": 186,
+      "percentage": 4.32
+    },
+    "G05": {
+      "name": "修己进德与知行精进",
+      "count": 69,
+      "percentage": 1.6
+    },
+    "G06": {
+      "name": "生活美学与器物空间",
+      "count": 31,
+      "percentage": 0.72
+    },
+    "G07": {
+      "name": "职场生态与权责博弈",
+      "count": 208,
+      "percentage": 4.83
+    },
+    "G08": {
+      "name": "财富逻辑与商业经营",
+      "count": 91,
+      "percentage": 2.11
+    },
+    "G09": {
+      "name": "国家治理与制度演进",
+      "count": 37,
+      "percentage": 0.86
+    },
+    "G10": {
+      "name": "历史兴亡与得失鉴戒",
+      "count": 83,
+      "percentage": 1.93
+    },
+    "G11": {
+      "name": "艺能创作与文字修辞",
+      "count": 18,
+      "percentage": 0.42
+    },
+    "G12": {
+      "name": "社会观察与思潮辨析",
+      "count": 1871,
+      "percentage": 43.46
+    },
+    "G13": {
+      "name": "危机避险与权义守界",
+      "count": 88,
+      "percentage": 2.04
+    },
+    "insufficient_evidence": {
+      "name": "insufficient_evidence",
+      "count": 2,
+      "percentage": 0.05
+    }
+  },
+  "status_distribution": {
+    "confirmed": 4303,
+    "insufficient_evidence": 2
+  },
+  "flags_distribution": {
+    "short_text": 75,
+    "boundary_case": 20,
+    "missing_text": 2
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "generated_at": "2026-09-21T21:43:51+0800",
+  "corpus_records": 4296,
+  "corpus_sha256": "E8617186FB3A82FD117C790499191B0E7B14D7A0C06E084C6D91CB5C5BF6AAA4",
+  "batch_total": 609,
+  "batch_reading_complete": 609,
+  "batch_failed_existing": 0,
+  "batch_missing": 0,
+  "batch_pending": 0,
+  "text_coverage_complete": 4296,
+  "understanding_complete": 4041,
+  "needs_review": 255,
+  "blocked": 0,
+  "reading_status_counts": {
+    "read": 4041,
+    "needs_reread": 255
+  },
+  "image_articles_read": 254,
+  "image_articles_needing_verification": 254,
+  "claims_total": 13195,
+  "evidence_refs_total": 18687,
+  "unresolved_questions_total": 8080,
+  "independent_review_complete": 35,
+  "image_review_complete": 0,
+  "formal_classification_started": false,
+  "notes": "初读（deepseek-v4.1-flash）按批推进：每批输出 out/<batch_id>.out.jsonl 并通过 scripts/validate_all.py 机械验收后才计入 text_coverage_complete。已有输出但验收失败的批次仍计入 batch_pending，不计入任何完成篇数。understanding_complete 只统计 status=read 的记录；含图片文章在图像核验前一律 needs_reread。独立复核计数来自 reports/independent-reviews.jsonl 中通过完整严格字段校验且 article_id 唯一的逐篇记录；图像核验仍单独统计。"
+}

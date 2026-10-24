@@ -1,0 +1,12 @@
+import csv
+from pathlib import Path
+ROOT=Path(__file__).resolve().parents[2]; PATH=ROOT/'research-rebuild/data/print-topic-manual-decisions-v2.csv'; BATCH=ROOT/'research-rebuild/reports/live-manual-short-batch-v2-round55-short50.csv'
+D={
+'味精炒鸡精':('A06','A07;A03'),'愚蠢之为物也':('A03','A01;A02'),'镜中的小丑':('A16','A04;A08;A11'),'后悔酱':('A01','A03;A04'),'坐脸虫':('A00','A01;A08;A11'),'wait and see':('A08','A15;A20;A13'),'拒绝窥探':('A06','A07;A03;A02'),'游骑':('A08','A15;A16'),'新闻节目':('A16','A06;A08'),'不知天地':('A11','A01;A06'),'十连抽':('A04','A08;A11;A15'),'食有正时':('A18','A14;A15'),'夜叉':('A16','A10;A03;A01'),'危机之上':('A00','A01;A04;A08'),'辞源':('A03','A04;A20'),'独立原理':('A08','A07;A15;A03'),'一年疫苗':('A10','A08;A00'),'有本事不用':('A10','A12;A07;A03'),'第一稀缺':('A11','A00;A10;A03'),'核动力学习':('A04','A00;A11;A15'),'不成人形':('A02','A06;A11;A07'),'有言在先':('A06','A03;A07;A04'),'最先的关系':('A18','A01;A03;A00'),'不依赖':('A07','A08;A13;A15'),'学以致用':('A04','A13;A03;A08'),'童真':('A01','A11;A03'),'忏与悔':('A01','A03;A07;A06'),'遇袒则忧':('A09','A10;A07;A05'),'居高临下':('A07','A06;A03;A08'),'树立什么权威':('A07','A08;A06;A03'),'羁绊源':('A07','A08;A06;A15'),'决疑':('A09','A03;A07;A10'),'半躺的无名氏':('A06','A03;A04;A15'),'美女如云':('A06','A02;A16;A03'),'低头看路':('A08','A13;A15;A20'),'负责的收益':('A05','A08;A06;A15'),'仁不仁':('A03','A01;A06;A17'),'电合成氨':('A13','A18;A15;A12'),'黑得发亮':('A10','A12;A07;A03'),'出院':('A09','A10;A07;A11'),'纯电保姆车':('A13','A08;A15;A18'),'东食西宿':('A12','A10;A17;A20'),'没用的眼泪':('A04','A08;A01;A11'),'富国plus':('A12','A15;A08;A17'),'祖坟青烟':('A13','A12;A08;A15'),'上流社会':('A08','A15;A07;A03'),'滴滴':('A07','A12;A10;A16'),'MUST BE MY WAY':('A11','A15;A07;A12'),'通向和好的路':('A10','A07;A11;A06'),'FAIR AND SQUARE':('A12','A16;A15;A10')}
+batch=list(csv.DictReader(BATCH.open(encoding='utf-8-sig',newline=''))); assert len(batch)==50 and {r['title'] for r in batch}==set(D)
+with PATH.open(encoding='utf-8-sig',newline='') as f: rd=csv.DictReader(f); rows=list(rd); fields=rd.fieldnames
+by={r['id']:r for r in rows}
+for r in batch:
+ p,s=D[r['title']]; by[r['id']]={'id':r['id'],'title':r['title'],'primary_print_topic_code':p,'secondary_print_topic_codes':s,'classification_status':'manual_confirmed','decision_basis':'Round 55 full-text review: '+r['title'],'review_note':'按lexical正文论证中心裁决；主副专题不重复。','reviewer':'main-thread','reviewed_at':'2026-09-23'}
+with PATH.open('w',encoding='utf-8-sig',newline='') as f: w=csv.DictWriter(f,fieldnames=fields); w.writeheader(); w.writerows(by.values())
+print('round55',len(batch),'manual_rows',len(by))

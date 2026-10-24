@@ -1,0 +1,21 @@
+﻿id,title,old_primary,old_secondary,old_status,new_primary,new_secondary,new_status,basis,risk_note,revision_source,revised_at
+cdf1315e-9753-550f-8e55-651c06dfa32f,没伦理,A00,,manual_provisional,A00,,manual_provisional,正文截断为‘如果没有伦理道德，厂’，材料不足以确认医学伦理专题。,正文截断；医学和伦理后果未展开。,round142-decisions.tsv + independent blind reread,2026-09-25
+d60f14af-095b-5c1c-8ddb-65b97894e53d,婉拒,A00,,manual_provisional,A08,,manual_provisional,题目和一句话指向拒绝消费推销的交易边界，A08仅作最稳妥候选。,正文只有一句话，适用关系和效果未说明。,round142-decisions.tsv + independent blind reread,2026-09-25
+e8873042-d451-5335-87d7-638f1926a64a,刻奇,A15,A03,manual_provisional,A15,A03,manual_provisional,题目讨论Kitsch，答复以审美/文化隐喻回应；概念论证为副轴。,正文极短，术语和美学主张未展开。,round142-decisions.tsv + independent blind reread,2026-09-25
+913f1fd9-3d73-546a-b924-70174ef27403,普通不普通,A03,A01,manual_provisional,A03,A16,manual_provisional,正文拆解普通、正常、健康、正义、安全的概念边界；公共规范为弱副轴。,价值判断未作外部统计或伦理核验。,round142-decisions.tsv + independent blind reread,2026-09-25
+c0a13aa7-6476-5774-b661-e424f933d513,爱语,A00,,manual_provisional,A00,,manual_provisional,正文只有‘这怪我’，无法确认对隐晦表达爱意的具体论证。,文本过短且语义开放。,round142-decisions.tsv + independent blind reread,2026-09-25
+1015117d-47f5-5e6d-8648-373790bd96b6,坚持,A11,,manual_provisional,A11,A03,manual_provisional,‘择善固执’把坚持限定为对善/原则的持守；规范入口明确但未展开。,‘善’的含义和规范依据未核验。,round142-decisions.tsv + independent blind reread,2026-09-25
+beb62240-efcb-50cb-ac99-b2ef1dc53fbf,穿越幽谷,A11,A01,manual_provisional,A11,A01,manual_provisional,福音书引文以信仰回答低谷中的支撑来源；心理低谷为应用场景。,引文出处、宗教解释和心理效果未核验。,round142-decisions.tsv + independent blind reread,2026-09-25
+9b6db870-bac2-5741-b015-bd793dcd6dbe,不羡慕,A01,,manual_provisional,A01,,manual_provisional,格言直接处理羡慕情绪及比较姿态，属于主体心理入口。,正文仅八字，心理关系未核验。,round142-decisions.tsv + independent blind reread,2026-09-25
+74e10cdb-8c7b-564c-808d-7d85801fa288,创新问题,A04,A03;A13,manual_provisional,A04,A03;A13,manual_provisional,L0-L5创新层级及培养起点是中心，定义和技术路线为副轴。,正文未完；创新等级和培养方法未核验。,round142-decisions.tsv + independent blind reread,2026-09-25
+41c47afa-ca71-5905-924e-bc87c5a24f35,陌生宗教,A11,,manual_provisional,A11,,manual_provisional,正文点出耆那教和santhara作为少见宗教入口，未形成完整论证。,正文只是检索提示，宗教事实未核验。,round142-decisions.tsv + independent blind reread,2026-09-25
+a147c2b8-a54d-57cc-9558-3449a8dce120,拼命解决,A05,A10,manual_provisional,A10,A05,manual_provisional,围绕灭门暴力、法律、道德和舆论的失效边界展开，司法犯罪为主轴，亲属关系为场景。,正文短且有搬迁残留；案件和法律判断未核验。,round142-decisions.tsv + independent blind reread,2026-09-25
+85aecfc3-f160-531a-8404-42441717edd4,行为艺术,A15,A10,manual_provisional,A15,A06;A10,manual_provisional,反制性行为艺术和摄像记录回应毁坏毕设，艺术行动为主轴，协作/责任为副轴。,展览、作品和法律责任未核验。,round142-decisions.tsv + independent blind reread,2026-09-25
+7d9d6244-95ea-553f-b951-089dfb31ce42,相由言生,A17,A18;A03,manual_provisional,A17,A03;A18,manual_provisional,语言、文化环境与族群身份/面貌差异是假说中心，证据和身体因果为副轴。,作者明确使用‘怀疑’和‘很可能’，不是事实结论。,round142-decisions.tsv + independent blind reread,2026-09-25
+45874a32-c9d4-5cac-838d-26096e36a328,知行合一,A03,A01,manual_provisional,A03,A01,manual_provisional,区分知道、相信、行动与证据，讨论经验规则边界；主体心理为副轴。,正文未完；心理和社会判断未核验。,round142-decisions.tsv + independent blind reread,2026-09-25
+8806ec71-910e-556e-a9ea-287a909e2d93,活死人3,A01,A03;A10,manual_provisional,A10,A01;A03,manual_provisional,以公交蓄意报复为入口，论证价值崩溃、社会伤害和公共安全；心理机制为副轴。,事件和预防机制未核验；枪/保险/火药是比喻。,round142-decisions.tsv + independent blind reread,2026-09-25
+5316551a-199f-5363-8436-1c4d4a72bbc2,酒神与天神,A09,,manual_provisional,A11,A15;A03,manual_provisional,神话替代题目使用麻醉剂/兴奋剂文化隐喻，宗教/神话入口更稳妥。,仅一句且多义；药物、神话史和趋势未展开。,round142-decisions.tsv + independent blind reread,2026-09-25
+02b823b2-64d3-5356-bb11-e8c089c72013,中医灭绝,A11,A01,manual_provisional,A11,A09;A01,manual_provisional,传统医学作为绝望中的希望和超理性支持是中心，医学对象和主体绝望为副轴。,不会灭绝是作者预测，医学史和疗效未核验。,round142-decisions.tsv + independent blind reread,2026-09-25
+96522ec0-3832-570f-8a0c-c3dfd7fef58f,乌龙茶,A01,A19,manual_provisional,A01,A11,manual_provisional,区分可适应困境与失去希望的心理痛苦，围绕希望和绝望展开；规范/信仰为副轴。,疾病与绝望判断未临床核验，不构成危机建议。,round142-decisions.tsv + independent blind reread,2026-09-25
+6cab9392-d433-535d-a891-464294858932,学生官僚,A07,A20,manual_provisional,A07,A03;A17,manual_provisional,学生组织职位称谓、上下级惯例和服从秩序是中心；跨文化比较为副轴。,日本惯例和中日比较未核验。,round142-decisions.tsv + independent blind reread,2026-09-25
+0af3428a-e550-54a2-97fc-8d907e94afe9,运动最强,A18,A03,manual_provisional,A18,A03,manual_provisional,先定义运动能力，再用有效过载和尺度效应比较物种；定义推理为副轴。,生物力学结论是作者推测，未核验。,round142-decisions.tsv + independent blind reread,2026-09-25

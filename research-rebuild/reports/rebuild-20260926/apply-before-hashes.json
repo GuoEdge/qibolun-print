@@ -1,0 +1,9 @@
+{
+  "files": {
+    "research-rebuild/data/print-topic-manual-decisions-v2.csv": "ca023066eade77bac412515a631d93cb89138d3a35dcaac7a93c28bff88f9ecc",
+    "research-rebuild/reports/article-classification-v2.csv": "dcf54262772643c4a9d365763afb373580e242947f619ea2e39ec0986c070fd9",
+    "research-rebuild/reports/print-index/print-research-index.csv": "3f17bb9299f99ff2c7f309a59c10d63634f4f12e6b5210cd9cb70323967b1a11",
+    "research-rebuild/reports/live-manual-classification-queue-v2.csv": "140d1c4ae07c9d006c92e60782d63e25feb1bb17227c382ec0c2fde805de24a1"
+  },
+  "backup_dir": "research-rebuild/reports/rebuild-20260926/backup-before-apply-20260926"
+}

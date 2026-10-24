@@ -1,0 +1,16 @@
+=== 开始重建受 v4 新增文章影响的 20 个分册 ===
+
+>>> [1/20] 卷一 B01...
+
+
+#
+# Fatal error in , line 0
+# Check failed: 12 == (*__errno_location()).
+#
+#
+#
+#FailureMessage Object: 0x7f5c086fa0
+----- Native stack trace -----
+
+Signal 5 (core dumped) 
+    ✗ B01 失败

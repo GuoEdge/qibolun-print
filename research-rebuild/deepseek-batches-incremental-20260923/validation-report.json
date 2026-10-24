@@ -1,0 +1,12 @@
+{
+  "generated_at": "2026-09-23T01:13:07.3246615+08:00",
+  "status": "PASS",
+  "corpus_path": "D:\\岐伯论\\sooon-q9adg-articles-v2.jsonl",
+  "corpus_sha256": "CDC9C271309E1D71D9708889A3A31F4777E0C339EA54C3753521894AFDB8357D",
+  "baseline_record_count": 4296,
+  "current_record_count": 4305,
+  "expected_incremental_records": 9,
+  "package_records": 9,
+  "package_batches": 2,
+  "failures": []
+}

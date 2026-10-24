@@ -1,0 +1,28 @@
+{
+  "schema_version": "0.1.0",
+  "generated_at": "2026-09-19T21:01:28.291300+08:00",
+  "corpus_path": "D:\\岐伯论\\sooon-q9adg-articles-v2.jsonl",
+  "corpus_sha256": "E8617186FB3A82FD117C790499191B0E7B14D7A0C06E084C6D91CB5C5BF6AAA4",
+  "record_count": 4296,
+  "total_text_chars": 4884167,
+  "date_min": "2017-09-08",
+  "date_max": "2026-09-18",
+  "parse_errors": [],
+  "duplicate_ids": [],
+  "empty_text_articles": [
+    {
+      "ordinal": 3115,
+      "id": "c5354fb0-7345-5864-8522-2c0cfdad3c2e",
+      "title": "战马阉割"
+    },
+    {
+      "ordinal": 2983,
+      "id": "e108515f-375c-53c9-8f6d-1ee2c16b275a",
+      "title": "最大成长速度"
+    }
+  ],
+  "image_node_count": 765,
+  "image_article_count": 254,
+  "calibration_count": 24,
+  "status": "PASS"
+}

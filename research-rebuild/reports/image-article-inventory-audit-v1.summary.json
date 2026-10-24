@@ -1,0 +1,378 @@
+{
+  "generated_at": "2026-09-25T18:21:10.9701433+08:00",
+  "corpus_path": "D:\\岐伯论\\sooon-q9adg-articles-v2.jsonl",
+  "corpus_records": 4305,
+  "image_article_count": 254,
+  "image_node_count": 765,
+  "inventory_rows": 765,
+  "image_count_mismatch_articles": 0,
+  "reviewed_image_nodes": 570,
+  "unreviewed_image_nodes": 195,
+  "all_images_reviewed_articles": 153,
+  "no_images_reviewed_articles": 100,
+  "partial_images_reviewed_articles": 1,
+  "text_length_bands": {
+    "0": 2,
+    "1-50": 2,
+    "51-200": 12,
+    "201-500": 60,
+    "501-1000": 67,
+    ">1000": 111
+  },
+  "image_role_counts": {
+    "unreviewed": 100,
+    "reviewed_weak_or_mixed": 21,
+    "reviewed_supports_or_direct": 76,
+    "reviewed_limited": 57
+  },
+  "candidate_disposition_counts": {
+    "discard_article_candidate_image_only_no_text": 2,
+    "micro_body_manual_decision": 2,
+    "short_body_image_review_pending": 6,
+    "short_body_keep_text_drop_weak_images_candidate": 3,
+    "short_body_keep_with_images_or_manual_check": 3,
+    "retain_article_image_review_pending": 95,
+    "retain_article_drop_weak_or_decorative_images_candidate": 16,
+    "retain_article_images_optional": 127
+  },
+  "weak_or_unclear_relation_articles": 21,
+  "zero_text_articles": [
+    {
+      "id": "c5354fb0-7345-5864-8522-2c0cfdad3c2e",
+      "title": "战马阉割",
+      "question": "为何古代战马多被阉割？",
+      "image_count": 7,
+      "image_review_state": "all_reviewed",
+      "candidate_disposition": "discard_article_candidate_image_only_no_text"
+    },
+    {
+      "id": "e108515f-375c-53c9-8f6d-1ee2c16b275a",
+      "title": "最大成长速度",
+      "question": "人在什么情况下成长最快？",
+      "image_count": 1,
+      "image_review_state": "all_reviewed",
+      "candidate_disposition": "discard_article_candidate_image_only_no_text"
+    }
+  ],
+  "micro_text_articles": [
+    {
+      "id": "c6a02357-79be-54da-895e-0a7a9b76dc93",
+      "title": "基督教与食血",
+      "question": "基督教徒能不能食血？",
+      "text_chars": 39,
+      "image_count": 8,
+      "image_review_state": "all_reviewed",
+      "candidate_disposition": "micro_body_manual_decision"
+    },
+    {
+      "id": "3a71ddf7-b0ea-58f6-8c08-a3881e2a65ac",
+      "title": "兼得",
+      "question": "当你去世时，是想被网络遗忘还是留下你的「数字遗产」？你会如何处理自己的数字遗产？",
+      "text_chars": 45,
+      "image_count": 1,
+      "image_review_state": "all_reviewed",
+      "candidate_disposition": "micro_body_manual_decision"
+    }
+  ],
+  "short_text_articles": [
+    {
+      "id": "e266c1dd-a142-51f3-a1c7-661ec21e4585",
+      "title": "各行其道",
+      "question": "铲屎官们都说猫惧怕出门，为什么说猫是野生动物的杀手？",
+      "text_chars": 64,
+      "image_count": 2,
+      "image_review_state": "none_reviewed",
+      "candidate_disposition": "short_body_image_review_pending"
+    },
+    {
+      "id": "3f40373a-5ff6-5034-9545-f2a2ae38d71e",
+      "title": "悲欣交集",
+      "question": "为什么我会时不时脑补一些理智完全丧失的疯狂场景？",
+      "text_chars": 73,
+      "image_count": 1,
+      "image_review_state": "none_reviewed",
+      "candidate_disposition": "short_body_image_review_pending"
+    },
+    {
+      "id": "e122a811-8341-594f-bce6-b50983b7e485",
+      "title": "活成这样",
+      "question": "人生应该活成什么样子，该以什么样的方式活着？",
+      "text_chars": 81,
+      "image_count": 1,
+      "image_review_state": "all_reviewed",
+      "candidate_disposition": "short_body_keep_text_drop_weak_images_candidate"
+    },
+    {
+      "id": "4f9b9ca8-8cc4-525e-8c76-8f8475881256",
+      "title": "黑粉菌",
+      "question": "哪些植物看着有毒其实可以食用？",
+      "text_chars": 126,
+      "image_count": 3,
+      "image_review_state": "all_reviewed",
+      "candidate_disposition": "short_body_keep_with_images_or_manual_check"
+    },
+    {
+      "id": "a687351f-28f0-5b9a-8d9c-41682da6e7a8",
+      "title": "一拳",
+      "question": "用什么可以击败一个善良、正直、诚实的人？",
+      "text_chars": 146,
+      "image_count": 1,
+      "image_review_state": "all_reviewed",
+      "candidate_disposition": "short_body_keep_with_images_or_manual_check"
+    },
+    {
+      "id": "4e9df607-c4c2-576b-a9d8-7751f086a094",
+      "title": "印刷信息量",
+      "question": "用 A4 纸记录一个 G 的数据需要多少钱？",
+      "text_chars": 149,
+      "image_count": 1,
+      "image_review_state": "none_reviewed",
+      "candidate_disposition": "short_body_image_review_pending"
+    },
+    {
+      "id": "736a204c-7cb1-5225-a191-fd52c127c544",
+      "title": "张艺谋想你",
+      "question": "感情中主动太累了想放弃了，应该好好告别还是不辞而别？",
+      "text_chars": 158,
+      "image_count": 2,
+      "image_review_state": "none_reviewed",
+      "candidate_disposition": "short_body_image_review_pending"
+    },
+    {
+      "id": "35239271-9349-5022-9dec-3f9fb90343fe",
+      "title": "极简悄悄话",
+      "question": "极简风装修怎样设计更精致？",
+      "text_chars": 164,
+      "image_count": 4,
+      "image_review_state": "all_reviewed",
+      "candidate_disposition": "short_body_keep_text_drop_weak_images_candidate"
+    },
+    {
+      "id": "4fe80272-6993-50fd-ba8d-7c69e4507068",
+      "title": "硅胶干燥剂",
+      "question": "有哪些产品的设计在其领域已经是接近完美的存在？",
+      "text_chars": 166,
+      "image_count": 2,
+      "image_review_state": "all_reviewed",
+      "candidate_disposition": "short_body_keep_with_images_or_manual_check"
+    },
+    {
+      "id": "b38dcebe-c8a8-592d-8feb-ee55c68953b4",
+      "title": "沙加",
+      "question": "印度都敢这样了，我们为什么不主动出击？",
+      "text_chars": 180,
+      "image_count": 1,
+      "image_review_state": "none_reviewed",
+      "candidate_disposition": "short_body_image_review_pending"
+    },
+    {
+      "id": "021e8171-6b59-552d-885e-5d477e157c7e",
+      "title": "尖头鞋",
+      "question": "请问这套哥特板甲的鞋子为什么那么长？",
+      "text_chars": 197,
+      "image_count": 2,
+      "image_review_state": "none_reviewed",
+      "candidate_disposition": "short_body_image_review_pending"
+    },
+    {
+      "id": "a6cedaa3-5172-59a8-b995-ba479b01c8f2",
+      "title": "修行实践",
+      "question": "什么是修心的最高境界?",
+      "text_chars": 200,
+      "image_count": 1,
+      "image_review_state": "all_reviewed",
+      "candidate_disposition": "short_body_keep_text_drop_weak_images_candidate"
+    }
+  ],
+  "weak_relation_samples": [
+    {
+      "id": "e108515f-375c-53c9-8f6d-1ee2c16b275a",
+      "title": "最大成长速度",
+      "text_chars": 0,
+      "image_count": 1,
+      "image_role": "reviewed_weak_or_mixed",
+      "weak_or_unclear_relation_count": 1,
+      "weak_relation_samples": "只能确认题面所附视频/影视语境，无法从图像确认‘最大成长速度’的历史地理或长城论证。"
+    },
+    {
+      "id": "3a71ddf7-b0ea-58f6-8c08-a3881e2a65ac",
+      "title": "兼得",
+      "text_chars": 45,
+      "image_count": 1,
+      "image_role": "reviewed_weak_or_mixed",
+      "weak_or_unclear_relation_count": 1,
+      "weak_relation_samples": "只能确认影视语境；与正文关于数字遗产和网络遗忘兼得的比喻关系有限。"
+    },
+    {
+      "id": "e122a811-8341-594f-bce6-b50983b7e485",
+      "title": "活成这样",
+      "text_chars": 81,
+      "image_count": 1,
+      "image_role": "reviewed_weak_or_mixed",
+      "weak_or_unclear_relation_count": 1,
+      "weak_relation_samples": "仅对应正文所附视频/人物材料，说明题面可能引用该人物。"
+    },
+    {
+      "id": "35239271-9349-5022-9dec-3f9fb90343fe",
+      "title": "极简悄悄话",
+      "text_chars": 164,
+      "image_count": 4,
+      "image_role": "reviewed_weak_or_mixed",
+      "weak_or_unclear_relation_count": 1,
+      "weak_relation_samples": "与建筑设计主体对应关系不清，可能是原文附图或跨主题材料，保留为附图语境。"
+    },
+    {
+      "id": "a6cedaa3-5172-59a8-b995-ba479b01c8f2",
+      "title": "修行实践",
+      "text_chars": 200,
+      "image_count": 1,
+      "image_role": "reviewed_weak_or_mixed",
+      "weak_or_unclear_relation_count": 1,
+      "weak_relation_samples": "与正文关于修心、规则和认识世界的抽象论述对应关系不清，仅保留附图记录。"
+    },
+    {
+      "id": "a5c150ca-8219-58e3-bd99-caabe2179bf2",
+      "title": "苦中苦",
+      "text_chars": 304,
+      "image_count": 4,
+      "image_role": "reviewed_weak_or_mixed",
+      "weak_or_unclear_relation_count": 1,
+      "weak_relation_samples": "与正文的图像语境无法建立可靠对应，仅作空白/黑屏记录。"
+    },
+    {
+      "id": "2bf92107-11dc-543e-b730-097ed3035394",
+      "title": "泰森吃我一拳",
+      "text_chars": 352,
+      "image_count": 6,
+      "image_role": "reviewed_weak_or_mixed",
+      "weak_or_unclear_relation_count": 1,
+      "weak_relation_samples": "只能确认影视对话与紧张情绪，不能证明正文涉及的军事能力、责任或生存判断。"
+    },
+    {
+      "id": "228be16e-853e-5240-a9f5-ff64e766d304",
+      "title": "过儿能改",
+      "text_chars": 355,
+      "image_count": 1,
+      "image_role": "reviewed_weak_or_mixed",
+      "weak_or_unclear_relation_count": 1,
+      "weak_relation_samples": "只能确认影视/人物画面；与正文关于认罪、改过和权威重建的论证关系有限。"
+    },
+    {
+      "id": "96219561-4aac-57e1-9c55-c7cd57b68f30",
+      "title": "无人机武士",
+      "text_chars": 451,
+      "image_count": 1,
+      "image_role": "reviewed_weak_or_mixed",
+      "weak_or_unclear_relation_count": 1,
+      "weak_relation_samples": "与正文“武士由方法论定义”及快餐/效率语境关系弱，未直接展示无人机。"
+    },
+    {
+      "id": "378fa426-595e-55c4-b84c-8df607af5d8d",
+      "title": "均值模糊",
+      "text_chars": 902,
+      "image_count": 1,
+      "image_role": "reviewed_weak_or_mixed",
+      "weak_or_unclear_relation_count": 1,
+      "weak_relation_samples": "直接对应算法/图像处理概念，但与正文关于国家孝治、宗族连坐和基层秩序的主专题对应关系不清。"
+    },
+    {
+      "id": "eb0078aa-8b15-5fce-87e0-19ee9ddc54c4",
+      "title": "懂事",
+      "text_chars": 905,
+      "image_count": 5,
+      "image_role": "reviewed_weak_or_mixed",
+      "weak_or_unclear_relation_count": 2,
+      "weak_relation_samples": "只能表现影视化的儿童互动，不能证明现实儿童心理或代际规律。 || 只能确认影视语境；正文关于现代化、父母认知优势和叛逆风险的判断不能由画面证明。"
+    },
+    {
+      "id": "b42bc4ae-a485-58f5-96b5-cb4efc1bcdef",
+      "title": "不动",
+      "text_chars": 1015,
+      "image_count": 1,
+      "image_role": "reviewed_weak_or_mixed",
+      "weak_or_unclear_relation_count": 1,
+      "weak_relation_samples": "图片支持视觉变形/表情比较的艺术语境，与正文的‘不动’概念有弱关联，但不能证明审美或心理结论。"
+    },
+    {
+      "id": "8a232e01-e8d5-5a3c-ba97-1d9f3e83ff76",
+      "title": "保持单纯",
+      "text_chars": 1056,
+      "image_count": 1,
+      "image_role": "reviewed_weak_or_mixed",
+      "weak_or_unclear_relation_count": 1,
+      "weak_relation_samples": "仅支持正文把‘单纯’、责任和合作放入影视化人物对话语境。"
+    },
+    {
+      "id": "00720a35-c252-57cc-9fcf-5ab697528746",
+      "title": "科目二",
+      "text_chars": 1106,
+      "image_count": 1,
+      "image_role": "reviewed_weak_or_mixed",
+      "weak_or_unclear_relation_count": 1,
+      "weak_relation_samples": "图片显示道路与地形环境，和正文涉及驾驶/道路场景有弱关联，但不能证明科目二训练事实。"
+    },
+    {
+      "id": "a987e3e4-b6ad-54eb-8d0f-7dc87db5091d",
+      "title": "镰刀盛",
+      "text_chars": 1182,
+      "image_count": 1,
+      "image_role": "reviewed_weak_or_mixed",
+      "weak_or_unclear_relation_count": 1,
+      "weak_relation_samples": "图片仅能确认信息截图和界面排布；未作OCR，无法据此核实正文引用。"
+    },
+    {
+      "id": "4624f253-14ce-513a-b166-b8a351df55eb",
+      "title": "和弓",
+      "text_chars": 1504,
+      "image_count": 2,
+      "image_role": "reviewed_weak_or_mixed",
+      "weak_or_unclear_relation_count": 1,
+      "weak_relation_samples": "与正文和弓技术主题的对应关系不清，不能作为弓结构或战场用途证据。"
+    },
+    {
+      "id": "68434efd-b4b2-5ce3-8a97-8864805ba63a",
+      "title": "轮子科技",
+      "text_chars": 1728,
+      "image_count": 11,
+      "image_role": "reviewed_weak_or_mixed",
+      "weak_or_unclear_relation_count": 1,
+      "weak_relation_samples": "仅支持正文把传递、运输和速度作通俗化说明的语境。"
+    },
+    {
+      "id": "83b5f74d-7827-5ce7-ba98-21ac9b1b470e",
+      "title": "苏州园",
+      "text_chars": 2105,
+      "image_count": 8,
+      "image_role": "reviewed_weak_or_mixed",
+      "weak_or_unclear_relation_count": 1,
+      "weak_relation_samples": "与正文园林主题关系弱，未见可识别的园林内容。"
+    },
+    {
+      "id": "6d972b31-ca74-5ed9-a989-2d0352cf6ba4",
+      "title": "日式",
+      "text_chars": 2888,
+      "image_count": 8,
+      "image_role": "reviewed_weak_or_mixed",
+      "weak_or_unclear_relation_count": 2,
+      "weak_relation_samples": "仅能确认器物形态，作为正文讨论传统工艺和器物功能的辅助材料。 || 与文章主体建筑/历史论证的对应关系不清，仅保留为附图语境。"
+    },
+    {
+      "id": "fe1e993d-7c2c-5c0f-b734-2bb88c4cae89",
+      "title": "井田",
+      "text_chars": 5008,
+      "image_count": 21,
+      "image_role": "reviewed_weak_or_mixed",
+      "weak_or_unclear_relation_count": 2,
+      "weak_relation_samples": "与正文井田制度论证的对应关系不直接，保留为原文附图，不据此改变专题。 || 与井田制度的历史论证对应关系弱，可能仅作方格/规划类比的附图语境。"
+    },
+    {
+      "id": "b95e3891-a76b-5252-86ca-12733a306294",
+      "title": "反犹",
+      "text_chars": 16279,
+      "image_count": 1,
+      "image_role": "reviewed_weak_or_mixed",
+      "weak_or_unclear_relation_count": 1,
+      "weak_relation_samples": "仅提供宗教/文化艺术图像语境，不能直接证明正文关于犹太教、基督教或反犹现象的历史论证。"
+    }
+  ]
+}

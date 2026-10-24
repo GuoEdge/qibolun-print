@@ -1,0 +1,352 @@
+{
+  "records": 4296,
+  "source_files": 609,
+  "needs_reread": 255,
+  "image_review": 254,
+  "priority_ge_100": 255,
+  "priority_ge_60": 256,
+  "next_batch": [
+    {
+      "priority": 225,
+      "reasons": [
+        "needs_reread",
+        "image_review",
+        "no_evidence_locations",
+        "no_main_claims",
+        "full_text_unconfirmed",
+        "many_open_questions"
+      ],
+      "batch_id": "r001-b0059",
+      "record_path": "out/r001-b0059.out.jsonl",
+      "line": 6,
+      "id": "e122a811-8341-594f-bce6-b50983b7e485",
+      "title": "活成这样",
+      "status": "needs_reread",
+      "image_count": 1
+    },
+    {
+      "priority": 220,
+      "reasons": [
+        "needs_reread",
+        "image_review",
+        "no_evidence_locations",
+        "no_main_claims",
+        "full_text_unconfirmed"
+      ],
+      "batch_id": "r001-b0154",
+      "record_path": "out/r001-b0154.out.jsonl",
+      "line": 2,
+      "id": "c5354fb0-7345-5864-8522-2c0cfdad3c2e",
+      "title": "战马阉割",
+      "status": "needs_reread",
+      "image_count": 7
+    },
+    {
+      "priority": 220,
+      "reasons": [
+        "needs_reread",
+        "image_review",
+        "no_evidence_locations",
+        "no_main_claims",
+        "full_text_unconfirmed"
+      ],
+      "batch_id": "r001-b0172",
+      "record_path": "out/r001-b0172.out.jsonl",
+      "line": 2,
+      "id": "e108515f-375c-53c9-8f6d-1ee2c16b275a",
+      "title": "最大成长速度",
+      "status": "needs_reread",
+      "image_count": 1
+    },
+    {
+      "priority": 205,
+      "reasons": [
+        "needs_reread",
+        "image_review",
+        "no_evidence_locations",
+        "full_text_unconfirmed",
+        "many_open_questions"
+      ],
+      "batch_id": "r001-b0003",
+      "record_path": "out/r001-b0003.out.jsonl",
+      "line": 1,
+      "id": "bd497e81-413b-5e4c-b1df-001d0efbd369",
+      "title": "可控核聚变",
+      "status": "needs_reread",
+      "image_count": 1
+    },
+    {
+      "priority": 205,
+      "reasons": [
+        "needs_reread",
+        "image_review",
+        "no_evidence_locations",
+        "full_text_unconfirmed",
+        "many_open_questions"
+      ],
+      "batch_id": "r001-b0009",
+      "record_path": "out/r001-b0009.out.jsonl",
+      "line": 2,
+      "id": "7d799cfe-6820-5bd2-992d-9abfbeb346b1",
+      "title": "弓箭的杀伤力",
+      "status": "needs_reread",
+      "image_count": 1
+    },
+    {
+      "priority": 205,
+      "reasons": [
+        "needs_reread",
+        "image_review",
+        "no_evidence_locations",
+        "full_text_unconfirmed",
+        "many_open_questions"
+      ],
+      "batch_id": "r001-b0009",
+      "record_path": "out/r001-b0009.out.jsonl",
+      "line": 5,
+      "id": "cd6a03a2-7490-55c7-9848-cabeca788913",
+      "title": "斑点狗",
+      "status": "needs_reread",
+      "image_count": 5
+    },
+    {
+      "priority": 205,
+      "reasons": [
+        "needs_reread",
+        "image_review",
+        "no_evidence_locations",
+        "full_text_unconfirmed",
+        "many_open_questions"
+      ],
+      "batch_id": "r001-b0017",
+      "record_path": "out/r001-b0017.out.jsonl",
+      "line": 3,
+      "id": "9bd10f2e-221b-5789-b44c-65732e163960",
+      "title": "丑",
+      "status": "needs_reread",
+      "image_count": 7
+    },
+    {
+      "priority": 205,
+      "reasons": [
+        "needs_reread",
+        "image_review",
+        "no_evidence_locations",
+        "full_text_unconfirmed",
+        "many_open_questions"
+      ],
+      "batch_id": "r001-b0017",
+      "record_path": "out/r001-b0017.out.jsonl",
+      "line": 7,
+      "id": "c6a02357-79be-54da-895e-0a7a9b76dc93",
+      "title": "基督教与食血",
+      "status": "needs_reread",
+      "image_count": 8
+    },
+    {
+      "priority": 205,
+      "reasons": [
+        "needs_reread",
+        "image_review",
+        "no_evidence_locations",
+        "full_text_unconfirmed",
+        "many_open_questions"
+      ],
+      "batch_id": "r001-b0019",
+      "record_path": "out/r001-b0019.out.jsonl",
+      "line": 5,
+      "id": "95ae40bd-6bce-5354-856f-6dbd939c45a4",
+      "title": "戒刀",
+      "status": "needs_reread",
+      "image_count": 5
+    },
+    {
+      "priority": 205,
+      "reasons": [
+        "needs_reread",
+        "image_review",
+        "no_evidence_locations",
+        "full_text_unconfirmed",
+        "many_open_questions"
+      ],
+      "batch_id": "r001-b0020",
+      "record_path": "out/r001-b0020.out.jsonl",
+      "line": 3,
+      "id": "fe1e993d-7c2c-5c0f-b734-2bb88c4cae89",
+      "title": "井田",
+      "status": "needs_reread",
+      "image_count": 21
+    },
+    {
+      "priority": 205,
+      "reasons": [
+        "needs_reread",
+        "image_review",
+        "no_evidence_locations",
+        "full_text_unconfirmed",
+        "many_open_questions"
+      ],
+      "batch_id": "r001-b0023",
+      "record_path": "out/r001-b0023.out.jsonl",
+      "line": 4,
+      "id": "599b48e8-f608-54cb-9bc0-5ac53b459190",
+      "title": "原谅宝",
+      "status": "needs_reread",
+      "image_count": 1
+    },
+    {
+      "priority": 205,
+      "reasons": [
+        "needs_reread",
+        "image_review",
+        "no_evidence_locations",
+        "full_text_unconfirmed",
+        "many_open_questions"
+      ],
+      "batch_id": "r001-b0023",
+      "record_path": "out/r001-b0023.out.jsonl",
+      "line": 1,
+      "id": "61a65182-b3de-5c28-bb29-5ddcb2acd079",
+      "title": "文物",
+      "status": "needs_reread",
+      "image_count": 13
+    },
+    {
+      "priority": 205,
+      "reasons": [
+        "needs_reread",
+        "image_review",
+        "no_evidence_locations",
+        "full_text_unconfirmed",
+        "many_open_questions"
+      ],
+      "batch_id": "r001-b0024",
+      "record_path": "out/r001-b0024.out.jsonl",
+      "line": 1,
+      "id": "5a32a445-202b-593a-a880-21c3716cd9cc",
+      "title": "5G",
+      "status": "needs_reread",
+      "image_count": 21
+    },
+    {
+      "priority": 205,
+      "reasons": [
+        "needs_reread",
+        "image_review",
+        "no_evidence_locations",
+        "full_text_unconfirmed",
+        "many_open_questions"
+      ],
+      "batch_id": "r001-b0026",
+      "record_path": "out/r001-b0026.out.jsonl",
+      "line": 5,
+      "id": "f371ffd1-f98c-5fcb-8109-ad183fd9df86",
+      "title": "直升珠峰",
+      "status": "needs_reread",
+      "image_count": 3
+    },
+    {
+      "priority": 205,
+      "reasons": [
+        "needs_reread",
+        "image_review",
+        "no_evidence_locations",
+        "full_text_unconfirmed",
+        "many_open_questions"
+      ],
+      "batch_id": "r001-b0027",
+      "record_path": "out/r001-b0027.out.jsonl",
+      "line": 2,
+      "id": "1350987a-cf4b-545b-bafe-847d2785533a",
+      "title": "3D打印",
+      "status": "needs_reread",
+      "image_count": 4
+    },
+    {
+      "priority": 205,
+      "reasons": [
+        "needs_reread",
+        "image_review",
+        "no_evidence_locations",
+        "full_text_unconfirmed",
+        "many_open_questions"
+      ],
+      "batch_id": "r001-b0027",
+      "record_path": "out/r001-b0027.out.jsonl",
+      "line": 1,
+      "id": "e26ded3d-29e4-5733-8c83-39e877cf74f2",
+      "title": "可见光通信",
+      "status": "needs_reread",
+      "image_count": 1
+    },
+    {
+      "priority": 205,
+      "reasons": [
+        "needs_reread",
+        "image_review",
+        "no_evidence_locations",
+        "full_text_unconfirmed",
+        "many_open_questions"
+      ],
+      "batch_id": "r001-b0029",
+      "record_path": "out/r001-b0029.out.jsonl",
+      "line": 6,
+      "id": "5f53ba7a-365e-55ce-9127-f98be023cce6",
+      "title": "正中心",
+      "status": "needs_reread",
+      "image_count": 1
+    },
+    {
+      "priority": 205,
+      "reasons": [
+        "needs_reread",
+        "image_review",
+        "no_evidence_locations",
+        "full_text_unconfirmed",
+        "many_open_questions"
+      ],
+      "batch_id": "r001-b0029",
+      "record_path": "out/r001-b0029.out.jsonl",
+      "line": 3,
+      "id": "66e90cce-04d4-554c-87e6-c7bd02d1c81f",
+      "title": "专业布局",
+      "status": "needs_reread",
+      "image_count": 1
+    },
+    {
+      "priority": 205,
+      "reasons": [
+        "needs_reread",
+        "image_review",
+        "no_evidence_locations",
+        "full_text_unconfirmed",
+        "many_open_questions"
+      ],
+      "batch_id": "r001-b0031",
+      "record_path": "out/r001-b0031.out.jsonl",
+      "line": 3,
+      "id": "4624f253-14ce-513a-b166-b8a351df55eb",
+      "title": "和弓",
+      "status": "needs_reread",
+      "image_count": 2
+    },
+    {
+      "priority": 205,
+      "reasons": [
+        "needs_reread",
+        "image_review",
+        "no_evidence_locations",
+        "full_text_unconfirmed",
+        "many_open_questions"
+      ],
+      "batch_id": "r001-b0034",
+      "record_path": "out/r001-b0034.out.jsonl",
+      "line": 7,
+      "id": "88e2e0eb-6711-5cca-b0a3-f049eb97e7c7",
+      "title": "安全的路",
+      "status": "needs_reread",
+      "image_count": 6
+    }
+  ],
+  "note": "机械排序队列；复核者必须回到原文、图片与初读证据，不得把排序分数当作研究结论。"
+}

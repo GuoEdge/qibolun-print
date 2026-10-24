@@ -1,0 +1,348 @@
+{
+  "generated_at": "2026-09-27T00:01:00.997126+08:00",
+  "corpus_sha256": "cdc9c271309e1d71d9708889a3a31f4777e0c339ea54c3753521894afdb8357d",
+  "chars_per_page": 1200,
+  "pages_per_volume": 200,
+  "volumes": 32,
+  "files": 32,
+  "total_articles_printed": 4303,
+  "topic_volumes": [
+    {
+      "topic_code": "A01",
+      "topic_name": "心理主体与情绪劳动",
+      "volume": 1,
+      "volumes_total": 2,
+      "articles": 190,
+      "body_chars": 208806,
+      "est_pages": 174,
+      "file": "research-rebuild/print-20260926-rebuilt-v2/A01-心理主体与情绪劳动/volume-01.md"
+    },
+    {
+      "topic_code": "A01",
+      "topic_name": "心理主体与情绪劳动",
+      "volume": 2,
+      "volumes_total": 2,
+      "articles": 189,
+      "body_chars": 198819,
+      "est_pages": 166,
+      "file": "research-rebuild/print-20260926-rebuilt-v2/A01-心理主体与情绪劳动/volume-02.md"
+    },
+    {
+      "topic_code": "A02",
+      "topic_name": "性别身体与同意",
+      "volume": 1,
+      "volumes_total": 1,
+      "articles": 146,
+      "body_chars": 150499,
+      "est_pages": 125,
+      "file": "research-rebuild/print-20260926-rebuilt-v2/A02-性别身体与同意/volume-01.md"
+    },
+    {
+      "topic_code": "A03",
+      "topic_name": "认识论事实与论证",
+      "volume": 1,
+      "volumes_total": 2,
+      "articles": 203,
+      "body_chars": 211123,
+      "est_pages": 176,
+      "file": "research-rebuild/print-20260926-rebuilt-v2/A03-认识论事实与论证/volume-01.md"
+    },
+    {
+      "topic_code": "A03",
+      "topic_name": "认识论事实与论证",
+      "volume": 2,
+      "volumes_total": 2,
+      "articles": 202,
+      "body_chars": 195652,
+      "est_pages": 163,
+      "file": "research-rebuild/print-20260926-rebuilt-v2/A03-认识论事实与论证/volume-02.md"
+    },
+    {
+      "topic_code": "A04",
+      "topic_name": "教育学习与能力形成",
+      "volume": 1,
+      "volumes_total": 2,
+      "articles": 133,
+      "body_chars": 158087,
+      "est_pages": 132,
+      "file": "research-rebuild/print-20260926-rebuilt-v2/A04-教育学习与能力形成/volume-01.md"
+    },
+    {
+      "topic_code": "A04",
+      "topic_name": "教育学习与能力形成",
+      "volume": 2,
+      "volumes_total": 2,
+      "articles": 133,
+      "body_chars": 174805,
+      "est_pages": 146,
+      "file": "research-rebuild/print-20260926-rebuilt-v2/A04-教育学习与能力形成/volume-02.md"
+    },
+    {
+      "topic_code": "A05",
+      "topic_name": "家庭亲属与代际秩序",
+      "volume": 1,
+      "volumes_total": 3,
+      "articles": 104,
+      "body_chars": 167932,
+      "est_pages": 140,
+      "file": "research-rebuild/print-20260926-rebuilt-v2/A05-家庭亲属与代际秩序/volume-01.md"
+    },
+    {
+      "topic_code": "A05",
+      "topic_name": "家庭亲属与代际秩序",
+      "volume": 2,
+      "volumes_total": 3,
+      "articles": 104,
+      "body_chars": 164356,
+      "est_pages": 137,
+      "file": "research-rebuild/print-20260926-rebuilt-v2/A05-家庭亲属与代际秩序/volume-02.md"
+    },
+    {
+      "topic_code": "A05",
+      "topic_name": "家庭亲属与代际秩序",
+      "volume": 3,
+      "volumes_total": 3,
+      "articles": 103,
+      "body_chars": 154044,
+      "est_pages": 128,
+      "file": "research-rebuild/print-20260926-rebuilt-v2/A05-家庭亲属与代际秩序/volume-03.md"
+    },
+    {
+      "topic_code": "A06",
+      "topic_name": "亲密关系友人与婚恋",
+      "volume": 1,
+      "volumes_total": 3,
+      "articles": 184,
+      "body_chars": 217912,
+      "est_pages": 182,
+      "file": "research-rebuild/print-20260926-rebuilt-v2/A06-亲密关系友人与婚恋/volume-01.md"
+    },
+    {
+      "topic_code": "A06",
+      "topic_name": "亲密关系友人与婚恋",
+      "volume": 2,
+      "volumes_total": 3,
+      "articles": 184,
+      "body_chars": 231281,
+      "est_pages": 193,
+      "file": "research-rebuild/print-20260926-rebuilt-v2/A06-亲密关系友人与婚恋/volume-02.md"
+    },
+    {
+      "topic_code": "A06",
+      "topic_name": "亲密关系友人与婚恋",
+      "volume": 3,
+      "volumes_total": 3,
+      "articles": 184,
+      "body_chars": 235980,
+      "est_pages": 197,
+      "file": "research-rebuild/print-20260926-rebuilt-v2/A06-亲密关系友人与婚恋/volume-03.md"
+    },
+    {
+      "topic_code": "A07",
+      "topic_name": "职场组织与合作",
+      "volume": 1,
+      "volumes_total": 2,
+      "articles": 181,
+      "body_chars": 225779,
+      "est_pages": 188,
+      "file": "research-rebuild/print-20260926-rebuilt-v2/A07-职场组织与合作/volume-01.md"
+    },
+    {
+      "topic_code": "A07",
+      "topic_name": "职场组织与合作",
+      "volume": 2,
+      "volumes_total": 2,
+      "articles": 181,
+      "body_chars": 190383,
+      "est_pages": 159,
+      "file": "research-rebuild/print-20260926-rebuilt-v2/A07-职场组织与合作/volume-02.md"
+    },
+    {
+      "topic_code": "A08",
+      "topic_name": "财富劳动与市场",
+      "volume": 1,
+      "volumes_total": 2,
+      "articles": 157,
+      "body_chars": 178423,
+      "est_pages": 149,
+      "file": "research-rebuild/print-20260926-rebuilt-v2/A08-财富劳动与市场/volume-01.md"
+    },
+    {
+      "topic_code": "A08",
+      "topic_name": "财富劳动与市场",
+      "volume": 2,
+      "volumes_total": 2,
+      "articles": 157,
+      "body_chars": 174258,
+      "est_pages": 145,
+      "file": "research-rebuild/print-20260926-rebuilt-v2/A08-财富劳动与市场/volume-02.md"
+    },
+    {
+      "topic_code": "A09",
+      "topic_name": "医疗疾病与照料",
+      "volume": 1,
+      "volumes_total": 1,
+      "articles": 80,
+      "body_chars": 73857,
+      "est_pages": 62,
+      "file": "research-rebuild/print-20260926-rebuilt-v2/A09-医疗疾病与照料/volume-01.md"
+    },
+    {
+      "topic_code": "A10",
+      "topic_name": "国家法律犯罪与司法",
+      "volume": 1,
+      "volumes_total": 2,
+      "articles": 138,
+      "body_chars": 135072,
+      "est_pages": 113,
+      "file": "research-rebuild/print-20260926-rebuilt-v2/A10-国家法律犯罪与司法/volume-01.md"
+    },
+    {
+      "topic_code": "A10",
+      "topic_name": "国家法律犯罪与司法",
+      "volume": 2,
+      "volumes_total": 2,
+      "articles": 137,
+      "body_chars": 136358,
+      "est_pages": 114,
+      "file": "research-rebuild/print-20260926-rebuilt-v2/A10-国家法律犯罪与司法/volume-02.md"
+    },
+    {
+      "topic_code": "A11",
+      "topic_name": "宗教自然法与世俗论证",
+      "volume": 1,
+      "volumes_total": 1,
+      "articles": 167,
+      "body_chars": 186484,
+      "est_pages": 155,
+      "file": "research-rebuild/print-20260926-rebuilt-v2/A11-宗教自然法与世俗论证/volume-01.md"
+    },
+    {
+      "topic_code": "A12",
+      "topic_name": "战争军事外交与大国秩序",
+      "volume": 1,
+      "volumes_total": 1,
+      "articles": 220,
+      "body_chars": 236810,
+      "est_pages": 197,
+      "file": "research-rebuild/print-20260926-rebuilt-v2/A12-战争军事外交与大国秩序/volume-01.md"
+    },
+    {
+      "topic_code": "A13",
+      "topic_name": "技术工程与产业路径",
+      "volume": 1,
+      "volumes_total": 1,
+      "articles": 182,
+      "body_chars": 203057,
+      "est_pages": 169,
+      "file": "research-rebuild/print-20260926-rebuilt-v2/A13-技术工程与产业路径/volume-01.md"
+    },
+    {
+      "topic_code": "A14",
+      "topic_name": "人工智能机器与未来秩序",
+      "volume": 1,
+      "volumes_total": 1,
+      "articles": 43,
+      "body_chars": 49972,
+      "est_pages": 42,
+      "file": "research-rebuild/print-20260926-rebuilt-v2/A14-人工智能机器与未来秩序/volume-01.md"
+    },
+    {
+      "topic_code": "A15",
+      "topic_name": "艺术审美与文化生产",
+      "volume": 1,
+      "volumes_total": 1,
+      "articles": 177,
+      "body_chars": 162749,
+      "est_pages": 136,
+      "file": "research-rebuild/print-20260926-rebuilt-v2/A15-艺术审美与文化生产/volume-01.md"
+    },
+    {
+      "topic_code": "A16",
+      "topic_name": "媒体舆论与公共认知",
+      "volume": 1,
+      "volumes_total": 1,
+      "articles": 130,
+      "body_chars": 153406,
+      "est_pages": 128,
+      "file": "research-rebuild/print-20260926-rebuilt-v2/A16-媒体舆论与公共认知/volume-01.md"
+    },
+    {
+      "topic_code": "A17",
+      "topic_name": "民族族群与身份秩序",
+      "volume": 1,
+      "volumes_total": 1,
+      "articles": 47,
+      "body_chars": 54010,
+      "est_pages": 45,
+      "file": "research-rebuild/print-20260926-rebuilt-v2/A17-民族族群与身份秩序/volume-01.md"
+    },
+    {
+      "topic_code": "A18",
+      "topic_name": "生态能源与自然科学",
+      "volume": 1,
+      "volumes_total": 1,
+      "articles": 96,
+      "body_chars": 87512,
+      "est_pages": 73,
+      "file": "research-rebuild/print-20260926-rebuilt-v2/A18-生态能源与自然科学/volume-01.md"
+    },
+    {
+      "topic_code": "A19",
+      "topic_name": "死亡祭祀与纪念",
+      "volume": 1,
+      "volumes_total": 1,
+      "articles": 38,
+      "body_chars": 36413,
+      "est_pages": 30,
+      "file": "research-rebuild/print-20260926-rebuilt-v2/A19-死亡祭祀与纪念/volume-01.md"
+    },
+    {
+      "topic_code": "A20",
+      "topic_name": "历史文明与历时演变",
+      "volume": 1,
+      "volumes_total": 1,
+      "articles": 100,
+      "body_chars": 130028,
+      "est_pages": 108,
+      "file": "research-rebuild/print-20260926-rebuilt-v2/A20-历史文明与历时演变/volume-01.md"
+    },
+    {
+      "topic_code": "A21",
+      "topic_name": "体育、运动与竞技伦理",
+      "volume": 1,
+      "volumes_total": 1,
+      "articles": 5,
+      "body_chars": 6600,
+      "est_pages": 6,
+      "file": "research-rebuild/print-20260926-rebuilt-v2/A21-体育、运动与竞技伦理/volume-01.md"
+    }
+  ],
+  "appendix_volumes": [
+    {
+      "topic_code": "APPENDIX",
+      "topic_name": "档案册（待审·排除候选·材料不足）",
+      "volume": 1,
+      "volumes_total": 1,
+      "articles": 8,
+      "body_chars": 502,
+      "est_pages": 0,
+      "file": "research-rebuild/print-20260926-rebuilt-v2/99-附录-档案册/volume-01.md"
+    }
+  ],
+  "appendix_articles": 8,
+  "excluded_from_print_by_user_request": [
+    {
+      "id": "e108515f-375c-53c9-8f6d-1ee2c16b275a",
+      "title": "最大成长速度",
+      "reason": "正文为空（0 字）",
+      "corpus_retained": true
+    },
+    {
+      "id": "c5354fb0-7345-5864-8522-2c0cfdad3c2e",
+      "title": "战马阉割",
+      "reason": "正文为空（0 字）",
+      "corpus_retained": true
+    }
+  ]
+}

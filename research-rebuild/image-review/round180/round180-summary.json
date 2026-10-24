@@ -1,0 +1,16 @@
+{
+  "round": 180,
+  "articles": 46,
+  "images_in_scope": 105,
+  "images_visually_reviewed_this_round": 88,
+  "images_source_incomplete": 2,
+  "articles_complete": 45,
+  "articles_partial": 1,
+  "articles_retained": 46,
+  "articles_deleted": 0,
+  "classification_status_changed": 0,
+  "outputs": [
+    "round180-image-review.tsv",
+    "round180-image-decisions.tsv"
+  ]
+}

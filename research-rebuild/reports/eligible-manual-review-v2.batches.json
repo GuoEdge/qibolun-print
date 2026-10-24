@@ -1,0 +1,68 @@
+[
+  {
+    "round": 154,
+    "records": 5,
+    "chars": 29012,
+    "path": ".\\research-rebuild\\reports\\live-manual-batch-selection-v2-round154.csv"
+  },
+  {
+    "round": 155,
+    "records": 10,
+    "chars": 27274,
+    "path": ".\\research-rebuild\\reports\\live-manual-batch-selection-v2-round155.csv"
+  },
+  {
+    "round": 156,
+    "records": 11,
+    "chars": 27551,
+    "path": ".\\research-rebuild\\reports\\live-manual-batch-selection-v2-round156.csv"
+  },
+  {
+    "round": 157,
+    "records": 12,
+    "chars": 29076,
+    "path": ".\\research-rebuild\\reports\\live-manual-batch-selection-v2-round157.csv"
+  },
+  {
+    "round": 158,
+    "records": 21,
+    "chars": 28202,
+    "path": ".\\research-rebuild\\reports\\live-manual-batch-selection-v2-round158.csv"
+  },
+  {
+    "round": 159,
+    "records": 13,
+    "chars": 24634,
+    "path": ".\\research-rebuild\\reports\\live-manual-batch-selection-v2-round159.csv"
+  },
+  {
+    "round": 160,
+    "records": 7,
+    "chars": 21507,
+    "path": ".\\research-rebuild\\reports\\live-manual-batch-selection-v2-round160.csv"
+  },
+  {
+    "round": 161,
+    "records": 6,
+    "chars": 27534,
+    "path": ".\\research-rebuild\\reports\\live-manual-batch-selection-v2-round161.csv"
+  },
+  {
+    "round": 162,
+    "records": 7,
+    "chars": 28868,
+    "path": ".\\research-rebuild\\reports\\live-manual-batch-selection-v2-round162.csv"
+  },
+  {
+    "round": 163,
+    "records": 7,
+    "chars": 19801,
+    "path": ".\\research-rebuild\\reports\\live-manual-batch-selection-v2-round163.csv"
+  },
+  {
+    "round": 164,
+    "records": 1,
+    "chars": 10454,
+    "path": ".\\research-rebuild\\reports\\live-manual-batch-selection-v2-round164.csv"
+  }
+]

@@ -1,0 +1,51 @@
+source_ordinal,id,title,question,body_char_count,priority,priority_reasons,candidate_primary,candidate_secondary,candidate_score,candidate_status,official_assignment_status,official_category_paths,native_object_paths,deepseek_image_count,manual_status
+3563,c0a13aa7-6476-5774-b661-e424f933d513,爱语,有没有可以隐晦表示我爱你的句子？,4,25,low_candidate_score,A00,A06,50,manual_provisional,confirmed,与友人 / 与恋人 / 确立,与友人 / 与恋人 / 确立,0,pending_manual_read
+3705,1015117d-47f5-5e6d-8648-373790bd96b6,坚持,什么是坚持?,5,25,low_candidate_score,A00,A03,50,manual_provisional,confirmed,与自己 / 与原则 / 坚持,与自己 / 与原则 / 坚持,0,pending_manual_read
+3182,9b6db870-bac2-5741-b015-bd793dcd6dbe,不羡慕,怎么才能达到不羡慕别人的境界?,8,25,low_candidate_score,A00,A01,50,manual_provisional,confirmed,与自己 / 与情绪 / 调节,与自己 / 与情绪 / 调节,0,pending_manual_read
+2706,e8873042-d451-5335-87d7-638f1926a64a,刻奇,刻奇（Kitsch）是什么？如何克服刻奇？,17,25,low_candidate_score,A03,,0,manual_provisional,confirmed,与社会 / 与文化 / 批判,与社会 / 与文化 / 批判,0,pending_manual_read
+3814,709c7581-b9fb-5c40-9d0d-bf5f0b3ec31b,最重要的能力,人最重要的能力是什么？,18,45,official_unassigned,A06,A01,100,manual_provisional,unassigned,,,0,pending_manual_read
+3697,4c8d70b4-e511-559a-abad-85a90006ee86,政治,政治是什么？,19,0,,A10,A03,100,manual_provisional,confirmed,与社会 / 与文化 / 接纳;与社会 / 与历史 / 解释,与社会 / 与文化 / 接纳;与社会 / 与历史 / 解释,0,pending_manual_read
+3873,34c70769-57cc-52fb-b839-f99b12466071,唯此为大,如果能在全世界人类脑中同时播放一句话，你要说什么？,20,25,low_candidate_score,A19,A11,0,manual_provisional,confirmed,与自己 / 与时间 / 失去,与自己 / 与时间 / 失去,0,pending_manual_read
+3799,212c4ae7-d09b-5c10-8fbb-c65d879c824a,好批评,如何看待 4 月 30 日媒体在推特发布视频，犀利概括了中美对疫情的态度?,21,0,,A03,A16,100,manual_provisional,confirmed,与社会 / 与舆论 / 表达,与社会 / 与舆论 / 表达,0,pending_manual_read
+3945,964d3312-f52b-5cdf-a3cb-ee6085fb0dd0,同性恋,在基督教中同性恋是罪吗？,21,0,,A11,A02,100,manual_provisional,confirmed,与自己 / 与信念 / 坚守,与自己 / 与信念 / 坚守,0,pending_manual_read
+2758,571762ad-24ca-5894-844b-462266f99d17,废话,人们总说别说废话，听了一堆废话，到底什么是废话？,23,25,low_candidate_score,A00,,50,manual_provisional,confirmed,与社会 / 与舆论 / 表达,与社会 / 与舆论 / 表达,0,pending_manual_read
+2350,bad58134-0613-5973-843b-2bc93ebb9733,去世之前,亲人在去世前，弥留之际家属到底应该说些什么最合适？,25,45,official_unassigned,A19,A09;A05,90,manual_provisional,unassigned,,,0,pending_manual_read
+3829,5316551a-199f-5363-8436-1c4d4a72bbc2,酒神与天神,狄俄尼索斯为什么可以取代宙斯？,25,0,,A11,A01,86,manual_provisional,confirmed,与社会 / 与文化 / 批判,与社会 / 与文化 / 批判,0,pending_manual_read
+3844,6ee1126a-85a9-5e39-890a-e06aa07ef24a,主义,集体主义和个人主义矛盾吗？,26,25,low_candidate_score,A03,A12,0,manual_provisional,confirmed,与社会 / 与组织 / 参与;与社会 / 与文化 / 批判,与社会 / 与组织 / 参与;与社会 / 与文化 / 批判,0,pending_manual_read
+3152,57146303-1714-5d24-b18f-8643040174f8,星星,孩子很认真问我「人死了是不是会变成星星」，我如实说不会，她就哭了。该如何与四岁孩子谈论死亡？,27,25,low_candidate_score,A19,A05,0,manual_provisional,confirmed,与亲族 / 与子女 / 抚养,与亲族 / 与子女 / 抚养,0,pending_manual_read
+3433,41824a1a-d9da-5134-a987-9f10639e2425,同情的资格,我有资格同情无知而不自知的人吗？,27,25,low_candidate_score,A00,A01,50,manual_provisional,confirmed,与自己 / 与原则 / 建立,与自己 / 与原则 / 建立,0,pending_manual_read
+3569,f1d9f87b-25e5-578e-9e66-cd400174e568,至勇,对于死亡这样的终极话题，人们为什么更推崇冷酷的唯物主义而不是仍带有一丝希望的意识与灵魂论？,30,25,low_candidate_score,A01,A11,60,manual_provisional,confirmed,与自己 / 与信念 / 坚守,与自己 / 与信念 / 坚守,0,pending_manual_read
+3656,8d2768d7-8132-585a-afcf-e00fd2effcc1,极端不忠诚,如何看待罗翔微博发完「不要成为荣誉的奴隶」之后，网友各种解读并暗讽罗翔「阴阳人」的行为？,36,0,,A03,A16,100,manual_provisional,confirmed,与自己 / 与信念 / 坚守,与自己 / 与信念 / 坚守,0,pending_manual_read
+3384,68081827-4bf0-52db-83ab-f406ca3555b7,隐私就是生命,如何评价苹果发布 AirTag，有哪些使用场景，值得购买吗？,40,0,,A13,A14;A10,100,manual_provisional,confirmed,与社会 / 与技术 / 运用,与社会 / 与技术 / 运用,0,pending_manual_read
+3391,41c47afa-ca71-5905-924e-bc87c5a24f35,陌生宗教,世界有一些什么人们知道较少的宗教？,41,0,,A11,,100,manual_provisional,confirmed,与社会 / 与文化 / 接纳,与社会 / 与文化 / 接纳,0,pending_manual_read
+3690,c7951d41-c774-5708-b9b4-7a7b8242e2ae,不尊重与不接受,为什么部分女性不能接受有处女情结的男人？,41,0,,A02,A06;A03,100,manual_provisional,confirmed,与友人 / 与恋人 / 吸引,与友人 / 与恋人 / 吸引,0,pending_manual_read
+2339,2eca1ab5-e5fd-5ec9-a5e9-61e9e7375dc0,强强,我交朋友总是需要向下兼容，因为我非常难以信任比我强的人，但是我又想要交到优秀的朋友，我该怎么办呢？,45,25,low_candidate_score,A01,A06,0,manual_provisional,confirmed,与自己 / 与能力 / 承受,与自己 / 与能力 / 承受,0,pending_manual_read
+4026,1f2225d3-9bd8-56e6-9c4a-7403ec00b281,理性的代价,思维过于理性的人有哪些劣势？,45,25,low_candidate_score,A01,A06,0,manual_provisional,confirmed,与自己 / 与能力 / 承受,与自己 / 与能力 / 承受,0,pending_manual_read
+3974,48274dc5-4a4a-5096-8ddc-5e7a6dc7736d,艺术生歧视,为什么一些人会对学艺术的有偏见？,47,0,,A01,A06,100,manual_provisional,confirmed,与社会 / 与舆论 / 表达,与社会 / 与舆论 / 表达,0,pending_manual_read
+3720,e0005624-e252-5158-8832-ba36497b20d8,慎终,你认为在这个世界上存在绝对坚定的无神论者吗？,53,0,,A11,A19,86,manual_provisional,confirmed,与自己 / 与信念 / 转变;与自己 / 与身体 / 维护,与自己 / 与信念 / 转变;与自己 / 与身体 / 维护,0,pending_manual_read
+2755,9e331c63-31ac-5328-aa0c-524de39aef37,元天赋,坚持没有天赋的梦想是浪费时间吗？,54,0,,A01,,100,manual_provisional,confirmed,与自己 / 与理想 / 持守,与自己 / 与理想 / 持守,0,pending_manual_read
+2950,913f1fd9-3d73-546a-b924-70174ef27403,普通不普通,男朋友想再30岁结婚，正常吗?,55,25,low_candidate_score,A00,,50,manual_provisional,confirmed,与社会 / 与舆论 / 接收,与社会 / 与舆论 / 接收,0,pending_manual_read
+2418,e6eaee74-6ff9-54b1-98ad-732cd571ee0f,真爱永远,女友说「你对我很好是因为现在我是你女友，其他人是你女友你也会对她好，所以你不是真的爱我」，怎么回?,60,0,,A06,A01,100,manual_provisional,confirmed,与友人 / 与恋人 / 分别,与友人 / 与恋人 / 分别,0,pending_manual_read
+3503,cf744236-ae73-5eb0-92f5-30c22ef8dd19,三流作家,顶级作家和普通作家的差距体现在哪些方面?,60,25,low_candidate_score,A15,A03,0,manual_provisional,confirmed,与自己 / 与能力 / 获取,与自己 / 与能力 / 获取,0,pending_manual_read
+3950,3aeb41af-85cc-5da7-ac22-72aacbd4774f,小重罪,有哪些以为是小罪，其实是重罪，判刑很重的案例？,64,0,,A03,,100,manual_provisional,confirmed,与自己 / 与名誉 / 维护,与自己 / 与名誉 / 维护,0,pending_manual_read
+3610,c4effbba-4dba-537e-8bdb-e889fc6baf00,幸福感,为什么25岁个人资产接近3000W，年收入70W，幸福感几乎没有？,67,0,,A01,,100,manual_provisional,confirmed,与自己 / 与情绪 / 调节,与自己 / 与情绪 / 调节,0,pending_manual_read
+2785,1f6d2379-e6ed-5e52-a24d-1bbb60aa586b,预备死亡,我今年75，心里非常害怕死亡，怎么办？,69,25,low_candidate_score,A19,A01,0,manual_provisional,confirmed,与自己 / 与身体 / 维护,与自己 / 与身体 / 维护,0,pending_manual_read
+3461,4d34493f-ab2b-5279-89e4-630e0b103f1c,高等生命,人类会不会是高等生命的食粮？,74,0,,A18,A03;A11,100,manual_provisional,confirmed,与自然 / 与生灵 / 利用,与自然 / 与生灵 / 利用,0,pending_manual_read
+3109,ed26c0bb-1fd9-51f3-80c5-fd5da75f39e7,法庭大忌,在法庭上最忌讳的是什么 ？,75,0,,A10,A00,100,manual_provisional,confirmed,与合作者 / 与管理者 / 服从,与合作者 / 与管理者 / 服从,0,pending_manual_read
+2843,e8f95c53-65c1-513e-aa90-141e0712e2c8,与世长存,如何长时间保存重要数据？,77,0,,A20,A03;A15,100,manual_provisional,confirmed,与社会 / 与文化 / 创造,与社会 / 与文化 / 创造,0,pending_manual_read
+2421,29c27b45-31d3-5ee7-ae33-f46a3176d48b,上上大吉,爱过一个人导致再也爱不上任何人怎么办?,82,0,,A06,A01,100,manual_provisional,confirmed,与自己 / 与欲望 / 节制,与自己 / 与欲望 / 节制,0,pending_manual_read
+4068,610f5c80-e08e-5b69-b9f7-2beb6563e578,四正道,如果人生没有标准答案，我们该如何判断自己是否走在正确的路上？,84,15,recent_v2_content,A11,A09;A06,90,manual_provisional,confirmed,与自己 / 与理想 / 建立,与自己 / 与理想 / 建立,0,pending_manual_read
+2386,3f55c59c-c54c-5eee-837e-4efe0d7ca381,双向奔赴,成年人的世界还会有义无反顾的双向奔赴吗？,85,0,,A06,A01,100,manual_provisional,confirmed,与友人 / 与恋人 / 确立,与友人 / 与恋人 / 确立,0,pending_manual_read
+3439,669447b3-e2fc-5430-a9d0-6603ac02bf98,赞美,如何合适地赞美一个人？,85,0,,A03,A06,100,manual_provisional,confirmed,与自己 / 与原则 / 建立,与自己 / 与原则 / 建立,0,pending_manual_read
+3681,85aecfc3-f160-531a-8404-42441717edd4,行为艺术,同学计划完成一个毕设展上毁坏在场所有毕设的行为艺术，是否应该劝说他放弃？,90,0,,A15,A06,84,manual_provisional,confirmed,与友人 / 与同学 / 相处,与友人 / 与同学 / 相处,0,pending_manual_read
+3787,ea8344f2-05e3-5c4c-9f53-9531cfc1eec1,“其实”,当人们说“其实”时，他们为什么要用这个词？,94,0,,A03,,100,manual_provisional,confirmed,与社会 / 与文化 / 批判,与社会 / 与文化 / 批判,0,pending_manual_read
+3413,c760d4b4-4c9e-5766-8050-11dcfae50b93,坚持感动,长期坚持对一个人好，他会感动吗？,96,0,,A06,A01;A10,100,manual_provisional,confirmed,与友人 / 与恋人 / 吸引,与友人 / 与恋人 / 吸引,0,pending_manual_read
+3796,1109bcf8-390f-54ef-9191-6ec7f40f5c1d,嫉妒或崇拜,同样是别人比自己强，为什么有时产生嫉妒，有时产生崇拜？,99,0,,A01,,100,manual_provisional,confirmed,与自己 / 与情绪 / 觉察;与其它 / 与陌生人 / 观察,与自己 / 与情绪 / 觉察;与其它 / 与陌生人 / 观察,0,pending_manual_read
+2808,32f16077-799b-59cf-b3b1-63274a2819a0,悲观癖,为什么现在的年轻人内心都越来越悲观？,101,0,,A01,A11,100,manual_provisional,confirmed,与自己 / 与情绪 / 调节,与自己 / 与情绪 / 调节,0,pending_manual_read
+3501,f04084e1-6bfb-5012-a1a1-d6b4112e3245,日本早餐,为什么日本的大街上没有早餐供应？,107,0,,A08,A10,100,manual_provisional,confirmed,与社会 / 与文化 / 接纳,与社会 / 与文化 / 接纳,0,pending_manual_read
+651,026dafd1-371b-551e-936c-51fc9e27c377,铺路石,去世后，你打算怎么处理自己的骨灰?,112,0,,A19,A13;A18,90,manual_provisional,confirmed,与自己 / 与身体 / 维护,与自己 / 与身体 / 维护,0,pending_manual_read
+3706,0eb2277c-4215-5ce8-a192-3328befecdcb,一句话,有没有人能送我一句话，作为我努力活着的信念?,113,0,,A01,A11,100,manual_provisional,confirmed,与自己 / 与信念 / 形成,与自己 / 与信念 / 形成,0,pending_manual_read
+2566,548f6103-2d0d-5817-84eb-8da07cd01253,不打盲人,怎么反击讽刺你的人？,114,0,,A06,A01,100,manual_provisional,confirmed,与其它 / 与陌生人 / 防卫,与其它 / 与陌生人 / 防卫,0,pending_manual_read
+3487,30c953b6-0a40-50ac-820d-9c7fe5ade0da,按需分配,实现按需分配需要什么样的社会条件?,115,0,,A08,A05,100,manual_provisional,confirmed,与社会 / 与社区 / 共处,与社会 / 与社区 / 共处,0,pending_manual_read
+2984,c8a3029e-592c-5d61-b3aa-31b07904c393,陨石弹头,章北海制作陨石弹头的难点是什么?,116,25,low_candidate_score,A00,A03;A15,50,manual_provisional,confirmed,与自然 / 与科学 / 质疑,与自然 / 与科学 / 质疑,0,pending_manual_read
+3798,8561dd6b-4c1d-57e7-82b6-b1321f7d23c6,不感兴趣,是不是大部分女性对科学技术、哲学、政治、历史等知识不感兴趣？如果是，原因是什么？,117,0,,A02,A06;A03,100,manual_provisional,confirmed,与其它 / 与陌生人 / 观察,与其它 / 与陌生人 / 观察,0,pending_manual_read

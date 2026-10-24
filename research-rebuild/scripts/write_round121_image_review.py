@@ -1,0 +1,139 @@
+#!/usr/bin/env python3
+"""Write conservative Round121 per-image review and decision artifacts."""
+from __future__ import annotations
+
+import csv
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[2]
+REPORTS = ROOT / "research-rebuild/reports"
+MANIFEST = REPORTS / "round121-image-manifest.csv"
+REVIEW = REPORTS / "round121-image-review.tsv"
+DECISIONS = REPORTS / "round121-decisions.tsv"
+COMMON = "图片来源、时间、人物/地点身份及外部事实未独立核验；图像不能单独证明正文之外的历史、因果、性能或制度结论。"
+
+def d(visible: str, relation: str, consistency: str = "limited") -> tuple[str, str, str]:
+    return visible, relation, consistency
+
+DATA: dict[str, list[tuple[str, str, str]]] = {
+"a5c150ca-8219-58e3-bd99-caabe2179bf2": [
+ d("游戏画面中人物在高处建筑间攀爬/移动，画面带中文字幕。", "直接对应正文以困难游戏、崎岖地形和挫折体验讨论痛苦与快乐。", "consistent"),
+ d("游戏画面展示人物、山岩和高处平台，底部有中文字幕。", "对应正文对需要反复操作、承担失败风险的游戏机制说明。", "consistent"),
+ d("近乎全黑的图像，未见可辨识主体或文字。", "与正文的图像语境无法建立可靠对应，仅作空白/黑屏记录。", "inconclusive"),
+ d("黑底红黄绿线条绘成多条弯曲支线，形似抽象路径或蜘蛛状结构。", "可作为正文讨论路径、失误和复杂操作的抽象视觉材料，但不能证明游戏机制。", "limited"),
+],
+"35239271-9349-5022-9dec-3f9fb90343fe": [
+ d("白色极简住宅/厨房空间，吊灯、橱柜、楼梯和中岛清晰可见。", "直接对应正文以室内设计效果图讨论业主实际居住、建筑语言与评价方法。", "consistent"),
+ d("黑白与木色相间的现代住宅客餐厅，家具和一只黑色鸟形装饰物可见。", "支持正文要求把业主及家庭实际使用情境纳入设计评价。", "consistent"),
+ d("现代住宅的木色壁炉/电视背景墙与开放客厅。", "对应正文关于漂亮效果图与真实居住环境之间差异的讨论。", "consistent"),
+ d("影视画面中两名男性交谈，底部有中文字幕。", "与建筑设计主体对应关系不清，可能是原文附图或跨主题材料，保留为附图语境。", "inconclusive"),
+],
+"228be16e-853e-5240-a9f5-ff64e766d304": [
+ d("影视画面中一名女性与一名男性站在大型鸟类旁，画面带字幕。", "只能确认影视/人物画面；与正文关于认罪、改过和权威重建的论证关系有限。", "limited"),
+],
+"2af5dfcb-3b9a-52ae-a5dd-d6acbe5acf78": [
+ d("黑底图示展示三种圆形光影/纹理：黑白碎片、灰色波纹和浅灰平面，顶部有中文标题。", "对应正文讨论雅俗、否定与重新发现既有事物价值的审美概念。", "limited"),
+],
+"1fefb679-a465-5c5f-a1eb-3f71b7a9c9a7": [
+ d("白底横向排列多个小型品牌/平台图标，图标尺寸很小但仍可辨认。", "直接对应正文讨论 logo 在缩小、远距离和复杂背景下的识别性能。", "consistent"),
+],
+"6db23a70-fd88-5f17-99f0-5c72931aab1d": [
+ d("电商/广告图中女性坐在沙发旁使用白色移动空调，箭头表示送风。", "直接对应正文以空调价格、使用成本和降温效果讨论家庭消费选择。", "consistent"),
+ d("男子背着带风扇/水箱结构的灰色降温背心，手持长杆工具。", "直接对应正文以钓鱼背心、劳动降温和替代空调的产品语境。", "consistent"),
+ d("蓝色广告图展示带网格的白色降温背心，文字称恒温、控温和低碳环保。", "支持正文比较穿戴式降温设备与空调的成本、功能和适用场景。", "limited"),
+ d("腰部/服装处的蓝黑压缩空气管、过滤器和金属接头特写。", "对应正文讨论空调服或背心的供气、散热和设备结构。", "limited"),
+ d("白黑拼色短袖降温服产品图，背部有风扇和蓝色气流示意，旁有不同款式。", "直接对应正文对风扇服、降温马甲和劳动场景替代方案的说明。", "consistent"),
+],
+"8179a3a3-8adb-55a1-8155-05e89fdbb01f": [
+ d("舞台演出现场，数名表演者在彩色灯光下演奏/歌唱，背景有中文活动字样。", "对应正文关于台湾宫观庆典、流行表演与宗教活动混合的文化观察。", "limited"),
+],
+"445fcafa-a694-57e4-9f5e-d29e08045e6c": [
+ d("百科式科学图解，展示 RNA 核心、蛋白质分子和环状/螺旋结构。", "支持正文用病毒结构和低代谢状态说明生命、代谢与寿命的关系。", "limited"),
+],
+"6fd2839e-0d02-5c1c-86c2-7bc802861f3a": [
+ d("夜间黑色背景上一串沿直线排列的亮点/灯光，整体像连续飞行或队列轨迹。", "可对应正文以先导碰撞体、飞船队列和陨石群作比喻的科幻语境。", "limited"),
+],
+"bb392128-29b4-5740-9f7d-db0c4944e354": [
+ d("橙红色火光背景中，一只手和粗链条形成剪影。", "作为威慑、冲突和反击的象征性材料，呼应正文关于善良与拒止边界的讨论。", "limited"),
+],
+"3a71ddf7-b0ea-58f6-8c08-a3881e2a65ac": [
+ d("影视剧近景，两名古装男性面对面交谈，底部有中文字幕‘我全都要’。", "只能确认影视语境；与正文关于数字遗产和网络遗忘兼得的比喻关系有限。", "inconclusive"),
+],
+"069ef4c4-d307-59ec-b72f-d6257ad68297": [
+ d("蓝色盒状金属字模/冲头成组排列，盒面标有不同尺寸数字。", "直接对应正文从模具、复制和模式重复解释 paradigm/pattern 的例子。", "consistent"),
+ d("浅色金属/石质方牌上有四个圆形和方孔样式的重复纹样。", "支持正文关于重复结构、模印和范式样式的讨论。", "limited"),
+ d("绿色锈蚀金属器物，表面排列多组圆形孔/纹饰。", "对应正文把器物形制、范铸/模压和重复图式联系起来的视觉语境。", "limited"),
+],
+"4f9b9ca8-8cc4-525e-8c76-8f8475881256": [
+ d("蓝色碗中摆放白色笋状食材。", "直接对应正文区分茭白与黑粉菌感染部位的食品例子。", "consistent"),
+ d("多穗玉米表面出现密集灰白/黑色膨大病变。", "直接对应正文说明黑粉菌感染玉米时会显现明显病征。", "consistent"),
+ d("剥开的玉米穗上有多处灰白色异常膨大斑块，旁边带叶片。", "支持正文关于植物病变、可食性与视觉识别差异的说明。", "consistent"),
+],
+"a3e5bc0f-d0e3-50da-850c-37beecf7f815": [
+ d("传统人物画风格的拟人化水豚/啮齿动物，穿蓝色官服并戴帽。", "对应正文用‘水豚君’等外观形象讨论安全感、安详和不抱怨的社会感知。", "limited"),
+],
+"a6cedaa3-5172-59a8-b995-ba479b01c8f2": [
+ d("透明圆柱容器中排列大量黑色椭圆小件，中央有红蓝相间柱体。", "与正文关于修心、规则和认识世界的抽象论述对应关系不清，仅保留附图记录。", "inconclusive"),
+],
+"abb4f396-a0c3-5462-ad17-0b3a6fd2aa28": [
+ d("天安门城楼和红色城墙，悬挂红旗与‘世界人民大团结万岁’等标语。", "直接对应正文讨论中国政治传统、人民与统治集团区分及世界人民团结。", "consistent"),
+],
+"f3ad35e8-3066-5e5c-8c65-e433848aa224": [
+ d("黑色圆环支架中间有十字刀刃/固定结构，呈劈柴工具产品图。", "直接对应正文推荐劈柴神器、固定木料和提高劈柴效率。", "consistent"),
+ d("户外木桩旁使用黑色圆环劈柴架，周围有木块和工具。", "对应正文关于工具高度、稳定性、场地和操作安全的说明。", "consistent"),
+ d("三联图展示电动钻头/劈柴钻头在苹果木、松木和杨木上的使用。", "直接对应正文提到电动劈柴钻头及不同木材的实际工具场景。", "consistent"),
+],
+"8e98b07e-b5f1-523b-9fcf-4882ceda59de": [
+ d("《圣斗士星矢》风格的卡片/海报，中心为紫色铠甲人物并配中文标题。", "直接对应正文用一辉等漫画角色说明传统/宗教像会学习攻击的难对付对手。", "consistent"),
+],
+"1bbde9dd-b5d7-50d1-a07c-35915898a82b": [
+ d("广告截图展示多辆大型绿色货运卡车，标题涉及‘百吨王’和改装。", "直接对应正文以大货车改货斗讨论非法改装与法律边界。", "consistent"),
+ d("广告截图展示蓝色重型货车及绿色货厢，突出超载/改装宣传语。", "支持正文关于货车结构、改装范围和一刀切法律规则的说明。", "limited"),
+ d("广告截图展示长红色集装箱货车，标题提及新疆卡车和山西卡车。", "对应正文把货车车厢、运输能力和改装争议放入现实场景。", "limited"),
+ d("桥下或道路旁多辆货车与装卸/运输场景，画面带广告按钮。", "支持正文讨论货车改装、道路运输和监管边界。", "limited"),
+],
+"b135816f-3eca-5597-9056-a923e93d17f3": [
+ d("广州市及周边地图，标注多家医院、医科大学附属医院和交通道路。", "直接对应正文讨论医院选址、中心城区布局和扩建空间限制。", "consistent"),
+ d("桂林/临桂一带地图，标注多家医院、道路和乡镇位置。", "支持正文比较医院扩建、区域医疗布局与交通可达性。", "consistent"),
+],
+"b96ba498-99bc-598f-bddb-ac696e80d523": [
+ d("橙色大型消防车/破拆车产品图，文字标注‘超大功率’和 2900W 多功能切割机。", "直接对应正文列举消防车装备、破拆能力和防疫围挡可被清除的论证。", "consistent"),
+ d("红色大型消防云梯/泵车产品图，展示多轴底盘和高位设备。", "支持正文说明消防车的重量、人员和装备能力。", "consistent"),
+ d("橙色电动/机动破拆锯广告，标注消防破拆、功率和适用场景。", "直接对应正文关于消防斧、电锯和破拆设备的材料。", "consistent"),
+ d("消防人员穿防护服使用链锯/破拆工具的宣传图。", "支持正文关于消防队独立处置障碍、进入现场和装备训练的语境。", "limited"),
+ d("电动破拆工具组广告，展示多种切割/扩张工具和‘防碎玻璃’等文字。", "对应正文关于防盗门、铁皮围挡和消防破拆能力的说明。", "consistent"),
+ d("蓝色施工围挡和‘腾退拆除现场 请您注意安全’告示，旁有垃圾桶和道路。", "对应正文讨论围挡、道路阻隔及消防通行的现实场景。", "limited"),
+],
+}
+
+def read(path: Path, delimiter: str = ","):
+    with path.open(encoding="utf-8-sig", newline="") as fh:
+        return list(csv.DictReader(fh, delimiter=delimiter))
+
+def main() -> None:
+    manifest = read(MANIFEST)
+    assert len(manifest) == 46
+    expected = {(aid, str(i)) for aid, values in DATA.items() for i in range(1, len(values) + 1)}
+    actual = {(r["id"], r["image_index"]) for r in manifest}
+    assert actual == expected, (len(actual), len(expected), sorted(expected - actual))
+    assert all(r["download_status"] == "success" for r in manifest)
+    fields = ["ordinal", "id", "title", "image_index", "local_file", "download_status", "visible_content", "relation_to_text", "changes_topic_judgment", "image_text_consistency", "limitations", "review_status", "review_date"]
+    out = []
+    for row in manifest:
+        visible, relation, consistency = DATA[row["id"]][int(row["image_index"]) - 1]
+        out.append({**{k: row.get(k, "") for k in fields}, "visible_content": visible, "relation_to_text": relation, "changes_topic_judgment": "no", "image_text_consistency": consistency, "limitations": COMMON, "review_status": "reviewed", "review_date": "2026-09-24"})
+    with REVIEW.open("w", encoding="utf-8-sig", newline="") as fh:
+        writer = csv.DictWriter(fh, fieldnames=fields, delimiter="\t"); writer.writeheader(); writer.writerows(out)
+    manual = {r["id"]: r for r in read(ROOT / "research-rebuild/data/print-topic-manual-decisions-v2.csv")}
+    decisions = []
+    for aid in DATA:
+        rows = [r for r in out if r["id"] == aid]; m = manual[aid]
+        decisions.append({"id": aid, "title": m["title"], "primary": m["primary_print_topic_code"], "secondary": m["secondary_print_topic_codes"], "status": m["classification_status"], "recommendation": "retain_confirmed; image review completed; no topic change", "basis": m["decision_basis"], "risk_note": f"Round121 visual review {len(rows)}/{len(rows)}; changes_topic_judgment=no; image_text_consistency={';'.join(r['image_text_consistency'] for r in rows)}; 图片仅记录可见内容，不替代OCR或外部事实核验。"})
+    decisions.sort(key=lambda r: r["id"])
+    with DECISIONS.open("w", encoding="utf-8-sig", newline="") as fh:
+        writer = csv.DictWriter(fh, fieldnames=["id", "title", "primary", "secondary", "status", "recommendation", "basis", "risk_note"], delimiter="\t"); writer.writeheader(); writer.writerows(decisions)
+    print(f"wrote {REVIEW} rows={len(out)} articles={len(DATA)}")
+    print(f"wrote {DECISIONS} rows={len(decisions)}")
+
+if __name__ == "__main__":
+    main()

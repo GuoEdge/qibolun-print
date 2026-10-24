@@ -1,0 +1,1217 @@
+{
+  "generated_at": "2026-09-26T13:15:51.867339+08:00",
+  "scope": "Read-only handoff inventory; no new semantic review; only handoff files written",
+  "corpus": {
+    "records": 4305,
+    "unique_ids": 4305,
+    "old_records": 4050,
+    "new_records": 255,
+    "raw_text_chars": 4890969,
+    "raw_text_utf16_units": 4890972,
+    "empty_raw_text": 2,
+    "published_min": "2017-09-08T09:09:04+08:00",
+    "published_max": "2026-09-21T19:00:00+08:00"
+  },
+  "manual_records": 4305,
+  "manual_status_counts": {
+    "manual_confirmed": 4213,
+    "manual_provisional": 92
+  },
+  "formal_status_counts": {
+    "manual_confirmed": 4213,
+    "manual_provisional": 92
+  },
+  "topic_counts": {
+    "A19": 38,
+    "A07": 362,
+    "A06": 552,
+    "A20": 101,
+    "A13": 182,
+    "A02": 147,
+    "A01": 370,
+    "A16": 130,
+    "A15": 176,
+    "A10": 275,
+    "A18": 98,
+    "A05": 311,
+    "A04": 265,
+    "A03": 401,
+    "A11": 159,
+    "A14": 43,
+    "A12": 221,
+    "A08": 313,
+    "A17": 47,
+    "A09": 81,
+    "A00": 28,
+    "A21": 5
+  },
+  "topics": [
+    {
+      "code": "A01",
+      "sort_order": "1",
+      "name": "心理主体与情绪劳动",
+      "description": "情绪、焦虑、孤独、自我修复、主体感与情绪劳动。",
+      "legacy_paper_routes": "14",
+      "allow_as_primary": "true",
+      "articles": 370,
+      "provisional": 11
+    },
+    {
+      "code": "A02",
+      "sort_order": "2",
+      "name": "性别身体与同意",
+      "description": "身体事实、性别角色、生育、性关系、许可与同意。",
+      "legacy_paper_routes": "16",
+      "allow_as_primary": "true",
+      "articles": 147,
+      "provisional": 3
+    },
+    {
+      "code": "A03",
+      "sort_order": "3",
+      "name": "认识论事实与论证",
+      "description": "事实、证据、定义、论证、批评与语言边界。",
+      "legacy_paper_routes": "09;17;20;21;22",
+      "allow_as_primary": "true",
+      "articles": 401,
+      "provisional": 7
+    },
+    {
+      "code": "A04",
+      "sort_order": "4",
+      "name": "教育学习与能力形成",
+      "description": "学校、教师、训练、读书、经验、能力与教育制度。",
+      "legacy_paper_routes": "08",
+      "allow_as_primary": "true",
+      "articles": 265,
+      "provisional": 7
+    },
+    {
+      "code": "A05",
+      "sort_order": "5",
+      "name": "家庭亲属与代际秩序",
+      "description": "父母、子女、兄弟姐妹、亲戚、抚养、放手、赡养与代际继承。",
+      "legacy_paper_routes": "04",
+      "allow_as_primary": "true",
+      "articles": 311,
+      "provisional": 3
+    },
+    {
+      "code": "A06",
+      "sort_order": "6",
+      "name": "亲密关系友人与婚恋",
+      "description": "恋人、配偶、朋友、同学、邻人及结合、相处、危机、分离。",
+      "legacy_paper_routes": "05",
+      "allow_as_primary": "true",
+      "articles": 552,
+      "provisional": 5
+    },
+    {
+      "code": "A07",
+      "sort_order": "7",
+      "name": "职场组织与合作",
+      "description": "共事、上下级、管理、服务、合同、组织协作与退出。",
+      "legacy_paper_routes": "06",
+      "allow_as_primary": "true",
+      "articles": 362,
+      "provisional": 8
+    },
+    {
+      "code": "A08",
+      "sort_order": "8",
+      "name": "财富劳动与市场",
+      "description": "财富获取、消费、借贷、劳动回报、市场交换与经济伦理。",
+      "legacy_paper_routes": "10",
+      "allow_as_primary": "true",
+      "articles": 313,
+      "provisional": 3
+    },
+    {
+      "code": "A09",
+      "sort_order": "9",
+      "name": "医疗疾病与照料",
+      "description": "疾病、治疗、医生、护理、照料和身体损伤的社会关系。",
+      "legacy_paper_routes": "25",
+      "allow_as_primary": "true",
+      "articles": 81,
+      "provisional": 3
+    },
+    {
+      "code": "A10",
+      "sort_order": "10",
+      "name": "国家法律犯罪与司法",
+      "description": "国家制度、公民义务、犯罪、刑罚、司法、警察和司法程序。",
+      "legacy_paper_routes": "12;26",
+      "allow_as_primary": "true",
+      "articles": 275,
+      "provisional": 3
+    },
+    {
+      "code": "A11",
+      "sort_order": "11",
+      "name": "宗教自然法与世俗论证",
+      "description": "信仰、神、祈祷、自然法、正义与世俗化解释。",
+      "legacy_paper_routes": "11",
+      "allow_as_primary": "true",
+      "articles": 159,
+      "provisional": 6
+    },
+    {
+      "code": "A12",
+      "sort_order": "12",
+      "name": "战争军事外交与大国秩序",
+      "description": "敌我、备战、交战、战略、外交、军备与国际秩序。",
+      "legacy_paper_routes": "27",
+      "allow_as_primary": "true",
+      "articles": 221,
+      "provisional": 3
+    },
+    {
+      "code": "A13",
+      "sort_order": "13",
+      "name": "技术工程与产业路径",
+      "description": "工程方案、技术路线、产业、制造、能源技术与基础设施。",
+      "legacy_paper_routes": "13",
+      "allow_as_primary": "true",
+      "articles": 182,
+      "provisional": 6
+    },
+    {
+      "code": "A14",
+      "sort_order": "14",
+      "name": "人工智能机器与未来秩序",
+      "description": "AI、机器学习、机器人、自动化及人与AI的使用、约束和共存。",
+      "legacy_paper_routes": "33",
+      "allow_as_primary": "true",
+      "articles": 43,
+      "provisional": 0
+    },
+    {
+      "code": "A15",
+      "sort_order": "15",
+      "name": "艺术审美与文化生产",
+      "description": "艺术、审美、创作、文化产业、传统与价值评价。",
+      "legacy_paper_routes": "28",
+      "allow_as_primary": "true",
+      "articles": 176,
+      "provisional": 8
+    },
+    {
+      "code": "A16",
+      "sort_order": "16",
+      "name": "媒体舆论与公共认知",
+      "description": "媒体、传播、舆论、公共形象、宣传与信息环境。",
+      "legacy_paper_routes": "29",
+      "allow_as_primary": "true",
+      "articles": 130,
+      "provisional": 5
+    },
+    {
+      "code": "A17",
+      "sort_order": "17",
+      "name": "民族族群与身份秩序",
+      "description": "民族、族群、身份、文化归属与民族关系。",
+      "legacy_paper_routes": "31",
+      "allow_as_primary": "true",
+      "articles": 47,
+      "provisional": 1
+    },
+    {
+      "code": "A18",
+      "sort_order": "18",
+      "name": "生态能源与自然科学",
+      "description": "生灵、动物、环境、气候、生态、自然资源与科学认识。",
+      "legacy_paper_routes": "32",
+      "allow_as_primary": "true",
+      "articles": 98,
+      "provisional": 3
+    },
+    {
+      "code": "A19",
+      "sort_order": "19",
+      "name": "死亡祭祀与纪念",
+      "description": "死亡、丧葬、悼亡、祭祀、祖先、纪念与共同记忆。",
+      "legacy_paper_routes": "30",
+      "allow_as_primary": "true",
+      "articles": 38,
+      "provisional": 0
+    },
+    {
+      "code": "A20",
+      "sort_order": "20",
+      "name": "历史文明与历时演变",
+      "description": "历史经验、文明结构、时代变化与跨时期轨迹。",
+      "legacy_paper_routes": "13;15;17",
+      "allow_as_primary": "true",
+      "articles": 101,
+      "provisional": 4
+    },
+    {
+      "code": "A21",
+      "sort_order": "21",
+      "name": "体育、运动与竞技伦理",
+      "description": "群众与专业体育、运动训练、赛事制度及竞技对健康、伦理和社会组织的影响；须以体育实践为正文中心。",
+      "legacy_paper_routes": "",
+      "allow_as_primary": "true",
+      "articles": 5,
+      "provisional": 0
+    },
+    {
+      "code": "A00",
+      "sort_order": "0",
+      "name": "跨域行动语法与待审",
+      "description": "仅用于跨域中心无法可靠拆分、材料不足，或现有专题表确无合适入口的边界案例；必须保留待审状态并写明原因。",
+      "legacy_paper_routes": "00;18;19;23;24",
+      "allow_as_primary": "true",
+      "articles": 28,
+      "provisional": 3
+    }
+  ],
+  "new_status_counts": {
+    "manual_confirmed": 255
+  },
+  "queue_records": 92,
+  "queue_equals_provisional": true,
+  "manual_formal_mismatches": [],
+  "structural_errors": [],
+  "pending_by_image_status": {
+    "complete": 50,
+    "no_image_inventory": 37,
+    "pending": 5
+  },
+  "pending_by_article_decision": {
+    "retain_article": 47,
+    "": 37,
+    "exclude_article_candidate": 3,
+    "retain_article_pending_image_review": 5
+  },
+  "pending_without_157_164": [
+    {
+      "id": "d60f14af-095b-5c1c-8ddb-65b97894e53d",
+      "title": "婉拒"
+    },
+    {
+      "id": "e8873042-d451-5335-87d7-638f1926a64a",
+      "title": "刻奇"
+    },
+    {
+      "id": "913f1fd9-3d73-546a-b924-70174ef27403",
+      "title": "普通不普通"
+    },
+    {
+      "id": "e108515f-375c-53c9-8f6d-1ee2c16b275a",
+      "title": "最大成长速度"
+    },
+    {
+      "id": "beb62240-efcb-50cb-ac99-b2ef1dc53fbf",
+      "title": "穿越幽谷"
+    },
+    {
+      "id": "c5354fb0-7345-5864-8522-2c0cfdad3c2e",
+      "title": "战马阉割"
+    },
+    {
+      "id": "9b6db870-bac2-5741-b015-bd793dcd6dbe",
+      "title": "不羡慕"
+    },
+    {
+      "id": "41c47afa-ca71-5905-924e-bc87c5a24f35",
+      "title": "陌生宗教"
+    },
+    {
+      "id": "a147c2b8-a54d-57cc-9558-3449a8dce120",
+      "title": "拼命解决"
+    },
+    {
+      "id": "cdf1315e-9753-550f-8e55-651c06dfa32f",
+      "title": "没伦理"
+    },
+    {
+      "id": "c0a13aa7-6476-5774-b661-e424f933d513",
+      "title": "爱语"
+    },
+    {
+      "id": "85aecfc3-f160-531a-8404-42441717edd4",
+      "title": "行为艺术"
+    },
+    {
+      "id": "7d9d6244-95ea-553f-b951-089dfb31ce42",
+      "title": "相由言生"
+    },
+    {
+      "id": "1015117d-47f5-5e6d-8648-373790bd96b6",
+      "title": "坚持"
+    },
+    {
+      "id": "45874a32-c9d4-5cac-838d-26096e36a328",
+      "title": "知行合一"
+    },
+    {
+      "id": "5316551a-199f-5363-8436-1c4d4a72bbc2",
+      "title": "酒神与天神"
+    },
+    {
+      "id": "02b823b2-64d3-5356-bb11-e8c089c72013",
+      "title": "中医灭绝"
+    },
+    {
+      "id": "6cab9392-d433-535d-a891-464294858932",
+      "title": "学生官僚"
+    }
+  ],
+  "rounds": [
+    {
+      "round": 157,
+      "selected": 12,
+      "fulltext": 12,
+      "body_chars": 29076,
+      "image_articles_in_selection": 12,
+      "selection_fulltext_id_order_equal": true,
+      "selection_fulltext_lengths_equal": true,
+      "in_manual": 12,
+      "manual_status_counts": {
+        "manual_provisional": 12
+      },
+      "decision_file_exists": true,
+      "decision_rows": 12,
+      "decision_id_order_equal": true,
+      "decision_manual_mismatches": []
+    },
+    {
+      "round": 158,
+      "selected": 21,
+      "fulltext": 21,
+      "body_chars": 28202,
+      "image_articles_in_selection": 21,
+      "selection_fulltext_id_order_equal": true,
+      "selection_fulltext_lengths_equal": true,
+      "in_manual": 21,
+      "manual_status_counts": {
+        "manual_provisional": 21
+      },
+      "decision_file_exists": true,
+      "decision_rows": 21,
+      "decision_id_order_equal": true,
+      "decision_manual_mismatches": []
+    },
+    {
+      "round": 159,
+      "selected": 13,
+      "fulltext": 13,
+      "body_chars": 24634,
+      "image_articles_in_selection": 13,
+      "selection_fulltext_id_order_equal": true,
+      "selection_fulltext_lengths_equal": true,
+      "in_manual": 13,
+      "manual_status_counts": {
+        "manual_provisional": 13
+      },
+      "decision_file_exists": true,
+      "decision_rows": 13,
+      "decision_id_order_equal": true,
+      "decision_manual_mismatches": []
+    },
+    {
+      "round": 160,
+      "selected": 7,
+      "fulltext": 7,
+      "body_chars": 21507,
+      "image_articles_in_selection": 7,
+      "selection_fulltext_id_order_equal": true,
+      "selection_fulltext_lengths_equal": true,
+      "in_manual": 7,
+      "manual_status_counts": {
+        "manual_provisional": 7
+      },
+      "decision_file_exists": true,
+      "decision_rows": 7,
+      "decision_id_order_equal": true,
+      "decision_manual_mismatches": []
+    },
+    {
+      "round": 161,
+      "selected": 6,
+      "fulltext": 6,
+      "body_chars": 27534,
+      "image_articles_in_selection": 0,
+      "selection_fulltext_id_order_equal": true,
+      "selection_fulltext_lengths_equal": true,
+      "in_manual": 6,
+      "manual_status_counts": {
+        "manual_provisional": 6
+      },
+      "decision_file_exists": false,
+      "decision_rows": 0,
+      "decision_id_order_equal": null,
+      "decision_manual_mismatches": []
+    },
+    {
+      "round": 162,
+      "selected": 7,
+      "fulltext": 7,
+      "body_chars": 28868,
+      "image_articles_in_selection": 0,
+      "selection_fulltext_id_order_equal": true,
+      "selection_fulltext_lengths_equal": true,
+      "in_manual": 7,
+      "manual_status_counts": {
+        "manual_provisional": 7
+      },
+      "decision_file_exists": false,
+      "decision_rows": 0,
+      "decision_id_order_equal": null,
+      "decision_manual_mismatches": []
+    },
+    {
+      "round": 163,
+      "selected": 7,
+      "fulltext": 7,
+      "body_chars": 19801,
+      "image_articles_in_selection": 0,
+      "selection_fulltext_id_order_equal": true,
+      "selection_fulltext_lengths_equal": true,
+      "in_manual": 7,
+      "manual_status_counts": {
+        "manual_provisional": 7
+      },
+      "decision_file_exists": false,
+      "decision_rows": 0,
+      "decision_id_order_equal": null,
+      "decision_manual_mismatches": []
+    },
+    {
+      "round": 164,
+      "selected": 1,
+      "fulltext": 1,
+      "body_chars": 10454,
+      "image_articles_in_selection": 0,
+      "selection_fulltext_id_order_equal": true,
+      "selection_fulltext_lengths_equal": true,
+      "in_manual": 1,
+      "manual_status_counts": {
+        "manual_provisional": 1
+      },
+      "decision_file_exists": false,
+      "decision_rows": 0,
+      "decision_id_order_equal": null,
+      "decision_manual_mismatches": []
+    }
+  ],
+  "selected_157_164_unique": 74,
+  "image_articles": 254,
+  "image_nodes": 765,
+  "image_reviewed_nodes": 651,
+  "image_failed_nodes": 6,
+  "image_article_status_counts": {
+    "complete": 203,
+    "pending": 50,
+    "partial": 1
+  },
+  "image_article_decision_counts": {
+    "retain_article": 197,
+    "retain_article_pending_image_review": 50,
+    "exclude_article_candidate": 6,
+    "retain_article_source_incomplete": 1
+  },
+  "image_status_by_classification": {
+    "complete/manual_confirmed": 153,
+    "complete/manual_provisional": 50,
+    "pending/manual_confirmed": 45,
+    "pending/manual_provisional": 5,
+    "partial/manual_confirmed": 1
+  },
+  "image_exception_articles": [
+    {
+      "ordinal": "2319",
+      "id": "3a71ddf7-b0ea-58f6-8c08-a3881e2a65ac",
+      "title": "兼得",
+      "text_chars": "45",
+      "image_count": "1",
+      "reviewed_image_count": "1",
+      "failed_image_count": "0",
+      "image_review_status": "complete",
+      "article_decision": "exclude_article_candidate",
+      "manual_image_decision": "",
+      "image_decision": "omit_images",
+      "confidence": "manual_low_content_audit",
+      "rationale": "正文是“数字遗产”与“网络遗忘”可兼得的短句论断；唯一影视截图只表达“我全都要”比喻，不增加事实或论证。内容过薄，图片可删，文章列为剔除候选。"
+    },
+    {
+      "ordinal": "2983",
+      "id": "e108515f-375c-53c9-8f6d-1ee2c16b275a",
+      "title": "最大成长速度",
+      "text_chars": "0",
+      "image_count": "1",
+      "reviewed_image_count": "1",
+      "failed_image_count": "0",
+      "image_review_status": "complete",
+      "article_decision": "exclude_article_candidate",
+      "manual_image_decision": "",
+      "image_decision": "omit_images",
+      "confidence": "manual_low_content_audit",
+      "rationale": "正文为空；唯一图片是夜间影视片段，字幕为“兽医—动物”，无法重建题名所指的成长速度问题或任何论证。文章与图片均不足以形成可研究内容。"
+    },
+    {
+      "ordinal": "3115",
+      "id": "c5354fb0-7345-5864-8522-2c0cfdad3c2e",
+      "title": "战马阉割",
+      "text_chars": "0",
+      "image_count": "7",
+      "reviewed_image_count": "7",
+      "failed_image_count": "0",
+      "image_review_status": "complete",
+      "article_decision": "exclude_article_candidate",
+      "manual_image_decision": "",
+      "image_decision": "archive_images_only",
+      "confidence": "manual_low_content_audit",
+      "rationale": "正文为空；7 张图均为马匹绘画/版画，未显示阉割、年代、战场或可靠出处。图片只能证明有马的视觉素材，不能支持“战马阉割”主题，保留也只能作为原始档案。"
+    },
+    {
+      "ordinal": "3721",
+      "id": "e122a811-8341-594f-bce6-b50983b7e485",
+      "title": "活成这样",
+      "text_chars": "81",
+      "image_count": "1",
+      "reviewed_image_count": "1",
+      "failed_image_count": "0",
+      "image_review_status": "complete",
+      "article_decision": "exclude_article_candidate",
+      "manual_image_decision": "",
+      "image_decision": "omit_images",
+      "confidence": "manual_low_content_audit",
+      "rationale": "正文只是兰迪·鲍许《最后一课》视频标题/链接，未给出观点、摘要或论证；图片仅为人物资料肖像，不能补足文章内容。文章和图片均不足，列为剔除候选。"
+    },
+    {
+      "ordinal": "3820",
+      "id": "e266c1dd-a142-51f3-a1c7-661ec21e4585",
+      "title": "各行其道",
+      "text_chars": "64",
+      "image_count": "2",
+      "reviewed_image_count": "2",
+      "failed_image_count": "0",
+      "image_review_status": "complete",
+      "article_decision": "exclude_article_candidate",
+      "manual_image_decision": "retain_article_image_omit",
+      "image_decision": "archive_and_investigate_mismatch",
+      "confidence": "manual_low_content_audit",
+      "rationale": "两张图实际为公园道路/安全活动区的彩色路径标注（“会走丢”“会抓不下来”“唯一的安全活动区”等），与正文“猫眼中的出门”及猫段子完全不符；图像既不能补足正文，也提示原始图文关联可能错误。主研究剔除，原图保留供来源关联排查。"
+    },
+    {
+      "ordinal": "3926",
+      "id": "5a32a445-202b-593a-a880-21c3716cd9cc",
+      "title": "5G",
+      "text_chars": "19154",
+      "image_count": "21",
+      "reviewed_image_count": "15",
+      "failed_image_count": "6",
+      "image_review_status": "partial",
+      "article_decision": "retain_article_source_incomplete",
+      "manual_image_decision": "retain_article_source_incomplete",
+      "image_decision": "source_incomplete_review_valid_images_only",
+      "confidence": "source_incomplete",
+      "rationale": "正文存在且不能因部分图片失效而删除文章；失效图片保留为源材料不完整，不能用邻近缩略图替代。"
+    },
+    {
+      "ordinal": "3959",
+      "id": "c6a02357-79be-54da-895e-0a7a9b76dc93",
+      "title": "基督教与食血",
+      "text_chars": "39",
+      "image_count": "8",
+      "reviewed_image_count": "8",
+      "failed_image_count": "0",
+      "image_review_status": "complete",
+      "article_decision": "exclude_article_candidate",
+      "manual_image_decision": "",
+      "image_decision": "archive_images_only",
+      "confidence": "manual_low_content_audit",
+      "rationale": "正文只有一句，规范问题悬置为“能不能吃不好说”，事实主张“老牌基督教国家都在吃”完全依赖 8 张血肠/黑布丁图片及截图。图片是核心证据但来源未核验，整体仍不足以作为正文研究条目；建议从主研究集剔除，原文和图片仅存档。"
+    }
+  ],
+  "sample_records": 888,
+  "sample_decisions": {
+    "confirmed": 874,
+    "needs_image_review": 10,
+    "uncertain": 4
+  },
+  "sample_reviewers": {
+    "main-thread+round134-text-reread": 3,
+    "main-thread": 720,
+    "main-thread+image-review": 27,
+    "main-thread+image-review+round122-reread+round123-text-reread+round136-text-reread": 1,
+    "main-thread+round121-reread": 3,
+    "main-thread+round123-text-reread": 4,
+    "main-thread+round148-single-pass+round152-reread": 3,
+    "main-thread+round150-image-review": 12,
+    "main-thread+independent-review": 28,
+    "main-thread+image-review+reread": 4,
+    "main-thread+round124-text-reread": 11,
+    "main-thread+round125-text-reread": 16,
+    "main-thread+round129-text-reread+round129-adjudication": 9,
+    "main-thread+round127-text-reread+round127-adjudication": 1,
+    "main-thread+independent-review+round136-text-reread+image-review": 2,
+    "main-thread+image-review+round122-reread": 5,
+    "main-thread+independent-review+round156-reread": 11,
+    "main-thread+independent-review+round155-reread": 10,
+    "main-thread+round144-single-pass": 1,
+    "main-thread+round130-text-reread": 6,
+    "main-thread+independent-review+round154-reread": 3,
+    "main-thread+round128-text-reread+round128-adjudication": 4,
+    "main-thread+round144-single-pass+round152-reread": 1,
+    "main-thread+round143-single-pass+round152-reread": 1,
+    "main-thread+round126-text-reread+round126-adjudication": 1,
+    "main-thread+independent-review+round140-image-review+round154-reread": 1
+  },
+  "independent_review_records": 35,
+  "independent_review_unique_ids": 35,
+  "independent_review_conclusions": {
+    "reviewed_needs_revision": 35
+  },
+  "native_summary_records": 4305,
+  "native_current_local_status": {
+    "unassigned": 616,
+    "confirmed": 3689
+  },
+  "native_current_local_missing_ids": [],
+  "native_current_local_multi_category": 237,
+  "print_index_records": 4305,
+  "print_index_unique_ids": 4305,
+  "print_index_headers": [
+    "source_ordinal",
+    "id",
+    "title",
+    "published_at_raw",
+    "published_date",
+    "updated_at_raw",
+    "updated_date",
+    "url",
+    "question",
+    "body_char_count",
+    "source_body_state",
+    "primary_print_topic",
+    "primary_print_topic_name",
+    "secondary_print_topics",
+    "secondary_print_topic_names",
+    "candidate_primary_print_topics",
+    "primary_topic_rule_ids",
+    "candidate_topic_rule_ids",
+    "primary_topic_status",
+    "primary_topic_basis",
+    "primary_topic_note",
+    "primary_topic_candidate_score",
+    "primary_topic_tie_count",
+    "classification_status",
+    "reading_status",
+    "evidence_basis",
+    "theme_primary",
+    "legacy_theme_primary",
+    "theme_secondary",
+    "theme_all",
+    "concept_primary",
+    "concept_tags",
+    "theme_membership_count",
+    "theme_source",
+    "theme_confidence",
+    "theme_audit_status",
+    "theme_first_pass_status",
+    "theme_top_score",
+    "theme_tie_count",
+    "theme_matched_cues",
+    "source_version",
+    "official_assignment_status",
+    "native_assignment_status",
+    "official_category_count",
+    "official_leaf_count",
+    "official_category_names",
+    "official_category_paths",
+    "native_object_paths",
+    "native_practice_paths",
+    "native_snapshot_id",
+    "official_root_names",
+    "official_native_kinds",
+    "official_match_methods",
+    "official_match_confidences",
+    "official_crosswalk_statuses",
+    "official_crosswalk_review_decisions",
+    "official_snapshot_ids",
+    "deepseek_available",
+    "deepseek_batch_id",
+    "deepseek_reading_status",
+    "deepseek_full_text_checked",
+    "deepseek_text_coverage_status",
+    "deepseek_image_count",
+    "deepseek_image_checked",
+    "deepseek_evidence_ref_count",
+    "deepseek_main_claim_count",
+    "deepseek_unresolved_question_count",
+    "deepseek_record_line",
+    "independent_review_status",
+    "independent_review_date",
+    "independent_reviewer",
+    "independent_review_packet",
+    "classification_source",
+    "evidence_state",
+    "print_index_status",
+    "provenance_note"
+  ],
+  "concept_tag_counts": {
+    "选择与自由": 2382,
+    "责任与后果": 2635,
+    "成本与总账": 2545,
+    "信用与信任": 1153,
+    "净输出与不掠夺": 360,
+    "照料与家庭": 1139,
+    "财富与市场": 1114,
+    "能力与学习": 2666,
+    "劳动与组织": 1346,
+    "爱与回应": 1410,
+    "事实与证据": 1673,
+    "文明与历史": 1154,
+    "定义与达意": 1924,
+    "心理与主体": 1719,
+    "技术与工程": 1142,
+    "边界与许可": 1384,
+    "权力与异议": 1221,
+    "性别与身体": 533,
+    "法律与秩序": 1300,
+    "生态与自然": 410,
+    "宗教与自然法": 367,
+    "民族与身份": 222,
+    "人工智能与机器": 133
+  },
+  "concept_zero_records": 0,
+  "concept_average_tags": 6.952845528455285,
+  "first_pass_manifest_batches": 609,
+  "first_pass_missing": [
+    {
+      "id": "e76102ee-ccaa-52ce-9f89-963d7ff78f09",
+      "title": "无赢的宇宙"
+    },
+    {
+      "id": "3bbdb46c-6320-5796-8650-9d1b2ce336c7",
+      "title": "吹倒屋"
+    },
+    {
+      "id": "720a6074-5ee5-5efe-8383-97fb31a49682",
+      "title": "见机行事"
+    },
+    {
+      "id": "dce8f994-09c1-5f06-bf02-ec18e9fa3823",
+      "title": "猫咬人"
+    },
+    {
+      "id": "63aa2f41-076f-58b7-af53-bff5fe9e5f24",
+      "title": "勤行"
+    },
+    {
+      "id": "e73c63c4-c40f-5ebb-bc24-6d1ce9863a8f",
+      "title": "授时郎"
+    },
+    {
+      "id": "b3043594-20ef-5b8b-8f5b-5c7f676c207e",
+      "title": "小骇客"
+    },
+    {
+      "id": "ad542f73-5ec1-5efe-9163-05d5e07ddaaf",
+      "title": "无章办事"
+    },
+    {
+      "id": "423cdf0a-6e07-5795-87bf-43bbb0bc6451",
+      "title": "老宋"
+    }
+  ],
+  "stored_classification_summary": {
+    "generated_at": "2026-09-25T21:41:41.133909+08:00",
+    "corpus_records": 4305,
+    "unique_ids": 4305,
+    "duplicate_ids": 0,
+    "primary_topic_counts": {
+      "A19": 38,
+      "A07": 362,
+      "A06": 552,
+      "A20": 101,
+      "A13": 182,
+      "A02": 147,
+      "A01": 370,
+      "A16": 130,
+      "A15": 176,
+      "A10": 275,
+      "A18": 98,
+      "A05": 311,
+      "A04": 265,
+      "A03": 401,
+      "A11": 159,
+      "A14": 43,
+      "A12": 221,
+      "A08": 313,
+      "A17": 47,
+      "A09": 81,
+      "A00": 28,
+      "A21": 5
+    },
+    "secondary_topic_memberships": {
+      "A08": 657,
+      "A05": 332,
+      "A06": 488,
+      "A01": 982,
+      "A03": 1100,
+      "A11": 355,
+      "A17": 151,
+      "A20": 438,
+      "A12": 260,
+      "A10": 630,
+      "A18": 155,
+      "A07": 627,
+      "A04": 473,
+      "A02": 290,
+      "A16": 266,
+      "A13": 262,
+      "A15": 221,
+      "A09": 177,
+      "A14": 64,
+      "A19": 28,
+      "A00": 86,
+      "A21": 7
+    },
+    "classification_status_counts": {
+      "manual_confirmed": 4213,
+      "manual_provisional": 92
+    },
+    "new_article_status_counts": {
+      "manual_confirmed": 255
+    },
+    "new_articles": 255,
+    "new_articles_with_first_pass": 246,
+    "new_articles_without_first_pass": 9,
+    "a00_count": 28,
+    "secondary_overlap_errors": 0,
+    "native_coverage": {
+      "generatedAt": "2026-09-21T15:05:55.223612+00:00",
+      "corpusPath": "D:\\岐伯论\\sooon-q9adg-articles-v2.jsonl",
+      "corpusRecords": 4305,
+      "rawSnapshot": "native-category-pages-20260921-225546.json",
+      "nativeTreeNodes": 200,
+      "nativeObjectNodes": 48,
+      "nativePracticeNodes": 152,
+      "nativeCategoriesWithArticles": 140,
+      "nativePages": 233,
+      "nativeUniqueArticleInventory": 3698,
+      "nativeLocalMatchedArticles": 3689,
+      "nativeLocalMatchRatio": 0.856911,
+      "nativeLocalWithLeafCategory": 3689,
+      "nativeLocalWithLeafRatio": 0.856911,
+      "nativeUnmatchedLocalArticles": 616,
+      "officialOnlyArticles": 9,
+      "nativeMultiCategoryLocalArticles": 238,
+      "nativeDuplicateEdgeCount": 430,
+      "oldThemePrimaryCounts": {
+        "选择与自由": 326,
+        "能力与学习": 948,
+        "爱与回应": 55,
+        "事实与证据": 1495,
+        "定义与达意": 1112,
+        "责任与后果": 132,
+        "成本与总账": 49,
+        "财富与市场": 24,
+        "信用与信任": 10,
+        "技术与工程": 6,
+        "权力与异议": 5,
+        "照料与家庭": 32,
+        "劳动与组织": 9,
+        "边界与许可": 11,
+        "": 13,
+        "生态与自然": 8,
+        "心理与主体": 20,
+        "法律与秩序": 2,
+        "性别与身体": 19,
+        "文明与历史": 22,
+        "宗教与自然法": 2,
+        "人工智能与机器": 5
+      },
+      "rootApiEdgeCounts": {
+        "与自己": 1411,
+        "与其它": 227,
+        "与亲族": 507,
+        "与社会": 1033,
+        "与合作者": 390,
+        "与自然": 119,
+        "与友人": 441
+      },
+      "rootLocalEdgeCounts": {
+        "与自己": 1403,
+        "与其它": 225,
+        "与亲族": 505,
+        "与社会": 1030,
+        "与合作者": 390,
+        "与自然": 119,
+        "与友人": 441
+      },
+      "outputs": [
+        "D:\\岐伯论\\research-rebuild\\reports\\native-article-category-edges.csv",
+        "D:\\岐伯论\\research-rebuild\\reports\\native-article-category-summary.csv",
+        "D:\\岐伯论\\research-rebuild\\reports\\native-category-summary.csv"
+      ],
+      "note": "source_count is the unique item count returned for the category in this snapshot; API payload exposes nextCursor but no separate sourceCount field."
+    },
+    "review_queue_records": 92,
+    "outputs": [
+      "D:\\岐伯论\\research-rebuild\\reports\\article-classification-v2.csv",
+      "D:\\岐伯论\\research-rebuild\\reports\\article-classification-v2.jsonl",
+      "D:\\岐伯论\\research-rebuild\\reports\\article-classification-v2-summary.json",
+      "D:\\岐伯论\\research-rebuild\\reports\\article-classification-v2-summary.md",
+      "D:\\岐伯论\\research-rebuild\\reports\\by-print-topic"
+    ],
+    "method": "A主专题由人工决定、官方路径与正文/初读证据、旧论文路由、23概念按优先级推导；候选和待审状态不伪装成正式定稿。"
+  },
+  "stored_image_summary": {
+    "article_count": 254,
+    "image_count": 765,
+    "reviewed_image_count": 651,
+    "failed_image_count": 6,
+    "article_decision_counts": {
+      "retain_article": 197,
+      "retain_article_pending_image_review": 50,
+      "exclude_article_candidate": 6,
+      "retain_article_source_incomplete": 1
+    },
+    "manual_image_decision_counts": {
+      "retain_body_classification_image_reviewed": 14,
+      "retain_article_image_omit": 6,
+      "retain_article_image_required": 17,
+      "retain_article_image_required_or_selected": 17,
+      "retain_article_image_optional": 20,
+      "retain_existing_classification": 12,
+      "retain_article_source_incomplete": 1
+    },
+    "image_decision_counts": {
+      "optional_or_keep_selected": 141,
+      "keep_selected_images": 28,
+      "omit_unless_illustration_needed": 18,
+      "review_required": 50,
+      "keep_if_space_allows": 2,
+      "keep_3_architecture_omit_1_unrelated": 1,
+      "omit_images": 6,
+      "omit_or_keep_as_illustration": 1,
+      "keep_image_1_omit_image_2": 1,
+      "keep_and_ocr": 1,
+      "archive_images_only": 2,
+      "omit_or_keep_as_character_reference": 1,
+      "archive_and_investigate_mismatch": 1,
+      "source_incomplete_review_valid_images_only": 1
+    },
+    "image_review_status_counts": {
+      "complete": 203,
+      "pending": 50,
+      "partial": 1
+    },
+    "low_content_audit_source": "research-rebuild\\reports\\image-article-content-audit-round138.tsv",
+    "raw_corpus_unchanged": true
+  },
+  "stored_provisional_reasons": {
+    "provisional_records": 140,
+    "image_gate_records": 58,
+    "all_images_reviewed_records": 23,
+    "no_inventory_image_records": 59,
+    "source_incomplete_records": 87,
+    "boundary_review_records": 27,
+    "legacy_reason_records": 41,
+    "generated_at": "2026-09-24",
+    "method": "flags are deliberately overlapping triage signals; no classification status is changed"
+  },
+  "stored_firstpass_validation_summary": {
+    "generated_at": "2026-09-25T21:16:22+0800",
+    "batches_total": 609,
+    "batches_passed": 609,
+    "batches_failed": 0,
+    "batches_missing": 0,
+    "articles_in_passed_batches": 4296,
+    "reading_status_counts": {
+      "read": 4041,
+      "needs_reread": 255
+    },
+    "elapsed_sec": 1.84,
+    "result": "PASS"
+  },
+  "inputs": {
+    "sooon-q9adg-articles-v2.jsonl": {
+      "bytes": 61951820,
+      "sha256": "cdc9c271309e1d71d9708889a3a31f4777e0c339ea54c3753521894afdb8357d",
+      "modified_at": "2026-09-21T22:46:28.884987+08:00"
+    },
+    "sooon-q9adg-articles.jsonl": {
+      "bytes": 58362148,
+      "sha256": "5c609f734dbd7ae27c96467c9d2aaff17c12ef2eea500b222a7314779ed9b06e",
+      "modified_at": "2026-07-17T18:01:09.149757+08:00"
+    },
+    "research-rebuild\\data\\print-topic-manual-decisions-v2.csv": {
+      "bytes": 1597150,
+      "sha256": "ca023066eade77bac412515a631d93cb89138d3a35dcaac7a93c28bff88f9ecc",
+      "modified_at": "2026-09-25T21:41:16.684585+08:00"
+    },
+    "research-rebuild\\reports\\article-classification-v2.csv": {
+      "bytes": 7722050,
+      "sha256": "dcf54262772643c4a9d365763afb373580e242947f619ea2e39ec0986c070fd9",
+      "modified_at": "2026-09-25T21:41:40.993101+08:00"
+    },
+    "research-rebuild\\data\\print-topic-registry-v2.csv": {
+      "bytes": 2852,
+      "sha256": "4bfb25623c1df4f6357fde1510eae592ef9a7b5db7e0b9422cdd21b61a501432",
+      "modified_at": "2026-09-23T19:51:15.055283+08:00"
+    },
+    "research-rebuild\\reports\\live-manual-classification-queue-v2.csv": {
+      "bytes": 35236,
+      "sha256": "140d1c4ae07c9d006c92e60782d63e25feb1bb17227c382ec0c2fde805de24a1",
+      "modified_at": "2026-09-25T21:41:47.383030+08:00"
+    },
+    "research-rebuild\\reports\\image-article-audit-v1.csv": {
+      "bytes": 59530,
+      "sha256": "18b9ec1105f3aab2fb6372405b0e54074fa9d447cbb8fe6aaccfc84b56197a4b",
+      "modified_at": "2026-09-25T20:33:35.626263+08:00"
+    },
+    "research-rebuild\\reports\\print-topic-audit-sample-v2.csv": {
+      "bytes": 3341382,
+      "sha256": "d4254abddb9fed45a59bb0e75e5b0d7cfc5abe2955c4709de165c14ef1a8c363",
+      "modified_at": "2026-09-25T21:41:45.280070+08:00"
+    },
+    "research-rebuild\\reports\\native-article-category-summary.csv": {
+      "bytes": 952679,
+      "sha256": "0bbee80957b3fd25f6285822ee42b218c23d87035fb84b10a2b5273ca643e567",
+      "modified_at": "2026-09-21T23:05:55.214079+08:00"
+    },
+    "research-rebuild\\reports\\print-index\\print-research-index.csv": {
+      "bytes": 7437836,
+      "sha256": "3f17bb9299f99ff2c7f309a59c10d63634f4f12e6b5210cd9cb70323967b1a11",
+      "modified_at": "2026-09-25T21:41:43.066203+08:00"
+    },
+    "research-rebuild\\reports\\live-manual-batch-selection-v2-round157.csv": {
+      "bytes": 5808,
+      "sha256": "a6c7b22768c4edffeb2431996c5981eaefe5ce6992b632b1dd4b3a47de6e3dcb",
+      "modified_at": "2026-09-25T21:25:14.764260+08:00"
+    },
+    "research-rebuild\\reports\\round157-fulltext.json": {
+      "bytes": 88873,
+      "sha256": "5b71a14621d137f59227976c727615bbd73b6dc77e7dc82f59ff77c91fa26374",
+      "modified_at": "2026-09-25T21:25:52.122390+08:00"
+    },
+    "research-rebuild\\reports\\round157-decisions.tsv": {
+      "bytes": 4121,
+      "sha256": "5b4c6d4cbbd8df0ce5254a27df8e8e769c3c8c169c8faeb522c093250d76281e",
+      "modified_at": "2026-09-26T00:39:08.604881+08:00"
+    },
+    "research-rebuild\\reports\\live-manual-batch-selection-v2-round158.csv": {
+      "bytes": 9791,
+      "sha256": "241da039b8a7c1ab7f7f781099132740219052499372a3d117c9d1fc378df19b",
+      "modified_at": "2026-09-25T21:25:14.764260+08:00"
+    },
+    "research-rebuild\\reports\\round158-fulltext.json": {
+      "bytes": 90811,
+      "sha256": "1b0ff18a063e003e1f2c4b104d704f5ba7e622d3e2f20ce6c9e1f2fb9ac9f5ab",
+      "modified_at": "2026-09-25T21:25:52.558094+08:00"
+    },
+    "research-rebuild\\reports\\round158-decisions.tsv": {
+      "bytes": 7278,
+      "sha256": "77986192f9298e008d5d9562efae6c327a18eecda6888149b25e15962fb252d0",
+      "modified_at": "2026-09-26T00:39:08.605883+08:00"
+    },
+    "research-rebuild\\reports\\live-manual-batch-selection-v2-round159.csv": {
+      "bytes": 6127,
+      "sha256": "91fadc5ee703a7641c4d55df33cb0aa294ecb0c035fad1c0a89e60fbdda07139",
+      "modified_at": "2026-09-25T21:25:14.765449+08:00"
+    },
+    "research-rebuild\\reports\\round159-fulltext.json": {
+      "bytes": 77425,
+      "sha256": "d1b96b22f78e460e41095c3072b8560898aca9b7600425757101695f4f751aa7",
+      "modified_at": "2026-09-25T21:25:52.995916+08:00"
+    },
+    "research-rebuild\\reports\\round159-decisions.tsv": {
+      "bytes": 4201,
+      "sha256": "7006a5a78411b5ebbd91672ac93ecc72956314a220e990d77b5c48deea80da40",
+      "modified_at": "2026-09-26T00:39:08.605883+08:00"
+    },
+    "research-rebuild\\reports\\live-manual-batch-selection-v2-round160.csv": {
+      "bytes": 3298,
+      "sha256": "ee58c18cef1a4b7b3fa3ff095e38c2f077f0ac4de58796fdcdb293dee9cc6a06",
+      "modified_at": "2026-09-25T21:25:14.766448+08:00"
+    },
+    "research-rebuild\\reports\\round160-fulltext.json": {
+      "bytes": 64725,
+      "sha256": "c34d2ce8248220efdb8032d694d8d7ba91af016cbf6934364a23b7f7d2413b1a",
+      "modified_at": "2026-09-25T21:25:53.436382+08:00"
+    },
+    "research-rebuild\\reports\\round160-decisions.tsv": {
+      "bytes": 2358,
+      "sha256": "835f0bfb387767bda0bb9efd09fdddc3c722ea04139789755332a4e3b427ebf5",
+      "modified_at": "2026-09-26T00:39:08.607388+08:00"
+    },
+    "research-rebuild\\reports\\live-manual-batch-selection-v2-round161.csv": {
+      "bytes": 2704,
+      "sha256": "be08a591a334437718f906c020cfdb6e1c2142dab35a6575da2fd0abc24ea689",
+      "modified_at": "2026-09-25T21:25:14.767451+08:00"
+    },
+    "research-rebuild\\reports\\round161-fulltext.json": {
+      "bytes": 83251,
+      "sha256": "57ef45dce77bdee4f541884fe77a98e551a64413a0a9b047093ebf7fa898046b",
+      "modified_at": "2026-09-25T21:25:53.859569+08:00"
+    },
+    "research-rebuild\\reports\\live-manual-batch-selection-v2-round162.csv": {
+      "bytes": 3076,
+      "sha256": "e1a1721e555ee9f05f16ede3573006c158f264e593aa4b2c2e5334a3f9e8bf93",
+      "modified_at": "2026-09-25T21:25:14.768450+08:00"
+    },
+    "research-rebuild\\reports\\round162-fulltext.json": {
+      "bytes": 87504,
+      "sha256": "50757dc7a67e609c25dfb8faa3ee597a7107b1f5ac601ce9e4c9e9aa5e696c7d",
+      "modified_at": "2026-09-25T21:25:54.290521+08:00"
+    },
+    "research-rebuild\\reports\\live-manual-batch-selection-v2-round163.csv": {
+      "bytes": 3117,
+      "sha256": "c9346e5524e27da0d49bcb3398c5a37ab3a6565d4a4939759506b63a68c80bed",
+      "modified_at": "2026-09-25T21:25:14.769458+08:00"
+    },
+    "research-rebuild\\reports\\round163-fulltext.json": {
+      "bytes": 61146,
+      "sha256": "b2b0fed6ece945aa1b7be13dbfb2f85333710229e3b4bacf3ef2210fad23437f",
+      "modified_at": "2026-09-25T21:25:54.716932+08:00"
+    },
+    "research-rebuild\\reports\\live-manual-batch-selection-v2-round164.csv": {
+      "bytes": 754,
+      "sha256": "5ef460b219efb2d56ffd4401d559b7f1151bb4563aac1dfacb024724a13650ae",
+      "modified_at": "2026-09-25T21:25:14.769458+08:00"
+    },
+    "research-rebuild\\reports\\round164-fulltext.json": {
+      "bytes": 31444,
+      "sha256": "21b14330067deeefeee47fd30a6df7ef709352612c48c61f0c4080c3929d53c3",
+      "modified_at": "2026-09-25T21:25:55.141591+08:00"
+    },
+    "research-rebuild\\deepseek-batches\\manifest.json": {
+      "bytes": 525977,
+      "sha256": "5e1bdebc7012d7c915666f2b75072b2615d8dbe1a8c8206e33889b5d5b619e93",
+      "modified_at": "2026-09-20T00:32:15.411992+08:00"
+    },
+    "research-rebuild\\reports\\independent-reviews.jsonl": {
+      "bytes": 60097,
+      "sha256": "544abe74658a4cd3f4b1df1ea4a60273eeab66a7ced505d88958b2facad6e16f",
+      "modified_at": "2026-09-21T21:43:48.810613+08:00"
+    },
+    "research-rebuild\\reports\\article-classification-v2-summary.json": {
+      "bytes": 4243,
+      "sha256": "c00edce80b322a9f5cdff3496f669e24b7d140aa0b1d6e090ef3e0cd242273d8",
+      "modified_at": "2026-09-25T21:41:41.139390+08:00"
+    },
+    "research-rebuild\\reports\\image-article-audit-v1-summary.json": {
+      "bytes": 1460,
+      "sha256": "ad97fb965f5f3ca94f67f191f5012fa3318620fde10347631b81836dd97d93f2",
+      "modified_at": "2026-09-25T20:33:35.627624+08:00"
+    },
+    "research-rebuild\\reports\\provisional-reasons-audit-v2.json": {
+      "bytes": 378,
+      "sha256": "dc262270c282baddcd8618c1f42e5733e41860ced970a174e7170e591bfcc27d",
+      "modified_at": "2026-09-24T19:58:33.694421+08:00"
+    },
+    "research-rebuild\\reports\\validation-report.json": {
+      "bytes": 92309,
+      "sha256": "72a775e23867c23565f99ad42aeaa0145920723712957b780a275da601cde51c",
+      "modified_at": "2026-09-25T21:16:22.723523+08:00"
+    }
+  },
+  "inputs_changed_during_collection": []
+}

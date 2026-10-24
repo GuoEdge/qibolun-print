@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" style="background:#FAF9F7">
+  <defs>
+    <style>
+      .title { font-family: 'SimSun', serif; font-size: 20px; fill: #1A1715; font-weight: bold; }
+      .volume { font-family: 'SimSun', serif; font-size: 18px; fill: #1A1715; font-weight: bold; }
+      .desc { font-family: 'SimSun', serif; font-size: 14px; fill: #4A4745; }
+      .line { stroke: #8F2D26; stroke-width: 2; fill: none; }
+      .box { fill: #FFFFFF; stroke: #8F2D26; stroke-width: 2; }
+      .arrow { fill: #8F2D26; }
+    </style>
+  </defs>
+  
+  <!-- 标题 -->
+  <text x="600" y="40" class="title" text-anchor="middle">八卷全息架构图</text>
+  
+  <!-- 顶层：卷七 -->
+  <rect x="450" y="70" width="300" height="80" class="box" rx="5"/>
+  <text x="600" y="100" class="volume" text-anchor="middle">〔卷七·滌除玄覽〕</text>
+  <text x="600" y="125" class="desc" text-anchor="middle">本体/心智/玄览极境</text>
+  
+  <!-- 中层三卷 -->
+  <rect x="50" y="230" width="300" height="80" class="box" rx="5"/>
+  <text x="200" y="260" class="volume" text-anchor="middle">〔卷六·觀風察變〕</text>
+  <text x="200" y="285" class="desc" text-anchor="middle">时代思潮与舆论</text>
+  
+  <rect x="450" y="230" width="300" height="80" class="box" rx="5"/>
+  <text x="600" y="260" class="volume" text-anchor="middle">〔卷五·度勢居貨〕</text>
+  <text x="600" y="285" class="desc" text-anchor="middle">职场博弈与资财</text>
+  
+  <rect x="850" y="230" width="300" height="80" class="box" rx="5"/>
+  <text x="1000" y="260" class="volume" text-anchor="middle">〔卷四·存神調息〕</text>
+  <text x="1000" y="285" class="desc" text-anchor="middle">身心容止与节律</text>
+  
+  <!-- 次中层两卷 -->
+  <rect x="200" y="390" width="300" height="80" class="box" rx="5"/>
+  <text x="350" y="420" class="volume" text-anchor="middle">〔卷三·酬酢進退〕</text>
+  <text x="350" y="445" class="desc" text-anchor="middle">人我边界与应世防身</text>
+  
+  <rect x="700" y="390" width="300" height="80" class="box" rx="5"/>
+  <text x="850" y="420" class="volume" text-anchor="middle">〔卷二·陰陽合離〕</text>
+  <text x="850" y="445" class="desc" text-anchor="middle">两性本质与婚恋契约</text>
+  
+  <!-- 基层：卷一 -->
+  <rect x="450" y="550" width="300" height="80" class="box" rx="5"/>
+  <text x="600" y="580" class="volume" text-anchor="middle">〔卷一·本根敦倫〕</text>
+  <text x="600" y="605" class="desc" text-anchor="middle">家庭/宗族/代际契约</text>
+  
+  <!-- 底层：卷八 -->
+  <rect x="450" y="710" width="300" height="80" class="box" rx="5"/>
+  <text x="600" y="740" class="volume" text-anchor="middle">〔卷八·格物鑄器〕</text>
+  <text x="600" y="765" class="desc" text-anchor="middle">百工技艺/造物之锚(实相贯通)</text>
+  
+  <!-- 连接线 -->
+  <!-- 卷七向下 -->
+  <path d="M 600 150 L 600 170" class="line"/>
+  <path d="M 600 170 L 200 230" class="line"/>
+  <path d="M 600 170 L 600 230" class="line"/>
+  <path d="M 600 170 L 1000 230" class="line"/>
+  
+  <!-- 中层三卷向下汇聚 -->
+  <path d="M 200 310 L 600 350" class="line"/>
+  <path d="M 600 310 L 600 350" class="line"/>
+  <path d="M 1000 310 L 600 350" class="line"/>
+  
+  <!-- 汇聚点向下分散 -->
+  <path d="M 600 350 L 350 390" class="line"/>
+  <path d="M 600 350 L 850 390" class="line"/>
+  
+  <!-- 次中层两卷向下汇聚 -->
+  <path d="M 350 470 L 600 510" class="line"/>
+  <path d="M 850 470 L 600 510" class="line"/>
+  
+  <!-- 汇聚点连接卷一 -->
+  <path d="M 600 510 L 600 550" class="line"/>
+  
+  <!-- 卷一连接卷八 -->
+  <path d="M 600 630 L 600 710" class="line"/>
+  
+  <!-- 箭头 -->
+  <polygon points="600,153 595,145 605,145" class="arrow"/>
+  <polygon points="600,233 595,225 605,225" class="arrow"/>
+  <polygon points="600,353 595,345 605,345" class="arrow"/>
+  <polygon points="600,513 595,505 605,505" class="arrow"/>
+  <polygon points="600,553 595,545 605,545" class="arrow"/>
+  <polygon points="600,713 595,705 605,705" class="arrow"/>
+</svg>

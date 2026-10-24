@@ -1,0 +1,167 @@
+[
+ {
+  "uid": "af9e0837",
+  "id": "af9e0837-ff51-50a6-ba7a-9eeecf316f2d",
+  "title": "掏耳朵",
+  "body_chars": 1363,
+  "oversize": false,
+  "images": [],
+  "paragraph_ids": [
+   "P001",
+   "P002",
+   "P003",
+   "P004",
+   "P005",
+   "P006",
+   "P007"
+  ],
+  "paragraph_chars": {
+   "P001": [
+    0,
+    6
+   ],
+   "P002": [
+    7,
+    199
+   ],
+   "P003": [
+    200,
+    484
+   ],
+   "P004": [
+    485,
+    1004
+   ],
+   "P005": [
+    1005,
+    1161
+   ],
+   "P006": [
+    1162,
+    1358
+   ],
+   "P007": [
+    1359,
+    1363
+   ]
+  },
+  "divergence": true,
+  "has_question": true,
+  "has_text": true
+ },
+ {
+  "uid": "3ea32315",
+  "id": "3ea32315-6621-5490-874c-f67875fbd32e",
+  "title": "老鼠养殖",
+  "body_chars": 75,
+  "oversize": false,
+  "images": [],
+  "paragraph_ids": [
+   "P001",
+   "P002"
+  ],
+  "paragraph_chars": {
+   "P001": [
+    0,
+    4
+   ],
+   "P002": [
+    5,
+    75
+   ]
+  },
+  "divergence": false,
+  "has_question": true,
+  "has_text": true
+ },
+ {
+  "uid": "527360f8",
+  "id": "527360f8-2939-5c1a-9bc8-73cbb3a39f3c",
+  "title": "吃得少",
+  "body_chars": 798,
+  "oversize": false,
+  "images": [],
+  "paragraph_ids": [
+   "P001",
+   "P002",
+   "P003",
+   "P004",
+   "P005",
+   "P006",
+   "P007"
+  ],
+  "paragraph_chars": {
+   "P001": [
+    0,
+    50
+   ],
+   "P002": [
+    51,
+    90
+   ],
+   "P003": [
+    91,
+    183
+   ],
+   "P004": [
+    184,
+    440
+   ],
+   "P005": [
+    441,
+    644
+   ],
+   "P006": [
+    645,
+    758
+   ],
+   "P007": [
+    759,
+    798
+   ]
+  },
+  "divergence": false,
+  "has_question": true,
+  "has_text": true
+ },
+ {
+  "uid": "6e00a9d7",
+  "id": "6e00a9d7-d4d4-5578-9443-cf54d8b34d1f",
+  "title": "攻克死亡",
+  "body_chars": 414,
+  "oversize": false,
+  "images": [],
+  "paragraph_ids": [
+   "P001",
+   "P002",
+   "P003",
+   "P004",
+   "P005"
+  ],
+  "paragraph_chars": {
+   "P001": [
+    0,
+    52
+   ],
+   "P002": [
+    53,
+    95
+   ],
+   "P003": [
+    96,
+    134
+   ],
+   "P004": [
+    135,
+    328
+   ],
+   "P005": [
+    329,
+    414
+   ]
+  },
+  "divergence": false,
+  "has_question": true,
+  "has_text": true
+ }
+]

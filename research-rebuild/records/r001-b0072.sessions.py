@@ -1,0 +1,791 @@
+# -*- coding: utf-8 -*-
+"""批次 r001-b0072 的记录构造器（骨架由 build_sessions.py 机械生成）。
+
+只填写 ANALYSIS：每篇一条，key = SKELETON 中的 uid。
+字段要求见 prompts/initial-reading-brief.md。
+
+命令行：
+  python3 records/r001-b0072.sessions.py            # 写 out/r001-b0072.out.jsonl
+  python3 records/r001-b0072.sessions.py --out /tmp/x.jsonl
+"""
+
+from __future__ import annotations
+
+import argparse
+import json
+import os
+import sys
+
+_HERE = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, os.path.join(_HERE, '..', 'scripts'))
+from authoring import build_record, load_batch_rows, write_jsonl  # noqa: E402
+
+BATCH = "r001-b0072"
+STARTED = "2026-09-20T00:00:00+08:00"
+COMPLETED = "2026-09-20T00:00:00+08:00"
+
+with open(os.path.join(_HERE, 'r001-b0072.skeleton.json'), encoding='utf-8') as _fh:
+    SKELETON = json.load(_fh)
+UID_BY_ID = {s['id']: s['uid'] for s in SKELETON}
+
+
+ANALYSIS = {
+ "a76431bd": {
+  "analysis": {
+   "question_context": "提问者问：中国的国际舆论能力、国际话语权太弱，如何提升。提问本身预设“提升有利且应当追求”，此预设属于提问者。作者不直接回答“如何提升”，而是先提出前提问题——提升国际舆论能力与国际话语权是否真的对中国有利，并称该诉求与其说出于国家利益，不如说出于海外受的委屈（P001-P005）。",
+   "content_units": [
+    {"unit_id": "U001", "paragraph_refs": ["P001", "P002", "P003", "P004"], "summary": "先立前提问题：提升国际舆论能力/话语权是否真对中国有利；以连续反问追问“总体有利”的逻辑。", "role": "rebuttal"},
+    {"unit_id": "U002", "paragraph_refs": ["P005", "P006"], "summary": "称该诉求源于海外受的委屈，并否定“中国智库不懂打舆论战”的设想。", "role": "rebuttal"},
+    {"unit_id": "U003", "paragraph_refs": ["P007", "P008", "P009", "P010", "P011", "P012"], "summary": "以政府财力、智库与宣传队伍构成、建国前报纸与民间宣传水平作反问式论据，论证官方并非不懂宣传。", "role": "reason"},
+    {"unit_id": "U004", "paragraph_refs": ["P013", "P014"], "summary": "主张：中国不打舆论战、不争夺国际话语权是一种选择，现状是一种微妙的平衡。", "role": "claim"},
+    {"unit_id": "U005", "paragraph_refs": ["P015", "P016", "P017"], "summary": "说明中国实力已构成很强的硬挑战，并指出西方最大的心理优势是对自身舆论优势的信心。", "role": "reason"},
+    {"unit_id": "U006", "paragraph_refs": ["P018", "P019", "P020", "P021", "P022"], "summary": "描述“西方占面子、中国占里子”的惯性结构，指出夺取面子会扭转世界基调、改变整场游戏。", "role": "claim"},
+    {"unit_id": "U007", "paragraph_refs": ["P023", "P024", "P025", "P026"], "summary": "论证西方需要的是安全保证与安全感，并以川普的两种定位作对照，称其远比个人委屈重要。", "role": "claim"},
+    {"unit_id": "U008", "paragraph_refs": ["P027", "P028", "P029"], "summary": "结论：舆论战赢来的不是真正尊重而是警惕；真正的敬重靠任由误会无法维持来达成。", "role": "conclusion"}
+   ],
+   "main_claims": [
+    {"claim_id": "C001", "claim_type": "author_explicit", "attribution": "author", "modality": "questioned", "statement": "提升国际舆论能力与国际话语权是否真的对中国有利，是需要先问的前提问题；作者认为该诉求与其说出于国家利益，不如说出于海外受的委屈。", "evidence": ["E1", "E2"]},
+    {"claim_id": "C002", "claim_type": "opponent_view", "attribution": "opponent", "modality": "questioned", "statement": "被作者追问和质疑的流行主张：“提升国际舆论能力和国际话语权，对中国总体有利”。持此说者在文中未具名（作者以引号提出并追问其逻辑）。", "evidence": ["E3"]},
+    {"claim_id": "C003", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "中国并非不懂打舆论战：政府财力充足，智库与宣传系统聚集传媒、政策与战略人才，其宣传与舆论能力不逊于质疑者。", "evidence": ["E4", "E5", "E6"]},
+    {"claim_id": "C004", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "中国不打舆论战、不争夺国际话语权是一种选择，现状是一种微妙的平衡。", "evidence": ["E7", "E8"]},
+    {"claim_id": "C005", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "欧美精英已明了中国实力构成很强的硬挑战；西方对中国最大的心理优势在于对自身舆论优势尚有足够信心。", "evidence": ["E9", "E10"]},
+    {"claim_id": "C006", "claim_type": "author_explicit", "attribution": "author", "modality": "hypothetical", "statement": "假设今天开战，即便西方集团全力团结、哪怕最后侥幸获胜，也不可能不付出难以想象的代价；战胜这样一个大一统核武国家并非十拿九稳。", "evidence": ["E11"]},
+    {"claim_id": "C007", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "世界仍靠惯性维持“西方占面子、中国占里子”的运转方式；若把面子也夺过来，整个世界基调会扭转、整场游戏都会改变。", "evidence": ["E12", "E13"]},
+    {"claim_id": "C008", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "西方需要的是安全保证与安全感；让西方保持安全感（以川普为例）远比个人的委屈重要。", "evidence": ["E14", "E15"]},
+    {"claim_id": "C009", "claim_type": "author_explicit", "attribution": "author", "modality": "negated", "statement": "用舆论战赢来的不会是真正的尊重，而只会是对你舆论技巧的警惕。", "evidence": ["E16"]},
+    {"claim_id": "C010", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "真正的敬重是任由对方误会到无法继续维持误会来达成的，不是靠“不允许对方误会”来达成的。", "evidence": ["E17"]}
+   ],
+   "argument_steps": [
+    "先立前提问题：提升国际舆论能力与话语权是否真的对中国有利（P001-P002）。",
+    "以连续反问追问“总体有利”的逻辑，并问读者是否想过这个问题（P003-P004）。",
+    "指出诉求来源是海外受的委屈，同时否定“智库不懂打舆论战”的设想（P005-P006）。",
+    "给出反问式论据：政府财力、智库与宣传系统的人员构成、建国前报纸与民间宣传水平（P007-P012）。",
+    "给出判断：不打、不争夺是一种选择，现状是微妙的平衡（P013-P014）。",
+    "说明中国实力已构成硬挑战，西方最大的心理优势是对自身舆论优势的信心（P015-P017）。",
+    "描述“西方占面子、中国占里子”的惯性，指出夺面子会改变整场游戏（P018-P022）。",
+    "以川普的“最大坏蛋/先知”两种定位说明西方需要安全感，其优先于个人委屈（P023-P026）。",
+    "结论：舆论战赢得的是警惕而非尊重，真正的敬重来自任由误会无法维持（P027-P029）。"
+   ],
+   "concept_usage": [
+    {"term": "舆论战", "meaning": "国家间的宣传与话语对抗；作者把它当作可被选择使用或不用的手段（P013）。", "evidence": "P013", "ambiguity": "与“国际话语权”是否同义，正文未界定。"},
+    {"term": "国际话语权", "meaning": "与“国际舆论能力”并列，作为提问者诉求的对象；作者未给定义（P002、P004）。", "evidence": "P002", "ambiguity": "作者只追问其“是否有利”，未说明其具体所指。"},
+    {"term": "微妙的平衡", "meaning": "中国不打舆论战、西方保有舆论优势之下形成的稳定状态（P014）。", "evidence": "P014", "ambiguity": "平衡的维持条件与脆弱程度未说明。"},
+    {"term": "面子/里子", "meaning": "面子指舆论优势与国际主导观感，里子指中国实际实力的快速壮大（P018、P019）。", "evidence": "P018", "ambiguity": "作者未界定“面子”是否等同于国际话语权本身。"},
+    {"term": "硬挑战", "meaning": "中国实力之强大对西方构成的非常强的挑战（P015）。", "evidence": "P015", "ambiguity": "未说明挑战的具体维度（军事/经济/技术）。"},
+    {"term": "安全感", "meaning": "作者称西方世界需要的是安全保证与安全感，而非进一步认识“中国可不好欺负”（P023、P024）。", "evidence": "P023", "ambiguity": "安全感与舆论优势的因果方向由作者断言，未给证据。"},
+    {"term": "先知", "meaning": "比喻性定位：若剥夺西方的安全感，川普就成了“先天下之忧而忧的先知”（P025）。", "evidence": "P025", "ambiguity": "修辞用法，非分析概念。"}
+   ],
+   "examples_and_targets": [
+    "中国智库中的传媒泰斗、政策精英、常参加国际会议者、可访问国家级大数据者、行业领袖乃至战略发展计划起草人——作者论据（反问能力对比）。",
+    "建国前的报纸与抽象话、鬼畜、表情包、段子——作者论据/历史类比，用来说明舆论技巧早已有之。",
+    "“村级大妈”的宣传水平——修辞夸张，用来说明民间宣传平均水平高。",
+    "“在国外混了几年的留学生”——作者反问中的对比对象。",
+    "欧美精英——作者判断中的认知主体（已明了中国的硬挑战）。",
+    "“大一统的、无需一轮轮投票的、巨型单一主体民族核武国家”——作者对中国的描述性修辞。",
+    "川普——修辞/例证：让西方保持安全感时他是“世界上最大的坏蛋”，剥夺安全感时成为“先知”。"
+   ],
+   "conditions": [
+    "“假设今天真的开战”——作者以战场假设加“哪怕…哪怕…”双重让步推出代价判断（P016）。",
+    "“直到现在”——时间限定：世界仍有强大惯性维持原有运转方式（P018）。",
+    "“至少可以沉重打击西方现在的绝对优势”——“至少”限定其可实现程度（P021）。",
+    "前提条件：提问以“能力太弱、如何提升”为前提，作者把讨论改为先验证该前提（P001-P002）。",
+    "作者未限定“打舆论战”的形式、时间、成本与实施主体。"
+   ],
+   "rhetoric_and_tone": "连续反问与质问（“你们有想过这个问题吗？”“可能吗？”），第二人称“你们”直呼读者；带讽刺调侃（“小朋友自信也要有点谱”“放你一万个心”）与训诫式感叹（“这远比你那点委屈重要得多！”）；兼用博弈推演（开战代价、面子/里子）与历史类比（建国前报纸）。结构上先质疑前提，再铺陈实力与平衡，最后以“尊重/警惕”对照收束。",
+   "unresolved_questions": [
+    "作者未直接回答提问“如何提升国际舆论能力”，只质疑前提并陈述代价，其本人对“是否应当提升”的正面主张未明说。",
+    "“小朋友们”具体指谁（海外中国留学生、年轻网民或其他）正文未界定（P005）。",
+    "P020“你非要把人家的面子也夺过来。”中“你”的指代对象未明。",
+    "P025 以川普为例的判断涉具体人物与时局语境，需外部核查。",
+    "“智库能力不逊于质疑者”“西方靠舆论优势维持平衡”等判断为作者断言，正文未给出证据，不能视为外部已证实事实。",
+    "brief 为正文的截断摘录（末尾停在“你们不要以为”），正式正文以 text 为准；无版本差异（provenance/superseded 均 null）。"
+   ],
+   "evidence": [
+    {"key": "E1", "paragraph_id": "P002", "quote": "提升“国际舆论能力”、“国际话语权”，真的对中国有利吗？", "relation": "supports"},
+    {"key": "E2", "paragraph_id": "P005", "quote": "这个诉求，与其说是出于国家利益，不如说是出于小朋友们在海外受的委屈。", "relation": "supports"},
+    {"key": "E3", "paragraph_id": "P004", "quote": "“提升国际舆论能力和国际话语权，对中国总体有利”的逻辑是什么？", "relation": "context"},
+    {"key": "E4", "paragraph_id": "P006", "quote": "你们不要以为中国的智库真的不知道怎么打舆论战", "relation": "supports"},
+    {"key": "E5", "paragraph_id": "P007", "quote": "中国政府是世界上最有钱的政府", "relation": "supports"},
+    {"key": "E6", "paragraph_id": "P010", "quote": "你们真的相信人均管理人口过亿的领导班子会比你们不懂如何做宣传？", "relation": "supports"},
+    {"key": "E7", "paragraph_id": "P013", "quote": "中国不打舆论战、不争夺国际话语权是一种选择。", "relation": "supports"},
+    {"key": "E8", "paragraph_id": "P014", "quote": "现状是一种微妙的平衡。", "relation": "supports"},
+    {"key": "E9", "paragraph_id": "P015", "quote": "欧美精英已经完全明了中国的实力之强大构成了非常强的硬挑战。", "relation": "supports"},
+    {"key": "E10", "paragraph_id": "P017", "quote": "就是西方对自己的舆论优势尚有足够信心。", "relation": "supports"},
+    {"key": "E11", "paragraph_id": "P016", "quote": "哪怕最后侥幸获胜，也不可能不付出ta们难以想象的代价。", "relation": "supports"},
+    {"key": "E12", "paragraph_id": "P018", "quote": "世界仍有强大的惯性维持原有的运转方式——西方占面子，中国占里子。", "relation": "supports"},
+    {"key": "E13", "paragraph_id": "P021", "quote": "但是那样一来，整个世界的基调都会扭转，整场游戏都会改变。", "relation": "supports"},
+    {"key": "E14", "paragraph_id": "P023", "quote": "西方世界需要安全保证，需要安全感", "relation": "supports"},
+    {"key": "E15", "paragraph_id": "P026", "quote": "这远比你那点委屈重要得多！", "relation": "supports"},
+    {"key": "E16", "paragraph_id": "P028", "quote": "用舆论战赢来的，不会是真正的尊重，而只会是对你舆论技巧的警惕。", "relation": "supports"},
+    {"key": "E17", "paragraph_id": "P027", "quote": "真正的敬重，是任由对方误会到无法继续维持误会来达成的", "relation": "supports"}
+   ]
+  },
+  "provisional_tags": {
+   "domain_candidates": ["国际关系与对外战略", "宣传与舆论战", "中国对外传播能力"],
+   "issue_candidates": ["国际话语权是否值得追求", "舆论战的成本与收益", "面子/里子与战略平衡", "尊重与警惕的区别"],
+   "text_function_candidates": ["答疑转为前提质疑", "论辩", "反问式反驳", "战略态势推演"],
+   "object_candidates": ["中国", "西方世界/欧美精英", "中国智库与宣传系统", "川普", "留学生", "建国前的报纸"],
+   "working_keywords": ["舆论战", "国际话语权", "微妙的平衡", "面子", "里子", "安全感", "硬挑战", "先知", "敬重", "警惕"]
+  },
+  "notes": "正文完整（29段，field 均为 body），无图片节点。提问为“如何提升国际舆论能力/国际话语权”，作者未直接回答而先质疑该诉求前提；提问者的预设不计入作者主张。P004 引号内“提升国际舆论能力和国际话语权，对中国总体有利”的持有者未具名，记为 opponent_view 并在 statement 注明。brief 是正文的截断摘录，正文以 text 为准。provenance/superseded 均为 null，无版本差异。"
+ },
+ "860ea10f": {
+  "analysis": {
+   "question_context": "提问者问：运气极差的人该如何从头开始恢复运气。作者不直接给操作清单，而是先定义“运气”，区分外部运气与内部运气，最后把“平时多无条件的帮助ta人”作为塑造好运气最重要的一点，并以“确实的可能”而非“确实的事实”收束（P001-P002、P031-P032、P053-P054）。",
+   "content_units": [
+    {"unit_id": "U001", "paragraph_refs": ["P001", "P002", "P003"], "summary": "以设问定义运气为“一种让事情向好的气质”，并分为外部与内部两个方面。", "role": "definition"},
+    {"unit_id": "U002", "paragraph_refs": ["P004", "P005", "P006", "P007"], "summary": "外部运气：陌生人本能观察后形成的强烈乐观期待（非“第一印象好”），并说明它如何改变观察者的互动策略。", "role": "claim"},
+    {"unit_id": "U003", "paragraph_refs": ["P008", "P009"], "summary": "多个观察者在远处下注、你本人无从知情，客观效果即强烈而现实的运气。", "role": "reason"},
+    {"unit_id": "U004", "paragraph_refs": ["P010", "P011", "P012"], "summary": "限定：仅凭“高利用价值”不能造成这种运气；正面预期源于对价值观感召力与处事能力的服膺。", "role": "qualification"},
+    {"unit_id": "U005", "paragraph_refs": ["P013", "P014"], "summary": "定义内部运气：从心底里生出来的乐观。", "role": "definition"},
+    {"unit_id": "U006", "paragraph_refs": ["P015", "P016", "P017", "P018"], "summary": "以评论区评论为引，反驳“押大出小就是运气不好”，称有内生运气者没有“运气不好”这个概念。", "role": "rebuttal"},
+    {"unit_id": "U007", "paragraph_refs": ["P019", "P020", "P021", "P022", "P023", "P024"], "summary": "以断腿、落榜、投资失败、得绝症四例示范对挫折的重新框定。", "role": "example"},
+    {"unit_id": "U008", "paragraph_refs": ["P025", "P026", "P027", "P028", "P029", "P030"], "summary": "这样的人必然带来外部运气，且其全生命周期始终值得投资、挫折期更不应撤资。", "role": "reason"},
+    {"unit_id": "U009", "paragraph_refs": ["P031", "P032", "P033", "P034", "P035"], "summary": "塑造好运气最重要的一点：平时多无条件帮助ta人；其总前提是世界上存在会无条件帮助人的人，证据是确有这样的行为。", "role": "claim"},
+    {"unit_id": "U010", "paragraph_refs": ["P036", "P037", "P038", "P039"], "summary": "指出“逻辑铁壁”——难以断言帮助是无条件的；唯一能打断它的人是自己。", "role": "qualification"},
+    {"unit_id": "U011", "paragraph_refs": ["P040", "P041", "P042", "P043", "P044"], "summary": "给出具体做法：匿名、无义务、不留报答机会的帮助，并以“十步帮一忙，千里不留行”概括。", "role": "action_advice"},
+    {"unit_id": "U012", "paragraph_refs": ["P045", "P046", "P047", "P048", "P049", "P050", "P051", "P052", "P053", "P054", "P055", "P056", "P057", "P058", "P059"], "summary": "以连续设问推进：此举的证明作用、被帮者可能的转变，并区分“确实的事实”与“确实的可能”。", "role": "reason"},
+    {"unit_id": "U013", "paragraph_refs": ["P060", "P061", "P062", "P063", "P064", "P065", "P066", "P067", "P068"], "summary": "结论：无条件爱不再是“绝不可能”，从此没有“完全绝望”，凭这份乐观得到想象不到的运气。", "role": "conclusion"}
+   ],
+   "main_claims": [
+    {"claim_id": "C001", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "运气是一种让事情向好的气质；这种向好分为外部与内部两个方面。", "evidence": ["E1", "E2"]},
+    {"claim_id": "C002", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "外部运气本质上是陌生人经过本能观察就会直觉上形成的对你的强烈乐观期待；这不是指“第一印象好”，对方可能并不喜欢你、不认同你，但不能不意识到你未来光明。", "evidence": ["E3", "E4"]},
+    {"claim_id": "C003", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "这种判断会深刻影响观察者与你的互动关系（主动雪中送炭被视为投资绩优关系最有性价比的选择），从而造成强烈而现实的运气。", "evidence": ["E5"]},
+    {"claim_id": "C004", "claim_type": "author_qualified", "attribution": "author", "modality": "qualified", "statement": "这种态势不能靠呈现“高利用价值”造成；只显示家世丰厚或技术高超，若未配合健壮的价值观与令人信服的方法论，只会造成饿狼环伺、被额外看衰。", "evidence": ["E6"]},
+    {"claim_id": "C005", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "会造成运气的强烈正面预期，本质上是出于对观察对象价值观的感召能力和处事能力高超水平的服膺。", "evidence": ["E7"]},
+    {"claim_id": "C006", "claim_type": "author_explicit", "attribution": "author", "modality": "negated", "statement": "内部运气是从心底里生出来的乐观；对有内生运气的人而言没有“赌物输掉”这个概念，即根本没有“运气不好”这件事。", "evidence": ["E8", "E9"]},
+    {"claim_id": "C007", "claim_type": "quoted_or_cited", "attribution": "cited_source", "modality": "asserted", "statement": "作者引用评论区一位评论者的话：“论赌人我运气不错，但论赌物我没把握”，并以此作为下文讨论的引子。", "evidence": ["E10"]},
+    {"claim_id": "C008", "claim_type": "author_reported", "attribution": "unknown", "modality": "asserted", "statement": "作者转述内生运气者的想法：“无论发生了什么，所发生的都是一切可能中对我最好的那一种。”（引号内为作者转述的内心话语，未注明出处。）", "evidence": ["E11"]},
+    {"claim_id": "C009", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "无论遇到什么样的重大挫折，接下去都一定是一段新的上坡路的开始；永远跃跃欲试、永远继续前进，永远不存在“没戏了，完了”。", "evidence": ["E12"]},
+    {"claim_id": "C010", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "这样的人自然而然会有外部的运气；只要没有因此自怨自艾、自欺欺人、丧失继续前进的劲，其全生命周期始终都值得投资。", "evidence": ["E13", "E14"]},
+    {"claim_id": "C011", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "塑造好运气最重要的一点，是平时多无条件的帮助ta人。", "evidence": ["E15", "E16"]},
+    {"claim_id": "C012", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "世界上存在意想不到的好运气的总前提，是世界上存在会无条件帮助人的人；其切实证据就是世界上确实存在这样的行为。", "evidence": ["E17", "E18"]},
+    {"claim_id": "C013", "claim_type": "author_qualified", "attribution": "author", "modality": "qualified", "statement": "存在“逻辑铁壁”：即使看到某种帮助行为，也很难断言那是无条件的；唯一能在你自己面前毫无疑问打断这铁壁的人，就是你自己。", "evidence": ["E19", "E20"]},
+    {"claim_id": "C014", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "你需要的不是一种确实的事实（作为要百分之百导致别人无条件助人），而只是一种确实的可能——即你的作为会导致ta人有无条件帮助ta人的不可抹杀的概率。", "evidence": ["E21"]},
+    {"claim_id": "C015", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "做了这件事就为自己创造了这种可能：从此无条件的爱对你而言再也不是“绝不可能”，从此对你再无“完全绝望”可言。", "evidence": ["E22", "E23"]},
+    {"claim_id": "C016", "claim_type": "author_explicit", "attribution": "author", "modality": "predicted", "statement": "仅凭这份任何灾难都打不垮的乐观，你就不会再放弃坚持，并会因此得到你想象不到的运气。", "evidence": ["E24"]}
+   ],
+   "argument_steps": [
+    "以“什么叫运气？”设问并给出定义：一种让事情向好的气质（P001-P002）。",
+    "把这种向好分为外部与内部两面（P003）。",
+    "展开外部运气：陌生人的乐观期待、它如何改变观察者的互动策略、多观察者下注造成的客观运气（P004-P009）。",
+    "限定外部运气不能由“高利用价值”造成，指出其真正来源是价值观感召力与处事能力（P010-P012）。",
+    "转入内部运气并给出定义（P013-P014）。",
+    "引用评论区评论作引子，反驳“押大出小即运气不好”（P015-P018）。",
+    "以断腿、落榜、投资失败、得绝症四例示范重新框定挫折（P019-P024）。",
+    "说明这种乐观必然带来外部运气与持续的投资价值（P025-P030）。",
+    "提出塑造好运气的要点：无条件帮助他人，并给出其前提与证据逻辑（P031-P035）。",
+    "指出“逻辑铁壁”，并以自身行动作为唯一打断方式（P036-P039）。",
+    "给出具体做法：匿名、无义务、不留报答机会（P040-P044）。",
+    "以连续设问推进证明作用、被帮者的转变，并提出需要“确实的可能”而非“确实的事实”（P045-P059）。",
+    "结论：无条件爱不再是“绝不可能”，从此无“完全绝望”，凭乐观得到想象不到的运气（P060-P068）。"
+   ],
+   "concept_usage": [
+    {"term": "运气", "meaning": "本文定义为“一种让事情向好的气质”，分为外部（他人对你的乐观期待与下注）与内部（心底生出的乐观）（P002）。", "evidence": "P002", "ambiguity": "作者同时用“运气”“命运”（P017）等词，二者关系未界定。"},
+    {"term": "第一面是外部的/内部的运气", "meaning": "作者自设的两分框架：外部运气来自观察者的预期，内部运气来自自身的乐观（P004、P014）。", "evidence": "P004", "ambiguity": "两面的因果方向（内部必然带来外部）由作者断言，未给外部证据。"},
+    {"term": "高利用价值", "meaning": "仅凭家世丰厚或技术高超而具有的可被他人利用的价值；作者否认它足以造成运气（P010）。", "evidence": "P010", "ambiguity": "与“价值观感召能力”的边界未细化。"},
+    {"term": "健壮的价值观和令人信服的方法论", "meaning": "作者称外部运气所依赖的两条（P010、P012）。", "evidence": "P012", "ambiguity": "两条的具体标准未说明。"},
+    {"term": "无条件的爱/不求回报的爱", "meaning": "文中与“无条件帮助”互换使用，指不期待报答的帮助行为（P043、P060）。", "evidence": "P043", "ambiguity": "作者既说只有自己能证明，又说被帮者会因此相信，证明强度待辨。"},
+    {"term": "逻辑铁壁", "meaning": "指“即使看到帮助行为也难以断言其无条件”的论证障碍（P036）。", "evidence": "P036", "ambiguity": "作者称只有自己能打断，标准是否主观未说明。"},
+    {"term": "确实的可能/不可抹杀的概率", "meaning": "作者区分“确实的事实”与“确实的可能”，主张后者即足够（P053、P054）。", "evidence": "P054", "ambiguity": "“不可抹杀的概率”如何被认定未给出判据。"},
+    {"term": "股价/投资", "meaning": "比喻用法：把人的处境比作股价、把关系投入比作投资（P027、P028）。", "evidence": "P027", "ambiguity": "纯修辞比喻，非分析概念。"}
+   ],
+   "examples_and_targets": [
+    "评论区评论“论赌人我运气不错，但论赌物我没把握”——作者引用，作为讨论引子（cited_source）。",
+    "郗鉴之于王羲之、杨素之于李靖——作者的历史类比，用来说明对价值观与处事能力的服膺。",
+    "断腿→残奥会、落榜→志愿不合适、投资失败→幸好现在发现、得绝症→不用折腾了——作者例证，示范对挫折的重新框定（带调侃语气）。",
+    "匿名捐点学费、不留姓名帮人解决小困难、不动声色帮人讲句公道话、出乎意料送人一把伞——作者给出的行动例证。",
+    "“十步帮一忙，千里不留行”——作者化用的韵语式修辞，正文未注明出处。",
+    "饿狼环伺、分食宴席上预定席位——作者比喻，描述只显示高利用价值的后果。",
+    "股价低迷时更值得投资、先前投资者不应撤资——作者比喻，说明挫折期的人际投入。"
+   ],
+   "conditions": [
+    "“如果被我看出来有对你雪中送炭的机会，我岂肯轻轻放过？”——外部运气依赖观察者能识别机会（P007）。",
+    "“这如果没有配合上一个健壮的价值观和令人信服的方法论，只会造成你身边饿狼环伺”——外部运气成立的条件（P010）。",
+    "“只要这人没有因此自怨自艾、没有自欺欺人、没有丧失那股乐呵呵继续前进的劲”——投资价值持续的条件（P029）。",
+    "“注意，这不是要你负责人一生的幸福”——对“无条件帮助”范围的限定（P040）。",
+    "“你做得越多，你就越可以对此抱有不可磨灭的希望”——程度条件（P064）。",
+    "“你需要的只是一种确实的可能”——以可能性替代必然性作为证据标准（P054）。",
+    "作者未限定“运气极差”的起点状态与恢复所需时间。"
+   ],
+   "rhetoric_and_tone": "第二人称“你”贯穿的讲授/对话体；设问自答（“为什么？”“有没有可能？”“有。”）；排比与重复（“永远跃跃欲试，永远继续前进，永远不存在…”）；网络口语与情绪化表达（“谁tm说世界上没有不求回报的爱？”）；波浪号等轻松符号（“～”）；举例带调侃色彩；把人际关系类比为股票投资；夹用文言化短句（“十步帮一忙，千里不留行”）。",
+   "unresolved_questions": [
+    "P019 引号内“无论发生了什么，所发生的都是一切可能中对我最好的那一种。”未注明出处（是否化用莱布尼茨式命题无法由本文确认，属待外部核查），本文按作者转述的内生运气者想法记录。",
+    "P015 仅称“评论区有一个评论”，未给出评论者身份或链接，引文只能归 cited_source。",
+    "P042“十步帮一忙，千里不留行”为化用式韵语，正文未注明出处。",
+    "外部运气是否完全由内部状态“自然而然”带来，程度与边界未限定（P026、P030）。",
+    "“得绝症了，这回终于可以不用折腾了～”（P023）与“我终于可以参加残奥会了～”（P020）是否为修辞夸张或指向真实经历，正文未说明。",
+    "作者把“无条件的爱是否存在”处理为可被自身行动证明的命题，但论证只在“可能/概率”层面成立，作者本人也作了此限定（P053-P054）。"
+   ],
+   "evidence": [
+    {"key": "E1", "paragraph_id": "P002", "quote": "运气是一种让事情向好的气质。", "relation": "supports"},
+    {"key": "E2", "paragraph_id": "P003", "quote": "这种向好分为两个方面。", "relation": "supports"},
+    {"key": "E3", "paragraph_id": "P004", "quote": "第一面是外部的，本质上是一种陌生人经过本能的观察就会直觉上形成的对你的强烈乐观期待。", "relation": "supports"},
+    {"key": "E4", "paragraph_id": "P005", "quote": "注意，这不是指“第一印象好”。而只是对你的乐观期待。", "relation": "qualifies"},
+    {"key": "E5", "paragraph_id": "P007", "quote": "尤其是主动的雪中送炭，是投资绩优关系的最有性价比的选择", "relation": "supports"},
+    {"key": "E6", "paragraph_id": "P010", "quote": "这如果没有配合上一个健壮的价值观和令人信服的方法论，只会造成你身边饿狼环伺。", "relation": "qualifies"},
+    {"key": "E7", "paragraph_id": "P011", "quote": "本质上是出于对观察对象的价值观的感召能力和处事能力的高超水平的服膺", "relation": "supports"},
+    {"key": "E8", "paragraph_id": "P018", "quote": "对于有内生运气的人而言，没有“赌物输掉”这个概念，也就是根本没有运气不好这个概念。", "relation": "supports"},
+    {"key": "E9", "paragraph_id": "P024", "quote": "看到了吗？根本没有“运气不好”这件事。", "relation": "supports"},
+    {"key": "E10", "paragraph_id": "P015", "quote": "“论赌人我运气不错，但论赌物我没把握”。", "relation": "context"},
+    {"key": "E11", "paragraph_id": "P019", "quote": "“无论发生了什么，所发生的都是一切可能中对我最好的那一种。”", "relation": "supports"},
+    {"key": "E12", "paragraph_id": "P025", "quote": "无论遇到什么样的重大挫折，接下去都一定是一段新的上坡路的开始。", "relation": "supports"},
+    {"key": "E13", "paragraph_id": "P026", "quote": "这样的人，自然而然会有外部的运气。", "relation": "supports"},
+    {"key": "E14", "paragraph_id": "P029", "quote": "ta的全生命周期始终都值得投资。", "relation": "supports"},
+    {"key": "E15", "paragraph_id": "P032", "quote": "是平时多无条件的帮助ta人。", "relation": "supports"},
+    {"key": "E16", "paragraph_id": "P043", "quote": "谁tm说世界上没有不求回报的爱？", "relation": "supports"},
+    {"key": "E17", "paragraph_id": "P034", "quote": "因为世界上存在意想不到的好运气的总前提，是世界上存在会无条件帮助人的人。", "relation": "supports"},
+    {"key": "E18", "paragraph_id": "P035", "quote": "而世界上存在这样的人的切实证据，就是世界上的确存在这样的行为。", "relation": "supports"},
+    {"key": "E19", "paragraph_id": "P036", "quote": "即使你看到了某种帮助行为，你也很难断言那是无条件的。", "relation": "qualifies"},
+    {"key": "E20", "paragraph_id": "P038", "quote": "所以唯一能在你自己面前毫无疑问的打断这逻辑铁壁的人，就是你自己。", "relation": "supports"},
+    {"key": "E21", "paragraph_id": "P054", "quote": "你需要的只是一种确实的可能——即你的作为会导致ta人有无条件帮助ta人的不可抹杀的概率。", "relation": "supports"},
+    {"key": "E22", "paragraph_id": "P060", "quote": "从此，无条件的爱对你而言就再也不是“绝不可能”。", "relation": "supports"},
+    {"key": "E23", "paragraph_id": "P066", "quote": "从此对你再无“完全绝望”可言。", "relation": "supports"},
+    {"key": "E24", "paragraph_id": "P067", "quote": "并且会因为这份任何灾难都打不垮的乐观，得到你想象不到的运气。", "relation": "supports"}
+   ]
+  },
+  "provisional_tags": {
+   "domain_candidates": ["人生经验与处世", "运气/命运观念", "人际信任与利他行为", "心态与预期"],
+   "issue_candidates": ["运气的构成与来源", "如何恢复运气", "无条件帮助与无条件爱是否存在", "挫折的重新框定", "长期的人际投入"],
+   "text_function_candidates": ["答疑", "概念定义", "劝诫/训导", "设问推进式论证", "经验总结"],
+   "object_candidates": ["评论区评论者", "郗鉴", "王羲之", "杨素", "李靖", "陌生人/观察者", "有内生运气的人", "被无条件帮助过的人"],
+   "working_keywords": ["运气", "让事情向好的气质", "外部运气", "内部的运气", "乐观期待", "雪中送炭", "高利用价值", "健壮的价值观", "方法论", "无条件的爱", "逻辑铁壁", "确实的可能", "不可抹杀的概率"]
+  },
+  "notes": "正文完整（68段，field 均为 body），无图片节点。提问为“运气极差的人该如何从头开始恢复运气”，作者以定义与论证作答，未给出分步操作清单。P015 引用评论区评论，归 cited_source；P019 引号内语句未注明出处，按作者转述的内生运气者想法记为 author_reported/attribution=unknown，是否有所本需外部核查。P042“十步帮一忙，千里不留行”为作者化用韵语，正文未注明出处。provenance/superseded 均 null。"
+ },
+ "ddf06431": {
+  "analysis": {
+   "question_context": "提问者问：当被夸好看的时候，怎么回复比较礼貌不尴尬。作者先给出最简答案“回答‘谢谢’就可以了”，随后补一条常识——不经邀请不要擅自评价别人的容貌，并展开对被夸场景的分析（P001-P002）。",
+   "content_units": [
+    {"unit_id": "U001", "paragraph_refs": ["P001", "P002"], "summary": "直接回答“谢谢”即可，并补常识：不经邀请不要擅自评价别人的容貌，不论好的坏的。", "role": "action_advice"},
+    {"unit_id": "U002", "paragraph_refs": ["P003"], "summary": "说明主动夸美女好看常使她感到压力与诉求，本质是隐性的“围猎”“驯养”行为。", "role": "claim"},
+    {"unit_id": "U003", "paragraph_refs": ["P004", "P005"], "summary": "解释会因被夸而心花怒放的多是“女大十八变”阶段的“新美女”：客观颜值提升加进入“社交季节”，此前没听过这类话。", "role": "reason"},
+    {"unit_id": "U004", "paragraph_refs": ["P006"], "summary": "预言其将来会知道，这些话与其说表达仰慕喜爱，不如说表达欲念、欲求和轻微的权力测试。", "role": "claim"},
+    {"unit_id": "U005", "paragraph_refs": ["P007", "P008", "P009"], "summary": "由被夸者的反应推断其处境与家教背景，并以“世家女”所受教育及故意/非故意两种情形对照。", "role": "claim"},
+    {"unit_id": "U006", "paragraph_refs": ["P010", "P011"], "summary": "比喻有意无意的“猎犬们”会因此而来，并判断这个起点不是好的关系吉兆。", "role": "conclusion"},
+    {"unit_id": "U007", "paragraph_refs": ["P012", "P013", "P014"], "summary": "行动要求：亲密关系/得到许可/被询问之前不可随口评价；评价能忍住者与贬低坚守者两类人，并指出将来的稀缺品质。", "role": "action_advice"}
+   ],
+   "main_claims": [
+    {"claim_id": "C001", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "被夸好看时，回答“谢谢”就可以了。", "evidence": ["E1"]},
+    {"claim_id": "C002", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "不经邀请，不要擅自评价别人的容貌，不论好的坏的，都不要。", "evidence": ["E2"]},
+    {"claim_id": "C003", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "美女并不见得喜欢别人主动夸自己好看，若当着他人的面则更不见得喜欢；因为这一般会让她感受到某种压力和诉求，本质上是一种隐性的“围猎”“驯养”行为。", "evidence": ["E3"]},
+    {"claim_id": "C004", "claim_type": "author_explicit", "attribution": "author", "modality": "qualified", "statement": "会因为被夸好看而心花怒放的往往是“女大十八变”阶段变出来的“新美女”：一方面因发育、青春萌动与允许化妆打扮而客观颜值提升，另一方面因进入“社交季节”、开始被他人视为可以谋取的对象。", "evidence": ["E4", "E5", "E6"]},
+    {"claim_id": "C005", "claim_type": "author_explicit", "attribution": "author", "modality": "predicted", "statement": "（作者预言被夸者）将来慢慢就会知道，这些话与其说是在表达仰慕、喜爱，不如说是在表达欲念、传递欲求和轻微的权力测试。", "evidence": ["E7"]},
+    {"claim_id": "C006", "claim_type": "author_explicit", "attribution": "author", "modality": "qualified", "statement": "被这样一夸就心花怒放、倍感娇羞的人显然涉世甚浅、有机可乘，并且家教多半不够严谨、家庭背景多半不够深厚。", "evidence": ["E8"]},
+    {"claim_id": "C007", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "世家女一般都受过这类教育，明白不经许可评价容貌是没有礼貌的行为；对方若非故意则只是不懂、可以谅解但价值观可能差距很大；若是故意用这话来撩，则“此非善类”。", "evidence": ["E9"]},
+    {"claim_id": "C008", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "女方若“娇嗔薄怒、实心喜之”，就意味着其家庭没有做过这类教育或至少不成功，于是这些有意无意的“猎犬们”就会张开鼻孔、竖起耳朵。", "evidence": ["E10", "E11"]},
+    {"claim_id": "C009", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "这个起点不是一段好的关系吉兆。", "evidence": ["E12"]},
+    {"claim_id": "C010", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "对待女性的美貌，在建立亲密关系之前、得到许可之前、被询问之前，不可以随口评价；有冲动最好忍住。", "evidence": ["E13"]},
+    {"claim_id": "C011", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "能为了礼仪原则忍住的，才是肯为了她的合法权益克制自我欲望的人；而认为这种坚守是“木讷和愚蠢”的人，本身不宜与你为伴。", "evidence": ["E14", "E15"]},
+    {"claim_id": "C012", "claim_type": "author_explicit", "attribution": "author", "modality": "predicted", "statement": "将来美貌并不是一种稀缺资源，“细致入微、有所不为”才是。", "evidence": ["E16"]}
+   ],
+   "argument_steps": [
+    "先给出答案：“谢谢”就可以了（P001）。",
+    "补一条常识：不经邀请不评价他人容貌，好坏都不（P002）。",
+    "解释被夸者的感受：压力与诉求，本质是隐性围猎与驯养（P003）。",
+    "区分对象：心花怒放者多为“新美女”，给出客观颜值提升与“社交季节”两条解释（P004-P005）。",
+    "预言认知转变：这些话是欲念、欲求与轻微的权力测试（P006）。",
+    "由反应反推处境：涉世甚浅、有机可乘、家教与家庭背景多半不足（P007）。",
+    "以“世家女”所受教育为对照，区分故意与非故意两种情形（P008）。",
+    "指出“娇嗔薄怒、实心喜之”意味此类教育的缺失或不成功，猎犬由此而来（P009-P010）。",
+    "判断这不是好的关系吉兆（P011）。",
+    "给出行动要求：三重前提之前不评价，冲动要忍住（P012）。",
+    "评价两类人：能为了礼仪原则忍住者，与认为坚守是“木讷和愚蠢”者（P013）。",
+    "结论式判断：美貌将来不是稀缺资源，“细致入微、有所不为”才是（P014）。"
+   ],
+   "concept_usage": [
+    {"term": "围猎/驯养", "meaning": "带引号的比喻，指主动夸赞容貌所含的支配与索取意味（P003）。", "evidence": "P003", "ambiguity": "两者是同一机制还是两种机制，正文未区分。"},
+    {"term": "“女大十八变”/“新美女”", "meaning": "带引号的定型说法，指发育与社会角色变化后新获得美貌关注的人（P004）。", "evidence": "P004", "ambiguity": "作者未界定年龄或阶段边界。"},
+    {"term": "“社交季节”", "meaning": "指开始被他人视为可以谋取对象的时期（P004）。", "evidence": "P004", "ambiguity": "沿用带引号的说法，来源未注明。"},
+    {"term": "“他人证言”", "meaning": "指夸赞作为他人对自己的证明所带来的满足感（P005）。", "evidence": "P005", "ambiguity": "作者未展开这一用语。"},
+    {"term": "权力测试", "meaning": "作者称夸赞中含有轻微的权力测试成分（P006）。", "evidence": "P006", "ambiguity": "与“欲念/欲求”的界限未说明。"},
+    {"term": "世家女", "meaning": "指受过此类礼仪教育、明白不经许可评价容貌不礼貌的女性群体（P008）。", "evidence": "P008", "ambiguity": "属经验概括，作者未给依据。"},
+    {"term": "猎犬", "meaning": "比喻有意无意试探、追逐的人（P010）。", "evidence": "P010", "ambiguity": "动物化修辞，非分析概念。"},
+    {"term": "细致入微、有所不为", "meaning": "作者认为将来真正稀缺、因而更有价值的品质（P014）。", "evidence": "P014", "ambiguity": "具体所指未展开。"}
+   ],
+   "examples_and_targets": [
+    "“女大十八变”阶段变出来的“新美女”——作者的分析对象/被解释群体。",
+    "“世家女”及其所受教育——作者用作对照的例证。",
+    "“猎犬们”——比喻，指有意无意试探追逐的人。",
+    "认为坚守是“木讷和愚蠢”的人——作者的反驳对象（未具名）。",
+    "被夸好看而“娇嗔薄怒、实心喜之”的女方——作者例证。",
+    "以上均为作者在文中的经验概括或修辞材料，不是外部已证实事实。"
+   ],
+   "conditions": [
+    "“如果还是当着他人的面，则更不见得喜欢”——场合条件（P003）。",
+    "“如果这不是故意的…如果对方是故意的…”——两种情形分判（P008）。",
+    "“在建立亲密关系之前、得到许可之前、被询问之前”——三重前提条件（P012）。",
+    "“你有冲动，最好忍住”——“最好”为程度限定（P012）。",
+    "“家教多半不够严谨，家庭背景多半不够深厚”“很可能价值观差距很大”——或然限定（P007、P008）。",
+    "“将来美貌并不是一种稀缺资源”——时间限定（P014）。"
+   ],
+   "rhetoric_and_tone": "短句问答体，先给最简答复再补“常识”；训诫与规劝语气（“不可以随口评价”“你有冲动，最好忍住”）；夹用带引号的定型语与判断（“女大十八变”“新美女”“社交季节”“娇嗔薄怒、实心喜之”“此非善类”）；动物化比喻（围猎、驯养、猎犬张开鼻孔竖起耳朵）；人称在“你”（评价者）与“她/女方”（被夸者）之间切换。",
+   "unresolved_questions": [
+    "标题“沉鱼落雁”未在正文出现，正文亦未使用该词，标题与正文用词的关系不明。",
+    "文中“你”“她”“女方”“美女”的指代多次切换：P012-P014 的行动要求指向评价者（多为男性），P004-P009 的“她/女方”指向被夸者，可能造成解释歧义。",
+    "“世家女”及由“家教/家庭背景”作出的推断属作者的经验概括，需外部核查。",
+    "“此非善类”为带引号的判断语，作者未说明是否引用他人说法（本文按作者用语记录）。",
+    "正文未讨论除“谢谢”之外的其他回应方式，也未涉及同性之间夸赞的情形。",
+    "提问问“如何回复不尴尬”，正文把重心放在评价者是否应当开口，未逐一回答各种回应情境。"
+   ],
+   "evidence": [
+    {"key": "E1", "paragraph_id": "P001", "quote": "回答“谢谢”就可以了。", "relation": "supports"},
+    {"key": "E2", "paragraph_id": "P002", "quote": "另外补一个常识——不经邀请，不要擅自评价别人的容貌，不论好的坏的，都不要。", "relation": "supports"},
+    {"key": "E3", "paragraph_id": "P003", "quote": "因为这一般会让她感受到某种压力和诉求，本质上是一种隐性的“围猎”“驯养”行为。", "relation": "supports"},
+    {"key": "E4", "paragraph_id": "P004", "quote": "会因为被夸好看而心花怒放的往往是“女大十八变”阶段变出来的“新美女”。", "relation": "supports"},
+    {"key": "E5", "paragraph_id": "P004", "quote": "另一方面也是因为自己进入了“社交季节”，开始被他人视为可以谋取的对象了", "relation": "supports"},
+    {"key": "E6", "paragraph_id": "P005", "quote": "以前没听过，还不知这些话的厉害，所以才会沉醉于它作为“他人证言”带来的满足感。", "relation": "supports"},
+    {"key": "E7", "paragraph_id": "P006", "quote": "这些话与其说是在表达仰慕、喜爱，不如说是在表达欲念、传递欲求和轻微的权力测试。", "relation": "supports"},
+    {"key": "E8", "paragraph_id": "P007", "quote": "被这样一夸就心花怒放、倍感娇羞的人、显然涉世甚浅，有机可乘，并且家教多半不够严谨，家庭背景多半不够深厚。", "relation": "supports"},
+    {"key": "E9", "paragraph_id": "P008", "quote": "如果对方是故意的，用这样的话来撩，那么更不用说——此非善类。", "relation": "supports"},
+    {"key": "E10", "paragraph_id": "P009", "quote": "就意味着女方所处的家庭没有做过这类教育，或至少不成功。", "relation": "supports"},
+    {"key": "E11", "paragraph_id": "P010", "quote": "这些有意无意的猎犬们就会张开鼻孔，竖起耳朵来了。", "relation": "supports"},
+    {"key": "E12", "paragraph_id": "P011", "quote": "这个起点，不是一段好的关系吉兆。", "relation": "supports"},
+    {"key": "E13", "paragraph_id": "P012", "quote": "对待女性的美貌，在建立亲密关系之前、得到许可之前、被询问之前，不可以随口评价。你有冲动，最好忍住。", "relation": "supports"},
+    {"key": "E14", "paragraph_id": "P013", "quote": "能为了礼仪原则忍住的，才是肯为了她的合法权益克制自我欲望的人", "relation": "supports"},
+    {"key": "E15", "paragraph_id": "P013", "quote": "而认为你这样坚守是“木讷和愚蠢”的人，则本身不宜与你为伴。", "relation": "supports"},
+    {"key": "E16", "paragraph_id": "P014", "quote": "将来美貌并不是一种稀缺资源，“细致入微、有所不为”才是。", "relation": "supports"}
+   ]
+  },
+  "provisional_tags": {
+   "domain_candidates": ["社交礼仪", "性别与容貌", "亲密关系"],
+   "issue_candidates": ["被夸好看如何回应", "评价他人容貌的边界", "夸赞背后的权力关系", "关系起点的判断", "家教与择偶"],
+   "text_function_candidates": ["答疑", "常识补充", "训诫/规劝", "社会观察"],
+   "object_candidates": ["美女/被夸者", "“女大十八变”阶段的“新美女”", "世家女", "猎犬（比喻）", "认为坚守是木讷愚蠢的人"],
+   "working_keywords": ["谢谢", "不经邀请", "容貌评价", "围猎", "驯养", "女大十八变", "新美女", "社交季节", "他人证言", "权力测试", "世家女", "猎犬", "礼仪原则", "细致入微、有所不为"]
+  },
+  "notes": "正文完整（14段，field 均为 body），无图片节点。标题“沉鱼落雁”未在正文出现，正文亦未使用该词，作为标题与正文用词不一致的疑点登记。P012-P014 的行动要求中“你”指向评价者，P004-P009 的“她/女方”指向被夸者，人称切换可能造成指代歧义。provenance/superseded 均 null，无版本差异。"
+ },
+ "72102158": {
+  "analysis": {
+   "question_context": "提问者以事件加追问的形式问：湖北武汉一14岁男生被母亲打耳光后跳楼坠亡，事前因玩扑克被请家长，学校和家庭教育应该如何反思。作者不复述事件，先判定“这位母亲的行为并不是一种合格有效的批评”，随后展开关于人际信号失真与“信”的论证，落点放在父母必须学会爱与“信”（P001、P019-P021）。",
+   "content_units": [
+    {"unit_id": "U001", "paragraph_refs": ["P001"], "summary": "对个案的判断：这位母亲的行为并不是一种合格有效的批评。", "role": "claim"},
+    {"unit_id": "U002", "paragraph_refs": ["P002", "P003", "P004", "P005", "P006"], "summary": "一般化理由：信号不由主观意愿完全决定，说话做事不总能匹配意图，并以六组“想…却做成…”说明失真。", "role": "reason"},
+    {"unit_id": "U003", "paragraph_refs": ["P007", "P008"], "summary": "提出“两重巴别塔”的隔阂，并指出能打破它的不是表达力与聪明智慧，而是“信”。", "role": "claim"},
+    {"unit_id": "U004", "paragraph_refs": ["P009", "P010"], "summary": "界定“信”的运作：把识别出的恶意感定性为沟通失误并直接无视；靠信而非“正确表达/正确理解”避免语言凶杀。", "role": "definition"},
+    {"unit_id": "U005", "paragraph_refs": ["P011", "P012"], "summary": "承认相信的代价与危险，并给出受伤后的分岔：仍然相信还是不再相信。", "role": "qualification"},
+    {"unit_id": "U006", "paragraph_refs": ["P013", "P014", "P015"], "summary": "分述两条路的代价：前者长期受伤后练出勉强得用的眼与坚固的心；后者无法消除对疑似恶意的敏感，转而用放逐对方解决再次受伤。", "role": "reason"},
+    {"unit_id": "U007", "paragraph_refs": ["P016", "P017", "P018"], "summary": "指出不信任路线的两个绝境（世界空无一人；出现“致命三角”），并以反问过渡。", "role": "claim"},
+    {"unit_id": "U008", "paragraph_refs": ["P019", "P020", "P021"], "summary": "行动要求与结论：父母必须走前一条路以获得可传授的经验；不选择爱就学不会爱、教不了爱；爱所需的能力、素养与经验是唯一能实在抑制这类悲剧的救赎。", "role": "conclusion"}
+   ],
+   "main_claims": [
+    {"claim_id": "C001", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "（就提问所述个案）这位母亲的行为并不是一种合格有效的批评。", "evidence": ["E1"]},
+    {"claim_id": "C002", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "她也许没有这样的明确主观故意，但人发出的信号并不完全由主观意愿决定；人最大的难题就是说话、做事并不总能匹配自己的意图（想给建议却做成批斗、想要和好却做成贿赂等）。", "evidence": ["E2", "E3", "E4"]},
+    {"claim_id": "C003", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "说出来的话已经常不从你心，听者还要再加一层想象和猜疑，之上还有听漏、看错；人心与人心之间隔着两重巴别塔，善始善终的长久关系是奇迹。", "evidence": ["E5", "E6"]},
+    {"claim_id": "C004", "claim_type": "author_explicit", "attribution": "author", "modality": "negated", "statement": "能打破巴别塔的东西并不是超人的表达力和不会犯任何错误的聪明智慧，而是信。", "evidence": ["E7"]},
+    {"claim_id": "C005", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "“信”的运作方式是：不是靠毫无歧义的表达或严密推理确认对方无恶意，而是出于相信对方的爱，把识别出来的恶意感全部定性为沟通失误并直接无视；靠着信而非“正确表达”“正确理解”，对话才没有走向交叉升级的语言凶杀。", "evidence": ["E8", "E9"]},
+    {"claim_id": "C006", "claim_type": "author_qualified", "attribution": "author", "modality": "qualified", "statement": "相信对方的爱会把自己置于极其危险、被动等待易受伤害的位置；所信对象若确实并非好意，就会受到很重的伤害。", "evidence": ["E10"]},
+    {"claim_id": "C007", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "真正的差别在于受伤之后：是选择“提高选择的技巧，但仍然相信”，还是选择“不再相信，而不必纠结选择的技巧”。", "evidence": ["E11"]},
+    {"claim_id": "C008", "claim_type": "author_qualified", "attribution": "author", "modality": "qualified", "statement": "选前者仍会因一次次选择失误而受伤、要到很久以后才练出勉强得用的眼睛和足够坚固的心；选后者虽不必冒“相信人而受伤”的险，但代价是无法消除对疑似恶意的敏感而又缺少真正坚强的心，于是总是用放逐对方来解决再次受伤问题。", "evidence": ["E12", "E13", "E14"]},
+    {"claim_id": "C009", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "不信任路线有两个绝境：要么所有人都被放逐、世界终于空无一人；要么一旦对方不是你能放逐的对象，就出现既不能依靠相信而消解、又不能靠坚强来忍受、又不能靠驱逐而消除的“致命三角”。", "evidence": ["E15", "E16"]},
+    {"claim_id": "C010", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "父母必须学会走前一条路，以便获得足够的经验传授给子女；为了学会走这条路，必须选择走这条路；自己不选择爱，也就学不会爱、教不了爱。", "evidence": ["E17", "E18"]},
+    {"claim_id": "C011", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "而爱所必要的能力、素养和经验，是唯一真正能实在抑制这类悲剧的救赎。", "evidence": ["E19"]}
+   ],
+   "argument_steps": [
+    "先给个案判断：这位母亲的行为不是合格有效的批评（P001）。",
+    "一般化：信号不由主观意愿完全决定，说话做事不总能匹配意图（P002-P004）。",
+    "以六组“想…却做成…”以及听者的想象猜疑、听漏看错说明失真叠加（P005-P006）。",
+    "提出“两重巴别塔”的隔阂，并给出破法：不是表达力与聪明，而是信（P007-P008）。",
+    "界定“信”：把识别出的恶意感定性为沟通失误并直接无视（P009）。",
+    "指出是靠着信而非“正确表达/正确理解”，对话才没有走向语言凶杀（P010）。",
+    "承认相信的代价与危险（P011）。",
+    "给出真正的分岔：受伤后“仍然相信”还是“不再相信”（P012）。",
+    "分述两条路的代价（P013-P015）。",
+    "指出不信任路线的两个绝境（P016-P017）。",
+    "以反问“那还剩下什么选择呢？”过渡（P018）。",
+    "落到父母：必须走前一条路以获得可传授的经验，不选择爱就学不会爱、教不了爱（P019-P020）。",
+    "结论：爱所必要的能力、素养和经验是唯一能实在抑制这类悲剧的救赎（P021）。"
+   ],
+   "concept_usage": [
+    {"term": "批评", "meaning": "指合格有效的批评；作者判定该母亲的行为不属于此类，但未给出合格批评的标准（P001）。", "evidence": "P001", "ambiguity": "合格有效批评的判据正文未说明。"},
+    {"term": "批斗（judge）", "meaning": "与“建议”相对的评判、斗争式表达（P005）。", "evidence": "P005", "ambiguity": "夹注英文 judge，作者未展开定义。"},
+    {"term": "信", "meaning": "本文核心用法：不依据明确表达或严密推理，而是出于相信对方的爱，把识别出的恶意感定性为沟通失误并直接无视（P008、P009）。", "evidence": "P009", "ambiguity": "作者未界定“信”的对象范围、底线与止损条件。"},
+    {"term": "两重巴别塔", "meaning": "比喻人际之间的双重隔阂（P007）。", "evidence": "P007", "ambiguity": "“两重”具体所指不明：正文并列了听者想象猜疑与听漏看错。"},
+    {"term": "语言凶杀", "meaning": "比喻对话交叉升级所造成的伤害（P010）。", "evidence": "P010", "ambiguity": "修辞用法，未定义。"},
+    {"term": "致命三角", "meaning": "作者自创术语：既不能依靠相信而消解、不能靠坚强来忍受、不能靠驱逐而消除的处境（P017）。", "evidence": "P017", "ambiguity": "未给出判据或实例。"},
+    {"term": "放逐", "meaning": "以驱逐对方来解决再次受伤问题（P015）。", "evidence": "P015", "ambiguity": "与“不再相信”的关系未细化。"},
+    {"term": "救赎", "meaning": "用于指爱所必要的能力、素养与经验对这类悲剧的抑制作用（P021）。", "evidence": "P021", "ambiguity": "带价值与宗教色彩的用语，作者未作界定。"}
+   ],
+   "examples_and_targets": [
+    "湖北武汉14岁男生被母亲打耳光后跳楼坠亡、事前因玩扑克被请家长——仅出现在提问字段，是提问者提供的事件语境；正文未复述，作者只作了一句定性判断（P001）。",
+    "六组对照：想给建议却做成批斗（judge）、想要和好却做成贿赂、想要鼓励却做成吹捧、想要分手却做成抛弃、想要说服却成了胁迫、想要爱却做成了罪——作者例证（P005）。",
+    "“巴别塔”——作者比喻（经典典故，正文未注明出处）（P007-P008）。",
+    "“致命三角”——作者自创的术语化比喻（P017）。",
+    "P002“为什么人们不喜欢被批评？”在 lexical 中是 link 节点，链接目标为知乎另一篇回答（/question/22987136/answer/1434894604）；该句与链接内容的归属不明，不计入作者主张。"
+   ],
+   "conditions": [
+    "“也许她自己没有这样的明确的主观故意，但…”——让步式限定（P003）。",
+    "“你所相信的对象若是确实并非好意，你就会受到很重的伤害”——条件与风险（P011）。",
+    "“在受到伤害之后”——两条路的分岔条件（P012）。",
+    "“一旦对方不是你能放逐的对象，就将出现致命三角”——条件（P017）。",
+    "“要到很久以后才会慢慢练出”——时间成本限定（P013）。",
+    "作者未说明“信”是否应无条件、是否存在止损边界或例外。"
+   ],
+   "rhetoric_and_tone": "排比（“想给建议，却做成了批斗（judge）；想要和好，却做成了贿赂…”）；括号夹注英文（judge）；“巴别塔”“语言凶杀”“致命三角”等比喻与自造术语；反问过渡（“那还剩下什么选择呢？”）；语气由冷静的分析推理转向训诫与呼吁（“我要提醒父母们注意”“你们必须学会走前一条路”）。",
+   "unresolved_questions": [
+    "P002“为什么人们不喜欢被批评？”在 lexical 中为 link 节点，指向知乎另一篇回答（/question/22987136/answer/1434894604）；该句与链接目标是否作者本人旧作、其内容是否即本篇前提，正文无法确定，故不计入作者主张。",
+    "标题“三面围堵”未在正文出现，正文亦无与“围堵”相关的论述，标题与正文的关系不明（疑为平台/话题标题，待核）。",
+    "正文未复述事件经过，也未直接回答提问所问“学校应如何反思”，落点在父母与“信/爱”。",
+    "“两重巴别塔”中“两重”的具体所指存在计数歧义（表达失真、听者想象猜疑、听漏看错并列出现）。",
+    "“致命三角”为作者自创术语，正文未给出判据或案例。",
+    "事件细节（14岁男生、被母亲打耳光、因玩扑克被请家长）仅由提问提供，本篇未核，属待外部核查。"
+   ],
+   "evidence": [
+    {"key": "E1", "paragraph_id": "P001", "quote": "首先，这位母亲的行为并不是一种合格有效的批评。", "relation": "supports"},
+    {"key": "E2", "paragraph_id": "P003", "quote": "也许她自己没有这样的明确的主观故意，但可惜人发出的信号并不是完全由人的主观意愿决定的。", "relation": "qualifies"},
+    {"key": "E3", "paragraph_id": "P004", "quote": "人最大的难题，就是说话、做事并不总是能匹配自己的意图。", "relation": "supports"},
+    {"key": "E4", "paragraph_id": "P005", "quote": "想给建议，却做成了批斗（judge）；想要和好，却做成了贿赂；想要鼓励，却做成了吹捧；", "relation": "supports"},
+    {"key": "E5", "paragraph_id": "P006", "quote": "说出来的话已经常不从你心，何况听者还要再加一层想象和猜疑，更何况这之上还有听漏、看错。", "relation": "supports"},
+    {"key": "E6", "paragraph_id": "P007", "quote": "人心与人心之间隔着两重巴别塔，能有什么关系延续一生而又善始善终，真的是一种奇迹。", "relation": "supports"},
+    {"key": "E7", "paragraph_id": "P008", "quote": "能打破巴别塔的东西，并不是什么超人的表达力和不会犯任何错误的聪明智慧，而是信。", "relation": "supports"},
+    {"key": "E8", "paragraph_id": "P009", "quote": "而是我出于相信你的爱，而将我所识别出来的恶意感全部定性为沟通失误，直接加以无视。", "relation": "supports"},
+    {"key": "E9", "paragraph_id": "P010", "quote": "是靠着信、而不是靠着什么“正确表达”和“正确理解”，我们的对话才没有走向交叉升级的语言凶杀。", "relation": "supports"},
+    {"key": "E10", "paragraph_id": "P011", "quote": "你所相信的对象若是确实并非好意，你就会受到很重的伤害。", "relation": "qualifies"},
+    {"key": "E11", "paragraph_id": "P012", "quote": "在受到伤害之后，你是选择“提高选择的技巧，但仍然相信”；还是选择“不再相信，而不必纠结选择的技巧”。", "relation": "supports"},
+    {"key": "E12", "paragraph_id": "P013", "quote": "要到很久以后才会慢慢练出一双勉强得用的眼睛和一颗足够坚固的心。", "relation": "qualifies"},
+    {"key": "E13", "paragraph_id": "P014", "quote": "但代价就是你因为无法相信而无法消除对疑似恶意的敏感，而又缺少真正坚强的心。", "relation": "qualifies"},
+    {"key": "E14", "paragraph_id": "P015", "quote": "于是你总是会用放逐对方来解决再次受伤问题。", "relation": "supports"},
+    {"key": "E15", "paragraph_id": "P016", "quote": "要么所有人都被你放逐，你的世界里终于空无一人。", "relation": "supports"},
+    {"key": "E16", "paragraph_id": "P017", "quote": "就将出现致命三角——既不能依靠相信而消解、又不能靠坚强来忍受、又不能靠驱逐而消除。", "relation": "supports"},
+    {"key": "E17", "paragraph_id": "P019", "quote": "你们必须学会走前一条路，以便获得足够的走这条路的经验来传授给子女。", "relation": "supports"},
+    {"key": "E18", "paragraph_id": "P020", "quote": "你们若是自己不选择爱，也就学不会爱，也就教不了爱。", "relation": "supports"},
+    {"key": "E19", "paragraph_id": "P021", "quote": "而爱所必要的能力、素养和经验，是唯一真正能实在抑制这类悲剧的救赎。", "relation": "supports"}
+   ]
+  },
+  "provisional_tags": {
+   "domain_candidates": ["家庭教育", "沟通与人际信任", "青少年心理与自杀事件评论"],
+   "issue_candidates": ["什么算合格有效的批评", "表达与意图的错位", "信任的代价与选择", "不信任的绝境", "父母如何教爱"],
+   "text_function_candidates": ["评论", "论辩", "概念界定", "训诫/呼吁"],
+   "object_candidates": ["提问所述母亲与14岁男生", "父母们", "听者", "所相信的对象", "链接目标回答（P002）"],
+   "working_keywords": ["批评", "批斗（judge）", "信号", "意图", "两重巴别塔", "信", "语言凶杀", "恶意感", "沟通失误", "致命三角", "放逐", "救赎"]
+  },
+  "notes": "正文完整（21段），无图片节点；结构 divergence=True：P002“为什么人们不喜欢被批评？”在 lexical 中为 link 节点（目标 /question/22987136/answer/1434894604），该句归属不明，未计入作者主张，仅在 unresolved_questions 与 examples_and_targets 登记。标题“三面围堵”未见于正文，标题与正文关系不明。事件细节仅由提问提供，正文未复述。provenance/superseded 均 null。"
+ },
+ "c8b11b87": {
+  "analysis": {
+   "question_context": "提问者问：如何看待9月19日解放军19架战机进入台西南及西北空域。作者先声明本文不是鼓吹战争、不是提供建议，而是根据迹象与态势对现行策略走向的预测；随后列出对台施压手段的“路线图”，并反驳“强国人自我膨胀”的评论（P001、P004）。",
+   "content_units": [
+    {"unit_id": "U001", "paragraph_refs": ["P001"], "summary": "作者自我定性：不谈立场、不呼吁支持，只做对现行策略走向的预测（事实判断）；并回驳“鼓吹战争”的指责。", "role": "context"},
+    {"unit_id": "U002", "paragraph_refs": ["P002", "P003"], "summary": "承认预测不一定成立，但以决策质量不低于此预测作论证（智库信息更全面、决策层逐级上升）。", "role": "reason"},
+    {"unit_id": "U003", "paragraph_refs": ["P004", "P005"], "summary": "反驳“强国人自我膨胀”的评论，指出该策略非因膨胀，而是别无代价更低的手段、非做不可。", "role": "rebuttal"},
+    {"unit_id": "U004", "paragraph_refs": ["P006", "P007", "P008", "P009"], "summary": "说明须展现主动求战与彻底升级的战争意志以斩断政治投机者的妄念；这不是可等的“业余爱好”，不是为毁灭而是为拯救。", "role": "claim"},
+    {"unit_id": "U005", "paragraph_refs": ["P010", "P011", "P012", "P013"], "summary": "预测这些举动是正在推行的新国策而非对美方访台的“反应”，台湾将逐步失去领空、领海可言，并引出路线图。", "role": "claim"},
+    {"unit_id": "U006", "paragraph_refs": ["P014", "P015", "P016", "P017", "P018", "P019", "P020"], "summary": "七条路线图：空军中线东侧训练逼近、海军外线驻泊操练、空降演练与前置部署、预警致盲、反潜扫雷布雷、中程导弹试射、以国安理由抽查货轮。", "role": "example"},
+    {"unit_id": "U007", "paragraph_refs": ["P021", "P022", "P023", "P024"], "summary": "预测这些将成常规新闻，升级模式由“操之在台”转为“操之在我”，即推进统一时间表。", "role": "claim"},
+    {"unit_id": "U008", "paragraph_refs": ["P025", "P026", "P027", "P028"], "summary": "警告台湾误判局势；以“hk教训”说明教科书即终极挑衅；结论是须持续“去安全感”化，消灭对方一切妄想才是和平统一最短捷径。", "role": "conclusion"}
+   ],
+   "main_claims": [
+    {"claim_id": "C001", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "作者自述：本文没有谈论自己的立场，也没有呼吁别人支持该策略，只是根据各种迹象和态势对现行策略走向作猜测；个人好恶、主张乃至“假如我是台湾人”都不影响这一判断。", "evidence": ["E1"]},
+    {"claim_id": "C002", "claim_type": "opponent_view", "attribution": "opponent", "modality": "questioned", "statement": "被作者引述并反驳的评论：“有人说这篇东西‘鼓吹战争’”；作者称这是完全看错了定性。", "evidence": ["E2"]},
+    {"claim_id": "C003", "claim_type": "author_explicit", "attribution": "author", "modality": "hypothetical", "statement": "事情不一定走在预测路线上；但若该策略已被感觉为可行、有合理性且结果积极可期待，真正被实施的策略的决策质量只会在此预测之上，而不会在其之下。", "evidence": ["E3", "E4"]},
+    {"claim_id": "C004", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "智库掌握的信息更全面、思考更专注深入，决策层也都是一步一个台阶走上去的，没道理作者能想到的东西他们没有想到。", "evidence": ["E5"]},
+    {"claim_id": "C005", "claim_type": "opponent_view", "attribution": "opponent", "modality": "questioned", "statement": "被作者引述并反驳的评论：“有人评论说‘强国人自我膨胀’”；作者称这是完全看错了实施该策略的决策逻辑。", "evidence": ["E6"]},
+    {"claim_id": "C006", "claim_type": "author_explicit", "attribution": "author", "modality": "negated", "statement": "该策略根本不是“膨胀”的结果，而是即使条件不成熟、实力做不到无损获胜、可能遭受挫折失败、要面对重大牺牲也非做不可，因为别无其它代价更低的手段能获得更好的结果。", "evidence": ["E7", "E8"]},
+    {"claim_id": "C007", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "只有展现主动求战、不惜以最快速度升级到最彻底规模的战争意志，才能齐根斩断一切仍然打算做政治投机的赌徒的妄念。", "evidence": ["E9"]},
+    {"claim_id": "C008", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "即使感觉不良好、觉得没十足把握，也一样要坚定不移、百折不回地向前推进；这不是可以等天气晴好、把握十足再轻装出发的“业余爱好”。", "evidence": ["E10", "E11"]},
+    {"claim_id": "C009", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "（作者对该策略性质的表述）这不是为了毁灭，而是为了拯救。", "evidence": ["E12"]},
+    {"claim_id": "C010", "claim_type": "author_explicit", "attribution": "author", "modality": "predicted", "statement": "台湾可能很快发现自己犯了错误——大陆的这些举动并不是对所谓美国这人访台、那人访台的所谓“反应”，而是一种正在有条不紊推行的新国策。", "evidence": ["E13"]},
+    {"claim_id": "C011", "claim_type": "author_explicit", "attribution": "author", "modality": "predicted", "statement": "从现在开始直到完成统一为止，台湾恐怕将一步步走向不再拥有领空、领海可言的境地；这似乎将成为继“解除台湾的邦交关系，去除其外交空间”之后更实质的迈向统一的推进的一部分。", "evidence": ["E14", "E15"]},
+    {"claim_id": "C012", "claim_type": "author_explicit", "attribution": "author", "modality": "predicted", "statement": "作者列出七条路线图式手段（空军中线东侧训练逼近、海军外线驻泊操练、空降演练与前置部署、雷达预警与电子战致盲、反潜扫雷布雷压缩生存空间、中程导弹试射、以国安理由抽查货轮）。", "evidence": ["E16", "E17"]},
+    {"claim_id": "C013", "claim_type": "author_explicit", "attribution": "author", "modality": "predicted", "statement": "这些新闻很可能在未来一两年里成为台湾新闻的常规内容。", "evidence": ["E18"]},
+    {"claim_id": "C014", "claim_type": "author_explicit", "attribution": "author", "modality": "predicted", "statement": "手段升级可能不再遵循“你挑衅我就升级，你示好我就降级”的“操之在台”模式，而是不需台湾挑衅、不理会求和姿态、也不考虑中美关系松紧，完全按北京单方面计划不断升级，直到台湾民众对一切独立的可能性绝望；也就是操之在我、唯在于我，直到和平投降为止，这其实就是在推进统一时间表。", "evidence": ["E19", "E20", "E21"]},
+    {"claim_id": "C015", "claim_type": "author_explicit", "attribution": "author", "modality": "qualified", "statement": "台湾如果还以为只要老实几个月不挑衅就可以解除紧张局势，或说两句软话就能降温，那么就误判了局势。", "evidence": ["E22"]},
+    {"claim_id": "C016", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "“hk教训”已深刻让北京意识到，修改教科书这一条就是终极挑衅；只要台独教科书没有变化，不需台北再做任何其他挑衅动作，已经是每一天都在极端挑衅之中。", "evidence": ["E23"]},
+    {"claim_id": "C017", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "每一天都有必要以更快的速度、更大的力量、更不能靠言语宣传扭曲的实际态势将台湾“去安全感”化；消灭对方的一切妄想，才是和平统一的最短捷径。", "evidence": ["E24", "E25"]}
+   ],
+   "argument_steps": [
+    "先自我定性：不谈立场、不呼吁支持，只作预测性的事实判断，并回驳“鼓吹战争”的指责（P001）。",
+    "承认预测不必然成立，但以“决策质量不低于预测”作论证（P002-P003）。",
+    "反驳“强国人自我膨胀”的评论，给出“非做不可”的理由（P004-P005）。",
+    "说明必须展现彻底升级的战争意志才能斩断政治投机者的妄念，并界定这不是“业余爱好”（P006-P008）。",
+    "给出对该策略性质的表述：不是为毁灭而是为拯救（P009）。",
+    "预测这是新国策而非对美方访台的“反应”（P010）。",
+    "预测台湾将失去领空、领海可言，属更实质的推进（P011-P012）。",
+    "列出七条路线图式手段（P013-P020）。",
+    "预测这些将成为台湾新闻的常规内容（P021）。",
+    "预测升级模式转为“操之在我”，即推进统一时间表（P022-P024）。",
+    "警告台湾对局势的误判（P025）。",
+    "以“hk教训”说明教科书问题即终极挑衅（P026）。",
+    "结论：须持续“去安全感”化，消灭对方一切妄想才是和平统一最短捷径（P027-P028）。"
+   ],
+   "concept_usage": [
+    {"term": "新国策", "meaning": "作者用以指当前对台举措的性质，区别于对美方访问的“反应”（P010）。", "evidence": "P010", "ambiguity": "作者未说明该判断所依据的迹象。"},
+    {"term": "操之在台/操之在我", "meaning": "两种升级模式：前者由台湾的挑衅或示好决定，后者由北京单方面计划决定（P022、P023）。", "evidence": "P022", "ambiguity": "“唯在于我”的强度未给边界。"},
+    {"term": "“去安全感”化", "meaning": "作者用语：以实际态势使台湾丧失安全感（P027）。", "evidence": "P027", "ambiguity": "带引号的自造表述，未定义衡量方式。"},
+    {"term": "政治投机的赌徒", "meaning": "指仍打算做政治投机的行为者（P006）。", "evidence": "P006", "ambiguity": "所指对象（台湾内部或外部）未逐一列出。"},
+    {"term": "终极挑衅", "meaning": "作者用它指修改教科书（台独教科书）一事（P026）。", "evidence": "P026", "ambiguity": "以“hk教训”为依据，所指事件正文未展开。"},
+    {"term": "无损获胜", "meaning": "指在实力上可做到无损失的胜利（P005）。", "evidence": "P005", "ambiguity": "为让步句中的假设标准。"},
+    {"term": "统一时间表", "meaning": "作者称上述路线“其实就是在推进统一时间表了”（P024）。", "evidence": "P024", "ambiguity": "作者未给出具体时点。"}
+   ],
+   "examples_and_targets": [
+    "9月19日解放军19架战机进入台西南及西北空域——仅出现在提问中，正文未复述该细节。",
+    "“有人说这篇东西‘鼓吹战争’”——作者引述并反驳的评论一（评论者未具名）。",
+    "“有人评论说‘强国人自我膨胀’”——作者引述并反驳的评论二（评论者未具名）。",
+    "美国“这人访台、那人访台”——作者用来对比“反应”说法的对象。",
+    "台湾的邦交关系与外交空间——作者称已被解除/去除，属其历史叙述。",
+    "关岛方向、日本方向、夏威夷方向——预测中海军的驻泊与演练方向。",
+    "台军、台海军、台湾预警系统、台湾民众——预测中被动承受压力的一方。",
+    "“hk教训”——作者论据（“hk”未在正文展开）。",
+    "台独教科书——作者称其存在本身即“终极挑衅”。"
+   ],
+   "conditions": [
+    "“那么事情是不是一定走在这个预测路线上呢？当然不一定。”——预测的不确定性限定（P002）。",
+    "“即使条件不成熟，即使实力还做不到无损获胜、即使可能会遭受一定挫折、一定失败、即使要面对重大的牺牲”——多重让步条件（P005）。",
+    "“即使感觉不良好、觉得没十足把握，也一样要”——条件让步（P007）。",
+    "“直到完成统一为止”“在未来一两年里”——时间限定（P011、P021）。",
+    "“台湾如果还以为只要老实几个月不挑衅…那么就误判了局势”——条件句（P025）。",
+    "“只要台独教科书没有变化”——条件（P026）。",
+    "作者未说明预测所依据的具体迹象、情报来源与可证伪标准。"
+   ],
+   "rhetoric_and_tone": "开篇双线驳论（先驳“鼓吹战争”，再驳“强国人自我膨胀”）；预判与断言式短句交替，反复使用“即使…也…”“不是…而是…”句式；以有序列表列七条路线图；对台湾使用第二人称（“直到你和平投降为止”）；夹带强烈意志与拯救色彩的表述（“百折不回”“不是为了毁灭，而是为了拯救”）；通篇以“恐怕”“很可能”“可能”“似乎”等词标明预测性质。",
+   "unresolved_questions": [
+    "作者声明只作事实判断、不谈立场，但 P005-P009 出现“非做不可”“不是为了毁灭，而是为了拯救”等评价性与动员性表述，与“只是事实判断”的自我定性存在张力（如实保留，不代为调和）。",
+    "P026“hk教训”中的“hk”正文未展开（按上下文疑指香港，作者未明写），所指事件需外部核查。",
+    "两处被反驳的评论（“鼓吹战争”“强国人自我膨胀”）均只称“有人”，评论者身份与出处不明。",
+    "路线图七条为预测性内容而非已发生事实，需外部核查后续发展。",
+    "提问所述“9月19日19架战机”事件细节正文未复述，本篇未核。",
+    "作者未说明预测依据的“各种迹象和态势”具体为何，也未给出预测失效的条件。"
+   ],
+   "evidence": [
+    {"key": "E1", "paragraph_id": "P001", "quote": "我并没有谈论我自己的立场，或者呼吁别人支持这种策略", "relation": "supports"},
+    {"key": "E2", "paragraph_id": "P001", "quote": "有人说这篇东西“鼓吹战争”，这是完全看错了定性。", "relation": "contradicts"},
+    {"key": "E3", "paragraph_id": "P002", "quote": "那么事情是不是一定走在这个预测路线上呢？当然不一定。", "relation": "qualifies"},
+    {"key": "E4", "paragraph_id": "P002", "quote": "那么真正被实施的策略一定决策质量只会在这个预测之上，而不会在它之下。", "relation": "supports"},
+    {"key": "E5", "paragraph_id": "P003", "quote": "没道理我都能如此简单的想到的东西他们没有想到。", "relation": "supports"},
+    {"key": "E6", "paragraph_id": "P004", "quote": "有人评论说“强国人自我膨胀”。", "relation": "contradicts"},
+    {"key": "E7", "paragraph_id": "P005", "quote": "这个根本不是“膨胀”的结果", "relation": "contradicts"},
+    {"key": "E8", "paragraph_id": "P005", "quote": "这一策略也非做不可。因为别无其它代价更低的手段能获得更好的结果。", "relation": "supports"},
+    {"key": "E9", "paragraph_id": "P006", "quote": "只有展现主动求战、不惜以最快速度、升级到最彻底规模的战争意志，才能齐根斩断一切仍然打算做政治投机的赌徒的妄念。", "relation": "supports"},
+    {"key": "E10", "paragraph_id": "P007", "quote": "即使感觉不良好、觉得没十足把握，也一样要坚定不移的、百折不回的向前推进。", "relation": "supports"},
+    {"key": "E11", "paragraph_id": "P008", "quote": "所以这不是一种可以等天气晴好、心情愉快、把握十足再轻装出发的“业余爱好”。", "relation": "supports"},
+    {"key": "E12", "paragraph_id": "P009", "quote": "这不是为了毁灭，而是为了拯救。", "relation": "supports"},
+    {"key": "E13", "paragraph_id": "P010", "quote": "而是一种正在有条不紊的推行的新国策。", "relation": "supports"},
+    {"key": "E14", "paragraph_id": "P011", "quote": "台湾恐怕将一步步走向不再拥有领空、领海可言的境地。", "relation": "supports"},
+    {"key": "E15", "paragraph_id": "P012", "quote": "这似乎将成为继“解除台湾的邦交关系，去除其外交空间”之后的更实质的迈向统一的实质推进的一部分。", "relation": "supports"},
+    {"key": "E16", "paragraph_id": "P014", "quote": "空军长期在中线东侧训练，并且不断逼近台湾本土。", "relation": "supports"},
+    {"key": "E17", "paragraph_id": "P020", "quote": "在这之上，可以进一步的以国安理由随机拦截抽查进出台海的货轮。", "relation": "supports"},
+    {"key": "E18", "paragraph_id": "P021", "quote": "这些新闻很可能在未来一两年里成为台湾新闻的常规内容。", "relation": "supports"},
+    {"key": "E19", "paragraph_id": "P022", "quote": "只会完全按照北京单方面的计划不断升级，直到台湾民众只凭肉眼观察、凭常识判断就不能不对一切独立的可能性绝望。", "relation": "supports"},
+    {"key": "E20", "paragraph_id": "P023", "quote": "也就是操之在我，而且唯在于我，直到你和平投降为止。", "relation": "supports"},
+    {"key": "E21", "paragraph_id": "P024", "quote": "这其实就是在推进统一时间表了。", "relation": "supports"},
+    {"key": "E22", "paragraph_id": "P025", "quote": "那么就误判了局势了。", "relation": "supports"},
+    {"key": "E23", "paragraph_id": "P026", "quote": "因为hk教训已经深刻的让北京意识到，修改教科书这一条就是终极挑衅。", "relation": "supports"},
+    {"key": "E24", "paragraph_id": "P027", "quote": "每一天都有必要以更快的速度、更大的力量、更不能靠言语宣传扭曲的实际态势将台湾“去安全感”化。", "relation": "supports"},
+    {"key": "E25", "paragraph_id": "P028", "quote": "消灭对方的一切妄想，才是和平统一的最短捷径。", "relation": "supports"}
+   ]
+  },
+  "provisional_tags": {
+   "domain_candidates": ["两岸关系与统一进程", "军事与战略态势", "对外与国防政策评论"],
+   "issue_candidates": ["解放军战机进入台空域如何解读", "对台举措是否为新国策", "战争意志与威慑效果", "统一时间表", "教科书与挑衅认定"],
+   "text_function_candidates": ["答疑", "态势预测", "驳论（先驳两种评论）", "路线图式推演"],
+   "object_candidates": ["台湾", "北京/大陆", "美国", "台军与台海军", "智库", "决策层", "关岛、日本、夏威夷方向", "hk（未展开）"],
+   "working_keywords": ["新国策", "中线", "操之在台", "操之在我", "去安全感", "和平统一", "统一时间表", "政治投机的赌徒", "终极挑衅", "台独教科书", "战争意志", "无损获胜"]
+  },
+  "notes": "正文完整（28段，field 均为 body），无图片节点。开篇两处被反驳的评论（“鼓吹战争”“强国人自我膨胀”）均仅称“有人”，身份未具名，记为 opponent_view。作者自称只作事实判断、不谈立场，但 P005-P009 出现评价性与动员性表述，该张力保留于 unresolved_questions，未代为调和。P026 的“hk”未在正文展开（按上下文疑指香港），需外部核查。提问所述9月19日19架战机事件正文未复述。provenance/superseded 均 null。"
+ },
+ "9d9a14b8": {
+  "analysis": {
+   "question_context": "提问者问：员工请假被拒在工厂自杀身亡，留纸条称工作压力好大，工厂需要承担责任吗。作者不复述个案，先以条件句给出一般规则——若无其他相关刑事情节，仅自杀导致的死亡不产生刑事责任，再以反向后果论证该规则的可行性，并列举例外情节（P001-P004）。",
+   "content_units": [
+    {"unit_id": "U001", "paragraph_refs": ["P001"], "summary": "结论性规则：如果没有其他相关刑事情节，仅仅是自杀导致的死亡不会产生刑事责任。", "role": "claim"},
+    {"unit_id": "U002", "paragraph_refs": ["P002", "P003"], "summary": "反向理由：若法律规定自杀导致关联者刑责，“以自杀来惩罚他人”的案件会层出不穷，等于变相鼓励自杀，故不可行。", "role": "reason"},
+    {"unit_id": "U003", "paragraph_refs": ["P004"], "summary": "例外条件：除非出现绑架、禁锢、故意伤害、暴力威胁这类情节，否则他人不为你的自杀负担责任。", "role": "qualification"},
+    {"unit_id": "U004", "paragraph_refs": ["P005"], "summary": "举例：恋爱失败、工作压力、邻里争吵、婆媳不和四类情形下，对方或雇主均无法律责任。", "role": "example"},
+    {"unit_id": "U005", "paragraph_refs": ["P006", "P007"], "summary": "法理说明与结论：保持不自杀的责任在人自己；否则会变成“人越是脆弱反而越是权力巨大”，这种事实的权力反而会引诱更多人自杀。", "role": "conclusion"}
+   ],
+   "main_claims": [
+    {"claim_id": "C001", "claim_type": "author_explicit", "attribution": "author", "modality": "qualified", "statement": "如果没有其他相关刑事情节，仅仅是自杀导致的死亡是不会产生刑事责任的。", "evidence": ["E1"]},
+    {"claim_id": "C002", "claim_type": "author_explicit", "attribution": "author", "modality": "hypothetical", "statement": "如果法律规定自杀就会导致关联者承担刑事责任，那么“以自杀来惩罚他人”的案件就会层出不穷，等于变相地鼓励自杀行为；这显然是不可行的。", "evidence": ["E2", "E3"]},
+    {"claim_id": "C003", "claim_type": "author_explicit", "attribution": "author", "modality": "qualified", "statement": "除非出现绑架、禁锢、故意伤害、暴力威胁这类情节，否则法律上他人是不会为你的自杀负担任何责任的。", "evidence": ["E4"]},
+    {"claim_id": "C004", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "恋爱失败一方自杀、工作压力大雇员自杀、邻里争吵一方自杀、婆媳不和一方自杀时，对方或雇主都没有法律责任。", "evidence": ["E5"]},
+    {"claim_id": "C005", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "法律上，保持不自杀的责任在人自己；自杀是自己放弃了对自己的责任，而不是他人有什么过错。", "evidence": ["E6"]},
+    {"claim_id": "C006", "claim_type": "author_explicit", "attribution": "author", "modality": "hypothetical", "statement": "（否则）事情就变成“人越是脆弱反而越是权力巨大，想自杀的人可以随时威胁所有关联人”了。", "evidence": ["E7"]},
+    {"claim_id": "C007", "claim_type": "author_explicit", "attribution": "author", "modality": "predicted", "statement": "这种事实的权力，反而会引诱更多的人自杀。", "evidence": ["E8"]}
+   ],
+   "argument_steps": [
+    "给出规则：无其他刑事情节时，自杀致死不产生刑事责任（P001）。",
+    "以反向后果论证其可行性：否则“以自杀惩罚他人”层出不穷，等于鼓励自杀（P002-P003）。",
+    "给出例外条件：绑架、禁锢、故意伤害、暴力威胁等情节（P004）。",
+    "以恋爱失败、工作压力、邻里争吵、婆媳不和四类情形举例说明无责任（P005）。",
+    "说明法理：保持不自杀的责任在人自己，自杀是放弃自己的责任而非他人过错（P006）。",
+    "推出反直觉后果：否则脆弱即权力、可随时威胁关联人（P006）。",
+    "结论：这种事实的权力反而会引诱更多的人自杀（P007）。"
+   ],
+   "concept_usage": [
+    {"term": "刑事责任", "meaning": "指因自杀事件而由关联者承担的刑事法律后果（P001）。", "evidence": "P001", "ambiguity": "与后文“责任/法律责任”并用，层次未严格区分。"},
+    {"term": "法律责任", "meaning": "P004、P005 用“责任”“法律责任”描述同一免责任结论（P004、P005）。", "evidence": "P005", "ambiguity": "正文未讨论民事赔偿、工伤等责任类型，是否涵盖不明。"},
+    {"term": "其他相关刑事情节", "meaning": "指自杀之外可能另构成刑事犯罪的情节（P001、P004），文中例示为绑架、禁锢、故意伤害、暴力威胁。", "evidence": "P004", "ambiguity": "以省略号结尾，未穷尽列举。"},
+    {"term": "“以自杀来惩罚他人”", "meaning": "带引号的表述，指以自杀作为对他人施加后果的手段（P002）。", "evidence": "P002", "ambiguity": "作者未展开这一用语的构成要件。"},
+    {"term": "事实的权力", "meaning": "指因他人可能自杀而获得的、可威胁关联人的实际影响力（P007）。", "evidence": "P007", "ambiguity": "与通常的规范权力概念关系未说明。"},
+    {"term": "“人越是脆弱反而越是权力巨大”", "meaning": "带引号的反直觉命题，描述上述免责规则被推翻后的后果（P006）。", "evidence": "P006", "ambiguity": "为修辞性概括，非法律术语。"}
+   ],
+   "examples_and_targets": [
+    "“员工请假被拒在工厂自杀身亡，留纸条称工作压力好大”——仅出现在提问，正文未复述该个案细节。",
+    "恋爱失败，一方自杀，对方没有法律责任——作者例证。",
+    "工作压力大，雇员自杀，雇主没有法律责任——作者例证（与提问情境直接对应）。",
+    "邻里争吵，一方自杀，对方没有法律责任——作者例证。",
+    "婆媳不和，一方自杀，另一方也没有法律责任——作者例证。",
+    "绑架、禁锢、故意伤害、暴力威胁——作者列举的例外情节（修辞上以省略号保持开放）。"
+   ],
+   "conditions": [
+    "“如果没有其他相关刑事情节”——首要限定条件（P001）。",
+    "“除非出现绑架、禁锢、故意伤害、暴力威胁……这类情节，否则”——例外条件（P004）。",
+    "“如果法律规定自杀就会导致关联者承担刑事责任，那么”——假设性推理（P002）。",
+    "“否则事情就变成…”——反事实推论（P006）。",
+    "“这类情节”“……”——列举开放未封闭，未穷尽（P004）。",
+    "作者未讨论民事赔偿、工伤认定、精神损害等责任类型，也未给出个案结论。"
+   ],
+   "rhetoric_and_tone": "法条式条件句（“如果…那么…”“除非…否则…”）；四类情形用分号排比并以省略号收尾；以反直觉命题作警示（“人越是脆弱反而越是权力巨大”）；整体语气为分析性、判断性，修辞色彩较少。",
+   "unresolved_questions": [
+    "提问问“工厂需要承担责任吗”，正文只给一般规则与四类举例，未对本案作出个案结论，也未说明“请假被拒”是否构成“其他相关刑事情节”。",
+    "P001 用“刑事责任”，P004/P005 用“责任/法律责任”，概念层次有滑动；正文未讨论民事赔偿、工伤责任等（需研究者界定或外部核查）。",
+    "“其他相关刑事情节”的范围未封闭列举（P001、P004 均以省略号结尾）。",
+    "事件事实（员工请假被拒、在工厂自杀、留纸条称工作压力好大）仅由提问提供，本篇未核。",
+    "“自杀是自己放弃了对自己的责任”这一表述的法律依据，正文未给出。"
+   ],
+   "evidence": [
+    {"key": "E1", "paragraph_id": "P001", "quote": "如果没有其他相关刑事情节，仅仅是自杀导致的死亡是不会产生刑事责任的。", "relation": "supports"},
+    {"key": "E2", "paragraph_id": "P002", "quote": "因为如果法律规定自杀就会导致关联者承担刑事责任，那么“以自杀来惩罚他人”的案件就会层出不穷", "relation": "supports"},
+    {"key": "E3", "paragraph_id": "P003", "quote": "这显然是不可行的。", "relation": "supports"},
+    {"key": "E4", "paragraph_id": "P004", "quote": "除非出现绑架、禁锢、故意伤害、暴力威胁……这类情节，否则法律上ta人是不会为你的自杀负担任何责任的。", "relation": "qualifies"},
+    {"key": "E5", "paragraph_id": "P005", "quote": "工作压力大，雇员自杀，雇主没有法律责任", "relation": "supports"},
+    {"key": "E6", "paragraph_id": "P006", "quote": "法律上，保持不自杀的责任在人自己，自杀是自己放弃了对自己的责任，而不是他人有什么过错。", "relation": "supports"},
+    {"key": "E7", "paragraph_id": "P006", "quote": "人越是脆弱反而越是权力巨大，想自杀的人可以随时威胁所有关联人", "relation": "supports"},
+    {"key": "E8", "paragraph_id": "P007", "quote": "这种事实的权力，反而会引诱更多的人自杀。", "relation": "supports"}
+   ]
+  },
+  "provisional_tags": {
+   "domain_candidates": ["法律（刑事责任的边界）", "劳动关系与自杀事件", "后果主义式法律论证"],
+   "issue_candidates": ["自杀事件中关联者是否负刑事责任", "以自杀惩罚他人", "保持不自杀的责任归属", "雇主责任的边界"],
+   "text_function_candidates": ["答疑", "法律解释", "举例说明", "后果论证"],
+   "object_candidates": ["雇主", "雇员", "恋人", "邻里", "婆媳", "关联人", "工厂（提问所述）"],
+   "working_keywords": ["刑事责任", "法律责任", "自杀", "刑事情节", "绑架", "禁锢", "故意伤害", "暴力威胁", "以自杀来惩罚他人", "事实的权力", "脆弱", "权力巨大"]
+  },
+  "notes": "正文完整（7段，field 均为 body），无图片节点。提问所述个案（员工请假被拒在工厂自杀、留纸条称工作压力好大）正文未复述，作者只给一般规则与举例，未作个案结论。P001 用“刑事责任”，P004/P005 用“责任/法律责任”，概念层次滑动已登记于 concept_usage 与 unresolved_questions。brief 为正文前段摘要，正文以 text 为准。provenance/superseded 均 null。"
+ },
+ "049c45ca": {
+  "analysis": {
+   "question_context": "提问者问：在闲鱼卖东西有何技巧。作者不给一般性建议，而是给出一套可直接套用的操作规则：上架时机与定价、照片与标题写法、交易规则条文、发布后的维护，以及通过红包与加好友积累回头买家（P001-P017）。",
+   "content_units": [
+    {"unit_id": "U001", "paragraph_refs": ["P002"], "summary": "上架时机与定价策略：到手即挂，挂一个“就是此时卖掉也一定觉得划算”的价格，可挂原价甚至加价。", "role": "action_advice"},
+    {"unit_id": "U002", "paragraph_refs": ["P003"], "summary": "用手拍照片并关闭地理信息，不用标准广告照，以便与伪装成二手销售的引流贴区分。", "role": "action_advice"},
+    {"unit_id": "U003", "paragraph_refs": ["P004"], "summary": "照片应尽量包含原理、功能、光泽、缺损、规格（铭牌）、证照手续等展示。", "role": "action_advice"},
+    {"unit_id": "U004", "paragraph_refs": ["P005"], "summary": "物品标题挂上“自用”“闲置”关键词。", "role": "action_advice"},
+    {"unit_id": "U005", "paragraph_refs": ["P006", "P008", "P009", "P010", "P011", "P012"], "summary": "交易规则条文：不私聊只接受直接拍下、坚持私聊者拉黑、自动不定期降价不还价、老买家自动减价、不提供售后服务、芝麻信用门槛（选填）、境内包邮顺丰（陆运）。", "role": "action_advice"},
+    {"unit_id": "U006", "paragraph_refs": ["P013"], "summary": "发布后设定定期闹钟，稳定更新价格与一键擦亮，不做其他额外操作。", "role": "action_advice"},
+    {"unit_id": "U007", "paragraph_refs": ["P015", "P016"], "summary": "不遵守明文规则者一概拉黑；顺利交易过的买家发红包、加闲鱼好友，以积累低交易成本的买家群体。", "role": "action_advice"},
+    {"unit_id": "U008", "paragraph_refs": ["P017"], "summary": "结论：机械执行该交易规则，东西自然或迟或早会卖出，且以后越来越好卖。", "role": "conclusion"}
+   ],
+   "main_claims": [
+    {"claim_id": "C001", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "不要等到觉得要卖的时候才挂上去；只要不是打算传给子女的、有升级换代打算的东西，在到手的同时（或者不久）就挂上去。", "evidence": ["E1"]},
+    {"claim_id": "C002", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "要挂一个巧妙的价格——一个“就是此时卖掉，也一定会觉得划算”的价格；比如直接挂原价，甚至可以加价，把自身目的改为“赚钱 / 免费体验新产品”。", "evidence": ["E2", "E3"]},
+    {"claim_id": "C003", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "挂出时用手拍照片（关闭地理信息），不要偷懒使用标准广告照；手拍照片才能和伪装成二手销售的引流贴区分开来，因为很多人只会购买家庭闲置物品。", "evidence": ["E4"]},
+    {"claim_id": "C004", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "物品照片必须尽可能包含原理展示、功能正常展示、光泽效果展示、缺损情况展示、规格详情展示（一般是产品参数铭牌的清晰图）与证照手续展示。", "evidence": ["E5"]},
+    {"claim_id": "C005", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "物品标题挂上“自用”“闲置”关键词。", "evidence": ["E6"]},
+    {"claim_id": "C006", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "交易规则要清晰明确地给定：不提供私聊语言沟通、只接受直接拍下、坚持私聊者一概拉黑；自动不定期降价、完全不接受讨价还价；顺利交易过的老买家自动减价；不提供任何售后服务；只接受芝麻信用“极好”评级买家（该条选填，贵重物品可用“仅限老买家”的第二种写法）；中国境内除过远省份外包邮顺丰（陆运）。", "evidence": ["E7", "E8", "E9", "E10"]},
+    {"claim_id": "C007", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "发布之后设定定期闹钟提醒，稳定地更新价格和一键擦亮宝贝，除此之外完全不必进行任何额外操作。", "evidence": ["E11"]},
+    {"claim_id": "C008", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "凡是不遵守这些明文规则的，一概拉黑；凡是顺利交易过的买家，交易完成后都发红包、加闲鱼好友，这样自然会积累出低交易成本的买家群体。", "evidence": ["E12", "E13"]},
+    {"claim_id": "C009", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "有时候某些低值品交易纯粹是为了积累这个买家名单——这个名单本身就是你要“买到”的最核心的标的之一。", "evidence": ["E14"]},
+    {"claim_id": "C010", "claim_type": "author_explicit", "attribution": "author", "modality": "predicted", "statement": "只需要机械地执行这个交易规则，东西自然或迟或早都会卖出去，而且以后会越来越好卖。", "evidence": ["E15"]}
+   ],
+   "argument_steps": [
+    "给出上架时机与定价规则：到手即挂，价格须“此时卖掉也觉得划算”（P001-P002）。",
+    "给出照片规则：手拍、关闭地理信息、与引流贴区分（P003）。",
+    "列出照片应包含的六类展示（P004）。",
+    "给出标题关键词写法（P005）。",
+    "给出交易规则条文清单（不私聊、自动降价、不还价、老买家减价、无售后、信用门槛、包邮）（P006-P012）。",
+    "给出发布后的维护方式：定期闹钟、更新价格、一键擦亮（P013）。",
+    "给出买家管理方式：违规拉黑；顺利交易者发红包、加好友以积累低交易成本买家群体（P014-P016）。",
+    "结论：机械执行规则即可卖出且越卖越好（P017）。"
+   ],
+   "concept_usage": [
+    {"term": "“自用”“闲置”", "meaning": "作者建议挂在标题上的关键词，用以表明物品属家庭闲置（P005）。", "evidence": "P005", "ambiguity": "作者未说明该关键词的作用机制。"},
+    {"term": "引流贴", "meaning": "指伪装成二手销售的引流帖；作者称手拍照片可与之区分（P003）。", "evidence": "P003", "ambiguity": "未给出识别引流贴的其他特征。"},
+    {"term": "一键擦亮宝贝", "meaning": "平台操作，作者建议定期执行（P013）。", "evidence": "P013", "ambiguity": "平台功能名称与效果未在正文说明。"},
+    {"term": "低交易成本的买家群体", "meaning": "指通过发红包、加闲鱼好友积累起来的回头买家名单（P016）。", "evidence": "P016", "ambiguity": "“低交易成本”的衡量方式未说明。"},
+    {"term": "“买到”的最核心的标的", "meaning": "带引号的表述：指积累买家名单本身即是交易要获得的目标之一（P016）。", "evidence": "P016", "ambiguity": "以“买到”形容积累名单，属作者的比喻用法。"},
+    {"term": "芝麻信用“极好”", "meaning": "平台信用评级门槛，作者建议只接受该评级买家，并注明这一条选填（P011）。", "evidence": "P011", "ambiguity": "级别可由使用者自行掌握，标准不固定。"}
+   ],
+   "examples_and_targets": [
+    "真人手拍照片与标准广告照——作者对比例证。",
+    "“赚钱 / 免费体验新产品”——作者对自身出售目的的表述。",
+    "芝麻信用“极好”评级买家——作者设定的买家门槛（注明选填）。",
+    "顺丰（陆运）——作者指定的包邮方式。",
+    "“（罗列过远省份）”“xx元”——作者留下的模板占位符，未给出具体内容。",
+    "以上均为操作建议与模板，不构成外部已核实事实。"
+   ],
+   "conditions": [
+    "“只要不是打算传给子女的、有升级换代打算的东西”——适用对象条件（P002）。",
+    "“在到手的同时（或者不久）”——时间条件（P002）。",
+    "“（注意关闭地理信息）”——操作注意事项（P003）。",
+    "“如果你是以前和我顺利交易过的买家，则自动减价xx元”——老买家条件，且“xx元”未填（P009）。",
+    "“（这一条选填，或级别自己掌握）”“如果出售物品为贵重物品，可以采用第二种写法”——信用门槛为可选并有分支（P011）。",
+    "“如果你的信用不到这一等级，请勿拍下”——对买家的条件（P011）。",
+    "“中国境内除（罗列过远省份）外均包邮顺丰（陆运）”——地域条件且留有填空（P012）。"
+   ],
+   "rhetoric_and_tone": "操作手册/清单体，祈使句密集（“不要等到…”“不要偷懒…”“必须尽可能包含…”）；用方括号强调规则（【仍然坚持私聊者一概拉黑】【自动不定期降价】）；规则条文以第一人称卖家口吻写给潜在买家（“本人工作繁忙”“请勿拍下”）；保留“xx元”“（罗列过远省份）”等模板占位符，显示其为可直接套用的模板。",
+   "unresolved_questions": [
+    "正文含模板占位符“xx元”“（罗列过远省份）”，说明本文是可套用的规则模板，具体数值与省份需使用者自填。",
+    "结构层重复：P001、P007、P014 为 lexical 的 list 容器段，字符范围分别覆盖 P002-P006、P008-P012、P015-P016，文本重复而正文内容不重复；P001 与 P002 文本几乎相同，引用时须注意段落归属。",
+    "作者未说明该套规则适用的商品类别、价位区间与平台版本（闲鱼规则可能变化），需外部核查。",
+    "提问问“有何技巧”，正文给出一套具体交易规则模板，未讨论选品、进货、定价区间等其他技巧。",
+    "“低值品交易”的具体门槛未说明。",
+    "正文建议“不提供任何售后服务，请自己承担风险”，与平台规则、消费者权益之间的关系正文未讨论（需外部核查）。"
+   ],
+   "evidence": [
+    {"key": "E1", "paragraph_id": "P002", "quote": "不要等到觉得要卖的时候才挂上去，而是只要不是打算传给子女的、有升级换代打算的东西，在到手的同时（或者不久）就挂上去。", "relation": "supports"},
+    {"key": "E2", "paragraph_id": "P002", "quote": "但是，注意挂一个巧妙的价格——一定要挂一个“就是此时卖掉，也一定会觉得划算”的价格。", "relation": "supports"},
+    {"key": "E3", "paragraph_id": "P002", "quote": "比如直接挂原价，甚至可以加价。", "relation": "supports"},
+    {"key": "E4", "paragraph_id": "P003", "quote": "挂出时用手拍照片（注意关闭地理信息）。不要偷懒使用标准广告照。手拍照片才能和伪装成二手销售的引流贴区分开来。", "relation": "supports"},
+    {"key": "E5", "paragraph_id": "P004", "quote": "物品照片必须尽可能包含以下几条：原理展示、功能正常展示、光泽效果展示、缺损情况展示、规格详情展示（一般是产品参数铭牌的清晰图）、证照手续展示。", "relation": "supports"},
+    {"key": "E6", "paragraph_id": "P005", "quote": "物品标题挂上“自用”“闲置”关键词。", "relation": "supports"},
+    {"key": "E7", "paragraph_id": "P008", "quote": "本人工作繁忙，不提供私聊语言沟通，只接受直接拍下。如果有任何问题请直接留言，定期公开回复和补充货品信息。【仍然坚持私聊者一概拉黑】。", "relation": "supports"},
+    {"key": "E8", "paragraph_id": "P009", "quote": "本货品将【自动不定期降价】。如果你觉得贵并且也不急用，建议你点击超赞或收藏起来等待后面更好的价格（因此完全不接受讨价还价）。", "relation": "supports"},
+    {"key": "E9", "paragraph_id": "P010", "quote": "本货品不提供任何售后服务，请自己承担风险。但欢迎查看我的交易评价，了解一下我的交易信用。", "relation": "supports"},
+    {"key": "E10", "paragraph_id": "P011", "quote": "只接受芝麻信用“极好”评级的买家（这一条选填，或级别自己掌握），如果你的信用不到这一等级，请勿拍下。", "relation": "supports"},
+    {"key": "E11", "paragraph_id": "P013", "quote": "发布之后，设定定期闹钟提醒，建议你稳定的更新价格和一键擦亮宝贝。", "relation": "supports"},
+    {"key": "E12", "paragraph_id": "P015", "quote": "凡是不遵守这些明文规则的，一概拉黑。", "relation": "supports"},
+    {"key": "E13", "paragraph_id": "P016", "quote": "凡是顺利交易过的买家，交易完成后都发红包、加闲鱼好友。", "relation": "supports"},
+    {"key": "E14", "paragraph_id": "P016", "quote": "实际上这个名单本身就是你要“买到”的最核心的标的之一。", "relation": "supports"},
+    {"key": "E15", "paragraph_id": "P017", "quote": "你只需要机械的执行这个交易规则，自然或迟或早东西都会卖出去。而且以后会越来越好卖。", "relation": "supports"}
+   ]
+  },
+  "provisional_tags": {
+   "domain_candidates": ["二手交易与电商运营", "闲鱼平台操作", "个人物品处置"],
+   "issue_candidates": ["如何提高闲鱼出售效率", "定价与照片策略", "交易规则设定与买家筛选", "积累回头买家名单"],
+   "text_function_candidates": ["答疑", "操作指南/清单", "规则模板"],
+   "object_candidates": ["闲鱼", "买家", "顺利交易过的买家", "芝麻信用", "顺丰", "家庭闲置物品"],
+   "working_keywords": ["自用", "闲置", "引流贴", "一键擦亮", "自动不定期降价", "讨价还价", "拉黑", "芝麻信用", "极好", "低交易成本的买家群体", "红包", "闲鱼好友"]
+  },
+  "notes": "正文完整（17段），无图片节点。结构层重复已登记：P001、P007、P014 为 lexical 的 list 容器段，字符范围分别覆盖 P002-P006、P008-P012、P015-P016，文本重复而正文内容不重复。正文含“xx元”“（罗列过远省份）”等模板占位符，属可套用的规则模板。brief 为正文前段摘要，正文以 text 为准。provenance/superseded 均 null。"
+ }
+}
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument('--out', default=None, help='输出 JSONL 路径（默认 out/<batch>.out.jsonl）')
+    args = ap.parse_args()
+    rows = load_batch_rows(BATCH)
+    records = []
+    for row in rows:
+        art = row['article']
+        uid = UID_BY_ID[art['id']]
+        if uid not in ANALYSIS:
+            raise SystemExit('ANALYSIS 缺少 %s (%s)' % (uid, art.get('title')))
+        p = ANALYSIS[uid]
+        records.append(build_record(
+            row, row['batch_id'], row['corpus_sha256'],
+            p['analysis'], p['provisional_tags'], STARTED, COMPLETED,
+            status=p.get('status', 'read'),
+            full_text_checked=p.get('full_text_checked', True),
+            image_checked=p.get('image_checked', False),
+            notes=p.get('notes', '')))
+    out = args.out or os.path.join(_HERE, '..', 'out', BATCH + '.out.jsonl')
+    write_jsonl(out, records)
+    print('ok %s -> %s (%d records)' % (BATCH, out, len(records)))
+
+
+if __name__ == '__main__':
+    main()

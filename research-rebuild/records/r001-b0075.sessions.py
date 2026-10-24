@@ -1,0 +1,870 @@
+# -*- coding: utf-8 -*-
+"""批次 r001-b0075 的记录构造器（骨架由 build_sessions.py 机械生成）。
+
+只填写 ANALYSIS：每篇一条，key = SKELETON 中的 uid。
+字段要求见 prompts/initial-reading-brief.md。
+
+命令行：
+  python3 records/r001-b0075.sessions.py            # 写 out/r001-b0075.out.jsonl
+  python3 records/r001-b0075.sessions.py --out /tmp/x.jsonl
+"""
+
+from __future__ import annotations
+
+import argparse
+import json
+import os
+import sys
+
+_HERE = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, os.path.join(_HERE, '..', 'scripts'))
+from authoring import build_record, load_batch_rows, write_jsonl  # noqa: E402
+
+BATCH = "r001-b0075"
+STARTED = "2026-09-20T00:00:00+08:00"
+COMPLETED = "2026-09-20T00:00:00+08:00"
+
+with open(os.path.join(_HERE, 'r001-b0075.skeleton.json'), encoding='utf-8') as _fh:
+    SKELETON = json.load(_fh)
+UID_BY_ID = {s['id']: s['uid'] for s in SKELETON}
+
+
+ANALYSIS = {
+ "f6347ba6": {
+  "analysis": {
+   "question_context": "作者回应知乎提问：如何看待「给予导师决定博士生、硕士生能否毕业的自主权」的提议，以及教育部「意义重要，将充分采纳」的表态（Q001，属提问者，不得视为作者立场）。作者不评判该提议本身的对错，而从权力形态切入，主张权力最易出问题之处在于是否「潜藏无形」，并判断该提议名为增权、实则削弱学阀在机构掩护下无责任享有的部分权力，最后保护了学生。",
+   "content_units": [
+    {"unit_id": "U001", "paragraph_refs": ["P001", "P002"], "summary": "总命题与机制：权力之弊不在大小绝对，而在潜藏无形；明文权力必然引出约束与对冲，形成制约与平衡。", "role": "claim"},
+    {"unit_id": "U002", "paragraph_refs": ["P003", "P004"], "summary": "以导师决定制为例：学生风险大故会调查导师记录；学生方由此获得对称的伤害导师风评之权。", "role": "reason"},
+    {"unit_id": "U003", "paragraph_refs": ["P005", "P006"], "summary": "今昔对比：过去委员会与学校共担风险且势力强大，脱钩后导师名义增权却势单力孤。", "role": "reason"},
+    {"unit_id": "U004", "paragraph_refs": ["P007", "P008"], "summary": "指出独断权本以潜规则存在，真正变化是可包装为委员会集体决议、绑定机构名誉规则；学校牵连大为撇清。", "role": "reason"},
+    {"unit_id": "U005", "paragraph_refs": ["P009"], "summary": "以反问质疑「大大的增加权力」的说法。", "role": "rebuttal"},
+    {"unit_id": "U006", "paragraph_refs": ["P010"], "summary": "结论性判断：削弱的是学阀在机构掩护下无责任享有的部分权力，不是剥夺权力本身，而是拆除掩护。", "role": "claim"},
+    {"unit_id": "U007", "paragraph_refs": ["P011", "P012"], "summary": "收束：拆除掩护最终保护了学生，不是坏事。", "role": "conclusion"}
+   ],
+   "main_claims": [
+    {"claim_id": "C001", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "权力最容易出问题的地方不是它本身有多大、多绝对，而在于潜藏无形。", "evidence": ["E1"]},
+    {"claim_id": "C002", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "任何权力只要成为明文的权力，就会自然出现约束它、对冲它的策略和现实，形成制约并最终形成平衡；权力浮出水面被看见后，被支配者就有办法做出必要反应。", "evidence": ["E2"]},
+    {"claim_id": "C003", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "以「导师决定制」而论，导师权力越大则学生风险越大，学生会掘地三尺打听导师有无糟糕记录。", "evidence": ["E3"]},
+    {"claim_id": "C004", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "后辈也会如此，因此作为登记在案的先期毕业（或未毕业）学生，会对称地获得深刻伤害导师风评的权力。", "evidence": ["E4"]},
+    {"claim_id": "C005", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "从前由委员会负责时风险共担，委员会与学校的势力学生顶不住；委员会与导师脱钩后，导师名义上权力变大却势单力孤。", "evidence": ["E5", "E6"]},
+    {"claim_id": "C006", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "所谓「独断权」此前一直以潜规则形式存在，给不给都是一句话可决定延毕；真正不同是可操作成委员会的集体决议，并依靠与委员会乃至学校的名誉规则绑定，毫无悬念地碾压学生抗辩。", "evidence": ["E7"]},
+    {"claim_id": "C007", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "现在导师当然仍然强，但学校在此事中的牵连已大为撇清。", "evidence": ["E8"]},
+    {"claim_id": "C008", "claim_type": "author_explicit", "attribution": "author", "modality": "questioned", "statement": "作者以反问质疑该提议是「大大的增加权力」的说法。", "evidence": ["E9"]},
+    {"claim_id": "C009", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "这其实会削弱而不是加强学阀在机构掩护下无责任享有的部分权力——不是剥夺权力本身（作者称根据学术教育的正常规律，教师这项与教学职责内在绑定的权力根本不能剥夺），而是拆除了掩护。", "evidence": ["E10"]},
+    {"claim_id": "C010", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "拆除掩护最终是保护了学生；这不是坏事。", "evidence": ["E11", "E12"]},
+    {"claim_id": "C011", "claim_type": "open_question", "attribution": "questioner", "modality": "questioned", "statement": "提问者询问如何看待给予导师决定研究生能否毕业的自主权之提议及教育部「意义重要，将充分采纳」的表态；该问句属提问者，正文未复述其措辞。", "evidence": []}
+   ],
+   "argument_steps": [
+    "立总命题：权力之弊在于潜藏无形，不在其大小与绝对（P001）。",
+    "给机制理由：明文权力必然引出对冲策略，形成制约并最终平衡（P002）。",
+    "落到所议情境：导师决定制下学生风险大，会去打听导师糟糕记录（P003）。",
+    "推论：学生方由此获得对称的、伤害导师风评的权力（P004）。",
+    "今昔对比：委员会共担风险且势力强，脱钩后导师势单力孤（P005、P006）。",
+    "指出实质：独断权早以潜规则存在，变化在可包装成集体决议、绑定机构名誉规则（P007）。",
+    "指出学校牵连已被撇清（P008）。",
+    "反问质疑「大大增加权力」之说（P009）。",
+    "给出判断：削弱的是无责任享有的那部分权力，拆除的是掩护而非权力本身（P010）。",
+    "收束结论：拆除掩护保护了学生，不是坏事（P011、P012）。"
+   ],
+   "concept_usage": [
+    {"term": "潜藏无形", "meaning": "权力未公开、无明文形式而实际起作用、不受可见约束的状态；作者称此为该提议最易出问题处。", "evidence": "P001", "ambiguity": "正文未界定它与后文「潜规则」（P007）是否同义，也未给出判定标准。"},
+    {"term": "明文的权力", "meaning": "公开、可见、有明确形式的权力；作者称其一旦形成就会自然引出约束与对冲。", "evidence": "P002", "ambiguity": "「明文」指正式制度文本还是仅指公开可见，未说明。"},
+    {"term": "独断权", "meaning": "带引号的转述说法，指被提议赋予导师的个人决定权；作者称其此前以潜规则形式存在。", "evidence": "P007", "ambiguity": "引号显示作者对该提法持保留，未给出定义。"},
+    {"term": "掩护", "meaning": "机构（委员会、学校）以名誉与责任关联为教师权力提供遮蔽的状态；作者称新提议拆除的正是掩护。", "evidence": "P010", "ambiguity": "「掩护」是作者自创比喻，未界定其制度内容。"},
+    {"term": "学阀", "meaning": "作者用以指在机构掩护下无责任享有部分权力的教师群体。", "evidence": "P010", "ambiguity": "未界定所指范围与人数，也未给出判据。"},
+    {"term": "势单力孤", "meaning": "描述脱钩后导师缺少机构同盟的处境。", "evidence": "P006", "ambiguity": "属作者对处境的判断，无经验材料支撑。"}
+   ],
+   "examples_and_targets": [
+    "「导师决定制」提议与教育部「意义重要，将充分采纳」的表态：本文讨论对象与语境，来自提问，作者未在正文核对表态原文（P003起）。",
+    "委员会与学校「一根绳上的蚂蚱」：作者的今昔对比例证（P005）。",
+    "学生「掘地三尺」打听导师糟糕记录：作者设想的行动例证（P003）。",
+    "学阀：作者的批评对象（P010）。",
+    "「浮出水面」「无法逾越的高墙」「碾压」「拆掩护」：修辞材料，非事实证据。"
+   ],
+   "conditions": [
+    "讨论限定于「导师决定制」这一具体提议及2020年前后中国研究生培养制度的语境。",
+    "总命题自带条件：只有「成为明文的权力」才会出现约束与对冲（P002）。",
+    "作者自称依据「学术教育的正常规律」断言教师该项权力不可剥夺，但未说明该规律的来源与范围（P010）。",
+    "判断的对象限定为「学阀在机构掩护下所无责任享有的部分权力」，明言不是剥夺权力本身（P010）。",
+    "隐含前提：学生看得见该权力（「只要你浮出水面了，我看得见了」）（P002）。"
+   ],
+   "rhetoric_and_tone": "第二人称直接对权力持有者（导师）说话，语气直白、口语化（「说句实话」）。反问句承担反驳功能（P004、P009）。比喻密集：浮出水面、掘地三尺、无法逾越的高墙、一根绳上的蚂蚱、拆掩护、碾压。对学阀带批判色彩；结论用短句斩钉截铁收束（P011、P012）。",
+   "unresolved_questions": [
+    "P004 以「第二」开头，而正文并无「第一」，疑有省略或结构不完整，需回查语料版本。",
+    "「潜藏无形」与「潜规则」（P007）是否同义，正文未界定。",
+    "「学阀」的具体所指群体与范围未界定。",
+    "提问转述的教育部「意义重要，将充分采纳」之确切表述与出处需外部核查，正文未引用。",
+    "学生「会打听记录」、导师「势单力孤」等判断为推论，正文未提供经验证据。",
+    "作者称不能剥夺教师该项权力所依据的「学术教育的正常规律」内容不明，需外部/后续核验。"
+   ],
+   "evidence": [
+    {"key": "E1", "paragraph_id": "P001", "quote": "权力最容易出问题的地方，不是它本身有多大、多绝对，而在于潜藏无形。", "relation": "supports"},
+    {"key": "E2", "paragraph_id": "P002", "quote": "任何权力，只要成为明文的权力，就会自然而然出现约束它、对冲它的策略和现实", "relation": "supports"},
+    {"key": "E3", "paragraph_id": "P003", "quote": "我自然会掘地三尺地去打听你有没有糟糕的记录", "relation": "supports"},
+    {"key": "E4", "paragraph_id": "P004", "quote": "我也天然地、对称地获得了深刻伤害你的风评的权力", "relation": "supports"},
+    {"key": "E5", "paragraph_id": "P005", "quote": "以前有委员会来负责，有什么雷委员会也要和你一起扛", "relation": "supports"},
+    {"key": "E6", "paragraph_id": "P006", "quote": "现在他们与你脱钩了，你说起来权力大了，但你也势单力孤了。", "relation": "supports"},
+    {"key": "E7", "paragraph_id": "P007", "quote": "在之前根本就一直以潜规则的形式存在", "relation": "supports"},
+    {"key": "E8", "paragraph_id": "P008", "quote": "但是学校在这里的牵连可大为撇清了", "relation": "supports"},
+    {"key": "E9", "paragraph_id": "P009", "quote": "这真的是什么“大大的增加权力”么？", "relation": "supports"},
+    {"key": "E10", "paragraph_id": "P010", "quote": "这其实会削弱而不是加强学阀们现在在机构掩护下所无责任享有的部分权力", "relation": "supports"},
+    {"key": "E11", "paragraph_id": "P011", "quote": "拆除了掩护，其实最后是保护了学生。", "relation": "supports"},
+    {"key": "E12", "paragraph_id": "P012", "quote": "这不是坏事。", "relation": "supports"}
+   ]
+  },
+  "provisional_tags": {
+   "domain_candidates": ["高等教育治理", "学术权力与师生关系", "权力运作机制（非学院式论述）"],
+   "issue_candidates": ["导师决定研究生毕业的自主权提议", "明文权力与潜规则的差别", "师生权力不对称", "机构责任与名誉连带"],
+   "text_function_candidates": ["答疑（回应知乎提问）", "评论", "论辩"],
+   "object_candidates": ["教育部", "导师", "研究生（博士生、硕士生）", "学术委员会", "学校", "学阀"],
+   "working_keywords": ["潜藏无形", "明文的权力", "独断权", "潜规则", "学阀", "掩护", "委员会", "延毕"]
+  },
+  "notes": "无图片节点，正文12段，无 text/lexical 偏离。P004 以“第二”开头而正文无“第一”，已登记为未决问题。提问属提问者（Q001），其转述的教育部表态未在正文出现，需外部核查。"
+ },
+ "1a42e171": {
+  "analysis": {
+   "question_context": "作者回应知乎提问：男人对恋爱过于理性是否一定表示他不够爱一个女生（Q001，属提问者，不得归给作者）。作者开门即否定该说法，主张为人打算、替人着想本身就是高度理性的行为，爱所需要的理性远超解方程、算微分的能力；人们把因爱而做的决定视为「非理性」，源于误把「自利即理性」当作准绳。作者进而把该问题重述为「对方太自利了、为自己打算得太周全了，是不是不够爱我」，并据此反问提问者自己是否爱对方。",
+   "content_units": [
+    {"unit_id": "U001", "paragraph_refs": ["P001"], "summary": "直接否定提问中的说法。", "role": "rebuttal"},
+    {"unit_id": "U002", "paragraph_refs": ["P002", "P003"], "summary": "理由：为人打算、替人着想是高度理性行为；服务他人是含观察、思考、实施、反省、忍受误会等的一整个理性过程，每一步都要高度观察力、分析力、坚定意志与自我洞察。", "role": "reason"},
+    {"unit_id": "U003", "paragraph_refs": ["P004"], "summary": "反问式论证：没有宁死不渝的爱就无法对自己使用这样无情的理性；理性差一点便按不住「我真吃亏，你竟负我」的毒龙，毒龙放任会毁掉所爱的人。", "role": "reason"},
+    {"unit_id": "U004", "paragraph_refs": ["P005", "P006"], "summary": "以感叹过渡；重申爱而没有理性难以想象，数学演绎能力与之相比不值一提。", "role": "transition"},
+    {"unit_id": "U005", "paragraph_refs": ["P007", "P008"], "summary": "反驳通行看法：因爱做出的决定被看作「非理性」，是因为爱者追求的本是对方利益最大化，价值观与「常人常事」相反；以「人不为己，天诛地灭」为准绳自然如此。", "role": "rebuttal"},
+    {"unit_id": "U006", "paragraph_refs": ["P009", "P010"], "summary": "指出使用该表述即暴露「自利即理性，理性即自利」的基准立场未变，并把问题重述为「对方太自利是否不够爱我」。", "role": "rebuttal"},
+    {"unit_id": "U007", "paragraph_refs": ["P011", "P012", "P013"], "summary": "由提问本身推出「你不够爱ta」：若爱ta本为有利于ta，对方自利不成其为问题；既然成其为问题即意味不爱，既不爱则最好不要死守这种关系。", "role": "claim"},
+    {"unit_id": "U008", "paragraph_refs": ["P014", "P015", "P016", "P017", "P018", "P019", "P020"], "summary": "理由链：没有你对对方的爱就原谅不了对方的爱；人不是神，爱必盲目偏狭，落到被爱者手心不过一片轻到不可承受的心，须靠你爱ta、你原谅才被救赎为有人感激的贡献。", "role": "reason"},
+    {"unit_id": "U009", "paragraph_refs": ["P021", "P022", "P023", "P024"], "summary": "以连环反问收束：贪慕颜值家产地位能力与爱无关；若对方只考虑自己在你这里是否理所当然无罪；问题残忍，但若非如此残忍便与贪婪鬼无异。", "role": "conclusion"},
+    {"unit_id": "U010", "paragraph_refs": ["P025"], "summary": "知乎话题标签「家族答集」「第一性」混入正文尾部，非作者论述。", "role": "context"}
+   ],
+   "main_claims": [
+    {"claim_id": "C001", "claim_type": "open_question", "attribution": "questioner", "modality": "questioned", "statement": "提问者询问男人对恋爱过于理性是否一定表示他不够爱一个女生（Q001，属提问者）。", "evidence": []},
+    {"claim_id": "C002", "claim_type": "author_explicit", "attribution": "author", "modality": "negated", "statement": "该说法是错的：男人对恋爱过于理性并不一定表示他不够爱。", "evidence": ["E1"]},
+    {"claim_id": "C003", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "为人打算、替人着想本身是高度理性的行为；向别人提供服务需要从观察、思考、实施、反省、忍受误会、不居功、不自夸、认错、原谅到再次提供服务的一整个过程。", "evidence": ["E2"]},
+    {"claim_id": "C004", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "这个过程的每一步都不仅需要高度观察能力，还需要高度分析能力、不忘初心的坚定意志，以及对自己洞若观火、刮骨疗毒的洞察。", "evidence": ["E3"]},
+    {"claim_id": "C005", "claim_type": "author_explicit", "attribution": "author", "modality": "questioned", "statement": "以反问表示：没有宁死不渝的爱，没有人下得了手对自己用这样无情的理性。", "evidence": ["E4"]},
+    {"claim_id": "C006", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "哪怕理性差一点、下手歪一点，都不足以按住心里那条「我真吃亏，你竟负我」的毒龙；毒龙自由放任出来，足以把所爱的人染成最污秽恶毒的颜色、变成世上最可恨最该死之人、撕成千万片。", "evidence": ["E5"]},
+    {"claim_id": "C007", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "爱而没有理性是难以想象的事情；与爱所需要的理性相比，解方程、算微分的数学演绎能力根本不值一提。", "evidence": ["E6"]},
+    {"claim_id": "C008", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "人们常把因爱而做出的决定视为「非理性」，是因为爱者孜孜以求的本不是自己获利最大化，而是别人利益的最大化，其价值观本就与「常人常事」相反。", "evidence": ["E7"]},
+    {"claim_id": "C009", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "只有在舍己为人的诉求之下再看其谋略和计划，才看得到到底有没有理性；以「人不为己，天诛地灭」为准绳，当然会把舍己为人的计划每一步都看成「非理性」。", "evidence": ["E8"]},
+    {"claim_id": "C010", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "仅用「太理性了是不是不爱的证明」这个表述，就意味着人自己的基本思考方式仍站在「自利即理性，理性即自利」的基准立场上没有转变过来。", "evidence": ["E9"]},
+    {"claim_id": "C011", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "这个问题实际上问的是「对方太自利了，为自己打算得太周全了，是不是不够爱我」。", "evidence": ["E10"]},
+    {"claim_id": "C012", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "既然问出来了，答案就很明显：对方够不够爱你不知道，但你不够爱对方。", "evidence": ["E11"]},
+    {"claim_id": "C013", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "因为若你爱对方，本来就该是有利于对方的，对方处处自利、为自己打算周全为何会成其为问题；既然这成其为一个问题，就意味着你并不爱对方；既然不爱，那么无论对方最后证实是否爱你，你都最好不要死守这种关系。", "evidence": ["E12"]},
+    {"claim_id": "C014", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "因为没有你对对方的爱，你是原谅不了对方的爱的。", "evidence": ["E13"]},
+    {"claim_id": "C015", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "人类不是神，做不到洞察一切、思虑周全、忍辱负重、纯然牺牲；即使明知爱即是这一切并下了必死决心尽力奉行，人类的爱也必定盲目偏狭、思考不周、动辄委屈、自以为牺牲。", "evidence": ["E14"]},
+    {"claim_id": "C016", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "这份爱落到被爱的人手心里，也不过是一片轻到不可承受的心；是因为你爱对方，这片轻才可以承受；是你原谅，这份残破难言、笨手笨脚、掺杂自私的擅自主张才被救赎为一种有人感激的贡献。", "evidence": ["E15", "E16", "E17"]},
+    {"claim_id": "C017", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "你爱对方、对方爱你才可以免罪；你不爱对方而对方爱你，最后只会十恶不赦。", "evidence": ["E18", "E19"]},
+    {"claim_id": "C018", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "那些对颜值、家产、社会地位、个人能力的贪慕不舍，跟爱没有一分关系。", "evidence": ["E20"]},
+    {"claim_id": "C019", "claim_type": "author_explicit", "attribution": "author", "modality": "questioned", "statement": "以反问提出：对方可不可以只考虑自己？如果对方只考虑自己，在提问者这里是不是理所当然的无罪？", "evidence": ["E21"]},
+    {"claim_id": "C020", "claim_type": "author_explicit", "attribution": "author", "modality": "questioned", "statement": "以反问指出：这个问题残忍，但若非如此残忍，提问者与另一个自认为本钱丰厚、足够换对方命的贪婪鬼有何区别。", "evidence": ["E22"]}
+   ],
+   "argument_steps": [
+    "直接否定提问中的说法（P001）。",
+    "立理由：为人打算、替人着想是高度理性行为，服务他人是完整过程（P002）。",
+    "说明该过程每一步都需要高度观察、分析、意志与自我洞察（P003）。",
+    "反问式论证：无宁死不渝的爱则无法对自己使用无情理性；理性不足则按不住「毒龙」并毁掉所爱（P004）。",
+    "以感叹过渡，重申爱而没有理性难以想象，数学能力不足相比（P005、P006）。",
+    "反驳通行看法：视因爱决定为「非理性」源于目标与价值观不同（P007、P008）。",
+    "指出该表述暴露「自利即理性」的基准立场，并把问题重述为「对方太自利是否不够爱我」（P009、P010）。",
+    "由提问事实反推「你不够爱ta」（P011—P013）。",
+    "给出理由链：无爱则不能原谅对方的爱；人的爱必残缺，须由爱与原谅救赎（P014—P020）。",
+    "以连续反问收束，指出贪慕与爱无关（P021—P024）。"
+   ],
+   "concept_usage": [
+    {"term": "理性", "meaning": "本文指为人打算、替人着想所要求的整套能力与过程（观察、思考、实施、反省、忍受误会等），而非解题演算能力（P002、P006）。", "evidence": "P002", "ambiguity": "作者又用「这样无情的理性」指对自我的严厉克制（P004），两种用法未统一界定。"},
+    {"term": "自利即理性，理性即自利", "meaning": "作者指出的、他认为提问者尚未转变过来的基准立场（P009）。", "evidence": "P009", "ambiguity": "作者未说明该立场是否为提问者明言，或仅为其推断。"},
+    {"term": "毒龙", "meaning": "比喻心中「我真吃亏，你竟负我」的怨恨；作者称理性不足便按不住它（P004）。", "evidence": "P004", "ambiguity": "属作者自设比喻，未给对应心理机制的界定。"},
+    {"term": "舍己为人", "meaning": "指爱者的诉求方向，即追求对方利益最大化（P008）。", "evidence": "P008", "ambiguity": "未说明其与「自利」是否可能并存。"},
+    {"term": "免罪／十恶不赦", "meaning": "描述在爱与不爱两种情形下对对方之爱的不同结算方式（P019、P020）。", "evidence": "P019", "ambiguity": "宗教色彩词汇，作者未说明其确切含义与来源。"},
+    {"term": "ta", "meaning": "正文用作性别中立的第三人称指代（P012 等）。", "evidence": "P012", "ambiguity": "非概念，仅为书写惯例。"}
+   ],
+   "examples_and_targets": [
+    "解方程、算微分：作者用作与爱所需理性对比的反例（P006）。",
+    "「人不为己，天诛地灭」：作者引用的俗语，用作被反驳的准绳（P008）。",
+    "「我真吃亏，你竟负我」的毒龙：作者自设比喻（P004）。",
+    "对颜值、家产、社会地位、个人能力的贪慕不舍：作者的批评对象（P022）。",
+    "「自认为本钱丰厚、足够换ta的命的贪婪鬼」：作者的类比对象（P024）。",
+    "「家族答集」「第一性」：知乎话题标签混入正文尾部（P025），非作者论述。"
+   ],
+   "conditions": [
+    "讨论限定于亲密关系（男女恋爱）语境与提问所设的「过于理性」判断。",
+    "论证以条件句推进：「若你爱ta」「既然这成其为一个问题」（P013）。",
+    "对人类之爱的判断带前提「人类不是神」（P015）。",
+    "「爱而没有理性是难以想象的事情」为一般性主张，正文未给适用边界（P006）。",
+    "结尾反问预设：把「贪慕不舍」与爱严格区分（P022）。"
+   ],
+   "rhetoric_and_tone": "语气断然，带训诫与反讽，直接对提问者称呼「你」。反问密集（P004、P013、P021、P023、P024）；有口语感叹与宣泄式短句（「杀千刀的。」P005）。比喻强烈：毒龙、撕成千万片、一片轻到不可承受的心。结构上先以理由反驳，再把问题重述并反转责任归属，最后以连环反问收束。",
+   "unresolved_questions": [
+    "P025 为平台话题标签「家族答集」「第一性」，与正文混排并构成 text/lexical 尾部偏离（text_tail_not_in_lexical），需人工确认是否属正文。",
+    "「理性」在本文无单一定义：既是高度能力过程（P002），又指对自我的无情克制（P004）。",
+    "作者判定提问者「不够爱ta」仅依据其提出该问题，未讨论其他提问动机。",
+    "「免罪」「十恶不赦」（P019、P020）含义与来源未说明，需外部/后续核验。",
+    "「人类的爱必定盲目偏狭」（P015）为一般断言，正文未给论证或经验依据。",
+    "「过于理性」的判定标准（何谓过）正文未界定，提问前提本身未被检验。"
+   ],
+   "evidence": [
+    {"key": "E1", "paragraph_id": "P001", "quote": "这个说法当然是错的。", "relation": "supports"},
+    {"key": "E2", "paragraph_id": "P002", "quote": "为人打算、替人着想本身是高度理性的行为", "relation": "supports"},
+    {"key": "E3", "paragraph_id": "P003", "quote": "每一步都不仅仅要高度的观察能力，还要高度的分析能力、不忘初心的坚定意志", "relation": "supports"},
+    {"key": "E4", "paragraph_id": "P004", "quote": "没有宁死不渝的爱，谁能下得了手对自己用这样无情的理性？", "relation": "supports"},
+    {"key": "E5", "paragraph_id": "P004", "quote": "足可以把自己所爱的人染成最污秽恶毒的颜色", "relation": "supports"},
+    {"key": "E6", "paragraph_id": "P006", "quote": "爱而没有理性是难以想象的事情。", "relation": "supports"},
+    {"key": "E7", "paragraph_id": "P007", "quote": "本来就是别人利益的最大化，是人家的价值观本身就与“常人常事”相反", "relation": "supports"},
+    {"key": "E8", "paragraph_id": "P008", "quote": "以“人不为己，天诛地灭”为准绳，当然会看到舍己为人的计划每一步都是“非理性”", "relation": "supports"},
+    {"key": "E9", "paragraph_id": "P009", "quote": "仍然站在“自利即理性，理性即自利”的基准立场上没有转变过来", "relation": "supports"},
+    {"key": "E10", "paragraph_id": "P010", "quote": "这实际上问的是“对方太自利了，为自己打算得太周全了，是不是不够爱我”", "relation": "supports"},
+    {"key": "E11", "paragraph_id": "P012", "quote": "ta够不够爱你不知道，但你不够爱ta。", "relation": "supports"},
+    {"key": "E12", "paragraph_id": "P013", "quote": "因为若你爱ta，本来不就是来有利于ta的吗？", "relation": "supports"},
+    {"key": "E13", "paragraph_id": "P014", "quote": "因为没有你对对方的爱，你是原谅不了对方的爱的。", "relation": "supports"},
+    {"key": "E14", "paragraph_id": "P015", "quote": "人类的爱也仍然必定会是盲目偏狭、思考不周、动辄委屈、自以为牺牲的", "relation": "supports"},
+    {"key": "E15", "paragraph_id": "P016", "quote": "也不过是一片轻到不可承受的心罢了", "relation": "supports"},
+    {"key": "E16", "paragraph_id": "P017", "quote": "是因为你爱ta，这片轻才可以承受。", "relation": "supports"},
+    {"key": "E17", "paragraph_id": "P018", "quote": "才被救赎为一种有人感激的贡献", "relation": "supports"},
+    {"key": "E18", "paragraph_id": "P019", "quote": "你爱ta，ta爱你才可以免罪。", "relation": "supports"},
+    {"key": "E19", "paragraph_id": "P020", "quote": "你不爱ta，ta爱你，最后只会十恶不赦。", "relation": "supports"},
+    {"key": "E20", "paragraph_id": "P022", "quote": "那些对颜值、家产、社会地位、个人能力的贪慕不舍，跟爱没有一分关系。", "relation": "supports"},
+    {"key": "E21", "paragraph_id": "P023", "quote": "如果对方只考虑自己，在你这里是不是理所当然的无罪？", "relation": "supports"},
+    {"key": "E22", "paragraph_id": "P024", "quote": "你与另一个自认为本钱丰厚、足够换ta的命的贪婪鬼有何区别呢？", "relation": "supports"}
+   ]
+  },
+  "provisional_tags": {
+   "domain_candidates": ["情感与亲密关系", "价值观/伦理（通俗表述）", "「理性」概念辨析"],
+   "issue_candidates": ["恋爱中的理性与爱的强度", "「自利即理性」的预设", "爱者的利益最大化方向", "原谅与救赎"],
+   "text_function_candidates": ["答疑（回应知乎提问）", "反驳", "训诫/劝告"],
+   "object_candidates": ["提问者（知乎用户）", "「常人常事」", "知乎话题「家族答集」「第一性」"],
+   "working_keywords": ["理性的爱", "自利即理性", "毒龙", "舍己为人", "免罪", "ta"]
+  },
+  "notes": "无图片节点。正文25段；P025 为知乎话题标签“家族答集”“第一性”，与正文混排并构成 text/lexical 尾部偏离（text_tail_not_in_lexical），已登记为未决问题，未据其推断作者主张。提问属提问者（Q001），正文以「这个说法」指代该提问。"
+ },
+ "f7b8fc82": {
+  "analysis": {
+   "question_context": "作者回应知乎提问：是否男生都该有绅士风度（Q001，属提问者，不得归给作者）。作者答「不应该」，并附条件——若你觉得不需要有、或者负担不起，可以没有；理由是做绅士不是一种义务，而是行有余力者的特权。正文随后界定绅士风度是对能力的自信表达，区分耀武扬威与举重若轻两种「强大」，主张只有把绅士当作无条件的义务来实行才算真实的绅士风度，并把为求偶而作的绅士行为判为「绅士cosplay」，即先以投入骗到手、日后索回成本的行为。",
+   "content_units": [
+    {"unit_id": "U001", "paragraph_refs": ["P001"], "summary": "否定「应该」并附条件：不需要或负担不起可以没有；绅士非义务而是行有余力者的特权，如被爱也是被赐予的特权。", "role": "claim"},
+    {"unit_id": "U002", "paragraph_refs": ["P002", "P003"], "summary": "提出并回答「什么是绅士风度」：是对能力的自信表达。", "role": "definition"},
+    {"unit_id": "U003", "paragraph_refs": ["P004", "P005"], "summary": "区分两种强大（耀武扬威 vs 举重若轻）；虎皮雕翎可偷可借可租可祖传，而背负拘束、承受苛求很现实，伪装每分每秒都产生代价；如举重金牌与举两百公斤杠铃之别。", "role": "reason"},
+    {"unit_id": "U004", "paragraph_refs": ["P006", "P007", "P008"], "summary": "以犹太教割礼、安息日戒律、饮食禁忌为类比，说明刻苦自身、付出代价的方式更具防伪性，更能表示精英身份，更易得到看重精英性者注意。", "role": "example"},
+    {"unit_id": "U005", "paragraph_refs": ["P009", "P010"], "summary": "提出检验标准：绅士风度基于什么根底——为给异性留好印象，还是真以精英身份自我要求。", "role": "context"},
+    {"unit_id": "U006", "paragraph_refs": ["P011", "P012", "P013"], "summary": "排比反问施压（没钱、没能力、被嘲笑、别人对不起你、别人不讲究、得不到优待）；若有前提条件、看人下菜碟，那不叫绅士风度，只是假装骗人。", "role": "rebuttal"},
+    {"unit_id": "U007", "paragraph_refs": ["P014"], "summary": "判断：世上可见的貌似绅士风度的行为，绝大多数是自抬身价的绅士Cosplay。", "role": "claim"},
+    {"unit_id": "U008", "paragraph_refs": ["P015", "P016", "P017", "P018", "P019", "P020", "P021"], "summary": "反对在终身大事上搞绅士cosplay：面具成本迟早索回而对方不欠；用可能导致失去的手段先骗到手无爱可言；以强盗买装备、绑匪麻绳钱、强奸犯误工费作类比；得手后几乎无自愿赌服输；越是这样越该分手。", "role": "rebuttal"},
+    {"unit_id": "U009", "paragraph_refs": ["P022", "P023", "P024"], "summary": "正面界定：做绅士只能因为视其为无条件义务，即使无优待无回报也宁可这样生活；这种视义务的做法不靠骗来绑来的利益回本，一开始就寻求别的措施（如自强不息、积极好学）达成平衡，故不会变成账单与赎金下限。", "role": "claim"},
+    {"unit_id": "U010", "paragraph_refs": ["P025", "P026"], "summary": "限定：自强不息、积极好学并不甜蜜；是否每个人都该这样选择没人能替「每个人」拿主意，正因没有应不应该，自选这样做的人才尤其可贵。", "role": "qualification"}
+   ],
+   "main_claims": [
+    {"claim_id": "C001", "claim_type": "open_question", "attribution": "questioner", "modality": "questioned", "statement": "提问者询问是否男生都该有绅士风度（Q001，属提问者）。", "evidence": []},
+    {"claim_id": "C002", "claim_type": "author_explicit", "attribution": "author", "modality": "negated", "statement": "不应该；如果你觉得你不需要有，或者负担不起，可以没有。", "evidence": ["E1"]},
+    {"claim_id": "C003", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "因为做绅士不是一种义务，而是一种行有余力者的特权；就像被爱也是一种被赐予的特权一样。", "evidence": ["E2"]},
+    {"claim_id": "C004", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "绅士风度实际上是一种对能力的自信表达。", "evidence": ["E3"]},
+    {"claim_id": "C005", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "强大有两种：一种是耀武扬威（披虎皮、戴雕翎），一种是举重若轻（比别人背负更多的拘束、承受更高的苛求）。", "evidence": ["E4"]},
+    {"claim_id": "C006", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "虎皮雕翎可以是偷的、高仿的、借的、租的、人送的、祖传的；而背负更多拘束、承受更高苛求是很现实的东西，伪装的每分每秒都要产生代价，如同举重金牌与举着两百公斤杠铃之别，后者不可能是假的。", "evidence": ["E5", "E6"]},
+    {"claim_id": "C007", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "犹太教用割礼、安息日戒律和饮食禁忌来表示身份：你办得到，作者就当你（们）是真的。", "evidence": ["E7"]},
+    {"claim_id": "C008", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "这种刻苦自身、有付出代价的方式更具有防伪特性，更能有效地表示精英身份，也更容易得到看重精英性的人们的注意。", "evidence": ["E8", "E9"]},
+    {"claim_id": "C009", "claim_type": "author_explicit", "attribution": "author", "modality": "questioned", "statement": "以追问提出检验标准：你的绅士风度到底基于什么根底——是为了给异性留下良好印象，还是真的打算以精英的身份来自我要求。", "evidence": ["E10", "E11"]},
+    {"claim_id": "C010", "claim_type": "author_explicit", "attribution": "author", "modality": "questioned", "statement": "以排比反问施压：没钱、没能力、处境窘迫被嘲笑、别人对不起你、别人不对你讲绅士风度、别人不因你的绅士风度优待你时，你还讲不讲绅士风度。", "evidence": ["E12"]},
+    {"claim_id": "C011", "claim_type": "author_explicit", "attribution": "author", "modality": "questioned", "statement": "反问你的绅士风度是否有各种各样的前提条件、是否看人下菜碟、看自己的能力来讲。", "evidence": ["E13"]},
+    {"claim_id": "C012", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "如果是这种此一时彼一时、此一人彼一人的「因地制宜」行为，那不叫绅士风度，只是假装绅士风度骗人。", "evidence": ["E14"]},
+    {"claim_id": "C013", "claim_type": "author_qualified", "attribution": "author", "modality": "qualified", "statement": "作者称：在这个世界上能看到的貌似绅士风度的行为，绝大多数都是自抬身价的绅士Cosplay。", "evidence": ["E15"]},
+    {"claim_id": "C014", "claim_type": "author_explicit", "attribution": "author", "modality": "predicted", "statement": "强烈建议不要在终身大事上搞绅士cosplay，因为迟早会因开支太大而放弃苦心经营的面具，向对方索要投入在面具上的成本——而对方其实不欠这些成本。", "evidence": ["E16"]},
+    {"claim_id": "C015", "claim_type": "author_explicit", "attribution": "author", "modality": "questioned", "statement": "以反问指出：用明知极有可能导致最终失去的手段先骗到手再说，这本身没有爱可言。", "evidence": ["E17"]},
+    {"claim_id": "C016", "claim_type": "author_explicit", "attribution": "author", "modality": "questioned", "statement": "以反问质疑：投入再多再大，证明的是厚积如海的爱，还是堆积如山的贪。", "evidence": ["E18"]},
+    {"claim_id": "C017", "claim_type": "author_explicit", "attribution": "author", "modality": "questioned", "statement": "以类比反问反驳「投入证明爱」：强盗为抢劫省吃俭用买防弹衣、冲锋枪、火箭筒不能证明ta对银行爱得深沉；受骗的人不欠骗子行骗成本，被绑架的人不欠绑匪麻绳钱，受害人不欠强奸犯跟踪误工费。", "evidence": ["E19"]},
+    {"claim_id": "C018", "claim_type": "author_qualified", "attribution": "author", "modality": "qualified", "statement": "有意无意搞绅士cosplay的人不会想这些；要ta们自认倒霉、愿赌服输几乎是不可能的——尤其是在得手之后。", "evidence": ["E20"]},
+    {"claim_id": "C019", "claim_type": "author_explicit", "attribution": "author", "modality": "questioned", "statement": "以反问指出：绑匪把你绑到手后不找你要绑架的成本，是不可能的事。", "evidence": ["E21"]},
+    {"claim_id": "C020", "claim_type": "author_explicit", "attribution": "author", "modality": "questioned", "statement": "以反问主张：越是这样，越该醒悟、越该更正、越该分手。", "evidence": ["E22"]},
+    {"claim_id": "C021", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "一个人要做绅士，只能是因为觉得做绅士是无条件的义务，即使什么优待、什么回报都没有，也宁可这样去生活；只有以这样的态度去行绅士的事，才成其为真实的绅士风度。", "evidence": ["E23", "E24"]},
+    {"claim_id": "C022", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "这种视其为自己义务的做法不会指着将来靠骗来、绑来的利益回本，而一开始就会寻求别的措施达成平衡——例如自强不息、积极好学，因此不会化为越堆越高的账单和赎金下限，不会哪天爆炸并要求按享受时长付费。", "evidence": ["E25"]},
+    {"claim_id": "C023", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "自强不息、积极好学等这些艰苦的事情，没有哪样是甜蜜的享受。", "evidence": ["E26"]},
+    {"claim_id": "C024", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "这些艰苦的事情是不是每个人都该选择，没人能替「每个人」去拿主意；也正因为没有什么应不应该，自己选择这样做的人才尤其可贵。", "evidence": ["E27"]}
+   ],
+   "argument_steps": [
+    "回答「不应该」，并附条件：不需要或负担不起可以没有（P001）。",
+    "理由：做绅士不是义务而是行有余力者的特权，如同被爱是被赐予的特权（P001）。",
+    "定义：绅士风度是对能力的自信表达（P003）。",
+    "区分两种强大：耀武扬威可造假，举重若轻须付现实代价（P004、P005）。",
+    "类比犹太教身份标记，说明付代价者更具防伪性（P006—P008）。",
+    "提出检验问题：根底是取悦异性还是自我要求（P009、P010）。",
+    "排比反问施压，判定有条件者只是假装骗人（P011—P013）。",
+    "断言绝大多数貌似绅士风度者为自抬身价的Cosplay（P014）。",
+    "以强盗、绑匪、强奸犯类比反驳「投入证明爱」，并预告面具成本终将索回（P015—P021）。",
+    "正面界定：只能因视之为无条件义务才成其为真实绅士风度，并因此不必回本（P022—P024）。",
+    "限定：此事没有应不应该，无法替每个人拿主意，故自选者尤其可贵（P025、P026）。"
+   ],
+   "concept_usage": [
+    {"term": "绅士风度", "meaning": "本文指对能力的自信表达；检验标准是有无前提条件，只有视为无条件的义务者才算真实（P003、P013、P022、P023）。", "evidence": "P003", "ambiguity": "与「绅士cosplay」的界限依赖动机与条件，作者未给可操作判据。"},
+    {"term": "行有余力者的特权", "meaning": "作者对绅士的定位：不是义务，而是有余力才谈得上的特权（P001）。", "evidence": "P001", "ambiguity": "「余力」的衡量标准未说明。"},
+    {"term": "举重若轻／耀武扬威", "meaning": "两种强大形态：前者指背负更多拘束、承受更高苛求，后者指外在标志（虎皮、雕翎）（P004）。", "evidence": "P004", "ambiguity": "前者属作者正面用法，后者属贬义用法，均无独立定义。"},
+    {"term": "绅士Cosplay／绅士coser", "meaning": "作者贬称自抬身价、以绅士行为换回报的表现（P014、P019、P020）。", "evidence": "P014", "ambiguity": "与真实绅士风度如何区分，作者只给出动机标准。"},
+    {"term": "因地制宜", "meaning": "作者加引号的贬义用法：此一时彼一时、此一人彼一人的有条件行为（P013）。", "evidence": "P013", "ambiguity": "该词日常为褒义或中性，此处语义被作者反转。"},
+    {"term": "赎金下限", "meaning": "比喻长期行骗后向对方索要回报的最低额度（P024）。", "evidence": "P024", "ambiguity": "属比喻，未给对应实际内容。"}
+   ],
+   "examples_and_targets": [
+    "举重金牌与举两百公斤杠铃：作者类比，用来说明付现实代价难以造假（P005）。",
+    "虎皮、雕翎、义乌高仿：作者举例，用来说明外在标志可伪造（P004）。",
+    "犹太教割礼、安息日戒律、饮食禁忌：作者引作类比的外部事实断言，需外部核查（P006）。",
+    "强盗买防弹衣、冲锋枪、火箭筒抢银行：作者类比，用以反驳「投入即爱」（P018）。",
+    "受骗者、被绑架者、受害人（强奸案）：作者类比（P018）。",
+    "绑匪索要绑架成本：作者类比（P020）。",
+    "绅士coser、绅士Cosplay：作者的批评对象（P014、P019、P020）。",
+    "「自强不息」「积极好学」：作者给出的替代性平衡措施（P024、P025）。"
+   ],
+   "conditions": [
+    "回答带条件：如果你觉得你不需要有，或者负担不起，可以没有（P001）。",
+    "判断依赖对动机的追问：「你是为了给异性留下良好印象？还是真的打算以精英的身份来自我要求？」（P010）。",
+    "排比反问所设情境：没钱、没能力、处境窘迫被嘲笑、别人对不起你、别人不对你讲绅士风度、得不到优待（P011）。",
+    "「绝大多数」为限定词，作者未称全部貌似绅士风度者皆为Cosplay（P014）。",
+    "「终身大事」是作者特别劝诫的场景（P015）。",
+    "结尾限定：是否每个人都该选择这些艰苦之事，没人能替「每个人」拿主意（P026）。"
+   ],
+   "rhetoric_and_tone": "训诫与劝告口吻，直接对「你」说话；大量反问排比（P011、P012、P016、P017、P021），并以强盗、绑匪、强奸犯等强烈贬义类比施压。夹用网络语与外语词（cosplay、Cosplay、coser、jj），称求偶式绅士行为为「绅士Cosplay」。判断句短促（「那只是假装绅士风度骗人罢了。」）。结尾语气缓和，转为尊重个人选择。",
+   "unresolved_questions": [
+    "「绅士风度」与「绅士cosplay」的判定依赖动机，而动机不可直接观察，正文未给可操作判据。",
+    "犹太教割礼、安息日戒律、饮食禁忌的描述属外部事实断言，需外部核查。",
+    "「被爱也是一种被赐予的特权」为类比，未展开论证（P001）。",
+    "「终身大事」所指关系类型未进一步界定（P015）。",
+    "强盗、绑匪、强奸犯与求偶中付出成本的行为是否同质，作者未论证其可比性。",
+    "称「绝大多数」貌似绅士风度者为Cosplay，正文未给数据或观察依据（P014）。",
+    "「无条件的义务」与「行有余力者的特权」两处定位（P022 与 P001）之间的张力，正文未作调和。"
+   ],
+   "evidence": [
+    {"key": "E1", "paragraph_id": "P001", "quote": "不应该，如果你觉得你不需要有，或者负担不起，可以没有。", "relation": "supports"},
+    {"key": "E2", "paragraph_id": "P001", "quote": "因为做绅士不是一种义务，而是一种行有余力者的特权。", "relation": "supports"},
+    {"key": "E3", "paragraph_id": "P003", "quote": "绅士风度实际上是一种对能力的自信表达。", "relation": "supports"},
+    {"key": "E4", "paragraph_id": "P004", "quote": "一种是耀武扬威——披虎皮、戴雕翎；一种是举重若轻——比别人背负更多的拘束、承受更高的苛求。", "relation": "supports"},
+    {"key": "E5", "paragraph_id": "P004", "quote": "虎皮雕翎可以是偷的，可以是义乌弄的高仿，可以是借的，可以是租的，可以是人送的，可以是祖传的。", "relation": "supports"},
+    {"key": "E6", "paragraph_id": "P005", "quote": "而有人举着两百公斤的杠铃证明。后者当然没可能是假的。", "relation": "supports"},
+    {"key": "E7", "paragraph_id": "P006", "quote": "你办得到，那我就当你是真的。", "relation": "supports"},
+    {"key": "E8", "paragraph_id": "P007", "quote": "毫无疑问这种刻苦自身、有付出代价的方式更具有防伪特性，更能有效的表示精英身份。", "relation": "supports"},
+    {"key": "E9", "paragraph_id": "P008", "quote": "那当然更容易得到看重精英性的人们的注意。", "relation": "supports"},
+    {"key": "E10", "paragraph_id": "P009", "quote": "问题在于，你的绅士风度到底是基于什么根底来做的。", "relation": "supports"},
+    {"key": "E11", "paragraph_id": "P010", "quote": "你是为了给异性留下良好印象？还是真的打算以精英的身份来自我要求？", "relation": "supports"},
+    {"key": "E12", "paragraph_id": "P011", "quote": "你没钱，你还绅士风度吗？你没能力，你还承担绅士风度的成本吗？", "relation": "supports"},
+    {"key": "E13", "paragraph_id": "P012", "quote": "还是说你的绅士风度是有各种各样的前提条件的？是看人下菜碟的？", "relation": "supports"},
+    {"key": "E14", "paragraph_id": "P013", "quote": "那不叫做绅士风度。那只是假装绅士风度骗人罢了。", "relation": "supports"},
+    {"key": "E15", "paragraph_id": "P014", "quote": "绝大多数都是自抬身价的绅士Cosplay", "relation": "supports"},
+    {"key": "E16", "paragraph_id": "P015", "quote": "因为你迟早要因为开支太大而放弃你苦心经营的面具，向对方索要你投入在面具上的成本", "relation": "supports"},
+    {"key": "E17", "paragraph_id": "P016", "quote": "而用明知极有可能导致最终失去的手段先骗到手再说，这本身有何爱可言？", "relation": "supports"},
+    {"key": "E18", "paragraph_id": "P017", "quote": "投入再多、再大，证明的是厚积如海的爱，还是堆积如山的贪？", "relation": "supports"},
+    {"key": "E19", "paragraph_id": "P018", "quote": "难道一个强盗为了抢劫省吃俭用买防弹衣、冲锋枪、火箭筒，可以用来证明ta对银行爱得深沉吗？", "relation": "supports"},
+    {"key": "E20", "paragraph_id": "P019", "quote": "要ta们自认倒霉，愿赌服输几乎是不可能的——尤其是在ta们得手之后。", "relation": "supports"},
+    {"key": "E21", "paragraph_id": "P020", "quote": "绑匪终于把你绑到手了，不找你要绑架的成本，有可能吗？", "relation": "supports"},
+    {"key": "E22", "paragraph_id": "P021", "quote": "难道不是越该醒悟，越该更正——越该分手吗？", "relation": "supports"},
+    {"key": "E23", "paragraph_id": "P022", "quote": "只能是因为觉得做绅士是无条件的义务", "relation": "supports"},
+    {"key": "E24", "paragraph_id": "P023", "quote": "只有以这样的态度去行绅士的事，才成其为真实的绅士风度。", "relation": "supports"},
+    {"key": "E25", "paragraph_id": "P024", "quote": "不会指着将来靠骗来、绑来的利益回本，而一开始就会寻求别的措施来达成平衡", "relation": "supports"},
+    {"key": "E26", "paragraph_id": "P025", "quote": "没有哪样是甜蜜的享受。", "relation": "supports"},
+    {"key": "E27", "paragraph_id": "P026", "quote": "也正因为没有什么应不应该，自己选择这样做的人，才尤其可贵。", "relation": "supports"}
+   ]
+  },
+  "provisional_tags": {
+   "domain_candidates": ["两性关系与婚恋", "社会身份与精英性表达", "行为伦理/动机辨析"],
+   "issue_candidates": ["绅士风度是否为男性义务", "有条件行为与无条件下义务之别", "以付出成本证明身份或证明爱", "求偶中的伪装与成本索回"],
+   "text_function_candidates": ["答疑（回应知乎提问）", "劝告/训诫", "批评（针对绅士cosplay）"],
+   "object_candidates": ["男性（提问所指）", "异性/对方", "绅士coser", "犹太教", "义乌（高仿品）"],
+   "working_keywords": ["绅士风度", "绅士cosplay", "无条件的义务", "行有余力者的特权", "举重若轻", "耀武扬威", "赎金下限", "自强不息"]
+  },
+  "notes": "无图片节点，正文26段，无 text/lexical 偏离。文中犹太教习俗描述属外部事实断言，已登记为待外部核查。P004「义乌弄的高仿」、P006「小jj挨一刀」等口语/网络化表述按原文保留，未改写。提问属提问者（Q001）。"
+ },
+ "48089ec4": {
+  "analysis": {
+   "question_context": "作者回应知乎提问：脱口秀表演和单口相声有什么区别么（Q001，属提问者）。作者从演出场合与观众预设切入：单口相声是为无固定剧场、无预告、无预售、无固有票房的街边巷角场合设计的，不能假设自己有足够善意的观众群体可作对话对象，因此其改进版自带一位专门负责捧哏的搭档；脱口秀一开始就有愿意买票、抽时间赴约的观众群体，这是巨大优势。作者由此概括：媒体与观众的区别决定了艺术形式上的一切区别。",
+   "content_units": [
+    {"unit_id": "U001", "paragraph_refs": ["P001", "P002"], "summary": "单口相声的演出前提预设（无固定剧场、无预告、无预售、无固有票房，观众须靠自己吸引）导致它不能假设拥有足够善意的观众群体，其改进版以捧哏搭档补足这一短板，这是与脱口秀的重大差别。", "role": "claim"},
+    {"unit_id": "U002", "paragraph_refs": ["P003"], "summary": "脱口秀一开始就有「热情到足够买票和抽出时间来赌这是一个好的约会选择」的观众群体，是巨大优势。", "role": "claim"},
+    {"unit_id": "U003", "paragraph_refs": ["P004", "P005"], "summary": "单口相声与脱口秀的一切细节区别都来自根本前提的区别；推及一般，媒体与观众的区别决定了艺术形式上的一切区别。", "role": "claim"},
+    {"unit_id": "U004", "paragraph_refs": ["P006", "P007", "P008"], "summary": "找到特别的媒体与观众组合即找到新艺术形式的处女地；以热气球上展示给乘员观赏的新玩法为例；这是做艺术生意的最大捷径。", "role": "action_advice"}
+   ],
+   "main_claims": [
+    {"claim_id": "C001", "claim_type": "open_question", "attribution": "questioner", "modality": "questioned", "statement": "提问者询问脱口秀表演和单口相声有什么区别（Q001，属提问者）。", "evidence": []},
+    {"claim_id": "C002", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "单口相声是设计来在街边巷角这类无固定剧场、无预告、无预售、无固有票房的场合、以「开始恐怕没有观众，全得靠我自己吸引」为前提预设来展开表演的。", "evidence": ["E1"]},
+    {"claim_id": "C003", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "因此单口相声不能假设自己拥有一个足够善意的观众群体作为对话对象，这是它与脱口秀的一个重大差别。", "evidence": ["E2"]},
+    {"claim_id": "C004", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "单口相声的改进版自带了一个最专业、最理想的对话对象来补足这个短板——添加了一位专门负责捧哏的搭档。", "evidence": ["E3"]},
+    {"claim_id": "C005", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "脱口秀一开始就有「热情到足够买票和抽出时间来赌这是一个好的约会选择」这么好的观众群体，这是一个巨大的优势。", "evidence": ["E4"]},
+    {"claim_id": "C006", "claim_type": "author_qualified", "attribution": "author", "modality": "qualified", "statement": "基本上，单口相声和脱口秀的一切细节区别都是来自于这个根本前提的区别。", "evidence": ["E5"]},
+    {"claim_id": "C007", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "这（媒体与观众的区别）也是一切表演艺术互相之间区别的本质——媒体与观众的区别，决定了艺术形式上的一切区别。", "evidence": ["E6"]},
+    {"claim_id": "C008", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "你能找到一个特别的媒体与观众的组合，你就找到了一块新艺术形式的处女地。", "evidence": ["E7"]},
+    {"claim_id": "C009", "claim_type": "author_explicit", "attribution": "author", "modality": "hypothetical", "statement": "作者举例：比如打算开拓一个在热气球上展示给热气球乘员观赏的新玩法，仅这个前提就能创造一种新的艺术。", "evidence": ["E8"]},
+    {"claim_id": "C010", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "这是做艺术生意的最大捷径。", "evidence": ["E9"]}
+   ],
+   "argument_steps": [
+    "陈述单口相声的演出前提与场合预设（P001）。",
+    "推出它与脱口秀的重大差别：不能假设有善意观众群，并说明捧哏搭档的功能（P002）。",
+    "对比说明脱口秀的观众优势（P003）。",
+    "归纳：一切细节区别皆源于根本前提的区别（P004）。",
+    "上升为一般命题：媒体与观众的区别决定艺术形式上的一切区别（P005）。",
+    "推论出可操作结论：找到新的媒体与观众组合即新艺术形式的处女地（P006）。",
+    "以热气球新玩法为例（P007）。",
+    "收束为「做艺术生意的最大捷径」（P008）。"
+   ],
+   "concept_usage": [
+    {"term": "前提预设", "meaning": "指设计演出形式时对观众到场状态的默认假设（P001、P004）。", "evidence": "P001", "ambiguity": "未区分经济前提（票房）与观演关系前提（善意观众）。"},
+    {"term": "媒体与观众（的组合）", "meaning": "作者用以解释艺术形式差异的核心变量；找到新组合即新艺术形式的处女地（P005、P006）。", "evidence": "P005", "ambiguity": "「媒体」的确切含义（场地、媒介还是观演关系）未界定。"},
+    {"term": "捧哏", "meaning": "单口相声改进版中专门负责对话的搭档（P002）。", "evidence": "P002", "ambiguity": "作者未说明捧哏在形式上属于对口相声，措辞为「单口相声的改进版」。"},
+    {"term": "处女地", "meaning": "比喻尚未被开发的新的艺术形式空间（P006）。", "evidence": "P006", "ambiguity": "属比喻，无独立定义。"},
+    {"term": "做艺术生意", "meaning": "作者把艺术形式的创新表述为一门可经营的生意（P008）。", "evidence": "P008", "ambiguity": "「捷径」的具体条件与风险未说明。"}
+   ],
+   "examples_and_targets": [
+    "街边巷角演出：作者所述单口相声的原始场景（P001）。",
+    "捧哏搭档：作者所举形式例证（P002）。",
+    "「热情到足够买票和抽出时间来赌这是一个好的约会选择」的观众：作者对脱口秀观众的描述（P003）。",
+    "热气球上展示给乘员观赏的新玩法：作者举的假想例子（P007）。",
+    "「做艺术生意的最大捷径」：作者的评价性表述（P008）。"
+   ],
+   "conditions": [
+    "前提句以引号自设：「开始恐怕没有观众，全得靠我自己吸引」（P001）。",
+    "结论以条件句给出：「你能找到一个特别的媒体与观众的组合」（P006）。",
+    "「基本上」为限定词，作者未称区别全部源于该前提（P004）。",
+    "例子为假设性设想（「比如你打算开拓」，P007）。",
+    "讨论范围限于「表演艺术」，并以单口相声与脱口秀这一对形式为实例（P005、P001）。"
+   ],
+   "rhetoric_and_tone": "说明文式的对比与归纳，语气平实、判断直接。以破折号和自设引语陈述前提，逐步由具体形式上升到一般命题（「一切表演艺术」「一切区别」）。结尾转为生意经式断言（「最大捷径」）。P003「而脱口则」疑漏字，按原文保留。",
+   "unresolved_questions": [
+    "P003「而脱口则一开始就有」疑漏「秀」字，原文如此，未校改，需版本或语料核对。",
+    "「媒体」在本文中的确切含义（场地、媒介还是观演关系）未界定。",
+    "「一切表演艺术互相之间区别的本质」（P005）为强断言，正文仅以单口相声与脱口秀一例支撑。",
+    "作者对单口相声历史演出场合与捧哏由来的描述属外部事实断言，需外部核查。",
+    "是否存在反例（同样场合下的其他曲艺或喜剧形式）正文未讨论。",
+    "「最专业，最理想的对话对象」中逗号用法异常，按原文保留。"
+   ],
+   "evidence": [
+    {"key": "E1", "paragraph_id": "P001", "quote": "单口相声是设计来在街边巷角这类无固定剧场、无预告、无预售、无固有票房的场合", "relation": "supports"},
+    {"key": "E2", "paragraph_id": "P002", "quote": "单口相声不能假设自己拥有一个足够善意的观众群体可以作为对话对象", "relation": "supports"},
+    {"key": "E3", "paragraph_id": "P002", "quote": "添加了一位专门负责捧哏的搭档", "relation": "supports"},
+    {"key": "E4", "paragraph_id": "P003", "quote": "热情到足够买票和抽出时间来赌这是一个好的约会选择", "relation": "supports"},
+    {"key": "E5", "paragraph_id": "P004", "quote": "基本上单口相声和脱口秀的一切细节区别都是来自于这个根本前提的区别。", "relation": "supports"},
+    {"key": "E6", "paragraph_id": "P005", "quote": "即媒体与观众的区别，决定了艺术形式上的一切区别", "relation": "supports"},
+    {"key": "E7", "paragraph_id": "P006", "quote": "你就找到了一块新艺术形式的处女地", "relation": "supports"},
+    {"key": "E8", "paragraph_id": "P007", "quote": "仅这个前提就能创造一种新的艺术", "relation": "supports"},
+    {"key": "E9", "paragraph_id": "P008", "quote": "这是做艺术生意的最大捷径。", "relation": "supports"}
+   ]
+  },
+  "provisional_tags": {
+   "domain_candidates": ["表演艺术形式分析", "曲艺与喜剧", "艺术生产/经营"],
+   "issue_candidates": ["单口相声与脱口秀的形式差别", "观众预设对表演形式的影响", "媒体与观众组合作为形式差异的解释变量"],
+   "text_function_candidates": ["答疑（回应知乎提问）", "解释/比较", "经验总结"],
+   "object_candidates": ["单口相声", "脱口秀", "捧哏", "热气球乘员"],
+   "working_keywords": ["前提预设", "媒体与观众", "捧哏", "处女地", "艺术生意"]
+  },
+  "notes": "无图片节点，正文8段，无 text/lexical 偏离。P003「而脱口则」疑漏字，按原文保留未校改，已登记为未决问题。提问属提问者（Q001）。"
+ },
+ "c7eee5f7": {
+  "analysis": {
+   "question_context": "作者回应知乎提问：你是如何熬过人生中最失意的时刻的呢（Q001，属提问者）。作者直接回答「其实就是苦熬」，并给出做法：手上在做的事一天没死就继续做；再苦也不自寻死路、不怪别人、不干坏事；适当怪自己但只怪能怪的地方，因人力不可及之事倒霉只是命运。正文以「接种苦难疫苗」解释苦熬的收益，主张熬出的耐性与韧性才是在可怕世界里获得平安喜乐的关键，末段表示希望读者能有信仰。",
+   "content_units": [
+    {"unit_id": "U001", "paragraph_refs": ["P001"], "summary": "直接作答：其实就是苦熬，没有什么漂亮话好说。", "role": "claim"},
+    {"unit_id": "U002", "paragraph_refs": ["P002", "P003"], "summary": "做法：手上在做的事一天没死就一天继续做；再苦也不自寻死路、不怪别人、不干坏事；谁也不怪。", "role": "action_advice"},
+    {"unit_id": "U003", "paragraph_refs": ["P004"], "summary": "限定自责范围：只怪能怪的地方，不要怪自己做不到没人能做到的事情；因这类事倒霉不是过失，只是命运。", "role": "qualification"},
+    {"unit_id": "U004", "paragraph_refs": ["P005", "P006"], "summary": "理由：人生本不太可能一帆风顺，越缺少苦难者越对苦难敏感；苦熬是天然接种苦难疫苗的过程，本身即脱壳成长；现代人心是嫩的，只能靠一次次痛苦疫苗慢慢接种，没有捷径。", "role": "reason"},
+    {"unit_id": "U005", "paragraph_refs": ["P007", "P008", "P009"], "summary": "预期结果：一次次熬过来才有小孩不会有的从容淡定，这份淡定是人生最宝贵财富之一，熬出的耐性和韧性让人在可怕世界里获得平安喜乐——不是才能而是耐性。", "role": "claim"},
+    {"unit_id": "U006", "paragraph_refs": ["P010"], "summary": "附加祝愿：衷心希望读者能有信仰，不必跟作者一样。", "role": "action_advice"}
+   ],
+   "main_claims": [
+    {"claim_id": "C001", "claim_type": "open_question", "attribution": "questioner", "modality": "questioned", "statement": "提问者询问作者是如何熬过人生中最失意的时刻的（Q001，属提问者）。", "evidence": []},
+    {"claim_id": "C002", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "熬过最失意的时刻其实就是苦熬，这里没有什么漂亮话好说。", "evidence": ["E1"]},
+    {"claim_id": "C003", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "做法是：手上在做的事，一天还没死就一天继续做下去；再苦也不自寻死路、也不怪别人、也不干坏事；谁也不怪。", "evidence": ["E2", "E3"]},
+    {"claim_id": "C004", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "适当怪一怪自己，但注意只怪能怪的地方——也就是不要怪自己做不到没人能做到的事情。", "evidence": ["E4"]},
+    {"claim_id": "C005", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "因为没人能做到的事情而倒霉，这并不是你的过失，而只是命运而已。", "evidence": ["E5"]},
+    {"claim_id": "C006", "claim_type": "author_explicit", "attribution": "author", "modality": "qualified", "statement": "人生本来就不太可能是一帆风顺的，而且越是缺少苦难的人生，越是对苦难敏感，乃至于后来飞花摘叶无不伤身。", "evidence": ["E6"]},
+    {"claim_id": "C007", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "这份苦熬的经历是一种天然的接种苦难疫苗的过程；苦熬不是毫无收益，而且本身就是在脱壳成长的过程。", "evidence": ["E7"]},
+    {"claim_id": "C008", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "现代人生活得太安逸稳定，没有饿过肚子、没有睡过大街、没有幼年失亲，所以心是嫩的；心越嫩，同样的事伤的就越苦。", "evidence": ["E8"]},
+    {"claim_id": "C009", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "这只能通过一次次的痛苦疫苗慢慢地接种起来，没有什么捷径可走。", "evidence": ["E9"]},
+    {"claim_id": "C010", "claim_type": "author_explicit", "attribution": "author", "modality": "predicted", "statement": "一次次的痛苦熬过来，你才会有小孩子们不会有的那份从容淡定。", "evidence": ["E10"]},
+    {"claim_id": "C011", "claim_type": "author_explicit", "attribution": "author", "modality": "predicted", "statement": "将来你会发现，这份淡定是人生最宝贵的财富之一；最终是这一次又一次的苦熬所熬出来的耐性和韧性，能让你在这个可怕的世界里获得平安和喜乐。", "evidence": ["E11"]},
+    {"claim_id": "C012", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "关键不是什么才能，而是这个耐性。", "evidence": ["E12"]},
+    {"claim_id": "C013", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "作者衷心希望读者能有信仰，不必跟他一样。", "evidence": ["E13"]}
+   ],
+   "argument_steps": [
+    "直接作答：就是苦熬，没有漂亮话（P001）。",
+    "给出具体做法：继续手头之事，不自寻死路、不怪别人、不干坏事、谁也不怪（P002、P003）。",
+    "限定自责范围：只怪能怪的地方，因人力不可及之事倒霉只是命运（P004）。",
+    "给出收益理由：人生难免苦难，苦熬是天然苦难疫苗，本身即脱壳成长（P005）。",
+    "以现代人「心是嫩的」说明接种的必要性与无捷径（P006）。",
+    "预期结果：熬过来才有从容淡定，这份淡定是宝贵财富（P007、P008）。",
+    "点明关键不是才能而是耐性（P009）。",
+    "附加祝愿：希望读者能有信仰（P010）。"
+   ],
+   "concept_usage": [
+    {"term": "苦熬", "meaning": "本文指不做漂亮解释、只是持续承受并继续做手头之事的过程（P001、P002）。", "evidence": "P001", "ambiguity": "未说明其与寻求帮助或治疗的关系。"},
+    {"term": "苦难疫苗／痛苦疫苗", "meaning": "比喻以一次次痛苦经历获得对苦难的耐受能力（P005、P006）。", "evidence": "P005", "ambiguity": "属比喻，作者未给出机制说明。"},
+    {"term": "心是嫩的", "meaning": "描述缺乏苦难经历者对痛苦格外敏感的状态（P006）。", "evidence": "P006", "ambiguity": "无判定标准。"},
+    {"term": "脱壳成长", "meaning": "比喻苦熬本身即是成长过程（P005）。", "evidence": "P005", "ambiguity": "属比喻用法，未展开。"},
+    {"term": "耐性和韧性", "meaning": "作者称苦熬真正熬出的、比才能更关键的东西（P008、P009）。", "evidence": "P009", "ambiguity": "与「才能」的界限未界定。"},
+    {"term": "命运", "meaning": "用于界定非个人过失的倒霉遭遇（P004）。", "evidence": "P004", "ambiguity": "未说明其与宗教意义上的命运是否相关。"}
+   ],
+   "examples_and_targets": [
+    "饿过肚子、睡过大街、幼年失亲：作者列举的苦难经历（P006）。",
+    "「飞花摘叶无不伤身」：作者比喻（P005）。",
+    "小孩子：作者用作对照群体（P007）。",
+    "「信仰」：作者附加的希望，未指明具体宗教或内容（P010）。",
+    "「现代人」：作者的批评性描述对象（P006）。"
+   ],
+   "conditions": [
+    "做法针对「人生中最失意的时刻」这一处境（提问所设）。",
+    "自责限定条件：「只怪能怪的地方」「不要怪自己做不到没人能做到的事情」（P004）。",
+    "收益主张带或然限定：「人生本来就不太可能是一帆风顺的」（P005）。",
+    "预期句用「将来你会发现」，未给时间与幅度（P008）。",
+    "信仰建议明确不要求与作者相同（P010）。",
+    "未说明苦熬的适用范围与上限（何种程度、持续多久、是否需要外部支持）。"
+   ],
+   "rhetoric_and_tone": "语气朴素、直接，近乎过来人的嘱咐；短句与重复（「谁也不怪。」「真的。」）形成强调。比喻温和（苦难疫苗、心是嫩的、飞花摘叶）。以「你」称呼读者，末段连用两次「衷心希望」表达祝愿，带个人信仰色彩但明言不强加。",
+   "unresolved_questions": [
+    "「信仰」具体所指未说明（是否宗教、何种内容），作者明言不必与自己相同（P010）。",
+    "「苦熬」是否适用于所有类型的失意（如疾病、丧失）未说明。",
+    "苦难疫苗的收益主张（P005—P008）无经验证据，属作者经验性判断。",
+    "「没人能做到的事情」的判定标准未给出（P004）。",
+    "正文未说明苦熬期间是否需要外部支持或专业帮助。",
+    "提问者问的是作者个人经历，而正文未叙述任何具体个人经历细节。"
+   ],
+   "evidence": [
+    {"key": "E1", "paragraph_id": "P001", "quote": "其实就是苦熬。这里没有什么漂亮话好说，真的。", "relation": "supports"},
+    {"key": "E2", "paragraph_id": "P002", "quote": "手上在做的事，一天还没死，就一天继续做下去。", "relation": "supports"},
+    {"key": "E3", "paragraph_id": "P003", "quote": "谁也不怪。", "relation": "supports"},
+    {"key": "E4", "paragraph_id": "P004", "quote": "适当怪一怪自己，但注意只怪能怪的地方", "relation": "supports"},
+    {"key": "E5", "paragraph_id": "P004", "quote": "这并不是你的过失，而只是命运而已。", "relation": "supports"},
+    {"key": "E6", "paragraph_id": "P005", "quote": "而且越是缺少苦难的人生，越是对苦难敏感", "relation": "supports"},
+    {"key": "E7", "paragraph_id": "P005", "quote": "所以这份苦熬的经历是一种天然的接种苦难疫苗的过程", "relation": "supports"},
+    {"key": "E8", "paragraph_id": "P006", "quote": "所以心是嫩的。心越嫩，同样的事伤的就越苦。", "relation": "supports"},
+    {"key": "E9", "paragraph_id": "P006", "quote": "没有什么捷径可走。", "relation": "supports"},
+    {"key": "E10", "paragraph_id": "P007", "quote": "一次次的痛苦熬过来，你才会有小孩子们不会有的那份从容淡定。", "relation": "supports"},
+    {"key": "E11", "paragraph_id": "P008", "quote": "能让你在这个可怕的世界里获得平安和喜乐", "relation": "supports"},
+    {"key": "E12", "paragraph_id": "P009", "quote": "不是什么才能，而是这个耐性。", "relation": "supports"},
+    {"key": "E13", "paragraph_id": "P010", "quote": "衷心希望你们能有信仰，不必跟我一样", "relation": "supports"}
+   ]
+  },
+  "provisional_tags": {
+   "domain_candidates": ["人生经验/心理调适", "苦难与韧性", "信仰与精神生活"],
+   "issue_candidates": ["如何度过失意时刻", "自责的边界", "苦难是否带来收益", "耐性与才能之别"],
+   "text_function_candidates": ["答疑（回应知乎提问）", "经验总结", "劝慰/祝愿"],
+   "object_candidates": ["提问者", "作者本人", "现代人", "小孩子"],
+   "working_keywords": ["苦熬", "苦难疫苗", "心是嫩的", "脱壳成长", "耐性", "信仰"]
+  },
+  "notes": "无图片节点，正文10段，无 text/lexical 偏离。作者未叙述具体个人经历，正文以一般性主张与祝愿为主；「信仰」所指未说明，已登记为未决问题。提问属提问者（Q001）。"
+ },
+ "8d9b910e": {
+  "analysis": {
+   "question_context": "作者回应知乎提问：为什么中国的科研人才总是留不住，作为普通人我们能做什么（Q001，属提问者）。作者只回应「作为普通人我们能做什么」，列出八条具体做法：少买或不买国产盗版、多买正版；对原创产品积极反馈并学会做出高质量bug报告；提供愿付费的衍生需求线索；反馈国外竞品使用体会；多用收费版；对免费开源作品凡使用皆捐赠；帮助维持用户社区友好气氛；企业经营者多考虑合作或分享资源。正文未解释人才留不住的原因，也未论证这些做法与留住人才之间的因果链。",
+   "content_units": [
+    {"unit_id": "U001", "paragraph_refs": ["P001"], "summary": "总纲：作为普通人有很简单的几条可以做。", "role": "claim"},
+    {"unit_id": "U002", "paragraph_refs": ["P002", "P003", "P004", "P005"], "summary": "消费与反馈类建议：买正版、对原创产品给反馈与高质量bug报告、提供愿付费的衍生需求线索、反馈国外竞品体会。", "role": "action_advice"},
+    {"unit_id": "U003", "paragraph_refs": ["P006", "P007"], "summary": "付费与捐赠类建议：少用或不用免费版、多用收费版（预算允许时不推荐完全不收费的工具）；对免费开源作品凡使用皆捐赠。", "role": "action_advice"},
+    {"unit_id": "U004", "paragraph_refs": ["P008", "P009"], "summary": "社区与企业层面建议：帮助维持用户社区友好气氛；企业经营者多考虑合作或分享资源。", "role": "action_advice"}
+   ],
+   "main_claims": [
+    {"claim_id": "C001", "claim_type": "open_question", "attribution": "questioner", "modality": "questioned", "statement": "提问者询问为什么中国的科研人才总是留不住、作为普通人能做什么（Q001，属提问者）。", "evidence": []},
+    {"claim_id": "C002", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "作为普通人，有这么很简单的几条可以做。", "evidence": ["E1"]},
+    {"claim_id": "C003", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "少买或者不买国产盗版，多买正版。", "evidence": ["E2"]},
+    {"claim_id": "C004", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "对原创产品积极给予使用反馈，学会如何准确地做出高质量的bug报告，作者称这个绝对价值千金。", "evidence": ["E3"]},
+    {"claim_id": "C005", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "积极提供你会为之买单的衍生需求线索。", "evidence": ["E4"]},
+    {"claim_id": "C006", "claim_type": "author_explicit", "attribution": "author", "modality": "hypothetical", "statement": "如果你使用过国外竞品并有有价值的体会，尽量反馈。", "evidence": ["E5"]},
+    {"claim_id": "C007", "claim_type": "author_qualified", "attribution": "author", "modality": "qualified", "statement": "少用或不用免费版，多用收费版；如果预算允许，一般不推荐使用完全不收费的工具。", "evidence": ["E6"]},
+    {"claim_id": "C008", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "对免费开源作品，凡使用皆捐赠。", "evidence": ["E7"]},
+    {"claim_id": "C009", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "帮助维持用户社区的友好气氛。", "evidence": ["E8"]},
+    {"claim_id": "C010", "claim_type": "author_explicit", "attribution": "author", "modality": "hypothetical", "statement": "如果你是企业经营者，多考虑合作或者分享资源。", "evidence": ["E9"]}
+   ],
+   "argument_steps": [
+    "划出可回应范围：作为普通人能做的几条（P001）。",
+    "列出消费与反馈类建议（P002—P005）。",
+    "列出付费与捐赠类建议（P006、P007）。",
+    "列出社区与企业层面的建议（P008、P009）。",
+    "正文未提供各条与「留住科研人才」之间的因果论证，也未回答「为什么留不住」。"
+   ],
+   "concept_usage": [
+    {"term": "普通人", "meaning": "作者设定的行动主体，指非政策制定者的一般消费者与使用者（P001—P009）。", "evidence": "P001", "ambiguity": "第8条把「企业经营者」也列入建议对象，是否仍属「普通人」未说明。"},
+    {"term": "原创产品", "meaning": "需要用户反馈与付费支持的本土原创产出（P003）。", "evidence": "P003", "ambiguity": "未界定范围（软件？内容？）。"},
+    {"term": "高质量的bug报告", "meaning": "作者称为「绝对价值千金」的反馈形式（P003）。", "evidence": "P003", "ambiguity": "「高质量」的标准未给出。"},
+    {"term": "衍生需求线索", "meaning": "用户愿意为之付费的延伸需求信息（P004）。", "evidence": "P004", "ambiguity": "举例与形式未说明。"},
+    {"term": "免费开源作品", "meaning": "作者主张凡使用皆捐赠的对象（P007）。", "evidence": "P007", "ambiguity": "捐赠额度与对象（项目/作者）未说明。"}
+   ],
+   "examples_and_targets": [
+    "国产盗版、正版、免费版、收费版、免费开源作品：作者列举的消费与支持对象（P002、P006、P007）。",
+    "国外竞品：作者建议反馈使用体会的对象（P005）。",
+    "用户社区：作者建议维护气氛的场所（P008）。",
+    "企业经营者：作者单独点名的建议对象（P009）。",
+    "高质量的bug报告：作者称「绝对价值千金」的具体产物（P003）。"
+   ],
+   "conditions": [
+    "建议限定于「作为普通人」这一身份（P001）。",
+    "第5条带条件：「如果预算允许，一般不推荐使用完全不收费的工具」（P006）。",
+    "第4条带条件：「如果你使用过国外竞品并有有价值的体会」（P005）。",
+    "第8条限定对象：「如果你是企业经营者」（P009）。",
+    "正文未说明这些做法的优先次序、规模与效果衡量方式。"
+   ],
+   "rhetoric_and_tone": "清单体、实务建议语气；句子短，逐条编号，无修辞铺陈。仅第2条带评价性强调（「这个绝对价值千金」）。全篇未回应提问中「为什么留不住」的原因部分，也未出现「科研人才」字样。",
+   "unresolved_questions": [
+    "正文完全未回答提问的前半部分「为什么中国的科研人才总是留不住」。",
+    "未论证「普通人做这些」与「留住科研人才」之间的因果或传导机制。",
+    "提问者「总是留不住」的判断本身未被作者检验。",
+    "「普通人」是否包含第8条的企业经营者，正文未说明。",
+    "各条建议的规模、效果与可操作性未说明。",
+    "「国产盗版」的具体所指范围未界定（P002）。"
+   ],
+   "evidence": [
+    {"key": "E1", "paragraph_id": "P001", "quote": "作为普通人，有这么很简单的几条可以做：", "relation": "supports"},
+    {"key": "E2", "paragraph_id": "P002", "quote": "1）少买或者不买国产盗版，多买正版。", "relation": "supports"},
+    {"key": "E3", "paragraph_id": "P003", "quote": "学会如何准确的做出高质量的bug报告——这个绝对价值千金。", "relation": "supports"},
+    {"key": "E4", "paragraph_id": "P004", "quote": "3）积极提供你会为之买单的衍生需求线索。", "relation": "supports"},
+    {"key": "E5", "paragraph_id": "P005", "quote": "4）如果你使用过国外竞品并有有价值的体会，尽量反馈。", "relation": "supports"},
+    {"key": "E6", "paragraph_id": "P006", "quote": "5）少用或不用免费版，多用收费版。（如果预算允许，一般不推荐使用完全不收费的工具。）", "relation": "supports"},
+    {"key": "E7", "paragraph_id": "P007", "quote": "6）对免费开源作品，凡使用皆捐赠。", "relation": "supports"},
+    {"key": "E8", "paragraph_id": "P008", "quote": "7）帮助维持用户社区的友好气氛。", "relation": "supports"},
+    {"key": "E9", "paragraph_id": "P009", "quote": "8）如果你是企业经营者，多考虑合作或者分享资源。", "relation": "supports"}
+   ]
+  },
+  "provisional_tags": {
+   "domain_candidates": ["科研人才流动/科技政策（提问侧）", "消费与支持原创的行为建议", "开源与用户社区"],
+   "issue_candidates": ["科研人才留不住的普通人应对", "正版/付费/捐赠", "高质量bug报告与需求反馈", "社区气氛维护"],
+   "text_function_candidates": ["答疑（回应知乎提问）", "行动建议清单"],
+   "object_candidates": ["中国", "科研人才", "普通人", "企业经营者", "免费开源作品", "用户社区"],
+   "working_keywords": ["留住人才", "国产盗版", "bug报告", "衍生需求线索", "国外竞品", "收费版", "捐赠", "分享资源"]
+  },
+  "notes": "无图片节点，正文9段，无 text/lexical 偏离。正文只回应提问的后半部分（普通人能做什么），未回答「为什么留不住」，也未论证建议与留住人才的因果链，已登记为未决问题。提问属提问者（Q001）。"
+ },
+ "f3e86098": {
+  "analysis": {
+   "question_context": "作者回应知乎提问：怎样改掉无病呻吟的文风（Q001，属提问者）。作者否定「文风」这一提法，主张无病呻吟是一种错误的行为乃至诈骗行为——动机是获取关注、流量、赞叹与收益；因人们长期被骗已练出凭直觉识别的反诈骗能力，此种文字有很大概率被识破并遭差评。作者给出的改法是：让文字像医生的处方笺那样为缓解痛苦或解决问题服务、不占用别人时间；若出于自身目的说话，就应为别人花费的时间付费；并顺带主张把标题党作为拉黑触发条件。",
+   "content_units": [
+    {"unit_id": "U001", "paragraph_refs": ["P001", "P002", "P003"], "summary": "重新定性：无病呻吟不是文风而是错误行为；动机是获取关注、流量、赞叹与收益；实为诈骗行为，且因读者早有直觉识别力而有很大概率被识破并差评。", "role": "claim"},
+    {"unit_id": "U002", "paragraph_refs": ["P004", "P005", "P006"], "summary": "转入改法：以自问自答给出参照——世界上最不可能被评为无病呻吟的文字是医生的处方笺。", "role": "context"},
+    {"unit_id": "U003", "paragraph_refs": ["P007", "P008"], "summary": "给出标准与理由：文字应为缓解痛苦或解决问题服务，否则不要占用别人时间；鉴定本身已花时间，须确保后面确有回报，不可装作「有回报在后」骗取「用于鉴定的投入」。", "role": "reason"},
+    {"unit_id": "U004", "paragraph_refs": ["P009", "P010", "P011"], "summary": "定性为作恶并给出付费义务：出于自身目的说话者应为他人可能花费的时间付费（如剧作家请人听稿提意见）；建立「无病呻吟我就会欠不知多少人钱」的伦理观念即可改掉。", "role": "claim"},
+    {"unit_id": "U005", "paragraph_refs": ["P012", "P013", "P014", "P015"], "summary": "延伸主张：标题党应是标准拉黑触发条件；作者发现即不太给第二次机会，网站频率过高则连媒体一起屏蔽；宁可杀错一千绝不放过一个；否则是以吸数字海洛因方式认知自杀。", "role": "action_advice"}
+   ],
+   "main_claims": [
+    {"claim_id": "C001", "claim_type": "open_question", "attribution": "questioner", "modality": "questioned", "statement": "提问者询问怎样改掉无病呻吟的文风（Q001，属提问者）。", "evidence": []},
+    {"claim_id": "C002", "claim_type": "author_explicit", "attribution": "author", "modality": "negated", "statement": "无病呻吟不是一种文风，而是一种错误的行为。", "evidence": ["E1"]},
+    {"claim_id": "C003", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "没病而呻吟，是为了让人关注自己、给自己流量、给自己赞叹、给自己种种收益。", "evidence": ["E2"]},
+    {"claim_id": "C004", "claim_type": "author_qualified", "attribution": "author", "modality": "qualified", "statement": "这其实是一种诈骗行为；人人都被骗过无数次，早已练出不需要经过大脑、凭直觉就能闻出狐狸味的反诈骗能力，所以「无病呻吟」有很大概率会被识别出来，并且会被差评。", "evidence": ["E3"]},
+    {"claim_id": "C005", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "世界上最不可能被评为无病呻吟的文字是医生的处方笺。", "evidence": ["E4"]},
+    {"claim_id": "C006", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "人们花费时间，不是要缓解痛苦就是要治疗心病、解决问题；如果你的文字不是为了缓解什么痛苦，也不是为了解决什么问题，那就不要占用别人的时间。", "evidence": ["E5"]},
+    {"claim_id": "C007", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "人家鉴定你的东西是否值得一看时就已经花费了时间；你必须确保这东西到后面确有值得对方最初关注的回报，绝不能做出一副「这个东西有回报在后」的样子去骗取别人最开始投入的那个「用于鉴定的投入」。", "evidence": ["E6"]},
+    {"claim_id": "C008", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "否则就是在恶意利用人们对陌生人默认的基本信任来牟利。", "evidence": ["E7"]},
+    {"claim_id": "C009", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "这是作恶；不管有多少人在这么做、有多少人「成功」了，这都是作恶。", "evidence": ["E8"]},
+    {"claim_id": "C010", "claim_type": "author_explicit", "attribution": "author", "modality": "hypothetical", "statement": "如果你不是出于关心别人的病痛、也不是为提供帮助而说，而是为了达到自己的什么目的，那么你应该为别人可能花费的时间付费——这跟剧作家请人来听自己的稿子提意见一样，是你有求于人。", "evidence": ["E9"]},
+    {"claim_id": "C011", "claim_type": "author_explicit", "attribution": "author", "modality": "predicted", "statement": "建立起「无病呻吟我就会欠不知多少人钱」的基本伦理观念，你就不会再无病呻吟了。", "evidence": ["E10"]},
+    {"claim_id": "C012", "claim_type": "author_qualified", "attribution": "author", "modality": "qualified", "statement": "标题党，尤其是纯度很高的标题党，应该是一种标准的拉黑触发条件。", "evidence": ["E11"]},
+    {"claim_id": "C013", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "在作者这里，只要发现有人标题党——仅仅发现就意味着ta已经骗了他一次——他是不太会给第二次机会的；如果一个网站这个频率过高，他会连这个媒体一起屏蔽。", "evidence": ["E12"]},
+    {"claim_id": "C014", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "宁可杀错一千，绝不放过一个。", "evidence": ["E13"]},
+    {"claim_id": "C015", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "不然你就是在以吸数字海洛因方式进行认知自杀。", "evidence": ["E14"]}
+   ],
+   "argument_steps": [
+    "重新定性：无病呻吟不是文风而是错误行为（P001）。",
+    "指出动机：为获取关注、流量、赞叹与收益（P002）。",
+    "判断性质：属诈骗行为，且因读者已有直觉识别力而大概率被识破并差评（P003）。",
+    "转入改法：以「什么文字最不可能被评为无病呻吟」设问，答为医生的处方笺（P004—P006）。",
+    "给出标准：文字应为缓解痛苦或解决问题服务，否则不要占用别人时间（P007）。",
+    "说明理由：鉴定已耗费时间，须有真实回报，不可骗取「用于鉴定的投入」（P008）。",
+    "定性为作恶，并推出付费义务与伦理观念（P009—P011）。",
+    "延伸主张：把标题党列为拉黑触发条件，给出个人处置惯例与「宁可杀错一千」的取舍（P012—P014）。",
+    "以「认知自杀」警告收束（P015）。"
+   ],
+   "concept_usage": [
+    {"term": "无病呻吟", "meaning": "本文指无痛苦、无问题要解决却以文字博取关注与收益的行为，被作者定性为诈骗（P001—P003）。", "evidence": "P001", "ambiguity": "作者否定其属「文风」，但与「标题党」的界限未界定。"},
+    {"term": "诈骗行为", "meaning": "作者对无病呻吟的定性（P003）。", "evidence": "P003", "ambiguity": "属道德/法律色彩的强烈措辞，作者未给法律意义界定。"},
+    {"term": "用于鉴定的投入", "meaning": "指读者判断内容是否值得一看所花费的时间（P008）。", "evidence": "P008", "ambiguity": "作者自设术语，未给量化方式。"},
+    {"term": "拉黑触发条件", "meaning": "作者对标题党的处理准则（P012）。", "evidence": "P012", "ambiguity": "「纯度很高」的判定标准未给出。"},
+    {"term": "数字海洛因", "meaning": "比喻以吸引注意力为目的的信息消费（P015）。", "evidence": "P015", "ambiguity": "属比喻性警告，未展开。"},
+    {"term": "医生的处方笺", "meaning": "作者用作「不可能被判为无病呻吟」的极端对照文本（P006）。", "evidence": "P006", "ambiguity": "未讨论该对照是否适用于其他专业文体。"}
+   ],
+   "examples_and_targets": [
+    "医生的处方笺：作者的对照例（P006）。",
+    "剧作家请人来听自己的稿子提意见：作者的类比，用来说明「有求于人须付费」（P010）。",
+    "标题党（尤其纯度很高的）：作者的批评对象与处置对象（P012、P013）。",
+    "网站/媒体：作者称频率过高会一并屏蔽（P013）。",
+    "「宁可杀错一千，绝不放过一个」：作者引用的取舍原则（P014）。",
+    "「吸数字海洛因」「认知自杀」：作者的比喻性警告（P015）。"
+   ],
+   "conditions": [
+    "改法限定于该情形：你的文字不是为了缓解什么痛苦，也不是为了解决什么问题（P007）。",
+    "付费义务带条件：如果你不是出于关心别人的病痛、也不是为提供帮助而说，而是为了达到自己的什么目的（P010）。",
+    "识别判断用「有很大概率」限定（P003）。",
+    "标题党主张用「应该是一种标准的拉黑触发条件」这一规范性表述（P012）。",
+    "拉黑做法限定为作者个人处置（「在我这」「我是不太会给第二次机会的」，P013）。",
+    "正文未说明「纯度很高」的判定标准。"
+   ],
+   "rhetoric_and_tone": "训诫与道德指控语气，直接对「你」说话，用词强烈（诈骗、作恶、恶意利用、认知自杀）。以自问自答推动论证（P002、P004、P005）。结尾转入个人处置惯例与「宁可杀错一千」的极端取舍，带调侃与自嘲口吻（数字海洛因）。",
+   "unresolved_questions": [
+    "「无病呻吟」与「标题党」（P012）是否为同一行为的两面，正文未界定。",
+    "「纯度很高」的判定标准未说明（P012）。",
+    "「为别人可能花费的时间付费」的定价与执行方式未说明（P010）。",
+    "「这是作恶」属作者的道德判断，正文未给除类比外的论证（P009）。",
+    "以医生的处方笺作对照预设了医学语境的特殊性，作者未讨论其他专业文体。",
+    "作者自述的拉黑做法（P013）为个人惯例，其适用范围未说明。"
+   ],
+   "evidence": [
+    {"key": "E1", "paragraph_id": "P001", "quote": "无病呻吟不是一种文风，而是一种错误的行为。", "relation": "supports"},
+    {"key": "E2", "paragraph_id": "P002", "quote": "没病为什么呻吟？为了让人关注自己、给自己流量、给自己赞叹、给自己种种收益。", "relation": "supports"},
+    {"key": "E3", "paragraph_id": "P003", "quote": "所以“无病呻吟”有很大概率会被识别出来，并且会被差评。", "relation": "supports"},
+    {"key": "E4", "paragraph_id": "P006", "quote": "医生的处方笺。", "relation": "supports"},
+    {"key": "E5", "paragraph_id": "P007", "quote": "如果你的文字不是为了缓解什么痛苦，也不是为了解决什么问题，那就不要占用别人的时间。", "relation": "supports"},
+    {"key": "E6", "paragraph_id": "P008", "quote": "而绝不能做出一副“这个东西有回报在后”的样子去骗取别人最开始投入的那个“用于鉴定的投入”。", "relation": "supports"},
+    {"key": "E7", "paragraph_id": "P008", "quote": "否则就是在恶意利用人们对陌生人默认的基本信任来牟利。", "relation": "supports"},
+    {"key": "E8", "paragraph_id": "P009", "quote": "不管有多少人在这么做，有多少人“成功”了，这都是作恶。", "relation": "supports"},
+    {"key": "E9", "paragraph_id": "P010", "quote": "那么你应该为别人可能花费的时间付费", "relation": "supports"},
+    {"key": "E10", "paragraph_id": "P011", "quote": "建立起“无病呻吟我就会欠不知多少人钱”的基本伦理观念，你就不会再无病呻吟了。", "relation": "supports"},
+    {"key": "E11", "paragraph_id": "P012", "quote": "尤其是纯度很高的标题党，应该是一种标准的拉黑触发条件。", "relation": "supports"},
+    {"key": "E12", "paragraph_id": "P013", "quote": "我是不太会给第二次机会的。如果一个网站这个频率过高，我会连这个媒体一起屏蔽。", "relation": "supports"},
+    {"key": "E13", "paragraph_id": "P014", "quote": "宁可杀错一千，绝不放过一个。", "relation": "supports"},
+    {"key": "E14", "paragraph_id": "P015", "quote": "不然你就是在以吸数字海洛因方式进行认知自杀。", "relation": "supports"}
+   ]
+  },
+  "provisional_tags": {
+   "domain_candidates": ["写作伦理/内容创作", "注意力与信任", "平台内容处置（个人视角）"],
+   "issue_candidates": ["无病呻吟的定性与改法", "以文字牟取关注是否为诈骗", "读者时间的付费义务", "标题党与拉黑"],
+   "text_function_candidates": ["答疑（回应知乎提问）", "批评/训诫", "行动建议"],
+   "object_candidates": ["提问者", "读者/陌生人", "标题党", "医生（处方笺）", "剧作家", "网站/媒体"],
+   "working_keywords": ["无病呻吟", "文风", "诈骗行为", "用于鉴定的投入", "拉黑触发条件", "标题党", "数字海洛因"]
+  },
+  "notes": "无图片节点，正文15段，无 text/lexical 偏离。P008 引号内的“这个东西有回报在后”“用于鉴定的投入”以及 P011 的“无病呻吟我就会欠不知多少人钱”均为作者自设说法，按原文保留。提问属提问者（Q001）。"
+ },
+ "723b9453": {
+  "analysis": {
+   "question_context": "作者回应知乎提问：什么是贵族气质（Q001，属提问者）。作者先设发言条件——需要跟真正的贵族接触过才有得说，否则只是在和一群想象者谈论彼此共同的想象；随后给出显著特征：对平头老百姓生活的令人哭笑不得的陌生（并非恶意）。在更本质的层面，作者主张贵族气质很大程度上表现为看重荣誉、信仰这些形而上的东西先于谋生、致富等形而下追求，即「知礼节」与「仓廪实」无关；并强调这不是否定利益的价值，而是方法论差异与文化性隔阂。正文由此展开平民阶层与贵族阶层之间的相互不理解，最后以「知礼节，于是仓廪实」的反讽收束。",
+   "content_units": [
+    {"unit_id": "U001", "paragraph_refs": ["P001"], "summary": "设发言条件：需跟真正的贵族接触过才有得说，否则只是想象者谈彼此共同的想象。", "role": "qualification"},
+    {"unit_id": "U002", "paragraph_refs": ["P002", "P003"], "summary": "显著特征：对平头老百姓生活的令人哭笑不得的陌生（非恶意，而是确实陌生），表现为不清楚老百姓的日常安排；作者称这些只是小节。", "role": "claim"},
+    {"unit_id": "U003", "paragraph_refs": ["P004", "P005"], "summary": "更本质的层面：贵族气质很大程度上表现为看重荣誉、信仰等形而上之物先于谋生、幸存、致富等形而下利益追求；这不是否定利益的价值，而是方法论差异与文化性隔阂。", "role": "claim"},
+    {"unit_id": "U004", "paragraph_refs": ["P006", "P007"], "summary": "对比：平民（或曰中产阶级）相信「仓廪实而知礼节」，仓廪不实而不知礼节至少可以理解和原谅；贵族看法几乎相反——先知礼节才有仓廪实的可能，骤然暴富不过自招诅咒、黄粱一梦，仓廪不实更不是不知礼节的合理理由。", "role": "reason"},
+    {"unit_id": "U005", "paragraph_refs": ["P008", "P009", "P010"], "summary": "贵族原则：「宁可死亡，不可失礼」；因死亡或贫穷威胁就放弃礼仪要求者即已不是贵族；「知礼节」与「仓廪实」无关，这就是贵族精神，礼节可有文化差异而原则通行不变。", "role": "claim"},
+    {"unit_id": "U006", "paragraph_refs": ["P011", "P012"], "summary": "文化隔阂的表现：平民对贵族的「何不食肉糜」批评——不认同因生活困难而在遵守法律规章上打折扣、以及急功近利的行为；而平民对这类行为不忍过分指责甚至心有戚戚，中下阶级听来虽无法反驳却不是滋味。", "role": "example"},
+    {"unit_id": "U007", "paragraph_refs": ["P013", "P014", "P015", "P016", "P017"], "summary": "真正别扭之处：若说这话的人是为炫耀优越感、榨取道德优越感那也罢了（那样就可以喷）；坏就坏在真正的贵族实实在在就是这样想问题，且在困窘落魄时也努力坚持；看到其在困境中「幼稚」「天真」地拼死遵从信念，往往放下怨恨、心生怜爱且默默帮助，因为即使是读者也不希望真心相信这些的人失败；于是结局真如其所信——「知礼节，于是仓廪实」。", "role": "claim"},
+    {"unit_id": "U008", "paragraph_refs": ["P018"], "summary": "以英文短句「Yet another poetic irony.」作结。", "role": "conclusion"}
+   ],
+   "main_claims": [
+    {"claim_id": "C001", "claim_type": "open_question", "attribution": "questioner", "modality": "questioned", "statement": "提问者询问什么是贵族气质（Q001，属提问者）。", "evidence": []},
+    {"claim_id": "C002", "claim_type": "author_qualified", "attribution": "author", "modality": "qualified", "statement": "这个需要跟真正的贵族接触过才有得说，否则只是在和一群想象者谈论着彼此共同的想象。", "evidence": ["E1"]},
+    {"claim_id": "C003", "claim_type": "author_qualified", "attribution": "author", "modality": "qualified", "statement": "这种气质最容易被人注意到的显著特征是表现为一种对平头老百姓生活的令人哭笑不得的陌生。", "evidence": ["E2"]},
+    {"claim_id": "C004", "claim_type": "author_explicit", "attribution": "author", "modality": "negated", "statement": "这倒不是人家有恶意，而确实就是很陌生。", "evidence": ["E3"]},
+    {"claim_id": "C005", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "ta们不是很清楚老百姓的日常安排（过节、吃饭、睡觉、洗脸洗脚、上学放学怎么进行），这样交往起来很容易出现尴尬情况。", "evidence": ["E4"]},
+    {"claim_id": "C006", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "但这些只是小节。", "evidence": ["E5"]},
+    {"claim_id": "C007", "claim_type": "author_qualified", "attribution": "author", "modality": "qualified", "statement": "在更本质的层面上，贵族气质很大程度上表现为看重荣誉、信仰这些形而上的东西、先于关心谋生、幸存、致富这类形而下的利益追求。", "evidence": ["E6"]},
+    {"claim_id": "C008", "claim_type": "author_explicit", "attribution": "author", "modality": "negated", "statement": "这并不简单地等于ta们不认同对利益的追求也有其价值，而是一种方法论的差异，一种文化性的隔阂。", "evidence": ["E7"]},
+    {"claim_id": "C009", "claim_type": "author_reported", "attribution": "cited_source", "modality": "asserted", "statement": "作者转述平民阶层（或曰「中产阶级」）的信念：相信「仓廪实而知礼节」；仓廪不实，不知礼节就算不是理所当然的，至少也是可以理解和原谅的。", "evidence": ["E8"]},
+    {"claim_id": "C010", "claim_type": "author_reported", "attribution": "cited_source", "modality": "asserted", "statement": "作者转述贵族的看法：先知礼节才有仓廪实的可能性，否则骤然暴富也不过自招诅咒、转眼被狼和狐狸分食、只不过是黄粱一梦。", "evidence": ["E9"]},
+    {"claim_id": "C011", "claim_type": "author_reported", "attribution": "cited_source", "modality": "asserted", "statement": "作者转述的贵族主张：仓廪不实根本不是不知礼节的合理理由；甚至越是为仓廪不实发愁，越应该首先知礼。", "evidence": ["E10"]},
+    {"claim_id": "C012", "claim_type": "author_reported", "attribution": "cited_source", "modality": "asserted", "statement": "作者引述贵族原则：「宁可死亡，不可失礼。」", "evidence": ["E11"]},
+    {"claim_id": "C013", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "因为死亡（或贫穷）的威胁就可以放弃自己的礼仪要求，无论你什么血统、什么尊号、什么家世、什么身价，你就已经不是贵族了。", "evidence": ["E12"]},
+    {"claim_id": "C014", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "「知礼节」和「仓廪实」无关，这就是贵族精神；「礼节」本身可以有文化差异，这个原则通行不变。", "evidence": ["E13"]},
+    {"claim_id": "C015", "claim_type": "author_reported", "attribution": "cited_source", "modality": "asserted", "statement": "作者转述：这种文化隔阂造成平民阶层对贵族阶层普遍有「何不食肉糜」的批评——比如不能认同因生活太困难而在遵守法律规章上打折扣的行为。", "evidence": ["E14"]},
+    {"claim_id": "C016", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "而这类行为对于饱尝人间痛苦、常靠小机智、小投机糊口的平民老百姓，是不忍过分指责、甚至心有戚戚焉的。", "evidence": ["E15"]},
+    {"claim_id": "C017", "claim_type": "author_reported", "attribution": "cited_source", "modality": "asserted", "statement": "作者转述：平民也常常不能认同急功近利的行为——比如「为了小小的欠款就抛弃友谊」「为了一点的利润就减损质量」。", "evidence": ["E16"]},
+    {"claim_id": "C018", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "但这些说法在扛着养老、教育、房产等压力的中下阶级听来，虽然出于政治正确无法反驳，但着实也不是滋味。", "evidence": ["E17"]},
+    {"claim_id": "C019", "claim_type": "author_explicit", "attribution": "author", "modality": "hypothetical", "statement": "真正别扭的是：如果说这话的人是为了炫耀自己的优越地位、为了从中下阶层身上榨取道德优越感，那也罢了——那样就可以喷了，喷了就痛快了。", "evidence": ["E18"]},
+    {"claim_id": "C020", "claim_type": "author_explicit", "attribution": "author", "modality": "negated", "statement": "坏就坏在真正的贵族不是为了这些而故意这么说，而是ta们实实在在就是这样想问题的；ta们也的的确确在自己困窘、落魄的时候就在努力地这样坚持。", "evidence": ["E19"]},
+    {"claim_id": "C021", "claim_type": "author_qualified", "attribution": "author", "modality": "qualified", "statement": "当你看到ta们真的在困境中「幼稚」「天真」地拼死遵从那些信念，你往往会放下那些「被嘲讽」的怨恨，对ta们心生怜爱，且默默帮助。", "evidence": ["E20"]},
+    {"claim_id": "C022", "claim_type": "author_explicit", "attribution": "author", "modality": "negated", "statement": "因为追根到底，即使是你，也并不希望真心相信这些的人失败。", "evidence": ["E21"]},
+    {"claim_id": "C023", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "于是结局还真正如这些混蛋不腰疼的相信的那样——「知礼节，于是仓廪实」了。", "evidence": ["E22"]}
+   ],
+   "argument_steps": [
+    "先设发言条件：需接触过真正的贵族才有得说（P001）。",
+    "给出显著特征：对老百姓生活的陌生，并说明非出于恶意（P002）。",
+    "声明这些只是小节，转入更本质的层面（P003、P004）。",
+    "界定本质：形而上之物先于形而下利益追求（P004）。",
+    "限定：不等于否定利益的价值，而是方法论差异与文化隔阂（P005）。",
+    "对比平民「仓廪实而知礼节」与贵族「先知礼节才有仓廪实」（P006、P007）。",
+    "给出贵族原则：宁可死亡不可失礼，失礼者即非贵族（P008、P009）。",
+    "归纳：知礼节与仓廪实无关，这就是贵族精神（P010）。",
+    "举文化隔阂引发的两类平民批评及平民自身处境（P011、P012）。",
+    "区分「炫耀优越感」与「实实在在这样想」，并说明后者引出的怜爱与帮助（P013—P016）。",
+    "以结局「知礼节，于是仓廪实」及英文反讽收束（P017、P018）。"
+   ],
+   "concept_usage": [
+    {"term": "贵族气质", "meaning": "本文指两个层面：显著特征是对老百姓生活的陌生；更本质层面是重荣誉、信仰等形而上之物先于形而下利益追求（P002、P004）。", "evidence": "P004", "ambiguity": "作者开篇即称需接触过真正贵族才有得说，未给可操作定义。"},
+    {"term": "贵族精神", "meaning": "作者界定为「『知礼节』和『仓廪实』无关」这一原则，并称礼节可有文化差异而原则通行不变（P010）。", "evidence": "P010", "ambiguity": "与「贵族气质」是否同义，正文未说明。"},
+    {"term": "仓廪实而知礼节", "meaning": "引语，作者用作平民阶层信念的表述，并提出贵族主张的相反次序（P006、P007、P017）。", "evidence": "P006", "ambiguity": "出处未标注，属待外部核查的引语。"},
+    {"term": "形而上／形而下", "meaning": "作者用以区分荣誉、信仰与谋生、幸存、致富两类追求（P004）。", "evidence": "P004", "ambiguity": "两个术语的使用偏日常化，未作界定。"},
+    {"term": "文化性的隔阂", "meaning": "作者用以描述平民与贵族之间相互不理解的状态（P005、P011）。", "evidence": "P005", "ambiguity": "是否可推广到其他阶层关系，正文未讨论。"},
+    {"term": "何不食肉糜", "meaning": "作者引用的成语，指平民对贵族批评的典型形态（P011）。", "evidence": "P011", "ambiguity": "属引语式用法，未注明出处。"}
+   ],
+   "examples_and_targets": [
+    "过节、吃饭、睡觉、洗脸洗脚、上学放学等日常安排：作者所举陌生对象的细节（P002）。",
+    "「仓廪实而知礼节」：作者引作平民阶层信念的引语（P006）。",
+    "「宁可死亡，不可失礼」：作者引述的贵族原则（P008）。",
+    "「何不食肉糜」：作者引用以指平民对贵族的批评（P011）。",
+    "因生活困难在遵守法律规章上打折扣的行为：作者所举争议行为（P011）。",
+    "「为了小小的欠款就抛弃友谊」「为了一点的利润就减损质量」：作者所举急功近利行为（P012）。",
+    "养老、教育、房产压力：作者所述中下阶级处境（P012）。",
+    "「站着说话不腰疼」「脱离实际的理想主义」：作者引述平民对贵族话语的评语（P015）。",
+    "「Yet another poetic irony.」：作者的英文反讽结语（P018）。"
+   ],
+   "conditions": [
+    "全篇以发言条件开头：需跟真正的贵族接触过才有得说，否则只是想象者谈想象（P001）。",
+    "本质判断带限定词「很大程度上」（P004）。",
+    "明确否定一种误读：「这并不简单的等于ta们不认同对利益的追求也有其价值」（P005）。",
+    "贵族原则以代价为条件：因死亡或贫穷的威胁就放弃礼仪要求者即已不是贵族（P009）。",
+    "批评场景条件：「因为生活太困难而在遵守法律规章上打折扣的行为」（P011）。",
+    "反讽结局句依赖前文引语「知礼节，于是仓廪实」（P017）。"
+   ],
+   "rhetoric_and_tone": "论述性较强，带文化比较与阶层分析，语气克制而含反讽（结尾英文「Yet another poetic irony.」）。以「ta们」与「你」交替指称贵族与读者，把读者置于平民位置。引语密集（仓廪实而知礼节、何不食肉糜、宁可死亡不可失礼、站着说话不腰疼）。用「混蛋不腰疼」这类口语化贬称表达复杂态度。结构上先给外部特征、再给本质差异、最后落到情感与结局。",
+   "unresolved_questions": [
+    "作者开篇即声明需接触过真正的贵族才有得说，其自身经验依据未说明。",
+    "「真正的贵族」的判定标准未明：P009 提到血统、尊号、家世、身价却又以不失礼为条件，界限不清。",
+    "「仓廪实而知礼节」的出处未标注，属需外部核查的引语。",
+    "「贵族」所指的具体国家、时期与群体未说明，正文仅以「ta们」指称。",
+    "P012「check by check」为英文短语嵌入中文，确切含义与用法需核。",
+    "P018 英文结语「Yet another poetic irony.」的具体所指未展开，依赖读者判断。",
+    "「文化性的隔阂」是否适用于其他阶层关系，正文未讨论。"
+   ],
+   "evidence": [
+    {"key": "E1", "paragraph_id": "P001", "quote": "这个需要跟真正的贵族接触过才有得说，否则只是在和一群想象者谈论着彼此共同的想象而已呀。", "relation": "supports"},
+    {"key": "E2", "paragraph_id": "P002", "quote": "这种气质最容易被人注意到的显著特征是表现为一种对平头老百姓生活的令人哭笑不得的陌生", "relation": "supports"},
+    {"key": "E3", "paragraph_id": "P002", "quote": "这倒不是人家有恶意，而确实就是很陌生。", "relation": "supports"},
+    {"key": "E4", "paragraph_id": "P002", "quote": "ta们不是很清楚老百姓的日常安排", "relation": "supports"},
+    {"key": "E5", "paragraph_id": "P003", "quote": "但这些只是小节。", "relation": "supports"},
+    {"key": "E6", "paragraph_id": "P004", "quote": "贵族气质很大程度上表现为看重荣誉、信仰这些形而上的东西、先于关心谋生、幸存、致富", "relation": "supports"},
+    {"key": "E7", "paragraph_id": "P005", "quote": "这并不简单的等于ta们不认同对利益的追求也有其价值，而是一种方法论的差异，一种文化性的隔阂。", "relation": "supports"},
+    {"key": "E8", "paragraph_id": "P006", "quote": "平民阶层（或曰“中产阶级”）们相信“仓廪实而知礼节”", "relation": "supports"},
+    {"key": "E9", "paragraph_id": "P007", "quote": "而贵族的看法则几乎相反——先知礼节，才有仓廪实的可能性可言", "relation": "supports"},
+    {"key": "E10", "paragraph_id": "P007", "quote": "仓廪不实，也根本不是不知礼节的合理理由", "relation": "supports"},
+    {"key": "E11", "paragraph_id": "P008", "quote": "宁可死亡，不可失礼。", "relation": "supports"},
+    {"key": "E12", "paragraph_id": "P009", "quote": "因为死亡（或贫穷）的威胁就可以放弃自己的礼仪要求，无论你什么血统、什么尊号、什么家世、什么身价，你就已经不是贵族了。", "relation": "supports"},
+    {"key": "E13", "paragraph_id": "P010", "quote": "“知礼节”和“仓廪实”无关，这就是贵族精神。", "relation": "supports"},
+    {"key": "E14", "paragraph_id": "P011", "quote": "这种文化隔阂会造成平民阶层对贵族阶层普遍会有“何不食肉糜”的批评", "relation": "supports"},
+    {"key": "E15", "paragraph_id": "P011", "quote": "是不忍过分指责、甚至心有戚戚焉的", "relation": "supports"},
+    {"key": "E16", "paragraph_id": "P012", "quote": "比如“为了小小的欠款就抛弃友谊”，“为了一点的利润就减损质量”", "relation": "supports"},
+    {"key": "E17", "paragraph_id": "P012", "quote": "虽然出于政治正确无法反驳，但着实也不是滋味", "relation": "supports"},
+    {"key": "E18", "paragraph_id": "P013", "quote": "那也罢了——那样就可以喷了，喷了就痛快了。", "relation": "supports"},
+    {"key": "E19", "paragraph_id": "P014", "quote": "而是ta们实实在在就是这样想问题的", "relation": "supports"},
+    {"key": "E20", "paragraph_id": "P015", "quote": "你往往会放下那些“被嘲讽”的怨恨，对ta们心生怜爱，且默默帮助", "relation": "supports"},
+    {"key": "E21", "paragraph_id": "P016", "quote": "即使是你，也并不希望真心相信这些的人失败。", "relation": "supports"},
+    {"key": "E22", "paragraph_id": "P017", "quote": "“知礼节，于是仓廪实”了", "relation": "supports"}
+   ]
+  },
+  "provisional_tags": {
+   "domain_candidates": ["社会阶层与文化差异", "价值观/伦理秩序", "贵族与精英（通俗论述）"],
+   "issue_candidates": ["贵族气质的界定", "知礼节与仓廪实的先后", "平民与贵族的文化隔阂", "道德优越感的辨识"],
+   "text_function_candidates": ["答疑（回应知乎提问）", "解释/评论", "文化比较"],
+   "object_candidates": ["贵族", "平民阶层/中产阶级", "中下阶级", "老百姓", "提问者"],
+   "working_keywords": ["贵族气质", "贵族精神", "仓廪实而知礼节", "形而上", "文化性的隔阂", "何不食肉糜", "宁可死亡，不可失礼"]
+  },
+  "notes": "无图片节点，正文18段，无 text/lexical 偏离。P012 嵌入英文短语“check by check”，P018 以英文句“Yet another poetic irony.”作结，均按原文保留并登记为未决问题。引语“仓廪实而知礼节”（P006）出处未标注，属待外部核查。提问属提问者（Q001）。"
+ }
+}
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument('--out', default=None, help='输出 JSONL 路径（默认 out/<batch>.out.jsonl）')
+    args = ap.parse_args()
+    rows = load_batch_rows(BATCH)
+    records = []
+    for row in rows:
+        art = row['article']
+        uid = UID_BY_ID[art['id']]
+        if uid not in ANALYSIS:
+            raise SystemExit('ANALYSIS 缺少 %s (%s)' % (uid, art.get('title')))
+        p = ANALYSIS[uid]
+        records.append(build_record(
+            row, row['batch_id'], row['corpus_sha256'],
+            p['analysis'], p['provisional_tags'], STARTED, COMPLETED,
+            status=p.get('status', 'read'),
+            full_text_checked=p.get('full_text_checked', True),
+            image_checked=p.get('image_checked', False),
+            notes=p.get('notes', '')))
+    out = args.out or os.path.join(_HERE, '..', 'out', BATCH + '.out.jsonl')
+    write_jsonl(out, records)
+    print('ok %s -> %s (%d records)' % (BATCH, out, len(records)))
+
+
+if __name__ == '__main__':
+    main()

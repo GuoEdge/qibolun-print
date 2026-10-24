@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>岐伯论 · 研读者手订批校本</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;500;600;700&display=swap');
+
+  @page {
+    size: A4 portrait;
+    /* 真实的物理边距：订口 28mm，切口 18mm，天头 22mm，地脚 20mm */
+    margin: 22mm 18mm 20mm 28mm;
+    @bottom-center {
+      content: "· " counter(page) " ·";
+      font-size: 8.5pt;
+      font-family: "Noto Serif SC", serif;
+      color: #999;
+      letter-spacing: 2px;
+    }
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: "Noto Serif SC", "Source Han Serif SC", "书宋-简", "方正书宋-简", serif;
+    font-size: 10.5pt;
+    /* 1.9倍黄金舒适行距：笔尖能自然穿行，批注时字行不打架 */
+    line-height: 1.9;
+    color: #23201d; /* 熟墨色，柔和不刺眼 */
+    background: #f7f6f2; /* 暖调本白纸色 */
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* 模拟物理 A4 纸张预览 */
+  .preview-wrapper {
+    max-width: 900px;
+    margin: 25px auto;
+    background: #fff;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.04);
+    border: 1px solid #e5e2d8;
+  }
+
+  /* 每一篇：独立的章节起首，起止分明 */
+  .article-container {
+    padding: 36px 42px 48px 42px;
+    page-break-after: always;
+    border-bottom: 2px solid #eae6dc;
+    position: relative;
+  }
+
+  /* 篇首极简眉栏：只提供最克制的定位坐标 */
+  .folio-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.5pt solid #c8c4b7;
+    padding-bottom: 6px;
+    margin-bottom: 24px;
+    font-size: 8pt;
+    color: #8c857b;
+    letter-spacing: 1.5px;
+  }
+  .folio-left {
+    font-weight: 500;
+  }
+  .folio-right {
+    font-family: "Noto Serif SC", serif;
+    color: #a39c91;
+  }
+
+  /* 标题与印鉴区：标题自然生长，印章作为沉稳的平衡锚点 */
+  .title-unit {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 24px;
+    margin-bottom: 24px;
+  }
+  .title-text {
+    font-size: 21pt;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    color: #1a1715;
+    margin: 0;
+    line-height: 1.3;
+    flex-grow: 1;
+  }
+
+  /* 印鉴二维码：彻底去除任何塑料感，34px 极度内敛小印，朱砂沉敛 */
+  .seal-link {
+    flex-shrink: 0;
+    padding: 2px;
+    border: 1.2pt solid #8f2d26;
+    background: #fdfdfb;
+    border-radius: 2px;
+    display: inline-flex;
+    margin-top: 4px;
+  }
+  .seal-link svg {
+    display: block;
+    width: 34px;
+    height: 34px;
+  }
+
+  /* 问与答的呼吸感架构：非对称布局 */
+  .text-workspace {
+    display: grid;
+    /* 主阅读区 65%（约 26 字/行，最适人体工效），批注留白 35%（宽 60mm，足够写下一整段旁注） */
+    grid-template-columns: 65% 35%;
+    gap: 32px;
+  }
+
+  /* 主论区 */
+  .reading-column {
+    padding-right: 20px;
+    border-right: 0.5pt solid #e6e3d8;
+  }
+
+  /* 提问体：不再做突兀的警告框，而是作为'原起之由'，楷体沉淀 */
+  .dialogue-prompt {
+    font-family: "楷体-简", "方正楷体-简", "KaiTi", serif;
+    font-size: 10pt;
+    line-height: 1.75;
+    color: #453f3a;
+    padding: 0 0 16px 0;
+    margin-bottom: 20px;
+    border-bottom: 0.5pt dashed #dedad0;
+    text-align: justify;
+  }
+  .prompt-initial {
+    font-family: "Noto Serif SC", serif;
+    font-weight: 600;
+    color: #8f2d26;
+    margin-right: 6px;
+    font-size: 9.5pt;
+  }
+
+  /* 答论正文：舒朗沉静，大字间距 */
+  .essay-body {
+    text-align: justify;
+    text-justify: inter-ideograph;
+  }
+  .essay-body p {
+    text-indent: 2em;
+    margin: 0 0 1.2em 0;
+    letter-spacing: 0.3px;
+  }
+
+  /* 批注走廊：放弃机械生硬的横线笺格，改用极淡微点对齐导引（Dot-grid margin） */
+  /* 点阵只在需要时提供笔尖水平对齐参照，不写字时犹如一片洁净素白 */
+  .margin-corridor {
+    display: flex;
+    flex-direction: column;
+    padding-top: 4px;
+  }
+  .margin-dot-matrix {
+    flex-grow: 1;
+    min-height: 320px;
+    background-image: radial-gradient(#d5d1c5 0.75pt, transparent 0.75pt);
+    background-size: 20px 20px;
+    background-position: 0 0;
+    opacity: 0.6;
+  }
+
+  /* 篇末留白：短篇长篇各安其所，底脚自然呼吸空间 */
+  .post-essay-space {
+    margin-top: 28px;
+    border-top: 0.5pt solid #e8e5dc;
+    padding-top: 14px;
+    min-height: 48px;
+  }
+  .article-footer-meta {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 7.5pt;
+    color: #b0a99f;
+    letter-spacing: 1px;
+    font-family: "Noto Serif SC", serif;
+  }
+</style>
+</head>
+<body>
+
+<div class="preview-wrapper">
+
+  <div class="article-container">
+    <div class="folio-bar">
+      <span class="folio-left">岐伯论 · 本根敦伦</span>
+      <span class="folio-right">2025.07.28</span>
+    </div>
+
+    <div class="title-unit">
+      <h1 class="title-text">铺路石</h1>
+      <div class="seal-link" title="溯源印信">
+        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 29 29" shape-rendering="crispEdges"><path stroke="#8f2d26" d="M0 0.5h7m1 0h2m1 0h1m3 0h2m1 0h3m1 0h7M0 1.5h1m5 0h1m3 0h1m1 0h1m1 0h2m2 0h1m3 0h1m5 0h1M0 2.5h1m1 0h3m1 0h1m1 0h1m1 0h1m1 0h1m3 0h1m2 0h2m1 0h1m1 0h3m1 0h1M0 3.5h1m1 0h3m1 0h1m1 0h2m3 0h2m1 0h3m3 0h1m1 0h3m1 0h1M0 4.5h1m1 0h3m1 0h1m1 0h2m4 0h1m2 0h3m2 0h1m1 0h3m1 0h1M0 5.5h1m5 0h1m2 0h1m3 0h3m2 0h3m1 0h1m5 0h1M0 6.5h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7M9 7.5h1m1 0h1m1 0h1m2 0h2m1 0h1M0 8.5h4m2 0h1m1 0h1m4 0h1m3 0h1m3 0h1m2 0h3m1 0h1M0 9.5h1m4 0h1m3 0h1m5 0h1m3 0h1m1 0h4m3 0h1M0 10.5h2m2 0h1m1 0h2m3 0h1m5 0h1m2 0h1m5 0h2M0 11.5h2m2 0h1m7 0h1m1 0h1m1 0h1m1 0h2m1 0h2m1 0h1m3 0h1M1 12.5h1m2 0h1m1 0h4m1 0h2m2 0h4m1 0h1m4 0h2M1 13.5h1m3 0h1m2 0h4m4 0h4m2 0h1m3 0h3M1 14.5h2m3 0h1m2 0h1m1 0h3m1 0h1m2 0h4m4 0h3M1 15.5h2m1 0h1m2 0h2m6 0h2m2 0h6m2 0h1M0 16.5h3m3 0h6m3 0h1m3 0h2m2 0h3m1 0h1M3 17.5h2m2 0h2m4 0h1m4 0h1m4 0h1m1 0h3M0 18.5h1m1 0h6m4 0h1m2 0h2m3 0h1m1 0h1m3 0h1M2 19.5h4m1 0h3m1 0h1m1 0h3m1 0h2m3 0h1m3 0h1M1 20.5h1m1 0h2m1 0h1m3 0h1m1 0h2m3 0h1m2 0h7M8 21.5h1m5 0h2m4 0h1m3 0h5M0 22.5h7m4 0h1m2 0h2m3 0h2m1 0h1m1 0h2m1 0h1M0 23.5h1m5 0h1m2 0h1m1 0h2m2 0h2m1 0h1m1 0h1m3 0h2m1 0h2M0 24.5h1m1 0h3m1 0h1m2 0h1m2 0h1m1 0h1m1 0h2m2 0h5m1 0h1m1 0h1M0 25.5h1m1 0h3m1 0h1m1 0h2m1 0h1m5 0h1m1 0h1m1 0h1m1 0h3m1 0h1M0 26.5h1m1 0h3m1 0h1m1 0h1m1 0h1m5 0h1m1 0h1m1 0h1m2 0h1m2 0h1m1 0h1M0 27.5h1m5 0h1m1 0h1m1 0h1m4 0h1m4 0h2m1 0h3m1 0h1M0 28.5h7m1 0h3m1 0h1m1 0h1m1 0h2m1 0h5m3 0h1"/></svg>
+
+      </div>
+    </div>
+
+    <div class="text-workspace">
+      <!-- 左栏：主论正文 -->
+      <div class="reading-column">
+        <div class="dialogue-prompt">
+          <span class="prompt-initial">【问】</span>去世后，你打算怎么处理自己的骨灰?
+        </div>
+        <div class="essay-body">
+          <p>也许将来还有更好的主意，</p><p>但我目前的设想如下：</p><p>做成水泥砌块。</p><p>上面做上那种铜条镶嵌的盲道花纹。</p><p>找一个需要修盲道的地方铺下去。</p><p>然后等着你们将来跟我一起铺到天尽头。</p><p>这样，如果你看不见，</p><p>你仍然可以踏着我们在世上行走。</p>
+        </div>
+      </div>
+
+      <!-- 右栏：微点阵随文批注走廊（宽60mm，不写字时浑然一体，写字时自然对齐） -->
+      <div class="margin-corridor">
+        <div class="margin-dot-matrix"></div>
+      </div>
+    </div>
+
+    <div class="post-essay-space">
+      <div class="article-footer-meta">
+        <span>全文 112 字 · 岐伯答论</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="article-container">
+    <div class="folio-bar">
+      <span class="folio-left">岐伯论 · 本根敦伦</span>
+      <span class="folio-right">2026.07.17</span>
+    </div>
+
+    <div class="title-unit">
+      <h1 class="title-text">奠仪几何</h1>
+      <div class="seal-link" title="溯源印信">
+        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 29 29" shape-rendering="crispEdges"><path stroke="#8f2d26" d="M0 0.5h7m1 0h2m4 0h1m2 0h3m2 0h7M0 1.5h1m5 0h1m4 0h1m2 0h1m3 0h1m1 0h1m1 0h1m5 0h1M0 2.5h1m1 0h3m1 0h1m1 0h1m1 0h1m1 0h2m4 0h3m1 0h1m1 0h3m1 0h1M0 3.5h1m1 0h3m1 0h1m1 0h1m2 0h3m1 0h1m1 0h1m2 0h1m1 0h1m1 0h3m1 0h1M0 4.5h1m1 0h3m1 0h1m1 0h1m1 0h2m3 0h5m2 0h1m1 0h3m1 0h1M0 5.5h1m5 0h1m4 0h3m2 0h1m2 0h2m1 0h1m5 0h1M0 6.5h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7M9 7.5h4m2 0h1m1 0h1M0 8.5h4m2 0h1m1 0h2m6 0h2m1 0h1m1 0h1m2 0h3m1 0h1M4 9.5h1m2 0h3m2 0h1m1 0h1m1 0h9m3 0h1M3 10.5h1m1 0h2m1 0h1m1 0h2m2 0h1m1 0h1m1 0h1m1 0h1m1 0h3m1 0h2M1 11.5h2m1 0h1m3 0h1m1 0h1m2 0h3m2 0h1m1 0h5m3 0h1M0 12.5h2m2 0h1m1 0h2m1 0h1m3 0h7m5 0h2M1 13.5h5m5 0h2m1 0h2m2 0h2m2 0h2m2 0h3M0 14.5h2m1 0h1m2 0h1m2 0h2m1 0h1m1 0h1m4 0h1m1 0h4m1 0h3M0 15.5h2m1 0h1m3 0h1m1 0h1m2 0h1m2 0h2m1 0h7m2 0h1M2 16.5h1m3 0h3m1 0h1m3 0h1m4 0h3m2 0h2m1 0h1M1 17.5h1m2 0h2m3 0h2m2 0h3m2 0h1m4 0h1m1 0h3M0 18.5h1m1 0h1m1 0h1m1 0h2m1 0h2m1 0h1m2 0h2m6 0h1m2 0h1M7 19.5h1m3 0h1m2 0h2m1 0h3m6 0h1M1 20.5h4m1 0h1m1 0h1m1 0h1m6 0h1m2 0h7M8 21.5h4m2 0h1m5 0h1m3 0h5M0 22.5h7m5 0h1m4 0h1m1 0h2m1 0h1m1 0h2m1 0h1M0 23.5h1m5 0h1m3 0h3m2 0h2m3 0h1m3 0h2m2 0h1M0 24.5h1m1 0h3m1 0h1m2 0h1m1 0h2m1 0h2m1 0h2m1 0h5m1 0h3M0 25.5h1m1 0h3m1 0h1m1 0h5m1 0h3m1 0h4m2 0h2m2 0h1M0 26.5h1m1 0h3m1 0h1m1 0h1m1 0h1m2 0h2m4 0h1m3 0h1m2 0h1m1 0h1M0 27.5h1m5 0h1m1 0h1m3 0h3m1 0h1m3 0h4m1 0h1m1 0h1M0 28.5h7m1 0h1m1 0h1m1 0h1m3 0h1m2 0h3m3 0h1m1 0h1"/></svg>
+
+      </div>
+    </div>
+
+    <div class="text-workspace">
+      <!-- 左栏：主论正文 -->
+      <div class="reading-column">
+        <div class="dialogue-prompt">
+          <span class="prompt-initial">【问】</span>我爸爸去世，葬礼酒席是大伯操办的，礼金也是大伯他们记账收，我该不该问一下是否有多余的钱？
+        </div>
+        <div class="essay-body">
+          <p>问当然要问，但你这个问法，真的是该打。</p><p>看看这个思路：</p><p>第一，你要问葬礼一共花了多少钱，你好支付给大伯。</p><p>原则是大伯出力就很让人感激，绝不能让大伯来出葬礼钱。</p><p>殡仪馆方面的费用我已经问过是若干，不知酒席和其他杂项是几何，希望大伯告知一个总数，我好一并还上。</p><p>为人子者，绝无父丧不自己出钱的道理，还望大伯成全。</p><p>大伯实无立场反对。</p><p>大伯说个数，钱立刻就给大伯打过去，还要再加上一笔大伯的辛苦费。</p><p>注意，这是要先打过去再说，打过去了再问第二句。</p><p>第二，我要问礼金明细，我好记住各家的恩情，方便回头一一道谢和往还。</p><p>将来这些人情是一一要还的，我得知道我每家各欠了多少情，将来还礼才能有个依据。尤其是我得知道哪些人给了，不能把人家给忘了，将来会令人寒心。</p><p>这道理堂皇正大，大伯也没有立场拒绝。</p><p>而且大伯给了这个账你，在你已经全额给了大伯酒席葬礼钱的前提下，大伯大概率会把礼金完整的还给你。</p><p>因为此时这个礼金钱他真是实在拿不得。在你已经把葬礼费用全额支付给他之后，他要是还拿走奠仪，有一点风声传出去，在亲戚之间都太难做人了。</p><p>两个数字都拿到，你想问的“有没有多余的钱”自己去加减去，那只是一个自然的结果。</p><p>但你要愿赌服输，因为真的可能“亏本”。但说实话，父丧还想赚钱，多少有点过于“经济”了。</p><p>现在再回头看你原本的选择——</p><p>你绝对不能问“是否有多余的钱”这种话，这样问性质完全变了。</p><p>按这个说法，就变成了你根本不关心大伯垫了多少钱，也不关心亲朋好友多爱戴你的父亲，只关心大伯有没有得着便宜。</p><p>是不是在讨打？</p><p>不要以为这只是在说一点巧问妙答，你要沉下心来思考这个做法背后的力量是什么，原理是什么。</p><p>伦理其实是一件武器，学会巧妙的运用，你可以为人的行为设立强硬的轨道，随时可以限制住事态向你不希望的方向发展。</p><p>话说的客气，但实际上没给对方留下余地，对方不选你留下的最佳选项，就会因为失礼、失德、示范把社会资本送到你的手里。</p><p>然而你处事得当，对方虽然不得不“就范”，但却没有勉强、屈辱的感觉，事后回想，自然知道你的干练和狠辣。这些认同随后都是你的信用和资本，是可以换到真金白银的借贷和支持的。</p><p>自己多揣摩吧。</p>
+        </div>
+      </div>
+
+      <!-- 右栏：微点阵随文批注走廊（宽60mm，不写字时浑然一体，写字时自然对齐） -->
+      <div class="margin-corridor">
+        <div class="margin-dot-matrix"></div>
+      </div>
+    </div>
+
+    <div class="post-essay-space">
+      <div class="article-footer-meta">
+        <span>全文 898 字 · 岐伯答论</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="article-container">
+    <div class="folio-bar">
+      <span class="folio-left">岐伯论 · 本根敦伦</span>
+      <span class="folio-right">2026.09.22</span>
+    </div>
+
+    <div class="title-unit">
+      <h1 class="title-text">何金银</h1>
+      <div class="seal-link" title="溯源印信">
+        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 29 29" shape-rendering="crispEdges"><path stroke="#8f2d26" d="M0 0.5h7m1 0h1m2 0h2m2 0h3m4 0h7M0 1.5h1m5 0h1m2 0h2m1 0h1m2 0h1m4 0h1m1 0h1m5 0h1M0 2.5h1m1 0h3m1 0h1m1 0h1m5 0h1m1 0h2m1 0h1m2 0h1m1 0h3m1 0h1M0 3.5h1m1 0h3m1 0h1m1 0h1m3 0h1m3 0h2m2 0h1m1 0h1m1 0h3m1 0h1M0 4.5h1m1 0h3m1 0h1m1 0h1m2 0h1m1 0h2m3 0h1m1 0h1m1 0h1m1 0h3m1 0h1M0 5.5h1m5 0h1m3 0h1m2 0h1m1 0h1m3 0h2m1 0h1m5 0h1M0 6.5h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7M13 7.5h1m2 0h4M0 8.5h4m2 0h1m1 0h1m1 0h1m2 0h1m2 0h1m4 0h1m2 0h3m1 0h1M0 9.5h1m3 0h2m2 0h1m2 0h1m2 0h6m1 0h4m3 0h1M0 10.5h1m2 0h1m1 0h2m1 0h4m2 0h2m1 0h1m2 0h1m5 0h2M3 11.5h1m4 0h3m1 0h1m4 0h1m1 0h1m1 0h2m1 0h1m3 0h1M0 12.5h2m1 0h5m1 0h4m1 0h2m4 0h1m4 0h2M0 13.5h3m1 0h1m2 0h2m4 0h2m1 0h4m2 0h1m3 0h3M1 14.5h7m1 0h1m3 0h4m2 0h3m4 0h3M0 15.5h1m1 0h1m1 0h1m2 0h4m1 0h5m1 0h7m2 0h1M1 16.5h1m2 0h1m1 0h1m3 0h2m2 0h1m4 0h2m2 0h3m1 0h1M1 17.5h1m2 0h2m1 0h1m1 0h2m2 0h2m2 0h2m4 0h1m1 0h3M0 18.5h1m3 0h1m1 0h1m2 0h4m5 0h1m1 0h1m1 0h1m3 0h1M2 19.5h2m1 0h1m4 0h1m3 0h1m3 0h1m3 0h1m3 0h1M1 20.5h4m1 0h2m2 0h1m1 0h5m3 0h7M8 21.5h1m1 0h3m2 0h4m1 0h1m3 0h5M0 22.5h7m2 0h1m1 0h1m2 0h2m1 0h4m1 0h1m1 0h2m1 0h1M0 23.5h1m5 0h1m2 0h2m5 0h3m1 0h1m3 0h2m1 0h2M0 24.5h1m1 0h3m1 0h1m2 0h2m4 0h1m2 0h1m1 0h5m1 0h1M0 25.5h1m1 0h3m1 0h1m1 0h4m1 0h2m1 0h2m1 0h1m1 0h1m1 0h3m1 0h1M0 26.5h1m1 0h3m1 0h1m1 0h6m1 0h2m1 0h1m1 0h1m2 0h1m2 0h1m1 0h1M0 27.5h1m5 0h1m1 0h3m4 0h1m1 0h1m2 0h2m1 0h3m1 0h1M0 28.5h7m1 0h1m1 0h6m1 0h1m1 0h5m3 0h1"/></svg>
+
+      </div>
+    </div>
+
+    <div class="text-workspace">
+      <!-- 左栏：主论正文 -->
+      <div class="reading-column">
+        <div class="dialogue-prompt">
+          <span class="prompt-initial">【问】</span>为什么随着练习量的增长，水平没有提升反而会下降?
+        </div>
+        <div class="essay-body">
+          <p>练习要有足够的阶梯和挑战性。</p><p>简单来说，就是要有难度。</p><p>一般人会觉得练习需要高成功率来保住自信，所以选择难度梯度较小的“安全题”来“保持手感”，只想单独的提高熟练度，从熟练度里获得安全感和进步感。</p><p>这个做法有一个很大的隐患——这些难度梯度很平缓的题目，它不是没有难度，然而你却处在了一个非常不利的逻辑陷阱里——完成了没有多少成就感，但是一旦失手却会造成巨大的挫折感。</p><p>这就像高阶拳手打低阶拳手，赢了没荣誉，输了却要伤威名。</p><p>这是个错误的安排。</p><p>它错到了这样一种程度——你一旦开始这类低坡度的练习，哪怕赢得不够快、不够威风，你都会感到焦躁，就像断水流大师兄打何金银，没在第一回合击倒就开始形成严重的心理焦虑。</p><p>而一旦焦虑发作，你的注意力会被进一步牵扯，发挥会更差，何金银撑过第二回合的概率更大了。要是他撑过了第二回合，你所受的打击就非常大了。</p><p>所以你一定要避免这种“做低难度挑战”的错误。</p><p>要么你想练纯熟练度，就把经典老题拿来反复做。走两个思路——要么把老思路练到做得飞快，寻求倒背如流；要么不断的挑战新思路、新手法，看看能不能用更少的步数、更优雅的操作得到比老思路更好的结果。</p><p>这种练习非常放松，是真的在提升熟练度而已。而且效果基本确定，相当安全。</p><p>要么你就要上大一点的坡度，挑战一下自己觉得够得着、但是没绝对把握、棘手到令你略感兴奋的新目标。</p><p>你要当何金银，去打大师兄。</p><p>做不完美，甚至被卡得磕磕绊绊、打得鼻青脸肿，对你是预料中事，于是失败的打击天然就不会太严重。</p><p>一旦有意外之喜，真的被你做成了，你的信心和热情会加倍高涨。</p><p>接近稳赚不赔。</p><p>不但如此，一旦你连战连捷，你对自己的上限的期待会大大的增强——如果这个斜率能保持不变，你二十几岁就可以挑战环球精英了。</p><p>要么原台阶踩实，要么上一整阶。</p><p>不要半台阶、三分阶的上，那样反而容易摔倒。</p><p>试试吧。</p>
+        </div>
+      </div>
+
+      <!-- 右栏：微点阵随文批注走廊（宽60mm，不写字时浑然一体，写字时自然对齐） -->
+      <div class="margin-corridor">
+        <div class="margin-dot-matrix"></div>
+      </div>
+    </div>
+
+    <div class="post-essay-space">
+      <div class="article-footer-meta">
+        <span>全文 776 字 · 岐伯答论</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="article-container">
+    <div class="folio-bar">
+      <span class="folio-left">岐伯论 · 本根敦伦</span>
+      <span class="folio-right">2026.09.23</span>
+    </div>
+
+    <div class="title-unit">
+      <h1 class="title-text">稳而后解</h1>
+      <div class="seal-link" title="溯源印信">
+        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 29 29" shape-rendering="crispEdges"><path stroke="#8f2d26" d="M0 0.5h7m2 0h1m2 0h1m1 0h1m4 0h1m2 0h7M0 1.5h1m5 0h1m1 0h2m1 0h1m3 0h1m1 0h1m2 0h1m1 0h1m5 0h1M0 2.5h1m1 0h3m1 0h1m3 0h1m1 0h1m1 0h1m1 0h1m2 0h1m2 0h1m1 0h3m1 0h1M0 3.5h1m1 0h3m1 0h1m1 0h2m1 0h1m1 0h3m1 0h2m3 0h1m1 0h3m1 0h1M0 4.5h1m1 0h3m1 0h1m2 0h1m2 0h1m3 0h1m2 0h2m1 0h1m1 0h3m1 0h1M0 5.5h1m5 0h1m1 0h2m5 0h3m2 0h1m1 0h1m5 0h1M0 6.5h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7M9 7.5h1m1 0h2m1 0h2m2 0h3M0 8.5h5m1 0h4m1 0h1m1 0h7m1 0h1m1 0h1m1 0h1m1 0h1M0 9.5h2m3 0h1m1 0h1m3 0h2m6 0h1m1 0h4m3 0h1M1 10.5h1m4 0h2m2 0h2m1 0h1m1 0h2m1 0h1m2 0h1m1 0h2M0 11.5h1m1 0h2m1 0h1m2 0h1m3 0h1m2 0h1m2 0h1m6 0h1m1 0h1M2 12.5h5m1 0h10m2 0h1m4 0h2M1 13.5h1m1 0h1m3 0h2m2 0h2m5 0h7m3 0h1M4 14.5h1m1 0h3m5 0h3m3 0h1m1 0h1m1 0h3M0 15.5h3m1 0h1m6 0h2m1 0h3m2 0h6m2 0h1M0 16.5h1m1 0h11m2 0h1m1 0h1m1 0h1m1 0h1m3 0h2M0 17.5h1m4 0h1m1 0h3m1 0h2m1 0h1m1 0h1m1 0h2m1 0h4m1 0h1m1 0h1M0 18.5h1m1 0h3m1 0h1m2 0h2m1 0h1m2 0h1m1 0h1m2 0h1m1 0h1m3 0h1M0 19.5h1m1 0h1m2 0h1m2 0h3m1 0h1m5 0h1m1 0h5m2 0h1M0 20.5h1m2 0h2m1 0h4m2 0h2m1 0h10m1 0h3M8 21.5h5m7 0h1m3 0h5M0 22.5h7m1 0h1m1 0h3m2 0h2m2 0h2m1 0h1m1 0h3M0 23.5h1m5 0h1m3 0h1m1 0h2m1 0h1m2 0h3m3 0h1m2 0h1M0 24.5h1m1 0h3m1 0h1m1 0h1m3 0h7m1 0h5m1 0h3M0 25.5h1m1 0h3m1 0h1m1 0h2m2 0h3m4 0h2m4 0h4M0 26.5h1m1 0h3m1 0h1m1 0h1m1 0h1m3 0h2m1 0h11M0 27.5h1m5 0h1m1 0h1m1 0h2m1 0h1m4 0h1m1 0h2m1 0h3m1 0h1M0 28.5h7m1 0h1m1 0h1m1 0h1m2 0h1m1 0h1m1 0h1m2 0h1m1 0h1m1 0h1"/></svg>
+
+      </div>
+    </div>
+
+    <div class="text-workspace">
+      <!-- 左栏：主论正文 -->
+      <div class="reading-column">
+        <div class="dialogue-prompt">
+          <span class="prompt-initial">【问】</span>作为抑郁症患者的家人，应该怎么做？
+        </div>
+        <div class="essay-body">
+          <p>第一，保持自身的稳定。</p><p>工作要稳定。该工作工作，该忙忙，正常上班下班，并且要把班上好、上开心，跟同事们多亲热。</p><p>生活要稳定。作息时间稳定，吃的时候吃，睡的时候睡，洗漱清洁、家庭整理，都认真的维护好。</p><p>情绪要稳定。不要“陪着难过”，喜欢看的剧接着看，被逗笑了一样笑。</p><p>抑郁症患者最担心的，其实是自己把身边人连累了，害怕自己夺走身边一切的氧气，害怕身边人一个接一个的因为自己的低落和失能而渐渐枯萎、衰败。</p><p>这是一个极大的心理压力来源，一方面ta们会加倍自责，受到愧疚感的折磨。</p><p>另一方面ta们忍不住会担心自己一直拖累亲人、爱人，可能最终会被抛弃。</p><p>愧疚和焦虑交加，会刺激得ta们难以正常饮食、休息，而且会“废寝忘食”的“努力”，用尽力感来压制这些心理折磨。</p><p>然而本来状态就不好，还废寝忘食，这样的努力怎么可能效率很好？“花了九牛二虎之力却没有成果”的结果，反而会促成更深的伤害。</p><p>会让原本的愧疚和焦虑叠加上“我努力也好不起来了”的恐慌，发展成自我放逐甚至自我了断的冲动。</p><p>你们一天比一天萎靡不振，ta就是那个毒源，ta自己试过了又无法自我修复，ta怎么自处？</p><p>所以，让ta真实的感受到“我们大家都还好”“我们能很好的承受这个压力，压不弯我们的腰，连汗都不会出”，ta的愧疚和焦虑感会好很多。</p><p>我们的生活仍然积极，工作表现仍然良好，要供给你在家休养并不困难，加副筷子、加瓢水的事，你不必觉得世界末日就在倒计时了。</p><p>安心休息，慢慢来。</p><p>很多人在这个节点上又会担心如果一点压力不给对方，对方可能会安于这么温暖安逸的生活，索性完全内缩，满足于无限蜗居了。</p><p>这是一个合法的顾虑，但至少不是早期的问题，早期的首要问题是避免绝望情绪的急速发作，避免病情的自激循环恶化。</p><p>过了这段急性危险期，有一定的概率问题会直接缓解。</p><p>如果病情真的长期化，出现了这种“心宽体胖的不求改变”的问题，你再去做信心重建、注入动力的工作。</p><p>第二，保持必要的照顾。</p><p>定时的问候，陪伴，继续保持。</p><p>该叫起床的时候叫起床，该喊吃饭的时候喊吃饭。</p><p>不吃、不起，不勉强。</p><p>食欲和社交欲望只是一时被焦虑压住了，你保持稳定，不做额外刺激，给予稳定、宽容的生存环境，人会慢慢适应新常态，安全感会逐渐回归。</p><p>焦虑的冰山有所融化、松动，会想吃饭，想说话。</p><p>这些必要的照顾，主要是解决“保持稳定”的副作用——让患者误认为亲人们反正马照跑、舞照跳，自己的悲欢无人关心。</p><p>我们维护好自己，这样你不必忧虑自己对我们造成不可承受的拖累，我们仍然关心你，会照顾你的生活。</p><p>我们做得不吃力，不哀愁，可以坚持到天荒地老。</p><p>我们没有勉强你一定要如何如何良好配合。</p><p>不说“不吃饭怎么行”“不规律作息会更糟糕”这些话，我们只是一直保持着帮助你按时吃饭、规律作息的有利条件，等你慢慢从稳定的生活中体会到危机并不致命，不必忧虑到吃不下饭、睡不着觉。</p><p>我们相信自己的支持能力最终会战胜你的恐惧和忧愁，是我们通过这份温柔和不催促展现的信心，帮助你更早的摆脱对忧虑和恐惧的软弱心。</p><p>你觉得自己能赢，不担心了，你的担心就突然缓解了。</p><p>催促、勒令，展现出我们的焦虑和无信心，会扩大你的无信心。</p><p>不催促、不勒令，展现出我们的决心和信心，会成就你的信心。</p><p>那么我们就不催促、不勒令。</p><p>第三，重建“不以恶为业”的开放人生追求。</p><p>我们所有人的追求，既不包含威震天下、也不包括富有四海，甚至不包括长命百岁、儿孙满堂，只有一条“不以恶为业”而已。</p><p>对我们自己的期待如此，对你的期待也是如此。</p><p>你不必觉得必须要做出什么什么样的让我们有面子的巨大事业，甚至不需要强求一定能给我们多大的经济支持。</p><p>在经济上，你尽力就可以了，在不作孽、不侵夺的前提下，得到多少就是多少。哪怕你赚不回自己的生活费，只是可以减少我们补贴你的压力，也一样是值得我们赞赏和认可的努力。</p><p>你就已经不需要再对我们抱憾、愧疚。</p><p>我们在意的是家人之间的友爱，温柔，是相互之间的爱的真诚和热烈。</p><p>我们最大的享受，不是你带回来的钱和名望，而是我们每天可以毫无芥蒂的相聚，彼此陪伴的安宁和爱。</p><p>彼此没有芥蒂、埋怨和苛求，这份安宁和幸福本身是无价的，这才是生命除基本饮食、住所之外最重要的食粮。</p><p>为了将来可能的荣华富贵而陷入彼此攻讦、嫌恶、厌憎，以至于家里阴云密布、毒瘴氤氲，连作为一个安全的基地的功能都没有，却指望这毒床上可以诞生卓越的努力，托着家族命运蒸蒸日上，这是一种什么样的荒唐？</p><p>对“不以恶为业”保持满足的谦卑，是卸下所有人心头重压的根本，是安宁睡眠最舒适的温床。</p><p>是在这里安放良好的集体决心，托住这个世上无处安放的恐慌，让抑郁的冰在银盘里得以慢慢消解和融化。</p><p>若没有这最后的解决，第一步和第二步最终只是无法长久坚持的缓兵之计。随着你们失去耐心，由它们所争取到的喘息余地最终还是要失去。而你们渐渐疲惫和不耐烦的趋势一旦被患者察觉，ta往往会迅速滑向更深的地方。</p><p>不过，即使就是这样，第一步和第二步仍然值得尝试——它们好歹好过“ta抑郁导致你们焦虑，你们焦虑导致ta更抑郁”这种安排。</p><p>祝你们好运吧。</p>
+        </div>
+      </div>
+
+      <!-- 右栏：微点阵随文批注走廊（宽60mm，不写字时浑然一体，写字时自然对齐） -->
+      <div class="margin-corridor">
+        <div class="margin-dot-matrix"></div>
+      </div>
+    </div>
+
+    <div class="post-essay-space">
+      <div class="article-footer-meta">
+        <span>全文 2078 字 · 岐伯答论</span>
+      </div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

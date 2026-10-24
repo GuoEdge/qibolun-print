@@ -1,0 +1,29 @@
+{
+  "round": 181,
+  "frame": 616,
+  "sample": 79,
+  "sample_ratio": 0.1282,
+  "seed": 20260926,
+  "verdict_counts": {
+    "holds": 47,
+    "needs_revision": 8,
+    "holds_with_boundary_note": 8,
+    "holds_but_body_short": 13,
+    "cannot_verify_from_body": 3
+  },
+  "local_problem_count": 11,
+  "local_problem_ratio": 0.1392,
+  "needs_revision_by_local_topic": {
+    "A15": 1,
+    "A00": 4,
+    "A16": 1,
+    "A18": 1,
+    "A02": 1
+  },
+  "official_layer_fabricated": 0,
+  "read_coverage_counts": {
+    "full_text": 50,
+    "head1000+tail500": 29
+  },
+  "output": "/mnt/d/岐伯论/research-rebuild/reports/rebuild-20260926/round181/round181-official-unmatched-audit.csv"
+}

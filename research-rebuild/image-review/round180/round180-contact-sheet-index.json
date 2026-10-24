@@ -1,0 +1,779 @@
+{
+ "8d2e0d1f-4e23-5e19-bb57-e8bf9b70839d": {
+  "ordinal": "1234",
+  "title": "降龙",
+  "images": 2,
+  "cols": 2,
+  "rows": 1,
+  "sheet": "research-rebuild/image-review/round180/contact-sheets/1234-8d2e0d1f-4e23-5e19-bb57-e8bf9b70839d.jpg",
+  "positions": {
+   "r1c1": 1,
+   "r1c2": 2
+  },
+  "image_indices": [
+   1,
+   2
+  ],
+  "failed_image_indices": []
+ },
+ "94ca1d90-a167-56fd-9970-14bd3d992491": {
+  "ordinal": "1673",
+  "title": "如露亦如电",
+  "images": 11,
+  "cols": 4,
+  "rows": 3,
+  "sheet": "research-rebuild/image-review/round180/contact-sheets/1673-94ca1d90-a167-56fd-9970-14bd3d992491.jpg",
+  "positions": {
+   "r1c1": 1,
+   "r1c2": 2,
+   "r1c3": 3,
+   "r1c4": 4,
+   "r2c1": 5,
+   "r2c2": 6,
+   "r2c3": 7,
+   "r2c4": 8,
+   "r3c1": 9,
+   "r3c2": 10,
+   "r3c3": 11
+  },
+  "image_indices": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11
+  ],
+  "failed_image_indices": []
+ },
+ "1aaa2ef5-6395-561f-b61e-8a69af24fc4a": {
+  "ordinal": "1901",
+  "title": "落草为王",
+  "images": 2,
+  "cols": 2,
+  "rows": 1,
+  "sheet": "research-rebuild/image-review/round180/contact-sheets/1901-1aaa2ef5-6395-561f-b61e-8a69af24fc4a.jpg",
+  "positions": {
+   "r1c1": 1,
+   "r1c2": 2
+  },
+  "image_indices": [
+   1,
+   2
+  ],
+  "failed_image_indices": []
+ },
+ "b4cf2664-7e4a-5e2b-b1fd-68b7a775e34d": {
+  "ordinal": "1970",
+  "title": "南存北亡",
+  "images": 1,
+  "cols": 1,
+  "rows": 1,
+  "sheet": "research-rebuild/image-review/round180/contact-sheets/1970-b4cf2664-7e4a-5e2b-b1fd-68b7a775e34d.jpg",
+  "positions": {
+   "r1c1": 1
+  },
+  "image_indices": [
+   1
+  ],
+  "failed_image_indices": []
+ },
+ "5cb9b9e6-3407-5b45-b947-25248e819e84": {
+  "ordinal": "2043",
+  "title": "甲醛",
+  "images": 3,
+  "cols": 2,
+  "rows": 2,
+  "sheet": "research-rebuild/image-review/round180/contact-sheets/2043-5cb9b9e6-3407-5b45-b947-25248e819e84.jpg",
+  "positions": {
+   "r1c1": 1,
+   "r1c2": 2,
+   "r2c1": 3
+  },
+  "image_indices": [
+   1,
+   2,
+   3
+  ],
+  "failed_image_indices": []
+ },
+ "38a73bef-17e9-5fb4-a718-18931523f25c": {
+  "ordinal": "2274",
+  "title": "天命昭昭",
+  "images": 1,
+  "cols": 1,
+  "rows": 1,
+  "sheet": "research-rebuild/image-review/round180/contact-sheets/2274-38a73bef-17e9-5fb4-a718-18931523f25c.jpg",
+  "positions": {
+   "r1c1": 1
+  },
+  "image_indices": [
+   1
+  ],
+  "failed_image_indices": []
+ },
+ "6511b53f-878c-5ae0-af8f-d2f04e78569c": {
+  "ordinal": "2336",
+  "title": "AI 一",
+  "images": 1,
+  "cols": 1,
+  "rows": 1,
+  "sheet": "research-rebuild/image-review/round180/contact-sheets/2336-6511b53f-878c-5ae0-af8f-d2f04e78569c.jpg",
+  "positions": {
+   "r1c1": 1
+  },
+  "image_indices": [
+   1
+  ],
+  "failed_image_indices": []
+ },
+ "2de34923-9512-534e-890b-d6a12739e092": {
+  "ordinal": "2453",
+  "title": "赵哈哈",
+  "images": 2,
+  "cols": 2,
+  "rows": 1,
+  "sheet": "research-rebuild/image-review/round180/contact-sheets/2453-2de34923-9512-534e-890b-d6a12739e092.jpg",
+  "positions": {
+   "r1c1": 1,
+   "r1c2": 2
+  },
+  "image_indices": [
+   1,
+   2
+  ],
+  "failed_image_indices": []
+ },
+ "977dd7aa-c7a7-5162-80ca-a65a57606979": {
+  "ordinal": "2495",
+  "title": "撞球游戏",
+  "images": 2,
+  "cols": 2,
+  "rows": 1,
+  "sheet": "research-rebuild/image-review/round180/contact-sheets/2495-977dd7aa-c7a7-5162-80ca-a65a57606979.jpg",
+  "positions": {
+   "r1c1": 1,
+   "r1c2": 2
+  },
+  "image_indices": [
+   1,
+   2
+  ],
+  "failed_image_indices": []
+ },
+ "f2cdf0de-aaea-5723-8ff3-da22d9cc12f5": {
+  "ordinal": "2567",
+  "title": "逼你幸福",
+  "images": 1,
+  "cols": 1,
+  "rows": 1,
+  "sheet": "research-rebuild/image-review/round180/contact-sheets/2567-f2cdf0de-aaea-5723-8ff3-da22d9cc12f5.jpg",
+  "positions": {
+   "r1c1": 1
+  },
+  "image_indices": [
+   1
+  ],
+  "failed_image_indices": []
+ },
+ "9838b31a-0141-5a0f-8e73-10d36ee4f97e": {
+  "ordinal": "2612",
+  "title": "痒了三块钱",
+  "images": 1,
+  "cols": 1,
+  "rows": 1,
+  "sheet": "research-rebuild/image-review/round180/contact-sheets/2612-9838b31a-0141-5a0f-8e73-10d36ee4f97e.jpg",
+  "positions": {
+   "r1c1": 1
+  },
+  "image_indices": [
+   1
+  ],
+  "failed_image_indices": []
+ },
+ "68932127-ef69-52eb-952b-ff57983ae108": {
+  "ordinal": "2661",
+  "title": "两罪并罚",
+  "images": 1,
+  "cols": 1,
+  "rows": 1,
+  "sheet": "research-rebuild/image-review/round180/contact-sheets/2661-68932127-ef69-52eb-952b-ff57983ae108.jpg",
+  "positions": {
+   "r1c1": 1
+  },
+  "image_indices": [
+   1
+  ],
+  "failed_image_indices": []
+ },
+ "8093cce8-fbd1-5050-b629-09fed6563b52": {
+  "ordinal": "2717",
+  "title": "质疑",
+  "images": 1,
+  "cols": 1,
+  "rows": 1,
+  "sheet": "research-rebuild/image-review/round180/contact-sheets/2717-8093cce8-fbd1-5050-b629-09fed6563b52.jpg",
+  "positions": {
+   "r1c1": 1
+  },
+  "image_indices": [
+   1
+  ],
+  "failed_image_indices": []
+ },
+ "11273ac5-c1a7-5414-b1ff-20cec8b2396b": {
+  "ordinal": "2778",
+  "title": "头顶那个洞",
+  "images": 2,
+  "cols": 2,
+  "rows": 1,
+  "sheet": "research-rebuild/image-review/round180/contact-sheets/2778-11273ac5-c1a7-5414-b1ff-20cec8b2396b.jpg",
+  "positions": {
+   "r1c1": 1,
+   "r1c2": 2
+  },
+  "image_indices": [
+   1,
+   2
+  ],
+  "failed_image_indices": []
+ },
+ "3444c1ed-fa7f-5bad-9546-9abbb06b6078": {
+  "ordinal": "2806",
+  "title": "阴阳怪气",
+  "images": 1,
+  "cols": 1,
+  "rows": 1,
+  "sheet": "research-rebuild/image-review/round180/contact-sheets/2806-3444c1ed-fa7f-5bad-9546-9abbb06b6078.jpg",
+  "positions": {
+   "r1c1": 1
+  },
+  "image_indices": [
+   1
+  ],
+  "failed_image_indices": []
+ },
+ "f46a0755-178e-5cca-a92d-5dad6cd1eafb": {
+  "ordinal": "2837",
+  "title": "统战价值",
+  "images": 1,
+  "cols": 1,
+  "rows": 1,
+  "sheet": "research-rebuild/image-review/round180/contact-sheets/2837-f46a0755-178e-5cca-a92d-5dad6cd1eafb.jpg",
+  "positions": {
+   "r1c1": 1
+  },
+  "image_indices": [
+   1
+  ],
+  "failed_image_indices": []
+ },
+ "4660735d-ce7d-5a3e-be20-19823dd154df": {
+  "ordinal": "2856",
+  "title": "营级战术群",
+  "images": 1,
+  "cols": 1,
+  "rows": 1,
+  "sheet": "research-rebuild/image-review/round180/contact-sheets/2856-4660735d-ce7d-5a3e-be20-19823dd154df.jpg",
+  "positions": {
+   "r1c1": 1
+  },
+  "image_indices": [
+   1
+  ],
+  "failed_image_indices": []
+ },
+ "2b500e48-491a-537f-8a8a-6bba75958df4": {
+  "ordinal": "2907",
+  "title": "爱国",
+  "images": 1,
+  "cols": 1,
+  "rows": 1,
+  "sheet": "research-rebuild/image-review/round180/contact-sheets/2907-2b500e48-491a-537f-8a8a-6bba75958df4.jpg",
+  "positions": {
+   "r1c1": 1
+  },
+  "image_indices": [
+   1
+  ],
+  "failed_image_indices": []
+ },
+ "86144d35-7a44-50d0-89ae-16e3b50beacf": {
+  "ordinal": "2958",
+  "title": "性侵危机",
+  "images": 2,
+  "cols": 2,
+  "rows": 1,
+  "sheet": "research-rebuild/image-review/round180/contact-sheets/2958-86144d35-7a44-50d0-89ae-16e3b50beacf.jpg",
+  "positions": {
+   "r1c1": 1,
+   "r1c2": 2
+  },
+  "image_indices": [
+   1,
+   2
+  ],
+  "failed_image_indices": []
+ },
+ "334b5f77-c843-5bbd-856d-3cfdfe2b324f": {
+  "ordinal": "2979",
+  "title": "稻草",
+  "images": 1,
+  "cols": 1,
+  "rows": 1,
+  "sheet": "research-rebuild/image-review/round180/contact-sheets/2979-334b5f77-c843-5bbd-856d-3cfdfe2b324f.jpg",
+  "positions": {
+   "r1c1": 1
+  },
+  "image_indices": [
+   1
+  ],
+  "failed_image_indices": []
+ },
+ "015043d1-01b8-5915-9d30-d13722a542e7": {
+  "ordinal": "2995",
+  "title": "宗教的价值",
+  "images": 1,
+  "cols": 1,
+  "rows": 1,
+  "sheet": "research-rebuild/image-review/round180/contact-sheets/2995-015043d1-01b8-5915-9d30-d13722a542e7.jpg",
+  "positions": {
+   "r1c1": 1
+  },
+  "image_indices": [
+   1
+  ],
+  "failed_image_indices": []
+ },
+ "d680ad11-26a6-5468-a86f-0cc8d87222ac": {
+  "ordinal": "3069",
+  "title": "俄罗斯",
+  "images": 1,
+  "cols": 1,
+  "rows": 1,
+  "sheet": "research-rebuild/image-review/round180/contact-sheets/3069-d680ad11-26a6-5468-a86f-0cc8d87222ac.jpg",
+  "positions": {
+   "r1c1": 1
+  },
+  "image_indices": [
+   1
+  ],
+  "failed_image_indices": []
+ },
+ "79b4b119-7e6a-527d-a28c-6e9da34b7dde": {
+  "ordinal": "3095",
+  "title": "安慰",
+  "images": 1,
+  "cols": 1,
+  "rows": 1,
+  "sheet": "research-rebuild/image-review/round180/contact-sheets/3095-79b4b119-7e6a-527d-a28c-6e9da34b7dde.jpg",
+  "positions": {
+   "r1c1": 1
+  },
+  "image_indices": [
+   1
+  ],
+  "failed_image_indices": []
+ },
+ "ac2d41bb-c9e6-5a3a-be3f-d7bc018cf19a": {
+  "ordinal": "3103",
+  "title": "浮桥",
+  "images": 1,
+  "cols": 1,
+  "rows": 1,
+  "sheet": "research-rebuild/image-review/round180/contact-sheets/3103-ac2d41bb-c9e6-5a3a-be3f-d7bc018cf19a.jpg",
+  "positions": {
+   "r1c1": 1
+  },
+  "image_indices": [
+   1
+  ],
+  "failed_image_indices": []
+ },
+ "049ac2a7-fd8b-5c5c-b78c-1133cbd4c75e": {
+  "ordinal": "3128",
+  "title": "人才流失",
+  "images": 1,
+  "cols": 1,
+  "rows": 1,
+  "sheet": "research-rebuild/image-review/round180/contact-sheets/3128-049ac2a7-fd8b-5c5c-b78c-1133cbd4c75e.jpg",
+  "positions": {
+   "r1c1": 1
+  },
+  "image_indices": [
+   1
+  ],
+  "failed_image_indices": []
+ },
+ "0e4b0837-bf37-58fa-8a6c-db65d160463a": {
+  "ordinal": "3136",
+  "title": "闲聊协议",
+  "images": 1,
+  "cols": 1,
+  "rows": 1,
+  "sheet": "research-rebuild/image-review/round180/contact-sheets/3136-0e4b0837-bf37-58fa-8a6c-db65d160463a.jpg",
+  "positions": {
+   "r1c1": 1
+  },
+  "image_indices": [
+   1
+  ],
+  "failed_image_indices": []
+ },
+ "deb01db8-4255-5012-8a21-e4594a98dd43": {
+  "ordinal": "3169",
+  "title": "香料",
+  "images": 3,
+  "cols": 2,
+  "rows": 2,
+  "sheet": "research-rebuild/image-review/round180/contact-sheets/3169-deb01db8-4255-5012-8a21-e4594a98dd43.jpg",
+  "positions": {
+   "r1c1": 1,
+   "r1c2": 2,
+   "r2c1": 3
+  },
+  "image_indices": [
+   1,
+   2,
+   3
+  ],
+  "failed_image_indices": []
+ },
+ "b5744f29-b95b-5ab0-abb3-e62f8d8d0dac": {
+  "ordinal": "3193",
+  "title": "小县城的未来",
+  "images": 2,
+  "cols": 2,
+  "rows": 1,
+  "sheet": "research-rebuild/image-review/round180/contact-sheets/3193-b5744f29-b95b-5ab0-abb3-e62f8d8d0dac.jpg",
+  "positions": {
+   "r1c1": 1,
+   "r1c2": 2
+  },
+  "image_indices": [
+   1,
+   2
+  ],
+  "failed_image_indices": []
+ },
+ "550d38d4-31b2-56d8-bc6e-8699b1cdbcb6": {
+  "ordinal": "3196",
+  "title": "烦躁",
+  "images": 2,
+  "cols": 2,
+  "rows": 1,
+  "sheet": "research-rebuild/image-review/round180/contact-sheets/3196-550d38d4-31b2-56d8-bc6e-8699b1cdbcb6.jpg",
+  "positions": {
+   "r1c1": 1,
+   "r1c2": 2
+  },
+  "image_indices": [
+   1,
+   2
+  ],
+  "failed_image_indices": []
+ },
+ "2d033768-8886-500e-8f11-f60fa6f5c7f3": {
+  "ordinal": "3212",
+  "title": "齐齐整整",
+  "images": 2,
+  "cols": 2,
+  "rows": 1,
+  "sheet": "research-rebuild/image-review/round180/contact-sheets/3212-2d033768-8886-500e-8f11-f60fa6f5c7f3.jpg",
+  "positions": {
+   "r1c1": 1,
+   "r1c2": 2
+  },
+  "image_indices": [
+   1,
+   2
+  ],
+  "failed_image_indices": []
+ },
+ "5b7b1e76-8ba5-5979-a471-53abbda25ce8": {
+  "ordinal": "3232",
+  "title": "疯王",
+  "images": 3,
+  "cols": 2,
+  "rows": 2,
+  "sheet": "research-rebuild/image-review/round180/contact-sheets/3232-5b7b1e76-8ba5-5979-a471-53abbda25ce8.jpg",
+  "positions": {
+   "r1c1": 1,
+   "r1c2": 2,
+   "r2c1": 3
+  },
+  "image_indices": [
+   1,
+   2,
+   3
+  ],
+  "failed_image_indices": []
+ },
+ "c07d9407-74a1-5bc0-9835-9b934f85f22f": {
+  "ordinal": "3239",
+  "title": "爹味",
+  "images": 1,
+  "cols": 1,
+  "rows": 1,
+  "sheet": "research-rebuild/image-review/round180/contact-sheets/3239-c07d9407-74a1-5bc0-9835-9b934f85f22f.jpg",
+  "positions": {
+   "r1c1": 1
+  },
+  "image_indices": [
+   1
+  ],
+  "failed_image_indices": []
+ },
+ "6250c0e6-8b44-5423-8af0-8bf6cfe3257d": {
+  "ordinal": "3254",
+  "title": "缺乏创新",
+  "images": 1,
+  "cols": 1,
+  "rows": 1,
+  "sheet": "research-rebuild/image-review/round180/contact-sheets/3254-6250c0e6-8b44-5423-8af0-8bf6cfe3257d.jpg",
+  "positions": {
+   "r1c1": 1
+  },
+  "image_indices": [
+   1
+  ],
+  "failed_image_indices": []
+ },
+ "ad5c38aa-1757-5bd7-96ba-e5eeb39e48a1": {
+  "ordinal": "3261",
+  "title": "不原谅的诅咒",
+  "images": 1,
+  "cols": 1,
+  "rows": 1,
+  "sheet": "research-rebuild/image-review/round180/contact-sheets/3261-ad5c38aa-1757-5bd7-96ba-e5eeb39e48a1.jpg",
+  "positions": {
+   "r1c1": 1
+  },
+  "image_indices": [
+   1
+  ],
+  "failed_image_indices": []
+ },
+ "b145ac9e-ecd3-57cc-815f-85e8e3e2dc73": {
+  "ordinal": "3297",
+  "title": "评头论足",
+  "images": 1,
+  "cols": 1,
+  "rows": 1,
+  "sheet": "research-rebuild/image-review/round180/contact-sheets/3297-b145ac9e-ecd3-57cc-815f-85e8e3e2dc73.jpg",
+  "positions": {
+   "r1c1": 1
+  },
+  "image_indices": [
+   1
+  ],
+  "failed_image_indices": []
+ },
+ "7ac9cc0b-4709-5157-ba26-5c14ebc280ef": {
+  "ordinal": "3309",
+  "title": "节省时间",
+  "images": 14,
+  "cols": 4,
+  "rows": 4,
+  "sheet": "research-rebuild/image-review/round180/contact-sheets/3309-7ac9cc0b-4709-5157-ba26-5c14ebc280ef.jpg",
+  "positions": {
+   "r1c1": 1,
+   "r1c2": 2,
+   "r1c3": 3,
+   "r1c4": 4,
+   "r2c1": 5,
+   "r2c2": 6,
+   "r2c3": 7,
+   "r2c4": 8,
+   "r3c1": 9,
+   "r3c2": 10,
+   "r3c3": 11,
+   "r3c4": 12,
+   "r4c1": 13,
+   "r4c2": 14
+  },
+  "image_indices": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14
+  ],
+  "failed_image_indices": []
+ },
+ "1a742531-d472-5206-909d-af49dc6adb45": {
+  "ordinal": "3359",
+  "title": "道德",
+  "images": 1,
+  "cols": 1,
+  "rows": 1,
+  "sheet": "research-rebuild/image-review/round180/contact-sheets/3359-1a742531-d472-5206-909d-af49dc6adb45.jpg",
+  "positions": {
+   "r1c1": 1
+  },
+  "image_indices": [
+   1
+  ],
+  "failed_image_indices": []
+ },
+ "5d8d149d-a664-5698-9b67-e7bde58386ea": {
+  "ordinal": "3368",
+  "title": "不在乎",
+  "images": 1,
+  "cols": 1,
+  "rows": 1,
+  "sheet": "research-rebuild/image-review/round180/contact-sheets/3368-5d8d149d-a664-5698-9b67-e7bde58386ea.jpg",
+  "positions": {
+   "r1c1": 1
+  },
+  "image_indices": [
+   1
+  ],
+  "failed_image_indices": []
+ },
+ "19a2ff4c-0f01-5107-aa11-9614b01f7666": {
+  "ordinal": "3573",
+  "title": "时间不够",
+  "images": 1,
+  "cols": 1,
+  "rows": 1,
+  "sheet": "research-rebuild/image-review/round180/contact-sheets/3573-19a2ff4c-0f01-5107-aa11-9614b01f7666.jpg",
+  "positions": {
+   "r1c1": 1
+  },
+  "image_indices": [
+   1
+  ],
+  "failed_image_indices": []
+ },
+ "2867ed0d-0c0c-5bb4-a328-50f679d93142": {
+  "ordinal": "3607",
+  "title": "长江天险",
+  "images": 2,
+  "cols": 2,
+  "rows": 1,
+  "sheet": "research-rebuild/image-review/round180/contact-sheets/3607-2867ed0d-0c0c-5bb4-a328-50f679d93142.jpg",
+  "positions": {
+   "r1c1": 1,
+   "r1c2": 2
+  },
+  "image_indices": [
+   1,
+   2
+  ],
+  "failed_image_indices": []
+ },
+ "3f4efcaa-c89d-554b-bcc8-5686ed8527e6": {
+  "ordinal": "3655",
+  "title": "心窄路不宽",
+  "images": 1,
+  "cols": 1,
+  "rows": 1,
+  "sheet": "research-rebuild/image-review/round180/contact-sheets/3655-3f4efcaa-c89d-554b-bcc8-5686ed8527e6.jpg",
+  "positions": {
+   "r1c1": 1
+  },
+  "image_indices": [
+   1
+  ],
+  "failed_image_indices": []
+ },
+ "5f53ba7a-365e-55ce-9127-f98be023cce6": {
+  "ordinal": "3898",
+  "title": "正中心",
+  "images": 1,
+  "cols": 1,
+  "rows": 1,
+  "sheet": "research-rebuild/image-review/round180/contact-sheets/3898-5f53ba7a-365e-55ce-9127-f98be023cce6.jpg",
+  "positions": {
+   "r1c1": 1
+  },
+  "image_indices": [
+   1
+  ],
+  "failed_image_indices": []
+ },
+ "66e90cce-04d4-554c-87e6-c7bd02d1c81f": {
+  "ordinal": "3901",
+  "title": "专业布局",
+  "images": 1,
+  "cols": 1,
+  "rows": 1,
+  "sheet": "research-rebuild/image-review/round180/contact-sheets/3901-66e90cce-04d4-554c-87e6-c7bd02d1c81f.jpg",
+  "positions": {
+   "r1c1": 1
+  },
+  "image_indices": [
+   1
+  ],
+  "failed_image_indices": []
+ },
+ "e26ded3d-29e4-5733-8c83-39e877cf74f2": {
+  "ordinal": "3916",
+  "title": "可见光通信",
+  "images": 1,
+  "cols": 1,
+  "rows": 1,
+  "sheet": "research-rebuild/image-review/round180/contact-sheets/3916-e26ded3d-29e4-5733-8c83-39e877cf74f2.jpg",
+  "positions": {
+   "r1c1": 1
+  },
+  "image_indices": [
+   1
+  ],
+  "failed_image_indices": []
+ },
+ "5a32a445-202b-593a-a880-21c3716cd9cc": {
+  "ordinal": "3926",
+  "title": "5G",
+  "images": 4,
+  "cols": 2,
+  "rows": 2,
+  "sheet": "research-rebuild/image-review/round180/contact-sheets/3926-5a32a445-202b-593a-a880-21c3716cd9cc.jpg",
+  "positions": {
+   "r1c1": 16,
+   "r1c2": 17,
+   "r2c1": 18,
+   "r2c2": 21
+  },
+  "image_indices": [
+   16,
+   17,
+   18,
+   21
+  ],
+  "failed_image_indices": [
+   19,
+   20
+  ]
+ },
+ "599b48e8-f608-54cb-9bc0-5ac53b459190": {
+  "ordinal": "3929",
+  "title": "原谅宝",
+  "images": 1,
+  "cols": 1,
+  "rows": 1,
+  "sheet": "research-rebuild/image-review/round180/contact-sheets/3929-599b48e8-f608-54cb-9bc0-5ac53b459190.jpg",
+  "positions": {
+   "r1c1": 1
+  },
+  "image_indices": [
+   1
+  ],
+  "failed_image_indices": []
+ }
+}

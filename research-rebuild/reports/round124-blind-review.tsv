@@ -1,0 +1,11 @@
+reviewer	sample_basis	id	title	body_char_count	blind_primary	blind_secondary	blind_status	blind_reason	decided_primary	decided_secondary	decided_status	primary_match	secondary_match	status_match	disagreement_note
+independent_blind	all seven provisional	c0a13aa7-6476-5774-b661-e424f933d513	爱语	4	A00		manual_provisional	题干要求隐晦表达爱意，但正文仅“这怪我”，无法确认是在表达爱、承担责任还是反讽；材料不足，保留A00暂定。	A00		manual_provisional	yes	yes	yes	一致
+independent_blind	all seven provisional	1015117d-47f5-5e6d-8648-373790bd96b6	坚持	5	A11	A03	manual_provisional	“择善固执”把坚持限定为对善的固守，规范/自然法方向明显；但单句无法判断伦理中心与一般定义论证的权重，暂定。	A11	A03	manual_provisional	yes	yes	yes	一致
+independent_blind	all seven provisional	9b6db870-bac2-5741-b015-bd793dcd6dbe	不羡慕	8	A01	A11	manual_provisional	正文把不羡慕归因于怜悯，中心是羡慕及主体情绪关系；怜悯的规范含义为副轴，句子过短不足以确认机制。	A01	A11	manual_provisional	yes	yes	yes	一致
+independent_blind	all seven provisional	e8873042-d451-5335-87d7-638f1926a64a	刻奇	17	A15	A03	manual_provisional	以“凝视”与被诱导凝视的深渊定义刻奇，核心是审美/文化批评；定义论证为副轴，未给出克服路径，暂定。	A15	A03	manual_provisional	yes	yes	yes	一致
+independent_blind	all seven provisional	5316551a-199f-5363-8436-1c4d4a72bbc2	酒神与天神	25	A11	A03	manual_provisional	题干以酒神/天神神话为入口，正文改用麻醉剂替代兴奋剂的社会隐喻；宗教/神话入口仍是主轴，但论述极短且未回答谱系，暂定。	A11	A03	manual_provisional	yes	yes	yes	一致
+independent_blind	all seven provisional	41c47afa-ca71-5905-924e-bc87c5a24f35	陌生宗教	41	A11		manual_provisional	正文只点出耆那教并提示搜索santhara，中心确为宗教介绍，但内容不完整，不能补写教义或历史，暂定。	A11		manual_provisional	yes	yes	yes	一致
+independent_blind	all seven provisional	913f1fd9-3d73-546a-b924-70174ef27403	普通不普通	55	A03	A06	manual_provisional	题干涉及婚姻年龄，正文实际集中否定“普通=正常/健康/正义/安全”的概念等同，定义与规范边界是中心；婚恋场景为副轴，材料不足暂定。	A03	A06	manual_provisional	yes	yes	yes	一致
+independent_blind	A11/A02 boundary	964d3312-f52b-5cdf-a3cb-ee6085fb0dd0	同性恋	21	A11	A02	manual_confirmed	题干明确问基督教罪论；正文用爱作为宗教伦理判断标准，性取向是讨论对象而非主轴，故宗教主码、性别身体为副码。	A11	A02	manual_confirmed	yes	yes	yes	一致
+independent_blind	A15/A10 conduct boundary	85aecfc3-f160-531a-8404-42441717edd4	行为艺术	90	A15	A10	manual_provisional	题干明确是毁坏毕业作品的行为艺术，正文提出追打和录像的反制表演；艺术是主题，但报复、财产毁坏和可能违法行为构成司法边界，且未给出劝阻结论，暂定。	A15	A10	manual_provisional	yes	yes	yes	一致
+independent_blind	A10/A03 boundary	4c8d70b4-e511-559a-abad-85a90006ee86	政治	19	A10	A03	manual_confirmed	正文把政治定义为对应然的博弈、治理定义为对结果的实践，中心是政治/治理概念，定义论证为副轴。	A10	A03	manual_confirmed	yes	yes	yes	一致

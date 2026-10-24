@@ -1,0 +1,159 @@
+{
+  "fetchedAt": "2026-09-30T01:14:46.409387+08:00",
+  "articleCount": 25,
+  "totalCharacters": 27813,
+  "minPublishedAt": 1790031600000,
+  "maxPublishedAt": 1790679600000,
+  "articles": [
+    {
+      "id": "542bba1d-757d-56e4-9f9e-cf8ec572b6f0",
+      "title": "何金银",
+      "publishedAt": 1790031600000,
+      "chars": 776
+    },
+    {
+      "id": "37871724-c3ad-58f8-af63-8ea8225a79fa",
+      "title": "稳而后解",
+      "publishedAt": 1790118000000,
+      "chars": 2078
+    },
+    {
+      "id": "acf95274-b29b-576e-b1d2-19eb957690a1",
+      "title": "春眠不觉晓2",
+      "publishedAt": 1790161200000,
+      "chars": 515
+    },
+    {
+      "id": "5d6669d2-93b4-50ab-8cf5-793d0db60df3",
+      "title": "敏于言",
+      "publishedAt": 1790161200000,
+      "chars": 2642
+    },
+    {
+      "id": "1f350de7-0da4-54ed-8872-40e9dcb1629d",
+      "title": "相煎何急",
+      "publishedAt": 1790161200000,
+      "chars": 1302
+    },
+    {
+      "id": "5c88504b-a517-5461-a208-74268c284bff",
+      "title": "秒看",
+      "publishedAt": 1790161200000,
+      "chars": 712
+    },
+    {
+      "id": "d7aac1bf-d822-57aa-ae8d-a355488a8597",
+      "title": "趋光动物",
+      "publishedAt": 1790161200000,
+      "chars": 921
+    },
+    {
+      "id": "d949c480-f25d-53e7-918d-0954ff867b12",
+      "title": "不许不许可",
+      "publishedAt": 1790193095122,
+      "chars": 1392
+    },
+    {
+      "id": "d9db318c-8b22-5253-8441-1711b5f71c6a",
+      "title": "免欺",
+      "publishedAt": 1790204400000,
+      "chars": 797
+    },
+    {
+      "id": "a75aa470-377c-5356-8f83-6663e7f5a5aa",
+      "title": "幼天魔",
+      "publishedAt": 1790247600000,
+      "chars": 755
+    },
+    {
+      "id": "8ea2d685-60d7-5443-998a-e4217b282d99",
+      "title": "向人而生",
+      "publishedAt": 1790247600000,
+      "chars": 2211
+    },
+    {
+      "id": "4ccb3c22-2dd2-5a6f-8f04-1d35a2e8ec67",
+      "title": "天网疏漏",
+      "publishedAt": 1790290800000,
+      "chars": 1143
+    },
+    {
+      "id": "f0d2772e-64fe-5c62-81d7-8cdf706a5b53",
+      "title": "有光的",
+      "publishedAt": 1790463600000,
+      "chars": 985
+    },
+    {
+      "id": "5fe7834b-f955-5aff-97cd-09187b9c0821",
+      "title": "免烫",
+      "publishedAt": 1790506800000,
+      "chars": 788
+    },
+    {
+      "id": "2e20187c-831b-5042-9d2f-a96558a495fa",
+      "title": "失业公告",
+      "publishedAt": 1790506800000,
+      "chars": 1891
+    },
+    {
+      "id": "cb2ca1d4-abbb-5221-bbd6-c1f01f140dee",
+      "title": "相见时难",
+      "publishedAt": 1790506800000,
+      "chars": 844
+    },
+    {
+      "id": "ff25998b-b2da-56f5-82b9-f76725c460fc",
+      "title": "同此凉热",
+      "publishedAt": 1790506800000,
+      "chars": 1007
+    },
+    {
+      "id": "470ab9eb-d4b5-5776-918b-f1639e2cb7ca",
+      "title": "渔人码头",
+      "publishedAt": 1790506800000,
+      "chars": 466
+    },
+    {
+      "id": "f8a6e18f-41ce-515c-8003-a10acb8694db",
+      "title": "三重阶",
+      "publishedAt": 1790506800000,
+      "chars": 555
+    },
+    {
+      "id": "56168526-7e9c-546e-a929-cba3976c1ff0",
+      "title": "回马钩",
+      "publishedAt": 1790506800000,
+      "chars": 802
+    },
+    {
+      "id": "5331127a-fef8-5774-ab76-84b4571d4eb3",
+      "title": "一杆大烟枪",
+      "publishedAt": 1790506800000,
+      "chars": 1141
+    },
+    {
+      "id": "aaf04897-065c-5ae7-a17a-3fe1c211d7c3",
+      "title": "浪游人",
+      "publishedAt": 1790550000000,
+      "chars": 885
+    },
+    {
+      "id": "461dc70c-a89a-5dce-a273-125e70d528a4",
+      "title": "攻心车",
+      "publishedAt": 1790593200000,
+      "chars": 446
+    },
+    {
+      "id": "f38dd7d8-fc0d-54f6-b4d6-7b31db808ed6",
+      "title": "不凑数",
+      "publishedAt": 1790593365950,
+      "chars": 960
+    },
+    {
+      "id": "db335921-9c96-528d-87ca-b21c9a3e8862",
+      "title": "言者无罪",
+      "publishedAt": 1790679600000,
+      "chars": 1799
+    }
+  ]
+}

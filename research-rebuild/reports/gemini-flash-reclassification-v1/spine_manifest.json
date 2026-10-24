@@ -1,0 +1,552 @@
+[
+  {
+    "idx": 1,
+    "code": "B01",
+    "desc": "卷一·甲册·幼兒啟蒙與性情習慣",
+    "arts": 31,
+    "leaves": 113,
+    "pages": 120,
+    "spine_mm": 6.2,
+    "dir": "/storage/Users/currentUser/Documents/岐伯论/卷一/甲册"
+  },
+  {
+    "idx": 2,
+    "code": "B02A",
+    "desc": "卷一·乙册·上·學業功課與學校日常",
+    "arts": 98,
+    "leaves": 300,
+    "pages": 312,
+    "spine_mm": 15.3,
+    "dir": "/storage/Users/currentUser/Documents/岐伯论/卷一/乙册-上"
+  },
+  {
+    "idx": 3,
+    "code": "B02B",
+    "desc": "卷一·乙册·中·學業功課與學校日常",
+    "arts": 87,
+    "leaves": 276,
+    "pages": 286,
+    "spine_mm": 14.1,
+    "dir": "/storage/Users/currentUser/Documents/岐伯论/卷一/乙册-中"
+  },
+  {
+    "idx": 4,
+    "code": "B02C",
+    "desc": "卷一·乙册·下·學業功課與學校日常",
+    "arts": 77,
+    "leaves": 206,
+    "pages": 216,
+    "spine_mm": 10.8,
+    "dir": "/storage/Users/currentUser/Documents/岐伯论/卷一/乙册-下"
+  },
+  {
+    "idx": 5,
+    "code": "B03",
+    "desc": "卷一·丙册·言傳身教與獎懲邊界",
+    "arts": 73,
+    "leaves": 250,
+    "pages": 260,
+    "spine_mm": 12.8,
+    "dir": "/storage/Users/currentUser/Documents/岐伯论/卷一/丙册"
+  },
+  {
+    "idx": 6,
+    "code": "B04",
+    "desc": "卷一·丁册·親子溝通與青春叛逆",
+    "arts": 64,
+    "leaves": 219,
+    "pages": 228,
+    "spine_mm": 11.3,
+    "dir": "/storage/Users/currentUser/Documents/岐伯论/卷一/丁册"
+  },
+  {
+    "idx": 7,
+    "code": "B05",
+    "desc": "卷一·戊册·長輩相處與精神解綁",
+    "arts": 35,
+    "leaves": 118,
+    "pages": 126,
+    "spine_mm": 6.5,
+    "dir": "/storage/Users/currentUser/Documents/岐伯论/卷一/戊册"
+  },
+  {
+    "idx": 8,
+    "code": "B06",
+    "desc": "卷一·己册·成年子女自立與邊界",
+    "arts": 55,
+    "leaves": 148,
+    "pages": 156,
+    "spine_mm": 7.9,
+    "dir": "/storage/Users/currentUser/Documents/岐伯论/卷一/己册"
+  },
+  {
+    "idx": 9,
+    "code": "B07",
+    "desc": "卷一·庚册·手足同胞與家族親戚",
+    "arts": 44,
+    "leaves": 125,
+    "pages": 132,
+    "spine_mm": 6.8,
+    "dir": "/storage/Users/currentUser/Documents/岐伯论/卷一/庚册"
+  },
+  {
+    "idx": 10,
+    "code": "B08",
+    "desc": "卷一·辛册·宗族傳承與喪祭奠儀",
+    "arts": 38,
+    "leaves": 96,
+    "pages": 104,
+    "spine_mm": 5.4,
+    "dir": "/storage/Users/currentUser/Documents/岐伯论/卷一/辛册"
+  },
+  {
+    "idx": 11,
+    "code": "B38F",
+    "desc": "卷一·壬册·庭訓教化與親恩相報",
+    "arts": 82,
+    "leaves": 226,
+    "pages": 236,
+    "spine_mm": 11.7,
+    "dir": "/storage/Users/currentUser/Documents/岐伯论/卷一/壬册"
+  },
+  {
+    "idx": 12,
+    "code": "B11",
+    "desc": "卷二·甲册·擇偶標準與兩性吸引",
+    "arts": 90,
+    "leaves": 264,
+    "pages": 274,
+    "spine_mm": 13.5,
+    "dir": "/storage/Users/currentUser/Documents/岐伯论/卷二/甲册"
+  },
+  {
+    "idx": 13,
+    "code": "B12",
+    "desc": "卷二·乙册·婚姻存續與夫妻日常",
+    "arts": 57,
+    "leaves": 177,
+    "pages": 184,
+    "spine_mm": 9.2,
+    "dir": "/storage/Users/currentUser/Documents/岐伯论/卷二/乙册"
+  },
+  {
+    "idx": 14,
+    "code": "B13",
+    "desc": "卷二·丙册·親密背叛與離異止損",
+    "arts": 67,
+    "leaves": 189,
+    "pages": 198,
+    "spine_mm": 9.9,
+    "dir": "/storage/Users/currentUser/Documents/岐伯论/卷二/丙册"
+  },
+  {
+    "idx": 15,
+    "code": "B38E",
+    "desc": "卷二·丁册·情義本真與兩性名理",
+    "arts": 89,
+    "leaves": 231,
+    "pages": 240,
+    "spine_mm": 11.9,
+    "dir": "/storage/Users/currentUser/Documents/岐伯论/卷二/丁册"
+  },
+  {
+    "idx": 16,
+    "code": "B14",
+    "desc": "卷三·甲册·人情往來與禮數分寸",
+    "arts": 31,
+    "leaves": 86,
+    "pages": 94,
+    "spine_mm": 5.0,
+    "dir": "/storage/Users/currentUser/Documents/岐伯论/卷三/甲册"
+  },
+  {
+    "idx": 17,
+    "code": "B15",
+    "desc": "卷三·乙册·社交距離與孤立自處",
+    "arts": 49,
+    "leaves": 128,
+    "pages": 136,
+    "spine_mm": 7.0,
+    "dir": "/storage/Users/currentUser/Documents/岐伯论/卷三/乙册"
+  },
+  {
+    "idx": 18,
+    "code": "B16",
+    "desc": "卷三·丙册·危機識人與權義守界",
+    "arts": 43,
+    "leaves": 113,
+    "pages": 120,
+    "spine_mm": 6.2,
+    "dir": "/storage/Users/currentUser/Documents/岐伯论/卷三/丙册"
+  },
+  {
+    "idx": 19,
+    "code": "B38C",
+    "desc": "卷三·丁册·上·處世分寸與人我進退",
+    "arts": 136,
+    "leaves": 359,
+    "pages": 372,
+    "spine_mm": 18.2,
+    "dir": "/storage/Users/currentUser/Documents/岐伯论/卷三/丁册/上册"
+  },
+  {
+    "idx": 20,
+    "code": "B38D",
+    "desc": "卷三·丁册·下·處世分寸與人我進退",
+    "arts": 128,
+    "leaves": 319,
+    "pages": 330,
+    "spine_mm": 16.2,
+    "dir": "/storage/Users/currentUser/Documents/岐伯论/卷三/丁册/下册"
+  },
+  {
+    "idx": 21,
+    "code": "B17A",
+    "desc": "卷四·甲册·上·情志平復與容貌自和",
+    "arts": 79,
+    "leaves": 225,
+    "pages": 234,
+    "spine_mm": 11.6,
+    "dir": "/storage/Users/currentUser/Documents/岐伯论/卷四/甲册/上册"
+  },
+  {
+    "idx": 22,
+    "code": "B17B",
+    "desc": "卷四·甲册·下·情志平復與容貌自和",
+    "arts": 74,
+    "leaves": 227,
+    "pages": 236,
+    "spine_mm": 11.7,
+    "dir": "/storage/Users/currentUser/Documents/岐伯论/卷四/甲册/下册"
+  },
+  {
+    "idx": 23,
+    "code": "B18",
+    "desc": "卷四·乙册·知行合一與作息身息",
+    "arts": 89,
+    "leaves": 228,
+    "pages": 238,
+    "spine_mm": 11.8,
+    "dir": "/storage/Users/currentUser/Documents/岐伯论/卷四/乙册"
+  },
+  {
+    "idx": 24,
+    "code": "B20A",
+    "desc": "卷五·甲册·上·職場彙報與權責留痕",
+    "arts": 129,
+    "leaves": 323,
+    "pages": 336,
+    "spine_mm": 16.5,
+    "dir": "/storage/Users/currentUser/Documents/岐伯论/卷五/甲册/上册"
+  },
+  {
+    "idx": 25,
+    "code": "B20B",
+    "desc": "卷五·甲册·中·職場彙報與權責留痕",
+    "arts": 112,
+    "leaves": 265,
+    "pages": 276,
+    "spine_mm": 13.6,
+    "dir": "/storage/Users/currentUser/Documents/岐伯论/卷五/甲册/中册"
+  },
+  {
+    "idx": 26,
+    "code": "B20C",
+    "desc": "卷五·甲册·下·職場彙報與權責留痕",
+    "arts": 124,
+    "leaves": 368,
+    "pages": 380,
+    "spine_mm": 18.6,
+    "dir": "/storage/Users/currentUser/Documents/岐伯论/卷五/甲册/下册"
+  },
+  {
+    "idx": 27,
+    "code": "B22A",
+    "desc": "卷五·乙册·上·商業競爭與資產投資",
+    "arts": 93,
+    "leaves": 233,
+    "pages": 242,
+    "spine_mm": 12.0,
+    "dir": "/storage/Users/currentUser/Documents/岐伯论/卷五/乙册/上册"
+  },
+  {
+    "idx": 28,
+    "code": "B22B",
+    "desc": "卷五·乙册·下·商業競爭與資產投資",
+    "arts": 79,
+    "leaves": 212,
+    "pages": 222,
+    "spine_mm": 11.0,
+    "dir": "/storage/Users/currentUser/Documents/岐伯论/卷五/乙册/下册"
+  },
+  {
+    "idx": 29,
+    "code": "B23A",
+    "desc": "卷六·甲册·上·公共熱點與事件剖析",
+    "arts": 77,
+    "leaves": 221,
+    "pages": 230,
+    "spine_mm": 11.4,
+    "dir": "/storage/Users/currentUser/Documents/岐伯论/卷六/甲册/上册"
+  },
+  {
+    "idx": 30,
+    "code": "B23B",
+    "desc": "卷六·甲册·下·公共熱點與事件剖析",
+    "arts": 70,
+    "leaves": 190,
+    "pages": 200,
+    "spine_mm": 10.0,
+    "dir": "/storage/Users/currentUser/Documents/岐伯论/卷六/甲册/下册"
+  },
+  {
+    "idx": 31,
+    "code": "B24",
+    "desc": "卷六·乙册·青年心境與躺平反思",
+    "arts": 93,
+    "leaves": 257,
+    "pages": 266,
+    "spine_mm": 13.1,
+    "dir": "/storage/Users/currentUser/Documents/岐伯论/卷六/乙册"
+  },
+  {
+    "idx": 32,
+    "code": "B25",
+    "desc": "卷六·丙册·網絡生態與群體極化",
+    "arts": 28,
+    "leaves": 76,
+    "pages": 82,
+    "spine_mm": 4.4,
+    "dir": "/storage/Users/currentUser/Documents/岐伯论/卷六/丙册"
+  },
+  {
+    "idx": 33,
+    "code": "B26",
+    "desc": "卷六·丁册·性別議題與兩性輿論",
+    "arts": 52,
+    "leaves": 136,
+    "pages": 144,
+    "spine_mm": 7.3,
+    "dir": "/storage/Users/currentUser/Documents/岐伯论/卷六/丁册"
+  },
+  {
+    "idx": 34,
+    "code": "B27",
+    "desc": "卷六·戊册·教育體制與社會流動",
+    "arts": 41,
+    "leaves": 114,
+    "pages": 122,
+    "spine_mm": 6.3,
+    "dir": "/storage/Users/currentUser/Documents/岐伯论/卷六/戊册"
+  },
+  {
+    "idx": 35,
+    "code": "B28",
+    "desc": "卷六·己册·消費主義與生活觀念",
+    "arts": 35,
+    "leaves": 80,
+    "pages": 88,
+    "spine_mm": 4.7,
+    "dir": "/storage/Users/currentUser/Documents/岐伯论/卷六/己册"
+  },
+  {
+    "idx": 36,
+    "code": "B29",
+    "desc": "卷六·庚册·現代科技與工具反思",
+    "arts": 80,
+    "leaves": 198,
+    "pages": 208,
+    "spine_mm": 10.4,
+    "dir": "/storage/Users/currentUser/Documents/岐伯论/卷六/庚册"
+  },
+  {
+    "idx": 37,
+    "code": "B30",
+    "desc": "卷六·辛册·文明演進與社會秩序",
+    "arts": 66,
+    "leaves": 166,
+    "pages": 176,
+    "spine_mm": 8.9,
+    "dir": "/storage/Users/currentUser/Documents/岐伯论/卷六/辛册"
+  },
+  {
+    "idx": 38,
+    "code": "B36A",
+    "desc": "卷六·壬册·上·時局經緯與家國論衡",
+    "arts": 84,
+    "leaves": 262,
+    "pages": 272,
+    "spine_mm": 13.4,
+    "dir": "/storage/Users/currentUser/Documents/岐伯论/卷六/壬册/上册"
+  },
+  {
+    "idx": 39,
+    "code": "B36B",
+    "desc": "卷六·壬册·下·時局經緯與家國論衡",
+    "arts": 97,
+    "leaves": 283,
+    "pages": 294,
+    "spine_mm": 14.5,
+    "dir": "/storage/Users/currentUser/Documents/岐伯论/卷六/壬册/下册"
+  },
+  {
+    "idx": 40,
+    "code": "B31A",
+    "desc": "卷七·甲册·上·存在本質與生命意義",
+    "arts": 129,
+    "leaves": 326,
+    "pages": 340,
+    "spine_mm": 16.6,
+    "dir": "/storage/Users/currentUser/Documents/岐伯论/卷七/甲册/上册"
+  },
+  {
+    "idx": 41,
+    "code": "B31B",
+    "desc": "卷七·甲册·下·存在本質與生命意義",
+    "arts": 123,
+    "leaves": 382,
+    "pages": 394,
+    "spine_mm": 19.2,
+    "dir": "/storage/Users/currentUser/Documents/岐伯论/卷七/甲册/下册"
+  },
+  {
+    "idx": 42,
+    "code": "B32A",
+    "desc": "卷七·乙册·上·名相辨析與語言牢籠",
+    "arts": 93,
+    "leaves": 230,
+    "pages": 240,
+    "spine_mm": 11.9,
+    "dir": "/storage/Users/currentUser/Documents/岐伯论/卷七/乙册/上册"
+  },
+  {
+    "idx": 43,
+    "code": "B32B",
+    "desc": "卷七·乙册·下·名相辨析與語言牢籠",
+    "arts": 97,
+    "leaves": 299,
+    "pages": 310,
+    "spine_mm": 15.2,
+    "dir": "/storage/Users/currentUser/Documents/岐伯论/卷七/乙册/下册"
+  },
+  {
+    "idx": 44,
+    "code": "B33",
+    "desc": "卷七·丙册·善惡分野與人性幽微",
+    "arts": 73,
+    "leaves": 185,
+    "pages": 194,
+    "spine_mm": 9.7,
+    "dir": "/storage/Users/currentUser/Documents/岐伯论/卷七/丙册"
+  },
+  {
+    "idx": 45,
+    "code": "B34",
+    "desc": "卷七·丁册·認識局限與心智模型",
+    "arts": 71,
+    "leaves": 178,
+    "pages": 188,
+    "spine_mm": 9.4,
+    "dir": "/storage/Users/currentUser/Documents/岐伯论/卷七/丁册"
+  },
+  {
+    "idx": 46,
+    "code": "B35",
+    "desc": "卷七·戊册·命途因果與得失隨緣",
+    "arts": 50,
+    "leaves": 120,
+    "pages": 128,
+    "spine_mm": 6.6,
+    "dir": "/storage/Users/currentUser/Documents/岐伯论/卷七/戊册"
+  },
+  {
+    "idx": 47,
+    "code": "B37",
+    "desc": "卷七·己册·神聖敬畏與信仰維度",
+    "arts": 74,
+    "leaves": 199,
+    "pages": 208,
+    "spine_mm": 10.4,
+    "dir": "/storage/Users/currentUser/Documents/岐伯论/卷七/己册"
+  },
+  {
+    "idx": 48,
+    "code": "B38A",
+    "desc": "卷七·庚册·子·心性自持與精神獨立",
+    "arts": 114,
+    "leaves": 282,
+    "pages": 294,
+    "spine_mm": 14.5,
+    "dir": "/storage/Users/currentUser/Documents/岐伯论/卷七/庚册/子册"
+  },
+  {
+    "idx": 49,
+    "code": "B38B",
+    "desc": "卷七·庚册·丑·心性自持與精神獨立",
+    "arts": 122,
+    "leaves": 287,
+    "pages": 298,
+    "spine_mm": 14.7,
+    "dir": "/storage/Users/currentUser/Documents/岐伯论/卷七/庚册/丑册"
+  },
+  {
+    "idx": 50,
+    "code": "B38I",
+    "desc": "卷七·庚册·寅·世情人性與義理雜談",
+    "arts": 89,
+    "leaves": 231,
+    "pages": 240,
+    "spine_mm": 11.9,
+    "dir": "/storage/Users/currentUser/Documents/岐伯论/卷七/庚册/寅册"
+  },
+  {
+    "idx": 51,
+    "code": "B38J",
+    "desc": "卷七·庚册·卯·世情人性與義理雜談",
+    "arts": 145,
+    "leaves": 278,
+    "pages": 292,
+    "spine_mm": 14.4,
+    "dir": "/storage/Users/currentUser/Documents/岐伯论/卷七/庚册/卯册"
+  },
+  {
+    "idx": 52,
+    "code": "B38G",
+    "desc": "卷八·丙册·格物致知與機巧萬類",
+    "arts": 124,
+    "leaves": 266,
+    "pages": 278,
+    "spine_mm": 13.7,
+    "dir": "/storage/Users/currentUser/Documents/岐伯论/卷八/丙册"
+  },
+  {
+    "idx": 53,
+    "code": "B38H",
+    "desc": "卷八·丁册·治家器術與聲藝百工",
+    "arts": 111,
+    "leaves": 254,
+    "pages": 266,
+    "spine_mm": 13.1,
+    "dir": "/storage/Users/currentUser/Documents/岐伯论/卷八/丁册"
+  },
+  {
+    "idx": 54,
+    "code": "B39",
+    "desc": "卷八·甲册·藝能創作與生活美學",
+    "arts": 51,
+    "leaves": 114,
+    "pages": 122,
+    "spine_mm": 6.3,
+    "dir": "/storage/Users/currentUser/Documents/岐伯论/卷八/甲册"
+  },
+  {
+    "idx": 55,
+    "code": "B40",
+    "desc": "卷八·乙册·治亂興亡與國家工程",
+    "arts": 49,
+    "leaves": 113,
+    "pages": 120,
+    "spine_mm": 6.2,
+    "dir": "/storage/Users/currentUser/Documents/岐伯论/卷八/乙册"
+  }
+]

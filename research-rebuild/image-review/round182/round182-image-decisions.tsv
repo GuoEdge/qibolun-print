@@ -1,0 +1,6 @@
+﻿ordinal	id	title	image_count	reviewed_image_count	failed_image_count	image_review_status	article_decision	image_decision	confidence	rationale	reviewer	reviewed_at
+3435	c6afed4c-3d1b-5df4-8388-494f7d756c13	年号	5	5	0	complete	retain_article	keep_and_ocr	manual_visual_audit_20260926	5 张为公历纪年说明与清代/民国历书书影，是“年号”正文历法与纪年论证的直接材料，保留并 OCR；历书来源需核验。	main-thread+round182-image-visual-review	2026-09-26
+3520	f9d288d4-cbf7-51e0-ae6f-a7180096ce4c	不怯场	2	2	0	complete	retain_article	keep_selected_images	manual_visual_audit_20260926	宫殿模型与中式厅堂内景对应正文“太和殿与军机处”的治理沟通传统比较，保留两张。	main-thread+round182-image-visual-review	2026-09-26
+3550	250b12b2-5530-527c-870c-a33dc4782e36	奢侈品	6	6	0	complete	retain_article	keep_and_ocr	manual_visual_audit_20260926	上海微电子订购 Bumotec 的新闻截图与 Bumotec 产品资料是“奢侈品”正文高端机床案例的直接证据，保留并 OCR；新闻来源与产品资料需外部核验。	main-thread+round182-image-visual-review	2026-09-26
+3628	c4bab8ec-36c8-546c-84b2-a9fa20cd813d	前途	1	1	0	complete	retain_article	omit_or_keep_as_illustration	manual_visual_audit_20260926	唯一图片是研究报告报价单，与“前途”正文的强基计划与专业选择议题关系薄弱，属可删；若保留只能作为“信息商品定价”的旁例。	main-thread+round182-image-visual-review	2026-09-26
+3742	c947b0a0-3a44-571d-bef7-8663f537fb19	能力	10	10	0	complete	retain_article	keep_selected_images	manual_visual_audit_20260926	10 张分别是户型图、剧本页、解剖图、三视图、零件图、产品图与手绘速写，正是正文所列“语言、图形、表格、流程图、建模”表达训练科目的样例，保留；其中剧本页含英文原文，需注明来源未核验。	main-thread+round182-image-visual-review	2026-09-26

@@ -1,0 +1,30 @@
+# 本地与编辑器噪声
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+__pycache__/
+*.pyc
+*.tmp
+.tmp*
+*.bak
+*.bak_*
+*.backup
+*.backup.*
+
+# 临时抓取、会话与原始响应
+/research/online-increment/raw/
+/research/online-increment/read/
+/research/online-increment/.session-curl
+/research/online-increment/.session-cookie
+/research/online-increment/review-packet-*.md
+/research/online-increment/offline-*.csv
+/research/online-increment/version-diff-*.jsonl
+
+# 旧语料快照
+/sooon-q9adg-articles.jsonl
+/sooon-q9adg-articles-v2.jsonl
+/sooon-q9adg-articles-v3.jsonl
+/sooon-q9adg-articles-v4.jsonl
+/sooon-q9adg-articles-v5.jsonl

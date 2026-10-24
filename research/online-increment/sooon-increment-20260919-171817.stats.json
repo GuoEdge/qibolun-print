@@ -1,0 +1,24 @@
+{
+  "startedAt": "2026-09-19T17:18:17.8704714+08:00",
+  "endpoint": "https://sooon.ai/api/graphql",
+  "corpusPath": "D:\\岐伯论\\sooon-q9adg-articles.jsonl",
+  "listManifest": "D:\\岐伯论\\research\\scripts\\..\\online-increment\\list-manifest-full.json",
+  "outputPath": "D:\\岐伯论\\research\\scripts\\..\\online-increment\\sooon-increment-20260919-171817.jsonl",
+  "targetCount": 438,
+  "written": 438,
+  "newArticles": 133,
+  "updatedArticles": 305,
+  "reconcile": {
+    "changedUpdatedAt": null,
+    "onlineCount": 4200
+  },
+  "noLexical": 0,
+  "emptyText": 0,
+  "failures": [],
+  "minPublishedAt": 1504832944000,
+  "maxPublishedAt": 1786964400000,
+  "totalTextChars": 487053,
+  "textPolicy": "text 由 lexical 派生：忽略 linebreak 节点，root 各子块以单个 \\n 连接；lexical 原样保留为权威字段",
+  "status": "PASS",
+  "finishedAt": "2026-09-19T17:30:42.3720302+08:00"
+}

@@ -1,0 +1,43 @@
+{
+  "records": 4305,
+  "unique_ids": 4305,
+  "primary_topic_counts": {
+    "A01": 379,
+    "A02": 146,
+    "A03": 405,
+    "A04": 266,
+    "A05": 311,
+    "A06": 552,
+    "A07": 362,
+    "A08": 314,
+    "A09": 80,
+    "A10": 275,
+    "A11": 169,
+    "A12": 220,
+    "A13": 182,
+    "A14": 43,
+    "A15": 177,
+    "A16": 130,
+    "A17": 47,
+    "A18": 97,
+    "A19": 39,
+    "A20": 101,
+    "A21": 5,
+    "A00": 5
+  },
+  "status_counts": {
+    "manual_confirmed": 4298,
+    "manual_provisional": 7
+  },
+  "candidate_route_status_counts": {
+    "manual_decision": 4305
+  },
+  "image_review_required": 51,
+  "source_material_status_counts": {
+    "lexical_or_image_only": 2,
+    "text_present": 4303
+  },
+  "official_unassigned": 616,
+  "output": "/mnt/d/岐伯论/research-rebuild/reports/print-topic-candidates-v2.csv",
+  "method": "official path and legacy paper route outrank concepts; candidate_route_status is separate from framework classification_status; ties and weak-only concepts remain needs_human_classification"
+}

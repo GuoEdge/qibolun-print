@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 850" style="background:#FAF9F7">
+  <defs>
+    <style>
+      .title { font-family: 'SimSun', serif; font-size: 22px; fill: #1A1715; font-weight: bold; }
+      .header { font-family: 'SimSun', serif; font-size: 16px; fill: #FFFFFF; font-weight: bold; }
+      .concept-main { font-family: 'SimSun', serif; font-size: 18px; fill: #1A1715; font-weight: bold; }
+      .concept-sub { font-family: 'SimSun', serif; font-size: 14px; fill: #4A4745; }
+      .concept-item { font-family: 'SimSun', serif; font-size: 15px; fill: #1A1715; }
+      .arrow-text { font-family: 'SimSun', serif; font-size: 13px; fill: #8F2D26; }
+      .box-header { fill: #8F2D26; stroke: #6D2119; stroke-width: 1.5; }
+      .box-row { fill: #FFFFFF; stroke: #D5D3D0; stroke-width: 1; }
+      .box-row-alt { fill: #F5F5F5; stroke: #D5D3D0; stroke-width: 1; }
+    </style>
+  </defs>
+  
+  <!-- 标题 -->
+  <text x="700" y="40" class="title" text-anchor="middle">岐伯论核心概念图谱</text>
+  
+  <!-- 表格 -->
+  <!-- 表头 -->
+  <rect x="100" y="80" width="200" height="50" class="box-header"/>
+  <text x="200" y="112" class="header" text-anchor="middle">层级</text>
+  
+  <rect x="300" y="80" width="350" height="50" class="box-header"/>
+  <text x="475" y="112" class="header" text-anchor="middle">左翼(认识论与方法)</text>
+  
+  <rect x="650" y="80" width="200" height="50" class="box-header"/>
+  <text x="750" y="112" class="header" text-anchor="middle">中枢</text>
+  
+  <rect x="850" y="80" width="450" height="50" class="box-header"/>
+  <text x="1075" y="112" class="header" text-anchor="middle">右翼(伦理与权界)</text>
+  
+  <!-- 第1行：至高境界 -->
+  <rect x="100" y="130" width="200" height="80" class="box-row"/>
+  <text x="200" y="175" class="concept-item" text-anchor="middle">至高境界</text>
+  
+  <rect x="300" y="130" width="350" height="80" class="box-row"/>
+  
+  <rect x="650" y="130" width="200" height="80" class="box-row"/>
+  <text x="750" y="162" class="concept-main" text-anchor="middle">神性享乐</text>
+  <text x="750" y="185" class="concept-sub" text-anchor="middle">(至高愉悦)</text>
+  
+  <rect x="850" y="130" width="450" height="80" class="box-row"/>
+  
+  <!-- 第2行：动力与场域 -->
+  <rect x="100" y="210" width="200" height="100" class="box-row-alt"/>
+  <text x="200" y="265" class="concept-item" text-anchor="middle">动力与场域</text>
+  
+  <rect x="300" y="210" width="350" height="100" class="box-row-alt"/>
+  <text x="475" y="250" class="concept-main" text-anchor="middle">自强</text>
+  <text x="475" y="275" class="concept-sub" text-anchor="middle">(内在动力源)</text>
+  
+  <rect x="650" y="210" width="200" height="100" class="box-row-alt"/>
+  <text x="750" y="245" class="arrow-text" text-anchor="middle">↑ 超越功利 ↓</text>
+  
+  <rect x="850" y="210" width="450" height="100" class="box-row-alt"/>
+  <text x="1075" y="250" class="concept-main" text-anchor="middle">旷野</text>
+  <text x="1075" y="275" class="concept-sub" text-anchor="middle">(直面真实)</text>
+  
+  <!-- 第3行：核心概念群 -->
+  <rect x="100" y="310" width="200" height="180" class="box-row"/>
+  <text x="200" y="410" class="concept-item" text-anchor="middle">核心概念群</text>
+  
+  <rect x="300" y="310" width="350" height="180" class="box-row"/>
+  <text x="320" y="350" class="concept-item">• 元技能</text>
+  <text x="320" y="380" class="concept-item">• SOP</text>
+  <text x="320" y="410" class="concept-item">• 信源管理</text>
+  <text x="320" y="440" class="concept-item">• 错得对</text>
+  <text x="320" y="470" class="concept-item">• 择善固执</text>
+  
+  <rect x="650" y="310" width="200" height="180" class="box-row"/>
+  
+  <rect x="850" y="310" width="450" height="180" class="box-row"/>
+  <text x="870" y="350" class="concept-item">• 人己权界</text>
+  <text x="870" y="380" class="concept-item">• 评价权</text>
+  <text x="870" y="410" class="concept-item">• 净输出</text>
+  <text x="870" y="440" class="concept-item">• 爱不生债</text>
+  <text x="870" y="470" class="concept-item">• 不以恶为业</text>
+  <text x="1120" y="350" class="concept-item">• CARITAS</text>
+  
+  <!-- 第4行：终极注脚 -->
+  <rect x="100" y="490" width="200" height="80" class="box-row-alt"/>
+  <text x="200" y="535" class="concept-item" text-anchor="middle">终极注脚</text>
+  
+  <rect x="300" y="490" width="350" height="80" class="box-row-alt"/>
+  
+  <rect x="650" y="490" width="200" height="80" class="box-row-alt"/>
+  <text x="750" y="520" class="concept-main" text-anchor="middle">Poetic Irony</text>
+  <text x="750" y="545" class="concept-sub" text-anchor="middle">(历史反讽与人神分野)</text>
+  
+  <rect x="850" y="490" width="450" height="80" class="box-row-alt"/>
+  
+  <!-- 说明文字 -->
+  <text x="100" y="610" class="concept-sub">左翼：认识论与方法——如何观察世界、如何迭代心智、如何将智慧降解为可执行的最小单元</text>
+  <text x="100" y="640" class="concept-sub">右翼：伦理与权界——如何划定边界、如何守护主权、如何超越债务型人际纠葛、如何成为净输出之源</text>
+  <text x="100" y="670" class="concept-sub">中枢：从内在动力源(自强)与真实旷野(认知)出发,超越功利算计,至终抵达神性享乐之极境</text>
+  <text x="100" y="700" class="concept-sub">终极注脚：Poetic Irony——识得天道反讽之幽微,守住人神之有限边界,得大解脱之寂静欢喜</text>
+</svg>

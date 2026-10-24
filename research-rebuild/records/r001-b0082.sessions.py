@@ -1,0 +1,778 @@
+# -*- coding: utf-8 -*-
+"""批次 r001-b0082 的记录构造器（骨架由 build_sessions.py 机械生成）。
+
+只填写 ANALYSIS：每篇一条，key = SKELETON 中的 uid。
+字段要求见 prompts/initial-reading-brief.md。
+
+命令行：
+  python3 records/r001-b0082.sessions.py            # 写 out/r001-b0082.out.jsonl
+  python3 records/r001-b0082.sessions.py --out /tmp/x.jsonl
+"""
+
+from __future__ import annotations
+
+import argparse
+import json
+import os
+import sys
+
+_HERE = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, os.path.join(_HERE, '..', 'scripts'))
+from authoring import build_record, load_batch_rows, write_jsonl  # noqa: E402
+
+BATCH = "r001-b0082"
+STARTED = "2026-09-20T00:00:00+08:00"
+COMPLETED = "2026-09-20T00:00:00+08:00"
+
+with open(os.path.join(_HERE, 'r001-b0082.skeleton.json'), encoding='utf-8') as _fh:
+    SKELETON = json.load(_fh)
+UID_BY_ID = {s['id']: s['uid'] for s in SKELETON}
+
+
+ANALYSIS = {
+ "170f9bfc": {
+  "analysis": {
+   "question_context": "提问者引述特朗普在 G20 峰会的说法——《巴黎协定》旨在「杀死美国经济」、不是为了拯救环境——并问“对此你怎么看”。该说法属于提问者转述的特朗普言论，不是提问者本人立场；正文没有直接评价或复述它，只以一个未完成的条件句加一句条件性结论作答。",
+   "content_units": [
+    {"unit_id": "U001", "paragraph_refs": ["P001", "P002"], "summary": "以“如果美国人民——”开启假设句，并标明以下清单来自网友分享、持续更新中。", "role": "context"},
+    {"unit_id": "U002", "paragraph_refs": ["P003", "P004", "P005", "P006", "P007", "P008", "P009", "P010", "P011", "P012", "P013", "P014", "P015", "P016", "P017", "P018", "P019", "P020", "P021", "P022", "P023", "P024", "P025"], "summary": "以同一句式排比列举网友分享的节俭、修旧、循环利用行为（淘米水洗碗冲厕、马桶水箱放砖头、旧衣做拖把、攒废品卖、拔插头、关灯、种葱、修鞋、吊高汤、旧输液管做止血带等）。", "role": "example"},
+    {"unit_id": "U003", "paragraph_refs": ["P026"], "summary": "以省略号收束清单，表示未穷尽。", "role": "transition"},
+    {"unit_id": "U004", "paragraph_refs": ["P027"], "summary": "以“那他说得也许有道理”作条件性结论，不展开因果论证。", "role": "conclusion"}
+   ],
+   "main_claims": [
+    {"claim_id": "C001", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "本篇清单内容来自网友分享，且处于持续更新中。", "evidence": ["E1"]},
+    {"claim_id": "C002", "claim_type": "author_qualified", "attribution": "author", "modality": "qualified", "statement": "如果美国人民过着清单所列的节俭生活，那么“他”（据提问语境指特朗普）说得也许有道理。", "evidence": ["E2", "E3"]},
+    {"claim_id": "C003", "claim_type": "quoted_or_cited", "attribution": "cited_source", "cited_source": "网友分享（未具名，正文自述来源）", "modality": "asserted", "statement": "被引清单主张：美国人民会做出一系列节省、修旧、重复利用的日常行为。", "evidence": ["E4", "E5", "E6", "E7"]}
+   ],
+   "argument_steps": [
+    "① 以未完成的条件句“如果美国人民——”提出假设，结论暂缺（P001）。",
+    "② 标明清单来源为网友分享、持续更新，与作者自身主张作区分（P002）。",
+    "③ 用同一句式排比列举二十三段节俭行为，覆盖饮食、用水、用电、穿戴、包装、医疗用品等（P003-P025）。",
+    "④ 以省略号表示清单未穷尽（P026）。",
+    "⑤ 以“那他说得也许有道理”作条件性结论，未说明成立条件之外的情形，也未展开推理（P027）。"
+   ],
+   "concept_usage": [
+    {"term": "杀死美国经济", "meaning": "提问者转述的特朗普对《巴黎协定》的定性；正文未复述该短语，仅以“他”指代。", "evidence": "P027", "ambiguity": "正文未点名“他”的所指，需借提问字段确定。"},
+    {"term": "如果美国人民——", "meaning": "全文唯一的结构框架：以未完成条件句引出清单，结论随条件是否成立而定。", "evidence": "P001", "ambiguity": "条件句的结论部分（若条件不成立会怎样）未写出。"},
+    {"term": "网友分享", "meaning": "清单内容的来源标记，作者以此说明清单不是本人原创主张。", "evidence": "P002", "ambiguity": "网友身份、分享平台与选取标准均未说明。"}
+   ],
+   "examples_and_targets": [
+    "马桶水箱放砖头或一瓶水、旧衣做拖把、乳胶漆桶改水桶（P004-P006，网友分享的行为清单，修辞材料）",
+    "塑料瓶、易拉罐、旧报纸攒下来卖；看完电视拔插头；关卧室门开空调且人走机关（P007-P009）",
+    "不关灯骂小孩、每天一道剩菜、阳台种葱、洗衣液瓶改浇水壶、碎肥皂装袜子、自己修鞋、保温杯带水（P010-P016）",
+    "虾头鸡架猪骨吊高汤、购物袋做垃圾袋、留包装箱气泡膜发快递、面巾纸撕四条、毛巾掉毛后做抹布（P017-P021）",
+    "为 iPhone home 键不坏开辅助控制、旧输液器黄管剪短做止血带、雀巢咖啡玻璃罐当茶缸、舍不得扔马口铁盒（P022-P025）",
+    "特朗普与《巴黎协定》：仅见于提问字段，为作者回应的语境，正文未点名，也未核实相关事实。"
+   ],
+   "conditions": [
+    "条件句“如果美国人民——”是全文前提；条件不成立则结论无着落（P001、P027）。",
+    "结论用“也许”弱化，非断言（P027）。",
+    "清单被限定为“网友分享，持续更新中”，非穷尽列举（P002、P026）。"
+   ],
+   "rhetoric_and_tone": "冷面、留白式反讽：正文几乎不含论证，只有一句引导语、二十三条同构排比和一句轻描淡写的条件性结论；明确标注内容来自网友分享；以省略号和“也许”保留余地，不直接表态，也不复述“杀死美国经济”这一争议说法。",
+   "unresolved_questions": [
+    "结论句中的“他”未在正文点名，须靠提问字段（特朗普）确定所指。",
+    "作者对特朗普说法是赞同、反讽还是保留，正文只有“也许有道理”的条件结论，未明说。",
+    "清单所列行为与美国人民实际生活、与“杀死美国经济”之间的因果关联，正文完全未说明。",
+    "清单来源为“网友分享”且“持续更新中”，具体来源与选取标准不可考；updated_at（2021-09-20）与 published_at（2020-11-24）之间的编辑内容未说明。",
+    "条件句的结论部分（若美国人民不如此生活会怎样）未写出，全篇态度解读存在歧义。"
+   ],
+   "evidence": [
+    {"key": "E1", "paragraph_id": "P002", "quote": "（以下部分来自网友分享，持续更新中）", "relation": "supports"},
+    {"key": "E2", "paragraph_id": "P001", "quote": "如果美国人民——", "relation": "context"},
+    {"key": "E3", "paragraph_id": "P027", "quote": "那他说得也许有道理。", "relation": "supports"},
+    {"key": "E4", "paragraph_id": "P003", "quote": "会把淘了米的水用来洗碗，再把洗了碗的收集起来冲厕所；", "relation": "supports"},
+    {"key": "E5", "paragraph_id": "P008", "quote": "会看完电视之后把插座自己的插头都拔掉；", "relation": "supports"},
+    {"key": "E6", "paragraph_id": "P012", "quote": "会在阳台种葱；", "relation": "supports"},
+    {"key": "E7", "paragraph_id": "P021", "quote": "会把一条毛巾用掉毛，再用来做抹布；", "relation": "supports"},
+    {"key": "E8", "paragraph_id": "P026", "quote": "……", "relation": "context"}
+   ]
+  },
+  "provisional_tags": {
+   "domain_candidates": ["国际政治", "气候与环境政策", "经济评论", "日常生活与消费"],
+   "issue_candidates": ["特朗普对《巴黎协定》的批评", "美国经济与环保政策", "节俭与循环利用的生活方式"],
+   "text_function_candidates": ["反讽式评论", "修辞性应答", "列举式回应"],
+   "object_candidates": ["特朗普", "美国人民", "《巴黎协定》", "G20"],
+   "working_keywords": ["杀死美国经济", "巴黎协定", "如果美国人民", "网友分享", "人走机关"]
+  },
+  "notes": "正文为清单式短答，语境依赖提问字段；清单内容作者明示来自网友分享，已按引用处理（C003），未计入作者主张。无图片节点，full_text_checked=true。updated_at 晚于 published_at，编辑内容未说明。"
+ },
+ "174f760a": {
+  "analysis": {
+   "question_context": "提问者问“为什么身边的人都瞧不起努力的人?”。提问者对“身边人都瞧不起努力者”的描述属于提问者说法，正文未确认其为普遍事实，而是把它限定在“努力还没兑现之前”，并推广为“大部分人类的普遍属性”。作者以“因为成功的人都是独立的”直接作答。",
+   "content_units": [
+    {"unit_id": "U001", "paragraph_refs": ["P001"], "summary": "开门见山给出答案：成功的人都是独立的。", "role": "claim"},
+    {"unit_id": "U002", "paragraph_refs": ["P002"], "summary": "以“解释一下吧：”引出下文（此处 lexical 为分隔线）。", "role": "transition"},
+    {"unit_id": "U003", "paragraph_refs": ["P003", "P004", "P005", "P006"], "summary": "限定现象发生的时段（努力尚未兑现前，尤其升学、毕业、升职前），并以中考、高考、没希望的公司为例说明努力看似不改变处境。", "role": "qualification"},
+    {"unit_id": "U004", "paragraph_refs": ["P007", "P008", "P009"], "summary": "转折：一旦迈过一道坎（中考、高考、跳槽），努力会让人与那群人瞬间走上不同道路，几乎不再相见。", "role": "claim"},
+    {"unit_id": "U005", "paragraph_refs": ["P010", "P011"], "summary": "给出归因：每个台阶上都有人把该处当作埋骨之所并嘲笑想继续向前的人；根本原因是ta们自己满意，不满足者构成嘲讽，因而自我防卫。", "role": "reason"},
+    {"unit_id": "U006", "paragraph_refs": ["P012"], "summary": "把现象推广为“大部分人类的普遍属性”，称任何平台都有这样的“定居者”。", "role": "qualification"},
+    {"unit_id": "U007", "paragraph_refs": ["P013", "P014"], "summary": "结论与行动要求：自强不息的人必须把无视和对抗这种嘲讽当作必修课并“毕业”，这是“人格独立”的必备内容。", "role": "conclusion"},
+    {"unit_id": "U008", "paragraph_refs": ["P015"], "summary": "承认代价：这会导致一定程度上的“孤独”，但没得选择。", "role": "qualification"}
+   ],
+   "main_claims": [
+    {"claim_id": "C001", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "努力者被瞧不起的原因在于“成功的人都是独立的”。", "evidence": ["E1"]},
+    {"claim_id": "C002", "claim_type": "author_qualified", "attribution": "author", "modality": "qualified", "statement": "这种现象一般发生在努力还没兑现之前，尤其是升学考试前、毕业典礼前、升职前。", "evidence": ["E2"]},
+    {"claim_id": "C003", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "在努力尚未兑现的阶段（如中考前三年、没希望的公司），努力看起来不改变处境，旁人的嘲笑只能听着。", "evidence": ["E3", "E4", "E5"]},
+    {"claim_id": "C004", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "一旦迈过一道坎（中考、高考、跳槽），努力就会让人与那群人瞬间踏上不同的道路，几乎从此不再相见。", "evidence": ["E6", "E7", "E8"]},
+    {"claim_id": "C005", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "每一个台阶上都有人把该台阶当作埋骨之所，会嘲笑想超越此地继续向前的人。", "evidence": ["E9"]},
+    {"claim_id": "C006", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "其根本原因是这些人自己挺满意，不满足的人无形中构成一种嘲讽，ta们在自我防卫，打击令ta们沮丧和不安的人。", "evidence": ["E10"]},
+    {"claim_id": "C007", "claim_type": "author_qualified", "attribution": "author", "modality": "qualified", "statement": "这是大部分人类的普遍属性；无论走到哪个平台，这样的“定居者”都会存在。", "evidence": ["E11"]},
+    {"claim_id": "C008", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "自强不息的人不能不把无视和对抗这种嘲讽作为必修课，并且还必须毕业；这是所谓“人格独立”的一部分必备内容。", "evidence": ["E12", "E13"]},
+    {"claim_id": "C009", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "这会导致一定程度上的“孤独”，但这是没得选择的。", "evidence": ["E14"]}
+   ],
+   "argument_steps": [
+    "① 承接提问的“为什么”，以“因为……”直接给出核心命题（P001）。",
+    "② 分隔线后以“解释一下吧：”转入解释（P002）。",
+    "③ 限定时段：努力尚未兑现之前（P003）。",
+    "④ 举三例：中考前、高考前、没希望的公司（P004-P006）。",
+    "⑤ 转折：迈过坎之后努力使人分道扬镳（P007-P009）。",
+    "⑥ 归因：台阶上的“定居者”出于自我防卫打击不满足者（P010-P011）。",
+    "⑦ 普遍化限定：大部分人类、任何平台（P012）。",
+    "⑧ 行动要求与结论：把对抗嘲讽当作必修课并毕业，属人格独立（P013-P014）。",
+    "⑨ 承认代价：一定程度的孤独且无从选择（P015）。"
+   ],
+   "concept_usage": [
+    {"term": "独立", "meaning": "与“成功”相连的属性；后文“人格独立”指不受所处台阶群体嘲讽的支配。", "evidence": "P001", "ambiguity": "“成功的人都是独立的”与“人格独立”是否同义，正文未说明。"},
+    {"term": "定居者", "meaning": "加引号的临时称谓，指把某个台阶当作终点、嘲笑想继续向前的人。", "evidence": "P012", "ambiguity": "作者自造词，未给出判定边界。"},
+    {"term": "坎/台阶", "meaning": "中考、高考、跳槽等使人换到新群体的节点，以及群体所在的位置。", "evidence": "P007", "ambiguity": "“坎”与“台阶”是否同指，正文未明说。"},
+    {"term": "努力没用", "meaning": "引号内为旁人嘲笑努力者的话，作者转述而非自述。", "evidence": "P004", "ambiguity": "说话者的具体身份未说明。"},
+    {"term": "瞧不起", "meaning": "P011“打击‘瞧不起’ta们的人”为加引号用法，指被定居者视为瞧不起自己的人，与标题所指的方向不同。", "evidence": "P011", "ambiguity": "引号用法易与标题“瞧不起努力”混淆。"}
+   ],
+   "examples_and_targets": [
+    "中考前三年与同一群人呆在一起，努力似乎没改变什么（P004，作者例证）",
+    "高考前也一样（P005，作者例证）",
+    "在一家没希望的公司工作，升迁职位有限（P006，作者例证）",
+    "中考、高考、跳槽作为“迈过一道坎”的例子（P007）",
+    "旁人嘲笑“努力没用”（P004，作者转述的他人话语，非作者观点）",
+    "本文无具名人物、机构或数据。"
+   ],
+   "conditions": [
+    "一般发生在努力还没兑现之前（P003）。",
+    "尤其集中于升学考试前、毕业典礼前、升职前（P003）。",
+    "在公司升迁职位有限、努力看起来无区别时同样成立（P006）。",
+    "限定为“大部分人类”，非全部人（P012）。",
+    "代价是“一定程度上”的孤独，且作者称别无选择（P015）。"
+   ],
+   "rhetoric_and_tone": "承接提问的“为什么”以“因为……”起句，先给结论再解释；用第二人称“你/你们”直接对话读者；三处举例层层推进，以破折号和“也一样”制造节奏；引号标出他人话语（“努力没用”）与自造术语（“定居者”）；末段转为训诫式断言（“必修课”“还必须毕业”），以“孤独”收束，语气冷静而带劝勉。",
+   "unresolved_questions": [
+    "“成功的人都是独立的”中“独立”与“成功”的具体含义及因果方向，正文未论证。",
+    "标题的“瞧不起努力”与 P011 中加引号的“瞧不起”是否同指，未说明。",
+    "“台阶”“坎”“平台”“定居者”之间的关系与边界未界定。",
+    "作者未说明被嘲笑的努力者除“无视和对抗”外还能如何具体应对。",
+    "语料 brief 基本是正文前段的截断（止于“高考”），属导航字段残缺，未用于支持主张。"
+   ],
+   "evidence": [
+    {"key": "E1", "paragraph_id": "P001", "quote": "因为成功的人都是独立的。", "relation": "supports"},
+    {"key": "E2", "paragraph_id": "P003", "quote": "一般这种情况都发生在努力还没兑现之前，尤其是升学考试前、毕业典礼前、升职前这种阶段。", "relation": "supports"},
+    {"key": "E3", "paragraph_id": "P004", "quote": "比如中考前，足有三年时间无论你考试有多好，都会跟同一群人呆在一起。", "relation": "supports"},
+    {"key": "E4", "paragraph_id": "P004", "quote": "努力这时候似乎没有改变你什么东西。人家嘲笑你“努力没用”，你也只能听着。", "relation": "supports"},
+    {"key": "E5", "paragraph_id": "P006", "quote": "在一家没希望的公司工作，也一样——随你怎么努力，因为升迁职位有限，看起来也没有什么区别。", "relation": "supports"},
+    {"key": "E6", "paragraph_id": "P007", "quote": "一旦迈过了一道坎，比如中考了、高考了、跳槽了……", "relation": "supports"},
+    {"key": "E7", "paragraph_id": "P008", "quote": "努力就会让你跟那群人瞬间踏上不同的道路。", "relation": "supports"},
+    {"key": "E8", "paragraph_id": "P009", "quote": "几乎从此不再相见。", "relation": "supports"},
+    {"key": "E9", "paragraph_id": "P010", "quote": "会觉得那个台阶就是ta们的埋骨之所，会嘲笑那些努力想要超越这个地方继续向前的人。", "relation": "supports"},
+    {"key": "E10", "paragraph_id": "P011", "quote": "这最根本的是因为ta们自己挺满意了，所对这里不满足的人无形中对ta们构成了一种嘲讽。", "relation": "supports"},
+    {"key": "E11", "paragraph_id": "P012", "quote": "这是大部分人类的普遍属性，无论你走到哪个平台，这样的“定居者”都会存在。", "relation": "supports"},
+    {"key": "E12", "paragraph_id": "P013", "quote": "不能不把无视和对抗这种嘲讽作为必修课——并且还必须毕业。", "relation": "supports"},
+    {"key": "E13", "paragraph_id": "P014", "quote": "这是所谓“人格独立”的一部分必备内容。", "relation": "supports"},
+    {"key": "E14", "paragraph_id": "P015", "quote": "这会导致你在一定程度上“孤独”，但这是没得选择的。", "relation": "supports"},
+    {"key": "E15", "paragraph_id": "P005", "quote": "高考前也一样。", "relation": "context"}
+   ]
+  },
+  "provisional_tags": {
+   "domain_candidates": ["社会心理", "个人成长", "教育与职业流动"],
+   "issue_candidates": ["努力的社会评价", "群体对进取者的排斥", "人格独立与孤独"],
+   "text_function_candidates": ["答疑", "经验总结", "训诫式评论"],
+   "object_candidates": ["中考/高考学生", "职场人士", "作者所称的“定居者”群体"],
+   "working_keywords": ["瞧不起努力", "成功的人都是独立的", "人格独立", "定居者", "必修课", "台阶"]
+  },
+  "notes": "正文与 brief 高度重叠，brief 仅为导航且结尾截断；无图片节点。提问者的描述与作者判断已区分：作者未直接确认“身边人都瞧不起努力”为事实。无版本差异标记（updated_at 2021-05-16）。"
+ },
+ "44c1bf5b": {
+  "analysis": {
+   "question_context": "提问者问“温柔应该是什么样子的？”。正文以定义式短句作答（“从不报复，只是离开。”），随后展开距离、契约义务边界、温柔者的戒备与物以类聚，并在末段反驳“没能力而不报复只是软弱”的说法。文末另有指向“更新的修订版本”的站外链接。",
+   "content_units": [
+    {"unit_id": "U001", "paragraph_refs": ["P001", "P002"], "summary": "以两行短句给出温柔的定义：从不报复，只是离开。", "role": "definition"},
+    {"unit_id": "U002", "paragraph_refs": ["P003", "P004", "P005"], "summary": "反问“从不报复的人，你身边有几个？”，指出身边人多持“人若犯我我必犯人”立场；限定“身边”指每天见面交谈，且自己是否“犯”由对方定义。", "role": "context"},
+    {"unit_id": "U003", "paragraph_refs": ["P006", "P007"], "summary": "解释“离开”即默默拉开距离，目标是压制报复冲动；举例从每天接触改为三天一次、距离500米改成两公里。", "role": "qualification"},
+    {"unit_id": "U004", "paragraph_refs": ["P008"], "summary": "界定报复的边界：不追索损失、不要求履行契约义务；合法权利可正常主张、可走司法程序起诉，超出契约义务限度才叫报复。", "role": "qualification"},
+    {"unit_id": "U005", "paragraph_refs": ["P009", "P010", "P011", "P012"], "summary": "指出温柔者难以被接近：对攻击性与报复性极端敏感，会提前回避鼓吹复仇的人，并保持静默、先观察、见危险迹象即取消接触；这种眼力来自屡次被伤害。", "role": "reason"},
+    {"unit_id": "U006", "paragraph_refs": ["P013"], "summary": "温柔者自然而然地物以类聚，交联后长久牢固、氛围轻松愉快。", "role": "conclusion"},
+    {"unit_id": "U007", "paragraph_refs": ["P014"], "summary": "以“人海沉浮的救生衣”作结语式断言。", "role": "claim"},
+    {"unit_id": "U008", "paragraph_refs": ["P015", "P016", "P017", "P018"], "summary": "离开不能被认定为报复（否则等于把人变成囚犯），但离开同时又是终极“报复”，构成一种“核威慑”。", "role": "claim"},
+    {"unit_id": "U009", "paragraph_refs": ["P019", "P020"], "summary": "引出“有能力而不报复才是温柔，没能力而不报复只是软弱”的说法，并直接判其为错。", "role": "rebuttal"},
+    {"unit_id": "U010", "paragraph_refs": ["P021", "P022", "P023"], "summary": "反驳理由：世上没有“没能力报复”的情况，再弱小的人也能报复；敢作此划分只是时候未到、没见过处心积虑的人；故后半句根本不存在。", "role": "reason"},
+    {"unit_id": "U011", "paragraph_refs": ["P024", "P025"], "summary": "文末提示存在“更新的修订版本”（链接节点，链接文本为“温柔”）。", "role": "other"}
+   ],
+   "main_claims": [
+    {"claim_id": "C001", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "温柔即从不报复，只是离开。", "evidence": ["E1", "E2"]},
+    {"claim_id": "C002", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "温柔的人不报复，只是默默拉开距离；“离开”不是翻脸不再相见，而是保持距离到能压制报复冲动的程度。", "evidence": ["E3", "E4"]},
+    {"claim_id": "C003", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "不报复不等于不追索损失或要求履行契约义务；合法权利可以正常主张、可以走司法程序，超出“契约义务”限度才叫报复。", "evidence": ["E5", "E6"]},
+    {"claim_id": "C004", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "温柔的人很难被接近，因为对攻击性和报复性极端敏感，往往在别人接近之前就离开；面对鼓吹复仇的人会提前回避，并保持静默、先观察、见危险迹象即取消接触。", "evidence": ["E7", "E8", "E9"]},
+    {"claim_id": "C005", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "温柔的人会自然而然地物以类聚，一旦交联就长久牢固、氛围轻松愉快。", "evidence": ["E10"]},
+    {"claim_id": "C006", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "温柔的人是人海沉浮的救生衣。", "evidence": ["E11"]},
+    {"claim_id": "C007", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "离开本身不能被认定为报复，否则等于把人变成囚犯；但离开同时是终极“报复”，足以让身边人不敢想象其离开的日子，是一种“核威慑”。", "evidence": ["E12", "E13", "E14"]},
+    {"claim_id": "C008", "claim_type": "opponent_view", "attribution": "opponent", "modality": "asserted", "statement": "有一种看法认为：有能力而不报复才是温柔，没能力而不报复只是软弱。", "evidence": ["E15"]},
+    {"claim_id": "C009", "claim_type": "author_explicit", "attribution": "author", "modality": "negated", "statement": "上述看法是错的：世界上根本没有“没能力报复”这个情况，再弱小的人也有能力报复。", "evidence": ["E16", "E17"]},
+    {"claim_id": "C010", "claim_type": "author_explicit", "attribution": "author", "modality": "qualified", "statement": "再弱小的报复，遇到恰当的时机和运势，手无缚鸡之力之人的一句话也足以致命。", "evidence": ["E18"]},
+    {"claim_id": "C011", "claim_type": "author_explicit", "attribution": "author", "modality": "negated", "statement": "把部分人划入“没能力报复”只是时候未到、没见过处心积虑的人，因此该说法后半句根本不存在。", "evidence": ["E19", "E20"]}
+   ],
+   "argument_steps": [
+    "① 定义：温柔＝从不报复、只是离开（P001-P002）。",
+    "② 对照现实：身边人多持“人若犯我我必犯人”，并界定“身边”为每天见面交谈（P003-P005）。",
+    "③ 说明“离开”的尺度：以距离压制报复冲动，可退到更少的接触频率与更远的物理距离（P006-P007）。",
+    "④ 划界：合法权利与契约义务的追索不属于报复，超出契约义务才算（P008）。",
+    "⑤ 解释温柔者为何难接近：敏感、静默、先观察、见危险即断联（P009-P012）。",
+    "⑥ 结论：温柔者物以类聚且关系牢固（P013）。",
+    "⑦ 断言：温柔的人是人海沉浮的救生衣（P014）。",
+    "⑧ 辩证收束：“离开”既非报复又是终极“报复”，构成“核威慑”（P015-P018）。",
+    "⑨ 设靶反驳：先引出“没能力而不报复只是软弱”，再以“没有没能力报复这回事”推翻（P019-P023）。",
+    "⑩ 附注：文末给出更新修订版的外链（P024-P025）。"
+   ],
+   "concept_usage": [
+    {"term": "温柔", "meaning": "本文指“从不报复，只是离开”，以保持距离压制报复冲动为实践方式。", "evidence": "P001", "ambiguity": "与日常语义（性情柔和）不同，作者未说明是否排除其他含义。"},
+    {"term": "报复", "meaning": "超出“契约义务”限度的追索；合法权利的主张、司法起诉都不算报复。", "evidence": "P008", "ambiguity": "“契约义务”之外的情形（如道义责任）未举例。"},
+    {"term": "核威慑", "meaning": "比喻温柔者离开所造成的影响力，使“常规战争”打不起来。", "evidence": "P018", "ambiguity": "类比的适用限度未说明，属修辞用法。"},
+    {"term": "没能力报复", "meaning": "被反驳说法中的关键词，作者主张此情况不存在。", "evidence": "P021", "ambiguity": "“能力”指实际手段还是意愿，未界定。"},
+    {"term": "身边", "meaning": "作者自限定为“每天见面交谈”的人。", "evidence": "P004", "ambiguity": "无。"}
+   ],
+   "examples_and_targets": [
+    "“人不犯我我不犯人，人若犯我我必犯人”（P004，作者转述的身边人的自我定位，非作者主张）",
+    "接触频率从每天改为三天一次、距离从500米变成两公里（P007，作者举的距离化例子）",
+    "鼓吹“以眼还眼、以牙还牙”“复仇”的人（P010，作者设定的回避对象）",
+    "“救生衣”（P014）与“火眼金睛”（P012）、“核威慑”“常规战争”（P018）：比喻与军事隐喻，属修辞材料",
+    "“有能力而不报复才是温柔，没能力而不报复只是软弱”（P019，被反驳观点，未标明出处）"
+   ],
+   "conditions": [
+    "作者把“身边”限定为每天见面交谈的人（P004）。",
+    "如果你自己不是温柔的人，而是鼓吹“以眼还眼、以牙还牙”“复仇”的人，温柔的人会提前回避你（P010）。",
+    "合法权利、契约义务范围内的主张与起诉不属于报复（P008）。",
+    "报复致命性以“恰当的时机和运势”为条件（P021）。"
+   ],
+   "rhetoric_and_tone": "以对称短句开篇作定义；通篇多用反问（“从不报复的人，你身边有几个？”“不准人走岂不是把人家变成了囚犯？”）；大量隐喻与军事用语（救生衣、火眼金睛、核威慑、常规战争）；以第二人称“你”与“ta们”对举，语气冷静、带训诫意味；结构上先立论（P001-P014）、再设靶反驳（P019-P023），末段为外链附注。",
+   "unresolved_questions": [
+    "文末 P024-P025 提示存在“更新的修订版本”（链接指向站外笔记），修订版内容未纳入本记录；本篇按语料当前版本（v2-current）处理，版本差异待研究者核对。",
+    "P025 的链接文本“温柔”被 lexical 标为 link 节点，未作为段落正文写入 text，其功能（自引/推荐）正文未说明。",
+    "“契约义务”之外是否还有其他正当追索形式（如道义要求），正文未举例。",
+    "“核威慑”类比的适用范围与限度未说明。",
+    "文中未给出判断某一行为是否“超出契约义务”的可操作标准。"
+   ],
+   "evidence": [
+    {"key": "E1", "paragraph_id": "P001", "quote": "从不报复，", "relation": "supports"},
+    {"key": "E2", "paragraph_id": "P002", "quote": "只是离开。", "relation": "supports"},
+    {"key": "E3", "paragraph_id": "P006", "quote": "温柔的人不会报复你，只是默默拉开距离。", "relation": "supports"},
+    {"key": "E4", "paragraph_id": "P006", "quote": "离开不是说翻脸就此生再不相见，而是指保持距离到能压制报复冲动的程度。", "relation": "supports"},
+    {"key": "E5", "paragraph_id": "P008", "quote": "不报复，也不表示不追索损失、要求履行契约义务。", "relation": "supports"},
+    {"key": "E6", "paragraph_id": "P008", "quote": "超出“契约义务”这个限度才叫报复。", "relation": "supports"},
+    {"key": "E7", "paragraph_id": "P009", "quote": "事实上，温柔的人最大的问题，在于ta们很难被接近。", "relation": "supports"},
+    {"key": "E8", "paragraph_id": "P009", "quote": "因为ta们对攻击性和报复性极端敏感，所以往往在你还没接近之前就离开了。", "relation": "supports"},
+    {"key": "E9", "paragraph_id": "P011", "quote": "所以温柔的人的习性就是保持静默，先观察再说，有任何危险迹象就取消接触。", "relation": "supports"},
+    {"key": "E10", "paragraph_id": "P013", "quote": "于是，温柔的人自然而然的物以类聚，并且一旦交联到一起就会很长久和牢固", "relation": "supports"},
+    {"key": "E11", "paragraph_id": "P014", "quote": "最后一条——温柔的人是人海沉浮的救生衣。", "relation": "supports"},
+    {"key": "E12", "paragraph_id": "P015", "quote": "所以，离开本身不能被认定为报复——不准人走岂不是把人家变成了囚犯？", "relation": "supports"},
+    {"key": "E13", "paragraph_id": "P016", "quote": "但离开同时又是终极“报复”了。", "relation": "supports"},
+    {"key": "E14", "paragraph_id": "P018", "quote": "这是一种“核威慑”，足以让常规战争都打不起来。", "relation": "supports"},
+    {"key": "E15", "paragraph_id": "P019", "quote": "有很多人觉得有能力而不报复才是温柔，没能力而不报复只是软弱。", "relation": "contradicts"},
+    {"key": "E16", "paragraph_id": "P020", "quote": "这话是错的。", "relation": "supports"},
+    {"key": "E17", "paragraph_id": "P021", "quote": "因为这个世界上根本没有“没能力报复”这个情况。再弱小的人，也有能力报复。", "relation": "supports"},
+    {"key": "E18", "paragraph_id": "P021", "quote": "再弱小的报复，遇到了恰当的时机和运势，手无缚鸡之力之人的一句话都足可以致命了。", "relation": "supports"},
+    {"key": "E19", "paragraph_id": "P022", "quote": "只是因为时候还未到、没见过这种处心积虑的人而已。", "relation": "supports"},
+    {"key": "E20", "paragraph_id": "P023", "quote": "因此这话的后半句根本就不存在。", "relation": "supports"},
+    {"key": "E21", "paragraph_id": "P004", "quote": "（所谓“身边”，是指每天见面交谈）。", "relation": "qualifies"},
+    {"key": "E22", "paragraph_id": "P007", "quote": "每天说话会压不住火，那么就变成三天接触一次。", "relation": "supports"},
+    {"key": "E23", "paragraph_id": "P010", "quote": "温柔的人提前就会回避你。", "relation": "supports"},
+    {"key": "E24", "paragraph_id": "P024", "quote": "一个更新的修订版本在这里", "relation": "context"}
+   ]
+  },
+  "provisional_tags": {
+   "domain_candidates": ["人际关系", "伦理与道德", "心理与人际边界"],
+   "issue_candidates": ["温柔的定义", "报复及其界限", "亲密关系中的距离", "信任与戒备"],
+   "text_function_candidates": ["定义式诠释", "经验总结", "论辩式反驳", "训诫"],
+   "object_candidates": ["温柔的人（泛称）", "鼓吹复仇的人（泛称）", "站外修订版笔记（johnhexa.gitbook.io）"],
+   "working_keywords": ["温柔", "报复", "契约义务", "核威慑", "救生衣", "物以类聚", "身边"]
+  },
+  "notes": "文末含指向“更新的修订版本”的站外链接（P024-P025，lexical 标为 link），版本差异待研究者核对；本篇按语料当前版本处理。全文无具名人物或机构，无图片节点。"
+ },
+ "f1d9f87b": {
+  "analysis": {
+   "question_context": "提问者问：对于死亡这样的终极话题，人们为什么更推崇冷酷的唯物主义，而不是仍带有一丝希望的意识与灵魂论。正文只回应“为什么”这一环：先转述一种看法（有人觉得“敢于绝望”是勇气的极限），再以一句断言给出自己的判断（“实际上敢于希望才是”）。提问中的“冷酷的唯物主义”“意识与灵魂论”之争，正文并未直接讨论。",
+   "content_units": [
+    {"unit_id": "U001", "paragraph_refs": ["P001"], "summary": "转述一种流行看法作为对提问现象的解释：有人觉得“敢于绝望”是勇气的极限。", "role": "reason"},
+    {"unit_id": "U002", "paragraph_refs": ["P002"], "summary": "以“实际上”反驳，给出作者判断：敢于希望才是勇气的极限。", "role": "claim"}
+   ],
+   "main_claims": [
+    {"claim_id": "C001", "claim_type": "author_reported", "attribution": "unknown", "modality": "asserted", "statement": "作者转述：有人认为“敢于绝望”是勇气的极限（以此解释人们何以推崇冷酷的唯物主义态度）。", "evidence": ["E1"]},
+    {"claim_id": "C002", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "作者主张：实际上敢于希望才是勇气的极限。", "evidence": ["E2"]}
+   ],
+   "argument_steps": [
+    "① 转述他人看法：有人把“敢于绝望”视为勇气的极限（P001）。",
+    "② 以“实际上”转折，直接给出相反判断：敢于希望才是（P002）。",
+    "③ 全文未展开论证，也未回应提问中唯物主义与灵魂论孰优的比较框架。"
+   ],
+   "concept_usage": [
+    {"term": "勇气的极限", "meaning": "衡量勇气上限的标准；文中只出现“敢于绝望”与“敢于希望”两个候选。", "evidence": "P001", "ambiguity": "作者未说明何以“希望”比“绝望”更需要勇气。"},
+    {"term": "敢于绝望", "meaning": "转述中他人所推崇的勇气形态。", "evidence": "P001", "ambiguity": "“有人”的主体与范围未指明。"},
+    {"term": "敢于希望", "meaning": "作者主张的真正勇气极限。", "evidence": "P002", "ambiguity": "“希望”的对象与内容未界定。"}
+   ],
+   "examples_and_targets": [
+    "“有人觉得‘敢于绝望’是勇气的极限”（P001，转述对象，同时也是被作者反驳的观点）",
+    "提问中的“冷酷的唯物主义”与“意识与灵魂论”（仅见于提问字段，正文未回应，也未核实相关说法）",
+    "本文无具名人物、事件或数据。"
+   ],
+   "conditions": [
+    "全篇为一般性断言，未给出适用条件、时间或对象范围。",
+    "转述部分的归属仅写作“有人”，作者未限定其范围（P001）。"
+   ],
+   "rhetoric_and_tone": "极简答式：两句对仗，“敢于绝望”与“敢于希望”相照；以“因为……实际上……”完成转述与反驳；不展开论证，语气为干脆、简短的断言，带轻微纠正意味。",
+   "unresolved_questions": [
+    "“有人”的主体不明：未指明是哪些人或哪一派主张“敢于绝望是勇气的极限”。",
+    "“勇气的极限”的判据、以及为何“敢于希望”才是极限，正文完全未论证。",
+    "作者未回应提问的比较框架（唯物主义与意识/灵魂论），也未评价“冷酷”一说。",
+    "正文仅两句 30 字，是否为完整表述需研究者复核；brief 与正文完全相同，未提供额外信息。"
+   ],
+   "evidence": [
+    {"key": "E1", "paragraph_id": "P001", "quote": "因为有人觉得“敢于绝望”是勇气的极限，", "relation": "supports"},
+    {"key": "E2", "paragraph_id": "P002", "quote": "实际上敢于希望才是。", "relation": "supports"}
+   ]
+  },
+  "provisional_tags": {
+   "domain_candidates": ["人生观与价值论", "死亡与终极问题", "勇气/伦理"],
+   "issue_candidates": ["勇气与希望", "面对死亡的态度", "唯物主义与灵魂论之争"],
+   "text_function_candidates": ["答疑", "简短反驳", "格言式回应"],
+   "object_candidates": ["未具名的“有人”", "提问者所述的唯物主义者与灵魂论者"],
+   "working_keywords": ["至勇", "敢于绝望", "敢于希望", "勇气的极限"]
+  },
+  "notes": "正文极短，只回应提问“为什么”的一环，未涉及死亡话题本身；无图片节点，full_text_checked=true。转述部分归属写为“有人”（unknown），未计入作者主张。brief 与 text 完全一致。"
+ },
+ "a878e18a": {
+  "analysis": {
+   "question_context": "提问者问：「中国税负远超欧美」的说法是否属实？正文没有直接回答这一事实性问题，也未给出跨国数据，而是先提出一个观察指标（纯民营大企业有多少），解释高税负下的行业“化整为零”机理，再转向历史阶段与国家战略，称中国几乎注定采取高税收策略，末句以“负重前行吧”作结。提问者的引语属提问者转述的说法，非作者立场。",
+   "content_units": [
+    {"unit_id": "U001", "paragraph_refs": ["P001"], "summary": "提出判断税负高低的指标：纯民营大企业有多少。", "role": "claim"},
+    {"unit_id": "U002", "paragraph_refs": ["P002", "P003"], "summary": "解释机理：税负高会迫使行业“化整为零”，原本应属一家大公司的部门人群变成很多家小公司。", "role": "reason"},
+    {"unit_id": "U003", "paragraph_refs": ["P004", "P005", "P006"], "summary": "指出驱动力包括避税甚至偷税漏税及由此产生的额外收益；只有拥有融资、资源、政策等凭仗的特殊企业才敢扩大规模，这往往意味着挂靠、国资入股。", "role": "reason"},
+    {"unit_id": "U004", "paragraph_refs": ["P007"], "summary": "小结：只看这个指标就知道企业税负如何。", "role": "conclusion"},
+    {"unit_id": "U005", "paragraph_refs": ["P008", "P009"], "summary": "转折作宏观判断：中国所处历史阶段“几乎注定”采取高税收策略；国际形势险恶、须利用相对和平时期求取最快发展、需极宏观战略投资，故不可能不依靠高税率。", "role": "qualification"},
+    {"unit_id": "U006", "paragraph_refs": ["P010"], "summary": "以“负重前行吧”作劝勉式结尾。", "role": "action_advice"}
+   ],
+   "main_claims": [
+    {"claim_id": "C001", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "税负高不高，看纯民营大企业有多少是一个很好的指标。", "evidence": ["E1"]},
+    {"claim_id": "C002", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "税负高了会强迫行业出现“化整为零”式的适应：原本应是一家大公司的若干部门的一群人，变成很多家小公司。", "evidence": ["E2", "E3"]},
+    {"claim_id": "C003", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "其中一个很大的驱动力是避税乃至偷税漏税；众多小企业偷漏税不会全部被抓住、抓住了也多半情节轻微，因此总体上产生额外收益。", "evidence": ["E4", "E5"]},
+    {"claim_id": "C004", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "只有拥有融资优势、资源优势、政策优势等凭仗的特殊企业才能大胆扩大规模，而这往往意味着挂靠、国资入股这类举动。", "evidence": ["E6", "E7"]},
+    {"claim_id": "C005", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "所以只看这个指标就知道企业税负如何了。", "evidence": ["E8"]},
+    {"claim_id": "C006", "claim_type": "author_qualified", "attribution": "author", "modality": "qualified", "statement": "坦白说，中国所处的历史阶段本身几乎注定要采取高税收的策略。", "evidence": ["E9"]},
+    {"claim_id": "C007", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "国际形势长期险恶，抓住一切机会、竭尽能力利用相对和平时期求取最快发展要求做极其宏观的战略投资，这不可能不依靠高税率。", "evidence": ["E10", "E11"]},
+    {"claim_id": "C008", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "所以，负重前行吧。", "evidence": ["E12"]}
+   ],
+   "argument_steps": [
+    "① 给出观察指标：纯民营大企业的数量（P001）。",
+    "② 说明机理：高税负迫使行业“化整为零”（P002-P003）。",
+    "③ 补上驱动力：避税/偷漏税带来的额外收益，以及只有有凭仗的企业才敢扩张，往往导致挂靠、国资入股（P004-P006）。",
+    "④ 小结指标的可用性（P007）。",
+    "⑤ 转折到宏观判断：历史阶段几乎注定高税收，理由为国际形势险恶与战略投资需要（P008-P009）。",
+    "⑥ 以劝勉句收束（P010）。"
+   ],
+   "concept_usage": [
+    {"term": "纯民营大企业", "meaning": "作者提出的税负观察指标：此类企业多则说明税负相对低。", "evidence": "P001", "ambiguity": "“纯民营”与“大”的界定及数据来源未说明。"},
+    {"term": "化整为零", "meaning": "加引号的行业适应形态：企业拆分为许多小公司。", "evidence": "P002", "ambiguity": "未区分合法组织调整与以避税为目的的拆分。"},
+    {"term": "凭仗", "meaning": "融资优势、资源优势、政策优势等使企业敢于扩大规模的条件。", "evidence": "P005", "ambiguity": "未说明是否还有其他类型或判断标准。"},
+    {"term": "挂靠、国资入股", "meaning": "作者称企业扩大规模往往伴随的举动。", "evidence": "P006", "ambiguity": "具体形式与后果未说明，属需外部核查的事实性说法。"},
+    {"term": "负重前行", "meaning": "结语式劝勉，指在高税负条件下继续承受。", "evidence": "P010", "ambiguity": "未说明对谁而言、如何承受。"}
+   ],
+   "examples_and_targets": [
+    "“纯民营大企业有多少”作为税负指标（P001，作者提出的判据，未给数据）",
+    "行业“化整为零”、大公司部门人群变成很多家小公司（P002-P003，作者举的机制例证）",
+    "避税、偷税漏税与“抓住了也多半是情节轻微”（P004，作者对执法概率的判断，需外部核查）",
+    "融资优势、资源优势、政策优势；挂靠、国资入股（P005-P006，作者举例）",
+    "“欧美”仅出现在提问字段，正文未作跨国比较",
+    "本文无具名人物、机构或数据引用。"
+   ],
+   "conditions": [
+    "以“税负高了”为触发条件（P002）。",
+    "作者称小企业偷漏税不会全部被抓住、抓住了多半情节轻微（P004，为其推理的经验前提）。",
+    "“只有拥有某种凭仗的特殊企业”为扩大规模的限定条件（P005）。",
+    "“几乎注定”为限定词，非绝对断言（P008）。",
+    "“相对和平的时期”为战略投资的时间条件（P008）。"
+   ],
+   "rhetoric_and_tone": "以判断句直接给指标（“其实……是一个很好的指标”），用“这道理不复杂——”的口语化过渡；破折号插入举例与递进；先讲微观机理再转宏观历史判断，语域由分析转为宏大叙述，末句“所以，负重前行吧。”为劝勉式感叹；用“坦白说”标记让步与坦率语气。",
+   "unresolved_questions": [
+    "作者未直接回答提问“中国税负远超欧美是否属实”，未给出税负口径、数据或跨国比较。",
+    "“纯民营大企业”的界定与统计口径未说明，指标的可操作性存疑。",
+    "由企业规模分布反推税负水平的量化关系未展开。",
+    "“中国所处的历史阶段本身几乎注定要采取高税收的策略”的判断依据未给出，属需外部核查的宏观论断。",
+    "updated_at（2026-04-03）显著晚于 published_at（2020-11-28），是否经编辑或补写未说明；brief 在“偷税漏税也不会全部”处截断，属导航字段残缺。"
+   ],
+   "evidence": [
+    {"key": "E1", "paragraph_id": "P001", "quote": "税负高不高，其实看纯民营大企业有多少是一个很好的指标。", "relation": "supports"},
+    {"key": "E2", "paragraph_id": "P002", "quote": "这道理不复杂——税负高了，就会强迫行业出现“化整为零”式的适应。", "relation": "supports"},
+    {"key": "E3", "paragraph_id": "P003", "quote": "原本应该是一家大公司的若干部门的一群人，现在变成了很多家小公司。", "relation": "supports"},
+    {"key": "E4", "paragraph_id": "P004", "quote": "这其中一个很大的驱动力就是避税——甚至是偷税漏税。", "relation": "supports"},
+    {"key": "E5", "paragraph_id": "P004", "quote": "偷税漏税也不会全部被抓住，抓住了也多半是情节轻微。于是总体上就产生了额外收益。", "relation": "supports"},
+    {"key": "E6", "paragraph_id": "P005", "quote": "于是只有拥有某种凭仗——譬如融资优势、资源优势、政策优势——的特殊企业可以大胆的扩大规模。", "relation": "supports"},
+    {"key": "E7", "paragraph_id": "P006", "quote": "而这往往意味着挂靠、国资入股这类举动。", "relation": "supports"},
+    {"key": "E8", "paragraph_id": "P007", "quote": "所以，只看这个指标就知道企业税负如何了。", "relation": "supports"},
+    {"key": "E9", "paragraph_id": "P008", "quote": "但是，坦白说，中国所处的历史阶段本身几乎注定要采取高税收的策略。", "relation": "supports"},
+    {"key": "E10", "paragraph_id": "P008", "quote": "国际形势长期险恶，抓住一切机会、竭尽一切能力去最大限度的利用相对和平的时期求取最快发展，要求做极其宏观的战略投资。", "relation": "supports"},
+    {"key": "E11", "paragraph_id": "P009", "quote": "这不可能不依靠高税率。", "relation": "supports"},
+    {"key": "E12", "paragraph_id": "P010", "quote": "所以，负重前行吧。", "relation": "supports"}
+   ]
+  },
+  "provisional_tags": {
+   "domain_candidates": ["财政税收", "宏观经济", "企业与产业组织"],
+   "issue_candidates": ["中国税负水平", "避税与偷税漏税", "企业规模分布的成因", "国家战略投资与高税率"],
+   "text_function_candidates": ["答疑", "机制解释", "评论"],
+   "object_candidates": ["中国企业（纯民营大企业、小企业）", "中国税制/政府", "欧美（仅见于提问字段）"],
+   "working_keywords": ["税负", "纯民营大企业", "化整为零", "偷税漏税", "挂靠", "国资入股", "负重前行"]
+  },
+  "notes": "本篇未提供数据与跨国比较，凡涉事实性判断（税负高低、执法概率、国际形势）均属作者主张，需外部核查；无图片节点。updated_at 显著晚于 published_at，版本差异未说明；brief 结尾截断，未用于支持主张。"
+ },
+ "070aa60a": {
+  "analysis": {
+   "question_context": "提问者就“成都大学毛洪涛溺亡调查结果公布”询问看法与值得关注的信息。正文未讨论该事件与调查结果本身，而是就“以死明志”这一做法给出一段一般性劝诫：不要指望以死明志，要活着对质、作证、配合调查，并在中段分三点回应“妥协派/投降派”的指责。事件细节属于提问者提供的语境，正文未据此作事实判断。",
+   "content_units": [
+    {"unit_id": "U001", "paragraph_refs": ["P001", "P002"], "summary": "劝止“以死明志”，给出替代路径：活着对质、作证、配合调查；若时机不成熟或害怕打击报复，就先低头做人、积累条件、耐心等待。", "role": "action_advice"},
+    {"unit_id": "U002", "paragraph_refs": ["P003", "P004", "P005"], "summary": "批评“死谏”“尸谏”的传统，主张真正立志做事需隐忍、灵活、柔软，没有一蹴而就，耐心最重要。", "role": "claim"},
+    {"unit_id": "U003", "paragraph_refs": ["P006", "P007"], "summary": "分析没有耐心的成因：对己、对组织、对社会绝望，认为事情在“无限循环”“向下循环”；并指出绝望时“原有极限”已接近法律或生命边缘。", "role": "reason"},
+    {"unit_id": "U004", "paragraph_refs": ["P008", "P009", "P010", "P011", "P012"], "summary": "作者称不阻止人拼死做事，但希望对“天意”更有信心：世事无常也包括从坏变好，人做不到的天若意动轻而易举；活着念念不忘本身就是最大推动，结语“乐天知命，好好活着”。", "role": "reason"},
+    {"unit_id": "U005", "paragraph_refs": ["P013", "P014"], "summary": "引出反驳意见：被指为“妥协派”“投降派”，并预告分三点回应。", "role": "transition"},
+    {"unit_id": "U006", "paragraph_refs": ["P015"], "summary": "第一点：社会不可能认可“遗书可以充分定罪”的逻辑，并以利益面广泛的岗位（含基层民警、法官、医生、班主任）为例说明此类指控并不罕见。", "role": "rebuttal"},
+    {"unit_id": "U007", "paragraph_refs": ["P016", "P017", "P018", "P019"], "summary": "第二点：真诚主张“舍身取义”“宁折不弯”者应在恋爱阶段先说明，否则对对方不公平；反问对方下半辈子怎么办；提醒留意对方的观点并想清楚自己是否愿意接受。", "role": "rebuttal"},
+    {"unit_id": "U008", "paragraph_refs": ["P020", "P021", "P022", "P023"], "summary": "第三点：把此观点视为“投降派”“妥协派”、认为相信天意幼稚唯心，只会让人觉得你不可托付；事情不顺进入低效疲劳循环时你可能做出极端举动，而重要事情常会陷入这种循环，故无人敢托付你。", "role": "rebuttal"},
+    {"unit_id": "U009", "paragraph_refs": ["P024", "P025"], "summary": "以恋爱为例收束“托付”逻辑：托付终身属重大托付，一说这话对方就大概率不敢谈恋爱，换位思考即可发现。", "role": "conclusion"}
+   ],
+   "main_claims": [
+    {"claim_id": "C001", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "不要指望“以死明志”，这是一种浪漫想象。", "evidence": ["E1"]},
+    {"claim_id": "C002", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "不管自觉有多大的冤情，要解决还是得活着来对质、作证和配合调查。", "evidence": ["E2"]},
+    {"claim_id": "C003", "claim_type": "author_explicit", "attribution": "author", "modality": "qualified", "statement": "如果觉得时机不成熟或者害怕打击报复，就还是先低头做人、积累条件、耐心等待。", "evidence": ["E3"]},
+    {"claim_id": "C004", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "东方文化很看重“死谏”、“尸谏”，这其实不是一个好的文化传统。", "evidence": ["E4"]},
+    {"claim_id": "C005", "claim_type": "author_explicit", "attribution": "author", "modality": "hypothetical", "statement": "如果没有这种文化熏陶，可能很多人不必死的。", "evidence": ["E5"]},
+    {"claim_id": "C006", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "真正立志做事的过程要隐忍、灵活、柔软；没有毕其功于一役、没有一时痛快、没有“犁庭扫穴”可指望；耐心最重要。", "evidence": ["E6", "E7", "E8"]},
+    {"claim_id": "C007", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "人们常常没有耐心，是因为对自己、组织、社会绝望，觉得一切都在“无限循环”且“向下循环”，于是认为不做超出原有极限的事就不会有变化。", "evidence": ["E9", "E10"]},
+    {"claim_id": "C008", "claim_type": "author_qualified", "attribution": "author", "modality": "qualified", "statement": "产生这种绝望感时，“原有极限”常常已经不是法律的边缘就是在生命的边缘。", "evidence": ["E11"]},
+    {"claim_id": "C009", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "作者无意阻止人们拼死去做自己相信的事，但希望对天意有更多的信心；很多事情会以预料不到的方式呈现出改变的机会。", "evidence": ["E12", "E13"]},
+    {"claim_id": "C010", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "不做那些事并不意味着事情无可改变：世事无常既有从好变坏也有从坏变好，人做不到的天若意动轻而易举（并以反问“你怎么知道天不会意动呢？”追问）。", "evidence": ["E14", "E15", "E16"]},
+    {"claim_id": "C011", "claim_type": "author_explicit", "attribution": "author", "modality": "hypothetical", "statement": "非要通过自杀或某种严重违法行为才能改变的东西，也许只是一种你应该接受的事实。", "evidence": ["E17"]},
+    {"claim_id": "C012", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "你活着而念念不忘，其实是对你想要的事情的最大推动。", "evidence": ["E18"]},
+    {"claim_id": "C013", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "乐天知命，好好活着。", "evidence": ["E19"]},
+    {"claim_id": "C014", "claim_type": "opponent_view", "attribution": "opponent", "modality": "asserted", "statement": "有“小朋友”义愤填膺、悲愤难当，认为本文写的是“妥协派”“投降派”。", "evidence": ["E20"]},
+    {"claim_id": "C015", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "社会不可能认可“遗书可以充分定罪”的逻辑：位高权重位置牵动成千上万人利益，拼死也要你遗臭万年的情况不罕见，连管片民警、基层法官、门诊医生、小学班主任都可能遇到，这种逻辑根本行不通。", "evidence": ["E21", "E22", "E23"]},
+    {"claim_id": "C016", "claim_type": "author_explicit", "attribution": "author", "modality": "qualified", "statement": "如果真诚主张“舍身取义”“宁折不弯”，建议在恋爱阶段就先说清楚，不然对对方有点不公平。", "evidence": ["E24"]},
+    {"claim_id": "C017", "claim_type": "author_explicit", "attribution": "author", "modality": "questioned", "statement": "以反问追问：选择宁折不弯，对方的下半辈子怎么办？", "evidence": ["E25"]},
+    {"claim_id": "C018", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "谈恋爱时要留意对方是否持有“宁折不弯”的观点，想清楚自己愿不愿意接受这种人生安排；可以接受，但应是明确想好愿意接受而去接受的。", "evidence": ["E26", "E27"]},
+    {"claim_id": "C019", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "把本文观点视作“投降派”“妥协派”、认为“相信天意很幼稚、唯心”，只会让人觉得你不可以被托付任何事。", "evidence": ["E28"]},
+    {"claim_id": "C020", "claim_type": "author_explicit", "attribution": "author", "modality": "predicted", "statement": "事情不顺利、进入低效或疲劳循环时，你很可能会以此为驱动做出惊人的超出规范的举动，甚至极端行为。", "evidence": ["E29"]},
+    {"claim_id": "C021", "claim_type": "author_qualified", "attribution": "author", "modality": "qualified", "statement": "几乎任何重要的事情都可能会陷入低效、疲劳的循环，因此没有人敢托付你重要或长期的事情。", "evidence": ["E30", "E31"]},
+    {"claim_id": "C022", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "一说这话，人家就大概率不敢跟你谈恋爱，因为托付终身属于重大托付，仅凭直觉就知道说这些话的人托付不得；换位思考即可发现。", "evidence": ["E32", "E33", "E34"]}
+   ],
+   "argument_steps": [
+    "① 立论：以死明志是浪漫想象，不要指望（P001）。",
+    "② 给出替代路径：活着对质、作证、配合调查；条件不具备时先低头积累、耐心等待（P002）。",
+    "③ 归因于文化传统：批评“死谏”“尸谏”（P003），并主张做事要隐忍、灵活、柔软，耐心最重要（P004-P005）。",
+    "④ 解释无耐心的心理成因与“原有极限”已近法律/生命边缘（P006-P007）。",
+    "⑤ 转入信念层面：希望对天意更有信心，世事无常也可能是从坏变好，活着念念不忘即为最大推动（P008-P012）。",
+    "⑥ 预设并引出反驳（“妥协派”“投降派”），分三点回应（P013-P014）。",
+    "⑦ 第一点：遗书不能充分定罪，此类怨恨与指控在广泛利益岗位上并不罕见（P015）。",
+    "⑧ 第二点：主张宁折不弯者应先在恋爱阶段说明，并对伴侣的处境负责（P016-P019）。",
+    "⑨ 第三点：把本文视为投降/妥协、视天意为幼稚唯心，将使人不敢托付；重要事情易陷入低效疲劳循环，极端倾向者不可托付（P020-P023）。",
+    "⑩ 以恋爱与托付终身作结，要求换位思考（P024-P025）。"
+   ],
+   "concept_usage": [
+    {"term": "以死明志", "meaning": "本文劝止的做法：以自杀表明心志、寄望以此推动事情改变。", "evidence": "P001", "ambiguity": "未区分不同动机或情境下的自尽行为。"},
+    {"term": "天意", "meaning": "作者主张应对其“有更多的信心”的力量，被认为可能以预料不到的方式带来改变；反驳者称之为“幼稚、唯心”。", "evidence": "P008", "ambiguity": "内涵与所指未界定，属本文的关键歧义点。"},
+    {"term": "宁折不弯", "meaning": "引号内的一种做人原则；作者建议持有者应在恋爱阶段先说明。", "evidence": "P016", "ambiguity": "作者对该原则本身不作贬斥（P019），但强调其托付后果。"},
+    {"term": "托付", "meaning": "把重要或长期的事情（含终身）交给他人；本文以之衡量“宁折不弯”主张者的可靠性。", "evidence": "P024", "ambiguity": "由恋爱推及一般托付的类比限度未说明。"},
+    {"term": "原有极限", "meaning": "指绝望者认为必须突破的既有边界，作者称其常常已在法律或生命边缘。", "evidence": "P007", "ambiguity": "无明确定义。"}
+   ],
+   "examples_and_targets": [
+    "成都大学毛洪涛溺亡调查结果：仅见于提问字段，正文未讨论，也未核实相关事实",
+    "“死谏”“尸谏”与“东方文化”（P003，作者批评的文化传统）",
+    "“犁庭扫穴”（P004，引号内成语，指作者认为不可指望的彻底解决方式）",
+    "位高权重位置、恨之入骨者“拼得一死也要你遗臭万年”（P015，作者例证）",
+    "管片民警、基层法官、门诊医生、小学班主任（P015，作者用来说明被怨恨与诬告风险的类比对象）",
+    "恋爱、托付终身（P016-P019、P024-P025，作者说明“托付”逻辑的例证）",
+    "“小朋友”的“妥协派”“投降派”指责（P013、P020，作者回应的反驳意见）"
+   ],
+   "conditions": [
+    "如果觉得时机不成熟或者害怕打击报复（P002）。",
+    "如果没有这种文化熏陶（P003，反事实假设，带“可能”）。",
+    "如果自己不做点什么超出原有极限的事情（P006，作者转述的绝望者想法）。",
+    "天如果意动（P009，假设）；非要以自杀或严重违法才能改变的东西（P010，假设，带“也许”）。",
+    "如果真诚主张“舍身取义”“宁折不弯”（P016）；事情要是不顺利、进入低效或疲劳循环（P021）。",
+    "限定词：常常（P007）、很可能（P021）、几乎（P022）、大概率（P024）。"
+   ],
+   "rhetoric_and_tone": "劝诫与论辩结合：开篇以断然否定句立论，中段用“第一/第二/第三”分点回应“妥协派/投降派”的指责；通篇以第二人称“你”直面读者，多处反问（“对方的下半辈子怎么办？”“谁敢托付你重要或者长期的事情做？”）带有压力感；借用“天意”“乐天知命”“死谏”“尸谏”等传统词汇，以恋爱与托付作类比，对反驳者语带讥讽（“小朋友”“义愤填膺”）。",
+   "unresolved_questions": [
+    "作者未评论提问所指的成都大学毛洪涛溺亡调查结果，也未列出“值得关注的信息”，回答转向一般性劝诫。",
+    "“天意”的内涵与所指未界定（P008-P009、P020）。",
+    "P013 中“小朋友”的指称对象不明（可能指评论者或年轻读者）。",
+    "“东方文化”的范围与所指未界定（P003）。",
+    "以恋爱对象是否持“宁折不弯”判断可托付性所依赖的经验依据未说明。",
+    "updated_at（2021-12-06）晚于 published_at（2020-11-28），是否经编辑未说明。"
+   ],
+   "evidence": [
+    {"key": "E1", "paragraph_id": "P001", "quote": "不要指望“以死明志”，这是一种浪漫想象。", "relation": "supports"},
+    {"key": "E2", "paragraph_id": "P002", "quote": "不管你觉得自己有多大的冤情，要解决还是得你活着来对质，作证和配合调查。", "relation": "supports"},
+    {"key": "E3", "paragraph_id": "P002", "quote": "如果觉得时机不成熟或者害怕打击报复，那么就还是先低头做人，积累条件，耐心等待。", "relation": "supports"},
+    {"key": "E4", "paragraph_id": "P003", "quote": "东方文化很看重“死谏”、“尸谏”，这其实不是一个好的文化传统。", "relation": "supports"},
+    {"key": "E5", "paragraph_id": "P003", "quote": "如果没有这种文化熏陶，可能很多人不必死的。", "relation": "supports"},
+    {"key": "E6", "paragraph_id": "P004", "quote": "真的立志要做什么事，是一个要隐忍、灵活、柔软的过程。", "relation": "supports"},
+    {"key": "E7", "paragraph_id": "P004", "quote": "没有毕其功于一役，没有一时痛快，没有“犁庭扫穴”可指望。", "relation": "supports"},
+    {"key": "E8", "paragraph_id": "P005", "quote": "耐心最重要。", "relation": "supports"},
+    {"key": "E9", "paragraph_id": "P006", "quote": "人们常常没有耐心，是因为对自己绝望、对组织绝望、对社会绝望了", "relation": "supports"},
+    {"key": "E10", "paragraph_id": "P006", "quote": "觉得一切事情都在“无限循环”，而且是“向下循环”", "relation": "supports"},
+    {"key": "E11", "paragraph_id": "P007", "quote": "而产生这种绝望感时，“原有极限”常常已经不是法律的边缘就是在生命的边缘。", "relation": "supports"},
+    {"key": "E12", "paragraph_id": "P008", "quote": "我无意阻止人们拼死去做某件自己相信的事，但是我希望人们对天意有更多的信心。", "relation": "supports"},
+    {"key": "E13", "paragraph_id": "P008", "quote": "很多事情，会以你所预料不到的方式呈现出改变的机会。", "relation": "supports"},
+    {"key": "E14", "paragraph_id": "P009", "quote": "世事无常，不是只有从好变坏的无常，也有从坏变好的无常。", "relation": "supports"},
+    {"key": "E15", "paragraph_id": "P009", "quote": "人做不到的，天如果意动，不过是轻而易举的事。", "relation": "supports"},
+    {"key": "E16", "paragraph_id": "P009", "quote": "你怎么知道天不会意动呢？", "relation": "supports"},
+    {"key": "E17", "paragraph_id": "P010", "quote": "而非要你通过自杀或者某种严重违法行为才能改变的东西，也许只是一种你应该接受的事实。", "relation": "supports"},
+    {"key": "E18", "paragraph_id": "P011", "quote": "你活着而念念不忘，其实是对你想要的事情的最大推动。", "relation": "supports"},
+    {"key": "E19", "paragraph_id": "P012", "quote": "乐天知命，好好活着。", "relation": "supports"},
+    {"key": "E20", "paragraph_id": "P013", "quote": "我发现很多小朋友很“义愤填膺”，觉得悲愤难当，觉得这里写的是“妥协派”，“投降派”。", "relation": "contradicts"},
+    {"key": "E21", "paragraph_id": "P015", "quote": "第一，不管你怎么想，一个社会不可能认可“遗书可以充分定罪”的逻辑。", "relation": "supports"},
+    {"key": "E22", "paragraph_id": "P015", "quote": "肯拼得一死也要你遗臭万年的情况根本不罕见。", "relation": "supports"},
+    {"key": "E23", "paragraph_id": "P015", "quote": "甚至管片民警、基层法官、门诊医生、小学班主任都可能遇到这种事。这种逻辑是根本行不通的。", "relation": "supports"},
+    {"key": "E24", "paragraph_id": "P016", "quote": "第二，如果真诚的主张“舍身取义”“宁折不弯”，建议在恋爱阶段就先跟对方说清楚，不然对对方着实有点不公平。", "relation": "supports"},
+    {"key": "E25", "paragraph_id": "P017", "quote": "你觉得憋屈，选择宁折不弯了，对方的下半辈子怎么办？", "relation": "supports"},
+    {"key": "E26", "paragraph_id": "P018", "quote": "要问一下或者通过特定窗口观察一下对方是不是持有“宁折不弯”的观点，想想自己愿不愿意接受这种人生安排。", "relation": "supports"},
+    {"key": "E27", "paragraph_id": "P019", "quote": "你当然可以接受，毕竟这不是什么丢人的做人原则，但是你应该是明确想好愿意接受而去接受的。", "relation": "qualifies"},
+    {"key": "E28", "paragraph_id": "P020", "quote": "第三，把这里的观点视作“投降派”、“妥协派”，认为“相信天意很幼稚、唯心”，只会让人觉得你不可以被托付任何事。", "relation": "supports"},
+    {"key": "E29", "paragraph_id": "P021", "quote": "你很可能会以此为驱动做出惊人的超出规范的举动，甚至极端行为。", "relation": "supports"},
+    {"key": "E30", "paragraph_id": "P022", "quote": "然而几乎任何重要的事情都可能会陷入一个低效、疲劳的循环。", "relation": "supports"},
+    {"key": "E31", "paragraph_id": "P023", "quote": "所以谁敢托付你重要或者长期的事情做？", "relation": "supports"},
+    {"key": "E32", "paragraph_id": "P024", "quote": "为什么你一说这话，人家就大概率不敢跟你谈恋爱？", "relation": "supports"},
+    {"key": "E33", "paragraph_id": "P024", "quote": "仅凭直觉就知道说这些话的人托付不得。", "relation": "supports"},
+    {"key": "E34", "paragraph_id": "P025", "quote": "对方说“我宁折不弯”，你立刻就会发现这一点。", "relation": "supports"}
+   ]
+  },
+  "provisional_tags": {
+   "domain_candidates": ["人生哲学", "伦理与政治文化", "公共事件评论", "心理危机与劝解"],
+   "issue_candidates": ["以死明志与死谏传统", "举报与调查中的证据和程序", "绝望与耐心的心理机制", "天意与命运观", "亲密关系中的重大托付"],
+   "text_function_candidates": ["事件回应", "劝诫", "论辩式反驳", "经验总结"],
+   "object_candidates": ["成都大学毛洪涛（提问提及）", "自称“妥协派/投降派”的反驳者（未具名）", "管片民警、基层法官、门诊医生、小学班主任（类比群体）"],
+   "working_keywords": ["以死明志", "死谏", "尸谏", "天意", "乐天知命", "宁折不弯", "托付", "耐心"]
+  },
+  "notes": "提问指向具体公共事件（毛洪涛溺亡调查结果），正文未讨论该事件本身，回答为一般性劝诫；已避免把提问者说法当作作者主张。文中涉历史文化与执法概率等事实性说法（如“东方文化很看重死谏、尸谏”）属作者主张，需外部核查时登记为待核。无图片节点。"
+ },
+ "00913701": {
+  "analysis": {
+   "question_context": "提问者问“如何评价张艺谋导演的电影《一秒钟》？”。正文并未评价影片整体，而是以片中情节（刘闺女随口诬陷、小孩欺负姐弟、保卫科丢弃底片）为引，讨论一种“朴素”的残忍，并集中批评“朴素的正义感/正义观”，主张谈正义、据正义行动者有义务使自己的正义观超出“朴素”的水平。",
+   "content_units": [
+    {"unit_id": "U001", "paragraph_refs": ["P001", "P002", "P003", "P004", "P005"], "summary": "借影片情节说明一种“朴素”的残忍：刘闺女随口称人“坏分子”、要“叫保卫科”，小孩欺负姐弟连踢带打，保卫科随意丢弃张九声的底片；残忍无声到人们认不出。", "role": "example"},
+    {"unit_id": "U002", "paragraph_refs": ["P006", "P007", "P008", "P009"], "summary": "由影片转入作者立场：最痛恨轻易凭猜想和脑补给人定罪；是否深刻、严谨地怀疑自己的怀疑属道德取向问题，是善良在实践意义上的定义。", "role": "claim"},
+    {"unit_id": "U003", "paragraph_refs": ["P010", "P011"], "summary": "承认理解人为何放弃这种怀疑（怕“窝囊”“受欺负”），但仍判定为放弃善良本身；并强调冤屈之苦未受者无法体会。", "role": "qualification"},
+    {"unit_id": "U004", "paragraph_refs": ["P012", "P013", "P014", "P015", "P016"], "summary": "批评“朴素的正义感”概念：其历史背后往往是无人署名的暴力；正义与爱、公平同为最复杂的概念，没有朴素可言；据正义行动者有义务超出“朴素”的学前班水平，否则对别人是灭顶之灾。", "role": "rebuttal"},
+    {"unit_id": "U005", "paragraph_refs": ["P017", "P018", "P019", "P020"], "summary": "后果推演：该行事逻辑损害亲密关系并传给子女，身边的人成为受害者与继承人，后代会继续“朴素的”审判，陈陈相因、冤冤相结。", "role": "reason"},
+    {"unit_id": "U006", "paragraph_refs": ["P021", "P022", "P023", "P024", "P025"], "summary": "解释“朴素的正义观”为何受拥抱：“大义凛然”地使用暴力太享受且有好评；对照指出正义观越成熟则该打该杀的人越少，直到无人可以丢石头，世上只有病人没有罪人。", "role": "reason"},
+    {"unit_id": "U007", "paragraph_refs": ["P026"], "summary": "独立链接节点《为什么要废除死刑？》（lexical 标为 link，未作为段落正文覆盖）。", "role": "other"},
+    {"unit_id": "U008", "paragraph_refs": ["P027", "P028", "P029", "P030"], "summary": "提出最后的论点：其真正恶果是把要求提高到不允许人沾惹一点嫌疑；法律是尚留活动空间的城墙，“不得有嫌疑”则是压迫的力场。", "role": "claim"},
+    {"unit_id": "U009", "paragraph_refs": ["P031", "P032", "P033", "P034"], "summary": "假设推演收束：若雷池绕一圈，净结果是所有人被终身监禁于精神牢狱；参与者是在无意识编织自己的牢笼，并以反问追问那点快感是否值得。", "role": "conclusion"}
+   ],
+   "main_claims": [
+    {"claim_id": "C001", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "影片最让人触动的是一种“朴素”的残忍。", "evidence": ["E1"]},
+    {"claim_id": "C002", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "片中刘闺女随口称人“坏分子”、要“叫保卫科”，为私利编造撒谎诬陷人，全然不知这对人意味着什么悲惨命运。", "evidence": ["E2"]},
+    {"claim_id": "C003", "claim_type": "author_qualified", "attribution": "author", "modality": "qualified", "statement": "小孩们欺负刘闺女姐弟连踢带打，作者估计ta们大概有一半只觉得是无伤大雅的好玩。", "evidence": ["E3", "E4"]},
+    {"claim_id": "C004", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "保卫科的人随便把张九声的底片搜出来丢掉，这于ta们没有收益、只是于张九声有损，因为“坏分子”不值得同情。", "evidence": ["E5", "E6"]},
+    {"claim_id": "C005", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "残忍无声，以至于人们认不出残忍了，这才是真的残忍。", "evidence": ["E7"]},
+    {"claim_id": "C006", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "作者生平最痛恨人给人定罪时凭自己的猜想和脑补、过于轻易。", "evidence": ["E8"]},
+    {"claim_id": "C007", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "人有没有深刻、严谨、抱着最大努力去怀疑自己对ta人的怀疑，是一个道德取向问题。", "evidence": ["E9"]},
+    {"claim_id": "C008", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "这种自我怀疑可以毫不夸张地说是善良在实践意义上的定义。", "evidence": ["E10"]},
+    {"claim_id": "C009", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "因怕“窝囊”“受欺负”就放弃这种怀疑的原则和努力，就是在放弃善良本身；作者理解人为何这样做，但仍如此判定。", "evidence": ["E11", "E12"]},
+    {"claim_id": "C010", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "受到这种冤屈的痛苦刻骨而煎熬，没有受过的人根本无法体会。", "evidence": ["E13"]},
+    {"claim_id": "C011", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "作者极其不喜欢“朴素的正义感”这个概念。", "evidence": ["E14"]},
+    {"claim_id": "C012", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "历史上这一概念背后并不是“天降正义”，而往往是说不得、怪不得、无法追究的难以言喻的、无人署名的暴力。", "evidence": ["E15"]},
+    {"claim_id": "C013", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "正义与爱、公平一样是人类最复杂、最难以言明的概念，根本没有“朴素”的地方可言。", "evidence": ["E16"]},
+    {"claim_id": "C014", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "任何人要谈正义、要基于正义行动（尤其是可能伤害人的举动），都有义务保证自己的正义观超过“朴素”这个学前班级别；否则其“朴素”对别人是灭顶之灾、毁家之难。", "evidence": ["E17", "E18"]},
+    {"claim_id": "C015", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "躲在千万同类之中并非没有后果：该行事逻辑使亲密关系不可能健康并传递到子女；身边的人成为其“朴素的正义观”的受害者和继承人，将来还会“朴素的”审判朋友、配偶和子女，陈陈相因、冤冤相结。", "evidence": ["E19", "E20", "E21", "E22"]},
+    {"claim_id": "C016", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "“朴素的正义观”如此受拥抱，是因为“大义凛然”地使用暴力的感觉太享受——可以痛快地折磨，不但没有后果，甚至迎来好评和称赞。", "evidence": ["E23"]},
+    {"claim_id": "C017", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "正义观越成熟、越深入，会发现世上该打、该杀、该伤、该骂的人越少，直到无人可以丢石头。", "evidence": ["E24"]},
+    {"claim_id": "C018", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "其实这个世界上并没有罪人，只有病人。", "evidence": ["E25"]},
+    {"claim_id": "C019", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "“朴素的正义观”真正的恶果不但是杀死杀伤无辜（那只是一部分），而是把要求提高到不允许人沾惹一点嫌疑；无需真的犯罪，只要有足够嫌疑就已满足处决条件。", "evidence": ["E26", "E27"]},
+    {"claim_id": "C020", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "法律本身只是一道城墙，虽逼仄但至少留下活动空间；而“不得有嫌疑”这条标准是一种压迫的力场，把每个人压缩到只能勉强承受的极限。", "evidence": ["E28", "E29"]},
+    {"claim_id": "C021", "claim_type": "author_explicit", "attribution": "author", "modality": "hypothetical", "statement": "按此规则不但不敢越雷池半步，还不敢近雷池半步；如果雷池绕人一圈，净结果就是所有人都原地坐了精神的牢狱，成为被终身监禁的囚犯。", "evidence": ["E30", "E31"]},
+    {"claim_id": "C022", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "所有参与“朴素的正义”、实施粗陋审判并动用舆论暴力乃至肢体暴力去实施“判决”的人，都是在无意识地编织自己的牢笼。", "evidence": ["E32"]},
+    {"claim_id": "C023", "claim_type": "author_explicit", "attribution": "author", "modality": "questioned", "statement": "以反问追问：那点审判和施暴的“快感”，真的值得自己、家人、子女被终身监禁吗？", "evidence": ["E33"]}
+   ],
+   "argument_steps": [
+    "① 以影片情节铺陈“朴素”的残忍（P001-P005）。",
+    "② 转入自身立场：痛恨轻易定罪，把“怀疑自己的怀疑”列为道德取向问题乃至善良的实践定义（P006-P009）。",
+    "③ 让步与限定：理解人为何放弃，但仍判为放弃善良；冤屈之苦外人难体会（P010-P011）。",
+    "④ 直接批评“朴素的正义感”概念，主张正义观须超出学前班水平（P012-P016）。",
+    "⑤ 推演后果：亲密关系与子女受牵连，冤冤相结（P017-P020）。",
+    "⑥ 解释其吸引力：施暴快感、无后果、有好评；并以“成熟正义观”作对照（P021-P025）。",
+    "⑦ 提出最后论点：真正的恶果是不允许有嫌疑，形成压迫力场（P027-P030）。",
+    "⑧ 以“雷池绕一圈”的假设推演终身监禁式结局，并以反问收束（P031-P034）。"
+   ],
+   "concept_usage": [
+    {"term": "朴素", "meaning": "本文对“朴素的正义感/正义观”的贬义用法，指未经反思、低幼（“学前班级别”）的正义判断。", "evidence": "P012", "ambiguity": "作者未给出“非朴素”的判定标准。"},
+    {"term": "朴素的正义感", "meaning": "作者极其不喜欢的概念；称其历史背后是无人署名的暴力，并会把标准提高到不允许有嫌疑。", "evidence": "P012", "ambiguity": "概念的提出者与所指范围未说明。"},
+    {"term": "嫌疑", "meaning": "无需犯罪、只需被怀疑即可满足“处决条件”的状态。", "evidence": "P029", "ambiguity": "未区分不同强度或来源的嫌疑。"},
+    {"term": "罪人/病人", "meaning": "作者以“只有病人”否定“有罪人”的框架。", "evidence": "P024", "ambiguity": "为断言式表述，未展开论证。"},
+    {"term": "雷池", "meaning": "比喻不可逾越的界限；文中出现“不敢近雷池半步”与“雷池绕你一圈”两种情形。", "evidence": "P031", "ambiguity": "比喻的边界未界定。"}
+   ],
+   "examples_and_targets": [
+    "电影《一秒钟》情节：刘闺女诬陷并要“叫保卫科”、小孩欺负刘闺女姐弟、保卫科丢弃张九声底片（P002-P004，作者的分析例证；其中人物心理估计属作者推断）",
+    "“坏分子”这一身份标签（P002、P004，影片中的社会身份用语）",
+    "“朴素的正义感”概念（P012-P016，作者批评的对象，未指明提出者）",
+    "“大义凛然”地使用暴力者（P022，作者描述的施暴心理）",
+    "“无人可以丢石头”（P023，借投石定罪的意象作修辞）",
+    "“为什么要废除死刑？”（P026，独立链接节点，指向另一篇知乎回答，正文未展开其内容）",
+    "影片导演张艺谋仅见于提问字段，正文未提及。"
+   ],
+   "conditions": [
+    "尤其是基于正义去做可能伤害人的举动时，作者要求其正义观超出“朴素”水平（P015）。",
+    "假设条件：“如果雷池绕你一圈”（P031）。",
+    "限定与估计：小孩“大概倒有一半”（P003）、历史上“往往”（P013）、正义观“越成熟”（P023）。",
+    "作者称其观察以影片情节为据，未提供影片之外的经验材料。"
+   ],
+   "rhetoric_and_tone": "影评起笔后迅速转入道德批评：先以影片细节铺陈“朴素”的残忍，再以第一人称强烈表态（“我生平【最痛恨】”“我极其不喜欢”，P006 在 lexical 中为加粗），随后密集使用第二人称“你”与反问、感叹（“否则，你的‘朴素’，对别人是灭顶之灾、毁家之难！”），并以城墙、力场、雷池、牢狱等比喻层层推进，结尾以反问收束；行文带强烈的训诫与警告语气。",
+   "unresolved_questions": [
+    "提问问“如何评价电影《一秒钟》”，正文只借片中情节谈“朴素的残忍”与“朴素的正义观”，未评价影片的导演、表演、叙事等整体面向；片名“一秒钟”未在正文出现。",
+    "P026 为独立链接节点《为什么要废除死刑？》（指向另一篇知乎回答），其与本文的关系（自引或推荐）正文未说明，该节点也未作为段落正文覆盖。",
+    "作者未指明“朴素的正义感”概念的提出者或流行来源。",
+    "作者对影片人物心理的估计（“大概倒有一半觉得无伤大雅的好玩”）属推断，无法由正文核实。",
+    "“只有病人”“无人可以丢石头”等断言的依据未展开。",
+    "updated_at（2025-10-08）显著晚于 published_at（2020-11-30），是否经编辑或补写未说明。"
+   ],
+   "evidence": [
+    {"key": "E1", "paragraph_id": "P001", "quote": "最让人触动的是一种“朴素”的残忍。", "relation": "supports"},
+    {"key": "E2", "paragraph_id": "P002", "quote": "刘闺女轻轻松松的就叫人“坏分子”，要“叫保卫科”，乃至于为了自己的目的随口就编造撒谎诬陷人", "relation": "supports"},
+    {"key": "E3", "paragraph_id": "P003", "quote": "小孩子们欺负刘闺女姐弟，连踢带打。", "relation": "supports"},
+    {"key": "E4", "paragraph_id": "P003", "quote": "ta们大概倒有一半觉得是无伤大雅的好玩，没觉得有什么不妥。", "relation": "supports"},
+    {"key": "E5", "paragraph_id": "P004", "quote": "保卫科的人随便就把张九声的底片搜出来丢掉", "relation": "supports"},
+    {"key": "E6", "paragraph_id": "P004", "quote": "这其实于ta们没有任何收益，只是于张九声有损——“坏分子”没有什么值得同情的。", "relation": "supports"},
+    {"key": "E7", "paragraph_id": "P005", "quote": "残忍无声，以至于人们认不出残忍了。这才是真的残忍。", "relation": "supports"},
+    {"key": "E8", "paragraph_id": "P006", "quote": "我生平【最痛恨】人给人定罪时凭自己的猜想和脑补，过于轻易。", "relation": "supports"},
+    {"key": "E9", "paragraph_id": "P007", "quote": "人有没有怀疑自己对ta人的怀疑，有没有深刻的、严谨的、抱着最大努力的怀疑自己的怀疑，是一个道德取向问题。", "relation": "supports"},
+    {"key": "E10", "paragraph_id": "P008", "quote": "可以毫不夸张的说，它就是善良在实践意义上的定义。", "relation": "supports"},
+    {"key": "E11", "paragraph_id": "P009", "quote": "因为这样会导致自己“窝囊”“受欺负”，就放弃这个原则和努力，就是在放弃善良本身。", "relation": "supports"},
+    {"key": "E12", "paragraph_id": "P010", "quote": "我理解人为什么会这样做、要这样做，但是这样做仍然是在放弃善良本身。", "relation": "qualifies"},
+    {"key": "E13", "paragraph_id": "P011", "quote": "受到这种冤屈的痛苦是多么刻骨和煎熬，没有受过的人，根本无法体会。", "relation": "supports"},
+    {"key": "E14", "paragraph_id": "P012", "quote": "我极其不喜欢“朴素的正义感”这个概念。", "relation": "supports"},
+    {"key": "E15", "paragraph_id": "P013", "quote": "历史上这概念背后并不是什么“天降正义”，而往往是说不得、怪不得、无法追究的难以言喻的、无人署名的暴力。", "relation": "supports"},
+    {"key": "E16", "paragraph_id": "P014", "quote": "正义与爱、公平一样，堪称人类最复杂、最难以言明的概念，它根本没有任何“朴素”的地方可言。", "relation": "supports"},
+    {"key": "E17", "paragraph_id": "P015", "quote": "这人都有义务去保证自己的正义观超过“朴素”这个学前班级别。", "relation": "supports"},
+    {"key": "E18", "paragraph_id": "P016", "quote": "否则，你的“朴素”，对别人是灭顶之灾、毁家之难！", "relation": "supports"},
+    {"key": "E19", "paragraph_id": "P017", "quote": "你的行事逻辑会让你的亲密关系不可能健康，也会无可遏制的传递到你的子女身上。", "relation": "supports"},
+    {"key": "E20", "paragraph_id": "P018", "quote": "你身边的人都是你“朴素的正义观”的受害者和继承人。", "relation": "supports"},
+    {"key": "E21", "paragraph_id": "P019", "quote": "ta们将来还会“朴素的”去审判ta们的朋友、配偶和子女。", "relation": "supports"},
+    {"key": "E22", "paragraph_id": "P020", "quote": "陈陈相因，冤冤相结。", "relation": "supports"},
+    {"key": "E23", "paragraph_id": "P022", "quote": "因为“大义凛然”的使用暴力的感觉太享受了。可以痛快的折磨，不但没有后果，甚至还迎来好评和称赞。", "relation": "supports"},
+    {"key": "E24", "paragraph_id": "P023", "quote": "正义观越成熟、越深入，会发现世上该打、该杀、该伤、该骂的人越少——直到无人可以丢石头。", "relation": "supports"},
+    {"key": "E25", "paragraph_id": "P024", "quote": "其实，这个世界上并没有罪人，只有病人。", "relation": "supports"},
+    {"key": "E26", "paragraph_id": "P028", "quote": "它真正的恶果是不但要求人不犯罪，而且进一步的将要求提高到了不允许人沾惹一点嫌疑的可能。", "relation": "supports"},
+    {"key": "E27", "paragraph_id": "P029", "quote": "你不需要真的犯罪，只需要你有足够的嫌疑，对于“朴素的正义观”已经满足处决的条件了。", "relation": "supports"},
+    {"key": "E28", "paragraph_id": "P030", "quote": "法律本身只是一道城墙，虽然已经足够逼仄，但至少还算给你留了活动的空间。", "relation": "supports"},
+    {"key": "E29", "paragraph_id": "P030", "quote": "而“不得有嫌疑”这条标准却是一种压迫的力场，把每个人都压缩到了只能勉强承受的极限。", "relation": "supports"},
+    {"key": "E30", "paragraph_id": "P031", "quote": "按照这个规则，如果雷池绕你一圈，净结果是什么？", "relation": "supports"},
+    {"key": "E31", "paragraph_id": "P032", "quote": "净结果就是所有人都原地坐了精神的牢狱，成了被终身监禁的囚犯。", "relation": "supports"},
+    {"key": "E32", "paragraph_id": "P033", "quote": "都是在无意识的编织自己的牢笼。", "relation": "supports"},
+    {"key": "E33", "paragraph_id": "P034", "quote": "那点审判和施暴的“快感”，真的值得你自己、你的家人、你的子女被终身监禁吗？", "relation": "supports"},
+    {"key": "E34", "paragraph_id": "P026", "quote": "为什么要废除死刑？", "relation": "context"}
+   ]
+  },
+  "provisional_tags": {
+   "domain_candidates": ["电影评论", "伦理与道德", "社会心理", "法律与正义"],
+   "issue_candidates": ["朴素正义感的危害", "定罪与自我怀疑的伦理", "舆论暴力与株连式怀疑", "死刑存废（仅链接提及）"],
+   "text_function_candidates": ["影评", "道德批评", "论辩", "训诫"],
+   "object_candidates": ["电影《一秒钟》角色刘闺女、张九声、保卫科", "张艺谋（提问提及）", "实施“朴素正义”的公众（泛称）"],
+   "working_keywords": ["朴素的正义感", "朴素", "坏分子", "保卫科", "嫌疑", "雷池", "罪人/病人", "死刑"]
+  },
+  "notes": "正文对影片仅取部分情节作伦理讨论，未作整体评价；P026 链接节点内容未核验，未据此补写任何正文。无图片节点，full_text_checked=true。updated_at 显著晚于 published_at，编辑内容未说明。"
+ },
+ "974497b2": {
+  "analysis": {
+   "question_context": "提问者问“人有没有保持愚蠢的自由？”。正文以五句格言式短句直接给出肯定回答：先立“任何人类的意见在绝对意义上都是愚蠢的”这一前提，再推出有自由就有保持愚蠢的自由，并把自由定义为保持愚蠢的自由、坚持别人不认同的意见的权利。",
+   "content_units": [
+    {"unit_id": "U001", "paragraph_refs": ["P001"], "summary": "前提：任何人类的意见在绝对意义上都是愚蠢的。", "role": "claim"},
+    {"unit_id": "U002", "paragraph_refs": ["P002"], "summary": "推论：人只要有自由，就意味着有保持愚蠢的自由。", "role": "conclusion"},
+    {"unit_id": "U003", "paragraph_refs": ["P003"], "summary": "理由：因为自由就是保持愚蠢的自由。", "role": "reason"},
+    {"unit_id": "U004", "paragraph_refs": ["P004"], "summary": "逆否式表述：不允许人愚蠢，就是不允许人自由。", "role": "claim"},
+    {"unit_id": "U005", "paragraph_refs": ["P005"], "summary": "以权利表述收束：自由即坚持别人不认同的意见的权利，本质上是被看为愚蠢而不被干涉的权利。", "role": "definition"}
+   ],
+   "main_claims": [
+    {"claim_id": "C001", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "任何人类的意见在绝对意义上都是愚蠢的。", "evidence": ["E1"]},
+    {"claim_id": "C002", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "因此，人只要有自由，就意味着人有保持愚蠢的自由。", "evidence": ["E2"]},
+    {"claim_id": "C003", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "因为自由就是保持愚蠢的自由。", "evidence": ["E3"]},
+    {"claim_id": "C004", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "不允许人愚蠢，就是不允许人自由。", "evidence": ["E4"]},
+    {"claim_id": "C005", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "自由即坚持别人不认同的意见的权利，在本质上也就是“被人看为愚蠢而不被干涉”的权利。", "evidence": ["E5"]}
+   ],
+   "argument_steps": [
+    "① 前提：任何人类意见在绝对意义上都是愚蠢的（P001）。",
+    "② 推出：只要有自由，就有保持愚蠢的自由（P002）。",
+    "③ 给出理由/定义：自由就是保持愚蠢的自由（P003）。",
+    "④ 逆否式表述：不允许人愚蠢即不允许人自由（P004）。",
+    "⑤ 收束为权利表述：自由是坚持别人不认同的意见的权利，本质上是“被人看为愚蠢而不被干涉”的权利（P005）。",
+    "⑥ 全篇无举例、无数据，亦未讨论自由的限度。"
+   ],
+   "concept_usage": [
+    {"term": "愚蠢", "meaning": "本文用于陈述“任何人类的意见在绝对意义上”的属性，因此不是对特定人或特定意见的贬称。", "evidence": "P001", "ambiguity": "未给出“愚蠢”的定义，也未说明“绝对意义”以什么为标准。"},
+    {"term": "自由", "meaning": "本文定义为保持愚蠢的自由、坚持别人不认同的意见的权利，本质上是“被人看为愚蠢而不被干涉”的权利。", "evidence": "P003", "ambiguity": "与常见的政治自由、行动自由含义的关系未说明；P005 以“本质上”作限定。"},
+    {"term": "权利", "meaning": "P005 以“权利”表述自由，指向不被干涉。", "evidence": "P005", "ambiguity": "未说明权利主体、边界与救济方式。"}
+   ],
+   "examples_and_targets": [
+    "本文无具体例子、人物、机构、事件或数据。",
+    "唯一的具体化表述是“别人不认同的意见”（P005，泛称对象）。"
+   ],
+   "conditions": [
+    "以“人只要有自由”为前提条件（P002）。",
+    "“在绝对意义上”为限定语（P001）。",
+    "“在本质上”为限定语（P005）。"
+   ],
+   "rhetoric_and_tone": "全篇五句格言式短句，P001-P004 在 lexical 中均为加粗；以“因此”“因为”串联，呈前提—推论—定义—逆否—权利表述的递进；无举例与论证展开，语气为简洁、不容置疑的断言，末句回到权利表述以收束。",
+   "unresolved_questions": [
+    "“愚蠢”的定义与“绝对意义”的判准未给出。",
+    "P002、P003、P004 三句之间是递进推论还是互为理由，正文未展开推理。",
+    "自由的其他含义（如行动自由、政治自由）是否被排除，未说明。",
+    "“不被干涉”的干涉主体（他人、舆论抑或公权力）未指明。",
+    "提问所问“有没有保持愚蠢的自由”被直接以断言回答，未讨论该自由的限度与代价。"
+   ],
+   "evidence": [
+    {"key": "E1", "paragraph_id": "P001", "quote": "任何人类的意见在绝对意义上都是愚蠢的。", "relation": "supports"},
+    {"key": "E2", "paragraph_id": "P002", "quote": "因此，人只要有自由，就意味着人有保持愚蠢的自由。", "relation": "supports"},
+    {"key": "E3", "paragraph_id": "P003", "quote": "因为自由就是保持愚蠢的自由。", "relation": "supports"},
+    {"key": "E4", "paragraph_id": "P004", "quote": "不允许人愚蠢，就是不允许人自由。", "relation": "supports"},
+    {"key": "E5", "paragraph_id": "P005", "quote": "自由即坚持别人不认同的意见的权利，在本质上也就是“被人看为愚蠢而不被干涉”的权利。", "relation": "supports"}
+   ]
+  },
+  "provisional_tags": {
+   "domain_candidates": ["政治哲学", "自由与权利", "意见/认识论"],
+   "issue_candidates": ["愚蠢的自由", "言论与意见自由", "不被干涉的权利"],
+   "text_function_candidates": ["答疑", "格言式论断", "概念界定"],
+   "object_candidates": ["无具名对象（泛称“人”“别人”）"],
+   "working_keywords": ["愚蠢的自由", "自由", "权利", "意见", "不被干涉", "绝对意义"]
+  },
+  "notes": "正文为格言式短答，无举例与论证展开；无图片节点，full_text_checked=true。brief 是正文内容的提要式复述，未用于支持主张；无版本差异标记（updated_at 2021-05-16）。"
+ }
+}
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument('--out', default=None, help='输出 JSONL 路径（默认 out/<batch>.out.jsonl）')
+    args = ap.parse_args()
+    rows = load_batch_rows(BATCH)
+    records = []
+    for row in rows:
+        art = row['article']
+        uid = UID_BY_ID[art['id']]
+        if uid not in ANALYSIS:
+            raise SystemExit('ANALYSIS 缺少 %s (%s)' % (uid, art.get('title')))
+        p = ANALYSIS[uid]
+        records.append(build_record(
+            row, row['batch_id'], row['corpus_sha256'],
+            p['analysis'], p['provisional_tags'], STARTED, COMPLETED,
+            status=p.get('status', 'read'),
+            full_text_checked=p.get('full_text_checked', True),
+            image_checked=p.get('image_checked', False),
+            notes=p.get('notes', '')))
+    out = args.out or os.path.join(_HERE, '..', 'out', BATCH + '.out.jsonl')
+    write_jsonl(out, records)
+    print('ok %s -> %s (%d records)' % (BATCH, out, len(records)))
+
+
+if __name__ == '__main__':
+    main()

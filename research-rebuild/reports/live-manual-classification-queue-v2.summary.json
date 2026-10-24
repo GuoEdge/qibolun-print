@@ -1,0 +1,25 @@
+{
+  "generated_at": "2026-09-26T22:13:57.402113+08:00",
+  "corpus_records": 4305,
+  "formal_index_records": 4305,
+  "manual_records_excluded": 4298,
+  "queue_records": 7,
+  "priority_counts": {
+    "235": 2,
+    "140": 1,
+    "95": 1,
+    "25": 1,
+    "0": 2
+  },
+  "reason_counts": {
+    "source_material_incomplete": 2,
+    "first_pass_needs_reread": 4,
+    "low_candidate_score": 5,
+    "empty_normalized_text": 2,
+    "official_unassigned": 1
+  },
+  "outputs": [
+    "/mnt/d/岐伯论/research-rebuild/reports/live-manual-classification-queue-v2.csv"
+  ],
+  "interpretation": "队列只决定人工阅读顺序；候选主/副专题和官方路径都是待审证据，不是最终分类。"
+}

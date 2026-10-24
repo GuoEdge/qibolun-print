@@ -1,0 +1,12 @@
+{
+  "retrievedAt": "2026-07-17T09:58:08.1609601Z",
+  "source": "https://sooon.ai/home/read/published/1?perPage=20&sortOrder=NewFirst&ethicalOnly=false&unnotedOnly=false",
+  "pageSize": 20,
+  "totalPage": 203,
+  "metadataCount": 4050,
+  "contentCount": 4050,
+  "failureCount": 0,
+  "metadataPath": "C:\\Users\\gcj\\Documents\\Codex\\2026-07-17\\https-sooon-ai-home-read-published\\outputs\\sooon-q9adg-sources.jsonl",
+  "contentPath": "C:\\Users\\gcj\\Documents\\Codex\\2026-07-17\\https-sooon-ai-home-read-published\\outputs\\sooon-q9adg-articles.jsonl",
+  "failurePath": null
+}

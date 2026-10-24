@@ -1,0 +1,432 @@
+{
+  "generated_at": "2026-09-26T21:11:13.796164+08:00",
+  "scope": "Post-rebuild read-only evidence snapshot; the rebuild wrote new round files, one updated live decision table, its derived indexes, and the round180 image assets.",
+  "corpus": {
+    "path": "sooon-q9adg-articles-v2.jsonl",
+    "records": 4305,
+    "sha256": "cdc9c271309e1d71d9708889a3a31f4777e0c339ea54c3753521894afdb8357d",
+    "sha256_expected_handoff": "cdc9c271309e1d71d9708889a3a31f4777e0c339ea54c3753521894afdb8357d",
+    "unchanged": true
+  },
+  "file_hashes": {
+    "sooon-q9adg-articles-v2.jsonl": {
+      "bytes": 61951820,
+      "sha256": "cdc9c271309e1d71d9708889a3a31f4777e0c339ea54c3753521894afdb8357d",
+      "modified_at": "2026-09-21T22:46:28.884987+08:00"
+    },
+    "sooon-q9adg-articles.jsonl": {
+      "bytes": 58362148,
+      "sha256": "5c609f734dbd7ae27c96467c9d2aaff17c12ef2eea500b222a7314779ed9b06e",
+      "modified_at": "2026-07-17T18:01:09.149757+08:00"
+    },
+    "research-rebuild/data/print-topic-manual-decisions-v2.csv": {
+      "bytes": 1615649,
+      "sha256": "27b4f38466e199ced2db7650f0e6ab70765d0af3a9fc4b74a45804a5dd21ac66",
+      "modified_at": "2026-09-26T21:10:06.977426+08:00"
+    },
+    "research-rebuild/reports/article-classification-v2.csv": {
+      "bytes": 7718718,
+      "sha256": "8ff18eed975c934b97a6edd5a7f35c11055c9a5984498125554fae88ae7c090a",
+      "modified_at": "2026-09-26T21:10:30.834506+08:00"
+    },
+    "research-rebuild/reports/print-index/print-research-index.csv": {
+      "bytes": 7456131,
+      "sha256": "8ee4d4cd03e5eee6807614a446698857612769d1253a4d5dfdf553f7b99dc61a",
+      "modified_at": "2026-09-26T21:10:45.102662+08:00"
+    },
+    "research-rebuild/reports/live-manual-classification-queue-v2.csv": {
+      "bytes": 4631,
+      "sha256": "6663488ad4bad5dcca25d45736c7423ddcba9faac0ac6bf29d55215015ac36ea",
+      "modified_at": "2026-09-26T21:10:48.537541+08:00"
+    },
+    "research-rebuild/data/print-topic-registry-v2.csv": {
+      "bytes": 2852,
+      "sha256": "4bfb25623c1df4f6357fde1510eae592ef9a7b5db7e0b9422cdd21b61a501432",
+      "modified_at": "2026-09-23T19:51:15.055283+08:00"
+    },
+    "research-rebuild/reports/native-article-category-edges.csv": {
+      "bytes": 2427772,
+      "sha256": "e4da012a421fb017a6c810d90983f546a5eae15db94ca04c8908153e7628f5d4",
+      "modified_at": "2026-09-21T23:05:55.187845+08:00"
+    },
+    "research-rebuild/reports/native-article-category-summary.csv": {
+      "bytes": 952679,
+      "sha256": "0bbee80957b3fd25f6285822ee42b218c23d87035fb84b10a2b5273ca643e567",
+      "modified_at": "2026-09-21T23:05:55.214079+08:00"
+    },
+    "research-rebuild/reports/independent-reviews.jsonl": {
+      "bytes": 60097,
+      "sha256": "544abe74658a4cd3f4b1df1ea4a60273eeab66a7ced505d88958b2facad6e16f",
+      "modified_at": "2026-09-21T21:43:48.810613+08:00"
+    },
+    "research-rebuild/reports/image-article-audit-v1.csv": {
+      "bytes": 59530,
+      "sha256": "18b9ec1105f3aab2fb6372405b0e54074fa9d447cbb8fe6aaccfc84b56197a4b",
+      "modified_at": "2026-09-25T20:33:35.626263+08:00"
+    }
+  },
+  "hashes_before_apply": {
+    "research-rebuild/data/print-topic-manual-decisions-v2.csv": "ca023066eade77bac412515a631d93cb89138d3a35dcaac7a93c28bff88f9ecc",
+    "research-rebuild/reports/article-classification-v2.csv": "dcf54262772643c4a9d365763afb373580e242947f619ea2e39ec0986c070fd9",
+    "research-rebuild/reports/print-index/print-research-index.csv": "3f17bb9299f99ff2c7f309a59c10d63634f4f12e6b5210cd9cb70323967b1a11",
+    "research-rebuild/reports/live-manual-classification-queue-v2.csv": "140d1c4ae07c9d006c92e60782d63e25feb1bb17227c382ec0c2fde805de24a1"
+  },
+  "hashes_after_apply": {
+    "research-rebuild/data/print-topic-manual-decisions-v2.csv": "27b4f38466e199ced2db7650f0e6ab70765d0af3a9fc4b74a45804a5dd21ac66"
+  },
+  "manual_rows": 4305,
+  "status_counts": {
+    "manual_confirmed": 4293,
+    "manual_provisional": 12
+  },
+  "status_counts_before": {
+    "manual_confirmed": 4213,
+    "manual_provisional": 92
+  },
+  "rows_updated_this_rebuild": 121,
+  "primary_changed_this_rebuild": 36,
+  "secondary_changed_this_rebuild": 54,
+  "topic_counts": {
+    "A00": 5,
+    "A01": 379,
+    "A02": 146,
+    "A03": 404,
+    "A04": 266,
+    "A05": 311,
+    "A06": 552,
+    "A07": 362,
+    "A08": 314,
+    "A09": 80,
+    "A10": 275,
+    "A11": 170,
+    "A12": 220,
+    "A13": 182,
+    "A14": 43,
+    "A15": 177,
+    "A16": 130,
+    "A17": 47,
+    "A18": 97,
+    "A19": 39,
+    "A20": 101,
+    "A21": 5
+  },
+  "topic_body_chars": {
+    "A00": 116,
+    "A01": 407625,
+    "A02": 150499,
+    "A03": 406770,
+    "A04": 332892,
+    "A05": 486332,
+    "A06": 685173,
+    "A07": 416162,
+    "A08": 352681,
+    "A09": 73857,
+    "A10": 271430,
+    "A11": 186727,
+    "A12": 236810,
+    "A13": 203057,
+    "A14": 49972,
+    "A15": 162749,
+    "A16": 153406,
+    "A17": 54010,
+    "A18": 87551,
+    "A19": 36458,
+    "A20": 130092,
+    "A21": 6600
+  },
+  "provisional_records": [
+    {
+      "id": "d60f14af-095b-5c1c-8ddb-65b97894e53d",
+      "title": "婉拒",
+      "primary": "A08",
+      "status": "manual_provisional"
+    },
+    {
+      "id": "e8873042-d451-5335-87d7-638f1926a64a",
+      "title": "刻奇",
+      "primary": "A15",
+      "status": "manual_provisional"
+    },
+    {
+      "id": "e108515f-375c-53c9-8f6d-1ee2c16b275a",
+      "title": "最大成长速度",
+      "primary": "A00",
+      "status": "manual_provisional"
+    },
+    {
+      "id": "beb62240-efcb-50cb-ac99-b2ef1dc53fbf",
+      "title": "穿越幽谷",
+      "primary": "A11",
+      "status": "manual_provisional"
+    },
+    {
+      "id": "c5354fb0-7345-5864-8522-2c0cfdad3c2e",
+      "title": "战马阉割",
+      "primary": "A00",
+      "status": "manual_provisional"
+    },
+    {
+      "id": "9b6db870-bac2-5741-b015-bd793dcd6dbe",
+      "title": "不羡慕",
+      "primary": "A01",
+      "status": "manual_provisional"
+    },
+    {
+      "id": "41c47afa-ca71-5905-924e-bc87c5a24f35",
+      "title": "陌生宗教",
+      "primary": "A11",
+      "status": "manual_provisional"
+    },
+    {
+      "id": "cdf1315e-9753-550f-8e55-651c06dfa32f",
+      "title": "没伦理",
+      "primary": "A00",
+      "status": "manual_provisional"
+    },
+    {
+      "id": "c0a13aa7-6476-5774-b661-e424f933d513",
+      "title": "爱语",
+      "primary": "A06",
+      "status": "manual_provisional"
+    },
+    {
+      "id": "1015117d-47f5-5e6d-8648-373790bd96b6",
+      "title": "坚持",
+      "primary": "A11",
+      "status": "manual_provisional"
+    },
+    {
+      "id": "e122a811-8341-594f-bce6-b50983b7e485",
+      "title": "活成这样",
+      "primary": "A00",
+      "status": "manual_provisional"
+    },
+    {
+      "id": "5316551a-199f-5363-8436-1c4d4a72bbc2",
+      "title": "酒神与天神",
+      "primary": "A00",
+      "status": "manual_provisional"
+    }
+  ],
+  "a00_records": [
+    {
+      "id": "e108515f-375c-53c9-8f6d-1ee2c16b275a",
+      "title": "最大成长速度",
+      "status": "manual_provisional"
+    },
+    {
+      "id": "c5354fb0-7345-5864-8522-2c0cfdad3c2e",
+      "title": "战马阉割",
+      "status": "manual_provisional"
+    },
+    {
+      "id": "cdf1315e-9753-550f-8e55-651c06dfa32f",
+      "title": "没伦理",
+      "status": "manual_provisional"
+    },
+    {
+      "id": "e122a811-8341-594f-bce6-b50983b7e485",
+      "title": "活成这样",
+      "status": "manual_provisional"
+    },
+    {
+      "id": "5316551a-199f-5363-8436-1c4d4a72bbc2",
+      "title": "酒神与天神",
+      "status": "manual_provisional"
+    }
+  ],
+  "queue_records": 12,
+  "rounds": {
+    "round165": {
+      "dir": "research-rebuild/reports/rebuild-20260926/round165",
+      "files": [
+        "round165-body-evidence-audit.tsv",
+        "round165-decisions.tsv",
+        "round165-fulltext.json",
+        "round165-revision-log.csv",
+        "round165-selection.csv"
+      ],
+      "file_count": 5
+    },
+    "round166": {
+      "dir": "research-rebuild/reports/rebuild-20260926/round166",
+      "files": [
+        "round166-body-evidence-audit.tsv",
+        "round166-decisions.tsv",
+        "round166-fulltext.json",
+        "round166-report.md",
+        "round166-revision-log.csv",
+        "round166-selection.csv"
+      ],
+      "file_count": 6
+    },
+    "round167": {
+      "dir": "research-rebuild/reports/rebuild-20260926/round167",
+      "files": [
+        "round167-168-adjudication-appendix.md",
+        "round167-body-evidence-audit.tsv",
+        "round167-decisions.tsv",
+        "round167-fulltext.json",
+        "round167-report.md",
+        "round167-revision-log.csv",
+        "round167-selection.csv"
+      ],
+      "file_count": 7
+    },
+    "round168": {
+      "dir": "research-rebuild/reports/rebuild-20260926/round168",
+      "files": [
+        "round168-body-evidence-audit.tsv",
+        "round168-decisions.tsv",
+        "round168-fulltext.json",
+        "round168-report.md",
+        "round168-revision-log.csv",
+        "round168-selection.csv"
+      ],
+      "file_count": 6
+    },
+    "round169": {
+      "dir": "research-rebuild/reports/rebuild-20260926/round169",
+      "files": [
+        "round169-body-evidence-audit.tsv",
+        "round169-decisions.tsv",
+        "round169-fulltext.json",
+        "round169-report.md",
+        "round169-revision-log.csv",
+        "round169-selection.csv"
+      ],
+      "file_count": 6
+    },
+    "round170": {
+      "dir": "research-rebuild/reports/rebuild-20260926/round170",
+      "files": [
+        "round170-body-evidence-audit.tsv",
+        "round170-decisions.tsv",
+        "round170-fulltext.json",
+        "round170-report.md",
+        "round170-revision-log.csv",
+        "round170-selection.csv"
+      ],
+      "file_count": 6
+    },
+    "round171": {
+      "dir": "research-rebuild/reports/rebuild-20260926/round171",
+      "files": [
+        "round171-body-evidence-audit.tsv",
+        "round171-decisions.tsv",
+        "round171-fulltext.json",
+        "round171-report.md",
+        "round171-revision-log.csv",
+        "round171-selection.csv"
+      ],
+      "file_count": 6
+    },
+    "round172": {
+      "dir": "research-rebuild/reports/rebuild-20260926/round172",
+      "files": [
+        "round172-body-evidence-audit.tsv",
+        "round172-decisions.tsv",
+        "round172-fulltext.json",
+        "round172-ids.csv",
+        "round172-report.md",
+        "round172-revision-log.csv"
+      ],
+      "file_count": 6
+    },
+    "round180": {
+      "dir": "research-rebuild/reports/rebuild-20260926/round180",
+      "files": [],
+      "file_count": 0
+    },
+    "round181": {
+      "dir": "research-rebuild/reports/rebuild-20260926/round181",
+      "files": [
+        "round181-audit-summary.json",
+        "round181-fulltext.json",
+        "round181-ids.csv",
+        "round181-official-unmatched-audit.csv",
+        "round181-sample-frame.csv",
+        "round181-sample-frame.json"
+      ],
+      "file_count": 6
+    }
+  },
+  "image_tail": {
+    "round": 180,
+    "articles": 46,
+    "images_in_scope": 105,
+    "images_visually_reviewed_this_round": 88,
+    "images_source_incomplete": 2,
+    "articles_complete": 45,
+    "articles_partial": 1,
+    "articles_retained": 46,
+    "articles_deleted": 0,
+    "classification_status_changed": 0,
+    "outputs": [
+      "round180-image-review.tsv",
+      "round180-image-decisions.tsv"
+    ]
+  },
+  "sampling_audit": {
+    "round": 181,
+    "frame": 616,
+    "sample": 79,
+    "sample_ratio": 0.1282,
+    "seed": 20260926,
+    "verdict_counts": {
+      "holds": 47,
+      "needs_revision": 8,
+      "holds_with_boundary_note": 8,
+      "holds_but_body_short": 13,
+      "cannot_verify_from_body": 3
+    },
+    "local_problem_count": 11,
+    "local_problem_ratio": 0.1392,
+    "needs_revision_by_local_topic": {
+      "A15": 1,
+      "A00": 4,
+      "A16": 1,
+      "A18": 1,
+      "A02": 1
+    },
+    "official_layer_fabricated": 0,
+    "read_coverage_counts": {
+      "full_text": 50,
+      "head1000+tail500": 29
+    },
+    "output": "/mnt/d/岐伯论/research-rebuild/reports/rebuild-20260926/round181/round181-official-unmatched-audit.csv"
+  },
+  "contradictions_resolved": {
+    "a00_status_conflict": {
+      "status": "resolved",
+      "before": "A00 = 28 records, 25 of them manual_confirmed (registry requires pending status)",
+      "after": "A00 = 5 records, all manual_provisional",
+      "method": "round172 per-article body adjudication + rule revision R4 (A11 covers secular normative argument; A00 is not the default bucket for life-value essays)"
+    },
+    "official_multi_category_237_238": {
+      "status": "resolved",
+      "finding": "242 distinct articles have >=2 official edges; 4 of them are officialOnly records absent from the local corpus, leaving 238 in-corpus articles; the stored official_category_count counts distinct category NAMES, which is >=2 for 237 rows. The single difference is a439c81a-95a1-5407-bf12-79a58c908f6b 《可谓之仁》 (5 edges to the same practice node 相处, so category_count=1, leaf_count=5).",
+      "method": "edge-table recount restricted to local corpus IDs vs stored column count"
+    },
+    "officialOnly_9_vs_deepseek_missing_9": {
+      "status": "resolved",
+      "finding": "The two sets are disjoint. officialOnlyArticles=9 are 9 records present in the official edge table but absent from the local v2 corpus; all 9 carry the native title '此内容不存在'. The 9 DeepSeek-missing records are 9 different IDs that ARE in the local corpus (published 2026-09-19..21) with existing topic fields.",
+      "intersection_size": 0
+    },
+    "round161_164_missing_decision_tsv": {
+      "status": "resolved",
+      "finding": "round157-160 decision TSVs exist (12/21/13/7 rows); round161-164 decision TSVs do not exist and were NOT fabricated. Their selection and fulltext batches exist, and all 27 articles (6+7+7+1) are covered by this rebuild's round165-171 full-text reviews, so their decisions now exist as supplementary records inside those rounds."
+    },
+    "independent_reviews_35": {
+      "status": "confirmed",
+      "finding": "independent-reviews.jsonl holds 35 records with 35 unique article_ids; all 35 conclusions are reviewed_needs_revision. This is NOT a pass and the full corpus is NOT independently reviewed."
+    }
+  },
+  "not_claimed": [
+    "all 4,305 articles semantically re-read",
+    "the 255 new articles independently full-text reviewed",
+    "all images audited (the round180 tail is done; 6 exclusion candidates and other earlier image decisions are unchanged)",
+    "official classification coverage of all 4,305 articles (616 remain unassigned and were NOT given fabricated official paths)",
+    "the 35 independent reviews passed"
+  ]
+}

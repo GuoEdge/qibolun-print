@@ -1,0 +1,21 @@
+{
+  "generated_at": "2026-09-21T23:10:39.8169477+08:00",
+  "corpus_path": "D:\\岐伯论\\sooon-q9adg-articles-v2.jsonl",
+  "corpus_line_count": 4305,
+  "local_unique_id_count": 4305,
+  "local_duplicate_id_count": 0,
+  "official_category_count": 200,
+  "official_unique_source_id_count": 3698,
+  "official_source_ids_in_local": 3689,
+  "official_source_ids_missing_local": 9,
+  "local_ids_with_official_category": 3689,
+  "local_ids_without_official_category": 616,
+  "local_article_official_category_rate": 0.856911,
+  "official_source_local_match_rate": 0.997566,
+  "category_rows_with_zero_sources": 60,
+  "category_rows_with_no_local_match": 0,
+  "source_ids_in_multiple_categories": 242,
+  "page_count": 233,
+  "page_item_total": 4128,
+  "page_unique_item_total": 4128
+}

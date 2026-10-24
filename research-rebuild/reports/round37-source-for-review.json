@@ -1,0 +1,452 @@
+[
+  {
+    "source_ordinal": "222",
+    "id": "4ae80ced-330c-5b12-8909-d43fe32417c7",
+    "title": "不压身",
+    "question": "当没有能力脱离“低价值消耗型”环境时，如何做到习于朴素生活并保持进取？",
+    "body_char_count": "797",
+    "candidate_primary": "A04",
+    "candidate_secondary": "A18;A10;A02"
+  },
+  {
+    "source_ordinal": "226",
+    "id": "86814eb9-4ef2-58a6-a00a-90b981efd1d8",
+    "title": "白磷",
+    "question": "如何评价张雪，以及他的创业经历？",
+    "body_char_count": "540",
+    "candidate_primary": "A10",
+    "candidate_secondary": "A14;A02;A05"
+  },
+  {
+    "source_ordinal": "227",
+    "id": "13daa226-fda2-5d39-ab73-0636b3532679",
+    "title": "缘缘不绝",
+    "question": "为什么我并不认为所谓的“断子绝孙”很可怕?",
+    "body_char_count": "730",
+    "candidate_primary": "A05",
+    "candidate_secondary": "A06;A10;A02"
+  },
+  {
+    "source_ordinal": "229",
+    "id": "6bc3f500-a6a1-545e-8183-dd51e8944154",
+    "title": "无得谈",
+    "question": "办公室同事之间可以无话不谈吗？",
+    "body_char_count": "830",
+    "candidate_primary": "A10",
+    "candidate_secondary": "A06;A07;A08"
+  },
+  {
+    "source_ordinal": "233",
+    "id": "93782c9b-d135-51a4-92c5-ed47add4b87a",
+    "title": "橡树",
+    "question": "大学生对自己最好的低成本投资是什么？",
+    "body_char_count": "846",
+    "candidate_primary": "A08",
+    "candidate_secondary": "A04;A01;A13"
+  },
+  {
+    "source_ordinal": "237",
+    "id": "1d8364c9-c8b5-57cf-b18a-d37d6982b624",
+    "title": "畏威怀德",
+    "question": "导致人们“畏威不畏德”的根本原因是什么?",
+    "body_char_count": "507",
+    "candidate_primary": "A16",
+    "candidate_secondary": "A10;A04;A03"
+  },
+  {
+    "source_ordinal": "238",
+    "id": "4970feaf-93ab-524f-9038-b2efa0eb2325",
+    "title": "孰轻孰重",
+    "question": "结果重要，还是过程重要？",
+    "body_char_count": "812",
+    "candidate_primary": "A04",
+    "candidate_secondary": "A02;A01;A20"
+  },
+  {
+    "source_ordinal": "240",
+    "id": "21dbfaf9-56d1-5530-8fb9-e06388feb39a",
+    "title": "为人必贤",
+    "question": "生了个丫头，从小就开始教育: 要做个贤惠、大方、理解别人的人，这种教育对吗?",
+    "body_char_count": "808",
+    "candidate_primary": "A05",
+    "candidate_secondary": "A04;A07;A10"
+  },
+  {
+    "source_ordinal": "245",
+    "id": "d44f1ba5-402e-5eee-93ab-3dad38bd0cc7",
+    "title": "阑珊处",
+    "question": "如何能彻彻底底的放下一个人？",
+    "body_char_count": "882",
+    "candidate_primary": "A06",
+    "candidate_secondary": "A10;A14;A02"
+  },
+  {
+    "source_ordinal": "247",
+    "id": "8b54fb3f-ae82-505c-9b19-658fa72dc403",
+    "title": "不落伍",
+    "question": "人到中年以后，如何保持思想不落伍？",
+    "body_char_count": "530",
+    "candidate_primary": "A04",
+    "candidate_secondary": "A01;A13;A20"
+  },
+  {
+    "source_ordinal": "251",
+    "id": "f25d6717-47e8-5025-bfb5-cb0a0f75700c",
+    "title": "新教育",
+    "question": "政协委员建议逐步将高中纳入义务教育，扩大教育资源缓解中考压力，还能带来哪些利好？可能面临哪些难点？",
+    "body_char_count": "765",
+    "candidate_primary": "A14",
+    "candidate_secondary": "A04;A13;A09"
+  },
+  {
+    "source_ordinal": "252",
+    "id": "ffd410b3-cfc0-59bc-a5b6-4e7a1f6266bd",
+    "title": "情得自禁",
+    "question": "今年23岁，但男朋友多次提出性需求，但我又怕，又不想因此不欢而散，我该怎么办？",
+    "body_char_count": "996",
+    "candidate_primary": "A02",
+    "candidate_secondary": "A06;A10;A05"
+  },
+  {
+    "source_ordinal": "253",
+    "id": "9f3824fd-e90a-5e11-843f-037223bb45f8",
+    "title": "没得聊",
+    "question": "相亲加上女方微信怎么聊的啊，感觉聊了两天就词穷了，一问一答早晚完蛋啊?",
+    "body_char_count": "514",
+    "candidate_primary": "A06",
+    "candidate_secondary": "A16;A02;A05"
+  },
+  {
+    "source_ordinal": "257",
+    "id": "40fd8752-832a-55ba-9331-537548da7a05",
+    "title": "勿以善小",
+    "question": "有电影院开始尝试「觉得电影难看，可退钱」方案，如何评价这一做法？会有更多影院跟进吗？",
+    "body_char_count": "321",
+    "candidate_primary": "A05",
+    "candidate_secondary": "A16;A15;A02"
+  },
+  {
+    "source_ordinal": "258",
+    "id": "5128da84-34a8-5638-84c0-d7ff97a2ce15",
+    "title": "噩梦",
+    "question": "反复做同一个噩梦是怎么回事？",
+    "body_char_count": "747",
+    "candidate_primary": "A01",
+    "candidate_secondary": "A11;A10;A02"
+  },
+  {
+    "source_ordinal": "260",
+    "id": "f222e096-db6a-5da1-9b54-f1b88e85f7bd",
+    "title": "悠游白书",
+    "question": "孩子寒假在家喊「无聊」，除了看屏幕不知道玩什么，这是缺乏独处能力的表现吗？",
+    "body_char_count": "544",
+    "candidate_primary": "A05",
+    "candidate_secondary": "A10;A14;A02"
+  },
+  {
+    "source_ordinal": "263",
+    "id": "42d508a4-ee97-5e97-8b57-86479652fb18",
+    "title": "绝情谷主",
+    "question": "为什么认知高的人，别人会觉得他们很绝情？",
+    "body_char_count": "465",
+    "candidate_primary": "A10",
+    "candidate_secondary": "A02;A05;A06"
+  },
+  {
+    "source_ordinal": "265",
+    "id": "58db9a45-6d0b-58bf-8432-5ff5376efb3b",
+    "title": "家范",
+    "question": "一个普通人如何成为作家/小说家？",
+    "body_char_count": "245",
+    "candidate_primary": "A04",
+    "candidate_secondary": "A12;A15;A02"
+  },
+  {
+    "source_ordinal": "267",
+    "id": "b7095215-db9c-592e-98fc-1fbc0a72997c",
+    "title": "熊猫之旅",
+    "question": "如果最后都要分离，那相遇的意义又是什么？",
+    "body_char_count": "898",
+    "candidate_primary": "A18",
+    "candidate_secondary": "A02;A06;A04"
+  },
+  {
+    "source_ordinal": "270",
+    "id": "cb29a58d-31af-5d5d-a547-e2d4498c0f48",
+    "title": "何谓之迟",
+    "question": "被不断要求延迟满足的那个人，会容易产生什么样的负面心态？",
+    "body_char_count": "774",
+    "candidate_primary": "A05",
+    "candidate_secondary": "A10;A02;A06"
+  },
+  {
+    "source_ordinal": "271",
+    "id": "6b748b1b-f55e-5bb6-81f4-2504efc8f73b",
+    "title": "大祀",
+    "question": "官方通报网传妈祖巡游换童事件，二人均为女孩，「新童」家境普通，哪些信息值得关注？折射出什么深层问题？",
+    "body_char_count": "969",
+    "candidate_primary": "A20",
+    "candidate_secondary": "A19;A12;A10"
+  },
+  {
+    "source_ordinal": "272",
+    "id": "75cb874d-7bb9-5b0a-8fdb-ffa17a8af214",
+    "title": "恩科",
+    "question": "能通过感恩来对抗抑郁吗？",
+    "body_char_count": "733",
+    "candidate_primary": "A01",
+    "candidate_secondary": "A02;A05;A06"
+  },
+  {
+    "source_ordinal": "275",
+    "id": "57ae1a1b-fc62-5461-ac1d-3eea2ba23ae8",
+    "title": "心不动",
+    "question": "为了练习爱而去爱，难以体会到真正的感情，只有做任务的感觉，哪里出了问题？",
+    "body_char_count": "806",
+    "candidate_primary": "A04",
+    "candidate_secondary": "A10;A14;A02"
+  },
+  {
+    "source_ordinal": "281",
+    "id": "3ef14faa-66b1-5ac5-a7f8-5cf845b49e0a",
+    "title": "丑时",
+    "question": "我觉得自己长得好丑，每天都因为长相自卑到失眠，我该怎么和自己和解？",
+    "body_char_count": "706",
+    "candidate_primary": "A02",
+    "candidate_secondary": "A14;A18;A03"
+  },
+  {
+    "source_ordinal": "289",
+    "id": "6d974e26-ade5-5ab3-8821-c4f460ceccaa",
+    "title": "无咎",
+    "question": "告诉男朋友童年被人侵犯过之后他变冷淡了，后面我问他他就淡淡的反问我嫌弃你了吗，继续相处会有好结果吗？",
+    "body_char_count": "789",
+    "candidate_primary": "A06",
+    "candidate_secondary": "A10;A02;A05"
+  },
+  {
+    "source_ordinal": "290",
+    "id": "12cfe1ee-93e9-5cb0-b671-9ca5c87b0ea8",
+    "title": "稳",
+    "question": "「情绪稳定」在当代择偶标准中为何地位如此之高？你如何理解它？",
+    "body_char_count": "407",
+    "candidate_primary": "A01",
+    "candidate_secondary": "A10;A14;A02"
+  },
+  {
+    "source_ordinal": "291",
+    "id": "59a4b8e9-073c-5185-b837-61958dc2bb9b",
+    "title": "五件套",
+    "question": "冬奥运村避孕套又用完了，这次只用了三天，对此你怎么看，一个奥运村分成四个奥运村会导致物资消耗加速吗？",
+    "body_char_count": "402",
+    "candidate_primary": "A13",
+    "candidate_secondary": "A20;A10;A08"
+  },
+  {
+    "source_ordinal": "292",
+    "id": "61312d52-7a3f-528d-a0c5-a8e1cc36c8cf",
+    "title": "村级恋爱",
+    "question": "不喜欢老婆找健身房男教练私教，是我太狭隘了吗？",
+    "body_char_count": "435",
+    "candidate_primary": "A06",
+    "candidate_secondary": "A18;A10;A02"
+  },
+  {
+    "source_ordinal": "293",
+    "id": "878fb805-8cc4-5154-be03-9e2df4cdaa52",
+    "title": "糖水",
+    "question": "我朋友去面试，面试官大概聊了聊，问他：在100杯水里，有一杯放糖了，你如何快速的找到它？",
+    "body_char_count": "714",
+    "candidate_primary": "A04",
+    "candidate_secondary": "A06;A14;A08"
+  },
+  {
+    "source_ordinal": "298",
+    "id": "f784d9d0-16ce-5fcb-9d22-77e05a828dca",
+    "title": "租面人",
+    "question": "周星驰经纪人质疑短视频平台对 AI 生成视频侵权放任不管，这触犯了哪些法律红线？平台该如何管理？",
+    "body_char_count": "368",
+    "candidate_primary": "A14",
+    "candidate_secondary": "A08;A13;A10"
+  },
+  {
+    "source_ordinal": "299",
+    "id": "fc18c411-c7ec-5199-a528-0827c9aa803e",
+    "title": "布老虎",
+    "question": "孩子抑郁厌学，为什么看了心理医生还是收效甚微？",
+    "body_char_count": "531",
+    "candidate_primary": "A05",
+    "candidate_secondary": "A11;A09;A10"
+  },
+  {
+    "source_ordinal": "300",
+    "id": "da164ad4-bba4-5cea-8813-aa7317be3173",
+    "title": "背箱子的人",
+    "question": "中国人旅游喜欢拖箱子，外国人喜欢背包，这是为什么呢？",
+    "body_char_count": "326",
+    "candidate_primary": "A05",
+    "candidate_secondary": "A14;A02;A04"
+  },
+  {
+    "source_ordinal": "301",
+    "id": "0f2d3529-3ca5-5f48-8dfa-58bb77ca47c0",
+    "title": "赛的是人",
+    "question": "《飞驰人生 3》中安部长为什么会认为「赛车赛的只是车」？",
+    "body_char_count": "416",
+    "candidate_primary": "A07",
+    "candidate_secondary": "A13;A10;A14"
+  },
+  {
+    "source_ordinal": "305",
+    "id": "ffbd402b-1b20-54c0-8aeb-b73f37cc6b5b",
+    "title": "不乱衣",
+    "question": "衣柜如何收纳，能更简洁而且不容易乱？",
+    "body_char_count": "976",
+    "candidate_primary": "A08",
+    "candidate_secondary": "A02;A10"
+  },
+  {
+    "source_ordinal": "310",
+    "id": "6e5df6b6-cc63-53d5-a97e-be238b41d361",
+    "title": "车道问题",
+    "question": "11岁小朋友嘲讽西藏【长跪磕头信徒】怎么看？",
+    "body_char_count": "605",
+    "candidate_primary": "A05",
+    "candidate_secondary": "A06;A04;A10"
+  },
+  {
+    "source_ordinal": "313",
+    "id": "5f849e6b-a50d-5f33-bda8-6df110bc7c25",
+    "title": "不拆台",
+    "question": "男生帮女儿倒垃圾，班主任不允许，说自己的事自己做，让女儿把垃圾捡回来重扔，妈妈觉得老师没事找事，谁对？",
+    "body_char_count": "789",
+    "candidate_primary": "A05",
+    "candidate_secondary": "A04;A10;A02"
+  },
+  {
+    "source_ordinal": "315",
+    "id": "29e86c3a-4927-58ba-b930-5a406035e0b2",
+    "title": "无价之爱",
+    "question": "怎么才能让孩子明白有价值才会被爱，但又不让他缺爱?",
+    "body_char_count": "696",
+    "candidate_primary": "A05",
+    "candidate_secondary": "A10;A14;A02"
+  },
+  {
+    "source_ordinal": "316",
+    "id": "463b7393-59fa-5014-a19b-4f653e7366ad",
+    "title": "贤妻良母",
+    "question": "女朋友说“贤妻良母”是对女性的一种束缚，夸赞的时候不要用这个词语，真的是这样吗，那用什么词赞美女性呢？",
+    "body_char_count": "392",
+    "candidate_primary": "A02",
+    "candidate_secondary": "A05;A06;A20"
+  },
+  {
+    "source_ordinal": "318",
+    "id": "1bf38026-1ae2-5646-bcb4-3ecf6ab10396",
+    "title": "尴尬坏",
+    "question": "为什么有时候一个坏人做了几件好事我们就可以把他当做好人，而好人只要做了一件错事就会被无情唾骂？",
+    "body_char_count": "483",
+    "candidate_primary": "A10",
+    "candidate_secondary": "A02;A07;A08"
+  },
+  {
+    "source_ordinal": "319",
+    "id": "83be7156-1c2c-53c1-ba85-ecb33fe27d44",
+    "title": "下不为例",
+    "question": "别人找你帮忙你来者不拒，到你有困难找他，他推三阻四，你还会帮他吗？",
+    "body_char_count": "588",
+    "candidate_primary": "A06",
+    "candidate_secondary": "A15;A10;A02"
+  },
+  {
+    "source_ordinal": "325",
+    "id": "1931c0b2-0b45-507d-9bf4-7f5d8be7a99e",
+    "title": "前搭后补",
+    "question": "为什么你明明不张扬，为人处世很低调，不争不抢，却依然会惹出许多恶意？",
+    "body_char_count": "614",
+    "candidate_primary": "A10",
+    "candidate_secondary": "A02;A05;A06"
+  },
+  {
+    "source_ordinal": "326",
+    "id": "b4d45db9-8621-552a-ae71-cbf4ec7ebe6a",
+    "title": "绝顶聪明",
+    "question": "为什么极其聪明的人，一辈子却留在了社会最底层？",
+    "body_char_count": "622",
+    "candidate_primary": "A14",
+    "candidate_secondary": "A02;A05;A06"
+  },
+  {
+    "source_ordinal": "327",
+    "id": "f95e922e-6697-5c62-a1e9-a98d5d8de66f",
+    "title": "出息x2",
+    "question": "什么样的家庭才能养出松弛感的孩子？",
+    "body_char_count": "960",
+    "candidate_primary": "A05",
+    "candidate_secondary": "A08;A10;A02"
+  },
+  {
+    "source_ordinal": "336",
+    "id": "8c72c162-4de1-5501-9b4d-ab3d73eb1656",
+    "title": "少年当家",
+    "question": "那些在童年时期「被过早要求承担成人责任」的孩子，成年后的心理发展状况如何？",
+    "body_char_count": "950",
+    "candidate_primary": "A05",
+    "candidate_secondary": "A04;A10;A02"
+  },
+  {
+    "source_ordinal": "337",
+    "id": "5448bbfd-ad64-59db-85ec-21ea018e7ab8",
+    "title": "文明与野蛮",
+    "question": "为什么文明人总被野蛮人打败？",
+    "body_char_count": "988",
+    "candidate_primary": "A07",
+    "candidate_secondary": "A20;A10;A14"
+  },
+  {
+    "source_ordinal": "339",
+    "id": "0c6cee44-a052-5bca-a25a-36aa14e82916",
+    "title": "应付",
+    "question": "人一定要攻破自己不擅长的东西吗？",
+    "body_char_count": "852",
+    "candidate_primary": "A04",
+    "candidate_secondary": "A10;A02;A06"
+  },
+  {
+    "source_ordinal": "341",
+    "id": "dc6f13e1-62df-5155-adcc-f78b7cdf52d7",
+    "title": "惊不惊喜",
+    "question": "为什么我总觉得通常技术能力越强的人越没有想象力，越无法带来惊喜？",
+    "body_char_count": "688",
+    "candidate_primary": "A04",
+    "candidate_secondary": "A13;A10;A14"
+  },
+  {
+    "source_ordinal": "345",
+    "id": "937e1be5-e068-5d38-987e-d1b6e04be1c2",
+    "title": "不雅之地",
+    "question": "东北地区为何有「老母猪礁」、「出不来沟」等「抽象」地名？其他地方也有这种风格的地名吗？",
+    "body_char_count": "616",
+    "candidate_primary": "A20",
+    "candidate_secondary": "A09;A14;A02"
+  },
+  {
+    "source_ordinal": "347",
+    "id": "788f0264-df41-552c-a4b7-4bd7c7841b83",
+    "title": "细火慢煨",
+    "question": "如何避免急躁，培养自己淡定从容的性格？",
+    "body_char_count": "634",
+    "candidate_primary": "A01",
+    "candidate_secondary": "A14;A08;A04"
+  },
+  {
+    "source_ordinal": "348",
+    "id": "947db6e3-20ff-5d8a-b5fa-5f582087d9a4",
+    "title": "玩儿去",
+    "question": "如果你坚定地要做一件事，但潜意识里又不相信自己能做好，怎么能让自己更坚定？",
+    "body_char_count": "655",
+    "candidate_primary": "A01",
+    "candidate_secondary": "A10;A02;A07"
+  }
+]

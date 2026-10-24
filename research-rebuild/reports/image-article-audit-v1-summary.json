@@ -1,0 +1,44 @@
+{
+  "article_count": 254,
+  "image_count": 765,
+  "reviewed_image_count": 651,
+  "failed_image_count": 6,
+  "article_decision_counts": {
+    "retain_article": 197,
+    "retain_article_pending_image_review": 50,
+    "exclude_article_candidate": 6,
+    "retain_article_source_incomplete": 1
+  },
+  "manual_image_decision_counts": {
+    "retain_body_classification_image_reviewed": 14,
+    "retain_article_image_omit": 6,
+    "retain_article_image_required": 17,
+    "retain_article_image_required_or_selected": 17,
+    "retain_article_image_optional": 20,
+    "retain_existing_classification": 12,
+    "retain_article_source_incomplete": 1
+  },
+  "image_decision_counts": {
+    "optional_or_keep_selected": 141,
+    "keep_selected_images": 28,
+    "omit_unless_illustration_needed": 18,
+    "review_required": 50,
+    "keep_if_space_allows": 2,
+    "keep_3_architecture_omit_1_unrelated": 1,
+    "omit_images": 6,
+    "omit_or_keep_as_illustration": 1,
+    "keep_image_1_omit_image_2": 1,
+    "keep_and_ocr": 1,
+    "archive_images_only": 2,
+    "omit_or_keep_as_character_reference": 1,
+    "archive_and_investigate_mismatch": 1,
+    "source_incomplete_review_valid_images_only": 1
+  },
+  "image_review_status_counts": {
+    "complete": 203,
+    "pending": 50,
+    "partial": 1
+  },
+  "low_content_audit_source": "research-rebuild\\reports\\image-article-content-audit-round138.tsv",
+  "raw_corpus_unchanged": true
+}

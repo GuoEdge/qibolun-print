@@ -1,0 +1,115 @@
+{
+  "map_records": 4305,
+  "corpus_records": 4305,
+  "map_ids_unique": true,
+  "map_ids_missing_corpus": 0,
+  "invalid_concepts": 0,
+  "theme_count": 23,
+  "theme_counts": {
+    "选择与自由": 2382,
+    "责任与后果": 2635,
+    "成本与总账": 2545,
+    "信用与信任": 1153,
+    "净输出与不掠夺": 360,
+    "照料与家庭": 1139,
+    "财富与市场": 1114,
+    "能力与学习": 2666,
+    "劳动与组织": 1346,
+    "爱与回应": 1410,
+    "事实与证据": 1673,
+    "文明与历史": 1154,
+    "定义与达意": 1924,
+    "心理与主体": 1719,
+    "技术与工程": 1142,
+    "边界与许可": 1384,
+    "权力与异议": 1221,
+    "性别与身体": 533,
+    "法律与秩序": 1300,
+    "生态与自然": 410,
+    "宗教与自然法": 367,
+    "民族与身份": 222,
+    "人工智能与机器": 133
+  },
+  "source_counts": {
+    "reused_audited_map": 4046,
+    "manual_decision": 28,
+    "new_first_pass_candidate": 231
+  },
+  "audit_status_counts": {
+    "audited": 4046,
+    "manual_provisional": 4,
+    "reviewed_agree": 8,
+    "reviewed_needs_revision": 16,
+    "review_required": 169,
+    "needs_human_classification": 62
+  },
+  "confidence_counts": {
+    "audited": 4046,
+    "manual_provisional": 4,
+    "reviewed_agree": 8,
+    "reviewed_needs_revision": 16,
+    "review_required": 169,
+    "needs_human_classification": 62
+  },
+  "first_pass_status_counts": {
+    "covered": 4296,
+    "missing": 9
+  },
+  "strict_deepseek_coverage": 4296,
+  "manual_decision_filled_missing_first_pass": 9,
+  "effective_theme_coverage": 4305,
+  "concept_cardinality": {
+    "distribution": {
+      "1": 31,
+      "2": 90,
+      "3": 206,
+      "4": 347,
+      "5": 519,
+      "6": 806,
+      "7": 643,
+      "8": 565,
+      "9": 449,
+      "10": 280,
+      "11": 178,
+      "12": 97,
+      "13": 49,
+      "14": 28,
+      "15": 7,
+      "16": 5,
+      "17": 4,
+      "18": 1
+    },
+    "mean": 6.9528,
+    "median": 7,
+    "p90": 10.0,
+    "p95": 11.0,
+    "max": 18,
+    "empty": 0,
+    "single": 31,
+    "multi": 4274,
+    "wide_ge10": 649,
+    "wide_rate": 0.150755
+  },
+  "new_candidate_records": 231,
+  "new_candidate_risk_records": 218,
+  "new_candidate_risk_flags": {
+    "wide_candidate": 208,
+    "top_tie": 62,
+    "low_top_score": 4
+  },
+  "new_candidate_question_overreach_records": 205,
+  "review_queue_records": 230,
+  "interpretation": [
+    "旧映射的多主题宽度是研究路由信号，不应直接作为互斥打印分类。",
+    "正式打印前至少应为每篇确定一个主专题，并将其余主题保留为可回查的次级标签。",
+    "新增候选中的低分、并列和宽候选必须回到正文/官方节点证据进行人工复核。"
+  ],
+  "outputs": [
+    "D:\\岐伯论\\research-rebuild\\reports\\theme-quality-audit-v2.json",
+    "D:\\岐伯论\\research-rebuild\\reports\\theme-quality-wide-routes-v2.csv",
+    "D:\\岐伯论\\research-rebuild\\reports\\theme-quality-candidate-risk-v2.csv",
+    "D:\\岐伯论\\research-rebuild\\reports\\theme-quality-review-sample-v2.csv",
+    "D:\\岐伯论\\research-rebuild\\reports\\theme-quality-candidate-overreach-v2.csv",
+    "D:\\岐伯论\\research-rebuild\\reports\\theme-quality-audit-v2.md"
+  ]
+}

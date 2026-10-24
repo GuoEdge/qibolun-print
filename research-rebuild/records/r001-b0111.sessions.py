@@ -1,0 +1,797 @@
+# -*- coding: utf-8 -*-
+"""批次 r001-b0111 的记录构造器（骨架由 build_sessions.py 机械生成）。
+
+只填写 ANALYSIS：每篇一条，key = SKELETON 中的 uid。
+字段要求见 prompts/initial-reading-brief.md。
+
+命令行：
+  python3 records/r001-b0111.sessions.py            # 写 out/r001-b0111.out.jsonl
+  python3 records/r001-b0111.sessions.py --out /tmp/x.jsonl
+"""
+
+from __future__ import annotations
+
+import argparse
+import json
+import os
+import sys
+
+_HERE = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, os.path.join(_HERE, '..', 'scripts'))
+from authoring import build_record, load_batch_rows, write_jsonl  # noqa: E402
+
+BATCH = "r001-b0111"
+STARTED = "2026-09-20T00:00:00+08:00"
+COMPLETED = "2026-09-20T00:00:00+08:00"
+
+with open(os.path.join(_HERE, 'r001-b0111.skeleton.json'), encoding='utf-8') as _fh:
+    SKELETON = json.load(_fh)
+UID_BY_ID = {s['id']: s['uid'] for s in SKELETON}
+
+
+ANALYSIS = {
+ "b4a0c88b": {
+  "analysis": {
+   "question_context": "提问者引用 2021 年 4 月 16 日拜登与菅义伟会晤、美媒称对抗中国议题将提上议事日程，问这释放了什么信号。作者没有评论该会晤或美日关系本身（正文未提拜登、菅义伟、美媒），而是转入对东亚国家、尤以日本为例的「忠诚—叛意」人格结构的论断，作为理解此类国家行为的背景性说法；全文以「美国人要明白一个常识」的口吻写给美国读者。",
+   "content_units": [
+    {"unit_id": "U001", "paragraph_refs": ["P001", "P002"], "summary": "提出作者认为美国人应知的常识：对古老东亚国家而言「越是准备叛变，就越是要表现忠诚」，并称这是有智商的东亚人读本国史都该有的基本常识。", "role": "claim"},
+    {"unit_id": "U002", "paragraph_refs": ["P003", "P004"], "summary": "将上述属性推及日本为尤甚，并给出生存条件解释：贫瘠岛国须分担传递压力，所有人的自由与欲望被压缩进小铁盒子。", "role": "reason"},
+    {"unit_id": "U003", "paragraph_refs": ["P005", "P006"], "summary": "描述统治残酷而绝对、被统治者只能在两种残酷统治中选择；不想反叛不仅不义甚至不健康，下剋上的欲望在日本人灵魂深处长明。", "role": "reason"},
+    {"unit_id": "U004", "paragraph_refs": ["P007", "P008", "P009"], "summary": "称日本人心知肚明；日本人最恐惧被看作不忠诚而叛意又最恒久强烈，两属性互伴生、催化、平衡，构成日本人性格最主导因素与日本文化首要核心，是其善恶根源。", "role": "claim"},
+    {"unit_id": "U005", "paragraph_refs": ["P010", "P011", "P012", "P013"], "summary": "推论忠诚实践是叛意的唯一对冲；以统治者口吻表示可因对方当下忠诚表现而容忍其未熄叛意，但再多忠诚实践也不能保证将来不反，只算截止目前不计较其反叛的合理费用。", "role": "reason"},
+    {"unit_id": "U006", "paragraph_refs": ["P014", "P015"], "summary": "以第一人称自陈同类：内心同样燃烧撕碎如此对待自己者的欲望；自己也在用无可挑剔的忠诚收买对心照不宣的反叛的容忍。", "role": "example"},
+    {"unit_id": "U007", "paragraph_refs": ["P016", "P017", "P018", "P019", "P020", "P021", "P022"], "summary": "七组「因为我是 X，所以我是 Y」的悖论式自陈，把反叛与忠诚、冷漠与热情、不负责与负责、痛恨与礼貌、桀骜与谦恭、残忍与仁慈、羞耻与光荣并置。", "role": "other"},
+    {"unit_id": "U008", "paragraph_refs": ["P023", "P024"], "summary": "以「因为我已经死了，所以我活着」收束，断言这就是身为日本人的存在。", "role": "conclusion"}
+   ],
+   "main_claims": [
+    {"claim_id": "C001", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "作者称：对古老东亚国家而言「越是准备叛变，就越是要表现忠诚」是基本常识，该属性以日本为尤甚。", "evidence": ["E1", "E2"]},
+    {"claim_id": "C002", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "作者称日本贫瘠岛国的生存压力必须被分担传递，所有人的自由与欲望都被压缩，导致残酷而绝对的统治，而生出反叛之念不只是不义甚至是不健康的。", "evidence": ["E3", "E4"]},
+    {"claim_id": "C003", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "作者称日本人是最恐惧被看作不忠诚、同时叛意最恒久强烈的民族，两属性互为伴生催化与平衡，是日本人性格最主导因素，甚至是日本文化统帅其他要素的首要核心。", "evidence": ["E5"]},
+    {"claim_id": "C004", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "作者称忠诚的实践是永不熄灭的叛意的唯一对冲。", "evidence": ["E6"]},
+    {"claim_id": "C005", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "作者以统治者、容忍者的口吻表示：可因对方实际忠诚的表现而接受其未熄的叛意，但忠诚实践再多也不足以让人相信对方将来不再反叛，只能算作截止目前未计较其反叛的合理费用。", "evidence": ["E7", "E8"]},
+    {"claim_id": "C006", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "作者以第一人称自称也是同类，内心燃烧着撕碎如此对待自己者的欲望；并称自己正是用无可挑剔的忠诚收买了对心照不宣的反叛的容忍。", "evidence": ["E9", "E10"]},
+    {"claim_id": "C007", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "作者结论：这种对立属性互为表里的存在方式就是「身为日本人的存在」。", "evidence": ["E11"]}
+   ],
+   "argument_steps": [
+    "格言式前提（P001—P002）：东亚国家「越是准备叛变，就越是要表现忠诚」是基本常识。",
+    "范围收窄（P003）：该属性以日本为尤甚。",
+    "生存条件解释（P004）：贫瘠岛国须分担压力、压缩所有人的自由与欲望。",
+    "统治结构前提（P005）：统治者残酷而绝对，只能在一种与另一种残酷统治中选择。",
+    "心理断言（P006）：不想反叛不义甚至不健康；下剋上欲望永不熄灭。",
+    "共识前提（P007）：日本人对此心知肚明、心照不宣。",
+    "核心命题（P008—P009）：恐惧不忠与叛意恒久两属性互伴生催化平衡，构成日本人性格主导因素与文化首要核心。",
+    "推论（P010）：忠诚的实践是叛意的唯一对冲。",
+    "拟设对话与费用论（P011—P013）：容忍以当下忠诚表现为条件；忠诚实践只为此前反叛免责。",
+    "自我例证（P014—P015）：以「我也是你的同类」与自陈的忠诚—容忍交易支持上述结构。",
+    "悖论排比（P016—P022）：以七组对立属性并置呈现该人格结构。",
+    "警句结论（P023—P024）：因为已经死了，所以活着；这就是身为日本人的存在。"
+   ],
+   "concept_usage": [
+    {"term": "忠诚／叛变", "meaning": "作者指表面对统治者的忠诚实践与内在恒久的叛意互为表里、互相催化又互相平衡；忠诚实践是对叛意的对冲与容忍的交换条件。", "evidence": "P002", "ambiguity": "未界定「叛变」是政治行为还是心理层面的不服，也未说明两者的转化条件。"},
+    {"term": "下剋上／上剋下", "meaning": "借日本历史政治用语指被统治者对残酷绝对统治的反叛欲望。", "evidence": "P006", "ambiguity": "未指明具体历史所指与时段。"},
+    {"term": "小铁盒子", "meaning": "比喻被压缩到极小的自由与欲望空间。", "evidence": "P004", "ambiguity": "属修辞比喻，未给出可核验的对应物。"},
+    {"term": "对冲", "meaning": "借金融风险语汇指以忠诚的实践抵消、抵偿叛意。", "evidence": "P010", "ambiguity": "未说明对冲能否真正消除叛意，后文反而称其只为此前反叛付费。"}
+   ],
+   "examples_and_targets": [
+    "2021 年 4 月 16 日拜登与菅义伟会晤、美媒称对抗中国议题提上议事日程——仅见于提问字段，正文完全未提及，属提问语境材料而非文中论据。",
+    "东亚古老国家，尤以日本为论述对象与论断目标（P002—P009）。",
+    "「下剋上」「上剋下」——日本历史政治术语，作修辞材料（P006）。",
+    "第一人称的统治者／容忍者与「你」（尚未等到时机的叛徒）——P011—P013 的拟设对话对象，属修辞性设例，主体未交代。"
+   ],
+   "conditions": [
+    "论断前提：对象为「古老的东亚国家」，尤以贫瘠岛国日本为例（P002—P004）。",
+    "结构条件：只要残酷绝对的统治与生存压力格局不变，忠诚与叛意互为表里的属性即持续（P008—P009 称其为最主导因素与首要核心）。",
+    "时间限定：作者明说忠诚实践只作为「截止到目前」不计较反叛的合理费用（P013）。",
+    "无针对提问所指会晤或任何美日互动的具体条件、预测或建议。"
+   ],
+   "rhetoric_and_tone": "格言与训诫式开场（「美国人要明白一个常识」），随后由第三人称民族论断滑入第一人称独白，末段以七组「因为我是 X，所以我是 Y」的悖论排比和「因为我已经死了，所以我活着」的警句收束；反讽、自我剖白与冷峻断言交织；全篇无数据、无引文、无对手辩驳，结构为格言—条件解释—心理断言—拟设对话—排比—警句。",
+   "unresolved_questions": [
+    "正文未评论提问所指的 2021 年 4 月 16 日拜登与菅义伟会晤及美媒议题，无法据此篇判断作者对该事件的具体立场。",
+    "P011—P015 的「我」「你」所指不明：是作者本人、拟设的日本统治者，还是被拟人化的日本人自我，正文未交代。",
+    "「越是准备叛变，就越是要表现忠诚」被称为常识，但未给史例、来源或出处。",
+    "全篇为断言式民族性格论，未提供可核查证据，也未说明是否为夸张修辞。",
+    "篇名「忠与叛」与正文结构的对应关系未说明。"
+   ],
+   "evidence": [
+    {"key": "E1", "paragraph_id": "P002", "quote": "“越是准备叛变，就越是要表现忠诚”是一种任何有智商的东亚人读完本国历史都该有的最基本的常识。", "relation": "supports"},
+    {"key": "E2", "paragraph_id": "P003", "quote": "这一点属性，以日本为尤甚。", "relation": "supports"},
+    {"key": "E3", "paragraph_id": "P004", "quote": "为了在这个贫瘠的岛国生存，压力必须被分担传递，所有人的自由和欲望都必须被压缩到一个小铁盒子里。", "relation": "supports"},
+    {"key": "E4", "paragraph_id": "P006", "quote": "不想反叛不仅仅是不公义的，甚至是不健康的。", "relation": "supports"},
+    {"key": "E5", "paragraph_id": "P008", "quote": "日本人是最恐惧被看作不忠诚，而却又叛意最恒久强烈的民族。", "relation": "supports"},
+    {"key": "E6", "paragraph_id": "P010", "quote": "恰恰因为如此，忠诚的实践才是这永不熄灭的叛意的唯一对冲。", "relation": "supports"},
+    {"key": "E7", "paragraph_id": "P011", "quote": "我知道你是尚未等到时机的叛徒，但我可以满意于你实际忠诚的表现而接受这无法熄灭的罪念的存在。", "relation": "supports"},
+    {"key": "E8", "paragraph_id": "P013", "quote": "它们只能作为我截止到目前没有计较你的反叛的合理费用。", "relation": "supports"},
+    {"key": "E9", "paragraph_id": "P014", "quote": "因为我也是你的同类，我心里就燃烧着想要撕碎这样对待我的人的欲望，从未熄灭。", "relation": "supports"},
+    {"key": "E10", "paragraph_id": "P015", "quote": "我自己就是在用这样的无法被挑剔的忠诚，收买了对心照不宣的反叛的容忍。", "relation": "supports"},
+    {"key": "E11", "paragraph_id": "P024", "quote": "这就是身为日本人的存在。", "relation": "supports"}
+   ]
+  },
+  "provisional_tags": {
+   "domain_candidates": ["日本文化与国民性论", "东亚政治心理", "历史政治评论"],
+   "issue_candidates": ["忠诚与叛变的关系", "日本民族性格", "东亚国家行为的动机"],
+   "text_function_candidates": ["评论", "论辩", "格言式断言", "答疑（对提问的间接回应）"],
+   "object_candidates": ["日本", "东亚国家", "日本人", "美国人", "拜登与菅义伟会晤（仅提问字段）"],
+   "working_keywords": ["忠与叛", "下剋上", "小铁盒子", "对冲", "心照不宣"]
+  },
+  "notes": "正文未涉及提问所指的会晤事件，属借题发挥式论断；全篇无引文、无数据、无可核查史例；P011—P015 第一人称主体不明，需后续核验是作者自我陈述还是修辞拟设；无图片。"
+ },
+ "bd13b869": {
+  "analysis": {
+   "question_context": "提问者转引「养老金累计结余将在2035年耗尽」的说法，问如何看待该问题以及现行养老金制度存在什么弊端。作者不接受该提法，断言对全民所有制国家「养老金耗尽」是伪问题，并以中国「庇护契约」与美国「城邦契约」两类社会契约的区分立论，主张中央政府的资源调用不依赖财政收入，真正的问题是养老金在多大程度上属于「必须解决」的问题。正文未讨论现行养老金制度的具体弊端，也未给任何数字或政策细节。",
+   "content_units": [
+    {"unit_id": "U001", "paragraph_refs": ["P001"], "summary": "直接断言：对于全民所有制国家，「养老金耗尽」是一个伪问题。", "role": "claim"},
+    {"unit_id": "U002", "paragraph_refs": ["P002", "P003"], "summary": "理由：中国政府不是拓荒民凑余钱办的服务机构；中国的社会契约由无法单独存活的四野之民交出一切、换取有纪律有效率组织的庇护而缔结，与美国契约根本不同。", "role": "reason"},
+    {"unit_id": "U003", "paragraph_refs": ["P004", "P005"], "summary": "定义城邦模式契约：凑出的钱耗尽服务即停止，不续费即接受服务终止并退回无交集状态，是「没有关系的关系」，不继续就是结束。", "role": "definition"},
+    {"unit_id": "U004", "paragraph_refs": ["P006", "P007"], "summary": "定义庇护模式契约：进入即交出私有资源，组织负有永无穷尽的责任；「无法续费」只有维持组织者死光或不再有维持意愿时才可能，没有结束就是继续。", "role": "definition"},
+    {"unit_id": "U005", "paragraph_refs": ["P008", "P009", "P010"], "summary": "以美国为例：土地分属各主人，联邦政府只能调动主人肯共享的部分，财政收入多少做多少事，税不够就问大家肯不肯继续出钱，超出范围多一毛钱责任都没有。", "role": "example"},
+    {"unit_id": "U006", "paragraph_refs": ["P011", "P012", "P013"], "summary": "庇护契约下政府调用资源的广度与深度远超城邦式联邦政府；中国中央政府本质上不依赖财政收入运行，掌握九百六十万平方公里全部自然资源，税不够可直接出售开发权、使用权，收入进国库即可接着用。", "role": "reason"},
+    {"unit_id": "U007", "paragraph_refs": ["P014", "P015"], "summary": "限定：该财富规模下养老金危机不是钱的问题而是优先级问题；但财富有限而人类问题无限，庇护契约下能解决的问题集也有限，有些问题被认定不值得分配资源避免后果而宁可直接接受后果。", "role": "qualification"},
+    {"unit_id": "U008", "paragraph_refs": ["P016", "P017"], "summary": "判据：在中国，一个问题是否会被解决不看政府账户上有多少货币，而看若不解决会造成多大威胁、是否足以威胁整个国家的存在；只要还在必须解决的问题列表里，没钱也会变出钱来。", "role": "claim"},
+    {"unit_id": "U009", "paragraph_refs": ["P018", "P019"], "summary": "结论与反问：真正的问题是养老金问题在多大程度上属于必须解决的问题，而非还剩多少余额；并以设立养老金制度前账户余额为 0 却并非没有退休保障作反问。", "role": "conclusion"}
+   ],
+   "main_claims": [
+    {"claim_id": "C001", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "作者断言：对于全民所有制国家，「养老金耗尽」是一个伪问题。", "evidence": ["E1"]},
+    {"claim_id": "C002", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "作者称中国的社会契约是庇护型契约：由无法单独存活的四野之民以交出一切换取严密先进组织的庇护而缔结，与美国的社会契约根本不同。", "evidence": ["E2"]},
+    {"claim_id": "C003", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "作者称城邦契约下钱耗尽服务即停止、不续费就是结束；庇护契约下进入即交出私有资源，组织责任永无穷尽，只有维持组织者死光或不再有维持意愿才谈得上无法续费，没有结束就是继续。", "evidence": ["E3", "E4", "E5"]},
+    {"claim_id": "C004", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "作者称美国联邦政府只能调动各主人肯共享的部分，财政收入有多少就做多少事，超出这个范围多一毛钱责任都没有。", "evidence": ["E6", "E7"]},
+    {"claim_id": "C005", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "作者称中国中央政府本质上不依赖财政收入运行，因为它掌握九百六十万平方公里上所有自然资源，可通过出售开发权、使用权取得直接进入国库的资金。", "evidence": ["E8", "E9"]},
+    {"claim_id": "C006", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "作者称在该财富规模面前养老金危机不是钱的问题而是优先级问题；但因财富有限而问题无限，能解决的问题集仍有限，有些问题的后果被认定不如直接接受。", "evidence": ["E10", "E11"]},
+    {"claim_id": "C007", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "作者称在中国判断一个问题会不会被解决，看的是不解决会造成多大威胁、是否足以威胁整个国家的存在；只要还在必须解决的问题列表里，没钱也会变出钱来。", "evidence": ["E12", "E13"]},
+    {"claim_id": "C008", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "作者称真正的问题是养老金问题在多大程度上是一个必须解决的问题，而不是还有多少余额。", "evidence": ["E14"]},
+    {"claim_id": "C009", "claim_type": "author_explicit", "attribution": "author", "modality": "questioned", "statement": "作者反问：设立养老金制度之前的几十年账户余额为 0，中国就因此完全没有退休保障了吗（以反问质疑以余额判断保障有无的思路）。", "evidence": ["E15"]},
+    {"claim_id": "C010", "claim_type": "opponent_view", "attribution": "opponent", "modality": "asserted", "statement": "被作者反驳的框架（见于提问所引说法）：养老金累计结余将在 2035 年耗尽，因此这是一个需要担忧的现实问题。", "evidence": ["E1"]}
+   ],
+   "argument_steps": [
+    "下断言（P001）：对全民所有制国家「养老金耗尽」是伪问题。",
+    "否定类比（P002）：中国政府不是拓荒民凑钱办的服务机构。",
+    "提出两类契约（P003）：中国为交一切换庇护的契约，与美国根本不同。",
+    "定义城邦契约（P004—P005）：钱尽即服务止，不续费即结束，「没有关系的关系」。",
+    "定义庇护契约（P006—P007）：进入即交出私有资源，责任无穷尽，没有结束就是继续。",
+    "以美国为例说明城邦契约的财政约束（P008—P010）。",
+    "回到中国：资源调用广度深度不同，中央不依赖财政收入，可变现自然资源（P011—P013）。",
+    "让步限定（P014—P015）：财富有限、问题无限，能解决的仍有限，部分后果被选择接受。",
+    "给出判据（P016—P017）：看是否威胁国家存在、是否列入必须解决的问题列表。",
+    "收束与反问（P018—P019）：真正的问题是优先级；以制度设立前余额为 0 反问。"
+   ],
+   "concept_usage": [
+    {"term": "伪问题", "meaning": "作者指在全民所有制（庇护契约）前提下，「养老金耗尽」不构成真正的问题，真正的问题是优先级。", "evidence": "P001", "ambiguity": "未说明该判断依赖哪些前提，也未说明前提不成立时结论如何变化。"},
+    {"term": "庇护契约／城邦契约", "meaning": "作者自设的两类社会契约：庇护＝交出一切换组织庇护，无退出故「没有结束就是继续」；城邦＝凑钱买服务，不续费即结束。", "evidence": "P003", "ambiguity": "未给出契约缔结的时间、文本或可核查史实依据。"},
+    {"term": "全民所有制", "meaning": "作者据以判定养老金问题性质的国家类型前提。", "evidence": "P001", "ambiguity": "未界定其法律含义与资源归属机制。"},
+    {"term": "资源变现（开发权、使用权）", "meaning": "作者称中央可在税不够时出售资源开发权、使用权，收入进国库即可使用。", "evidence": "P013", "ambiguity": "未提规模、程序、可持续性或约束。"},
+    {"term": "必须解决的问题列表", "meaning": "作者设定的判据：是否足以威胁整个国家的存在决定问题能否获得资源。", "evidence": "P016", "ambiguity": "未说明由谁、依何程序认定。"}
+   ],
+   "examples_and_targets": [
+    "美国（联邦政府与土地各块的主人）——作为城邦契约模式的对照例证（P008—P010）。",
+    "中国政府、中央政府、国库——主要论述对象（P002、P012、P013）。",
+    "九百六十万平方公里上的自然资源、开发权与使用权出售——作者举的资源变现机制（P012—P013）。",
+    "「养老金累计结余将在2035年耗尽」——提问者转引的说法，被视为被反驳的框架；正文未指明其来源机构或具体数字。",
+    "设立养老金制度之前账户余额为 0——作者用于反问的对照事实（P019），未给年份或出处。"
+   ],
+   "conditions": [
+    "前提条件：论断只针对「全民所有制国家」及其庇护型契约（P001、P006）。",
+    "明确条件：「无法续费」成立的唯一可能是所有能继续维持组织存在的人死光或不再有维持意愿（P006）。",
+    "资源限度：无论财富规模多大都有限，人类问题无限，能解决的问题集有限（P015）。",
+    "判据条件：问题须被认为威胁整个国家的存在、列入必须解决的问题列表（P016—P017）。",
+    "未说明：若「必须解决」的认定改变或威胁程度下降，结论是否改变。"
+   ],
+   "rhetoric_and_tone": "反驳式立论：先下断语，再用两类契约的对称定义展开（「不继续就是结束」对「没有结束就是继续」）；对美国用「主人」「多一毛钱的责任都没有」等带贬抑色彩的措辞；结尾连用反问；通篇无数据、无引文、无政策细节，语气确定、指导性强，带制度辩护色彩。",
+   "unresolved_questions": [
+    "正文未回答提问的第二部分：现行养老金制度存在什么弊端（未作制度层面讨论）。",
+    "未给出「2035年耗尽」说法的来源、统计口径或数字，也未作事实核查。",
+    "「全民所有制」「庇护契约」为作者自设概念，其界定与法律、历史依据未说明。",
+    "「必须解决的问题列表」由谁、依何程序认定，如何排除政治或部门利益影响，未说明。",
+    "资源变现（开发权、使用权出售）的规模、可持续性与约束条件未说明。",
+    "按作者判据，养老金问题究竟是否属于「必须解决」的问题，正文未给出明确结论。"
+   ],
+   "evidence": [
+    {"key": "E1", "paragraph_id": "P001", "quote": "对于全民所有制国家，“养老金耗尽”是一个伪问题。", "relation": "supports"},
+    {"key": "E2", "paragraph_id": "P003", "quote": "它是由无法单独存活的四野之民以交出一切来获得有纪律、有效率的严密先进组织的庇护来完成缔结过程的。", "relation": "supports"},
+    {"key": "E3", "paragraph_id": "P005", "quote": "城邦契约，是一种“没有关系的关系”。不继续就是结束。", "relation": "supports"},
+    {"key": "E4", "paragraph_id": "P006", "quote": "所谓的“无法续费”只有一种可能，就是所有能继续维持组织存在的人死光了或者不再有维持的意愿了。", "relation": "supports"},
+    {"key": "E5", "paragraph_id": "P007", "quote": "它与城邦契约恰好相反，没有结束就是继续。", "relation": "supports"},
+    {"key": "E6", "paragraph_id": "P008", "quote": "联邦政府仅仅能调动这些主人们肯拿出来共享的部分。财政收入有多少就做多少的事。", "relation": "supports"},
+    {"key": "E7", "paragraph_id": "P010", "quote": "超出这个范围多一毛钱的责任都没有。", "relation": "supports"},
+    {"key": "E8", "paragraph_id": "P012", "quote": "中国的中央政府，在本质上根本不依赖于财政收入来运行，因为它手里掌握着九百六十万平方公里上所有的自然资源。", "relation": "supports"},
+    {"key": "E9", "paragraph_id": "P013", "quote": "可以直接拿出一点资源来卖一卖开发权、使用权，卖出来的钱直接进入国库帐户，立刻可以接着用。", "relation": "supports"},
+    {"key": "E10", "paragraph_id": "P014", "quote": "这个财富规模面前所谓的养老金危机根本就不是钱的问题，而是一个优先级问题。", "relation": "supports"},
+    {"key": "E11", "paragraph_id": "P015", "quote": "仍然有相当多的问题会被认定不值得分配资源去避免其后果而不如直接接受其后果。", "relation": "qualifies"},
+    {"key": "E12", "paragraph_id": "P016", "quote": "而是要去看它如果不解决会造成多大的威胁，是否足以威胁到整个国家的存在。", "relation": "supports"},
+    {"key": "E13", "paragraph_id": "P017", "quote": "只要它还在被认为必须解决的问题列表里，没“钱”也会变出钱来。", "relation": "supports"},
+    {"key": "E14", "paragraph_id": "P018", "quote": "真正的问题是养老金问题在多大程度上是一个必须解决的问题，而不是什么还有多少余额。", "relation": "supports"},
+    {"key": "E15", "paragraph_id": "P019", "quote": "在设立养老金制度之前的几十年，养老金的账户的余额为0，中国就因此而完全没有退休保障了吗？", "relation": "context"}
+   ]
+  },
+  "provisional_tags": {
+   "domain_candidates": ["中国政治经济", "社会保障与养老金", "社会契约理论"],
+   "issue_candidates": ["养老金耗尽论", "财政与资源调配能力", "中西制度差异", "问题优先级"],
+   "text_function_candidates": ["答疑", "论辩", "反驳", "概念区分"],
+   "object_candidates": ["中国政府", "美国联邦政府", "全民所有制国家", "养老金制度", "国库"],
+   "working_keywords": ["伪问题", "庇护契约", "城邦契约", "全民所有制", "优先级问题", "必须解决的问题"]
+  },
+  "notes": "正文未回应提问中的制度弊端部分；「庇护契约／城邦契约」「必须解决的问题列表」为作者自设框架，未给来源、数据或政策实例；无图片、无引文。"
+ },
+ "41c47afa": {
+  "analysis": {
+   "question_context": "提问者问世界上有哪些人们知道较少的宗教。作者只作两句话的极简回应：推荐耆那教，并要读者自行搜索「萨恩塔拉」（santhara）；未介绍该教教义、历史或实践，也未列举其他宗教，属指向性回答而非解释性回答。",
+   "content_units": [
+    {"unit_id": "U001", "paragraph_refs": ["P001"], "summary": "断言耆那教是一个很值得注意的教派。", "role": "claim"},
+    {"unit_id": "U002", "paragraph_refs": ["P002"], "summary": "建议读者搜索「萨恩塔拉」（santhara)，未作任何解释。", "role": "action_advice"}
+   ],
+   "main_claims": [
+    {"claim_id": "C001", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "作者称耆那教是一个很值得注意的教派。", "evidence": ["E1"]},
+    {"claim_id": "C002", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "作者要求读者自行搜索「萨恩塔拉」（santhara)，以此作为回答的延伸。", "evidence": ["E2"]}
+   ],
+   "argument_steps": [
+    "给出判断（P001）：耆那教很值得注意。",
+    "给出检索指引（P002）：搜索「萨恩塔拉」（santhara)。",
+    "无定义、无理由、无例证、无反驳、无结论展开。"
+   ],
+   "concept_usage": [
+    {"term": "耆那教", "meaning": "被作者称为「很值得注意的教派」，作为对「人们知道较少的宗教」的举例。", "evidence": "P001", "ambiguity": "正文未说明其教义、分布或「值得注意」之处。"},
+    {"term": "萨恩塔拉（santhara)", "meaning": "作者只给出中文译名与拉丁转写，未作解释，要求读者自行检索。", "evidence": "P002", "ambiguity": "正文未说明其含义与性质，本条不作外部知识补充。"}
+   ],
+   "examples_and_targets": [
+    "耆那教——作者推荐并作答的对象（P001）。",
+    "「萨恩塔拉」（santhara)——作者指定的检索词，未解释（P002）。"
+   ],
+   "conditions": [
+    "隐含条件：读者须自行搜索才能获得「萨恩塔拉」的相关信息（P002）；正文未说明检索来源、范围或判读标准。"
+   ],
+   "rhetoric_and_tone": "极简短答，共两句：一句判断、一句祈使（「搜索一下」）；不作解释、不论证、不举例，语气平淡直接，无修辞铺陈与情绪表达。",
+   "unresolved_questions": [
+    "正文未说明耆那教的教义、历史、分布，也未说明「萨恩塔拉」的具体含义，作者明确要求读者自行检索。",
+    "未说明判为「很值得注意」的依据与标准。",
+    "未回应提问中「有一些什么」的复数要求，只举一例。",
+    "本篇是否属完整回答（有无后续补充、修订或被截断）无法从正文判断。"
+   ],
+   "evidence": [
+    {"key": "E1", "paragraph_id": "P001", "quote": "耆那教是一个很值得注意的教派。", "relation": "supports"},
+    {"key": "E2", "paragraph_id": "P002", "quote": "搜索一下什么叫做“萨恩塔拉”（santhara)。", "relation": "supports"}
+   ]
+  },
+  "provisional_tags": {
+   "domain_candidates": ["宗教研究", "比较宗教"],
+   "issue_candidates": ["人们知道较少的宗教", "耆那教", "萨恩塔拉"],
+   "text_function_candidates": ["答疑", "推荐与检索指引"],
+   "object_candidates": ["耆那教", "萨恩塔拉"],
+   "working_keywords": ["耆那教", "萨恩塔拉", "santhara"]
+  },
+  "notes": "全篇仅 2 段 41 字符；关键概念「萨恩塔拉」在正文中未作任何解释，需外部核查；无图片、无引文、无论证展开。"
+ },
+ "d51d46f6": {
+  "analysis": {
+   "question_context": "提问者问如何看待钱伟长先生「本文不必参考任何文献」。作者未点名钱伟长、也未评价其人其文或该事件细节，而是回答一个一般性问题：论文为什么必须提供参考文献。作者的答案是参考文献本质上是礼仪而非绝对必要，并由此说明自己的写作方式、对读者如何对待其省略表达的要求，以及何种疑问才会导致内容修订。",
+   "content_units": [
+    {"unit_id": "U001", "paragraph_refs": ["P001", "P002"], "summary": "自问自答：提供参考文献在本质上是一种礼仪，而不是一种绝对的必要。", "role": "claim"},
+    {"unit_id": "U002", "paragraph_refs": ["P003"], "summary": "说明礼仪的目的：通过承担劳动量向审稿人表示对学术规范的尊重、方便审稿人查阅资料、减轻审阅负担；功能上直接引用也可节约篇幅、省掉某些解释。", "role": "reason"},
+    {"unit_id": "U003", "paragraph_refs": ["P004", "P005", "P006", "P007"], "summary": "重申事实上并非绝对必要；对可独立验证的论文（自然科学类、工程类），若定义、方法、数据、计算过程与结果都已直接提供，就没有必要再提供引用；强行引用只是讨好用的奶油装饰，有时甚至让人厌恶。", "role": "reason"},
+    {"unit_id": "U004", "paragraph_refs": ["P008", "P009", "P010"], "summary": "作者自述写作方式：几乎不提供来源引用、不给出每一步论证，只写读者在足够真诚且有对应经历前提下仍不易想通的「断点」，只替读者补上关键一环。", "role": "example"},
+    {"unit_id": "U005", "paragraph_refs": ["P011", "P012", "P013", "P014"], "summary": "理由之一：精力只有这么多（就这条件，挑剔也没用）；理由之二：内容力求避免建立在「因为某人那样说过」之上，定义与论证已给出，应在自己生活中验证；并反问若那位伟大者被察觉说错，论述是否要连环倒塌，故毫无引用的意义。", "role": "reason"},
+    {"unit_id": "U006", "paragraph_refs": ["P015", "P016"], "summary": "理由之三：真正想从外界受益的人分得清主动与被动，自己去考虑使内容成立的语境是从中受益的天然前提。", "role": "reason"},
+    {"unit_id": "U007", "paragraph_refs": ["P017", "P018"], "summary": "区分两类读者：有人把原命题补强后讨论仍存的疑问，有人把原命题补弱后发表贬斥；只有前者有资格得到在意，后者根本没有活醒，还欠生活的耳光。", "role": "qualification"},
+    {"unit_id": "U008", "paragraph_refs": ["P019", "P020"], "summary": "对前者而言，有时无法理解是因为缺少必要体验，理论认识补不上被省略的缺环，意味着时候未到；以一年级、二年级到大学作比，直接问大学的问题最短路线是把各年级上掉，此时只能说再过些年再回来看。", "role": "qualification"},
+    {"unit_id": "U009", "paragraph_refs": ["P021", "P022", "P023"], "summary": "结论：只有在既补强又有经历的前提下仍保有的疑问，才可能是作者表达过于省略或确实有错；基本只有这类疑问会导致内容修订；「望周知」。", "role": "conclusion"}
+   ],
+   "main_claims": [
+    {"claim_id": "C001", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "作者称论文提供参考文献在本质上是一种礼仪，而不是一种绝对的必要。", "evidence": ["E1"]},
+    {"claim_id": "C002", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "作者称设立该礼仪的主要目的是以承担劳动量向审稿人表示对学术规范的尊重、方便审稿人查阅资料、减轻审阅负担，并可在功能上节约篇幅、省掉某些解释。", "evidence": ["E2"]},
+    {"claim_id": "C003", "claim_type": "author_qualified", "attribution": "author", "modality": "qualified", "statement": "作者称尤其对可独立验证的论文（自然科学类、工程类），如果新概念定义、实验方法、实验数据、计算过程、计算结果都已直接提供在内容中，事实上就没有必要再提供引用。", "evidence": ["E3"]},
+    {"claim_id": "C004", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "作者称强行引用只是一种讨好用的奶油装饰，有时甚至让人厌恶。", "evidence": ["E4", "E5"]},
+    {"claim_id": "C005", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "作者自述其写作几乎不提供来源引用、也不给出每一步论证，只写读者在足够真诚且有对应经历前提下仍不易凭自己直接想通的断点，只替读者补上关键的那一环。", "evidence": ["E6", "E7"]},
+    {"claim_id": "C006", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "作者称不提供引用的第一点理由是自己只有这样的精力（就这条件，挑剔也没用）。", "evidence": ["E8"]},
+    {"claim_id": "C007", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "作者称第二点理由是内容力求避免建立在「因为某人那样说过」之上：定义和论证已给出，应直接在自己生活中验证；并要求他人为论述背书无意义——若那位伟大者被察觉说错，论述也不应连环倒塌。", "evidence": ["E9", "E10", "E11"]},
+    {"claim_id": "C008", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "作者称第三点理由是真正想从外界受益的人总分得清主动与被动，自己去考虑使内容成立的语境是从中受益的天然前提。", "evidence": ["E12", "E13"]},
+    {"claim_id": "C009", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "作者称对缺环表达，只有自行补强原命题再讨论仍存疑问的人有资格得到在意；把原命题补弱后贬斥的人根本没有活醒。", "evidence": ["E14", "E15"]},
+    {"claim_id": "C010", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "作者称只有在既补强原命题又具备经历的前提下仍保有的疑问，才的确是其表达过于省略或者确实有错，基本只有这类疑问会导致内容修订。", "evidence": ["E16", "E17"]}
+   ],
+   "argument_steps": [
+    "设问（P001）：论文为什么必须提供参考文献？",
+    "总判断（P002）：本质是礼仪，不是绝对必要。",
+    "说明礼仪的目的与功能（P003）：示尊重、便查阅、减负担、省篇幅。",
+    "重申并限定（P004—P005）：事实上并非绝对必要；可独立验证的论文在内容自足时无需引用。",
+    "贬抑强行引用（P006—P007）：奶油装饰，有时让人厌恶。",
+    "自述写作方式（P008—P010）：不给引用与逐步论证，只补关键断点。",
+    "理由一（P011）：精力有限。",
+    "理由二（P012—P014）：避免以「某人说过」为依据；定义与论证自足；反问权威崩塌是否导致论述倒塌，故无引用意义。",
+    "理由三（P015—P016）：受益者应分清主动被动，自行考虑语境。",
+    "读者分类与价值评判（P017—P018）：补强者被在意，补弱者被贬斥。",
+    "对补强者的解释（P019—P020）：缺体验则补不上缺环，时候未到，只能过些年再看。",
+    "修订条件（P021—P023）：只有补强且有经历后仍存的疑问才可能导致修订；望周知。"
+   ],
+   "concept_usage": [
+    {"term": "礼仪", "meaning": "作者指提供参考文献是向审稿人表达尊重、承担劳动量的惯例性礼节，而非学术成立的绝对必要。", "evidence": "P002", "ambiguity": "未说明该礼仪的效力来源，也未讨论不同学科惯例差异。"},
+    {"term": "独立验证", "meaning": "作者指论文的定义、方法、数据、计算过程与结果自身即可核验，故不必依赖引用。", "evidence": "P005", "ambiguity": "未给出判断「可以独立验证」的标准。"},
+    {"term": "断点", "meaning": "作者自指其写作只补的那些读者凭自身不易直接想通的省略环节。", "evidence": "P009", "ambiguity": "未举例说明何为断点。"},
+    {"term": "补强／补弱原命题", "meaning": "读者处理作者省略表达的两种方式：补强后讨论仍存的疑问，或补弱后作贬斥。", "evidence": "P017", "ambiguity": "未给出具体判例与判定标准。"},
+    {"term": "背书", "meaning": "以某人曾如此说过且其伟大为由为论述提供依据。", "evidence": "P013", "ambiguity": "未区分署名引用、权威引用与一般文献标注。"}
+   ],
+   "examples_and_targets": [
+    "钱伟长及其「本文不必参考任何文献」——仅见于提问字段，正文未提及，属提问语境材料而非文中论据。",
+    "自然科学类、工程类论文——作者举的可独立验证论文之例（P005）。",
+    "审稿人——参考文献礼仪的指向对象（P003）。",
+    "「因为某人那样说过」的伟大者／背书者——作者反驳的依据类型（P012—P013）。",
+    "一年级、二年级……大学——说明体验不可替代的类比（P019）。",
+    "两类读者（补强原命题者／补弱并贬斥者）——被区分并作价值评判的对象（P017—P018）。"
+   ],
+   "conditions": [
+    "明确条件：对可独立验证的论文，且新概念定义、实验方法、实验数据、计算过程、计算结果都直接提供在内容中时，才「事实上没有必要」提供引用（P005）。",
+    "限定：作者只说参考文献不是绝对必要，并未否认其在表示尊重、方便审稿、节约篇幅上的作用（P002—P003）。",
+    "读者条件：读者须足够真诚且有对应经历（P009）；受益前提是自己考虑内容成立的语境（P016）。",
+    "修订条件：只有在既补强原命题又具备经历后仍保有的疑问，才可能导致内容修订（P021—P022）。"
+   ],
+   "rhetoric_and_tone": "自问自答式开场；用「礼仪」「讨好用的奶油装饰」等比喻作贬抑；口吻直接并带训诫与教训色彩（「望周知」「还欠生活的耳光」「你挑剔也没啥用」）；多处反问（P013）与让步（「但是，这在事实上并不是绝对必要的」）；结构为总判断→理由一二三→读者分类→修订条件，并夹入作者第一人称的写作自述。",
+   "unresolved_questions": [
+    "正文未点名钱伟长，也未评价提问所指的具体事件，作者与该事件的立场对应关系需外部判断。",
+    "「礼仪」与「绝对必要」的界线、以及不同学科惯例差异未说明。",
+    "作者所称「断点」「补强／补弱」均无实例，判定标准不明。",
+    "未讨论不提供引用时如何处理他人专有数据或观点的一般学术责任。",
+    "P019 的学习阶段比喻是否针对特定读者或提问者，文中未指明对象。",
+    "「其他人没谁有资格为这些东西背书」中的「其他人」范围未界定。"
+   ],
+   "evidence": [
+    {"key": "E1", "paragraph_id": "P002", "quote": "这在本质上是一种礼仪，而不是一种绝对的必要。", "relation": "supports"},
+    {"key": "E2", "paragraph_id": "P003", "quote": "设立这个礼仪的主要目的，是为了通过承担这一劳动量向审稿人表示自己对学术规范的尊重，方便审稿人查阅相关资料、减轻审阅负担。", "relation": "supports"},
+    {"key": "E3", "paragraph_id": "P005", "quote": "如果新概念定义、实验方法、实验数据、计算过程、计算结果都直接提供在内容中了，就事实上没有必要再去提供什么引用。", "relation": "supports"},
+    {"key": "E4", "paragraph_id": "P006", "quote": "强行引用，其实只是一种讨好用的奶油装饰而已。", "relation": "supports"},
+    {"key": "E5", "paragraph_id": "P007", "quote": "有时甚至让人厌恶。", "relation": "supports"},
+    {"key": "E6", "paragraph_id": "P008", "quote": "我写的这些东西几乎不会提供来源引用，也并不会给出每一步的论证。", "relation": "supports"},
+    {"key": "E7", "paragraph_id": "P009", "quote": "我一向选择只写那些我认为你在足够真诚而且有对应经历的前提下，仍然不容易凭自己直接想通的那些断点。", "relation": "supports"},
+    {"key": "E8", "paragraph_id": "P011", "quote": "这首先是因为我只有这样的精力——说直白点，就这条件，你挑剔也没啥用。", "relation": "supports"},
+    {"key": "E9", "paragraph_id": "P012", "quote": "其次是因为这些东西本身就是力求避免建立在“因为某人那样说过”这种依据之上的。", "relation": "supports"},
+    {"key": "E10", "paragraph_id": "P013", "quote": "如果哪天那个人被察觉说的是错的，这些论述就要连环倒塌吗？", "relation": "supports"},
+    {"key": "E11", "paragraph_id": "P014", "quote": "所以毫无引用的意义。", "relation": "supports"},
+    {"key": "E12", "paragraph_id": "P015", "quote": "第三，真正要想从外界受益的人，总是分得清谁是主动，谁是被动。", "relation": "supports"},
+    {"key": "E13", "paragraph_id": "P016", "quote": "自己去考虑使得这些东西可以成立的语境，是从这些东西里受益的天然前提。", "relation": "supports"},
+    {"key": "E14", "paragraph_id": "P017", "quote": "有人将原命题自行补强然后讨论仍然存在的疑问，有人将原命题补弱然后发表不屑一顾的贬斥。", "relation": "supports"},
+    {"key": "E15", "paragraph_id": "P018", "quote": "只有前者有资格得到在意，后者根本没有活醒，还欠生活的耳光。", "relation": "supports"},
+    {"key": "E16", "paragraph_id": "P021", "quote": "而只有在既补强了、又有经历了的前提下，仍然保有的疑问，才的确是我的表达过于省略或者的确是错的。", "relation": "supports"},
+    {"key": "E17", "paragraph_id": "P022", "quote": "基本上只有这最后的一种疑问会导致内容的修订。", "relation": "supports"}
+   ]
+  },
+  "provisional_tags": {
+   "domain_candidates": ["学术规范与论文写作", "方法论", "写作与阅读伦理"],
+   "issue_candidates": ["参考文献是否必要", "引用与权威依赖", "作者与读者的责任分工"],
+   "text_function_candidates": ["答疑", "论辩", "经验总结", "训诫"],
+   "object_candidates": ["钱伟长（仅提问字段）", "审稿人", "自然科学类与工程类论文", "读者"],
+   "working_keywords": ["参考文献", "礼仪", "独立验证", "断点", "补强", "补弱", "背书"]
+  },
+  "notes": "正文未点名钱伟长，属对一般问题的回应，提问所指事件与作者立场的关系未在文中建立；无数据、无引用实例；作者以第一人称自述写作习惯，「我」指作者本人；无图片。"
+ },
+ "68414053": {
+  "analysis": {
+   "question_context": "提问者问为什么日本女人总是要强调可爱。作者给出功能性解释：日本男性的控制感焦虑极大、对「可控性」有标准需求；日本社会中任何两人之间都存在等级排序，日常交往如对弈般令人精疲力竭；于是不必担责、不需抢占优势的「幼态」立场成为避难所，「可爱」与对可爱的肯定构成难得的休战状态。正文未直接说明该角色为何主要由女性承担，也未给数据或来源。",
+   "content_units": [
+    {"unit_id": "U001", "paragraph_refs": ["P001"], "summary": "给出原因：日本男性的控制感焦虑太大，对「可控性」的需求极为强烈，已成标准需求。", "role": "claim"},
+    {"unit_id": "U002", "paragraph_refs": ["P002", "P003", "P004", "P005"], "summary": "日本社会中任何两个人之间、任何时候都有等级关系（按辈分、职位、年资、主客、成绩等），规则决定敬称、请教与下令的方向；分不清则连谁先开口、用什么句型都困难；这套交叉排序决定尊卑与支配关系。", "role": "reason"},
+    {"unit_id": "U003", "paragraph_refs": ["P006", "P007", "P008"], "summary": "出门与人说话办事如同看不见硝烟的战争，是落子、对弈，令人精疲力竭。", "role": "reason"},
+    {"unit_id": "U004", "paragraph_refs": ["P009"], "summary": "于是，不必承担任何责任、不需抢占优势地位即可享有宠爱的「幼态」对能采取它的人是避难所。", "role": "claim"},
+    {"unit_id": "U005", "paragraph_refs": ["P010"], "summary": "举例：没有人会选择皮卡丘或 hello kitty 当课长或会长；在它们面前任何人不必担心竞争威胁，任何人都是父亲或母亲。", "role": "example"},
+    {"unit_id": "U006", "paragraph_refs": ["P011", "P012"], "summary": "解释幼态立场的双向含义：采取幼态意味着宣告「我知道你的累，我不与你争夺」；肯定对方的幼态意味着「我感激你不与我争夺，我必不令你因此后悔」。", "role": "definition"},
+    {"unit_id": "U007", "paragraph_refs": ["P013", "P014"], "summary": "结论：表现得可爱与表现对对方可爱的心醉神迷构成日本人生活中难得的休战状态，双方得以真正休息。", "role": "conclusion"},
+    {"unit_id": "U008", "paragraph_refs": ["P015", "P016", "P017"], "summary": "反证与说明：若在家还要提十二分精神真剑对决，怕有很多人会直接在车站厕所切腹；引「介错什么的……」；这份心意相通的片刻宁静是精疲力竭者唯一的喘息之机，十小时后还要赶下一班电车去面试和排位。", "role": "reason"},
+    {"unit_id": "U009", "paragraph_refs": ["P018"], "summary": "补语：彼时彼刻比性爱更令人享受——后者还要担心表现不好。", "role": "other"},
+    {"unit_id": "U010", "paragraph_refs": ["P019"], "summary": "以「昭和之后，必有平成。」收束。", "role": "conclusion"}
+   ],
+   "main_claims": [
+    {"claim_id": "C001", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "作者称日本女人强调可爱的原因是日本男性的控制感焦虑太大，对「可控性」的需求极为强烈并已成为标准需求。", "evidence": ["E1"]},
+    {"claim_id": "C002", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "作者称任何两个日本人之间、任何时候都有等级关系，规则决定谁对谁使用敬称、谁向谁请教、谁向谁下令，分不清则连谁先开口和用什么句型组织句子都会有困难。", "evidence": ["E2", "E3"]},
+    {"claim_id": "C003", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "作者称这种无处不在的交叉排序决定地位尊卑与支配／被支配关系，出门与人说话办事如同看不见硝烟的战争、如同落子对弈，令人精疲力竭。", "evidence": ["E4", "E5", "E6"]},
+    {"claim_id": "C004", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "作者称不必承担任何责任、不需抢占任何优势地位就可以享有宠爱的幼态，对能够采取它的人是一个避难所。", "evidence": ["E7"]},
+    {"claim_id": "C005", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "作者称没有人会选择皮卡丘或 hello kitty 当课长或会长，在它们面前任何人都不必担心竞争威胁，任何人都是父亲或者母亲。", "evidence": ["E8"]},
+    {"claim_id": "C006", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "作者称采取幼态立场意味着宣告「我知道你的累，我不与你争夺」，对对方的幼态表示肯定意味着「我感激你不与我争夺，我必不令你因此后悔」。", "evidence": ["E9", "E10"]},
+    {"claim_id": "C007", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "作者称表现得可爱与表现对对方可爱的心醉神迷，构成了日本人生活中难得的休战状态，双方在这片刻得以真正休息。", "evidence": ["E11", "E12"]},
+    {"claim_id": "C008", "claim_type": "author_explicit", "attribution": "author", "modality": "hypothetical", "statement": "作者推测：如果到了家里还要提起十二分精神真剑对决，怕是有很多人会直接在车站厕所的卫生间里切腹。", "evidence": ["E13"]},
+    {"claim_id": "C009", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "作者称对精疲力竭的日本人来说，这份心意相通的片刻宁静是唯一的喘息之机，十个小时之后还要赶下一班电车去参加下一场面试和排位。", "evidence": ["E14"]}
+   ],
+   "argument_steps": [
+    "直接给出原因（P001）：日本男性控制感焦虑大、对可控性需求强烈。",
+    "展开前提（P002—P005）：日本社会处处是等级排序，规则决定敬称、请教、下令，并决定尊卑与支配地位。",
+    "描述体验（P006—P008）：日常交往如战争、对弈，令人精疲力竭。",
+    "推出避难所（P009）：幼态立场可免责、不争优势而享宠爱。",
+    "举例（P010）：皮卡丘、hello kitty 不会被选为课长或会长，在它们面前无竞争威胁。",
+    "解释机制（P011—P012）：采取幼态与肯定对方幼态的双向宣告。",
+    "结论（P013—P014）：可爱与对可爱的心醉神迷构成休战状态，双方得以真正休息。",
+    "反证与补充（P015—P018）：家中若仍对决则不堪设想；片刻宁静是唯一喘息之机，比性爱更令人享受。",
+    "警句式收束（P019）：昭和之后，必有平成。"
+   ],
+   "concept_usage": [
+    {"term": "幼态", "meaning": "作者指不必承担任何责任、不需抢占优势地位而可享有宠爱的立场，是一种避难所；采取它即宣告不与对方争夺。", "evidence": "P009", "ambiguity": "未界定其心理来源与判断标准，也未说明为何主要由女性采取。"},
+    {"term": "可控性", "meaning": "作者称日本男性对其需求极为强烈并已成标准需求。", "evidence": "P001", "ambiguity": "未说明「可控性」的具体所指、对象与衡量方式。"},
+    {"term": "交叉排序算法", "meaning": "作者用来比喻多重等级维度交叉决定人的尊卑与支配地位的自创说法。", "evidence": "P005", "ambiguity": "属比喻，无来源与操作化说明。"},
+    {"term": "休战状态", "meaning": "指表现可爱与肯定对方可爱所形成的、双方暂不竞争的默契片刻。", "evidence": "P013", "ambiguity": "未说明其持续时间、适用范围与是否对等。"},
+    {"term": "介错", "meaning": "日本切腹仪式中协助斩首者的用语，被引用以渲染「没有人可以拜托」的孤立处境。", "evidence": "P016", "ambiguity": "引语出处未注明，属引用还是流行文化借用不明。"}
+   ],
+   "examples_and_targets": [
+    "皮卡丘、hello kitty——被作者举为不可能担任课长／会长的幼态形象（类比例证，P010）。",
+    "车站厕所的卫生间切腹——夸张设想的场景（P015）。",
+    "「介错什么的，仔细想想的话，没有人可以拜托吧……」——引号内语句，出处未注明（P016）。",
+    "性爱——用作对比的参照（P018）。",
+    "下一班电车、面试和排位——日常场景举例（P017）。",
+    "昭和、平成——年号被用作收束双关（P019）。"
+   ],
+   "conditions": [
+    "前提依赖：以日本社会普遍存在等级关系、出门社交即为竞争为条件（P002—P007）。",
+    "适用范围：作者只说该机制适用于「能够采取它的人」，未限定性别（P009）。",
+    "假设句：如果到了家里还要提起十二分精神真剑对决，则很多人怕会切腹（P015）。",
+    "时间线索：十个小时之后还要赶下一班电车（P017）；「昭和之后，必有平成」（P019），未指明具体年代。"
+   ],
+   "rhetoric_and_tone": "以「看不见硝烟的战争」「落子、对弈」比喻日常交往，突出疲惫；短句与判断句密集推进；用皮卡丘、hello kitty 等流行文化形象作夸张类比；P011—P012 与 P016 用引号拟设台词，呈对话口吻；结尾「昭和之后，必有平成」为双关式警句；整体冷峻、带调侃与夸张，无数据、无引文出处。",
+   "unresolved_questions": [
+    "作者未直接解释提问中的性别限定：为何强调可爱的主要是日本女性，男性是否也采取幼态立场未说明。",
+    "「日本男性的控制感焦虑」的来源、范围与经验依据未给出。",
+    "「可控性」需求的具体含义与判定标准未说明。",
+    "P016 引语出处未注明，无法核验是否引用他人文本。",
+    "「昭和之后，必有平成」是时代判断还是调侃未说明。",
+    "全篇无数据、无来源，属整体性文化解释。"
+   ],
+   "evidence": [
+    {"key": "E1", "paragraph_id": "P001", "quote": "这是因为日本男性的控制感焦虑太大了，对于“可控性”的需求极为强烈，已经成了一种标准需求。", "relation": "supports"},
+    {"key": "E2", "paragraph_id": "P002", "quote": "任何两个日本人之间、在任何时候都有等级关系。", "relation": "supports"},
+    {"key": "E3", "paragraph_id": "P003", "quote": "不分清楚，双方连该谁先开口和用什么句型来组织句子都会有困难。", "relation": "supports"},
+    {"key": "E4", "paragraph_id": "P005", "quote": "这种无处不在的交叉排序算法决定了人的地位尊卑，决定了自己是支配的还是被支配的。", "relation": "supports"},
+    {"key": "E5", "paragraph_id": "P006", "quote": "走出门和人说话、办事，如同一场看不见硝烟的、无尽的战争。", "relation": "supports"},
+    {"key": "E6", "paragraph_id": "P007", "quote": "坦白说，那不是“说话”、交往，而是在落子、对弈。", "relation": "supports"},
+    {"key": "E7", "paragraph_id": "P009", "quote": "于是，不必承担任何责任，不需要抢占任何优势地位就可以享有宠爱的幼态对于能够采取它的人是一个避难所。", "relation": "supports"},
+    {"key": "E8", "paragraph_id": "P010", "quote": "没有人会选择皮卡丘或者hello kitty来当课长或者会长的。", "relation": "supports"},
+    {"key": "E9", "paragraph_id": "P011", "quote": "采取了幼态立场，意味着宣告“我知道你的累，我不与你争夺”，", "relation": "supports"},
+    {"key": "E10", "paragraph_id": "P012", "quote": "对对方的幼态表示肯定，意味着“我感激你不与我争夺，我必不令你因此后悔”。", "relation": "supports"},
+    {"key": "E11", "paragraph_id": "P013", "quote": "所以表现得可爱与表现对对方可爱的心醉神迷，就构成了日本人生活中难得的休战状态。", "relation": "supports"},
+    {"key": "E12", "paragraph_id": "P014", "quote": "在这片刻，双方得以真正的休息。", "relation": "supports"},
+    {"key": "E13", "paragraph_id": "P015", "quote": "如果到了家里还要提起十二分的精神真剑对决，怕是有很多人会直接在车站厕所的卫生间里切腹吧。", "relation": "supports"},
+    {"key": "E14", "paragraph_id": "P017", "quote": "对于精疲力竭的日本人来说，这份心意相通的片刻宁静，是唯一的喘息之机。", "relation": "supports"}
+   ]
+  },
+  "provisional_tags": {
+   "domain_candidates": ["日本社会文化", "性别与国民性论", "社会心理"],
+   "issue_candidates": ["可爱文化的成因", "等级秩序与控制感", "幼态作为避难所"],
+   "text_function_candidates": ["答疑", "解释", "评论"],
+   "object_candidates": ["日本男性", "日本女性", "皮卡丘", "hello kitty", "昭和", "平成"],
+   "working_keywords": ["幼态", "可控性", "等级关系", "休战状态", "可爱", "介错"]
+  },
+  "notes": "未回应提问中的性别限定，结论以「能够采取它的人」泛指；无数据与可核验来源；P016 引语出处不明；无图片。"
+ },
+ "13fedcfe": {
+  "analysis": {
+   "question_context": "提问者问为什么双胞胎一定要分出哥哥弟弟／姐姐妹妹。作者以「分出上下便于构建稳定关系」作答，随后展开一套自创推演：一切关系本质上都不平等，所谓平等关系只能靠临时化与随机轮换实现，并须支付「关系税」；因此人必须依靠免缴平等税的固定关系取得盈余，这正是「内外之分」的合理性所在，内人须分尊卑主从。最后据此反推：双胞胎不分长幼将形同陌路，并调侃坚持平等理念的父母。正文未引用双胞胎研究或任何数据。",
+   "content_units": [
+    {"unit_id": "U001", "paragraph_refs": ["P001"], "summary": "直接回答：因为这里分出上下，方便构建稳定关系。", "role": "claim"},
+    {"unit_id": "U002", "paragraph_refs": ["P002"], "summary": "前提：一切关系本质上都不是平等关系，必然分出主动被动、决定被决定、发起跟随、提出批准、建议否决等不对称差异。", "role": "claim"},
+    {"unit_id": "U003", "paragraph_refs": ["P003", "P004", "P005"], "summary": "定义所谓「平等关系」：最本质的实现方式是把关系临时化，在交互中通过约定或动态博弈形成临时先后、上下、主从，事务结束即作废，下一事务独立重复，靠随机性与轮换性实现时间与事务维度上的概率性平等。", "role": "definition"},
+    {"unit_id": "U004", "paragraph_refs": ["P006", "P007", "P008"], "summary": "绝对平等关系只存在于旷野中偶然相遇的陌生人之间（对等的无知造成真实平等）；故一切「平等关系」本质是临时而随机的关系、默认待定状态，「绝对平等的关系」即本质的「无关系」。", "role": "definition"},
+    {"unit_id": "U005", "paragraph_refs": ["P009", "P010", "P011", "P012", "P013"], "summary": "好处是没有系统化上位者；坏处是一切交互都要反复付出构建合作关系的成本。「凭什么你是大太子？！」一旦爆发只能实力对抗或旷日持久谈判，造成「关系税」，常使预期收益为负；除扣除该成本仍有确定盈利的合作外，其他合作都不明智。", "role": "reason"},
+    {"unit_id": "U006", "paragraph_refs": ["P014", "P015"], "summary": "反问：在竞争激烈的无常世界上，有多少事是即使扣除一次内斗成本仍有明显收益的？这就是「平等关系」的最大尴尬所在。", "role": "rebuttal"},
+    {"unit_id": "U007", "paragraph_refs": ["P016", "P017", "P018"], "summary": "让步与追问：长期处于平等关系的人会被迫学会高效谈判与构建临时契约的能力（否则要饿死在旷野里）；但谁来支付契约有效执行的成本、谁来惩罚背信弃义的成本？这迫使人们事实上几乎不可能完全生活在平等关系里。", "role": "qualification"},
+    {"unit_id": "U008", "paragraph_refs": ["P019", "P020", "P021", "P022"], "summary": "结论：必须依靠高效率、免缴「平等税」的固定关系进行部分合作以赢得基本盈余，再用盈余支付陌生临时平等关系的成本；这就是「内外之分」在数学上的合理性，也是亲族、眷属、臣僚等内人须依明确法则分出尊卑主从、外人依「一事一议」的根本原因；并称这是不容抗拒的自然法则。", "role": "conclusion"},
+    {"unit_id": "U009", "paragraph_refs": ["P023", "P024"], "summary": "行动建议：应停止在高频关系中追求「平等」的妄念——不是坏人不允许而是数学不允许；硬要抵抗只会被扣更多税、失去盈余，反而更没本钱与外人尝试平等合作。（P024 为标题式句子：若不接受任何不平等，将同时失去追求更多平等的本钱。）", "role": "action_advice"},
+    {"unit_id": "U010", "paragraph_refs": ["P025", "P026", "P027"], "summary": "反问读者「你们看懂没有？」后回到原问：双胞胎还要不要分长幼——若希望她们将来形同陌路就不分。", "role": "conclusion"},
+    {"unit_id": "U011", "paragraph_refs": ["P028"], "summary": "预测不分的后果：时间长了她们会不由自主、心照不宣地区分出某种可代替长幼的上下关系；若要贯彻平等理念，还须一次次主动干预、打断小动作、惩戒背叛理想的自私行为。", "role": "reason"},
+    {"unit_id": "U012", "paragraph_refs": ["P029"], "summary": "调侃收尾：这样的爹妈当得会很有研究价值，可考虑联系人类学课题组报个经费。", "role": "other"}
+   ],
+   "main_claims": [
+    {"claim_id": "C001", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "作者回答：双胞胎分出上下（长幼）是因为这样方便构建稳定关系。", "evidence": ["E1"]},
+    {"claim_id": "C002", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "作者称一切关系在本质上都不是平等关系，必然分出主动与被动、决定与被决定、发起与跟随、提出与批准、建议与否决等不对称差异。", "evidence": ["E2"]},
+    {"claim_id": "C003", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "作者称所谓「平等关系」的最本质实现方式是将关系临时化，靠随机性与轮换性实现时间与事务维度上的概率性平等，事务一旦结束既定上下关系随即作废。", "evidence": ["E3", "E4"]},
+    {"claim_id": "C004", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "作者称绝对平等关系仅存在于旷野中偶然相遇的陌生人之间，对等的无知造成真实平等；因此一切「平等关系」本质是临时而随机的关系，「绝对平等的关系」即本质的「无关系」。", "evidence": ["E5", "E6", "E7"]},
+    {"claim_id": "C005", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "作者称平等关系的好处是没有系统化上位者，坏处是一切交互都要反复付出构建合作关系的成本。", "evidence": ["E8"]},
+    {"claim_id": "C006", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "作者称平等关系中的争位一旦爆发就没有低成本处理方式，会造成「关系税」并常使该事务预期收益为负，结果是除扣除该成本仍有确定盈利的合作外其他合作都不明智。", "evidence": ["E9", "E10", "E11"]},
+    {"claim_id": "C007", "claim_type": "author_explicit", "attribution": "author", "modality": "qualified", "statement": "作者承认长期处在平等关系中的人会被迫学会高效谈判与构建临时契约的能力，否则会饿死在旷野里。", "evidence": ["E12"]},
+    {"claim_id": "C008", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "作者称无人支付契约执行与惩罚背信的成本，这迫使人们在事实上几乎不可能完全生活在平等关系里。", "evidence": ["E13", "E14"]},
+    {"claim_id": "C009", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "作者称人必须依靠免缴「平等税」的固定关系进行部分合作以取得基本盈余，再以盈余支付临时平等关系的成本；这就是「内外之分」在数学上的合理性，也是内人须分尊卑主从而外人依「一事一议」的根本原因。", "evidence": ["E15", "E16", "E17"]},
+    {"claim_id": "C010", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "作者称这是不容抗拒的自然法则，并以「一加一等于二，二减一等于一」作比。", "evidence": ["E18"]},
+    {"claim_id": "C011", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "作者建议停止在高频关系中追求「平等」的妄念，称不是坏人不允许而是数学不允许；硬要抵抗只会被扣更多税、失去更多盈余。", "evidence": ["E19"]},
+    {"claim_id": "C012", "claim_type": "author_explicit", "attribution": "author", "modality": "predicted", "statement": "作者预测：若不分长幼，时间长了双胞胎会自行区分出可代替长幼的上下关系；若要把平等理念贯彻到底，还须一次次主动干预、打断并惩戒她们背叛理想的自私行为。", "evidence": ["E20"]},
+    {"claim_id": "C013", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "作者称若希望双胞胎将来形同陌路，那就不分长幼。", "evidence": ["E21"]}
+   ],
+   "argument_steps": [
+    "直接回答（P001）：分出上下方便构建稳定关系。",
+    "强前提（P002）：一切关系本质上不平等，必分出不对称差异。",
+    "定义平等关系（P003—P005）：临时化＋随机轮换＝概率性平等。",
+    "极限推论（P006—P008）：绝对平等只存在于陌生人间，本质是无关系。",
+    "成本分析（P009—P013）：反复构建合作的成本；争位冲突造成关系税，收益常为负。",
+    "反问（P014—P015）：有多少合作扣掉内斗成本仍有明显收益？",
+    "让步与追问（P016—P018）：平等关系能训练谈判能力，但无人承担契约执行与惩罚背信的成本。",
+    "综合推论（P019—P022）：须靠固定关系取得盈余，故内外之分有其数学合理性，内人须分尊卑主从。",
+    "行动建议（P023—P024）：停止在高频关系中追求平等。",
+    "回到原问（P025—P027）：不分长幼则形同陌路。",
+    "后果预测（P028）：孩子自会形成替代性上下关系，坚持平等须持续干预。",
+    "调侃收尾（P029）：这样的父母可联系人类学课题组报经费。"
+   ],
+   "concept_usage": [
+    {"term": "平等关系", "meaning": "作者定义为临时而随机的关系、默认处于待定状态；绝对平等即「无关系」，与日常规范性意义上的平等不同。", "evidence": "P003", "ambiguity": "作者未讨论伦理或法律意义上的平等，也未说明该定义是否穷尽「平等」的用法。"},
+    {"term": "关系的临时化", "meaning": "在单次事务内通过约定或动态博弈形成临时上下关系，事务结束即作废。", "evidence": "P003", "ambiguity": "未说明约定如何被执行、违约如何处理。"},
+    {"term": "关系税／平等税", "meaning": "作者自创术语，指任何交互中为确定不对性（不对等关系）而额外付出的成本。", "evidence": "P011", "ambiguity": "未给出计量方式、量级或实例。"},
+    {"term": "内外之分", "meaning": "按互动频率区分「内人」（须依明确法则分出尊卑主从）与外人（依「一事一议」）。", "evidence": "P020", "ambiguity": "未给出划分频率的阈值与具体法则内容。"},
+    {"term": "大太子", "meaning": "引语中的称谓，指代对固定上位地位的争夺。", "evidence": "P010", "ambiguity": "属口语设例，无具体所指。"},
+    {"term": "不容抗拒的自然法则", "meaning": "作者将上述推论称为如算术般必然。", "evidence": "P022", "ambiguity": "「因为一加一等于二，二减一等于一」是类比而非形式化论证。"}
+   ],
+   "examples_and_targets": [
+    "双胞胎分长幼——提问对象，也是最终回答对象（P001、P026—P028）。",
+    "旷野中偶然相遇的陌生人——作者举的绝对平等关系例（P006、P016）。",
+    "「凭什么你是大太子？！」——设例引语，指平等关系中争夺上位时的冲突（P010）。",
+    "亲族、眷属、臣僚——作者举的高频互动「内人」例（P021）。",
+    "人类学课题组、经费——结尾调侃材料（P029）。",
+    "读者（「你们看懂没有？」）——被直接称呼并反问的对象（P025）。"
+   ],
+   "conditions": [
+    "前提：一切关系本质上不平等，平等只能靠临时化与随机轮换实现（P002—P005）。",
+    "条件句：除扣除一次内斗成本仍有确定盈利的合作之外，其他合作都不明智（P013）。",
+    "条件句：若不接受任何「不平等」，将同时失去追求更多平等的本钱（P024，标题节点）。",
+    "条件句：若希望双胞胎将来形同陌路就不分长幼；若不分且要贯彻平等理念，则须持续干预（P027—P028）。",
+    "隐含限定：论述以「竞争激烈的无常世界」与合作须付出成本为前提（P014）；「数学不允许」为类比说法，未给出形式化证明。"
+   ],
+   "rhetoric_and_tone": "由一句简短回答转入抽象推演；密集使用定义句与二分对照（临时／固定、内人／外人）；自创并反复使用「关系税」「平等税」「大太子」等语汇；连续反问（P014、P018、P025、P026、P027）；结尾以「联系个人类学课题组报个经费」调侃坚持平等理念的父母；整体为说理＋训诫＋讽刺，无数据、无引文。",
+   "unresolved_questions": [
+    "「一切的关系在本质上都不是平等关系」为强断言，未给出论证或经验证据。",
+    "「关系税」的大小与计量方式未说明，全篇无实例数据。",
+    "「内外之分」的互动频率阈值未说明。",
+    "以「一加一等于二，二减一等于一」充当自然法则的类比依据，未展开论证。",
+    "未讨论双胞胎长幼的确定依据（出生顺序或其他），也未讨论性别差异。",
+    "未回应可能的反例（如以契约与法治为主要治理形式的现代社会）。",
+    "P024 为 heading 节点，其版式差异是否代表独立标题未说明。"
+   ],
+   "evidence": [
+    {"key": "E1", "paragraph_id": "P001", "quote": "这条很简单，因为这里分出上下，方便构建稳定关系。", "relation": "supports"},
+    {"key": "E2", "paragraph_id": "P002", "quote": "一切的关系在本质上都不是平等关系，它必然因为关系的性质分出主动与被动，决定与被决定，发起与跟随，提出与批准，建议与否决", "relation": "supports"},
+    {"key": "E3", "paragraph_id": "P003", "quote": "所谓的“平等关系”，最本质的实现方式就是将彼此的关系临时化", "relation": "supports"},
+    {"key": "E4", "paragraph_id": "P005", "quote": "简单来说，就是靠着随机性、轮换性，来实现时间维度上以及事务维度上的概率性平等。", "relation": "supports"},
+    {"key": "E5", "paragraph_id": "P006", "quote": "这样的绝对的平等关系，仅仅存在于旷野之中偶然相遇的素不相识的陌生人之间。", "relation": "supports"},
+    {"key": "E6", "paragraph_id": "P007", "quote": "因此，一切“平等关系”，本质上就是“临时而随机的关系”，即“默认关系处于待定状态”。", "relation": "supports"},
+    {"key": "E7", "paragraph_id": "P008", "quote": "干脆的说，“绝对平等的关系”即是本质的“无关系”。", "relation": "supports"},
+    {"key": "E8", "paragraph_id": "P009", "quote": "但是存在一个显然的坏处——一切出于平等关系的交互，都要反复的付出构建合作关系的成本。", "relation": "supports"},
+    {"key": "E9", "paragraph_id": "P010", "quote": "“凭什么你是大太子？！”，这话一但爆发出来，就没有成本低廉的处理方式，要么是实力的对抗，要么是旷日持久的谈判。", "relation": "supports"},
+    {"key": "E10", "paragraph_id": "P011", "quote": "那会造成相当额度的“关系税”", "relation": "supports"},
+    {"key": "E11", "paragraph_id": "P013", "quote": "除了那些扣除这份成本仍然会有确定盈利的合作之外，其他的合作都是显然不明智的。", "relation": "supports"},
+    {"key": "E12", "paragraph_id": "P016", "quote": "长期处在这样的关系中的人，会被迫学会高效的谈判技巧和构建临时契约的能力。", "relation": "qualifies"},
+    {"key": "E13", "paragraph_id": "P017", "quote": "但是问题是，谁来支付保持签订的契约有效执行的成本？谁来负责惩罚背信弃义的成本？", "relation": "supports"},
+    {"key": "E14", "paragraph_id": "P018", "quote": "这迫使人们在事实上几乎不可能完全生活在平等关系里。", "relation": "supports"},
+    {"key": "E15", "paragraph_id": "P019", "quote": "你总是必须依靠某种高效率的、免缴“平等税”的固定关系去进行部分的合作，去好歹赢得一些基本的盈余。", "relation": "supports"},
+    {"key": "E16", "paragraph_id": "P020", "quote": "这就是“内外之分”在数学上的合理性所在。", "relation": "supports"},
+    {"key": "E17", "paragraph_id": "P021", "quote": "而外人则必然依从“一事一议”原则的根本原因。", "relation": "supports"},
+    {"key": "E18", "paragraph_id": "P022", "quote": "这是不容抗拒的自然法则——因为一加一等于二，二减一等于一。", "relation": "supports"},
+    {"key": "E19", "paragraph_id": "P023", "quote": "不是哪个坏人不允许，而是数学不允许。", "relation": "supports"},
+    {"key": "E20", "paragraph_id": "P028", "quote": "你还得一次又一次的去主动干预，打断ta们的小动作，惩戒ta们背叛你的理想的自私行为。", "relation": "supports"},
+    {"key": "E21", "paragraph_id": "P027", "quote": "如果你希望ta们将来形同陌路的话，那么就不分。", "relation": "supports"}
+   ]
+  },
+  "provisional_tags": {
+   "domain_candidates": ["社会关系理论", "家庭与亲属制度", "交易成本与博弈（作者自创框架）"],
+   "issue_candidates": ["双胞胎长幼排序", "平等关系是否可能", "内外之别与尊卑主从"],
+   "text_function_candidates": ["答疑", "论辩", "推演", "训诫"],
+   "object_candidates": ["双胞胎", "亲族／眷属／臣僚", "陌生人", "大太子"],
+   "working_keywords": ["平等关系", "临时化", "关系税", "内外之分", "尊卑主从", "大太子"]
+  },
+  "notes": "全篇为作者自创概念推演，无数据、无引文；P024 为 heading 节点（其余为 body）；「数学不允许」等表述属类比，应与形式论证区分；无图片。"
+ },
+ "3683188c": {
+  "analysis": {
+   "question_context": "提问者说身边的亲人因为不愿意原谅别人（对象不是提问者）而过得很压抑，问怎样劝导。作者不建议劝导：既不要浇灌怨恨，也不要不许怨恨，而应不置可否、置身事外；并解释怨恨出自「被辜负的爱」的想象、爱本身不是施予，最后说只能等对方自行在痛苦中醒悟，如同戒毒般漫长，别无他法。正文未涉及提问所述具体人事。",
+   "content_units": [
+    {"unit_id": "U001", "paragraph_refs": ["P001"], "summary": "给出建议：不要劝；不要浇灌怨恨，也不要不许怨恨；不置可否，置身事外就是了。", "role": "action_advice"},
+    {"unit_id": "U002", "paragraph_refs": ["P002"], "summary": "不浇灌怨恨的理由：站在对方一边为其怨恨背书，可能助长怨恨转化为实际伤害行为的概率；若发生什么，你手上也有受害人的血。", "role": "reason"},
+    {"unit_id": "U003", "paragraph_refs": ["P003"], "summary": "不禁止怨恨的理由：怨恨虽不好，但仍是一个人可以选择的事；若连怨恨也不许，岂不是太可怜。", "role": "reason"},
+    {"unit_id": "U004", "paragraph_refs": ["P004"], "summary": "不置可否、置身事外的目的：减少对方怨恨的快感——怨恨是有快感的。", "role": "reason"},
+    {"unit_id": "U005", "paragraph_refs": ["P005", "P006"], "summary": "提出怨恨出自被人固执的「被辜负的爱」的想象；之所以说是想象，因为爱根本不是施予，爱是那个不怨恨。", "role": "claim"},
+    {"unit_id": "U006", "paragraph_refs": ["P007", "P008", "P009"], "summary": "施予只完成爱里面最容易而且最有快感的一部分（享受施予本身）；未得回报便怨恨，等于要求付出的像存款一样两本带利拿回、包赚不赔才「无怨无悔」，这等便宜事谈不上爱；故那只是自以为被辜负的「爱」的想象。", "role": "reason"},
+    {"unit_id": "U007", "paragraph_refs": ["P010"], "summary": "结论：在穿越这种执着之前，对方没有资格也没有能力谈论爱；其所谓爱只是强行发放的贷款、带着倒钩的毒饵，识者避之不及，欠了这利滚利的情想不受怨恨折磨是不可能的。", "role": "conclusion"},
+    {"unit_id": "U008", "paragraph_refs": ["P011"], "summary": "补充：你也不能随便靠近，因为靠近会成为「我这样放贷也不是不可行」的新证据。", "role": "reason"},
+    {"unit_id": "U009", "paragraph_refs": ["P012", "P013"], "summary": "收束：不是人们流放了对方，而是对方通过坚持让每个接近者陷入深渊的做法流放了所有人；只能等其自己在痛苦中醒悟，这与戒毒没有本质区别；这会是漫长而痛苦的过程，没有什么好办法，只能抱着希望慢慢等。", "role": "conclusion"}
+   ],
+   "main_claims": [
+    {"claim_id": "C001", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "作者建议：不要劝；不要浇灌怨恨，也不要不许怨恨；不置可否、置身事外就是了。", "evidence": ["E1"]},
+    {"claim_id": "C002", "claim_type": "author_explicit", "attribution": "author", "modality": "predicted", "statement": "作者称站在对方一边为其怨恨背书，可能会助长怨恨转化为实际伤害行为的概率，若发生什么，你手上也有受害人的血。", "evidence": ["E2"]},
+    {"claim_id": "C003", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "作者称怨恨虽不好，但仍属一个人可以做的选择；若连怨恨也不许，就太可怜了。", "evidence": ["E3"]},
+    {"claim_id": "C004", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "作者称不置可否、置身事外是为了减少对方怨恨的快感，因为怨恨是有快感的。", "evidence": ["E4"]},
+    {"claim_id": "C005", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "作者称怨恨出自被人固执的「被辜负的爱」的想象。", "evidence": ["E5"]},
+    {"claim_id": "C006", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "作者称爱根本就不是施予，爱是那个不怨恨。", "evidence": ["E6"]},
+    {"claim_id": "C007", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "作者称施予只完成了爱里面最容易而且最有快感的一部分；未得回报便怨恨，等于要求像存款一样两本带利拿回、包赚不赔，这等便宜的事谈不上爱。", "evidence": ["E7", "E8"]},
+    {"claim_id": "C008", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "作者称在从这种执着中穿越过来之前，对方没有资格也没有能力谈论爱；其所谓爱只是强行发放的贷款、带着倒钩的毒饵。", "evidence": ["E9"]},
+    {"claim_id": "C009", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "作者称你也不能随便靠近对方，因为靠近会成为「我这样放贷也不是不可行」的新证据。", "evidence": ["E10"]},
+    {"claim_id": "C010", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "作者称并非人们流放了对方，而是对方通过坚持让每个接近者陷入深渊的做法流放了所有人；只能等其自己在痛苦中醒悟，这与戒毒没有本质区别。", "evidence": ["E11"]},
+    {"claim_id": "C011", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "作者称这会是漫长而痛苦的过程，没有什么好办法，只能抱着希望慢慢等。", "evidence": ["E12"]}
+   ],
+   "argument_steps": [
+    "给出建议（P001）：不劝，不浇灌也不禁止怨恨，不置可否、置身事外。",
+    "理由一（P002）：背书怨恨可能助长其转化为伤害行为，你也会沾血。",
+    "理由二（P003）：怨恨虽不好但仍是可选项，连怨恨都不许太可怜。",
+    "理由三（P004）：置身事外可减少怨恨的快感。",
+    "提出命题（P005—P006）：怨恨出自「被辜负的爱」的想象；爱不是施予，爱是不怨恨。",
+    "展开（P007—P008）：施予只完成爱中最容易、最有快感的部分；索回报的怨恨等于要求包赚不赔。",
+    "定性（P009—P010）：那只是自以为被辜负的想象；对方的所谓爱是强行发放的贷款与带倒钩的毒饵，其尚无资格谈论爱。",
+    "补充禁令（P011）：也不能随便靠近，靠近会成为其放贷可行的新证据。",
+    "收束（P012—P013）：是对方流放了所有人；只能等其自行醒悟，如同戒毒，漫长痛苦，别无他法。"
+   ],
+   "concept_usage": [
+    {"term": "怨恨", "meaning": "作者指由「被辜负的爱」的想象产生的情绪，带有快感，并可能转化为实际伤害行为。", "evidence": "P005", "ambiguity": "未区分怨恨的类型与程度，也未给心理学依据或概率估计。"},
+    {"term": "爱", "meaning": "作者规定：爱根本不是施予，爱是那个不怨恨。", "evidence": "P006", "ambiguity": "属规定性定义，未展开论证，也未说明爱除不怨恨外还包含什么。"},
+    {"term": "施予", "meaning": "作者称施予只是爱里面最容易而且最有快感的一部分（享受施予本身）。", "evidence": "P007", "ambiguity": "未说明施予与爱的其他部分的关系。"},
+    {"term": "放贷／贷款／毒饵", "meaning": "比喻对方以付出索取回报的所谓爱，是强行发放的贷款与带倒钩的毒饵。", "evidence": "P010", "ambiguity": "比喻与具体行为的对应关系未逐项说明。"},
+    {"term": "戒毒", "meaning": "类比醒悟过程的漫长与痛苦，且不提供加速办法。", "evidence": "P012", "ambiguity": "属类比，未说明机制与判据。"}
+   ],
+   "examples_and_targets": [
+    "提问者的亲人（「ta」）——作者分析并讨论的对象（P002—P013）。",
+    "提问者（「你」）——被建议者（P001—P002、P011）。",
+    "「我这样放贷也不是不可行」——引号内拟设的对方内心语句（P011）。",
+    "戒毒——类比材料（P012）。",
+    "受害人——作者设想的潜在后果承担者（P002）。",
+    "被怨恨的对象（提问中「对象不是我」）——正文未作具体交代。"
+   ],
+   "conditions": [
+    "行为建议的场景条件：针对亲人怨恨他人、提问者想劝导这一情境（P001—P004）。",
+    "预测条件：若你为对方的怨恨背书，则可能助长其转化为伤害行为（P002）。",
+    "前提条件：分析建立在作者「爱不是施予，爱是不怨恨」的规定之上（P006）。",
+    "限定：作者称只能等对方自己醒悟，「这和戒毒没有什么本质的区别」，并称「没有什么好办法」（P012—P013），即不提供加速办法。",
+    "未说明：若对方已实施伤害行为、或提问者处于危险或责任关系中的例外情形。"
+   ],
+   "rhetoric_and_tone": "以短句禁令开场（「不要劝。」）；反复使用「不要……也不要不……」的并列句式；用「强行发放的贷款」「带着倒钩的毒饵」「利滚利的情」「戒毒」等强烈比喻刻画对方；连续反问（P008「还谈什么爱呢？」、P010「怎么可能呢？」、P003「岂不是太可怜了吗？」）；对被怨恨者与劝导者均为冷静、近乎断言的训诫口吻，结尾转为悲观的劝慰。",
+   "unresolved_questions": [
+    "「爱是那个不怨恨」是规定性定义还是论证结论，正文未说明。",
+    "怨恨转化为实际伤害行为的概率关系未给依据。",
+    "未讨论亲人若已实施或即将实施伤害行为时的应对，「不置可否」建议的边界不明。",
+    "「ta」与被怨恨者的具体关系、事件细节未进入正文。",
+    "「醒悟」的判据与时间尺度未说明，也未说明提问者可否提供间接帮助。",
+    "无数据、无引文、无心理学来源。"
+   ],
+   "evidence": [
+    {"key": "E1", "paragraph_id": "P001", "quote": "不要劝。不要浇灌怨恨，也不要不许怨恨。不置可否，置身事外就是了。", "relation": "supports"},
+    {"key": "E2", "paragraph_id": "P002", "quote": "你站在ta一边，背书ta的怨恨，可能会助长ta的怨恨转化为实际伤害行为的概率。", "relation": "supports"},
+    {"key": "E3", "paragraph_id": "P003", "quote": "也不要不许怨恨，是因为怨恨虽然不好，但仍属一个人可以做的选择。", "relation": "supports"},
+    {"key": "E4", "paragraph_id": "P004", "quote": "不置可否，置身事外，是要减少对方怨恨的快感——怨恨是有快感的。", "relation": "supports"},
+    {"key": "E5", "paragraph_id": "P005", "quote": "怨恨是出自被人固执的“被辜负的爱”的想象。", "relation": "supports"},
+    {"key": "E6", "paragraph_id": "P006", "quote": "因为爱根本就不是施予，爱是那个不怨恨。", "relation": "supports"},
+    {"key": "E7", "paragraph_id": "P007", "quote": "你施予，其实你享受了施予本身，这只完成了爱里面最容易而且最有快感的一部分。", "relation": "supports"},
+    {"key": "E8", "paragraph_id": "P008", "quote": "要包赚不赔才“无怨无悔”，这等便宜的事，还谈什么“爱”呢？", "relation": "supports"},
+    {"key": "E9", "paragraph_id": "P010", "quote": "ta这种所谓“爱”，只是强行发放的贷款，带着倒钩的毒饵而已。", "relation": "supports"},
+    {"key": "E10", "paragraph_id": "P011", "quote": "你也不能随便靠近，因为你靠近就会成为“我这样放贷也不是不可行”的新证据。", "relation": "supports"},
+    {"key": "E11", "paragraph_id": "P012", "quote": "你只能等着ta自己在痛苦中醒悟，这和戒毒没有什么本质的区别。", "relation": "supports"},
+    {"key": "E12", "paragraph_id": "P013", "quote": "可想而知，这会是漫长而痛苦的过程，没有什么好办法。只能抱着希望慢慢等。", "relation": "supports"}
+   ]
+  },
+  "provisional_tags": {
+   "domain_candidates": ["心理与情绪问题", "伦理与爱论", "家庭关系"],
+   "issue_candidates": ["怨恨与原谅", "劝导的边界", "爱的定义"],
+   "text_function_candidates": ["答疑", "劝告", "论辩"],
+   "object_candidates": ["提问者的亲人（ta）", "提问者（你）", "被怨恨者", "受害人"],
+   "working_keywords": ["怨恨", "被辜负的爱", "施予", "放贷", "毒饵", "戒毒"]
+  },
+  "notes": "正文未涉及提问所述具体人事；「爱是那个不怨恨」为作者自设定义，无引文与数据支撑；无图片。"
+ },
+ "d5780827": {
+  "analysis": {
+   "question_context": "提问者问普通老百姓为什么要关心政治。作者先称赞该问题让人审视「既然你没有办法改变什么，你为什么要关心它？」这一论调，再用物理定律、天气、春节日期、死亡等反问反驳该论调，正面主张政治会深刻、大幅度地影响个人，并以创业融资、上司未来立场为例；随后转折指出真正的问题是要「真正的关心政治」——让政治结论影响预测与行为，并列出具体的学习与调查事项。被反驳的论调由作者复述，未指明持有者。",
+   "content_units": [
+    {"unit_id": "U001", "paragraph_refs": ["P001", "P002"], "summary": "称这是很好的问题，好在它让人审视「既然你没有办法改变什么，你为什么要关心它？」这一论调。", "role": "context"},
+    {"unit_id": "U002", "paragraph_refs": ["P003", "P004", "P005", "P006", "P007", "P008", "P009", "P010"], "summary": "反问并举例反驳：关心某物与有无能力改变它没有必然联系——物理定律（不关心连大学都上不上）、天气、春节在哪天、死亡；故「你不能改变政治局势，所以关心政治局势干啥」毫无合理性。", "role": "rebuttal"},
+    {"unit_id": "U003", "paragraph_refs": ["P011", "P012"], "summary": "正面理由：应该关心政治局势，因为它会深刻、大幅度地影响你；经营方向要有足够概率不处在某一头犀牛的冲锋方向上，否则成果可能被踩成碎片。", "role": "reason"},
+    {"unit_id": "U004", "paragraph_refs": ["P013", "P014", "P015"], "summary": "不关心政治的后果：别想融资——投资人发现计划未透彻考虑政策风险、对市场管制方向没有洞见，明智做法是不碰你或换职业经理人出局；作者称这是不可容忍的幼稚和傲慢；并反问让一群人把人生押注在你身上却连基本局势都不关心，是否对忠诚下属尽了最基本的责任。", "role": "reason"},
+    {"unit_id": "U005", "paragraph_refs": ["P016", "P017", "P018", "P019"], "summary": "举例：跟随上司要注意了解其对未来的观点，该观点未必提及具体政治观点但必定体现某种事实立场（如相信全球化会继续前进还是已经结束）；并反问这与事业无关吗、算「不务正业」吗。", "role": "example"},
+    {"unit_id": "U006", "paragraph_refs": ["P020", "P021", "P022"], "summary": "转折：真正的问题在于要关心政治就要真正的关心政治；很多人所谓的关心只是热衷谈资、积累政治八卦、用作酒桌上展现知识量的本钱，这些人并不真的关心政治。", "role": "rebuttal"},
+    {"unit_id": "U007", "paragraph_refs": ["P023", "P024", "P025"], "summary": "定义真关心：得到的每种结论都会影响你对未来的预测，并实实在在影响眼下行为（学什么、练习什么、投资什么、购入什么、卖出什么）；政治局势是最大最猛烈的时代浪潮，普通人不是要学习改变它，而是要学会避免被吞没、在冲击下幸存，若足够幸运学会冲浪；这意味着需要下很大功夫保证这种影响恰当、稳妥、有效。", "role": "definition"},
+    {"unit_id": "U008", "paragraph_refs": ["P026", "P027", "P028", "P029", "P030", "P031", "P032", "P033"], "summary": "具体做法：不断严肃地学习、观察、了解和验证，而不是只追看政论节目和键政大V；了解大宗商品的具体工艺和供求关系、认真学习金融常识、了解各国决策机制和基本民情、查官方统计数据、建立自己的信息管道、有自己的系统情报分析方法论、亲手去做《兴国调查》。", "role": "action_advice"}
+   ],
+   "main_claims": [
+    {"claim_id": "C001", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "作者称关心某个东西和有没有能力改变它没有必然的联系。", "evidence": ["E1"]},
+    {"claim_id": "C002", "claim_type": "author_explicit", "attribution": "author", "modality": "questioned", "statement": "作者以物理定律、天气、春节在哪天、死亡等反问：不能改变并不构成不必关心的理由。", "evidence": ["E2", "E3", "E4", "E5"]},
+    {"claim_id": "C003", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "作者称「你不能改变政治局势，所以你关心政治局势干啥」这话没有一丝一毫的合理性。", "evidence": ["E6"]},
+    {"claim_id": "C004", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "作者称应该关心政治局势，因为它会影响你，很深刻、大幅度地影响到你。", "evidence": ["E7"]},
+    {"claim_id": "C005", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "作者称不关心政治就别想着融资：投资人若发现计划没有透彻充分考虑政策风险、对市场管制方向没有深刻洞见，明智做法是不碰你或准备用职业经理人换你出局。", "evidence": ["E8"]},
+    {"claim_id": "C006", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "作者称不关心基本局势而让他人把人生押注在自己身上，是一种不可容忍的幼稚和傲慢。", "evidence": ["E9"]},
+    {"claim_id": "C007", "claim_type": "author_explicit", "attribution": "author", "modality": "questioned", "statement": "作者反问：让一群人把人生押注在你身上，你连基本局势都不关心，是否对忠诚下属尽到了哪怕最基本的责任。", "evidence": ["E10"]},
+    {"claim_id": "C008", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "作者称跟随上司要注意了解其对未来的观点，该观点也许没有提及具体政治观点，但必定体现出某种事实的立场（如相信全球化会继续前进还是已经结束）。", "evidence": ["E11", "E12"]},
+    {"claim_id": "C009", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "作者称很多人所谓的关心政治只是热衷谈资、满腔热忱积累政治八卦、用作酒桌上展现知识量的本钱，这些人并不真的关心政治。", "evidence": ["E13", "E14"]},
+    {"claim_id": "C010", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "作者称关心政治意味着得到的每一种结论都会影响你对未来的预测，并实实在在影响你眼下的行为（学什么、练习什么、投资什么、购入什么、卖出什么）。", "evidence": ["E15"]},
+    {"claim_id": "C011", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "作者称政治局势是最大、最猛烈的时代浪潮，作为普通人不是要学习改变它，而是要学会避免被它吞没、学会在冲击下幸存，若足够幸运则学会冲浪。", "evidence": ["E16"]},
+    {"claim_id": "C012", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "作者称关心政治意味着应不断严肃地学习、观察、了解和验证，而不是只在津津有味地追看各种政论节目和键政大V。", "evidence": ["E17"]},
+    {"claim_id": "C013", "claim_type": "author_explicit", "attribution": "author", "modality": "asserted", "statement": "作者列举真关心政治者会做的事：了解大宗商品工艺与供求关系、学习金融常识、了解各国决策机制和基本民情、查官方统计数据、建立自己的信息管道、有自己的系统情报分析方法论、亲手去做《兴国调查》。", "evidence": ["E18", "E19", "E20", "E21"]},
+    {"claim_id": "C014", "claim_type": "opponent_view", "attribution": "opponent", "modality": "asserted", "statement": "被作者反驳的论调（作者复述，未指明持有者）：既然你没有办法改变什么，你为什么要关心它／你不能改变政治局势，所以关心政治局势干啥。", "evidence": ["E22", "E6"]}
+   ],
+   "argument_steps": [
+    "称赞提问（P001—P002）：问题好在让人审视「无法改变就不必关心」的论调。",
+    "反问立论（P003）：关心与有无能力改变没有必然联系。",
+    "连举例反驳（P004—P008）：物理定律、天气、春节、死亡。",
+    "总反驳（P009—P010）：该论调毫无合理性。",
+    "正面理由（P011—P012）：政治会深刻影响你；经营方向不能处在犀牛的冲锋方向上。",
+    "后果论证（P013—P015）：不关心政治则融资无望，投资人会回避或换人；这是幼稚与傲慢，也是对下属失责。",
+    "举例（P016—P019）：上司对未来（如全球化）的立场与事业相关，不算不务正业。",
+    "转折（P020—P022）：要关心就要真正的关心；谈资与政治八卦不是真关心。",
+    "定义真关心（P023—P025）：结论影响预测与行为；政治是时代浪潮，普通人是避免被吞没、幸存与冲浪。",
+    "行动清单（P026—P033）：严肃学习、观察、了解、验证；大宗商品、金融常识、各国决策机制、官方统计、信息管道、情报分析方法论、《兴国调查》。"
+   ],
+   "concept_usage": [
+    {"term": "关心政治", "meaning": "作者区分两种：以谈资、政治八卦为内容的伪关心；以及使结论影响未来预测与眼下行为的真关心。", "evidence": "P023", "ambiguity": "未给出可判定的边界标准，也未说明由谁判定。"},
+    {"term": "时代浪潮／冲浪", "meaning": "比喻政治局势为最大最猛烈的浪潮，普通人的目标是避免被吞没、幸存乃至冲浪（利用局势）。", "evidence": "P024", "ambiguity": "比喻未具体化，「冲浪」的判准与代价未说明。"},
+    {"term": "犀牛的冲锋方向", "meaning": "比喻不可控且具破坏性的政治、政策风险。", "evidence": "P012", "ambiguity": "未说明「犀牛」具体指何主体或哪类事件。"},
+    {"term": "政策风险／管制方向", "meaning": "投资人据以判断是否投资的因素。", "evidence": "P013", "ambiguity": "未给出具体政策实例或判断方法。"},
+    {"term": "键政大V", "meaning": "作者贬称的网络政治评论者，被作为伪关心的代表。", "evidence": "P026", "ambiguity": "未指具体人物或平台。"},
+    {"term": "《兴国调查》", "meaning": "作者要求「亲手去做」的调查，以书名号引用既有文本。", "evidence": "P033", "ambiguity": "正文未说明其内容、作者与所指，需外部核查。"}
+   ],
+   "examples_and_targets": [
+    "物理定律、天气、春节在哪天、死亡——作者用于反问的类比例证（P005—P008）。",
+    "一介农民——天气类比中的例子（P006）。",
+    "「某一头犀牛」——政策风险的比喻（P012）。",
+    "投资人与职业经理人——融资场景中的行为主体（P013）。",
+    "上司对未来（全球化是否继续）的判断——事业相关的立场举例（P017）。",
+    "政论节目、键政大V、酒桌上的谈资——被贬斥的伪关心对象（P021、P026）。",
+    "大宗商品、金融常识、各国决策机制、官方统计数据、信息管道、《兴国调查》——作者列举的具体学习与调查事项（P027—P033）。",
+    "提问者所问的「普通老百姓」——以「作为普通人」被回应（P024）。"
+   ],
+   "conditions": [
+    "论断条件：以政治会深刻、大幅度影响个人为前提（P011）。",
+    "条件句：经营方向需要有足够的概率不处在犀牛的冲锋方向上，否则成果可能被踩成碎片（P012）。",
+    "条件句：若不关心政治则难以融资，投资人会不碰你或换职业经理人（P013）。",
+    "限定：普通人不是要学习改变政治局势，而是学会避免被吞没、幸存，乃至冲浪（P024）。",
+    "程度与概率限定：足够的概率、足够幸运、下很大的功夫、恰当稳妥有效（P012、P024、P025）。",
+    "隐含条件：真关心以持续的学习、观察、了解和验证为条件（P026）。"
+   ],
+   "rhetoric_and_tone": "以称赞提问开场；连续反问（「有吗？」「这真的跟你们的事业没有关系吗？没有吗？」「这真的算『不务正业』吗？」）；用犀牛、时代浪潮、冲浪等比喻；对伪关心者用「津津有味的追看」「键政大V」「酒桌上展现知识量」等带嘲讽的措辞；后半转为条目式行动清单；整体语气肯定、带训诫与商业实务色彩，无数据、无具体政策实例。",
+   "unresolved_questions": [
+    "《兴国调查》仅以书名号提及，正文未解释其内容、作者与所指，需外部核查。",
+    "「某一头犀牛」所指主体不明。",
+    "被反驳论调「不能改变就不必关心」的持有者未指明。",
+    "未给出具体政策、统计数据或案例来支撑关于投资人与融资的论断。",
+    "「真正的关心政治」与「伪关心」的判定标准未量化。",
+    "未讨论普通人关心政治的成本、风险或可能后果。",
+    "P033 以空行与前文分隔，是否为后来追加或独立段落未说明。"
+   ],
+   "evidence": [
+    {"key": "E1", "paragraph_id": "P003", "quote": "问题是，关心某个东西，和有没有能力改变它有什么必然的联系？", "relation": "supports"},
+    {"key": "E2", "paragraph_id": "P005", "quote": "关心得不够，你大学都没得上，不是吗？", "relation": "supports"},
+    {"key": "E3", "paragraph_id": "P006", "quote": "一介农民能改变天气吗？在家用核弹还没有上市之前，似乎也没什么办法吧？那ta需要关心天气吗？", "relation": "supports"},
+    {"key": "E4", "paragraph_id": "P007", "quote": "你不能改变春节在哪天，你为什么要关心春节在哪天？", "relation": "supports"},
+    {"key": "E5", "paragraph_id": "P008", "quote": "你显然也不能改变死亡，你为什么要关心死亡？", "relation": "supports"},
+    {"key": "E6", "paragraph_id": "P009", "quote": "“你不能改变政治局势，所以你关心政治局势干啥”这话，其实你认真的考虑考虑，有一丝一毫的合理性可言吗？", "relation": "contradicts"},
+    {"key": "E7", "paragraph_id": "P011", "quote": "你为什么应该关心政治局势？因为它会影响你，很深刻的、大幅度的影响到你。", "relation": "supports"},
+    {"key": "E8", "paragraph_id": "P013", "quote": "投资人们发现你的计划没有透彻的、充分的考虑政策风险，或者对你所在的市场的管制方向没有深刻的洞见，他们明智的做法是不碰你，或者准备用职业经理人换你出局。", "relation": "supports"},
+    {"key": "E9", "paragraph_id": "P014", "quote": "因为这是一种不可容忍的幼稚和傲慢。", "relation": "supports"},
+    {"key": "E10", "paragraph_id": "P015", "quote": "你连基本局势都不关心，你对你的忠诚下属们尽到哪怕最基本的责任了吗？", "relation": "supports"},
+    {"key": "E11", "paragraph_id": "P016", "quote": "你要跟随什么上司，一定要注意了解ta们对未来的观点。", "relation": "supports"},
+    {"key": "E12", "paragraph_id": "P017", "quote": "ta是相信全球化会继续前进，还是觉得全球化已经结束了？", "relation": "supports"},
+    {"key": "E13", "paragraph_id": "P021", "quote": "很多人所谓的关心政治，只不过是热衷于一些谈资，满腔热忱的积累政治八卦，用做酒桌上展现知识量的所谓本钱。", "relation": "supports"},
+    {"key": "E14", "paragraph_id": "P022", "quote": "这些人并不真的关心政治。", "relation": "supports"},
+    {"key": "E15", "paragraph_id": "P023", "quote": "关心政治，意味着你得到的每一种结论都会影响到你对未来的预测，也毫无意外的会实实在在的影响到你眼下的行为", "relation": "supports"},
+    {"key": "E16", "paragraph_id": "P024", "quote": "作为普通人，你不是要去学习改变它，而是要学会避免被它吞没，学会在它的冲击下幸存，以及——如果你足够幸运的话——学会冲浪。", "relation": "supports"},
+    {"key": "E17", "paragraph_id": "P026", "quote": "关心政治，意味着你应该是在不断的严肃的学习、观察、了解和验证，而不是只是在津津有味的追看各种政论节目和键政大V。", "relation": "supports"},
+    {"key": "E18", "paragraph_id": "P027", "quote": "关心政治的人，会去了解大宗商品的具体工艺和供求关系。", "relation": "supports"},
+    {"key": "E19", "paragraph_id": "P030", "quote": "会去查官方的统计数据。", "relation": "supports"},
+    {"key": "E20", "paragraph_id": "P032", "quote": "会有自己的系统情报分析方法论。", "relation": "supports"},
+    {"key": "E21", "paragraph_id": "P033", "quote": "会亲手去做《兴国调查》。", "relation": "supports"},
+    {"key": "E22", "paragraph_id": "P002", "quote": "它让你好好的审视一下这样一个论调“既然你没有办法改变什么，你为什么要关心它？”", "relation": "context"}
+   ]
+  },
+  "provisional_tags": {
+   "domain_candidates": ["政治与社会", "个人决策与投资", "方法论"],
+   "issue_candidates": ["普通人为何关心政治", "政策风险与商业判断", "真伪政治关心之别"],
+   "text_function_candidates": ["答疑", "论辩", "反驳", "经验总结", "行动清单"],
+   "object_candidates": ["普通老百姓", "投资人", "上司", "键政大V", "《兴国调查》"],
+   "working_keywords": ["关心政治", "改变", "时代浪潮", "冲浪", "政策风险", "信息管道", "兴国调查"]
+  },
+  "notes": "正文未给出具体政策或数据实例；《兴国调查》仅以书名号提及而未作解释，需外部核查；被反驳论调「不能改变就不必关心」的持有者未注明；无图片。"
+ }
+}
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument('--out', default=None, help='输出 JSONL 路径（默认 out/<batch>.out.jsonl）')
+    args = ap.parse_args()
+    rows = load_batch_rows(BATCH)
+    records = []
+    for row in rows:
+        art = row['article']
+        uid = UID_BY_ID[art['id']]
+        if uid not in ANALYSIS:
+            raise SystemExit('ANALYSIS 缺少 %s (%s)' % (uid, art.get('title')))
+        p = ANALYSIS[uid]
+        records.append(build_record(
+            row, row['batch_id'], row['corpus_sha256'],
+            p['analysis'], p['provisional_tags'], STARTED, COMPLETED,
+            status=p.get('status', 'read'),
+            full_text_checked=p.get('full_text_checked', True),
+            image_checked=p.get('image_checked', False),
+            notes=p.get('notes', '')))
+    out = args.out or os.path.join(_HERE, '..', 'out', BATCH + '.out.jsonl')
+    write_jsonl(out, records)
+    print('ok %s -> %s (%d records)' % (BATCH, out, len(records)))
+
+
+if __name__ == '__main__':
+    main()

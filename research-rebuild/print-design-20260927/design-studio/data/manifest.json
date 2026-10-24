@@ -1,0 +1,18 @@
+{
+  "generatedAt": "2026-09-27T17:50:29.020885+08:00",
+  "corpusSha256": "cdc9c271309e1d71d9708889a3a31f4777e0c339ea54c3753521894afdb8357d",
+  "articleCount": 4305,
+  "sources": {
+    "corpus": "/storage/Users/currentUser/Documents/岐伯论/sooon-q9adg-articles-v2.jsonl",
+    "index": "/storage/Users/currentUser/Documents/岐伯论/research-rebuild/reports/print-index/print-research-index.csv",
+    "registry": "/storage/Users/currentUser/Documents/岐伯论/research-rebuild/data/print-topic-registry-v2.csv",
+    "manifest": "/storage/Users/currentUser/Documents/岐伯论/research-rebuild/print-20260926-rebuilt-v2/PRINT-MANIFEST.json"
+  },
+  "sampleOrdinals": [
+    4044,
+    2387,
+    3926,
+    2967,
+    3820
+  ]
+}

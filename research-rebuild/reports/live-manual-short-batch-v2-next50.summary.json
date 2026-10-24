@@ -1,0 +1,14 @@
+{
+  "generated_at": "2026-09-22T23:43:00",
+  "queue_records": 3493,
+  "manual_records": 812,
+  "excluded_existing_batch": 50,
+  "eligible_short_records": 1870,
+  "selected_records": 50,
+  "selected_total_body_chars": 26206.0,
+  "selected_image_dependency_count": 0,
+  "selected_image_count_sum": 0.0,
+  "selection_order": "priority desc, source_ordinal asc, id asc",
+  "filter": "source_body_state=text_present; body_char_count<=1000; deepseek_image_count=0; manual_status=pending_manual_read; excludes manual decisions and previous 50",
+  "output": "research-rebuild/reports/live-manual-short-batch-v2-next50.csv"
+}

@@ -1,0 +1,18 @@
+{
+  "generated_at": "2026-09-21",
+  "corpus_records": 4305,
+  "unclassified_records": 616,
+  "candidate_status_counts": {
+    "high_candidate": 310,
+    "no_lexical_candidate": 30,
+    "review_candidate": 276
+  },
+  "leaf_nodes_considered": 152,
+  "official_assignment_written": false,
+  "method": "标题、提问、摘要/正文及 lexical 文本节点与官方 LeoPractice 节点名、路径词、描述词做词面匹配；候选仅供人工细读路由，不是官方分类结论。",
+  "outputs": [
+    "D:\\岐伯论\\research-rebuild\\reports\\native-coverage\\local-unclassified-candidates.csv",
+    "D:\\岐伯论\\research-rebuild\\reports\\native-coverage\\local-unclassified-candidates.json",
+    "D:\\岐伯论\\research-rebuild\\reports\\native-coverage\\local-unclassified-candidates-report.json"
+  ]
+}

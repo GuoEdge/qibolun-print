@@ -1,0 +1,16 @@
+﻿ordinal,id,title,image_index,src,width,height,status,ocr_status,notes
+3775,44f8c341-fd3e-56d1-a321-7aa65d97043d,讽刺,1,//asset.sooon.ai/p/2020-06/03/a8bbdf60777cded9bf5e8a6fef496fd6.jpg,512,0,reviewed,not_started,逐张视觉复核完成；影视字幕与正文语境一致；未核验来源、OCR或因果判断。
+3932,61a65182-b3de-5c28-bb29-5ddcb2acd079,文物,1,//asset.sooon.ai/p/2019-05/20/9bb179ac7fd89246141fc08b3cbc56c8.jpg,640,0,reviewed,not_started,逐张视觉复核完成；青铜器整体与正文语境一致；不能仅凭照片确认器名年代或铸造法。
+3932,61a65182-b3de-5c28-bb29-5ddcb2acd079,文物,2,//asset.sooon.ai/p/2019-05/20/bb1af81e5ccf21324499fcef6d68fd26.jpg,640,0,reviewed,not_started,逐张视觉复核完成；纹饰近景与正文细部观察一致；不能证明内部结构或铸造工艺。
+3932,61a65182-b3de-5c28-bb29-5ddcb2acd079,文物,3,//asset.sooon.ai/p/2019-05/20/95bad9da45dba07dd3791fe4cad2bbde.jpg,640,0,reviewed,not_started,逐张视觉复核完成；开孔与连接形态可见；不能确认焊接或铸接。
+3932,61a65182-b3de-5c28-bb29-5ddcb2acd079,文物,4,//asset.sooon.ai/p/2019-05/20/fe79cc07d6d84e7e0b413ca30495bc30.jpg,479,0,reviewed,not_started,逐张视觉复核完成；卷曲纹样与正文观察一致；无尺度信息，不能验证工艺路径。
+3932,61a65182-b3de-5c28-bb29-5ddcb2acd079,文物,5,//asset.sooon.ai/p/2019-05/20/147df33d0abdf1ed2ab0e3a9e478deee.jpg,512,0,reviewed,not_started,逐张视觉复核完成；侧向构造与正文描述相关；不能识别具体构件或工艺痕迹。
+3932,61a65182-b3de-5c28-bb29-5ddcb2acd079,文物,6,//asset.sooon.ai/p/2019-05/20/a0f04963a5e3c2f8f703cac7757f3e99.jpg,640,0,reviewed,not_started,逐张视觉复核完成；底部结构与正文观察一致；不能确认独立铸造或后焊接。
+3932,61a65182-b3de-5c28-bb29-5ddcb2acd079,文物,7,//asset.sooon.ai/p/2019-05/20/c13fa2d111eabf17e4cc832c76c68c64.jpg,450,0,reviewed,not_started,逐张视觉复核完成；网状表面与正文复杂度观察一致；不能验证内部空腔或排气路径。
+3932,61a65182-b3de-5c28-bb29-5ddcb2acd079,文物,8,//asset.sooon.ai/p/2019-05/20/41988b37a0828e66946f0b64a0610f3b.jpg,490,0,reviewed,not_started,逐张视觉复核完成；兽形装饰与正文观察相关；不能确认年代或材质成分。
+3932,61a65182-b3de-5c28-bb29-5ddcb2acd079,文物,9,//asset.sooon.ai/p/2019-05/20/d1ec6f59a9eaaab782714d9d4ada6e17.jpg,800,0,reviewed,not_started,逐张视觉复核完成；禁的器物语境与正文一致；不能验证器名年代或礼制史解释。
+3932,61a65182-b3de-5c28-bb29-5ddcb2acd079,文物,10,//asset.sooon.ai/p/2019-05/20/b07c13b6d0b01d14ae808a718b81c382.jpg,640,0,reviewed,not_started,逐张视觉复核完成；青铜器比较语境相关；对象未标注，不能作为工艺证据。
+3932,61a65182-b3de-5c28-bb29-5ddcb2acd079,文物,11,//asset.sooon.ai/p/2019-05/20/456f0aa4ab5a604eb4bef70fcff243f1.jpg,641,0,reviewed,not_started,逐张视觉复核完成；编钟语境与正文一致；铭文与音律不能凭照片核验。
+3932,61a65182-b3de-5c28-bb29-5ddcb2acd079,文物,12,//asset.sooon.ai/p/2019-05/20/6e150cebc288d8d19e9794d15eba295f.jpg,650,0,reviewed,not_started,逐张视觉复核完成；钟体形制观察与正文相关；不能核验铭文、编号或音响属性。
+3932,61a65182-b3de-5c28-bb29-5ddcb2acd079,文物,13,//asset.sooon.ai/p/2019-05/20/a4dfde7b345d40318659909f240e96bd.jpg,650,0,reviewed,not_started,逐张视觉复核完成；钟体装饰与正文讨论相关；来源和年代未核验。
+4038,bd497e81-413b-5e4c-b1df-001d0efbd369,可控核聚变,1,//asset.sooon.ai/p/2018-07/22/47f090ab8abba80b94df5720e4e77f4a.jpg,,,reviewed,not_started,逐张视觉复核完成；技术书页与正文聚变/推进语境一致；未核验来源、公式或风险结论。

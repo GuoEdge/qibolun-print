@@ -1,0 +1,283 @@
+=== 开始重建 20 个分册 ===
+[1/20] B01...
+
+
+#
+# Fatal error in , line 0
+# Check failed: 12 == (*__errno_location()).
+#
+#
+#
+#FailureMessage Object: 0x7e80857fa0
+----- Native stack trace -----
+
+Signal 5 (core dumped) 
+  ✗ B01
+[2/20] B03...
+
+
+#
+# Fatal error in , line 0
+# Check failed: 12 == (*__errno_location()).
+#
+#
+#
+#FailureMessage Object: 0x7f08043fa0
+----- Native stack trace -----
+
+Signal 5 (core dumped) 
+  ✗ B03
+[3/20] B04...
+
+
+#
+# Fatal error in , line 0
+# Check failed: 12 == (*__errno_location()).
+#
+#
+#
+#FailureMessage Object: 0x7e1f106fa0
+----- Native stack trace -----
+
+Signal 5 (core dumped) 
+  ✗ B04
+[4/20] B12...
+
+
+#
+# Fatal error in , line 0
+# Check failed: 12 == (*__errno_location()).
+#
+#
+#
+#FailureMessage Object: 0x7f74b1bfa0
+----- Native stack trace -----
+
+Signal 5 (core dumped) 
+  ✗ B12
+[5/20] B15...
+
+
+#
+# Fatal error in , line 0
+# Check failed: 12 == (*__errno_location()).
+#
+#
+#
+#FailureMessage Object: 0x7f5fd48f90
+----- Native stack trace -----
+
+Signal 5 (core dumped) 
+  ✗ B15
+[6/20] B17...
+
+
+#
+# Fatal error in , line 0
+# Check failed: 12 == (*__errno_location()).
+#
+#
+#
+#FailureMessage Object: 0x7f64a66f90
+----- Native stack trace -----
+
+Signal 5 (core dumped) 
+  ✗ B17
+[7/20] B18...
+
+
+#
+# Fatal error in , line 0
+# Check failed: 12 == (*__errno_location()).
+#
+#
+#
+#FailureMessage Object: 0x7e8f9c2f90
+----- Native stack trace -----
+
+Signal 5 (core dumped) 
+  ✗ B18
+[8/20] B19...
+
+
+#
+# Fatal error in , line 0
+# Check failed: 12 == (*__errno_location()).
+#
+#
+#
+#FailureMessage Object: 0x7f851d4f90
+----- Native stack trace -----
+
+Signal 5 (core dumped) 
+  ✗ B19
+[9/20] B20A...
+
+
+#
+# Fatal error in , line 0
+# Check failed: 12 == (*__errno_location()).
+#
+#
+#
+#FailureMessage Object: 0x7e17e67f90
+----- Native stack trace -----
+
+Signal 5 (core dumped) 
+  ✗ B20A
+[10/20] B22...
+
+
+#
+# Fatal error in , line 0
+# Check failed: 12 == (*__errno_location()).
+#
+#
+#
+#FailureMessage Object: 0x7e9a2f8f90
+----- Native stack trace -----
+
+Signal 5 (core dumped) 
+  ✗ B22
+[11/20] B23...
+
+
+#
+# Fatal error in , line 0
+# Check failed: 12 == (*__errno_location()).
+#
+#
+#
+#FailureMessage Object: 0x7f3efcaf90
+----- Native stack trace -----
+
+Signal 5 (core dumped) 
+  ✗ B23
+[12/20] B24...
+
+
+#
+# Fatal error in , line 0
+# Check failed: 12 == (*__errno_location()).
+#
+#
+#
+#FailureMessage Object: 0x7e380a1f90
+----- Native stack trace -----
+
+Signal 5 (core dumped) 
+  ✗ B24
+[13/20] B26...
+
+
+#
+# Fatal error in , line 0
+# Check failed: 12 == (*__errno_location()).
+#
+#
+#
+#FailureMessage Object: 0x7fe3ee7f90
+----- Native stack trace -----
+
+Signal 5 (core dumped) 
+  ✗ B26
+[14/20] B27...
+
+
+#
+# Fatal error in , line 0
+# Check failed: 12 == (*__errno_location()).
+#
+#
+#
+#FailureMessage Object: 0x7e80111f90
+----- Native stack trace -----
+
+Signal 5 (core dumped) 
+  ✗ B27
+[15/20] B28...
+
+
+#
+# Fatal error in , line 0
+# Check failed: 12 == (*__errno_location()).
+#
+#
+#
+#FailureMessage Object: 0x7edb284f90
+----- Native stack trace -----
+
+Signal 5 (core dumped) 
+  ✗ B28
+[16/20] B29...
+
+
+#
+# Fatal error in , line 0
+# Check failed: 12 == (*__errno_location()).
+#
+#
+#
+#FailureMessage Object: 0x7ed14d2f90
+----- Native stack trace -----
+
+Signal 5 (core dumped) 
+  ✗ B29
+[17/20] B30...
+
+
+#
+# Fatal error in , line 0
+# Check failed: 12 == (*__errno_location()).
+#
+#
+#
+#FailureMessage Object: 0x7ee78f8f90
+----- Native stack trace -----
+
+Signal 5 (core dumped) 
+  ✗ B30
+[18/20] B32...
+
+
+#
+# Fatal error in , line 0
+# Check failed: 12 == (*__errno_location()).
+#
+#
+#
+#FailureMessage Object: 0x7fb4642f90
+----- Native stack trace -----
+
+Signal 5 (core dumped) 
+  ✗ B32
+[19/20] B34...
+
+
+#
+# Fatal error in , line 0
+# Check failed: 12 == (*__errno_location()).
+#
+#
+#
+#FailureMessage Object: 0x7fdab3bf90
+----- Native stack trace -----
+
+Signal 5 (core dumped) 
+  ✗ B34
+[20/20] B39...
+
+
+#
+# Fatal error in , line 0
+# Check failed: 12 == (*__errno_location()).
+#
+#
+#
+#FailureMessage Object: 0x7ef8250f90
+----- Native stack trace -----
+
+Signal 5 (core dumped) 
+  ✗ B39
+
+=== 完成 ===

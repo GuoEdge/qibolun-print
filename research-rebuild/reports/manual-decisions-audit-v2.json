@@ -1,0 +1,123 @@
+{
+  "records": 4305,
+  "unique_ids": 4305,
+  "status_counts": {
+    "manual_confirmed": 4165,
+    "manual_provisional": 140
+  },
+  "topic_counts": {
+    "A00": 30,
+    "A01": 372,
+    "A02": 147,
+    "A03": 401,
+    "A04": 265,
+    "A05": 312,
+    "A06": 551,
+    "A07": 363,
+    "A08": 311,
+    "A09": 82,
+    "A10": 273,
+    "A11": 158,
+    "A12": 221,
+    "A13": 182,
+    "A14": 43,
+    "A15": 176,
+    "A16": 129,
+    "A17": 47,
+    "A18": 98,
+    "A19": 38,
+    "A20": 101,
+    "A21": 5
+  },
+  "topic_status_counts": {
+    "A00": {
+      "manual_provisional": 5,
+      "manual_confirmed": 25
+    },
+    "A01": {
+      "manual_confirmed": 357,
+      "manual_provisional": 15
+    },
+    "A02": {
+      "manual_confirmed": 143,
+      "manual_provisional": 4
+    },
+    "A03": {
+      "manual_confirmed": 389,
+      "manual_provisional": 12
+    },
+    "A04": {
+      "manual_confirmed": 255,
+      "manual_provisional": 10
+    },
+    "A05": {
+      "manual_confirmed": 305,
+      "manual_provisional": 7
+    },
+    "A06": {
+      "manual_confirmed": 543,
+      "manual_provisional": 8
+    },
+    "A07": {
+      "manual_confirmed": 353,
+      "manual_provisional": 10
+    },
+    "A08": {
+      "manual_confirmed": 306,
+      "manual_provisional": 5
+    },
+    "A09": {
+      "manual_confirmed": 78,
+      "manual_provisional": 4
+    },
+    "A10": {
+      "manual_confirmed": 271,
+      "manual_provisional": 2
+    },
+    "A11": {
+      "manual_confirmed": 149,
+      "manual_provisional": 9
+    },
+    "A12": {
+      "manual_confirmed": 217,
+      "manual_provisional": 4
+    },
+    "A13": {
+      "manual_confirmed": 171,
+      "manual_provisional": 11
+    },
+    "A14": {
+      "manual_confirmed": 41,
+      "manual_provisional": 2
+    },
+    "A15": {
+      "manual_confirmed": 165,
+      "manual_provisional": 11
+    },
+    "A16": {
+      "manual_confirmed": 123,
+      "manual_provisional": 6
+    },
+    "A17": {
+      "manual_confirmed": 46,
+      "manual_provisional": 1
+    },
+    "A18": {
+      "manual_confirmed": 93,
+      "manual_provisional": 5
+    },
+    "A19": {
+      "manual_confirmed": 37,
+      "manual_provisional": 1
+    },
+    "A20": {
+      "manual_confirmed": 93,
+      "manual_provisional": 8
+    },
+    "A21": {
+      "manual_confirmed": 5
+    }
+  },
+  "errors": [],
+  "pass": true
+}
